@@ -183,6 +183,9 @@ func (r *Rules) secondsPrefix(first Request, fractional bool) ([]Group, error) {
 		writtenUnit = writtenUnit || strings.HasSuffix(first.Number, string(unit))
 	}
 	anyUnit := strings.ContainsAny(first.Number, "十百千"+string(bigUnits))
+	if fractional && anyUnit && !writtenUnit && !strings.ContainsRune(first.Number, '零') {
+		return r.secondsIntegerPrefix(first)
+	}
 	if fractional && leadingZeroDigitRun(first.Number) {
 		// The time pattern evaluates its integer before attaching 秒.
 		// Unlike the generic mixed-script stream, all-zero integers become
@@ -247,6 +250,64 @@ func (r *Rules) secondsPrefix(first Request, fractional bool) ([]Group, error) {
 		}
 	}
 	return prefix, nil
+}
+
+// The time pattern invokes 100a90 with 10b010's zero-skipping mode.
+// Unit and digit fragments concatenate before numeric accent/counter lookup.
+func (r *Rules) secondsIntegerPrefix(first Request) ([]Group, error) {
+	// The earlier zero-skipping pattern also discards a written zero before
+	// the initial unit; it must not become a separate レー fragment.
+	first.Number = strings.TrimLeft(first.Number, "０〇")
+	if _, bareUnit := r.Units[first.Number]; bareUnit {
+		return r.secondsPrefix(first, false)
+	}
+	var sound, part, kind string
+	flush := func() error {
+		if part == "" {
+			return nil
+		}
+		if kind != "Unit" {
+			part = strings.TrimLeft(part, "０〇")
+			if part == "" {
+				part = "零"
+			}
+		}
+		s, err := r.integerFragmentSound(part)
+		if err != nil {
+			return err
+		}
+		sound += s
+		part = ""
+		return nil
+	}
+	for _, c := range first.Number {
+		next := r.Digits[string(c)].Type
+		if _, ok := r.Units[string(c)]; ok {
+			next = "Unit"
+		}
+		if next != "Unit" && next != "Jap" && next != "Eng" {
+			return nil, fmt.Errorf("unsupported seconds integer %q", first.Number)
+		}
+		if next != kind {
+			if err := flush(); err != nil {
+				return nil, err
+			}
+		}
+		part += string(c)
+		kind = next
+	}
+	if err := flush(); err != nil {
+		return nil, err
+	}
+	chunks, err := r.numericSoundChunks(sound)
+	if err != nil {
+		return nil, err
+	}
+	rd, err := r.withCounter(first, chunks, false)
+	if err != nil {
+		return nil, err
+	}
+	return rd[0].Groups, nil
 }
 
 func (r *Rules) ReadSeconds(first, last Request, fractional bool) ([]Reading, error) {

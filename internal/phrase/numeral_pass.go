@@ -253,6 +253,11 @@ func (f *Frontend) findNumeralRuns(words []frontend.Word, starts map[int]bool) [
 			}
 			fractional := rules.SecondsFractionPattern && !mixedNumberScripts([]string{number, tail}, rules) &&
 				(c == "" || rules.SecondsFractionCounter)
+			// A following numeric connector continues the whole generic
+			// stream; it cannot select the time pattern for just this pair.
+			if c == "" && e+1 < len(words) && rules.IsConnector(words[e].Text) && f.isNumeralWord(words[e+1]) {
+				fractional = false
+			}
 			for _, ch := range tail {
 				if _, ok := rules.Digits[string(ch)]; !ok {
 					fractional = false

@@ -1,0 +1,62 @@
+{
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "original_threads": 6,
+  "avx512_convolutions": false,
+  "report_sha256": [
+    "140067033c4fd132a93ab63b8aa41e369f4269d268f873a65805fd6253deeea1",
+    "38a26e7747feea6dfb4fe35171824f2f8f6db01c083147135c51622e483d1b08",
+    "835006fbe35c1c74f7b845ca17863995354f385fc7752f582dc1f6e29b639faf",
+    "777a2b68ce2d7ac1b1488ec9e405eb6f733ae1ce8cba52298fc5aabc4b598637"
+  ],
+  "cases": [
+    {
+      "Text": "兆０２秒２個2千二声０五〇２Ａ百円は０。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 487670,
+      "SHA256": "5a032819258bdfa76d9dcea9a4a146ebe2b2f6b2d33e5f27e5e6aa845a5c36b4"
+    },
+    {
+      "Text": "兆０２秒２個。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 198004,
+      "SHA256": "5811d77b9cfcf7ea3d7074acce573a138e37f8d980b189eab3c58c27f5dc70f4"
+    },
+    {
+      "Text": "十０２秒２個。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 193488,
+      "SHA256": "156c14387e4cc32ad60cdeb45bd908f82ef1a1d6891f94e03656925b0092ea96"
+    },
+    {
+      "Text": "兆００秒２。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 191516,
+      "SHA256": "97ddfb9d4fed50351e600a04d9d09127a9c0dae449a223c7644f315660fd58e6"
+    },
+    {
+      "Text": "兆０２秒２個2千二声０五〇２Ａ百円は０。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 509504,
+      "SHA256": "bc8b5dd44f3c540f359d3ab2b9d9798c0330e55853e24815956a0fe5dd7ff6c7"
+    },
+    {
+      "Text": "兆０２秒２個。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 219650,
+      "SHA256": "a347c6dd5bde3430f0b57f9cfe13575ba766f301fa2f8fa3bfb026651584482b"
+    },
+    {
+      "Text": "十０２秒２個。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 221736,
+      "SHA256": "e72ef9ae11363111236fb226cd90b19785c329889a4c1487c7ec8806633f5202"
+    },
+    {
+      "Text": "兆００秒２。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 189096,
+      "SHA256": "84bd108e9b2a52f1bc0d15018812428744003b49b579ddf3c848ee30effa75d0"
+    }
+  ]
+}
