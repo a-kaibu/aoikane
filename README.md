@@ -38,4 +38,3 @@ aoikane serve --listen 127.0.0.1:8080
 
 `GET /healthz`、`GET /v1/voices`、`POST /v1/synthesize`、`GET /openapi.json`。
 任意で`--token` / `AOIKANE_TOKEN`を設定できる。
-
