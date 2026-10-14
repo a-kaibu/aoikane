@@ -1,0 +1,2 @@
+# Captured engine rules are verified by their exact bytes.
+assets/rules/** -text
