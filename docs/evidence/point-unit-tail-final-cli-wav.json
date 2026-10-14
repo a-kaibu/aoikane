@@ -1,0 +1,19 @@
+{
+  "scope": "Final clean pure Go CLI after Japanese-label and special-reading corrections, two Aoi inputs, whole original WAV equality; arbitrary input/settings/CPUs remain unproven",
+  "capture_sha256": "4de0d244afa0c83c2a0cd5b28d2911ad9c017450d301d10a765b12a4116851f8",
+  "voice": "KotonohaAoi_ns_48",
+  "original_dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "build_info": "dist/aoikane.exe: go1.26.8\n\tpath\taoikane/cmd/aoikane\n\tmod\taoikane\tv0.1.1-0.20261013104703-2e61084bcaca\t\n\tdep\tgithub.com/braheezy/shine-mp3\tv0.2.0\n\t=>\t./third_party/shine-mp3\t(devel)\t\n\t\n\tdep\tgithub.com/go-audio/audio\tv1.0.0\th1:zS9vebldgbQqktK4H0lUqWrG8P0NxCJVqcj7ZpNnwd4=\n\tdep\tgithub.com/go-audio/riff\tv1.0.0\th1:d8iCGbDvox9BfLagY94fBynxSPHO80LmZCaOsmKxokA=\n\tdep\tgithub.com/go-audio/wav\tv1.1.0\th1:jQgLtbqBzY7G+BM8fXF7AHUk1uHUviWS4X39d5rsL2g=\n\tbuild\t-buildmode=exe\n\tbuild\t-compiler=gc\n\tbuild\t-tags=portable\n\tbuild\t-trimpath=true\n\tbuild\tCGO_ENABLED=0\n\tbuild\tGOARCH=amd64\n\tbuild\tGOOS=windows\n\tbuild\tGOAMD64=v1\n\tbuild\tvcs=git\n\tbuild\tvcs.revision=2e61084bcacac3cd18fbcbffd7cfd91c3107c37b\n\tbuild\tvcs.time=2026-10-13T10:47:03Z\n\tbuild\tvcs.modified=false\n",
+  "cases": [
+    {
+      "text": "図十九・九万二。",
+      "bytes": 279370,
+      "sha256": "24d6431598d00277823389e7607792e27610e0fccdebd122afd3a13e822da740"
+    },
+    {
+      "text": "０９万２円。",
+      "bytes": 208088,
+      "sha256": "8ae3f1475faa73a88403db7703f27f4d09c657b7bc88339710dcf67b08d684da"
+    }
+  ]
+}

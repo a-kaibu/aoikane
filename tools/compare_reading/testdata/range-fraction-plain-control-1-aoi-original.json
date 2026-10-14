@@ -1,0 +1,28 @@
+{
+  "source": "ordinary original SDK talk; formatter observed without tensor injection; frontend-only capture",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "voice": "KotonohaAoi_ns_48",
+  "corpus_sha256": "b982aed70014fdbb8f77e2d059cf911cc794746dcebeff059b567d91c73bf546",
+  "cases": [
+    {
+      "index": 0,
+      "text": "2.03本。",
+      "status": 0,
+      "readings": [
+        "<S>^ニ!ーテン|0レ^ーサ!ンホン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e836a21815b836583937c30838c5e815b8354218393837a83933c463e"
+      ],
+      "wav_bytes": 217386,
+      "wav_sha256": "b6f40dd5f99203c8cef2fb65947e641cdfdfe1ee8ec0e00911813b96b777ad45"
+    }
+  ],
+  "complete": true,
+  "errors": [],
+  "executable_sha256": "de3be1e7979db53006add27f30131eb4c308c28ba78d6b7bb6365aecb01b3f2d",
+  "detach_reason": "process-terminated",
+  "crash": null,
+  "timed_out": false,
+  "native_report_sha256": "857a3eacabc773b167fa2820f0cc09d7099c2aaec3b517dfe8f752e0eba290c2"
+}

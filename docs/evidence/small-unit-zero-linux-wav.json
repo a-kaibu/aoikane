@@ -1,0 +1,15 @@
+{
+  "scope": "Linux amd64 DLL-free replay of all8 references; terminal PASS and all8 whole-WAV size/hash checks passed. Binary predates bare-point change. Not allCPU/input proof.",
+  "binary_sha256": "0562823a807feeaf3db47d799b6f96cbfd9dea2933c3836a6d8d644bf2244ab9",
+  "log_sha256": "099e774ebbd8e9fc18a96f5f5a71aaa2b2232ce45b6144bb8602a47b4b8ba3cf",
+  "result_lines": [
+    "    mixed_rei_original_test.go:76: whole original WAV identical: \"9千百千零。\", 234552 bytes",
+    "    mixed_rei_original_test.go:76: whole original WAV identical: \"０９千零。\", 207716 bytes",
+    "    mixed_rei_original_test.go:76: whole original WAV identical: \"21千零。\", 214352 bytes",
+    "    mixed_rei_original_test.go:76: whole original WAV identical: \"９千百千零Ａ千.−、千。\", 351840 bytes",
+    "    mixed_rei_original_test.go:76: whole original WAV identical: \"9千百千零。\", 234552 bytes",
+    "    mixed_rei_original_test.go:76: whole original WAV identical: \"０９千零。\", 207716 bytes",
+    "    mixed_rei_original_test.go:76: whole original WAV identical: \"21千零。\", 214352 bytes",
+    "    mixed_rei_original_test.go:76: whole original WAV identical: \"９千百千零Ａ千.−、千。\", 346174 bytes"
+  ]
+}

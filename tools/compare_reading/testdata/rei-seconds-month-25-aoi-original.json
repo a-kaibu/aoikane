@@ -1,0 +1,340 @@
+{
+  "source": "ordinary original SDK talk; formatter observed without tensor injection; frontend-only capture",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "voice": "KotonohaAoi_ns_48",
+  "corpus_sha256": "d97a38d1be939775f20bee960e52d3afefc520884f2fd7f91461e27a28244164",
+  "cases": [
+    {
+      "index": 0,
+      "text": "零秒月。",
+      "status": 0,
+      "readings": [
+        "<S>レ^ービョ!ーガツ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e838c5e815b8372838721815b834b83633c463e"
+      ],
+      "wav_bytes": 169072,
+      "wav_sha256": "a48cf42725d3482c843ea29d5afc88525aa2774b54866bcc32f1654fb2a0fdf0"
+    },
+    {
+      "index": 1,
+      "text": "五読む零秒月。",
+      "status": 0,
+      "readings": [
+        "<S>ゴ|0^ヨ!ム$1_1レ^ービョ!ーガツ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83537c305e838821838024315f31838c5e815b8372838721815b834b83633c463e"
+      ],
+      "wav_bytes": 235132,
+      "wav_sha256": "40ed62559c64ac8308bcb122d23cccfc166863e28c6327f30a537eb655ff9b6d"
+    },
+    {
+      "index": 2,
+      "text": "読む零秒月。",
+      "status": 0,
+      "readings": [
+        "<S>^ヨ!ム|0レ^ービョ!ーガツ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e83882183807c30838c5e815b8372838721815b834b83633c463e"
+      ],
+      "wav_bytes": 199864,
+      "wav_sha256": "ee79babba597fb0f068e1fbd0e91cbb7546a229180bd1f97e47861eb3d9ec8d2"
+    },
+    {
+      "index": 3,
+      "text": "今日は零秒月。",
+      "status": 0,
+      "readings": [
+        "<S>^キョ!ーワ|0レ^ービョ!ーガツ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e834c838721815b838f7c30838c5e815b8372838721815b834b83633c463e"
+      ],
+      "wav_bytes": 209662,
+      "wav_sha256": "ee1ffd6f9237b16a1a40fe1774c3b89f840a4eafe852347e5c348c09bed8a359"
+    },
+    {
+      "index": 4,
+      "text": "〇秒月。",
+      "status": 0,
+      "readings": [
+        "<S>レ^ービョ!ーガツ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e838c5e815b8372838721815b834b83633c463e"
+      ],
+      "wav_bytes": 169072,
+      "wav_sha256": "a48cf42725d3482c843ea29d5afc88525aa2774b54866bcc32f1654fb2a0fdf0"
+    },
+    {
+      "index": 5,
+      "text": "五読む〇秒月。",
+      "status": 0,
+      "readings": [
+        "<S>ゴ|0^ヨ!ム$1_1レ^ービョ!ーガツ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83537c305e838821838024315f31838c5e815b8372838721815b834b83633c463e"
+      ],
+      "wav_bytes": 235132,
+      "wav_sha256": "40ed62559c64ac8308bcb122d23cccfc166863e28c6327f30a537eb655ff9b6d"
+    },
+    {
+      "index": 6,
+      "text": "読む〇秒月。",
+      "status": 0,
+      "readings": [
+        "<S>^ヨ!ム|0レ^ービョ!ーガツ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e83882183807c30838c5e815b8372838721815b834b83633c463e"
+      ],
+      "wav_bytes": 199864,
+      "wav_sha256": "ee79babba597fb0f068e1fbd0e91cbb7546a229180bd1f97e47861eb3d9ec8d2"
+    },
+    {
+      "index": 7,
+      "text": "今日は〇秒月。",
+      "status": 0,
+      "readings": [
+        "<S>^キョ!ーワ|0レ^ービョ!ーガツ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e834c838721815b838f7c30838c5e815b8372838721815b834b83633c463e"
+      ],
+      "wav_bytes": 209662,
+      "wav_sha256": "ee1ffd6f9237b16a1a40fe1774c3b89f840a4eafe852347e5c348c09bed8a359"
+    },
+    {
+      "index": 8,
+      "text": "０秒月。",
+      "status": 0,
+      "readings": [
+        "<S>レ^ービョ!ーガツ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e838c5e815b8372838721815b834b83633c463e"
+      ],
+      "wav_bytes": 169072,
+      "wav_sha256": "a48cf42725d3482c843ea29d5afc88525aa2774b54866bcc32f1654fb2a0fdf0"
+    },
+    {
+      "index": 9,
+      "text": "五読む０秒月。",
+      "status": 0,
+      "readings": [
+        "<S>ゴ|0^ヨ!ム$1_1レ^ービョ!ーガツ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83537c305e838821838024315f31838c5e815b8372838721815b834b83633c463e"
+      ],
+      "wav_bytes": 235132,
+      "wav_sha256": "40ed62559c64ac8308bcb122d23cccfc166863e28c6327f30a537eb655ff9b6d"
+    },
+    {
+      "index": 10,
+      "text": "読む０秒月。",
+      "status": 0,
+      "readings": [
+        "<S>^ヨ!ム|0レ^ービョ!ーガツ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e83882183807c30838c5e815b8372838721815b834b83633c463e"
+      ],
+      "wav_bytes": 199864,
+      "wav_sha256": "ee79babba597fb0f068e1fbd0e91cbb7546a229180bd1f97e47861eb3d9ec8d2"
+    },
+    {
+      "index": 11,
+      "text": "今日は０秒月。",
+      "status": 0,
+      "readings": [
+        "<S>^キョ!ーワ|0レ^ービョ!ーガツ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e834c838721815b838f7c30838c5e815b8372838721815b834b83633c463e"
+      ],
+      "wav_bytes": 209662,
+      "wav_sha256": "ee1ffd6f9237b16a1a40fe1774c3b89f840a4eafe852347e5c348c09bed8a359"
+    },
+    {
+      "index": 12,
+      "text": "零秒年。",
+      "status": 0,
+      "readings": [
+        "<S>レ^ービョ!ーネン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e838c5e815b8372838721815b836c83933c463e"
+      ],
+      "wav_bytes": 165990,
+      "wav_sha256": "94b33575f15c0d718fef8981e348d115a9fbf3c38c6ea38c91f6a9cd19a2443f"
+    },
+    {
+      "index": 13,
+      "text": "五読む零秒年。",
+      "status": 0,
+      "readings": [
+        "<S>ゴ|0^ヨ!ム|0レ^ービョ!ーネン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83537c305e83882183807c30838c5e815b8372838721815b836c83933c463e"
+      ],
+      "wav_bytes": 208058,
+      "wav_sha256": "807be9aea393ecc4e723ccac12939007efa780cef1a9ccdc92424245999cf77b"
+    },
+    {
+      "index": 14,
+      "text": "読む零秒年。",
+      "status": 0,
+      "readings": [
+        "<S>^ヨ!ム|0レ^ービョ!ーネン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e83882183807c30838c5e815b8372838721815b836c83933c463e"
+      ],
+      "wav_bytes": 196454,
+      "wav_sha256": "957063055493cf07a3abb514dadf10d42a24a9558e6f0926ffba02d0adba88ae"
+    },
+    {
+      "index": 15,
+      "text": "今日は零秒年。",
+      "status": 0,
+      "readings": [
+        "<S>^キョ!ーワ|0レ^ービョ!ーネン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e834c838721815b838f7c30838c5e815b8372838721815b836c83933c463e"
+      ],
+      "wav_bytes": 206290,
+      "wav_sha256": "dca56cd0f13e3c5c96880a1af2fcb56cf835dab0b829a1af9801ed7101de8433"
+    },
+    {
+      "index": 16,
+      "text": "零秒個月。",
+      "status": 0,
+      "readings": [
+        "<S>レ^ービョーカ!ゲツ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e838c5e815b83728387815b834a21835183633c463e"
+      ],
+      "wav_bytes": 181406,
+      "wav_sha256": "7b12a5bb98fdc7f121c6aa23c1ae996783f304003b1662be3004f101e3a05a32"
+    },
+    {
+      "index": 17,
+      "text": "五読む零秒個月。",
+      "status": 0,
+      "readings": [
+        "<S>ゴ|0^ヨ!ム|0レ^ービョーカ!ゲツ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83537c305e83882183807c30838c5e815b83728387815b834a21835183633c463e"
+      ],
+      "wav_bytes": 224078,
+      "wav_sha256": "c3b5f5d9dc5d8d28b14c90d7dd4dcf754d9ee5b30952f17841d92454d4e0dada"
+    },
+    {
+      "index": 18,
+      "text": "読む零秒個月。",
+      "status": 0,
+      "readings": [
+        "<S>^ヨ!ム|0レ^ービョーカ!ゲツ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e83882183807c30838c5e815b83728387815b834a21835183633c463e"
+      ],
+      "wav_bytes": 211790,
+      "wav_sha256": "150e59ca2d2ac5f780f580d0d3a315abb26ea793773b0db589da98c075a4d268"
+    },
+    {
+      "index": 19,
+      "text": "今日は零秒個月。",
+      "status": 0,
+      "readings": [
+        "<S>^キョ!ーワ|0レ^ービョーカ!ゲツ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e834c838721815b838f7c30838c5e815b83728387815b834a21835183633c463e"
+      ],
+      "wav_bytes": 221734,
+      "wav_sha256": "253c924280c0561fd031d9b823444a3d8a3e3852e1f8d04d51e74e523bd7621f"
+    },
+    {
+      "index": 20,
+      "text": "零秒。",
+      "status": 0,
+      "readings": [
+        "<S>^レ!ービョー<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e838c21815b83728387815b3c463e"
+      ],
+      "wav_bytes": 145596,
+      "wav_sha256": "97fe3699bab69e0b3d6054c192cc8ff5746d34eb2ab4ffb885ab67e1271c52a9"
+    },
+    {
+      "index": 21,
+      "text": "五読む零秒。",
+      "status": 0,
+      "readings": [
+        "<S>ゴ|0^ヨ!ム|0^レ!ービョー<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83537c305e83882183807c305e838c21815b83728387815b3c463e"
+      ],
+      "wav_bytes": 188490,
+      "wav_sha256": "62b0eb6a36ce087f16f4177438e680c4f19373d0835cf087af384d894648e14f"
+    },
+    {
+      "index": 22,
+      "text": "読む零秒。",
+      "status": 0,
+      "readings": [
+        "<S>^ヨ!ム|0^レ!ービョー<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e83882183807c305e838c21815b83728387815b3c463e"
+      ],
+      "wav_bytes": 176388,
+      "wav_sha256": "5b4827368732dce8b886ded78d7b6a89c2b84745a2abbead07d7ef01ef8d1b44"
+    },
+    {
+      "index": 23,
+      "text": "今日は零秒。",
+      "status": 0,
+      "readings": [
+        "<S>^キョ!ーワ|0^レ!ービョー<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e834c838721815b838f7c305e838c21815b83728387815b3c463e"
+      ],
+      "wav_bytes": 186702,
+      "wav_sha256": "a94292edfa622b8278df5352d6d8374756ab8794889b55bde518d00646b2b881"
+    },
+    {
+      "index": 24,
+      "text": "五読む零秒月（本2。",
+      "status": 0,
+      "readings": [
+        "<S>ゴ|0^ヨ!ム|0レ^ービョ!ーガツ$1_1^ホ!ン|0ニ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83537c305e83882183807c30838c5e815b8372838721815b834b836324315f315e837a2183937c30836a3c463e"
+      ],
+      "wav_bytes": 280500,
+      "wav_sha256": "f2271852b4700c5951ace81a47223c10786fbae992d887503cb0ff2e2e136362"
+    }
+  ],
+  "complete": true,
+  "errors": [],
+  "executable_sha256": "de3be1e7979db53006add27f30131eb4c308c28ba78d6b7bb6365aecb01b3f2d",
+  "detach_reason": "process-terminated",
+  "crash": null,
+  "timed_out": false,
+  "native_report_sha256": "e2ba04dd333f3c21e035e4cdd0e513d75354a3d12d1402e257f5f5cba9bd3a0e"
+}

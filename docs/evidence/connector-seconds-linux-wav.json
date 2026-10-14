@@ -1,0 +1,15 @@
+{
+  "scope": "Linux amd64 DLL-free replay of all8 original references. Terminal PASS, all8 whole WAV size/hash checks passed. No process or tool handle remains after session transition; exit code unavailable. Binary predates hyphen ratio change. Not allCPU/input proof.",
+  "binary_sha256": "e8f464c85b831d3d0b873d884ed8b5e00d603556703825d25be3d6e6e92eadd6",
+  "log_sha256": "9bfaab20bac0c6714f924522329f622ebfb4830dba41016ab4d0729de748cd32",
+  "result_lines": [
+    "    mixed_rei_original_test.go:76: whole original WAV identical: \"9−千二兆千秒8兆1時。\", 367390 bytes",
+    "    mixed_rei_original_test.go:76: whole original WAV identical: \"9−千秒8本。\", 251778 bytes",
+    "    mixed_rei_original_test.go:76: whole original WAV identical: \"9−1秒8。\", 231396 bytes",
+    "    mixed_rei_original_test.go:76: whole original WAV identical: \"1−2秒03本。\", 261366 bytes",
+    "    mixed_rei_original_test.go:76: whole original WAV identical: \"9−千二兆千秒8兆1時。\", 367390 bytes",
+    "    mixed_rei_original_test.go:76: whole original WAV identical: \"9−千秒8本。\", 251778 bytes",
+    "    mixed_rei_original_test.go:76: whole original WAV identical: \"9−1秒8。\", 231396 bytes",
+    "    mixed_rei_original_test.go:76: whole original WAV identical: \"1−2秒03本。\", 261366 bytes"
+  ]
+}

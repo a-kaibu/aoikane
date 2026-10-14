@@ -1,0 +1,55 @@
+{
+  "source": "ordinary hook-free SDK/Go WAV comparison; all saved whole WAVs rehashed against independent original captures",
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "original_threads": 6,
+  "avx512_convolutions": false,
+  "report_sha256": [
+    "60182e29dc4cc7d5d87b6eee62bea34a21af233b491413cc5f7e6ce26d06b09d",
+    "2e303c337ba582dabf8915830d6c64d1c83dda04fbdbc19d7c743ed864b061bc"
+  ],
+  "capture_sha256": [
+    "b740f7e6bc91248b705f534c1714bf019147b929c0c4efc2fbc8a984a947295a",
+    "08ff04ac77c3baeebee497d88fe4655a1265c5b11abf0b27e388b66ab69c5a2a",
+    "acdc324207421e3908dcaba01ad12d9dc45c7b15b29c1a1247a0a24877b0833c",
+    "60ee738a67ada4cf48f4e6fdef0903de67ebb099f04e70898f1293f02975c1fc"
+  ],
+  "cases": [
+    {
+      "text": "学校百十９1。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 292802,
+      "sha256": "fd455499f91f2cb3ebb69867e99e3d37358cb44c3a92016172bc2c32bf1b62f1"
+    },
+    {
+      "text": "万5百時分百−。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 232952,
+      "sha256": "1751dabb3efbce6158437b4f7a69c92a021855d0f35fb7bfd0e7cc6e630a3867"
+    },
+    {
+      "text": "京5。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 137016,
+      "sha256": "096f96e807287219d146cb4df3180d017c3d0ed5e91556f13c7e52d03b952113"
+    },
+    {
+      "text": "学校百十９1。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 293298,
+      "sha256": "31a3b8fbe279c25d4a0d9ff110ad6262d6a3c13cc9d2e0026100f80b78779210"
+    },
+    {
+      "text": "万5百時分百−。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 232952,
+      "sha256": "1751dabb3efbce6158437b4f7a69c92a021855d0f35fb7bfd0e7cc6e630a3867"
+    },
+    {
+      "text": "京5。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 134982,
+      "sha256": "3009851699a7f4b7a772ec9c9930f5021f5ba46ec41ae3ffbfa2ceb421a4c163"
+    }
+  ]
+}

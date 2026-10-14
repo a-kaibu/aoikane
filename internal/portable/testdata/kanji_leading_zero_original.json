@@ -1,0 +1,141 @@
+{
+  "source": "ordinary original Akane frontend; tools/probe_graph.py; PROBE_MULTI=100; normal completion; no injected inputs",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "voice": "KotonohaAkane_ns_48",
+  "capture_sha256": [
+    "fce0a79546a1320dbd318d045677851b031ec3070c4592f0411aab5ea3e40f57",
+    "539507c5e2a23a50367f0ceaf82758bd079b1e1c1d5a7dec3749e39bde925332",
+    "0dd26a75c90dce42afb43fb77075b41a41b2c29e145d33a03e10745315875375"
+  ],
+  "rules_sha256": "8d960f8a82d5e02b31d4576051e6bae32770e793f0bf82bc4479181795fbcab7",
+  "cases": [
+    {
+      "text": "〇〇。",
+      "reading": "<S>ゼ^ロゼ!ロ<F>"
+    },
+    {
+      "text": "〇一。",
+      "reading": "<S>ゼ^ロイ!チ<F>"
+    },
+    {
+      "text": "〇〇一。",
+      "reading": "<S>ゼ^ロゼ!ロ|0イ^チ<F>"
+    },
+    {
+      "text": "〇一人。",
+      "reading": "<S>ゼ^ロイチ!ニン<F>"
+    },
+    {
+      "text": "〇〇一人。",
+      "reading": "<S>ゼ^ロゼ!ロ|0イ^チ!ニン<F>"
+    },
+    {
+      "text": "〇一六本。",
+      "reading": "<S>ゼ^ロイ!チ|0ロ^ク!ホン<F>"
+    },
+    {
+      "text": "〇四年。",
+      "reading": "<S>ヨ^ネン<F>"
+    },
+    {
+      "text": "〇四日。",
+      "reading": "<S>ヨ^ッカ<F>"
+    },
+    {
+      "text": "〇〇年。",
+      "reading": "<S>ゼ^ロ!ネン<F>"
+    },
+    {
+      "text": "〇０一。",
+      "reading": "<S>^ゼ!ロ|0^ゼ!ロ|0イ^チ<F>"
+    },
+    {
+      "text": "０〇一。",
+      "reading": "<S>^ゼ!ロ|0ゼ^ロイ!チ<F>"
+    },
+    {
+      "text": "〇十二。",
+      "reading": "<S>^ゼ!ロ|0ジュ^ーニ<F>"
+    },
+    {
+      "text": "〇〇十二。",
+      "reading": "<S>ゼ^ロゼ!ロ|0ジュ^ーニ<F>"
+    },
+    {
+      "text": "〇一十。",
+      "reading": "<S>ゼ^ロイ!チ|0^ジュ!ー<F>"
+    },
+    {
+      "text": "〇一百。",
+      "reading": "<S>ゼ^ロイ!チ|0ヒャ^ク<F>"
+    },
+    {
+      "text": "〇十人。",
+      "reading": "<S>^ゼ!ロ|0^ジュ!ーニン<F>"
+    },
+    {
+      "text": "〇〇十人。",
+      "reading": "<S>ゼ^ロゼ!ロ|0^ジュ!ーニン<F>"
+    },
+    {
+      "text": "〇十二日。",
+      "reading": "<S>^ゼ!ロ|0ジュ^ーニニチ<F>"
+    },
+    {
+      "text": "〇一０。",
+      "reading": "<S>ゼ^ロイ!チ|0^ゼ!ロ<F>"
+    },
+    {
+      "text": "〇一０本。",
+      "reading": "<S>ゼ^ロイ!チ|0ゼ^ロ!ホン<F>"
+    },
+    {
+      "text": "０〇一人。",
+      "reading": "<S>^ゼ!ロ|0ゼ^ロイチ!ニン<F>"
+    },
+    {
+      "text": "０〇四日。",
+      "reading": "<S>^ゼ!ロ|0ゼ^ロヨ!ンニチ<F>"
+    },
+    {
+      "text": "一〇一。",
+      "reading": "<S>ヒャ^ク|0イ^チ<F>"
+    },
+    {
+      "text": "〇１人。",
+      "reading": "<S>^ゼ!ロ|0イ^チ!ニン<F>"
+    },
+    {
+      "text": "0十二。",
+      "reading": "<S>^ゼ!ロ|0ジュ^ーニ<F>"
+    },
+    {
+      "text": "01十。",
+      "reading": "<S>^ゼ!ロ|0^ジュ!ー<F>"
+    },
+    {
+      "text": "00十二。",
+      "reading": "<S>ゼ^ロゼ!ロ|0ジュ^ーニ<F>"
+    },
+    {
+      "text": "0十人。",
+      "reading": "<S>^ゼ!ロ|0^ジュ!ーニン<F>"
+    },
+    {
+      "text": "0十四日。",
+      "reading": "<S>^ゼ!ロ|0ジュ^ーヨ!ンニチ<F>"
+    },
+    {
+      "text": "〇十四日。",
+      "reading": "<S>^ゼ!ロ|0ジュ^ーヨ!ンニチ<F>"
+    },
+    {
+      "text": "0万。",
+      "reading": "<S>ゼ^ロマ!ン<F>"
+    },
+    {
+      "text": "〇万。",
+      "reading": "<S>ゼ^ロマ!ン<F>"
+    }
+  ]
+}

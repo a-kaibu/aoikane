@@ -1,0 +1,29 @@
+{
+  "source": "ordinary original Intel JIT vocoder calls; observed full WAV equals unobserved original; native layer intermediates are not graph inputs",
+  "cpu": "Intel64 Family 6 Model 207 Stepping 2, GenuineIntel",
+  "original_threads": 1,
+  "model_sha256": "ff245a6149817c01c2d559e49087892623116766d1f3c95e7996bac23e6887e0",
+  "torchscript_bytes": 9836696,
+  "torchscript_sha256_verified": false,
+  "dll_sha256": "00ca5c937940a94d052dbe52ec5fb0909db11ffbfccfd6e65e19b468169ff5e5",
+  "ordinary_wav_sha256": "6be20e8718dc8a1329426baa824b9dabef10315dddc2099a3ad11ffac6032d7d",
+  "events_sha256": "9e1326451b7e4ff38ca38950401e002ad64c102ee309d3014345d3c45d0155b9",
+  "reference_sha256": "e9d441ac9c931dd18bff4c3b994a2ca4a6e491c22c49263e1525ff00d9d7fa79",
+  "native_wave_sha256": "c5b7764e6ffe882ef9c0a830ef7a3abbad8a228810995f26e49e923199c74681",
+  "values": 63954,
+  "wave_values": 50160,
+  "cases": [
+    {
+      "run": 496,
+      "frames": 110,
+      "wave_values": 26400,
+      "wave_sha256": "0ceea041e61958bfeedd1c4ebd2087eb9df3d3aa0acfc1b013ae0960ab31ce40"
+    },
+    {
+      "run": 505,
+      "frames": 99,
+      "wave_values": 23760,
+      "wave_sha256": "45b9a3c50c822973a9291e680cfd0015e19dacc1c2542b6b26e9d6f4b8e8819f"
+    }
+  ]
+}

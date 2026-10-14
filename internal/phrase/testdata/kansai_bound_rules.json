@@ -1,0 +1,1341 @@
+{
+  "DLLHash": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "RulesHash": "bd3e1def477f017f514cb309896071348c7554fb1824a57ed029d05a3a67be85",
+  "CaptureHash": "4850826ee2cb71059298e46aaec2a2e8a08700bd06e16f9b297a595ed501de5a",
+  "Entry": "0x135e80",
+  "Source": "tools/probe_graph.py; ordinary Akane frontend; synthesis stopped after frontend; private/kansai-bound-rules-fresh.jsonl",
+  "Cases": [
+    {
+      "Text": "こんにちは。",
+      "Input": [
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": "",
+          "Surface": "こんにちは",
+          "Base": "こんにちは",
+          "POS": 167772160,
+          "POS2": 0,
+          "POS3": 0,
+          "Selected": 0,
+          "Cands": [
+            {
+              "Reading": "コンニチハ",
+              "Pronunciation": "コンニチワ",
+              "Accent": "2-5-5",
+              "Connection": "*"
+            }
+          ]
+        },
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": "",
+          "Surface": "。",
+          "Base": "。",
+          "POS": 184614912,
+          "POS2": 0,
+          "POS3": 0,
+          "Selected": 0,
+          "Cands": [
+            {
+              "Reading": "＊",
+              "Pronunciation": "",
+              "Accent": "*",
+              "Connection": "*"
+            }
+          ]
+        },
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": "",
+          "Surface": "",
+          "Base": "",
+          "POS": 0,
+          "POS2": 0,
+          "POS3": 0,
+          "Selected": 0,
+          "Cands": []
+        }
+      ],
+      "EOS": 2,
+      "Output": [
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": ""
+        },
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": ""
+        },
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": ""
+        }
+      ]
+    },
+    {
+      "Text": "今日はええ天気やな。",
+      "Input": [
+        {
+          "Kind": 1,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": "",
+          "Surface": "今日",
+          "Base": "今日",
+          "POS": 16973824,
+          "POS2": 0,
+          "POS3": 0,
+          "Selected": 0,
+          "Cands": [
+            {
+              "Reading": "キョウ",
+              "Pronunciation": "キョー",
+              "Accent": "2-0-2",
+              "Connection": "C3"
+            },
+            {
+              "Reading": "コンニチ",
+              "Pronunciation": "コンニチ",
+              "Accent": "1-1-4",
+              "Connection": "C3"
+            }
+          ]
+        },
+        {
+          "Kind": 1,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": "",
+          "Surface": "はええ",
+          "Base": "はええ",
+          "POS": 67108864,
+          "POS2": 256,
+          "POS3": 2816,
+          "Selected": 0,
+          "Cands": [
+            {
+              "Reading": "ハエエ",
+              "Pronunciation": "ハエー",
+              "Accent": "2-2-3",
+              "Connection": "C1"
+            }
+          ]
+        },
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": "",
+          "Surface": "天気",
+          "Base": "天気",
+          "POS": 16777216,
+          "POS2": 0,
+          "POS3": 0,
+          "Selected": 0,
+          "Cands": [
+            {
+              "Reading": "テンキ",
+              "Pronunciation": "テンキ",
+              "Accent": "1-1-3",
+              "Connection": "C1"
+            }
+          ]
+        },
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": "",
+          "Surface": "や",
+          "Base": "や",
+          "POS": 150994944,
+          "POS2": 256,
+          "POS3": 3080,
+          "Selected": 0,
+          "Cands": [
+            {
+              "Reading": "ヤ",
+              "Pronunciation": "ヤ",
+              "Accent": "0-0-1",
+              "Connection": "名詞%K2@0,動詞%K2@0,形容詞%K1"
+            },
+            {
+              "Reading": "２ヤ",
+              "Pronunciation": "ヤ",
+              "Accent": "0-0-1",
+              "Connection": "K2@0"
+            },
+            {
+              "Reading": "３ヤ",
+              "Pronunciation": "ヤ",
+              "Accent": "0-0-1",
+              "Connection": "K1"
+            }
+          ]
+        },
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": "",
+          "Surface": "な",
+          "Base": "な",
+          "POS": 134610944,
+          "POS2": 0,
+          "POS3": 0,
+          "Selected": 0,
+          "Cands": [
+            {
+              "Reading": "ナ",
+              "Pronunciation": "ナ",
+              "Accent": "1-0-1",
+              "Connection": "K1"
+            },
+            {
+              "Reading": "ナ２",
+              "Pronunciation": "ナ",
+              "Accent": "1-0-1",
+              "Connection": "名詞%K1,動詞%K4@0,形容詞%K1"
+            },
+            {
+              "Reading": "ナ３",
+              "Pronunciation": "ナ",
+              "Accent": "1-0-1",
+              "Connection": "K4@-1"
+            }
+          ]
+        },
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": "",
+          "Surface": "。",
+          "Base": "。",
+          "POS": 184614912,
+          "POS2": 0,
+          "POS3": 0,
+          "Selected": 0,
+          "Cands": [
+            {
+              "Reading": "＊",
+              "Pronunciation": "",
+              "Accent": "*",
+              "Connection": "*"
+            }
+          ]
+        },
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": "",
+          "Surface": "",
+          "Base": "",
+          "POS": 0,
+          "POS2": 0,
+          "POS3": 0,
+          "Selected": 0,
+          "Cands": []
+        }
+      ],
+      "EOS": 6,
+      "Output": [
+        {
+          "Kind": 1,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": ""
+        },
+        {
+          "Kind": 1,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": ""
+        },
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": ""
+        },
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": ""
+        },
+        {
+          "Kind": 0,
+          "Kind2": 34,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": "終助詞-ね、よ、な"
+        },
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": ""
+        },
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": ""
+        }
+      ]
+    },
+    {
+      "Text": "明日、大阪へ行きます。",
+      "Input": [
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": "",
+          "Surface": "明日",
+          "Base": "明日",
+          "POS": 16973824,
+          "POS2": 0,
+          "POS3": 0,
+          "Selected": 0,
+          "Cands": [
+            {
+              "Reading": "アス",
+              "Pronunciation": "アス",
+              "Accent": "1-1-2",
+              "Connection": "C2"
+            },
+            {
+              "Reading": "アシタ",
+              "Pronunciation": "アシタ",
+              "Accent": "1-0-3",
+              "Connection": "C2"
+            },
+            {
+              "Reading": "ミョウニチ",
+              "Pronunciation": "ミョーニチ",
+              "Accent": "1-1-4",
+              "Connection": "C1"
+            }
+          ]
+        },
+        {
+          "Kind": 4,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": "",
+          "Surface": "、",
+          "Base": "、",
+          "POS": 184680448,
+          "POS2": 0,
+          "POS3": 0,
+          "Selected": 0,
+          "Cands": [
+            {
+              "Reading": "＊",
+              "Pronunciation": "",
+              "Accent": "*",
+              "Connection": "*"
+            }
+          ]
+        },
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": "",
+          "Surface": "大阪",
+          "Base": "大阪",
+          "POS": 16843520,
+          "POS2": 0,
+          "POS3": 0,
+          "Selected": 0,
+          "Cands": [
+            {
+              "Reading": "オオサカ",
+              "Pronunciation": "オーサカ",
+              "Accent": "1-0-4",
+              "Connection": "*"
+            }
+          ]
+        },
+        {
+          "Kind": 1,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": "",
+          "Surface": "へ",
+          "Base": "へ",
+          "POS": 134217728,
+          "POS2": 0,
+          "POS3": 0,
+          "Selected": 0,
+          "Cands": [
+            {
+              "Reading": "ヘ",
+              "Pronunciation": "エ",
+              "Accent": "0-0-1",
+              "Connection": "名詞%K1"
+            }
+          ]
+        },
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": "",
+          "Surface": "行き",
+          "Base": "行く",
+          "POS": 50331648,
+          "POS2": 1536,
+          "POS3": 1025,
+          "Selected": 0,
+          "Cands": [
+            {
+              "Reading": "イキ",
+              "Pronunciation": "イキ",
+              "Accent": "1-0-2",
+              "Connection": "*"
+            }
+          ]
+        },
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": "",
+          "Surface": "ます",
+          "Base": "ます",
+          "POS": 150994944,
+          "POS2": 256,
+          "POS3": 3078,
+          "Selected": 0,
+          "Cands": [
+            {
+              "Reading": "マス",
+              "Pronunciation": "マス",
+              "Accent": "1-0-2",
+              "Connection": "K5"
+            },
+            {
+              "Reading": "２マス",
+              "Pronunciation": "マス",
+              "Accent": "1-0-2",
+              "Connection": "K2@1"
+            }
+          ]
+        },
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": "",
+          "Surface": "。",
+          "Base": "。",
+          "POS": 184614912,
+          "POS2": 0,
+          "POS3": 0,
+          "Selected": 0,
+          "Cands": [
+            {
+              "Reading": "＊",
+              "Pronunciation": "",
+              "Accent": "*",
+              "Connection": "*"
+            }
+          ]
+        },
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": "",
+          "Surface": "",
+          "Base": "",
+          "POS": 0,
+          "POS2": 0,
+          "POS3": 0,
+          "Selected": 0,
+          "Cands": []
+        }
+      ],
+      "EOS": 7,
+      "Output": [
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": ""
+        },
+        {
+          "Kind": 4,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": ""
+        },
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": ""
+        },
+        {
+          "Kind": 1,
+          "Kind2": 31,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": "格助詞、係助詞、途中で中止"
+        },
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": ""
+        },
+        {
+          "Kind": 0,
+          "Kind2": 31,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": "です、ます、する"
+        },
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": ""
+        },
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": ""
+        }
+      ]
+    },
+    {
+      "Text": "なんでやねん。",
+      "Input": [
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": "",
+          "Surface": "なんで",
+          "Base": "なんで",
+          "POS": 83886080,
+          "POS2": 0,
+          "POS3": 0,
+          "Selected": 0,
+          "Cands": [
+            {
+              "Reading": "ナンデ",
+              "Pronunciation": "ナンデ",
+              "Accent": "3-0-3",
+              "Connection": "*"
+            }
+          ]
+        },
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": "",
+          "Surface": "や",
+          "Base": "や",
+          "POS": 150994944,
+          "POS2": 256,
+          "POS3": 3080,
+          "Selected": 0,
+          "Cands": [
+            {
+              "Reading": "ヤ",
+              "Pronunciation": "ヤ",
+              "Accent": "0-0-1",
+              "Connection": "名詞%K2@0,動詞%K2@0,形容詞%K1"
+            },
+            {
+              "Reading": "２ヤ",
+              "Pronunciation": "ヤ",
+              "Accent": "0-0-1",
+              "Connection": "K2@0"
+            },
+            {
+              "Reading": "３ヤ",
+              "Pronunciation": "ヤ",
+              "Accent": "0-0-1",
+              "Connection": "K1"
+            }
+          ]
+        },
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": "",
+          "Surface": "ねん",
+          "Base": "ねん",
+          "POS": 134610944,
+          "POS2": 0,
+          "POS3": 0,
+          "Selected": 0,
+          "Cands": [
+            {
+              "Reading": "ネン",
+              "Pronunciation": "ネン",
+              "Accent": "0-0-2",
+              "Connection": "K2@0"
+            },
+            {
+              "Reading": "ネン２",
+              "Pronunciation": "ネン",
+              "Accent": "0-0-2",
+              "Connection": "K2@-1"
+            }
+          ]
+        },
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": "",
+          "Surface": "。",
+          "Base": "。",
+          "POS": 184614912,
+          "POS2": 0,
+          "POS3": 0,
+          "Selected": 0,
+          "Cands": [
+            {
+              "Reading": "＊",
+              "Pronunciation": "",
+              "Accent": "*",
+              "Connection": "*"
+            }
+          ]
+        },
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": "",
+          "Surface": "",
+          "Base": "",
+          "POS": 0,
+          "POS2": 0,
+          "POS3": 0,
+          "Selected": 0,
+          "Cands": []
+        }
+      ],
+      "EOS": 4,
+      "Output": [
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": ""
+        },
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": ""
+        },
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": ""
+        },
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": ""
+        },
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": ""
+        }
+      ]
+    },
+    {
+      "Text": "私は学校で本を読みます。",
+      "Input": [
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": "",
+          "Surface": "私",
+          "Base": "私",
+          "POS": 16908288,
+          "POS2": 0,
+          "POS3": 0,
+          "Selected": 0,
+          "Cands": [
+            {
+              "Reading": "ワタシ",
+              "Pronunciation": "ワタシ",
+              "Accent": "3-0-3",
+              "Connection": "C2"
+            }
+          ]
+        },
+        {
+          "Kind": 4,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": "",
+          "Surface": "は",
+          "Base": "は",
+          "POS": 134348800,
+          "POS2": 0,
+          "POS3": 0,
+          "Selected": 0,
+          "Cands": [
+            {
+              "Reading": "ワ",
+              "Pronunciation": "ワ",
+              "Accent": "1-0-1",
+              "Connection": "名詞%K1,動詞%K1,形容詞%K2@0"
+            },
+            {
+              "Reading": "ハ",
+              "Pronunciation": "ハ",
+              "Accent": "1-0-1",
+              "Connection": "K1"
+            },
+            {
+              "Reading": "ワ２",
+              "Pronunciation": "ワ",
+              "Accent": "1-0-1",
+              "Connection": "K2@0"
+            }
+          ]
+        },
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": "",
+          "Surface": "学校",
+          "Base": "学校",
+          "POS": 16777216,
+          "POS2": 0,
+          "POS3": 0,
+          "Selected": 0,
+          "Cands": [
+            {
+              "Reading": "ガッコウ",
+              "Pronunciation": "ガッコー",
+              "Accent": "4-0-4",
+              "Connection": "C2"
+            }
+          ]
+        },
+        {
+          "Kind": 19,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": "",
+          "Surface": "で",
+          "Base": "で",
+          "POS": 134217728,
+          "POS2": 0,
+          "POS3": 0,
+          "Selected": 0,
+          "Cands": [
+            {
+              "Reading": "デ",
+              "Pronunciation": "デ",
+              "Accent": "1-0-1",
+              "Connection": "名詞%K1"
+            }
+          ]
+        },
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": "",
+          "Surface": "本",
+          "Base": "本",
+          "POS": 16777216,
+          "POS2": 0,
+          "POS3": 0,
+          "Selected": 0,
+          "Cands": [
+            {
+              "Reading": "ホン",
+              "Pronunciation": "ホン",
+              "Accent": "1-1-2",
+              "Connection": "C3"
+            }
+          ]
+        },
+        {
+          "Kind": 1,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": "",
+          "Surface": "を",
+          "Base": "を",
+          "POS": 134217728,
+          "POS2": 0,
+          "POS3": 0,
+          "Selected": 0,
+          "Cands": [
+            {
+              "Reading": "ヲ",
+              "Pronunciation": "オ",
+              "Accent": "1-0-1",
+              "Connection": "名詞%K1"
+            },
+            {
+              "Reading": "ヲ２",
+              "Pronunciation": "オ",
+              "Accent": "1-0-1",
+              "Connection": "K2@0"
+            }
+          ]
+        },
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": "",
+          "Surface": "読み",
+          "Base": "読む",
+          "POS": 50331648,
+          "POS2": 1536,
+          "POS3": 1032,
+          "Selected": 0,
+          "Cands": [
+            {
+              "Reading": "ヨミ",
+              "Pronunciation": "ヨミ",
+              "Accent": "2-0-2",
+              "Connection": "*"
+            }
+          ]
+        },
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": "",
+          "Surface": "ます",
+          "Base": "ます",
+          "POS": 150994944,
+          "POS2": 256,
+          "POS3": 3078,
+          "Selected": 0,
+          "Cands": [
+            {
+              "Reading": "マス",
+              "Pronunciation": "マス",
+              "Accent": "1-0-2",
+              "Connection": "K5"
+            },
+            {
+              "Reading": "２マス",
+              "Pronunciation": "マス",
+              "Accent": "1-0-2",
+              "Connection": "K2@1"
+            }
+          ]
+        },
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": "",
+          "Surface": "。",
+          "Base": "。",
+          "POS": 184614912,
+          "POS2": 0,
+          "POS3": 0,
+          "Selected": 0,
+          "Cands": [
+            {
+              "Reading": "＊",
+              "Pronunciation": "",
+              "Accent": "*",
+              "Connection": "*"
+            }
+          ]
+        },
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": "",
+          "Surface": "",
+          "Base": "",
+          "POS": 0,
+          "POS2": 0,
+          "POS3": 0,
+          "Selected": 0,
+          "Cands": []
+        }
+      ],
+      "EOS": 9,
+      "Output": [
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": ""
+        },
+        {
+          "Kind": 4,
+          "Kind2": 31,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": "格助詞、係助詞、途中で中止"
+        },
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": ""
+        },
+        {
+          "Kind": 19,
+          "Kind2": 31,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": "格助詞、係助詞、途中で中止"
+        },
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": ""
+        },
+        {
+          "Kind": 1,
+          "Kind2": 31,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": "格助詞、係助詞、途中で中止"
+        },
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": ""
+        },
+        {
+          "Kind": 0,
+          "Kind2": 31,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": "です、ます、する"
+        },
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": ""
+        },
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": ""
+        }
+      ]
+    },
+    {
+      "Text": "これは本当においしいです。",
+      "Input": [
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": "",
+          "Surface": "これ",
+          "Base": "これ",
+          "POS": 16908288,
+          "POS2": 0,
+          "POS3": 0,
+          "Selected": 0,
+          "Cands": [
+            {
+              "Reading": "コレ",
+              "Pronunciation": "コレ",
+              "Accent": "1-0-2",
+              "Connection": "C3"
+            }
+          ]
+        },
+        {
+          "Kind": 19,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": "",
+          "Surface": "は",
+          "Base": "は",
+          "POS": 134348800,
+          "POS2": 0,
+          "POS3": 0,
+          "Selected": 0,
+          "Cands": [
+            {
+              "Reading": "ワ",
+              "Pronunciation": "ワ",
+              "Accent": "1-0-1",
+              "Connection": "名詞%K1,動詞%K1,形容詞%K2@0"
+            },
+            {
+              "Reading": "ハ",
+              "Pronunciation": "ハ",
+              "Accent": "1-0-1",
+              "Connection": "K1"
+            },
+            {
+              "Reading": "ワ２",
+              "Pronunciation": "ワ",
+              "Accent": "1-0-1",
+              "Connection": "K2@0"
+            }
+          ]
+        },
+        {
+          "Kind": 1,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": "",
+          "Surface": "本当に",
+          "Base": "本当に",
+          "POS": 83886080,
+          "POS2": 0,
+          "POS3": 0,
+          "Selected": 0,
+          "Cands": [
+            {
+              "Reading": "ホントウニ",
+              "Pronunciation": "ホントーニ",
+              "Accent": "5-0-5",
+              "Connection": "*"
+            }
+          ]
+        },
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": "",
+          "Surface": "おいしい",
+          "Base": "おいしい",
+          "POS": 67108864,
+          "POS2": 256,
+          "POS3": 2561,
+          "Selected": 0,
+          "Cands": [
+            {
+              "Reading": "オイシイ",
+              "Pronunciation": "オイシイ",
+              "Accent": "3-3-4",
+              "Connection": "*"
+            },
+            {
+              "Reading": "３オイシイ",
+              "Pronunciation": "オイシイ",
+              "Accent": "0-0-4",
+              "Connection": "*"
+            }
+          ]
+        },
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": "",
+          "Surface": "です",
+          "Base": "です",
+          "POS": 150994944,
+          "POS2": 256,
+          "POS3": 3076,
+          "Selected": 0,
+          "Cands": [
+            {
+              "Reading": "デス",
+              "Pronunciation": "デス",
+              "Accent": "2-0-2",
+              "Connection": "名詞%K1,動詞%K1,形容詞%K2@0"
+            },
+            {
+              "Reading": "２デス",
+              "Pronunciation": "デス",
+              "Accent": "2-0-2",
+              "Connection": "名詞%K2@0,動詞%K2@0,形容詞%K2@0"
+            },
+            {
+              "Reading": "３デス",
+              "Pronunciation": "デス",
+              "Accent": "2-0-2",
+              "Connection": "K1"
+            },
+            {
+              "Reading": "５デス",
+              "Pronunciation": "デス",
+              "Accent": "0-0-2",
+              "Connection": "S1"
+            }
+          ]
+        },
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": "",
+          "Surface": "。",
+          "Base": "。",
+          "POS": 184614912,
+          "POS2": 0,
+          "POS3": 0,
+          "Selected": 0,
+          "Cands": [
+            {
+              "Reading": "＊",
+              "Pronunciation": "",
+              "Accent": "*",
+              "Connection": "*"
+            }
+          ]
+        },
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": "",
+          "Surface": "",
+          "Base": "",
+          "POS": 0,
+          "POS2": 0,
+          "POS3": 0,
+          "Selected": 0,
+          "Cands": []
+        }
+      ],
+      "EOS": 6,
+      "Output": [
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": ""
+        },
+        {
+          "Kind": 19,
+          "Kind2": 31,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": "格助詞、係助詞、途中で中止"
+        },
+        {
+          "Kind": 1,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": ""
+        },
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": ""
+        },
+        {
+          "Kind": 0,
+          "Kind2": 31,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": "です、ます、する"
+        },
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": ""
+        },
+        {
+          "Kind": 0,
+          "Kind2": 0,
+          "Up": -1,
+          "Down": -1,
+          "Moras": -1,
+          "Annotation": ""
+        }
+      ]
+    }
+  ]
+}

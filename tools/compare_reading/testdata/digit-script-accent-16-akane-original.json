@@ -1,0 +1,223 @@
+{
+  "source": "ordinary original SDK talk; formatter observed without tensor injection; frontend-only capture",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "voice": "KotonohaAkane_ns_48",
+  "corpus_sha256": "f577169b24bf150b005b067eaa7f99e8eac0a5445d5ac35826e68bfb7598fb36",
+  "cases": [
+    {
+      "index": 0,
+      "text": "80五。",
+      "status": 0,
+      "readings": [
+        "<S>ハ^チジュ!ー|0^ゴ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e836e5e83608357838521815b7c305e83533c463e"
+      ],
+      "wav_bytes": 167084,
+      "wav_sha256": "35de9500372b7343cb5f9cb515cc641fb06a574e25193bf1e4ecf34791660f53"
+    },
+    {
+      "index": 1,
+      "text": "８０五年。",
+      "status": 0,
+      "readings": [
+        "<S>ハ^チジュ!ー|0ゴ^ネン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e836e5e83608357838521815b7c3083535e836c83933c463e"
+      ],
+      "wav_bytes": 190496,
+      "wav_sha256": "dab7bc67c15aad4543b8cb1c110b008d63ffb54962ccd7ef84167cf80a47b105"
+    },
+    {
+      "index": 2,
+      "text": "80５。",
+      "status": 0,
+      "readings": [
+        "<S>ハ^ッピャク|0^ゴ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e836e5e836283738383834e7c305e83533c463e"
+      ],
+      "wav_bytes": 160844,
+      "wav_sha256": "aa15c9db5880d7f900b1d9d0d7623383339188833ee394f7efb0c98fa08bcccf"
+    },
+    {
+      "index": 3,
+      "text": "八〇5。",
+      "status": 0,
+      "readings": [
+        "<S>ハ^チジュ!ー|0^ゴ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e836e5e83608357838521815b7c305e83533c463e"
+      ],
+      "wav_bytes": 167084,
+      "wav_sha256": "35de9500372b7343cb5f9cb515cc641fb06a574e25193bf1e4ecf34791660f53"
+    },
+    {
+      "index": 4,
+      "text": "80二。",
+      "status": 0,
+      "readings": [
+        "<S>ハ^チジュ!ー|0^ニ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e836e5e83608357838521815b7c305e836a3c463e"
+      ],
+      "wav_bytes": 168524,
+      "wav_sha256": "9445165555fb63ce39502c69a90fc3d7fe85216ec4d5daa6d437aa48f78ba89f"
+    },
+    {
+      "index": 5,
+      "text": "60五。",
+      "status": 0,
+      "readings": [
+        "<S>ロ^クジュ!ー|0^ゴ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e838d5e834e8357838521815b7c305e83533c463e"
+      ],
+      "wav_bytes": 166604,
+      "wav_sha256": "e10435139646e6c23acd2461f11a0be823bab8440ab209a833964134c87bc2c3"
+    },
+    {
+      "index": 6,
+      "text": "50五。",
+      "status": 0,
+      "readings": [
+        "<S>ゴ^ジュ!ー|0^ゴ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83535e8357838521815b7c305e83533c463e"
+      ],
+      "wav_bytes": 154470,
+      "wav_sha256": "8398e6e239c262586fc6e9921e7c9fec4defc53a6c5cccfcbf41a046e2b4979c"
+    },
+    {
+      "index": 7,
+      "text": "70五。",
+      "status": 0,
+      "readings": [
+        "<S>ナ^ナ!ジュー|0^ゴ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83695e83692183578385815b7c305e83533c463e"
+      ],
+      "wav_bytes": 165644,
+      "wav_sha256": "2ef8ce3d6bc6fb37550342bdb37de6932ab6faa442309f610812a6f953cc6a78"
+    },
+    {
+      "index": 8,
+      "text": "90五。",
+      "status": 0,
+      "readings": [
+        "<S>^キュ!ージュー|0^ゴ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e834c838521815b83578385815b7c305e83533c463e"
+      ],
+      "wav_bytes": 161400,
+      "wav_sha256": "518f83e2b15f7b2f0ffc0d1d3e5fb341cbf77a25ded508d6ebc7acc73f06f14b"
+    },
+    {
+      "index": 9,
+      "text": "20五。",
+      "status": 0,
+      "readings": [
+        "<S>^ニ!ジュー|0^ゴ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e836a2183578385815b7c305e83533c463e"
+      ],
+      "wav_bytes": 152208,
+      "wav_sha256": "626228f223c8d60e38de04ebe72f5022482182ebf0f04455025ecce6c240cad9"
+    },
+    {
+      "index": 10,
+      "text": "30五。",
+      "status": 0,
+      "readings": [
+        "<S>^サ!ンジュー|0^ゴ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e835421839383578385815b7c305e83533c463e"
+      ],
+      "wav_bytes": 166124,
+      "wav_sha256": "f5d1ff8f7d6154bcadd0bd6871b074d3a085fba8e4690fcfb1fa49c009f28df1"
+    },
+    {
+      "index": 11,
+      "text": "40五。",
+      "status": 0,
+      "readings": [
+        "<S>^ヨ!ンジュー|0^ゴ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e838821839383578385815b7c305e83533c463e"
+      ],
+      "wav_bytes": 164100,
+      "wav_sha256": "50bef905b24d74b3b4ffd8c4849762bb124d49067b9b0e098cab204fb1a4ddf3"
+    },
+    {
+      "index": 12,
+      "text": "80五人。",
+      "status": 0,
+      "readings": [
+        "<S>ハ^チジュ!ー|0ゴ^ニ!ン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e836e5e83608357838521815b7c3083535e836a2183933c463e"
+      ],
+      "wav_bytes": 188046,
+      "wav_sha256": "0cc3ffe622227ad3d51eb36baa6a64ab512fe515395c312c19b8a238f2b65a73"
+    },
+    {
+      "index": 13,
+      "text": "80五円。",
+      "status": 0,
+      "readings": [
+        "<S>ハ^チジュ!ー|0^ゴ!エン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e836e5e83608357838521815b7c305e835321834783933c463e"
+      ],
+      "wav_bytes": 188108,
+      "wav_sha256": "bd1bc3d864620d9b470dfd7cec2e24b6774d0aa28c06df744a2f68413e99c9ec"
+    },
+    {
+      "index": 14,
+      "text": "80五本。",
+      "status": 0,
+      "readings": [
+        "<S>ハ^チジュ!ー|0ゴ^ホン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e836e5e83608357838521815b7c3083535e837a83933c463e"
+      ],
+      "wav_bytes": 186392,
+      "wav_sha256": "ce728848d7c32415b2986401282909df547dd44e3089185c52761d36e277f1f1"
+    },
+    {
+      "index": 15,
+      "text": "時時8０五。",
+      "status": 0,
+      "readings": [
+        "<S>トキ^ド!キ|0ハ^チジュ!ー|0^ゴ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e8367834c5e836821834c7c30836e5e83608357838521815b7c305e83533c463e"
+      ],
+      "wav_bytes": 216524,
+      "wav_sha256": "4eff20d8051ad8af01c55f9e6f20d4095b3c4baf2c59e2a331d00374e7f16eee"
+    }
+  ],
+  "complete": true,
+  "errors": [],
+  "executable_sha256": "de3be1e7979db53006add27f30131eb4c308c28ba78d6b7bb6365aecb01b3f2d",
+  "detach_reason": "process-terminated",
+  "crash": null,
+  "timed_out": false,
+  "native_report_sha256": "85b4f4285fd057ea8d3772e498f7d907b344ee601bfe0977d452889569f1066d"
+}

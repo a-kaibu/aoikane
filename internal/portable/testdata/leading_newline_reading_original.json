@@ -1,0 +1,361 @@
+{
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "capture_sha256": [
+    "31e7b6f3fec037b85044c8d89fdf3cc75b3a8c50364be0f4f9abc3258e957057",
+    "f92b646ff7d4932a9c9ee3a846b842df81f4de1088baaaa958c1fbb76b682c56"
+  ],
+  "cases": [
+    {
+      "text": "\nあ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S>^ア<F>"
+      ]
+    },
+    {
+      "text": "\n）！é。é 😀A。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S><F>",
+        "<S><F>",
+        "<S>^エ!ー<F>"
+      ]
+    },
+    {
+      "text": "\n。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S><F>"
+      ]
+    },
+    {
+      "text": "\n！",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S><F>"
+      ]
+    },
+    {
+      "text": "\n）！",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S><F>"
+      ]
+    },
+    {
+      "text": "\rあ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S>^ア<F>"
+      ]
+    },
+    {
+      "text": "\n\nあ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S>^ア<F>"
+      ]
+    },
+    {
+      "text": "\t\nあ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S>^ア<F>"
+      ]
+    },
+    {
+      "text": " \nあ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S>^ア<F>"
+      ]
+    },
+    {
+      "text": "\n あ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S>^ア<F>"
+      ]
+    },
+    {
+      "text": "\n？あ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S>^ア<F>"
+      ]
+    },
+    {
+      "text": "\n）！あ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S><F>",
+        "<S>^ア<F>"
+      ]
+    },
+    {
+      "text": "\n😀あ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S>^ア<F>"
+      ]
+    },
+    {
+      "text": "あ。\nい。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^ア<F>",
+        "<S>^イ<F>"
+      ]
+    },
+    {
+      "text": "あ\nい。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^ア<F>",
+        "<S>^イ<F>"
+      ]
+    },
+    {
+      "text": "\nあ\nい。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S>^ア<F>",
+        "<S>^イ<F>"
+      ]
+    },
+    {
+      "text": "\n\tあ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S>^ア<F>"
+      ]
+    },
+    {
+      "text": "\r\nあ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S>^ア<F>"
+      ]
+    },
+    {
+      "text": "\né。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S><F>"
+      ]
+    },
+    {
+      "text": "é。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S><F>"
+      ]
+    },
+    {
+      "text": "\nA。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S>^エ!ー<F>"
+      ]
+    },
+    {
+      "text": "\n\n。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S><F>"
+      ]
+    },
+    {
+      "text": "\nあ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S>ア<F>"
+      ]
+    },
+    {
+      "text": "\n）！é。é 😀A。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S><F>",
+        "<S><F>",
+        "<S>^エ!ー<F>"
+      ]
+    },
+    {
+      "text": "\n。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S><F>"
+      ]
+    },
+    {
+      "text": "\n！",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S><F>"
+      ]
+    },
+    {
+      "text": "\n）！",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S><F>"
+      ]
+    },
+    {
+      "text": "\rあ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S>ア<F>"
+      ]
+    },
+    {
+      "text": "\n\nあ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S>ア<F>"
+      ]
+    },
+    {
+      "text": "\t\nあ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S>ア<F>"
+      ]
+    },
+    {
+      "text": " \nあ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S>ア<F>"
+      ]
+    },
+    {
+      "text": "\n あ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S>ア<F>"
+      ]
+    },
+    {
+      "text": "\n？あ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S>ア<F>"
+      ]
+    },
+    {
+      "text": "\n）！あ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S><F>",
+        "<S>ア<F>"
+      ]
+    },
+    {
+      "text": "\n😀あ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S>ア<F>"
+      ]
+    },
+    {
+      "text": "あ。\nい。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ア<F>",
+        "<S>イ<F>"
+      ]
+    },
+    {
+      "text": "あ\nい。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ア<F>",
+        "<S>イ<F>"
+      ]
+    },
+    {
+      "text": "\nあ\nい。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S>ア<F>",
+        "<S>イ<F>"
+      ]
+    },
+    {
+      "text": "\n\tあ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S>ア<F>"
+      ]
+    },
+    {
+      "text": "\r\nあ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S>ア<F>"
+      ]
+    },
+    {
+      "text": "\né。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S><F>"
+      ]
+    },
+    {
+      "text": "é。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S><F>"
+      ]
+    },
+    {
+      "text": "\nA。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S>^エ!ー<F>"
+      ]
+    },
+    {
+      "text": "\n\n。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S><F>"
+      ]
+    }
+  ]
+}

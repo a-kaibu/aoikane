@@ -1,0 +1,171 @@
+{
+  "source": "ordinary original SDK talk; formatter observed without tensor injection; frontend-only capture",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "voice": "KotonohaAkane_ns_48",
+  "corpus_sha256": "7981b5260c592174233f003b357979287332d46fa247aafb2549a537899cbf17",
+  "cases": [
+    {
+      "index": 0,
+      "text": "8十11。",
+      "status": 0,
+      "readings": [
+        "<S>ハ^チジュ!ー|0ジュ^ーイチ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e836e5e83608357838521815b7c30835783855e815b834383603c463e"
+      ],
+      "wav_bytes": 212614,
+      "wav_sha256": "9270519f7ea7a0d7bfc02bdc5bc86d12c7233415fe6cd5243e6472a7b9161064"
+    },
+    {
+      "index": 1,
+      "text": "8十11．〇五。",
+      "status": 0,
+      "readings": [
+        "<S>ハ^チジュ!ー|0ジュ^ーイ!チテン|0ゼ^ロゴ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e836e5e83608357838521815b7c30835783855e815b8343218360836583937c30835b5e838d83533c463e"
+      ],
+      "wav_bytes": 270922,
+      "wav_sha256": "4b988a719e51e89915052220fea45f864fcd9262c4096fa567134c84e15c71f8"
+    },
+    {
+      "index": 2,
+      "text": "1．〇五。",
+      "status": 0,
+      "readings": [
+        "<S>^イ!チテン|0ゼ^ロゴ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e8343218360836583937c30835b5e838d83533c463e"
+      ],
+      "wav_bytes": 187466,
+      "wav_sha256": "05a41b5ada66436f07b80d8288ab2a9bb8b4ff8acf30dc2cd45c639017e9af55"
+    },
+    {
+      "index": 3,
+      "text": "1．〇二。",
+      "status": 0,
+      "readings": [
+        "<S>^イ!チテン|0ゼ^ロニ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e8343218360836583937c30835b5e838d836a3c463e"
+      ],
+      "wav_bytes": 185808,
+      "wav_sha256": "433a7ef638469f44033a0ed7061c86e7891122ed83f6f3994661783bee776aa9"
+    },
+    {
+      "index": 4,
+      "text": "1．〇五本。",
+      "status": 0,
+      "readings": [
+        "<S>^イ!チテン|0ゼ^ロゴホン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e8343218360836583937c30835b5e838d8353837a83933c463e"
+      ],
+      "wav_bytes": 207024,
+      "wav_sha256": "a395e6ac690a2d5c0db652981120fe846f018da9e7a1ce6a730e2fde3b150507"
+    },
+    {
+      "index": 5,
+      "text": "1．〇五秒。",
+      "status": 0,
+      "readings": [
+        "<S>^イ!チテン|0ゼ^ロゴ!ビョー<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e8343218360836583937c30835b5e838d83532183728387815b3c463e"
+      ],
+      "wav_bytes": 213190,
+      "wav_sha256": "e9b50f66ff352abfc4388629a9929398922a1e9fcb4707862c1956fe1fc89228"
+    },
+    {
+      "index": 6,
+      "text": "五０．8十1１．〇五。",
+      "status": 0,
+      "readings": [
+        "<S>^ゴ|0^ゼ!ロテン|0ハ^チジュ!ー|0ジュ^ーイ!チテン|0ゼ^ロゴ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e83537c305e835b21838d836583937c30836e5e83608357838521815b7c30835783855e815b8343218360836583937c30835b5e838d83533c463e"
+      ],
+      "wav_bytes": 337866,
+      "wav_sha256": "b88742bf2d10acd73365051a6b550013fa8a405ab0c551f5f115078a9aee5f71"
+    },
+    {
+      "index": 7,
+      "text": "五０．8十1１．〇五学校。",
+      "status": 0,
+      "readings": [
+        "<S>^ゴ|0^ゼ!ロテン|0ハ^チジュ!ー|0ジュ^ーイ!チテン|0ゼ^ロゴ|0ガッコ^ー<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e83537c305e835b21838d836583937c30836e5e83608357838521815b7c30835783855e815b8343218360836583937c30835b5e838d83537c30834b836283525e815b3c463e"
+      ],
+      "wav_bytes": 385392,
+      "wav_sha256": "20457929568e6a84fd5c96d82f407af1ebe3a14c026500bcb59932069ee238b6"
+    },
+    {
+      "index": 8,
+      "text": "一．〇五。",
+      "status": 0,
+      "readings": [
+        "<S>^イ!ッテン|0レ^ーゴ!ー<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e8343218362836583937c30838c5e815b835321815b3c463e"
+      ],
+      "wav_bytes": 194520,
+      "wav_sha256": "724f6ecbac2dcfdea37a1eacaf71d19bf80c032aa6c09fb702bfbcc2adaa1d09"
+    },
+    {
+      "index": 9,
+      "text": "8十1１。",
+      "status": 0,
+      "readings": [
+        "<S>ハ^チジュ!ー|0ジュ^ーイチ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e836e5e83608357838521815b7c30835783855e815b834383603c463e"
+      ],
+      "wav_bytes": 212614,
+      "wav_sha256": "9270519f7ea7a0d7bfc02bdc5bc86d12c7233415fe6cd5243e6472a7b9161064"
+    },
+    {
+      "index": 10,
+      "text": "8十1１．〇五学校。",
+      "status": 0,
+      "readings": [
+        "<S>ハ^チジュ!ー|0ジュ^ーイ!チテン|0ゼ^ロゴ|0ガッコ^ー<F>"
+      ],
+      "cp932_hex": [
+        "3c533e836e5e83608357838521815b7c30835783855e815b8343218360836583937c30835b5e838d83537c30834b836283525e815b3c463e"
+      ],
+      "wav_bytes": 318796,
+      "wav_sha256": "533aafe02ec70ea7e8279c4c120a40d7373cf6852f47f5aa6f0e031e41282ab7"
+    },
+    {
+      "index": 11,
+      "text": "・五０.8十1１.〇五学校.。",
+      "status": 0,
+      "readings": [
+        "<S>^ゴ|0^ゼ!ロテン|0ハ^チジュ!ー|0ジュ^ーイ!チテン|0ゼ^ロゴ|0ガッコ^ー<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e83537c305e835b21838d836583937c30836e5e83608357838521815b7c30835783855e815b8343218360836583937c30835b5e838d83537c30834b836283525e815b3c463e"
+      ],
+      "wav_bytes": 385392,
+      "wav_sha256": "20457929568e6a84fd5c96d82f407af1ebe3a14c026500bcb59932069ee238b6"
+    }
+  ],
+  "complete": true,
+  "errors": [],
+  "executable_sha256": "de3be1e7979db53006add27f30131eb4c308c28ba78d6b7bb6365aecb01b3f2d",
+  "detach_reason": "process-terminated",
+  "crash": null,
+  "timed_out": false,
+  "native_report_sha256": "21c3230b9a909d4c906f8a3e5bb67dc5a7ef55d07ea8e90cdc67c2adca61243c"
+}

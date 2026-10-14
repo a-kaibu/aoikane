@@ -1,0 +1,63 @@
+{
+  "source": "ordinary original direct engine API; no instrumentation or injected model inputs",
+  "source_sha256": "1113139d1c77d651478d5c79ebbf3559a8461bd0b46d13780ac9b1b49c446cc0",
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "voice": "KotonohaAkane_ns_48",
+  "original_threads": 6,
+  "avx512_convolutions": false,
+  "seed": 1,
+  "generator_version": 1,
+  "max_units": 6,
+  "cases": [
+    {
+      "index": 0,
+      "text": "うんこぞ。",
+      "bytes": 143564,
+      "sha256": "c4a8ad8680d055ad22b5c97aafce13d41d8b0890f3e2696d8f0734ffa33a5995"
+    },
+    {
+      "index": 1,
+      "text": "89。",
+      "bytes": 186452,
+      "sha256": "13cd1663a752a704fbb0b5c3c42c7b907c668ad5c97e1d7df8cd592add3822a7"
+    },
+    {
+      "index": 2,
+      "text": "−－。？é？。",
+      "bytes": 163244,
+      "sha256": "f729f75ec32c43fa077d25e8d5852627a5e5e9cce511f46404e8cb022f061e5c"
+    },
+    {
+      "index": 3,
+      "text": "行く読む学校ますますの。",
+      "bytes": 268584,
+      "sha256": "bda863acb7cd5aefb09f0515cb69182b624b99c459b929c95225256012c23449"
+    },
+    {
+      "index": 4,
+      "text": "ふぺきけ。",
+      "bytes": 151724,
+      "sha256": "e3d0dedd67544b091cebfe5f91464ddc2398c812e41463311f0efacd91df15ca"
+    },
+    {
+      "index": 5,
+      "text": "声八一7。",
+      "bytes": 225168,
+      "sha256": "5ea743dd732f3933e512cc0fab99405c97e92ad2fe33e76466a857819f09cbdf"
+    },
+    {
+      "index": 6,
+      "text": "漢。",
+      "bytes": 110924,
+      "sha256": "d4e7a1291fc8da82e9a0298305b3b86399a93c4bb90359facfa838cbe9bf05cf"
+    },
+    {
+      "index": 7,
+      "text": "がを。",
+      "bytes": 120044,
+      "sha256": "57c1a88960ef6fdceb54d6ab5b4f1c37dfff3a56374b7181901db3832aee1c20"
+    }
+  ],
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "torch_dll_sha256": "00ca5c937940a94d052dbe52ec5fb0909db11ffbfccfd6e65e19b468169ff5e5"
+}

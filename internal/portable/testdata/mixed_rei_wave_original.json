@@ -1,0 +1,57 @@
+{
+  "source": "independent hook-free ordinary original SDK vs Go whole-WAV equality, also matched to earlier read-only formatter full synthesis captures",
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "original_threads": 6,
+  "avx512_convolutions": false,
+  "report_sha256": [
+    "58a9d9515794a61f2f695d0327567f88559a08bf29f3d41a3925cb3611d872a4",
+    "e643b3da12537abddeb88c5affefa3d1722d966b7deecfb046efcc4c52f8c59e"
+  ],
+  "capture_sha256": [
+    "e1270f62b79872aa6e549ed0f5e595e00e22a708656a9c1a3c9d0a58ac6de68b",
+    "0e63f796e164937bc1e0048619bab3d421027d031145c046c3b17abf185f2fa9"
+  ],
+  "cases": [
+    {
+      "text": "日五月8Ａ一零67人二生開（0人ａー七木ｂ。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 622220,
+      "sha256": "1a301ada0020092de53f62cb384c801a0a86b338f35a953db047e250df013292"
+    },
+    {
+      "text": "一零67。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 227450,
+      "sha256": "449d16ffb7b4e67c6d2bba819bb06877e5c005bdf52ba518ce59e3915149a85a"
+    },
+    {
+      "text": "一零12.3。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 237114,
+      "sha256": "25c368feaefaa54d485b631581ef357cbe524bd78bec335f88dffecc1e0d5057"
+    },
+    {
+      "text": "日五月8Ａ一零67人二生開（0人ａー七木ｂ。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 635170,
+      "sha256": "b8122291b2fe7509130b68923418c7973001bef0fe0a8c90729f13591e0df751"
+    },
+    {
+      "text": "一零67。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 227450,
+      "sha256": "449d16ffb7b4e67c6d2bba819bb06877e5c005bdf52ba518ce59e3915149a85a"
+    },
+    {
+      "text": "一零12.3。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 237114,
+      "sha256": "25c368feaefaa54d485b631581ef357cbe524bd78bec335f88dffecc1e0d5057"
+    }
+  ],
+  "capture_report_sha256": [
+    "88ecd6aba1115f15985a9205ce8b2308b4c93e678fc4d163410d2d876cbd275f",
+    "54265049a4d79c37433c9ec688905102a6afa650ff4b6cd035df68b8692235b1"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "scope": "Linux amd64 DLL-free replay of all6 pinned original WAV references. Process exited0, PASS, all6 whole-WAV size/hash checks passed. Binary built before connector-seconds change. Not allCPU/input proof.",
+  "binary_sha256": "964dbc5af951da9fa90d2ee56d7bb46c02921071a85f93e6ee0f1f4f394e4cc3",
+  "log_sha256": "88e62e3cc1beb93f6c06678d205985ab953094f85b2fa4500b20eb1a7f28877b",
+  "result_lines": [
+    "    mixed_rei_original_test.go:76: whole original WAV identical: \"2兆万。\", 154020 bytes",
+    "    mixed_rei_original_test.go:76: whole original WAV identical: \"2兆万本。\", 181164 bytes",
+    "    mixed_rei_original_test.go:76: whole original WAV identical: \"２兆万1円．５は、Ｃ個．は9。\", 469372 bytes",
+    "    mixed_rei_original_test.go:76: whole original WAV identical: \"2兆万。\", 154020 bytes",
+    "    mixed_rei_original_test.go:76: whole original WAV identical: \"2兆万本。\", 181164 bytes",
+    "    mixed_rei_original_test.go:76: whole original WAV identical: \"２兆万1円．５は、Ｃ個．は9。\", 419862 bytes"
+  ]
+}

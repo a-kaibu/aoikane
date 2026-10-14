@@ -1,0 +1,103 @@
+{
+  "source": "finished ordinary original SDK/Go tests; whole WAVs rehashed against reports and independent ordinary native captures",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "original_threads": 6,
+  "avx512_convolutions": false,
+  "report_sha256": [
+    "d184b9c69d0970d93ee7a2316cdd76c5df439457207b08418a9ae22f01eb0e8b",
+    "5ea97315514f6aca5c7b66ed2dd5e63812faca1203e63f39d38b6e5962cf5785"
+  ],
+  "capture_sha256": [
+    "94a1c577c828a83932fa900b914632049d633a4757a663228c61ed088b963bec",
+    "8eeb0898b9e70f5f06d247ec65f8c8e1d6a5507ff7787afd8882dee3642c7282",
+    "e6eeb8d8e75f0c9df83d2bea6267c6953d84a73d191c99749836e4c97c1ce351",
+    "bdaf1e527c5ff75366c9ccad38cfadde3037a7ca9bd25f50d16a35e7de335a75"
+  ],
+  "cases": [
+    {
+      "text": "１２・３４・５６。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 310876,
+      "sha256": "b4205eb3aa7ba45c6ebbf3a1f014f0644237770b6136970ef0ebf004ed43662b"
+    },
+    {
+      "text": "1点2。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 165244,
+      "sha256": "8e5d07bd38cb1508b21da2226f80365ecf12300fc836c0cdc510e2003ead954d"
+    },
+    {
+      "text": "一点二。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 160792,
+      "sha256": "f9b5c19f52be0a227a2d604e25b7a0804adc07bc90fb318ebe9d642471a48c53"
+    },
+    {
+      "text": "一・二本。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 177614,
+      "sha256": "8f84b80513697607350342b4b8a75448b0f0dd6793319fb8aa6a5b05e6c9893b"
+    },
+    {
+      "text": "図1・2・3。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 240046,
+      "sha256": "82d96c49fd1de704db06578dfbd290b6bd0d57c42cbe42c5efe83aef7444f20d"
+    },
+    {
+      "text": "電話1・2・3。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 282840,
+      "sha256": "428f09cee3afdd3b2c98a1e443094cee07ed6e7f785dbfd8833034ac8f7b188b"
+    },
+    {
+      "text": "郵便番号1・2・3。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 326410,
+      "sha256": "a9cb99541fc448d84e70fd81190b8e8c32ad41932be35cb502f1ac813963c084"
+    },
+    {
+      "text": "１２・３４・５６。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 310876,
+      "sha256": "b4205eb3aa7ba45c6ebbf3a1f014f0644237770b6136970ef0ebf004ed43662b"
+    },
+    {
+      "text": "1点2。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 163276,
+      "sha256": "c9072ca204d0386d342e329ed6ef37d4767a62b45998f4a7ae2d1f272c2de535"
+    },
+    {
+      "text": "一点二。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 158804,
+      "sha256": "ab034d0b862ae390ebf92102280d49fa4c2aa62814a08a84722de99f1dca012e"
+    },
+    {
+      "text": "一・二本。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 177614,
+      "sha256": "8f84b80513697607350342b4b8a75448b0f0dd6793319fb8aa6a5b05e6c9893b"
+    },
+    {
+      "text": "図1・2・3。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 237838,
+      "sha256": "0c9bcc6598a28c2b663596ed47d6398b2e2049d8d3fffd5c7ff36f6793bf593c"
+    },
+    {
+      "text": "電話1・2・3。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 282642,
+      "sha256": "e12e2762976fcc076478f72b3c8802fd65b591c042c9c746dadff4c05bad0941"
+    },
+    {
+      "text": "郵便番号1・2・3。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 305642,
+      "sha256": "7cb091b0d40ce97364195c35b9a58819883ec460170f9b9e23109200fc59364f"
+    }
+  ]
+}

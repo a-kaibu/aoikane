@@ -1,0 +1,269 @@
+{
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "trace_sha256": "6af4c54551869dc123b7dab9bfbf6a0b6e9e2a24c1111611e06e148203a4ec7f",
+  "source": "read-only ordinary original numeric dispatch; 3 formats, error-free balanced calls; diagnostic ends after formatting, not full WAV proof",
+  "inputs": [
+    "一零十万人。",
+    "零一万０３本。",
+    "二零十億49人。"
+  ],
+  "events": [
+    {
+      "event": "numeral_segment_enter",
+      "rva": "100a90",
+      "input_hex": "88ea97eb8f5c969c",
+      "caller": "0x10245a",
+      "sentence": 0,
+      "input_hex_decoded": "一零十万"
+    },
+    {
+      "event": "numeral_segment_enter",
+      "rva": "1043f0",
+      "input_hex": "88ea97eb",
+      "caller": "0x1018a0",
+      "sentence": 0,
+      "input_hex_decoded": "一零"
+    },
+    {
+      "event": "numeral_segment_leave",
+      "rva": "1043f0",
+      "input_hex": "88ea97eb",
+      "result": "0x1",
+      "output_a": "83438360838c815b",
+      "output_b": "88ea97eb",
+      "sentence": 0,
+      "input_hex_decoded": "一零",
+      "output_a_decoded": "イチレー",
+      "output_b_decoded": "一零"
+    },
+    {
+      "event": "numeral_segment_enter",
+      "rva": "10b010",
+      "input_hex": "8f5c969c",
+      "caller": "0x101e0b",
+      "sentence": 0,
+      "input_hex_decoded": "十万"
+    },
+    {
+      "event": "numeral_segment_leave",
+      "rva": "10b010",
+      "input_hex": "8f5c969c",
+      "result": "0x1",
+      "output_a": "83438360838c815b828283578385815b837d8393",
+      "output_b": "88ea97eb8f5c969c",
+      "sentence": 0,
+      "input_hex_decoded": "十万",
+      "output_a_decoded": "イチレーｂジューマン",
+      "output_b_decoded": "一零十万"
+    },
+    {
+      "event": "numeral_segment_leave",
+      "rva": "100a90",
+      "input_hex": "88ea97eb8f5c969c",
+      "result": "0x1",
+      "output_a": "83438360838c815b828283578385815b837d8393",
+      "output_b": "88ea97eb8f5c969c",
+      "sentence": 0,
+      "input_hex_decoded": "一零十万",
+      "output_a_decoded": "イチレーｂジューマン",
+      "output_b_decoded": "一零十万"
+    },
+    {
+      "event": "numeral_counter_enter",
+      "caller": "0x106ce5",
+      "number_hex": "88ea97eb8f5c969c",
+      "number_accent_hex": "322d332d342c73302c322d332d34",
+      "number_spelling_hex": "88ea97eb8f5c969c",
+      "counter_key_hex": "906c",
+      "counter_read_hex": "836a8393",
+      "counter_sound_hex": "836a8393",
+      "param11": 1,
+      "param12": 0,
+      "sentence": 0,
+      "number_hex_decoded": "一零十万",
+      "number_accent_hex_decoded": "2-3-4,s0,2-3-4",
+      "number_spelling_hex_decoded": "一零十万",
+      "counter_key_hex_decoded": "人",
+      "counter_read_hex_decoded": "ニン",
+      "counter_sound_hex_decoded": "ニン"
+    },
+    {
+      "event": "numeral_segment_enter",
+      "rva": "100a90",
+      "input_hex": "969c824f8252",
+      "caller": "0x10245a",
+      "sentence": 0,
+      "input_hex_decoded": "万０３"
+    },
+    {
+      "event": "numeral_segment_enter",
+      "rva": "10b010",
+      "input_hex": "969c",
+      "caller": "0x100f60",
+      "sentence": 0,
+      "input_hex_decoded": "万"
+    },
+    {
+      "event": "numeral_segment_leave",
+      "rva": "10b010",
+      "input_hex": "969c",
+      "result": "0x1",
+      "output_a": "837d8393",
+      "output_b": "969c",
+      "sentence": 0,
+      "input_hex_decoded": "万",
+      "output_a_decoded": "マン",
+      "output_b_decoded": "万"
+    },
+    {
+      "event": "numeral_segment_enter",
+      "rva": "10b010",
+      "input_hex": "824f8252",
+      "caller": "0x101e0b",
+      "sentence": 0,
+      "input_hex_decoded": "０３"
+    },
+    {
+      "event": "numeral_segment_leave",
+      "rva": "10b010",
+      "input_hex": "824f8252",
+      "result": "0x1",
+      "output_a": "837d8393835b838d83548393",
+      "output_b": "969c815a8e4f",
+      "sentence": 0,
+      "input_hex_decoded": "０３",
+      "output_a_decoded": "マンゼロサン",
+      "output_b_decoded": "万〇三"
+    },
+    {
+      "event": "numeral_segment_leave",
+      "rva": "100a90",
+      "input_hex": "969c824f8252",
+      "result": "0x1",
+      "output_a": "837d8393835b838d83548393",
+      "output_b": "969c815a8e4f",
+      "sentence": 0,
+      "input_hex_decoded": "万０３",
+      "output_a_decoded": "マンゼロサン",
+      "output_b_decoded": "万〇三"
+    },
+    {
+      "event": "numeral_counter_enter",
+      "caller": "0x106ce5",
+      "number_hex": "969c824f8252",
+      "number_accent_hex": "312d312d322c322d332d34",
+      "number_spelling_hex": "969c815a8e4f",
+      "counter_key_hex": "967b",
+      "counter_read_hex": "837b8393",
+      "counter_sound_hex": "837b8393",
+      "param11": 1,
+      "param12": 1,
+      "sentence": 0,
+      "number_hex_decoded": "万０３",
+      "number_accent_hex_decoded": "1-1-2,2-3-4",
+      "number_spelling_hex_decoded": "万〇三",
+      "counter_key_hex_decoded": "本",
+      "counter_read_hex_decoded": "ボン",
+      "counter_sound_hex_decoded": "ボン"
+    },
+    {
+      "event": "numeral_segment_enter",
+      "rva": "100a90",
+      "input_hex": "93f197eb8f5c89ad82538258",
+      "caller": "0x10245a",
+      "sentence": 0,
+      "input_hex_decoded": "二零十億４９"
+    },
+    {
+      "event": "numeral_segment_enter",
+      "rva": "1043f0",
+      "input_hex": "93f197eb",
+      "caller": "0x1018a0",
+      "sentence": 0,
+      "input_hex_decoded": "二零"
+    },
+    {
+      "event": "numeral_segment_leave",
+      "rva": "1043f0",
+      "input_hex": "93f197eb",
+      "result": "0x1",
+      "output_a": "836a815b838c815b",
+      "output_b": "93f197eb",
+      "sentence": 0,
+      "input_hex_decoded": "二零",
+      "output_a_decoded": "ニーレー",
+      "output_b_decoded": "二零"
+    },
+    {
+      "event": "numeral_segment_enter",
+      "rva": "10b010",
+      "input_hex": "8f5c89ad",
+      "caller": "0x100f60",
+      "sentence": 0,
+      "input_hex_decoded": "十億"
+    },
+    {
+      "event": "numeral_segment_leave",
+      "rva": "10b010",
+      "input_hex": "8f5c89ad",
+      "result": "0x1",
+      "output_a": "836a815b838c815b828283578385815b8349834e",
+      "output_b": "93f197eb8f5c89ad",
+      "sentence": 0,
+      "input_hex_decoded": "十億",
+      "output_a_decoded": "ニーレーｂジューオク",
+      "output_b_decoded": "二零十億"
+    },
+    {
+      "event": "numeral_segment_enter",
+      "rva": "10b010",
+      "input_hex": "82538258",
+      "caller": "0x101e0b",
+      "sentence": 0,
+      "input_hex_decoded": "４９"
+    },
+    {
+      "event": "numeral_segment_leave",
+      "rva": "10b010",
+      "input_hex": "82538258",
+      "result": "0x1",
+      "output_a": "836a815b838c815b828283578385815b8349834e8388839383578385815b834c8385815b",
+      "output_b": "93f197eb8f5c89ad8e6c8f5c8be3",
+      "sentence": 0,
+      "input_hex_decoded": "４９",
+      "output_a_decoded": "ニーレーｂジューオクヨンジューキュー",
+      "output_b_decoded": "二零十億四十九"
+    },
+    {
+      "event": "numeral_segment_leave",
+      "rva": "100a90",
+      "input_hex": "93f197eb8f5c89ad82538258",
+      "result": "0x1",
+      "output_a": "836a815b838c815b828283578385815b8349834e8388839383578385815b834c8385815b",
+      "output_b": "93f197eb8f5c89ad8e6c8f5c8be3",
+      "sentence": 0,
+      "input_hex_decoded": "二零十億４９",
+      "output_a_decoded": "ニーレーｂジューオクヨンジューキュー",
+      "output_b_decoded": "二零十億四十九"
+    },
+    {
+      "event": "numeral_counter_enter",
+      "caller": "0x106ce5",
+      "number_hex": "93f197eb8f5c89ad82538258",
+      "number_accent_hex": "312d312d342c312d312d31",
+      "number_spelling_hex": "93f197eb8f5c89ad8e6c8f5c8be3",
+      "counter_key_hex": "906c",
+      "counter_read_hex": "836a8393",
+      "counter_sound_hex": "836a8393",
+      "param11": 1,
+      "param12": 0,
+      "sentence": 0,
+      "number_hex_decoded": "二零十億４９",
+      "number_accent_hex_decoded": "1-1-4,1-1-1",
+      "number_spelling_hex_decoded": "二零十億四十九",
+      "counter_key_hex_decoded": "人",
+      "counter_read_hex_decoded": "ニン",
+      "counter_sound_hex_decoded": "ニン"
+    }
+  ]
+}

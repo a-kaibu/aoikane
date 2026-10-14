@@ -1,0 +1,125 @@
+{
+  "scope": "Ordinary original SDK vs Go complete WAVs; all8 saved pairs and independent SDK captures rehashed and byte-compared after both processes exited0. No tensor injection.",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "pcm_samples": 945881,
+  "reports": [
+    {
+      "voice": "akane",
+      "report_sha256": "e496b21e9a5fe9f81807f003329ad4e83e472610e60370e9ace019009c494ede",
+      "report": {
+        "shard": 0,
+        "shards": 1,
+        "seed": 0,
+        "generator_version": 1,
+        "count": 4,
+        "max_units": 0,
+        "go_version": "go1.26.8",
+        "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+        "voice": "KotonohaAkane_ns_48",
+        "original_threads": 6,
+        "avx512_convolutions": false,
+        "results": [
+          {
+            "index": 0,
+            "text": "00秒9。",
+            "original_sha256": "3dc37eeaff69347d2e3afd145aa7f345aa2f14cd3a3d2b3673061e6bd7b2b829",
+            "go_sha256": "3dc37eeaff69347d2e3afd145aa7f345aa2f14cd3a3d2b3673061e6bd7b2b829",
+            "original_bytes": 182214,
+            "go_bytes": 182214,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 1,
+            "text": "00秒九。",
+            "original_sha256": "b49c8027fd577c5dde4cf993324e4a417062a38ff18bc77e15d915fe1423b61f",
+            "go_sha256": "b49c8027fd577c5dde4cf993324e4a417062a38ff18bc77e15d915fe1423b61f",
+            "original_bytes": 206110,
+            "go_bytes": 206110,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 2,
+            "text": "000秒。",
+            "original_sha256": "a7e796dc0599057f4289e949eb9c6f8636d00db8b3170287b66c8ea08b9f806c",
+            "go_sha256": "a7e796dc0599057f4289e949eb9c6f8636d00db8b3170287b66c8ea08b9f806c",
+            "original_bytes": 146894,
+            "go_bytes": 146894,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 3,
+            "text": "A日．月人１月声0０秒9声。",
+            "original_sha256": "c038117b64c3e36e457167f55843f99fb3c9f46155c815a2f0027928890c7e08",
+            "go_sha256": "c038117b64c3e36e457167f55843f99fb3c9f46155c815a2f0027928890c7e08",
+            "original_bytes": 429894,
+            "go_bytes": 429894,
+            "first_difference": -1,
+            "equal": true
+          }
+        ]
+      }
+    },
+    {
+      "voice": "aoi",
+      "report_sha256": "e8b75a8e9f8f566345b0e12d57e364eec4fa867003b044d0153bf6e174e339ba",
+      "report": {
+        "shard": 0,
+        "shards": 1,
+        "seed": 0,
+        "generator_version": 1,
+        "count": 4,
+        "max_units": 0,
+        "go_version": "go1.26.8",
+        "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+        "voice": "KotonohaAoi_ns_48",
+        "original_threads": 6,
+        "avx512_convolutions": false,
+        "results": [
+          {
+            "index": 0,
+            "text": "00秒9。",
+            "original_sha256": "3dc37eeaff69347d2e3afd145aa7f345aa2f14cd3a3d2b3673061e6bd7b2b829",
+            "go_sha256": "3dc37eeaff69347d2e3afd145aa7f345aa2f14cd3a3d2b3673061e6bd7b2b829",
+            "original_bytes": 182214,
+            "go_bytes": 182214,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 1,
+            "text": "00秒九。",
+            "original_sha256": "b49c8027fd577c5dde4cf993324e4a417062a38ff18bc77e15d915fe1423b61f",
+            "go_sha256": "b49c8027fd577c5dde4cf993324e4a417062a38ff18bc77e15d915fe1423b61f",
+            "original_bytes": 206110,
+            "go_bytes": 206110,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 2,
+            "text": "000秒。",
+            "original_sha256": "a7e796dc0599057f4289e949eb9c6f8636d00db8b3170287b66c8ea08b9f806c",
+            "go_sha256": "a7e796dc0599057f4289e949eb9c6f8636d00db8b3170287b66c8ea08b9f806c",
+            "original_bytes": 146894,
+            "go_bytes": 146894,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 3,
+            "text": "A日．月人１月声0０秒9声。",
+            "original_sha256": "926be98425808bef16f58a9af67bab232125380fb8fc469a0e90abe43dcf2b6e",
+            "go_sha256": "926be98425808bef16f58a9af67bab232125380fb8fc469a0e90abe43dcf2b6e",
+            "original_bytes": 391784,
+            "go_bytes": 391784,
+            "first_difference": -1,
+            "equal": true
+          }
+        ]
+      }
+    }
+  ]
+}

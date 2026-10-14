@@ -1,0 +1,622 @@
+{
+  "scope": "All16 C2/C1 counter inputs and all8 prior day boundaries per voice retained. One new G-class counter sound-change difference per voice remains; no inputs excluded. Reading evidence only.",
+  "corpus_sha256": "29481d2ba40edc8721e7ef17a0fc33cee18bf57c9a3f58163066633b3e64e600",
+  "reports": [
+    {
+      "stem": "c2-counter-16",
+      "voice": "KotonohaAkane_ns_48",
+      "sha256": "9ffa2c299825e55f63e9a3dacffa5704db1c07f95dbcc40fe822733b012574ae",
+      "report": {
+        "cases": [
+          {
+            "index": 0,
+            "text": "九零八日目。",
+            "Original": [
+              "<S>キュ^ーレ!ー|0ハ^チニ!チメ<F>"
+            ],
+            "Go": [
+              "<S>キュ^ーレ!ー|0ハ^チニ!チメ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 1,
+            "text": "一−九零八日目。",
+            "Original": [
+              "<S>イ^チ!カラ|0キュ^ーレ!ー|0ハ^チニチメ<F>"
+            ],
+            "Go": [
+              "<S>イ^チ!カラ|0キュ^ーレ!ー|0ハ^チニチメ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 2,
+            "text": "零八日目。",
+            "Original": [
+              "<S>レ^ーハチニ!チメ<F>"
+            ],
+            "Go": [
+              "<S>レ^ーハチニ!チメ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 3,
+            "text": "一−零八日目。",
+            "Original": [
+              "<S>イ^チ!カラ|0レ^ーハチニチメ<F>"
+            ],
+            "Go": [
+              "<S>イ^チ!カラ|0レ^ーハチニチメ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 4,
+            "text": "8日目。",
+            "Original": [
+              "<S>ヨ^ーカメ<F>"
+            ],
+            "Go": [
+              "<S>ヨ^ーカメ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 5,
+            "text": "18日目。",
+            "Original": [
+              "<S>ジュ^ーハチニチメ<F>"
+            ],
+            "Go": [
+              "<S>ジュ^ーハチニチメ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 6,
+            "text": "1日目。",
+            "Original": [
+              "<S>イ^チニチメ<F>"
+            ],
+            "Go": [
+              "<S>イ^チニチメ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 7,
+            "text": "9日目。",
+            "Original": [
+              "<S>コ^コノカメ<F>"
+            ],
+            "Go": [
+              "<S>コ^コノカメ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 8,
+            "text": "九零八学年。",
+            "Original": [
+              "<S>キュ^ーレ!ー|0ハ^チガ!クネン<F>"
+            ],
+            "Go": [
+              "<S>キュ^ーレ!ー|0ハ^チガ!クネン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 9,
+            "text": "九零八階級。",
+            "Original": [
+              "<S>キュ^ーレ!ー|0ハ^チカ!イキュー<F>"
+            ],
+            "Go": [
+              "<S>キュ^ーレ!ー|0ハ^チカ!イキュー<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 10,
+            "text": "零八往復。",
+            "Original": [
+              "<S>レ^ーハチオ!ーフク<F>"
+            ],
+            "Go": [
+              "<S>レ^ーハチオ!ーフク<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 11,
+            "text": "一−零八学年。",
+            "Original": [
+              "<S>イ^チ!カラ|0レ^ーハチガ!クネン<F>"
+            ],
+            "Go": [
+              "<S>イ^チ!カラ|0レ^ーハチガ!クネン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 12,
+            "text": "九零八日間。",
+            "Original": [
+              "<S>キュ^ーレ!ー|0ハ^チニチ!カン<F>"
+            ],
+            "Go": [
+              "<S>キュ^ーレ!ー|0ハ^チニチ!カン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 13,
+            "text": "一−九零八日間。",
+            "Original": [
+              "<S>イ^チ!カラ|0キュ^ーレ!ー|0ハ^チニチ!カン<F>"
+            ],
+            "Go": [
+              "<S>イ^チ!カラ|0キュ^ーレ!ー|0ハ^チニチ!カン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 14,
+            "text": "零八回転。",
+            "Original": [
+              "<S>レ^ーハチカ!イテン<F>"
+            ],
+            "Go": [
+              "<S>レ^ーハチカ!イテン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 15,
+            "text": "一−零八回転。",
+            "Original": [
+              "<S>イ^チ!カラ|0^レ!ー|0ハ^ッカ!イテン<F>"
+            ],
+            "Go": [
+              "<S>イ^チ!カラ|0レ^ーハチカ!イテン<F>"
+            ],
+            "equal": false
+          }
+        ],
+        "corpus_sha256": "29481d2ba40edc8721e7ef17a0fc33cee18bf57c9a3f58163066633b3e64e600",
+        "count": 16,
+        "different": 1,
+        "native_report_sha256": "fa33bff7b3c2c444961e2b2108f8e623b843d981674a5a8e1d0d517d7533d22d",
+        "source_reference": "private/c2-counter-16-akane-original.json",
+        "source_reference_sha256": "289e716a716b5b668b34d02bccea82c43885d45c3b7efc769a97a463cf930358",
+        "voice": "KotonohaAkane_ns_48"
+      }
+    },
+    {
+      "stem": "rei-days-boundary-8",
+      "voice": "KotonohaAkane_ns_48",
+      "sha256": "a699e9d2195e49e93867a2235a280b7f5095a449d59a78b200a536dc88225a5e",
+      "report": {
+        "cases": [
+          {
+            "index": 0,
+            "text": "九零八日間。",
+            "Original": [
+              "<S>キュ^ーレ!ー|0ハ^チニチ!カン<F>"
+            ],
+            "Go": [
+              "<S>キュ^ーレ!ー|0ハ^チニチ!カン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 1,
+            "text": "一−九零八日間。",
+            "Original": [
+              "<S>イ^チ!カラ|0キュ^ーレ!ー|0ハ^チニチ!カン<F>"
+            ],
+            "Go": [
+              "<S>イ^チ!カラ|0キュ^ーレ!ー|0ハ^チニチ!カン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 2,
+            "text": "九零八日目。",
+            "Original": [
+              "<S>キュ^ーレ!ー|0ハ^チニ!チメ<F>"
+            ],
+            "Go": [
+              "<S>キュ^ーレ!ー|0ハ^チニ!チメ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 3,
+            "text": "一−九零八日目。",
+            "Original": [
+              "<S>イ^チ!カラ|0キュ^ーレ!ー|0ハ^チニチメ<F>"
+            ],
+            "Go": [
+              "<S>イ^チ!カラ|0キュ^ーレ!ー|0ハ^チニチメ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 4,
+            "text": "八日。",
+            "Original": [
+              "<S>ヨ^ーカ<F>"
+            ],
+            "Go": [
+              "<S>ヨ^ーカ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 5,
+            "text": "十八日。",
+            "Original": [
+              "<S>ジュ^ーハチニチ<F>"
+            ],
+            "Go": [
+              "<S>ジュ^ーハチニチ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 6,
+            "text": "零八日間。",
+            "Original": [
+              "<S>レ^ーハチニチ!カン<F>"
+            ],
+            "Go": [
+              "<S>レ^ーハチニチ!カン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 7,
+            "text": "一−零九日間。",
+            "Original": [
+              "<S>イ^チ!カラ|0^レ!ー|0ク^ニチ!カン<F>"
+            ],
+            "Go": [
+              "<S>イ^チ!カラ|0^レ!ー|0ク^ニチ!カン<F>"
+            ],
+            "equal": true
+          }
+        ],
+        "corpus_sha256": "b0f37a50e2747f931f6c511c65a01671840f28364fc703bcdd8955cda1526059",
+        "count": 8,
+        "different": 0,
+        "native_report_sha256": "5abe7c5215e786c13ab5373540d2c5a5b77892eec5f4d60be7b61c25c3ac533d",
+        "source_reference": "private/rei-days-boundary-8-akane-original.json",
+        "source_reference_sha256": "96bf9e02fe88091f4dae7576186d944a1ac87d097f6d99fc12f21ea11cbc0947",
+        "voice": "KotonohaAkane_ns_48"
+      }
+    },
+    {
+      "stem": "c2-counter-16",
+      "voice": "KotonohaAoi_ns_48",
+      "sha256": "d6fa6237e6d1c04b70af43995456441cbf2101df0496ea9b793eb1c5422e4960",
+      "report": {
+        "cases": [
+          {
+            "index": 0,
+            "text": "九零八日目。",
+            "Original": [
+              "<S>キュ^ーレ!ー|0ハ^チニ!チメ<F>"
+            ],
+            "Go": [
+              "<S>キュ^ーレ!ー|0ハ^チニ!チメ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 1,
+            "text": "一−九零八日目。",
+            "Original": [
+              "<S>イ^チ!カラ|0キュ^ーレ!ー|0ハ^チニチメ<F>"
+            ],
+            "Go": [
+              "<S>イ^チ!カラ|0キュ^ーレ!ー|0ハ^チニチメ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 2,
+            "text": "零八日目。",
+            "Original": [
+              "<S>レ^ーハチニ!チメ<F>"
+            ],
+            "Go": [
+              "<S>レ^ーハチニ!チメ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 3,
+            "text": "一−零八日目。",
+            "Original": [
+              "<S>イ^チ!カラ|0レ^ーハチニチメ<F>"
+            ],
+            "Go": [
+              "<S>イ^チ!カラ|0レ^ーハチニチメ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 4,
+            "text": "8日目。",
+            "Original": [
+              "<S>ヨ^ーカメ<F>"
+            ],
+            "Go": [
+              "<S>ヨ^ーカメ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 5,
+            "text": "18日目。",
+            "Original": [
+              "<S>ジュ^ーハチニチメ<F>"
+            ],
+            "Go": [
+              "<S>ジュ^ーハチニチメ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 6,
+            "text": "1日目。",
+            "Original": [
+              "<S>イ^チニチメ<F>"
+            ],
+            "Go": [
+              "<S>イ^チニチメ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 7,
+            "text": "9日目。",
+            "Original": [
+              "<S>コ^コノカメ<F>"
+            ],
+            "Go": [
+              "<S>コ^コノカメ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 8,
+            "text": "九零八学年。",
+            "Original": [
+              "<S>キュ^ーレ!ー|0ハ^チガ!クネン<F>"
+            ],
+            "Go": [
+              "<S>キュ^ーレ!ー|0ハ^チガ!クネン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 9,
+            "text": "九零八階級。",
+            "Original": [
+              "<S>キュ^ーレ!ー|0ハ^チカ!イキュー<F>"
+            ],
+            "Go": [
+              "<S>キュ^ーレ!ー|0ハ^チカ!イキュー<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 10,
+            "text": "零八往復。",
+            "Original": [
+              "<S>レ^ーハチオ!ーフク<F>"
+            ],
+            "Go": [
+              "<S>レ^ーハチオ!ーフク<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 11,
+            "text": "一−零八学年。",
+            "Original": [
+              "<S>イ^チ!カラ|0レ^ーハチガ!クネン<F>"
+            ],
+            "Go": [
+              "<S>イ^チ!カラ|0レ^ーハチガ!クネン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 12,
+            "text": "九零八日間。",
+            "Original": [
+              "<S>キュ^ーレ!ー|0ハ^チニチ!カン<F>"
+            ],
+            "Go": [
+              "<S>キュ^ーレ!ー|0ハ^チニチ!カン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 13,
+            "text": "一−九零八日間。",
+            "Original": [
+              "<S>イ^チ!カラ|0キュ^ーレ!ー|0ハ^チニチ!カン<F>"
+            ],
+            "Go": [
+              "<S>イ^チ!カラ|0キュ^ーレ!ー|0ハ^チニチ!カン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 14,
+            "text": "零八回転。",
+            "Original": [
+              "<S>レ^ーハチカ!イテン<F>"
+            ],
+            "Go": [
+              "<S>レ^ーハチカ!イテン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 15,
+            "text": "一−零八回転。",
+            "Original": [
+              "<S>イ^チ!カラ|0^レ!ー|0ハ^ッカ!イテン<F>"
+            ],
+            "Go": [
+              "<S>イ^チ!カラ|0レ^ーハチカ!イテン<F>"
+            ],
+            "equal": false
+          }
+        ],
+        "corpus_sha256": "29481d2ba40edc8721e7ef17a0fc33cee18bf57c9a3f58163066633b3e64e600",
+        "count": 16,
+        "different": 1,
+        "native_report_sha256": "e7bf8dcb9c956534f57f858d4b89817269de4ba064fdc543af1201e411a2c923",
+        "source_reference": "private/c2-counter-16-aoi-original.json",
+        "source_reference_sha256": "9fc6e8b8b9e2b03d3ccbb340dda82070e3ecc1a4181320432fcb0f88d0590ff3",
+        "voice": "KotonohaAoi_ns_48"
+      }
+    },
+    {
+      "stem": "rei-days-boundary-8",
+      "voice": "KotonohaAoi_ns_48",
+      "sha256": "50ac0bfe58ce8bbbf15f280a2057f9ab2770e4b51a8d11f490f7e927d404d48e",
+      "report": {
+        "cases": [
+          {
+            "index": 0,
+            "text": "九零八日間。",
+            "Original": [
+              "<S>キュ^ーレ!ー|0ハ^チニチ!カン<F>"
+            ],
+            "Go": [
+              "<S>キュ^ーレ!ー|0ハ^チニチ!カン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 1,
+            "text": "一−九零八日間。",
+            "Original": [
+              "<S>イ^チ!カラ|0キュ^ーレ!ー|0ハ^チニチ!カン<F>"
+            ],
+            "Go": [
+              "<S>イ^チ!カラ|0キュ^ーレ!ー|0ハ^チニチ!カン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 2,
+            "text": "九零八日目。",
+            "Original": [
+              "<S>キュ^ーレ!ー|0ハ^チニ!チメ<F>"
+            ],
+            "Go": [
+              "<S>キュ^ーレ!ー|0ハ^チニ!チメ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 3,
+            "text": "一−九零八日目。",
+            "Original": [
+              "<S>イ^チ!カラ|0キュ^ーレ!ー|0ハ^チニチメ<F>"
+            ],
+            "Go": [
+              "<S>イ^チ!カラ|0キュ^ーレ!ー|0ハ^チニチメ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 4,
+            "text": "八日。",
+            "Original": [
+              "<S>ヨ^ーカ<F>"
+            ],
+            "Go": [
+              "<S>ヨ^ーカ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 5,
+            "text": "十八日。",
+            "Original": [
+              "<S>ジュ^ーハチニチ<F>"
+            ],
+            "Go": [
+              "<S>ジュ^ーハチニチ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 6,
+            "text": "零八日間。",
+            "Original": [
+              "<S>レ^ーハチニチ!カン<F>"
+            ],
+            "Go": [
+              "<S>レ^ーハチニチ!カン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 7,
+            "text": "一−零九日間。",
+            "Original": [
+              "<S>イ^チ!カラ|0^レ!ー|0ク^ニチ!カン<F>"
+            ],
+            "Go": [
+              "<S>イ^チ!カラ|0^レ!ー|0ク^ニチ!カン<F>"
+            ],
+            "equal": true
+          }
+        ],
+        "corpus_sha256": "b0f37a50e2747f931f6c511c65a01671840f28364fc703bcdd8955cda1526059",
+        "count": 8,
+        "different": 0,
+        "native_report_sha256": "a544b13169d44b72b1ad41921f274ccab6b0d49a00b22001bde21dfc1fe72c9d",
+        "source_reference": "private/rei-days-boundary-8-aoi-original.json",
+        "source_reference_sha256": "da18c1901cc5175766d4c42d062e73fd3ebe86fb18f58fe309321e8a530f9def",
+        "voice": "KotonohaAoi_ns_48"
+      }
+    }
+  ],
+  "captures": [
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "sha256": "289e716a716b5b668b34d02bccea82c43885d45c3b7efc769a97a463cf930358",
+      "native_report_sha256": "fa33bff7b3c2c444961e2b2108f8e623b843d981674a5a8e1d0d517d7533d22d"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "sha256": "9fc6e8b8b9e2b03d3ccbb340dda82070e3ecc1a4181320432fcb0f88d0590ff3",
+      "native_report_sha256": "e7bf8dcb9c956534f57f858d4b89817269de4ba064fdc543af1201e411a2c923"
+    }
+  ],
+  "decompiled_branch": {
+    "rva": "10f0a0",
+    "sha256": "25c6d73a1919632f04c2e18bc74f0bf0bbd96aabd5f89cb69fcfe21b3828f7ae",
+    "source": "private/ghidra/c/10f0a0.ann.c",
+    "line": 1401,
+    "interpretation": "When Tk code is zero, C1 adds the counter accent to the numeral mora count, while C2 adds one. C3 uses the numeral mora count (or explicit @ offset)."
+  },
+  "unresolved_audit": {
+    "log_sha256": "66e883bafb68618218e3ee5ac215ee4445cc505db84c334fae285a021e73e5ab",
+    "exit_code": 1,
+    "count": 2
+  }
+}

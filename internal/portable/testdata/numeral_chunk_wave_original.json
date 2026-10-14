@@ -1,0 +1,36 @@
+{
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "report_sha256": [
+    "0c9e19f15a1c56568c1f13deb6475ef9d0a120984371ad278619eb9e3b16e5f3",
+    "131408295113ee8acff742681635559c0646f3abee351f84b639ae5ac6c22ad7"
+  ],
+  "original_threads": 6,
+  "avx512_convolutions": false,
+  "cases": [
+    {
+      "text": "一人私私読む一人でます。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 369394,
+      "sha256": "faf03c3a4792c5c5043915316ca1ebc58805b05d6944f7fe3a3ef8317a081285"
+    },
+    {
+      "text": "零木「校九（下1、火私。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 408652,
+      "sha256": "45907bf80d8ca2af4a65eb8df0cda65c74b552e13627bd3294b1f5bbace0f8cc"
+    },
+    {
+      "text": "一人私私読む一人でます。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 406688,
+      "sha256": "d4ede74ecb26102ed27e0f2e3accf206f0f401fbaa28aa99636050c2a165ecd6"
+    },
+    {
+      "text": "零木「校九（下1、火私。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 443498,
+      "sha256": "6e51ea20c94b568becf488109844b1cad6f1c697c28979e6bcf338da5194d904"
+    }
+  ]
+}

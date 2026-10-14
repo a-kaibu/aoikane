@@ -1,0 +1,120 @@
+{
+  "scope": "Frontend-only native observations. Balanced stages and numeric call stack, raw return values retained (including valid zero), formatter matched to independent ordinary SDK captures. Not waveform proof.",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "voice": "KotonohaAkane_ns_48",
+  "captures": [
+    {
+      "sha256": "cfb4885b1eb5179557d8b377d077291dd852ee52a1deea9e93a63f0179505f60",
+      "cases": [
+        {
+          "text": "九零八日目。",
+          "formatter": "<S>キュ^ーレ!ー|0ハ^チニ!チメ<F>",
+          "counts": {
+            "hooked": 1,
+            "stage_enter_1b9f10": 1,
+            "stage_enter_11f9c0": 1,
+            "numeral_segment_enter": 1,
+            "numeral_segment_leave": 1,
+            "numeral_counter_enter": 1,
+            "stage_leave_11f9c0": 1,
+            "stage_enter_11ec50": 1,
+            "stage_leave_11ec50": 1,
+            "stage_leave_1b9f10": 1,
+            "stage_enter_1b9f60": 1,
+            "stage_leave_1b9f60": 1,
+            "graph_in": 1,
+            "graph_built": 1,
+            "graph_after": 1,
+            "format": 1,
+            "done": 1
+          },
+          "events": [
+            {
+              "event": "numeral_segment_leave",
+              "rva": "1043f0",
+              "input_hex": "8be397eb94aa",
+              "result": "0x1",
+              "output_a": "834c8385815b838c815b8282836e8360",
+              "output_b": "8be397eb94aa",
+              "input_hex_cp932": "九零八",
+              "output_a_cp932": "キューレーｂハチ",
+              "output_b_cp932": "九零八"
+            },
+            {
+              "event": "numeral_counter_enter",
+              "caller": "0x106ce5",
+              "number_hex": "8be397eb94aa",
+              "number_accent_hex": "322d332d342c73302c322d322d32",
+              "number_spelling_hex": "8be397eb94aa",
+              "counter_key_hex": "93fa96da",
+              "counter_read_hex": "836a83608381",
+              "counter_sound_hex": "836a83608381",
+              "param11": 0,
+              "param12": 0,
+              "number_hex_cp932": "九零八",
+              "number_accent_hex_cp932": "2-3-4,s0,2-2-2",
+              "number_spelling_hex_cp932": "九零八",
+              "counter_key_hex_cp932": "日目",
+              "counter_read_hex_cp932": "ニチメ",
+              "counter_sound_hex_cp932": "ニチメ"
+            }
+          ]
+        },
+        {
+          "text": "九零八日間。",
+          "formatter": "<S>キュ^ーレ!ー|0ハ^チニチ!カン<F>",
+          "counts": {
+            "hooked": 1,
+            "stage_enter_1b9f10": 1,
+            "stage_enter_11f9c0": 1,
+            "numeral_segment_enter": 1,
+            "numeral_segment_leave": 1,
+            "numeral_counter_enter": 1,
+            "stage_leave_11f9c0": 1,
+            "stage_enter_11ec50": 1,
+            "stage_leave_11ec50": 1,
+            "stage_leave_1b9f10": 1,
+            "stage_enter_1b9f60": 1,
+            "stage_leave_1b9f60": 1,
+            "graph_in": 1,
+            "graph_built": 1,
+            "graph_after": 1,
+            "format": 1,
+            "done": 1
+          },
+          "events": [
+            {
+              "event": "numeral_segment_leave",
+              "rva": "1043f0",
+              "input_hex": "8be397eb94aa",
+              "result": "0x1",
+              "output_a": "834c8385815b838c815b8282836e8360",
+              "output_b": "8be397eb94aa",
+              "input_hex_cp932": "九零八",
+              "output_a_cp932": "キューレーｂハチ",
+              "output_b_cp932": "九零八"
+            },
+            {
+              "event": "numeral_counter_enter",
+              "caller": "0x106ce5",
+              "number_hex": "8be397eb94aa",
+              "number_accent_hex": "322d332d342c73302c322d322d32",
+              "number_spelling_hex": "8be397eb94aa",
+              "counter_key_hex": "93fa8ad4",
+              "counter_read_hex": "836a8360834a8393",
+              "counter_sound_hex": "836a8360834a8393",
+              "param11": 0,
+              "param12": 0,
+              "number_hex_cp932": "九零八",
+              "number_accent_hex_cp932": "2-3-4,s0,2-2-2",
+              "number_spelling_hex_cp932": "九零八",
+              "counter_key_hex_cp932": "日間",
+              "counter_read_hex_cp932": "ニチカン",
+              "counter_sound_hex_cp932": "ニチカン"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

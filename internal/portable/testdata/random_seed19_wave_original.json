@@ -1,0 +1,80 @@
+{
+  "source": "independent hook-free ordinary original SDK versus Go full synthesis; saved original and Go WAV files and reports rehashed; read-only formatter capture provenance retained separately",
+  "seed": 19,
+  "generator_version": 1,
+  "max_units": 24,
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "original_threads": 6,
+  "avx512_convolutions": false,
+  "report_sha256": [
+    "2d3f463b0c5f1871151476ca0ebdd333ff4eaa97416026379db3dc7ebe2dc65e",
+    "3639a6b78ef3cbb25e2708d5406073013188e23180f372bcfbaebf76fe9e7cc2"
+  ],
+  "capture_sha256": [
+    "b76ff618c7d211d80550bd8a3b3b2572c720817921c7b59ad3d1415b9ec2013f",
+    "62bf58ce634406920ca9bf98656ebdf0df45af0670170bed3282f04f289b2a43"
+  ],
+  "cases": [
+    {
+      "index": 0,
+      "text": "なふけふゃょせおてわじぴせるせ。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 291898,
+      "sha256": "c5aa0fe7344fda4931c16622bdcb331427a87c22706ff867c8cc09270d543228"
+    },
+    {
+      "index": 1,
+      "text": "8Ａ一生二9土ａａ学金7A閉6水37ＡＡ。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 644322,
+      "sha256": "dfed59b0607127a032b24b47b4a3a26741186c354a16a02a1a013fa67e313c73"
+    },
+    {
+      "index": 2,
+      "text": "アЖ0（A😀。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 212648,
+      "sha256": "4ed0561600d0e73f1404b367521f2b8ec79a19483a4267cc865d812b22e23d01"
+    },
+    {
+      "index": 3,
+      "text": "で読むます猫駅に行く大きなます青い魚口開けるhello。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 588552,
+      "sha256": "c0cedb647e6ce3b0795dfaf142ebca0f12c80129f7d82f34a6a70479ad9f9d82"
+    },
+    {
+      "index": 0,
+      "text": "なふけふゃょせおてわじぴせるせ。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 340380,
+      "sha256": "39f14d1e95b26aa3e0c5e831e2976cf40ef616aaab368adec73240034e0baca8"
+    },
+    {
+      "index": 1,
+      "text": "8Ａ一生二9土ａａ学金7A閉6水37ＡＡ。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 691104,
+      "sha256": "7cd723367a53ad12b5691e1ea373b2e01a13b5339f317208548d8138c9bab748"
+    },
+    {
+      "index": 2,
+      "text": "アЖ0（A😀。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 212830,
+      "sha256": "baebef240d99c5fb21cb28f5ddca88c9a38f2dd3c50367a83a7f9ef266a97f5d"
+    },
+    {
+      "index": 3,
+      "text": "で読むます猫駅に行く大きなます青い魚口開けるhello。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 591546,
+      "sha256": "1ea747992cafd61e97b6259641fcaaddfc1a5fd48177bd74c42f3a546fc4ee60"
+    }
+  ],
+  "capture_report_sha256": [
+    "b97ea639f09b1d1712f8a61297bedb6d6175e5333fa77fde242fd6925221de7f",
+    "72fde9f66508cfabea2467bb62d86e92f01b49ff1492e5cc1a047c5be5001f4b"
+  ]
+}

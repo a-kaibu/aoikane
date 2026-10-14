@@ -1,0 +1,29 @@
+{
+  "source": "terminal ordinary SDK comparisons; original/Go whole files reread; original checked against independent capture",
+  "report_sha256": [
+    "91a82b52819dfef5704df3198ded01f2d860ee41707472a59333aa75780c3b7c",
+    "a87e4f44311ac2bd02e284b0bfabb498c7f6e71720fb5ed6532acfa51bd11a81"
+  ],
+  "capture_sha256": [
+    "b76ff618c7d211d80550bd8a3b3b2572c720817921c7b59ad3d1415b9ec2013f",
+    "62bf58ce634406920ca9bf98656ebdf0df45af0670170bed3282f04f289b2a43"
+  ],
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "original_threads": 6,
+  "avx512_convolutions": false,
+  "cases": [
+    {
+      "text": "火閉漢字私六零四木1月78金土Ｂ六火A火三。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 592338,
+      "sha256": "baa37ebd752a3e50dee5d983bbd6881c190e17556281cadc09bf7e4aca0b6445"
+    },
+    {
+      "text": "火閉漢字私六零四木1月78金土Ｂ六火A火三。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 675304,
+      "sha256": "28769406e32b762f656dc0e32999637fe061ae7e9cf7cb3e63eca6a9c8819fe5"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "scope": "All six strict original whole-WAV references replayed on Linux amd64",
+  "log_sha256": "46835619030ed69801ca04238a2539f737718690d4a00de51c9d3f30a9913554",
+  "test_binary_sha256": "ad71faa1cbc14b81e9a7b6bc8b53a6b3e6d45ad462aea8123570d3e86bdf2657",
+  "build_info": "private/interior-coefficient-linux.test: go1.26.8\n\tpath\taoikane/internal/portable.test\n\tmod\taoikane\t(devel)\t\n\tbuild\t-buildmode=exe\n\tbuild\t-compiler=gc\n\tbuild\t-tags=portable\n\tbuild\tCGO_ENABLED=0\n\tbuild\tGOARCH=amd64\n\tbuild\tGOOS=linux\n\tbuild\tGOAMD64=v1\n",
+  "reference_sha256": "674e12f35ef2b25b279cedaa64d6ae79a4690223b657411e3c3b15e6afcf4481",
+  "duration": "529.77s",
+  "cases": 6,
+  "terminal_exit_code": 0
+}

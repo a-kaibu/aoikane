@@ -1,0 +1,48 @@
+{
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "original_threads": 6,
+  "avx512_convolutions": false,
+  "report_sha256": [
+    "1d1ea6aed265921a67403fe1d3ff8a062c9a4c4d4122144706b7679755696ceb",
+    "5e2e99f7aec883111d4ccc446ce44e572429623491d1f9ef29d294a4441b50e6"
+  ],
+  "cases": [
+    {
+      "Text": "九零八日目。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 215452,
+      "SHA256": "a99af74c8f426e3c00f392edc7dca1f4652a017f687badd8cf408d5e035620df"
+    },
+    {
+      "Text": "一−九零八日目。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 271128,
+      "SHA256": "2d979d4a45d4bc2d4aa1f0c2a624a8a66b460fde1f5d4327bc0e156c84911454"
+    },
+    {
+      "Text": "九零八日間。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 219380,
+      "SHA256": "b3e5a3a1c60b993c5c84b2cda733d86031da7283c0ed71f071230eed771cb172"
+    },
+    {
+      "Text": "九零八日目。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 215452,
+      "SHA256": "a99af74c8f426e3c00f392edc7dca1f4652a017f687badd8cf408d5e035620df"
+    },
+    {
+      "Text": "一−九零八日目。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 271128,
+      "SHA256": "2d979d4a45d4bc2d4aa1f0c2a624a8a66b460fde1f5d4327bc0e156c84911454"
+    },
+    {
+      "Text": "九零八日間。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 219380,
+      "SHA256": "b3e5a3a1c60b993c5c84b2cda733d86031da7283c0ed71f071230eed771cb172"
+    }
+  ]
+}

@@ -1,0 +1,252 @@
+{
+  "complete_shard": true,
+  "complete_corpus": false,
+  "seed": 19,
+  "generator_version": 1,
+  "count_per_voice": 128,
+  "max_units": 24,
+  "shard": 1,
+  "shards": 8,
+  "source": "finished ordinary original SDK/Go tests; whole saved WAVs rehashed against reports and prior original captures",
+  "pcm16_samples": 7067932,
+  "report_sha256": [
+    "7c53ba18f218a4121b76a5719826a2c95cea7e4c91843e57e80229785ff4e731",
+    "14db9e9f8e3091e11246fbd6542165c8ca89b4f2d765eb4f702705ff80f40b6e"
+  ],
+  "capture_sha256": [
+    "b76ff618c7d211d80550bd8a3b3b2572c720817921c7b59ad3d1415b9ec2013f",
+    "62bf58ce634406920ca9bf98656ebdf0df45af0670170bed3282f04f289b2a43"
+  ],
+  "cases": [
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 1,
+      "text": "8Ａ一生二9土ａａ学金7A閉6水37ＡＡ。",
+      "bytes": 644322,
+      "sha256": "dfed59b0607127a032b24b47b4a3a26741186c354a16a02a1a013fa67e313c73"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 9,
+      "text": "ー下）漢B日9ａ2。",
+      "bytes": 261410,
+      "sha256": "45af04b9a5feb372d2c1fa4c689790b445b6d8cd602083a4dc7c3fefa82498a7"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 17,
+      "text": "七漢。。",
+      "bytes": 145484,
+      "sha256": "1775ad277a6f3bf5b40b4f5159727ff90cdf55f754a3bec6c5e911d071b15515"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 25,
+      "text": "「8木開校9Ｃ日！生！7一九5七四）。",
+      "bytes": 653580,
+      "sha256": "a5cc98f22aaec11ebb5b8f041421437604048eb794260d86d2c3409675c695f8"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 33,
+      "text": "a76。学、」Ｂ月（木字、。",
+      "bytes": 462676,
+      "sha256": "a9c254c52639f8cdfe8e8962731b7cb5d0d17aaa0b3c2f4fd493c695905da909"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 41,
+      "text": "a学。",
+      "bytes": 139200,
+      "sha256": "77d9e43488159da1bd0db014b54ea4459435b7c7020d909b4bb49a10f321393e"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 49,
+      "text": "C6」ｃ下！金六閉学九木？0CＡ声（字閉。",
+      "bytes": 736716,
+      "sha256": "d76143fc5301743bade6a78709918947e57dd5287705440c317fd73fcf6dcdcf"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 57,
+      "text": "二）「45六7B閉六二木）火日。",
+      "bytes": 403330,
+      "sha256": "ecab2805a0a3fe6b8660c1b6b309a84a73b56a7c6b9fcec186eaeb5c0708099a"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 65,
+      "text": "五零開ｂ0（水Ｂ九葉「九字ｃ琴1。学人90木。",
+      "bytes": 727264,
+      "sha256": "a178ef86df3f136deda3a1e2f57ea0e8d7c78d2b71718fc1183da0a3a5a9b365"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 73,
+      "text": "、a。",
+      "bytes": 120044,
+      "sha256": "21838d64d65140e108f0ee8297baad3ec95568afb6f9b087cfe934b5a235b5df"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 81,
+      "text": "1。b声02二八六三木2音八七学。",
+      "bytes": 603272,
+      "sha256": "897101f25adabb05727076fbd5012b7854834faf51822539a2b792e57394b3ba"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 89,
+      "text": "「！1、「琴b。",
+      "bytes": 294896,
+      "sha256": "eeaf2b88b15f486dffa2fc09eb8c74a8a5f0b6b0737e45c53b09426a4d6d5e11"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 97,
+      "text": "一。",
+      "bytes": 120524,
+      "sha256": "eaaa5f88dde69cd68de88432a02b0f8ff9bb44f605b8eef72c0e84d8bf64ca67"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 105,
+      "text": "声a土上下9水七7土下ａＢ」四。「声42琴。",
+      "bytes": 656708,
+      "sha256": "a8207ebd5a847c730bb467c3f20d953f5390331b116ddaa53ab83a62a034b35d"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 113,
+      "text": "水学零b生C。ｃ」ｂ八Ｃ七。",
+      "bytes": 487454,
+      "sha256": "f0cea72cf68c5c642ab4bf8e28a16d9004846a50bb393e184bdc3647db15ae64"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 121,
+      "text": "37声音！！声ｂ？上水。",
+      "bytes": 521030,
+      "sha256": "3b5956f0801fdab9fe8bdd743d1fa47f30f7275bd4a37881543dc5901304d6cf"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 1,
+      "text": "8Ａ一生二9土ａａ学金7A閉6水37ＡＡ。",
+      "bytes": 691104,
+      "sha256": "7cd723367a53ad12b5691e1ea373b2e01a13b5339f317208548d8138c9bab748"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 9,
+      "text": "ー下）漢B日9ａ2。",
+      "bytes": 284404,
+      "sha256": "925fad11cdbf495079383e5a76ff6a76d2fa72e628a1d72a02f928b40e36cceb"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 17,
+      "text": "七漢。。",
+      "bytes": 145484,
+      "sha256": "1775ad277a6f3bf5b40b4f5159727ff90cdf55f754a3bec6c5e911d071b15515"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 25,
+      "text": "「8木開校9Ｃ日！生！7一九5七四）。",
+      "bytes": 654368,
+      "sha256": "79887b1dac7cbfbc22f1d8bdde1ca21dee3474c9d60c770de9f4e5fbf0454334"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 33,
+      "text": "a76。学、」Ｂ月（木字、。",
+      "bytes": 490798,
+      "sha256": "f951fa56d8cb840dfcf3c90d1a6c812c432f10283eb2556d5dfe50a7cf5d542e"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 41,
+      "text": "a学。",
+      "bytes": 139200,
+      "sha256": "77d9e43488159da1bd0db014b54ea4459435b7c7020d909b4bb49a10f321393e"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 49,
+      "text": "C6」ｃ下！金六閉学九木？0CＡ声（字閉。",
+      "bytes": 703940,
+      "sha256": "7a2546f2da157eee0a65f19360d9e11b01b7c7a972f58a3b182c688e8b5bf672"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 57,
+      "text": "二）「45六7B閉六二木）火日。",
+      "bytes": 429466,
+      "sha256": "857a5ec8aa5dcab9acb9be7b2fce8d4c95520a5c43b55098f15875739cc7801c"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 65,
+      "text": "五零開ｂ0（水Ｂ九葉「九字ｃ琴1。学人90木。",
+      "bytes": 737942,
+      "sha256": "73071cf36644b13ef6645f43c278149d6e06addd377125184d5b117bf38cae7c"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 73,
+      "text": "、a。",
+      "bytes": 120044,
+      "sha256": "21838d64d65140e108f0ee8297baad3ec95568afb6f9b087cfe934b5a235b5df"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 81,
+      "text": "1。b声02二八六三木2音八七学。",
+      "bytes": 632022,
+      "sha256": "fd679d9d28c14881c9f288a180fa035bca9c0f549c2ad216b8a8e469fd20d5f8"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 89,
+      "text": "「！1、「琴b。",
+      "bytes": 295286,
+      "sha256": "4d613eee1b21515ccfd69a9727b51e766c8649ceb5f88de6e698e572faa86de6"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 97,
+      "text": "一。",
+      "bytes": 120524,
+      "sha256": "eaaa5f88dde69cd68de88432a02b0f8ff9bb44f605b8eef72c0e84d8bf64ca67"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 105,
+      "text": "声a土上下9水七7土下ａＢ」四。「声42琴。",
+      "bytes": 706964,
+      "sha256": "f8ef57950fff48050ccd3c845cddc67260108f9bc3f9a4e2e8af397c064e9341"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 113,
+      "text": "水学零b生C。ｃ」ｂ八Ｃ七。",
+      "bytes": 488510,
+      "sha256": "ac2136718cefd4fd0fa73738a0a966a5786a50e4a9ecbb28b6cd9aab2889207e"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 121,
+      "text": "37声音！！声ｂ？上水。",
+      "bytes": 519306,
+      "sha256": "340cf32bb06a890bb3ff09d3b7b775744e38e32081bc262157dcc84059540372"
+    }
+  ],
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "go_version": "go1.26.8",
+  "original_threads": 6,
+  "avx512_convolutions": false,
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "corpus_sha256": "006e062a26565e8a79235bcf9461a6e13f50dc91bd4abbc5598b78a279b10b40"
+}

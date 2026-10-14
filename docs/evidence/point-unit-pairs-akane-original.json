@@ -1,0 +1,802 @@
+{
+  "source": "read-only native frontend snapshots; formatter matched independent ordinary SDK; not whole-WAV proof",
+  "cases": [
+    {
+      "text": "1．万万Ｃ。",
+      "raw_sha256": "acca296e049dea5f339797c9af43eeba5a19e4ad7e89c675005e887912f6b5bc",
+      "formats": [
+        "<S>^イ!チテン|0^マ!ン|0マ^ンシ!ー<F>"
+      ],
+      "segments": [
+        {
+          "rva": "10b010",
+          "result": "0x1",
+          "number": "１",
+          "sound": "イチ",
+          "canonical": "一"
+        },
+        {
+          "rva": "10b010",
+          "result": "0x1",
+          "number": "万万",
+          "sound": "イチテンｂマンマン",
+          "canonical": "一．万万"
+        },
+        {
+          "rva": "100a90",
+          "result": "0x1",
+          "number": "１．万万",
+          "sound": "イチテンｂマンマン",
+          "canonical": "一．万万"
+        }
+      ],
+      "stages": [
+        {
+          "stage": "11f9c0",
+          "call_index": 0,
+          "morphs": [
+            {
+              "surface": "",
+              "candidates": []
+            },
+            {
+              "surface": "。",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "１．万万Ｃ",
+              "candidates": [
+                [
+                  "イチテンマン",
+                  "イチテンマン",
+                  "1-1-4,s0,1-1-2",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "",
+              "candidates": [
+                [
+                  "マンシー",
+                  "マンシー",
+                  "2-3-4",
+                  "*"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "11ec50",
+          "call_index": 0,
+          "morphs": [
+            {
+              "surface": "",
+              "candidates": []
+            },
+            {
+              "surface": "。",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "１．万万Ｃ",
+              "candidates": [
+                [
+                  "イチテンマン",
+                  "イチテンマン",
+                  "1-1-4,s0,1-1-2",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "",
+              "candidates": [
+                [
+                  "マンシー",
+                  "マンシー",
+                  "2-3-4",
+                  "*"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "1．万億。",
+      "raw_sha256": "acca296e049dea5f339797c9af43eeba5a19e4ad7e89c675005e887912f6b5bc",
+      "formats": [
+        "<S>^イ!チテン|0^マ!ン|0オ^ク<F>"
+      ],
+      "segments": [
+        {
+          "rva": "10b010",
+          "result": "0x1",
+          "number": "１",
+          "sound": "イチ",
+          "canonical": "一"
+        },
+        {
+          "rva": "10b010",
+          "result": "0x1",
+          "number": "万億",
+          "sound": "イチテンｂマンオク",
+          "canonical": "一．万億"
+        },
+        {
+          "rva": "100a90",
+          "result": "0x1",
+          "number": "１．万億",
+          "sound": "イチテンｂマンオク",
+          "canonical": "一．万億"
+        }
+      ],
+      "stages": [
+        {
+          "stage": "11f9c0",
+          "call_index": 0,
+          "morphs": [
+            {
+              "surface": "",
+              "candidates": []
+            },
+            {
+              "surface": "。",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "１．万億",
+              "candidates": [
+                [
+                  "イチテンマン",
+                  "イチテンマン",
+                  "1-1-4,s0,1-1-2",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "",
+              "candidates": [
+                [
+                  "オク",
+                  "オク",
+                  "2-0-2",
+                  "*"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "11ec50",
+          "call_index": 0,
+          "morphs": [
+            {
+              "surface": "",
+              "candidates": []
+            },
+            {
+              "surface": "。",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "１．万億",
+              "candidates": [
+                [
+                  "イチテンマン",
+                  "イチテンマン",
+                  "1-1-4,s0,1-1-2",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "",
+              "candidates": [
+                [
+                  "オク",
+                  "オク",
+                  "2-0-2",
+                  "*"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "1．九万万。",
+      "raw_sha256": "acca296e049dea5f339797c9af43eeba5a19e4ad7e89c675005e887912f6b5bc",
+      "formats": [
+        "<S>^イ!チテン|0キュ^ーマ!ン|0^マ!ン<F>"
+      ],
+      "segments": [
+        {
+          "rva": "10b010",
+          "result": "0x1",
+          "number": "１",
+          "sound": "イチ",
+          "canonical": "一"
+        },
+        {
+          "rva": "10b010",
+          "result": "0x1",
+          "number": "九万万",
+          "sound": "イチテンｂキューマンマン",
+          "canonical": "一．九万万"
+        },
+        {
+          "rva": "100a90",
+          "result": "0x1",
+          "number": "１．九万万",
+          "sound": "イチテンｂキューマンマン",
+          "canonical": "一．九万万"
+        }
+      ],
+      "stages": [
+        {
+          "stage": "11f9c0",
+          "call_index": 0,
+          "morphs": [
+            {
+              "surface": "",
+              "candidates": []
+            },
+            {
+              "surface": "。",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "１．九万万",
+              "candidates": [
+                [
+                  "イチテンキュウマン",
+                  "イチテンキューマン",
+                  "1-1-4,s0,2-3-4",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "",
+              "candidates": [
+                [
+                  "マン",
+                  "マン",
+                  "1-1-2",
+                  "*"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "11ec50",
+          "call_index": 0,
+          "morphs": [
+            {
+              "surface": "",
+              "candidates": []
+            },
+            {
+              "surface": "。",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "１．九万万",
+              "candidates": [
+                [
+                  "イチテンキュウマン",
+                  "イチテンキューマン",
+                  "1-1-4,s0,2-3-4",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "",
+              "candidates": [
+                [
+                  "マン",
+                  "マン",
+                  "1-1-2",
+                  "*"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "万万。",
+      "raw_sha256": "acca296e049dea5f339797c9af43eeba5a19e4ad7e89c675005e887912f6b5bc",
+      "formats": [
+        "<S>マ^ンマ!ン<F>"
+      ],
+      "segments": [
+        {
+          "rva": "10b010",
+          "result": "0x1",
+          "number": "万万",
+          "sound": "マンマン",
+          "canonical": "万万"
+        },
+        {
+          "rva": "100a90",
+          "result": "0x1",
+          "number": "万万",
+          "sound": "マンマン",
+          "canonical": "万万"
+        }
+      ],
+      "stages": [
+        {
+          "stage": "11f9c0",
+          "call_index": 0,
+          "morphs": [
+            {
+              "surface": "",
+              "candidates": []
+            },
+            {
+              "surface": "。",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "万万",
+              "candidates": [
+                [
+                  "マンマン",
+                  "マンマン",
+                  "2-3-4",
+                  "*"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "11ec50",
+          "call_index": 0,
+          "morphs": [
+            {
+              "surface": "",
+              "candidates": []
+            },
+            {
+              "surface": "。",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "万万",
+              "candidates": [
+                [
+                  "マンマン",
+                  "マンマン",
+                  "2-3-4",
+                  "*"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "1．万万万Ｃ。",
+      "raw_sha256": "c77a9a344a30694c75c2f9482007b89363d3c30b873b72cfdcd3310adc69b222",
+      "formats": [
+        "<S>^イ!チテン|0^マ!ン|0マ^ンマンシ!ー<F>"
+      ],
+      "segments": [
+        {
+          "rva": "10b010",
+          "result": "0x1",
+          "number": "１",
+          "sound": "イチ",
+          "canonical": "一"
+        },
+        {
+          "rva": "10b010",
+          "result": "0x1",
+          "number": "万万万",
+          "sound": "イチテンｂマンマンマン",
+          "canonical": "一．万万万"
+        },
+        {
+          "rva": "100a90",
+          "result": "0x1",
+          "number": "１．万万万",
+          "sound": "イチテンｂマンマンマン",
+          "canonical": "一．万万万"
+        }
+      ],
+      "stages": [
+        {
+          "stage": "11f9c0",
+          "call_index": 0,
+          "morphs": [
+            {
+              "surface": "",
+              "candidates": []
+            },
+            {
+              "surface": "。",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "１．万万万Ｃ",
+              "candidates": [
+                [
+                  "イチテンマン",
+                  "イチテンマン",
+                  "1-1-4,s0,1-1-2",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "",
+              "candidates": [
+                [
+                  "マンマンシー",
+                  "マンマンシー",
+                  "2-5-6",
+                  "*"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "11ec50",
+          "call_index": 0,
+          "morphs": [
+            {
+              "surface": "",
+              "candidates": []
+            },
+            {
+              "surface": "。",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "１．万万万Ｃ",
+              "candidates": [
+                [
+                  "イチテンマン",
+                  "イチテンマン",
+                  "1-1-4,s0,1-1-2",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "",
+              "candidates": [
+                [
+                  "マンマンシー",
+                  "マンマンシー",
+                  "2-5-6",
+                  "*"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "1．億万億。",
+      "raw_sha256": "c77a9a344a30694c75c2f9482007b89363d3c30b873b72cfdcd3310adc69b222",
+      "formats": [
+        "<S>^イ!チテン|0オク|0^マ!ンオク<F>"
+      ],
+      "segments": [
+        {
+          "rva": "10b010",
+          "result": "0x1",
+          "number": "１",
+          "sound": "イチ",
+          "canonical": "一"
+        },
+        {
+          "rva": "10b010",
+          "result": "0x1",
+          "number": "億万億",
+          "sound": "イチテンｂオクマンオク",
+          "canonical": "一．億万億"
+        },
+        {
+          "rva": "100a90",
+          "result": "0x1",
+          "number": "１．億万億",
+          "sound": "イチテンｂオクマンオク",
+          "canonical": "一．億万億"
+        }
+      ],
+      "stages": [
+        {
+          "stage": "11f9c0",
+          "call_index": 0,
+          "morphs": [
+            {
+              "surface": "",
+              "candidates": []
+            },
+            {
+              "surface": "。",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "１．億万億",
+              "candidates": [
+                [
+                  "イチテンオク",
+                  "イチテンオク",
+                  "1-1-4,s0,2-0-2",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "",
+              "candidates": [
+                [
+                  "マンオク",
+                  "マンオク",
+                  "2-2-4",
+                  "*"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "11ec50",
+          "call_index": 0,
+          "morphs": [
+            {
+              "surface": "",
+              "candidates": []
+            },
+            {
+              "surface": "。",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "１．億万億",
+              "candidates": [
+                [
+                  "イチテンオク",
+                  "イチテンオク",
+                  "1-1-4,s0,2-0-2",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "",
+              "candidates": [
+                [
+                  "マンオク",
+                  "マンオク",
+                  "2-2-4",
+                  "*"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "1．億万億Ｃ。",
+      "raw_sha256": "c77a9a344a30694c75c2f9482007b89363d3c30b873b72cfdcd3310adc69b222",
+      "formats": [
+        "<S>^イ!チテン|0オ^ク|0マ^ンオクシ!ー<F>"
+      ],
+      "segments": [
+        {
+          "rva": "10b010",
+          "result": "0x1",
+          "number": "１",
+          "sound": "イチ",
+          "canonical": "一"
+        },
+        {
+          "rva": "10b010",
+          "result": "0x1",
+          "number": "億万億",
+          "sound": "イチテンｂオクマンオク",
+          "canonical": "一．億万億"
+        },
+        {
+          "rva": "100a90",
+          "result": "0x1",
+          "number": "１．億万億",
+          "sound": "イチテンｂオクマンオク",
+          "canonical": "一．億万億"
+        }
+      ],
+      "stages": [
+        {
+          "stage": "11f9c0",
+          "call_index": 0,
+          "morphs": [
+            {
+              "surface": "",
+              "candidates": []
+            },
+            {
+              "surface": "。",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "１．億万億Ｃ",
+              "candidates": [
+                [
+                  "イチテンオク",
+                  "イチテンオク",
+                  "1-1-4,s0,2-0-2",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "",
+              "candidates": [
+                [
+                  "マンオクシー",
+                  "マンオクシー",
+                  "2-5-6",
+                  "*"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "11ec50",
+          "call_index": 0,
+          "morphs": [
+            {
+              "surface": "",
+              "candidates": []
+            },
+            {
+              "surface": "。",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "１．億万億Ｃ",
+              "candidates": [
+                [
+                  "イチテンオク",
+                  "イチテンオク",
+                  "1-1-4,s0,2-0-2",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "",
+              "candidates": [
+                [
+                  "マンオクシー",
+                  "マンオクシー",
+                  "2-5-6",
+                  "*"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

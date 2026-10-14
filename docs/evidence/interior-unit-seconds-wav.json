@@ -1,0 +1,126 @@
+{
+  "scope": "Two inputs in both voices on specified CPU; arbitrary input/settings/CPU fidelity remains unproven",
+  "reports": [
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "log_sha256": "d7c0c2f07ff75d9e488b85fb678d13e865aadbfb7202428c94e636c996d994f8",
+      "report_sha256": "775231ff1eb53b0e4208816d6f781a0f09c1c6a67fff548ec6750011bd31f9d2",
+      "report": {
+        "shard": 0,
+        "shards": 1,
+        "seed": 0,
+        "generator_version": 1,
+        "count": 2,
+        "max_units": 0,
+        "go_version": "go1.26.8",
+        "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+        "voice": "KotonohaAkane_ns_48",
+        "original_threads": 6,
+        "avx512_convolutions": false,
+        "results": [
+          {
+            "index": 0,
+            "text": "1京2秒3。",
+            "original_sha256": "c1d7f3460fcb305a20452a7850205cb24b79ab541f789f5a8ce59cb09e8231be",
+            "go_sha256": "c1d7f3460fcb305a20452a7850205cb24b79ab541f789f5a8ce59cb09e8231be",
+            "original_bytes": 209378,
+            "go_bytes": 209378,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 1,
+            "text": "８億京5二秒9九5％読むは。",
+            "original_sha256": "80c478c20239c396bf107206ba5aa2adf8c937dc493947ec0d7d97f78aa4db5d",
+            "go_sha256": "80c478c20239c396bf107206ba5aa2adf8c937dc493947ec0d7d97f78aa4db5d",
+            "original_bytes": 421294,
+            "go_bytes": 421294,
+            "first_difference": -1,
+            "equal": true
+          }
+        ]
+      }
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "log_sha256": "8fb0eec3402fa05a19fb9db22659fbf8e83c23d4d784d295e2a7dd73b4c1429f",
+      "report_sha256": "b492d9a2e0e4d3ef00cb90a0b60c84623d15b645633529ca6954344be54973be",
+      "report": {
+        "shard": 0,
+        "shards": 1,
+        "seed": 0,
+        "generator_version": 1,
+        "count": 2,
+        "max_units": 0,
+        "go_version": "go1.26.8",
+        "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+        "voice": "KotonohaAoi_ns_48",
+        "original_threads": 6,
+        "avx512_convolutions": false,
+        "results": [
+          {
+            "index": 0,
+            "text": "1京2秒3。",
+            "original_sha256": "c1d7f3460fcb305a20452a7850205cb24b79ab541f789f5a8ce59cb09e8231be",
+            "go_sha256": "c1d7f3460fcb305a20452a7850205cb24b79ab541f789f5a8ce59cb09e8231be",
+            "original_bytes": 209378,
+            "go_bytes": 209378,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 1,
+            "text": "８億京5二秒9九5％読むは。",
+            "original_sha256": "699dee457a6f1b31e700575f106fe35cfe35eb3750e1330aa0110b94db0df73c",
+            "go_sha256": "699dee457a6f1b31e700575f106fe35cfe35eb3750e1330aa0110b94db0df73c",
+            "original_bytes": 421846,
+            "go_bytes": 421846,
+            "first_difference": -1,
+            "equal": true
+          }
+        ]
+      }
+    }
+  ],
+  "reference": {
+    "source": "Finished ordinary SDK/Go WAV tests; saved original/Go WAVs independently compared with native capture files",
+    "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+    "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+    "original_threads": 6,
+    "avx512_convolutions": false,
+    "report_sha256": [
+      "775231ff1eb53b0e4208816d6f781a0f09c1c6a67fff548ec6750011bd31f9d2",
+      "b492d9a2e0e4d3ef00cb90a0b60c84623d15b645633529ca6954344be54973be"
+    ],
+    "capture_sha256": [
+      "5bb3c1a668dcc73a500edafbd08b8571431d32581f2f50cebdca32ad512d6d3f",
+      "0332724b27b352a7397564cea0fed66dbae6f7d8116211b3a7b3d279d87b6798"
+    ],
+    "cases": [
+      {
+        "text": "1京2秒3。",
+        "voice": "KotonohaAkane_ns_48",
+        "bytes": 209378,
+        "sha256": "c1d7f3460fcb305a20452a7850205cb24b79ab541f789f5a8ce59cb09e8231be"
+      },
+      {
+        "text": "８億京5二秒9九5％読むは。",
+        "voice": "KotonohaAkane_ns_48",
+        "bytes": 421294,
+        "sha256": "80c478c20239c396bf107206ba5aa2adf8c937dc493947ec0d7d97f78aa4db5d"
+      },
+      {
+        "text": "1京2秒3。",
+        "voice": "KotonohaAoi_ns_48",
+        "bytes": 209378,
+        "sha256": "c1d7f3460fcb305a20452a7850205cb24b79ab541f789f5a8ce59cb09e8231be"
+      },
+      {
+        "text": "８億京5二秒9九5％読むは。",
+        "voice": "KotonohaAoi_ns_48",
+        "bytes": 421846,
+        "sha256": "699dee457a6f1b31e700575f106fe35cfe35eb3750e1330aa0110b94db0df73c"
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "scope": "Linux amd64 DLL-free replay, all8 whole-WAV size/hash checks passed with terminal PASS. Binary predates range-counter changes. Not allCPU/input proof.",
+  "binary_sha256": "58ac69c37289a62b220c6e3f902ac682078a9631613bbb9137e75a6da1a3463e",
+  "log_sha256": "6e51371f01a6882d4c9f53d9e918b6b3b85b9aaa79fcc4b7374702bdaaa145ee",
+  "result_lines": [
+    "    mixed_rei_original_test.go:76: whole original WAV identical: \"1・2）3本。\", 229884 bytes",
+    "    mixed_rei_original_test.go:76: whole original WAV identical: \"電話1（2−3。\", 282840 bytes",
+    "    mixed_rei_original_test.go:76: whole original WAV identical: \"12：30・5。\", 259774 bytes",
+    "    mixed_rei_original_test.go:76: whole original WAV identical: \"Ａ９Aの５十読む８万・2）八時。\", 409632 bytes",
+    "    mixed_rei_original_test.go:76: whole original WAV identical: \"1・2）3本。\", 229358 bytes",
+    "    mixed_rei_original_test.go:76: whole original WAV identical: \"電話1（2−3。\", 282642 bytes",
+    "    mixed_rei_original_test.go:76: whole original WAV identical: \"12：30・5。\", 258416 bytes",
+    "    mixed_rei_original_test.go:76: whole original WAV identical: \"Ａ９Aの５十読む８万・2）八時。\", 435950 bytes"
+  ]
+}

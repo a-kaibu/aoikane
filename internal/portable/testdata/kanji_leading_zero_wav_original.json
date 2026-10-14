@@ -1,0 +1,51 @@
+{
+  "source": "ordinary original direct engine API; no instrumentation or injected model inputs",
+  "source_sha256": [
+    "16a89dc2c6fdc7b4e6c394b71a105799259128c0d6203ca80cd91fb44365742e",
+    "89e40a1587c75abf88fb758ae50da492a891cb371f25729a8de186458b7399f7",
+    "4c0f71467c9352fb152ab4d60b76128bde57d5382f573f7bfc850dfbef7f228b"
+  ],
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "voice": "KotonohaAkane_ns_48",
+  "original_threads": 6,
+  "avx512_convolutions": false,
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "torch_dll_sha256": "00ca5c937940a94d052dbe52ec5fb0909db11ffbfccfd6e65e19b468169ff5e5",
+  "cases": [
+    {
+      "text": "〇〇一人。",
+      "bytes": 189268,
+      "sha256": "04dec38cdcfa749c8a7aaa0e710c1821a34bb51e86e92d89cb811c7508a1766c"
+    },
+    {
+      "text": "〇一六本。",
+      "bytes": 189666,
+      "sha256": "a546fb5d05bfd2514c3f321e418b1e7aa06925f8df67ba184dc3b2d3b266aa79"
+    },
+    {
+      "text": "〇四日。",
+      "bytes": 136876,
+      "sha256": "ae301cbeb5e4bc2b3b93320e5eee6c850f443e13abdc5e761b241e64ebf8a96b"
+    },
+    {
+      "text": "０〇四日。",
+      "bytes": 198338,
+      "sha256": "a6421535ea65883983cfe5754b87fb7f83817b4ad058729bb3ff8023e41121c7"
+    },
+    {
+      "text": "〇一十。",
+      "bytes": 176236,
+      "sha256": "789d42590aa57e50f203368ca67390c630492d80ec26575f415ee5c2a7da5d0d"
+    },
+    {
+      "text": "01十。",
+      "bytes": 153164,
+      "sha256": "10fe454facacb6352bd58aa1d0cf7ebf4d98e260f693832076b8c9b5730ba265"
+    },
+    {
+      "text": "0万。",
+      "bytes": 137308,
+      "sha256": "c272f344827c5cff01802669ead7ec261569b9aa077e1fb6ade01005e1e34b89"
+    }
+  ]
+}

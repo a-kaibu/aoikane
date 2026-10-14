@@ -1,0 +1,48 @@
+{
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "report_sha256": [
+    "964fce533fbe38ff59e62e1591e5eef97970966c2b5b0c1bfe59fe7bf02faca6",
+    "e0fe9a4e790e21bb829c72df81ae9f68eb624814fc4a3d8aec4f33081d03c34d"
+  ],
+  "original_threads": 6,
+  "avx512_convolutions": false,
+  "cases": [
+    {
+      "text": " （あＡ－！0ЖＡ〜）−－－\n。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 320170,
+      "sha256": "eb2273248d8a5bb290a18ef10613688345870e9c8af66f977fe23ec6e777e4e0"
+    },
+    {
+      "text": "0ЖＡ～）－－－。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 183346,
+      "sha256": "08a48c956c48189f6530bd71bc91e5716dab73c95684a5275f9e765948fbe863"
+    },
+    {
+      "text": "0ЖＡ～）－－。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 183346,
+      "sha256": "08a48c956c48189f6530bd71bc91e5716dab73c95684a5275f9e765948fbe863"
+    },
+    {
+      "text": " （あＡ－！0ЖＡ〜）−－－\n。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 310774,
+      "sha256": "f3e3a7c3d8cefbd6c0510d4dd377f088eb5009f5727b282259cb70fa81273ea1"
+    },
+    {
+      "text": "0ЖＡ～）－－－。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 182926,
+      "sha256": "c87be923f5371928097c7071b8c5e73e2f35b95761b67892ac4c3d21ec98302d"
+    },
+    {
+      "text": "0ЖＡ～）－－。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 202206,
+      "sha256": "8ebd5beb645c5e35197fe716704321b0b501e90a97da8ad6257410e2459dd4a9"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "source": "ordinary original frontend; tools/probe_graph.py; no injected inputs",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "capture_sha256": [
+    "e33985cf92fc1ebccdec0ba9140274502d421a7fe8cab15e927a1a39dc2c5552",
+    "748e6dccc7f7ba29dd3c11b1e42a2387471c9d95f15aa3c6966ab76c731f0ceb"
+  ],
+  "cases": [
+    {
+      "text": "A00。",
+      "voice": "KotonohaAkane_ns_48",
+      "reading": "<S>^エ!ー|0ゼ^ロゼ!ロ<F>"
+    },
+    {
+      "text": "00。",
+      "voice": "KotonohaAkane_ns_48",
+      "reading": "<S>ゼ^ロゼ!ロ<F>"
+    },
+    {
+      "text": "００。",
+      "voice": "KotonohaAkane_ns_48",
+      "reading": "<S>ゼ^ロゼ!ロ<F>"
+    },
+    {
+      "text": "000。",
+      "voice": "KotonohaAkane_ns_48",
+      "reading": "<S>ゼ^ロゼ!ロ|0^ゼ!ロ<F>"
+    },
+    {
+      "text": "01。",
+      "voice": "KotonohaAkane_ns_48",
+      "reading": "<S>ゼ^ロイ!チ<F>"
+    },
+    {
+      "text": "A01。",
+      "voice": "KotonohaAkane_ns_48",
+      "reading": "<S>^エ!ー|0ゼ^ロイ!チ<F>"
+    },
+    {
+      "text": "00。",
+      "voice": "KotonohaAoi_ns_48",
+      "reading": "<S>ゼ^ロゼ!ロ<F>"
+    },
+    {
+      "text": "000。",
+      "voice": "KotonohaAoi_ns_48",
+      "reading": "<S>ゼ^ロゼ!ロ|0^ゼ!ロ<F>"
+    },
+    {
+      "text": "01。",
+      "voice": "KotonohaAoi_ns_48",
+      "reading": "<S>ゼ^ロイ!チ<F>"
+    },
+    {
+      "text": "007。",
+      "voice": "KotonohaAoi_ns_48",
+      "reading": "<S>ゼ^ロゼ!ロ|0^ナ!ナ<F>"
+    }
+  ]
+}

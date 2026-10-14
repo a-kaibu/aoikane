@@ -1,0 +1,156 @@
+{
+  "scope": "Frontend-only original observations; all stages and numeric stack checked; formatter matches independent SDK; not waveform evidence.",
+  "observation_sha256": "34777eb15b6ade781376bf4b33cb2b574f71c13006afff05ab83670ce68a33f7",
+  "cases": [
+    {
+      "text": "2兆万。",
+      "event_counts": {
+        "hooked": 1,
+        "stage_enter_1b9f10": 1,
+        "stage_enter_11f9c0": 1,
+        "numeral_segment_enter": 2,
+        "numeral_segment_leave": 2,
+        "stage_leave_11f9c0": 1,
+        "stage_enter_11ec50": 1,
+        "stage_leave_11ec50": 1,
+        "stage_leave_1b9f10": 1,
+        "stage_enter_1b9f60": 1,
+        "stage_leave_1b9f60": 1,
+        "graph_in": 1,
+        "graph_built": 1,
+        "graph_after": 1,
+        "format": 1,
+        "done": 1
+      },
+      "segments": [
+        {
+          "rva": "10b010",
+          "number": "２兆万",
+          "caller": "0x101e0b",
+          "raw_args": [
+            "0x3fe0000000000000",
+            "0x0",
+            "0x4000000000000000",
+            "0x0",
+            "0x4000000000000000"
+          ],
+          "output": [
+            "ニチョーマン",
+            "二兆万"
+          ]
+        },
+        {
+          "rva": "100a90",
+          "number": "２兆万",
+          "caller": "0x10245a",
+          "raw_args": [
+            "0x3624bfd600",
+            "0x7ffcb3cb3200",
+            "0x3624bfda00",
+            "0x20214a91400",
+            "0x0"
+          ],
+          "output": [
+            "ニチョーマン",
+            "二兆万"
+          ]
+        }
+      ],
+      "counters": [],
+      "formatted": [
+        "<S>ニ^チョーマ!ン<F>"
+      ]
+    },
+    {
+      "text": "2兆万1円。",
+      "event_counts": {
+        "hooked": 1,
+        "stage_enter_1b9f10": 1,
+        "stage_enter_11f9c0": 1,
+        "numeral_segment_enter": 3,
+        "numeral_segment_leave": 3,
+        "numeral_counter_enter": 1,
+        "stage_leave_11f9c0": 1,
+        "stage_enter_11ec50": 1,
+        "stage_leave_11ec50": 1,
+        "stage_leave_1b9f10": 1,
+        "stage_enter_1b9f60": 1,
+        "stage_leave_1b9f60": 1,
+        "graph_in": 1,
+        "graph_built": 1,
+        "graph_after": 1,
+        "format": 1,
+        "done": 1
+      },
+      "segments": [
+        {
+          "rva": "10b010",
+          "number": "２兆万",
+          "caller": "0x100f60",
+          "raw_args": [
+            "0x3fe0000000000000",
+            "0x0",
+            "0x4000000000000000",
+            "0x0",
+            "0x4000000000000000"
+          ],
+          "output": [
+            "ニチョーマン",
+            "二兆万"
+          ]
+        },
+        {
+          "rva": "10b010",
+          "number": "１",
+          "caller": "0x101e0b",
+          "raw_args": [
+            "0x3fe0000000000000",
+            "0x0",
+            "0x4000000000000000",
+            "0x0",
+            "0x4000000000000000"
+          ],
+          "output": [
+            "ニチョーマンイチ",
+            "二兆万一"
+          ]
+        },
+        {
+          "rva": "100a90",
+          "number": "２兆万１",
+          "caller": "0x10245a",
+          "raw_args": [
+            "0xca81dfdb30",
+            "0x7ffcb3cb3200",
+            "0xca81dfdf00",
+            "0x25a04a71400",
+            "0x0"
+          ],
+          "output": [
+            "ニチョーマンイチ",
+            "二兆万一"
+          ]
+        }
+      ],
+      "counters": [
+        {
+          "event": "numeral_counter_enter",
+          "caller": "0x106ce5",
+          "number_hex": "２兆万１",
+          "number_accent_hex": "2-4-5,2-2-2",
+          "number_spelling_hex": "二兆万一",
+          "counter_key_hex": "円",
+          "counter_read_hex": "エン",
+          "counter_sound_hex": "エン",
+          "param11": 1,
+          "param12": 0,
+          "input": "2兆万1円。",
+          "sentence": 0
+        }
+      ],
+      "formatted": [
+        "<S>ニ^チョーマ!ン|0イ^チ!エン<F>"
+      ]
+    }
+  ]
+}

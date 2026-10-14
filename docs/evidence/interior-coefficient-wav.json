@@ -1,0 +1,158 @@
+{
+  "scope": "Three interior-coefficient inputs in both voices; does not prove all inputs or CPUs",
+  "reports": [
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "log_sha256": "cdcb70bded5a32e021c42aca077b1a26c3e7bf69ddb1e46c30f6e4d6d3e2150d",
+      "report_sha256": "ded81ecbd9e96db85b748897ce27781bed1a0eff642bd602db115a947e1ae466",
+      "report": {
+        "shard": 0,
+        "shards": 1,
+        "seed": 0,
+        "generator_version": 1,
+        "count": 3,
+        "max_units": 0,
+        "go_version": "go1.26.8",
+        "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+        "voice": "KotonohaAkane_ns_48",
+        "original_threads": 6,
+        "avx512_convolutions": false,
+        "results": [
+          {
+            "index": 0,
+            "text": "21百990。",
+            "original_sha256": "099a79deee0efdeae5f3d805de95fb678d34b95a2a4523c8bb7f8a4dc3aa0646",
+            "go_sha256": "099a79deee0efdeae5f3d805de95fb678d34b95a2a4523c8bb7f8a4dc3aa0646",
+            "original_bytes": 303580,
+            "go_bytes": 303580,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 1,
+            "text": "21千9。",
+            "original_sha256": "4e9647a56bcad68974e3d8e22089a28518b32ff24c448bf65989dda19b89bb82",
+            "go_sha256": "4e9647a56bcad68974e3d8e22089a28518b32ff24c448bf65989dda19b89bb82",
+            "original_bytes": 215162,
+            "go_bytes": 215162,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 2,
+            "text": "11百990。",
+            "original_sha256": "24bb78b0fb49ed750116c1f0f8f65311d31b476856dd211823886dd783501be6",
+            "go_sha256": "24bb78b0fb49ed750116c1f0f8f65311d31b476856dd211823886dd783501be6",
+            "original_bytes": 290444,
+            "go_bytes": 290444,
+            "first_difference": -1,
+            "equal": true
+          }
+        ]
+      }
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "log_sha256": "d3f900abb01a66ebb09bdc75cef5999c1151d827eb398b25120e95a00a7655b9",
+      "report_sha256": "52a40959027f662067bb448af21d8839b9f3cd6c5c5807b3cca5400d2a3ab641",
+      "report": {
+        "shard": 0,
+        "shards": 1,
+        "seed": 0,
+        "generator_version": 1,
+        "count": 3,
+        "max_units": 0,
+        "go_version": "go1.26.8",
+        "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+        "voice": "KotonohaAoi_ns_48",
+        "original_threads": 6,
+        "avx512_convolutions": false,
+        "results": [
+          {
+            "index": 0,
+            "text": "21百990。",
+            "original_sha256": "099a79deee0efdeae5f3d805de95fb678d34b95a2a4523c8bb7f8a4dc3aa0646",
+            "go_sha256": "099a79deee0efdeae5f3d805de95fb678d34b95a2a4523c8bb7f8a4dc3aa0646",
+            "original_bytes": 303580,
+            "go_bytes": 303580,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 1,
+            "text": "21千9。",
+            "original_sha256": "4e9647a56bcad68974e3d8e22089a28518b32ff24c448bf65989dda19b89bb82",
+            "go_sha256": "4e9647a56bcad68974e3d8e22089a28518b32ff24c448bf65989dda19b89bb82",
+            "original_bytes": 215162,
+            "go_bytes": 215162,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 2,
+            "text": "11百990。",
+            "original_sha256": "24bb78b0fb49ed750116c1f0f8f65311d31b476856dd211823886dd783501be6",
+            "go_sha256": "24bb78b0fb49ed750116c1f0f8f65311d31b476856dd211823886dd783501be6",
+            "original_bytes": 290444,
+            "go_bytes": 290444,
+            "first_difference": -1,
+            "equal": true
+          }
+        ]
+      }
+    }
+  ],
+  "reference": {
+    "source": "Completed ordinary SDK/Go WAV comparisons; full saved WAVs independently rehashed against unmodified native captures",
+    "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+    "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+    "original_threads": 6,
+    "avx512_convolutions": false,
+    "report_sha256": [
+      "ded81ecbd9e96db85b748897ce27781bed1a0eff642bd602db115a947e1ae466",
+      "52a40959027f662067bb448af21d8839b9f3cd6c5c5807b3cca5400d2a3ab641"
+    ],
+    "capture_sha256": [
+      "02009b9c0f425c75820653570e9acd3a02f7756fd5fbb23a1b217b0f725ea3c3",
+      "a204b56f209cc34ff3644aaab1cc44fab4655b698e63b593552a65e0322ef069"
+    ],
+    "cases": [
+      {
+        "text": "21百990。",
+        "voice": "KotonohaAkane_ns_48",
+        "bytes": 303580,
+        "sha256": "099a79deee0efdeae5f3d805de95fb678d34b95a2a4523c8bb7f8a4dc3aa0646"
+      },
+      {
+        "text": "21千9。",
+        "voice": "KotonohaAkane_ns_48",
+        "bytes": 215162,
+        "sha256": "4e9647a56bcad68974e3d8e22089a28518b32ff24c448bf65989dda19b89bb82"
+      },
+      {
+        "text": "11百990。",
+        "voice": "KotonohaAkane_ns_48",
+        "bytes": 290444,
+        "sha256": "24bb78b0fb49ed750116c1f0f8f65311d31b476856dd211823886dd783501be6"
+      },
+      {
+        "text": "21百990。",
+        "voice": "KotonohaAoi_ns_48",
+        "bytes": 303580,
+        "sha256": "099a79deee0efdeae5f3d805de95fb678d34b95a2a4523c8bb7f8a4dc3aa0646"
+      },
+      {
+        "text": "21千9。",
+        "voice": "KotonohaAoi_ns_48",
+        "bytes": 215162,
+        "sha256": "4e9647a56bcad68974e3d8e22089a28518b32ff24c448bf65989dda19b89bb82"
+      },
+      {
+        "text": "11百990。",
+        "voice": "KotonohaAoi_ns_48",
+        "bytes": 290444,
+        "sha256": "24bb78b0fb49ed750116c1f0f8f65311d31b476856dd211823886dd783501be6"
+      }
+    ]
+  }
+}

@@ -1,0 +1,457 @@
+{
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "capture_sha256": [
+    "19ae6f6473b45a4c52d455aabb588ccf1e8ca92d4ab8b491b7ba7da699fd0671",
+    "0f314f84d354b93b52af3084ab0f90fe9268cc84ba63c7e0b3a36b376d98dc5d"
+  ],
+  "cases": [
+    {
+      "text": "2上Ａa九Ｃ（3八九Ｃ三。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^ニ!ウエ|0エー^エ!ー|0キュ^ーシ!ー$1_1サ^ン|0ハ^チジュー|0キュ^ーシ!ー|0サ^ン<F>"
+      ]
+    },
+    {
+      "text": "九Ｃ（3。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>キュ^ーシ!ー$1_1サ^ン<F>"
+      ]
+    },
+    {
+      "text": "九Ｃ）3。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>キュ^ーシ!ー$1_1サ^ン<F>"
+      ]
+    },
+    {
+      "text": "九Ｃ～3。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>キュ^ーシ!ーカラ|0サ^ン<F>"
+      ]
+    },
+    {
+      "text": "九Ｃ−3。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>キュ^ーシ!ー|0サ^ン<F>"
+      ]
+    },
+    {
+      "text": "九Ｃ：3。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>キュ^ーシ!ー$2_2サ^ン<F>"
+      ]
+    },
+    {
+      "text": "九Ｃ／3。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>キュ^ーシ!ー$1_1サ^ン<F>"
+      ]
+    },
+    {
+      "text": "九人（3。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>ク^ニ!ン$1_1サ^ン<F>"
+      ]
+    },
+    {
+      "text": "九人）3。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>ク^ニ!ン$1_1サ^ン<F>"
+      ]
+    },
+    {
+      "text": "九人～3。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>ク^ニ!ンカラ|0サ^ン<F>"
+      ]
+    },
+    {
+      "text": "九人−3。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>ク^ニ!ン|0サ^ン<F>"
+      ]
+    },
+    {
+      "text": "九人：3。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>ク^ニ!ン$2_2サ^ン<F>"
+      ]
+    },
+    {
+      "text": "九人／3。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>ク^ニ!ン$1_1サ^ン<F>"
+      ]
+    },
+    {
+      "text": "九本（3。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^キュ!ーホン$1_1サ^ン<F>"
+      ]
+    },
+    {
+      "text": "九本）3。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^キュ!ーホン$1_1サ^ン<F>"
+      ]
+    },
+    {
+      "text": "九本～3。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^キュ!ーホンカラ|0サ^ン<F>"
+      ]
+    },
+    {
+      "text": "九本−3。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^キュ!ーホン|0サ^ン<F>"
+      ]
+    },
+    {
+      "text": "九本：3。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^キュ!ーホン$2_2サ^ン<F>"
+      ]
+    },
+    {
+      "text": "九本／3。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^キュ!ーホン$1_1サ^ン<F>"
+      ]
+    },
+    {
+      "text": "九Ａ（3。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^キューエ!ー$1_1サ^ン<F>"
+      ]
+    },
+    {
+      "text": "九Ａ）3。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^キューエ!ー|0サ^ン<F>"
+      ]
+    },
+    {
+      "text": "九Ａ～3。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^キューエ!ーカラ|0サ^ン<F>"
+      ]
+    },
+    {
+      "text": "九Ａ−3。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^キューエ!ー|0サ^ン<F>"
+      ]
+    },
+    {
+      "text": "九Ａ：3。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^キューエ!ー$2_2サ^ン<F>"
+      ]
+    },
+    {
+      "text": "九Ａ／3。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^キューエ!ー$1_1サ^ン<F>"
+      ]
+    },
+    {
+      "text": "九Ｃ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>キュ^ーシ!ー<F>"
+      ]
+    },
+    {
+      "text": "九Ｃ（。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>キュ^ーシ!ー<F>"
+      ]
+    },
+    {
+      "text": "九Ｃ（3八九Ｃ三。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>キュ^ーシ!ー$1_1サ^ン|0ハ^チジュー|0キュ^ーシ!ー|0サ^ン<F>"
+      ]
+    },
+    {
+      "text": "九（3。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^キュ!ー$1_1サ^ン<F>"
+      ]
+    },
+    {
+      "text": "九～3。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^キュ!ーカラ|0サ^ン<F>"
+      ]
+    },
+    {
+      "text": "九−3。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^キュ!ー$1_1サ^ン<F>"
+      ]
+    },
+    {
+      "text": "1（2）3Ｃ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1^ニ$1_1サ^ンシ!ー<F>"
+      ]
+    },
+    {
+      "text": "2上Ａa九Ｃ（3八九Ｃ三。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^ニ!ウエ|0エ^ーエ!ー|0キュ^ーシ!ー$1_1サ^ン|0ハ^チジュー|0キュ^ーシ!ー|0サ^ン<F>"
+      ]
+    },
+    {
+      "text": "九Ｃ（3。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>キュ^ーシ!ー$1_1サ^ン<F>"
+      ]
+    },
+    {
+      "text": "九Ｃ）3。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>キュ^ーシ!ー$1_1サ^ン<F>"
+      ]
+    },
+    {
+      "text": "九Ｃ～3。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>キュ^ーシ!ーカラ|0サ^ン<F>"
+      ]
+    },
+    {
+      "text": "九Ｃ−3。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>キュ^ーシ!ー|0サ^ン<F>"
+      ]
+    },
+    {
+      "text": "九Ｃ：3。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>キュ^ーシ!ー$2_2サ^ン<F>"
+      ]
+    },
+    {
+      "text": "九Ｃ／3。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>キュ^ーシ!ー$2_2サ^ン<F>"
+      ]
+    },
+    {
+      "text": "九人（3。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ク^ニ!ン$1_1サ^ン<F>"
+      ]
+    },
+    {
+      "text": "九人）3。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ク^ニ!ン$1_1サ^ン<F>"
+      ]
+    },
+    {
+      "text": "九人～3。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ク^ニ!ンカラ|0サ^ン<F>"
+      ]
+    },
+    {
+      "text": "九人−3。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ク^ニ!ン|0サ^ン<F>"
+      ]
+    },
+    {
+      "text": "九人：3。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ク^ニ!ン$2_2サ^ン<F>"
+      ]
+    },
+    {
+      "text": "九人／3。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ク^ニ!ン$2_2サ^ン<F>"
+      ]
+    },
+    {
+      "text": "九本（3。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^キュ!ーホン$1_1サ^ン<F>"
+      ]
+    },
+    {
+      "text": "九本）3。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^キュ!ーホン$1_1サ^ン<F>"
+      ]
+    },
+    {
+      "text": "九本～3。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^キュ!ーホンカラ|0サ^ン<F>"
+      ]
+    },
+    {
+      "text": "九本−3。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^キュ!ーホン|0サ^ン<F>"
+      ]
+    },
+    {
+      "text": "九本：3。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^キュ!ーホン$2_2サ^ン<F>"
+      ]
+    },
+    {
+      "text": "九本／3。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^キュ!ーホン$2_2サ^ン<F>"
+      ]
+    },
+    {
+      "text": "九Ａ（3。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>キュ^ーエ!ー|0サ^ン<F>"
+      ]
+    },
+    {
+      "text": "九Ａ）3。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>キュ^ーエ!ー|0サ^ン<F>"
+      ]
+    },
+    {
+      "text": "九Ａ～3。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^キュ!ー|0^エ!ー|0サ^ン<F>"
+      ]
+    },
+    {
+      "text": "九Ａ−3。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>キュ^ーエ!ー|0サ^ン<F>"
+      ]
+    },
+    {
+      "text": "九Ａ：3。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>キュ^ーエ!ー|0サ^ン<F>"
+      ]
+    },
+    {
+      "text": "九Ａ／3。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>キュ^ーエ!ー|0サ^ン<F>"
+      ]
+    },
+    {
+      "text": "九Ｃ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>キュ^ーシ!ー<F>"
+      ]
+    },
+    {
+      "text": "九Ｃ（。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>キュ^ーシ!ー<F>"
+      ]
+    },
+    {
+      "text": "九Ｃ（3八九Ｃ三。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>キュ^ーシ!ー$1_1サ^ン|0ハ^チジュー|0キュ^ーシ!ー|0サ^ン<F>"
+      ]
+    },
+    {
+      "text": "九（3。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^キュ!ー$1_1サ^ン<F>"
+      ]
+    },
+    {
+      "text": "九～3。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^キュ!ーカラ|0サ^ン<F>"
+      ]
+    },
+    {
+      "text": "九−3。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^キュ!ー$1_1サ^ン<F>"
+      ]
+    },
+    {
+      "text": "1（2）3Ｃ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1ニ$1_1サ^ンシ!ー<F>"
+      ]
+    }
+  ]
+}

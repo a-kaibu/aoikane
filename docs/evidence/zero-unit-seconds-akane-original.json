@@ -1,0 +1,807 @@
+{
+  "source": "read-only native frontend snapshots; formatter matched independent ordinary SDK; not whole-WAV proof",
+  "cases": [
+    {
+      "text": "0京秒1。",
+      "raw_sha256": "d0d1f22c8b244dfff261d8d2bffcb9170847de828de9e922399dd6372d80a017",
+      "formats": [
+        "<S>ケ^イ!ビョー|0イ^チ<F>"
+      ],
+      "segments": [
+        {
+          "rva": "10b010",
+          "result": "0x1",
+          "number": "０京",
+          "sound": "ケイ",
+          "canonical": "京"
+        },
+        {
+          "rva": "100a90",
+          "result": "0x1",
+          "number": "０京",
+          "sound": "ケイ",
+          "canonical": "京"
+        },
+        {
+          "rva": "1043f0",
+          "result": "0x1",
+          "number": "１",
+          "sound": "ケイビョーイチ",
+          "canonical": "京秒一"
+        }
+      ],
+      "stages": [
+        {
+          "stage": "11f9c0",
+          "call_index": 0,
+          "morphs": [
+            {
+              "surface": "",
+              "candidates": []
+            },
+            {
+              "surface": "。",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "０京秒１",
+              "candidates": [
+                [
+                  "ケイビョウイチ",
+                  "ケイビョーイチ",
+                  "2-2-4,2-2-2",
+                  "*"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "11ec50",
+          "call_index": 0,
+          "morphs": [
+            {
+              "surface": "",
+              "candidates": []
+            },
+            {
+              "surface": "。",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "０京秒１",
+              "candidates": [
+                [
+                  "ケイビョウイチ",
+                  "ケイビョーイチ",
+                  "2-2-4,2-2-2",
+                  "*"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "0京秒万八京Ｃ。",
+      "raw_sha256": "d0d1f22c8b244dfff261d8d2bffcb9170847de828de9e922399dd6372d80a017",
+      "formats": [
+        "<S>ゼ^ロ!ケイ|0^ビョ!ー|0^マ!ン|0ハ^ッケイシ!ー<F>"
+      ],
+      "segments": [
+        {
+          "rva": "10b010",
+          "result": "0x1",
+          "number": "０京",
+          "sound": "ゼロケイ",
+          "canonical": "〇京"
+        },
+        {
+          "rva": "10b010",
+          "result": "0x1",
+          "number": "万",
+          "sound": "ゼロケイビョーｂマン",
+          "canonical": "〇京秒万"
+        },
+        {
+          "rva": "10b010",
+          "result": "0x1",
+          "number": "八京",
+          "sound": "ゼロケイビョーｂマンハッケイ",
+          "canonical": "〇京秒万八京"
+        },
+        {
+          "rva": "100a90",
+          "result": "0x1",
+          "number": "０京秒万八京",
+          "sound": "ゼロケイビョーｂマンハッケイ",
+          "canonical": "〇京秒万八京"
+        }
+      ],
+      "stages": [
+        {
+          "stage": "11f9c0",
+          "call_index": 0,
+          "morphs": [
+            {
+              "surface": "",
+              "candidates": []
+            },
+            {
+              "surface": "。",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "０京秒万八京Ｃ",
+              "candidates": [
+                [
+                  "ゼロケイビョウｂ",
+                  "ゼロケイビョー",
+                  "2-2-4,1-1-2,s0",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "",
+              "candidates": [
+                [
+                  "マンハッケイシー",
+                  "マンハッケイシー",
+                  "1-1-2,2-5-6",
+                  "*"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "11ec50",
+          "call_index": 0,
+          "morphs": [
+            {
+              "surface": "",
+              "candidates": []
+            },
+            {
+              "surface": "。",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "０京秒万八京Ｃ",
+              "candidates": [
+                [
+                  "ゼロケイビョウｂ",
+                  "ゼロケイビョー",
+                  "2-2-4,1-1-2,s0",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "",
+              "candidates": [
+                [
+                  "マンハッケイシー",
+                  "マンハッケイシー",
+                  "1-1-2,2-5-6",
+                  "*"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "万）Ａ0京秒万八京Ｃ声個月。",
+      "raw_sha256": "d0d1f22c8b244dfff261d8d2bffcb9170847de828de9e922399dd6372d80a017",
+      "formats": [
+        "<S>^マ!ン$1_1^エ!ー|0ゼ^ロ!ケイ|0^ビョ!ー|0^マ!ン|0ハ^ッケイシーゴエカ!ゲツ<F>"
+      ],
+      "segments": [
+        {
+          "rva": "10b010",
+          "result": "0x1",
+          "number": "万",
+          "sound": "マン",
+          "canonical": "万"
+        },
+        {
+          "rva": "100a90",
+          "result": "0x1",
+          "number": "万",
+          "sound": "マン",
+          "canonical": "万"
+        },
+        {
+          "rva": "10b010",
+          "result": "0x1",
+          "number": "０京",
+          "sound": "ゼロケイ",
+          "canonical": "〇京"
+        },
+        {
+          "rva": "10b010",
+          "result": "0x1",
+          "number": "万",
+          "sound": "ゼロケイビョーｂマン",
+          "canonical": "〇京秒万"
+        },
+        {
+          "rva": "10b010",
+          "result": "0x1",
+          "number": "八京",
+          "sound": "ゼロケイビョーｂマンハッケイ",
+          "canonical": "〇京秒万八京"
+        },
+        {
+          "rva": "100a90",
+          "result": "0x1",
+          "number": "０京秒万八京",
+          "sound": "ゼロケイビョーｂマンハッケイ",
+          "canonical": "〇京秒万八京"
+        }
+      ],
+      "stages": [
+        {
+          "stage": "11f9c0",
+          "call_index": 0,
+          "morphs": [
+            {
+              "surface": "",
+              "candidates": []
+            },
+            {
+              "surface": "。",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "個月",
+              "candidates": [
+                [
+                  "カゲツ",
+                  "カゲツ",
+                  "1-1-3",
+                  "C1"
+                ]
+              ]
+            },
+            {
+              "surface": "声",
+              "candidates": [
+                [
+                  "ゴエ",
+                  "ゴエ",
+                  "1-1-2",
+                  "C2"
+                ]
+              ]
+            },
+            {
+              "surface": "０京秒万八京Ｃ",
+              "candidates": [
+                [
+                  "ゼロケイビョウｂ",
+                  "ゼロケイビョー",
+                  "2-2-4,1-1-2,s0",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "",
+              "candidates": [
+                [
+                  "マンハッケイシー",
+                  "マンハッケイシー",
+                  "1-1-2,2-5-6",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "Ａ",
+              "candidates": [
+                [
+                  "エイ",
+                  "エー",
+                  "1-1-2",
+                  "C1"
+                ]
+              ]
+            },
+            {
+              "surface": "）",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "万",
+              "candidates": [
+                [
+                  "マン",
+                  "マン",
+                  "1-1-2",
+                  "*"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "11ec50",
+          "call_index": 0,
+          "morphs": [
+            {
+              "surface": "",
+              "candidates": []
+            },
+            {
+              "surface": "。",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "個月",
+              "candidates": [
+                [
+                  "カゲツ",
+                  "カゲツ",
+                  "1-1-3",
+                  "C1"
+                ]
+              ]
+            },
+            {
+              "surface": "声",
+              "candidates": [
+                [
+                  "ゴエ",
+                  "ゴエ",
+                  "1-1-2",
+                  "C2"
+                ]
+              ]
+            },
+            {
+              "surface": "０京秒万八京Ｃ",
+              "candidates": [
+                [
+                  "ゼロケイビョウｂ",
+                  "ゼロケイビョー",
+                  "2-2-4,1-1-2,s0",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "",
+              "candidates": [
+                [
+                  "マンハッケイシー",
+                  "マンハッケイシー",
+                  "1-1-2,2-5-6",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "Ａ",
+              "candidates": [
+                [
+                  "エイ",
+                  "エー",
+                  "1-1-2",
+                  "C1"
+                ]
+              ]
+            },
+            {
+              "surface": "）",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "万",
+              "candidates": [
+                [
+                  "マン",
+                  "マン",
+                  "1-1-2",
+                  "*"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "1京秒1。",
+      "raw_sha256": "ae34d48eb53e11977d463a9c4f299317ad2fa4733c3f373ba5a6ce0d1d7a773e",
+      "formats": [
+        "<S>^イ!ッケイ|0^ビョ!ー|0イ^チ<F>"
+      ],
+      "segments": [
+        {
+          "rva": "10b010",
+          "result": "0x1",
+          "number": "１京",
+          "sound": "イッケイ",
+          "canonical": "一京"
+        },
+        {
+          "rva": "100a90",
+          "result": "0x1",
+          "number": "１京",
+          "sound": "イッケイ",
+          "canonical": "一京"
+        },
+        {
+          "rva": "1043f0",
+          "result": "0x1",
+          "number": "１",
+          "sound": "イッケイビョーイチ",
+          "canonical": "一京秒一"
+        }
+      ],
+      "stages": [
+        {
+          "stage": "11f9c0",
+          "call_index": 0,
+          "morphs": [
+            {
+              "surface": "",
+              "candidates": []
+            },
+            {
+              "surface": "。",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "１京秒１",
+              "candidates": [
+                [
+                  "イッケイビョウ",
+                  "イッケイビョー",
+                  "2-2-4,1-1-2",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "",
+              "candidates": [
+                [
+                  "イチ",
+                  "イチ",
+                  "2-2-2",
+                  "*"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "11ec50",
+          "call_index": 0,
+          "morphs": [
+            {
+              "surface": "",
+              "candidates": []
+            },
+            {
+              "surface": "。",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "１京秒１",
+              "candidates": [
+                [
+                  "イッケイビョウ",
+                  "イッケイビョー",
+                  "2-2-4,1-1-2",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "",
+              "candidates": [
+                [
+                  "イチ",
+                  "イチ",
+                  "2-2-2",
+                  "*"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "〇一京秒一二。",
+      "raw_sha256": "ae34d48eb53e11977d463a9c4f299317ad2fa4733c3f373ba5a6ce0d1d7a773e",
+      "formats": [
+        "<S>^イ!ッケイ|0^ビョ!ー|0イ^チニ!ー<F>"
+      ],
+      "segments": [
+        {
+          "rva": "10b010",
+          "result": "0x1",
+          "number": "〇一京",
+          "sound": "イッケイ",
+          "canonical": "一京"
+        },
+        {
+          "rva": "100a90",
+          "result": "0x1",
+          "number": "〇一京",
+          "sound": "イッケイ",
+          "canonical": "一京"
+        },
+        {
+          "rva": "1043f0",
+          "result": "0x1",
+          "number": "一二",
+          "sound": "イッケイビョーイチニー",
+          "canonical": "一京秒一二"
+        }
+      ],
+      "stages": [
+        {
+          "stage": "11f9c0",
+          "call_index": 0,
+          "morphs": [
+            {
+              "surface": "",
+              "candidates": []
+            },
+            {
+              "surface": "。",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "〇一京秒一二",
+              "candidates": [
+                [
+                  "イッケイビョウ",
+                  "イッケイビョー",
+                  "2-2-4,1-1-2",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "",
+              "candidates": [
+                [
+                  "イチニー",
+                  "イチニー",
+                  "2-3-4",
+                  "*"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "11ec50",
+          "call_index": 0,
+          "morphs": [
+            {
+              "surface": "",
+              "candidates": []
+            },
+            {
+              "surface": "。",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "〇一京秒一二",
+              "candidates": [
+                [
+                  "イッケイビョウ",
+                  "イッケイビョー",
+                  "2-2-4,1-1-2",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "",
+              "candidates": [
+                [
+                  "イチニー",
+                  "イチニー",
+                  "2-3-4",
+                  "*"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "0十秒１。",
+      "raw_sha256": "ae34d48eb53e11977d463a9c4f299317ad2fa4733c3f373ba5a6ce0d1d7a773e",
+      "formats": [
+        "<S>^ジュ!ービョー|0イ^チ<F>"
+      ],
+      "segments": [
+        {
+          "rva": "10b010",
+          "result": "0x1",
+          "number": "０十",
+          "sound": "ジュー",
+          "canonical": "十"
+        },
+        {
+          "rva": "100a90",
+          "result": "0x1",
+          "number": "０十",
+          "sound": "ジュー",
+          "canonical": "十"
+        },
+        {
+          "rva": "1043f0",
+          "result": "0x1",
+          "number": "１",
+          "sound": "ジュービョーイチ",
+          "canonical": "十秒一"
+        }
+      ],
+      "stages": [
+        {
+          "stage": "11f9c0",
+          "call_index": 0,
+          "morphs": [
+            {
+              "surface": "",
+              "candidates": []
+            },
+            {
+              "surface": "。",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "０十秒１",
+              "candidates": [
+                [
+                  "ジュウビョウイチ",
+                  "ジュービョーイチ",
+                  "2-2-4,2-2-2",
+                  "*"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "11ec50",
+          "call_index": 0,
+          "morphs": [
+            {
+              "surface": "",
+              "candidates": []
+            },
+            {
+              "surface": "。",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "０十秒１",
+              "candidates": [
+                [
+                  "ジュウビョウイチ",
+                  "ジュービョーイチ",
+                  "2-2-4,2-2-2",
+                  "*"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

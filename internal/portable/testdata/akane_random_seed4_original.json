@@ -1,0 +1,63 @@
+{
+  "source": "ordinary original direct engine API; no instrumentation or injected model inputs",
+  "source_sha256": "85003b69e737b55b5357021a70ddcf22c8f2507de7802cd96d5756286d7bc4c2",
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "voice": "KotonohaAkane_ns_48",
+  "original_threads": 6,
+  "avx512_convolutions": false,
+  "seed": 4,
+  "generator_version": 1,
+  "max_units": 12,
+  "cases": [
+    {
+      "index": 0,
+      "text": "ぺのつぱゃの。",
+      "bytes": 174092,
+      "sha256": "92f3f8d41be2ff8f470390da2c516684247b22069b9bfbf9585abdaea98c26b7"
+    },
+    {
+      "index": 1,
+      "text": "人木1人音（木開二」。",
+      "bytes": 311550,
+      "sha256": "b0e56e1d9bb133181861c8aca2c9f64b54b5d441f0d2f9e1dafb0f96a71f8581"
+    },
+    {
+      "index": 2,
+      "text": "）。",
+      "bytes": 81644,
+      "sha256": "ca67ad155f7a6f0f81c54f8613e086e45a5e4ba3d9d6b5c49979f7cf89a7a3bc"
+    },
+    {
+      "index": 3,
+      "text": "昨日青い開ける3.5。",
+      "bytes": 287846,
+      "sha256": "e474bb6173656b1289338f8c76a1eb70f6fdc8cb1374b9002681176ff99c9385"
+    },
+    {
+      "index": 4,
+      "text": "さよあぴざた。",
+      "bytes": 187246,
+      "sha256": "5abc89b835f6ef82e554bdcef077ca7ec4ec2b455de487aecc3a0ef31b9e947e"
+    },
+    {
+      "index": 5,
+      "text": "八。",
+      "bytes": 126906,
+      "sha256": "a76486e6298d15250c8f8b47d012ae16d3a95b636eb0739b8e47c0b69f7ffe48"
+    },
+    {
+      "index": 6,
+      "text": "・！－）éｱ〜Ａ−。",
+      "bytes": 220800,
+      "sha256": "95c747d1800f0d449e831dc3b3c6a2c3306b4ea585924232c8a80a28e2ad30db"
+    },
+    {
+      "index": 7,
+      "text": "です大きな猫上手今日口の魚。",
+      "bytes": 380018,
+      "sha256": "92bf09fa6c9f06580c5153bf6c8d499e66edd55eea121a970d72c1ce9e8045c1"
+    }
+  ],
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "torch_dll_sha256": "00ca5c937940a94d052dbe52ec5fb0909db11ffbfccfd6e65e19b468169ff5e5"
+}

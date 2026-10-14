@@ -1,0 +1,747 @@
+{
+  "scope": "All six frontend observations validated against independent native capture; no waveform fidelity claim",
+  "raw_sha256": "aa2c31eca2f48f54c0d0a8d6a2ecf7840bafafdb6db7529a6dc4af652a01c2d1",
+  "cases": [
+    {
+      "text": "19・9万2。",
+      "stage_counts": {
+        "11f9c0": 1,
+        "11ec50": 1,
+        "1b9f10": 1,
+        "1b9f60": 1
+      },
+      "numeric_calls": [
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "10b010",
+            "input_hex": "82508258",
+            "caller": "0x100fec",
+            "raw_args": [
+              "0x3fe0000000000000",
+              "0x0",
+              "0x4000000000000000",
+              "0x0",
+              "0x4000000000000000"
+            ],
+            "input": "19・9万2。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "10b010",
+            "input_hex": "82508258",
+            "result": "0x1",
+            "output_a": "83578385815b834c8385815b",
+            "output_b": "8f5c8be3",
+            "input": "19・9万2。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "１９",
+          "output_a_decoded": "ジューキュー",
+          "output_b_decoded": "十九"
+        },
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "10b010",
+            "input_hex": "8258969c",
+            "caller": "0x100f60",
+            "raw_args": [
+              "0x3fe0000000000000",
+              "0x0",
+              "0x4000000000000000",
+              "0x0",
+              "0x4000000000000000"
+            ],
+            "input": "19・9万2。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "10b010",
+            "input_hex": "8258969c",
+            "result": "0x1",
+            "output_a": "83578385815b834c8385815b836d8282834c8385815b837d8393",
+            "output_b": "8f5c8be381458be3969c",
+            "input": "19・9万2。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "９万",
+          "output_a_decoded": "ジューキューノｂキューマン",
+          "output_b_decoded": "十九・九万"
+        },
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "10b010",
+            "input_hex": "8251",
+            "caller": "0x101e0b",
+            "raw_args": [
+              "0x3fe0000000000000",
+              "0x0",
+              "0x4000000000000000",
+              "0x0",
+              "0x4000000000000000"
+            ],
+            "input": "19・9万2。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "10b010",
+            "input_hex": "8251",
+            "result": "0x1",
+            "output_a": "83578385815b834c8385815b836d8282834c8385815b837d8393836a",
+            "output_b": "8f5c8be381458be3969c93f1",
+            "input": "19・9万2。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "２",
+          "output_a_decoded": "ジューキューノｂキューマンニ",
+          "output_b_decoded": "十九・九万二"
+        },
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "100a90",
+            "input_hex": "8250825881458258969c8251",
+            "caller": "0x1120ad",
+            "raw_args": [
+              "0x31835fda90",
+              "0x0",
+              "0x0",
+              "0x0",
+              "0x0"
+            ],
+            "input": "19・9万2。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "100a90",
+            "input_hex": "8250825881458258969c8251",
+            "result": "0x1",
+            "output_a": "83578385815b834c8385815b836d8282834c8385815b837d8393836a",
+            "output_b": "8f5c8be381458be3969c93f1",
+            "input": "19・9万2。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "１９・９万２",
+          "output_a_decoded": "ジューキューノｂキューマンニ",
+          "output_b_decoded": "十九・九万二"
+        }
+      ],
+      "counter_calls": [],
+      "formatted": [
+        "<S>ジュ^ーキュ!ーノ|0キュ^ーマ!ン|0^ニ<F>"
+      ]
+    },
+    {
+      "text": "19・9万2円。",
+      "stage_counts": {
+        "11f9c0": 1,
+        "11ec50": 1,
+        "1b9f10": 1,
+        "1b9f60": 1
+      },
+      "numeric_calls": [
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "10b010",
+            "input_hex": "82508258",
+            "caller": "0x100fec",
+            "raw_args": [
+              "0x3fe0000000000000",
+              "0x0",
+              "0x4000000000000000",
+              "0x0",
+              "0x4000000000000000"
+            ],
+            "input": "19・9万2円。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "10b010",
+            "input_hex": "82508258",
+            "result": "0x1",
+            "output_a": "83578385815b834c8385815b",
+            "output_b": "8f5c8be3",
+            "input": "19・9万2円。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "１９",
+          "output_a_decoded": "ジューキュー",
+          "output_b_decoded": "十九"
+        },
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "10b010",
+            "input_hex": "8258969c",
+            "caller": "0x100f60",
+            "raw_args": [
+              "0x3fe0000000000000",
+              "0x0",
+              "0x4000000000000000",
+              "0x0",
+              "0x4000000000000000"
+            ],
+            "input": "19・9万2円。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "10b010",
+            "input_hex": "8258969c",
+            "result": "0x1",
+            "output_a": "83578385815b834c8385815b8290834c8385815b837d8393",
+            "output_b": "8f5c8be381458be3969c",
+            "input": "19・9万2円。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "９万",
+          "output_a_decoded": "ジューキューｐキューマン",
+          "output_b_decoded": "十九・九万"
+        },
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "10b010",
+            "input_hex": "8251",
+            "caller": "0x101e0b",
+            "raw_args": [
+              "0x3fe0000000000000",
+              "0x0",
+              "0x4000000000000000",
+              "0x0",
+              "0x4000000000000000"
+            ],
+            "input": "19・9万2円。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "10b010",
+            "input_hex": "8251",
+            "result": "0x1",
+            "output_a": "83578385815b834c8385815b8290834c8385815b837d8393836a",
+            "output_b": "8f5c8be381458be3969c93f1",
+            "input": "19・9万2円。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "２",
+          "output_a_decoded": "ジューキューｐキューマンニ",
+          "output_b_decoded": "十九・九万二"
+        },
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "100a90",
+            "input_hex": "8250825881458258969c8251",
+            "caller": "0x10245a",
+            "raw_args": [
+              "0x6e09bfdb30",
+              "0x7ffccd943200",
+              "0x6e09bfdf00",
+              "0x1c88cd4ad00",
+              "0x0"
+            ],
+            "input": "19・9万2円。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "100a90",
+            "input_hex": "8250825881458258969c8251",
+            "result": "0x1",
+            "output_a": "83578385815b834c8385815b8290834c8385815b837d8393836a",
+            "output_b": "8f5c8be381458be3969c93f1",
+            "input": "19・9万2円。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "１９・９万２",
+          "output_a_decoded": "ジューキューｐキューマンニ",
+          "output_b_decoded": "十九・九万二"
+        }
+      ],
+      "counter_calls": [
+        {
+          "event": "numeral_counter_enter",
+          "caller": "0x106ce5",
+          "number_hex": "8250825881458258969c8251",
+          "number_accent_hex": "312d312d31",
+          "number_spelling_hex": "8f5c8be381458be3969c93f1",
+          "counter_key_hex": "897e",
+          "counter_read_hex": "83478393",
+          "counter_sound_hex": "83478393",
+          "param11": 1,
+          "param12": 0,
+          "input": "19・9万2円。",
+          "sentence": 0,
+          "number_hex_decoded": "１９・９万２",
+          "number_accent_hex_decoded": "1-1-1",
+          "number_spelling_hex_decoded": "十九・九万二",
+          "counter_key_hex_decoded": "円",
+          "counter_read_hex_decoded": "エン",
+          "counter_sound_hex_decoded": "エン"
+        }
+      ],
+      "formatted": [
+        "<S>ジュ^ーキュ!ー$1_1キュ^ーマ!ン|0^ニ!エン<F>"
+      ]
+    },
+    {
+      "text": "19・09万2。",
+      "stage_counts": {
+        "11f9c0": 1,
+        "11ec50": 1,
+        "1b9f10": 1,
+        "1b9f60": 1
+      },
+      "numeric_calls": [
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "10b010",
+            "input_hex": "82508258",
+            "caller": "0x100fec",
+            "raw_args": [
+              "0x3fe0000000000000",
+              "0x0",
+              "0x4000000000000000",
+              "0x0",
+              "0x4000000000000000"
+            ],
+            "input": "19・09万2。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "10b010",
+            "input_hex": "82508258",
+            "result": "0x1",
+            "output_a": "83578385815b834c8385815b",
+            "output_b": "8f5c8be3",
+            "input": "19・09万2。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "１９",
+          "output_a_decoded": "ジューキュー",
+          "output_b_decoded": "十九"
+        },
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "10b010",
+            "input_hex": "824f8258969c",
+            "caller": "0x100f60",
+            "raw_args": [
+              "0x3fe0000000000000",
+              "0x0",
+              "0x4000000000000000",
+              "0x0",
+              "0x4000000000000000"
+            ],
+            "input": "19・09万2。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "10b010",
+            "input_hex": "824f8258969c",
+            "result": "0x1",
+            "output_a": "83578385815b834c8385815b8290835b838d834c8385815b837d8393",
+            "output_b": "8f5c8be38145815a8be3969c",
+            "input": "19・09万2。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "０９万",
+          "output_a_decoded": "ジューキューｐゼロキューマン",
+          "output_b_decoded": "十九・〇九万"
+        },
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "10b010",
+            "input_hex": "8251",
+            "caller": "0x101e0b",
+            "raw_args": [
+              "0x3fe0000000000000",
+              "0x0",
+              "0x4000000000000000",
+              "0x0",
+              "0x4000000000000000"
+            ],
+            "input": "19・09万2。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "10b010",
+            "input_hex": "8251",
+            "result": "0x1",
+            "output_a": "83578385815b834c8385815b8290835b838d834c8385815b837d8393836a",
+            "output_b": "8f5c8be38145815a8be3969c93f1",
+            "input": "19・09万2。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "２",
+          "output_a_decoded": "ジューキューｐゼロキューマンニ",
+          "output_b_decoded": "十九・〇九万二"
+        },
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "100a90",
+            "input_hex": "825082588145824f8258969c8251",
+            "caller": "0x10245a",
+            "raw_args": [
+              "0xfcebdfd6a0",
+              "0x7ffccd943200",
+              "0xfcebdfda00",
+              "0x2bdb6791400",
+              "0x0"
+            ],
+            "input": "19・09万2。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "100a90",
+            "input_hex": "825082588145824f8258969c8251",
+            "result": "0x1",
+            "output_a": "83578385815b834c8385815b8290835b838d834c8385815b837d8393836a",
+            "output_b": "8f5c8be38145815a8be3969c93f1",
+            "input": "19・09万2。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "１９・０９万２",
+          "output_a_decoded": "ジューキューｐゼロキューマンニ",
+          "output_b_decoded": "十九・〇九万二"
+        }
+      ],
+      "counter_calls": [],
+      "formatted": [
+        "<S>ジュ^ーキュ!ー$1_1ゼ^ロキューマ!ン|0^ニ<F>"
+      ]
+    },
+    {
+      "text": "図19・9万2。",
+      "stage_counts": {
+        "11f9c0": 1,
+        "11ec50": 1,
+        "1b9f10": 1,
+        "1b9f60": 1
+      },
+      "numeric_calls": [
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "10b010",
+            "input_hex": "82508258",
+            "caller": "0x100fec",
+            "raw_args": [
+              "0x3fe0000000000000",
+              "0x0",
+              "0x4000000000000000",
+              "0x0",
+              "0x4000000000000000"
+            ],
+            "input": "図19・9万2。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "10b010",
+            "input_hex": "82508258",
+            "result": "0x1",
+            "output_a": "83578385815b834c8385815b",
+            "output_b": "8f5c8be3",
+            "input": "図19・9万2。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "１９",
+          "output_a_decoded": "ジューキュー",
+          "output_b_decoded": "十九"
+        },
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "10b010",
+            "input_hex": "8258969c",
+            "caller": "0x100f60",
+            "raw_args": [
+              "0x3fe0000000000000",
+              "0x0",
+              "0x4000000000000000",
+              "0x0",
+              "0x4000000000000000"
+            ],
+            "input": "図19・9万2。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "10b010",
+            "input_hex": "8258969c",
+            "result": "0x1",
+            "output_a": "83578385815b834c8385815b8290834c8385815b837d8393",
+            "output_b": "8f5c8be381458be3969c",
+            "input": "図19・9万2。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "９万",
+          "output_a_decoded": "ジューキューｐキューマン",
+          "output_b_decoded": "十九・九万"
+        },
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "10b010",
+            "input_hex": "8251",
+            "caller": "0x101e0b",
+            "raw_args": [
+              "0x3fe0000000000000",
+              "0x0",
+              "0x4000000000000000",
+              "0x0",
+              "0x4000000000000000"
+            ],
+            "input": "図19・9万2。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "10b010",
+            "input_hex": "8251",
+            "result": "0x1",
+            "output_a": "83578385815b834c8385815b8290834c8385815b837d8393836a",
+            "output_b": "8f5c8be381458be3969c93f1",
+            "input": "図19・9万2。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "２",
+          "output_a_decoded": "ジューキューｐキューマンニ",
+          "output_b_decoded": "十九・九万二"
+        },
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "100a90",
+            "input_hex": "8250825881458258969c8251",
+            "caller": "0x10245a",
+            "raw_args": [
+              "0x876bdfd9c0",
+              "0x7ffccd943200",
+              "0x876bdfdd00",
+              "0x22262edad00",
+              "0x0"
+            ],
+            "input": "図19・9万2。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "100a90",
+            "input_hex": "8250825881458258969c8251",
+            "result": "0x1",
+            "output_a": "83578385815b834c8385815b8290834c8385815b837d8393836a",
+            "output_b": "8f5c8be381458be3969c93f1",
+            "input": "図19・9万2。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "１９・９万２",
+          "output_a_decoded": "ジューキューｐキューマンニ",
+          "output_b_decoded": "十九・九万二"
+        }
+      ],
+      "counter_calls": [],
+      "formatted": [
+        "<S>^ズ$1_1ジュ^ーキュ!ー$1_1キュ^ーマ!ン|0^ニ<F>"
+      ]
+    },
+    {
+      "text": "19・9.2。",
+      "stage_counts": {
+        "11f9c0": 1,
+        "11ec50": 1,
+        "1b9f10": 1,
+        "1b9f60": 1
+      },
+      "numeric_calls": [
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "10b010",
+            "input_hex": "82508258",
+            "caller": "0x100fec",
+            "raw_args": [
+              "0x3fe0000000000000",
+              "0x0",
+              "0x4000000000000000",
+              "0x0",
+              "0x4000000000000000"
+            ],
+            "input": "19・9.2。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "10b010",
+            "input_hex": "82508258",
+            "result": "0x1",
+            "output_a": "83578385815b834c8385815b",
+            "output_b": "8f5c8be3",
+            "input": "19・9.2。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "１９",
+          "output_a_decoded": "ジューキュー",
+          "output_b_decoded": "十九"
+        },
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "10b010",
+            "input_hex": "8258",
+            "caller": "0x100fec",
+            "raw_args": [
+              "0x3fe0000000000000",
+              "0x0",
+              "0x4000000000000000",
+              "0x0",
+              "0x4000000000000000"
+            ],
+            "input": "19・9.2。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "10b010",
+            "input_hex": "8258",
+            "result": "0x1",
+            "output_a": "83578385815b834c8385815b8290834c8385815b",
+            "output_b": "8f5c8be381458be3",
+            "input": "19・9.2。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "９",
+          "output_a_decoded": "ジューキューｐキュー",
+          "output_b_decoded": "十九・九"
+        },
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "10b010",
+            "input_hex": "8251",
+            "caller": "0x101e0b",
+            "raw_args": [
+              "0x3fe0000000000000",
+              "0x0",
+              "0x4000000000000000",
+              "0x0",
+              "0x4000000000000000"
+            ],
+            "input": "19・9.2。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "10b010",
+            "input_hex": "8251",
+            "result": "0x1",
+            "output_a": "83578385815b834c8385815b8290834c8385815b836583938282836a",
+            "output_b": "8f5c8be381458be3814493f1",
+            "input": "19・9.2。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "２",
+          "output_a_decoded": "ジューキューｐキューテンｂニ",
+          "output_b_decoded": "十九・九．二"
+        },
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "100a90",
+            "input_hex": "825082588145825881448251",
+            "caller": "0x10245a",
+            "raw_args": [
+              "0x72951fd780",
+              "0x7ffccd943200",
+              "0x72951fdb00",
+              "0x1cacf121400",
+              "0x0"
+            ],
+            "input": "19・9.2。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "100a90",
+            "input_hex": "825082588145825881448251",
+            "result": "0x1",
+            "output_a": "83578385815b834c8385815b8290834c8385815b836583938282836a",
+            "output_b": "8f5c8be381458be3814493f1",
+            "input": "19・9.2。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "１９・９．２",
+          "output_a_decoded": "ジューキューｐキューテンｂニ",
+          "output_b_decoded": "十九・九．二"
+        }
+      ],
+      "counter_calls": [],
+      "formatted": [
+        "<S>ジュ^ーキュ!ー$1_1^キュ!ーテン|0^ニ<F>"
+      ]
+    },
+    {
+      "text": "電話19・9万2。",
+      "stage_counts": {
+        "11f9c0": 1,
+        "11ec50": 1,
+        "1b9f10": 1,
+        "1b9f60": 1
+      },
+      "numeric_calls": [
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "1043f0",
+            "input_hex": "8250825881458258969c8251",
+            "caller": "0x111a97",
+            "raw_args": [
+              "0x0",
+              "0x0",
+              "0x2",
+              "0xabb0dfdc60",
+              "0xabb0dfdc10"
+            ],
+            "input": "電話19・9万2。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "1043f0",
+            "input_hex": "8250825881458258969c8251",
+            "result": "0x1",
+            "output_a": "83438360834c8385815b836d8290834c8385815b837d83938282836a",
+            "output_b": "88ea8be381458be3969c93f1",
+            "input": "電話19・9万2。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "１９・９万２",
+          "output_a_decoded": "イチキューノｐキューマンｂニ",
+          "output_b_decoded": "一九・九万二"
+        }
+      ],
+      "counter_calls": [],
+      "formatted": [
+        "<S>^デンワ|0イ^チキュ!ーノ$1_1キュ^ーマ!ン|0^ニ<F>"
+      ]
+    }
+  ]
+}

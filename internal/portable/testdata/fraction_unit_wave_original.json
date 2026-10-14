@@ -1,0 +1,67 @@
+{
+  "source": "finished ordinary original SDK/Go tests; whole WAVs rehashed against reports and independent ordinary native captures",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "original_threads": 6,
+  "avx512_convolutions": false,
+  "report_sha256": [
+    "43e1f58b4c8ed19852a22fa91981a844534f0ed5b4dc2ad9c7f2ebecf6028c2e",
+    "3fa51da8d75ff29c1394baed8b7967e0af9fe51a10ec075ef2b4b2e28e7732d1"
+  ],
+  "capture_sha256": [
+    "6597d4fdf6e8cae78efa0de477852e8e40f57d1206be506c7c946ad42a96cee3",
+    "addc6f8f34885ff6a8aa90ca9ee6cfb4251f606bab4d95094f3d4f8ec05152a1",
+    "f74fb71768a1c41a190ec2bb60b9d6159e49dfd50fe93641cea3c90d86fe072e",
+    "44a22eead8899a6486917d4b26812cc548cd19f59a0b337518aa816a4e5c7cd4"
+  ],
+  "cases": [
+    {
+      "text": "89.52京。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 270758,
+      "sha256": "e4fde1cd6465738d756d49b9f8438b1fc25fa453646114a076f5596b3d50a1b1"
+    },
+    {
+      "text": "89.52千。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 270610,
+      "sha256": "da3005f2eed52af757158b9754d488ebe973895fa343153382bd81e232c97a87"
+    },
+    {
+      "text": "89.12兆。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 270854,
+      "sha256": "94486d4f6e462297bffcd5db239de69693818fd017ba436926e82706fd4a60d2"
+    },
+    {
+      "text": "A−年２月１日８9.５2京読む。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 444502,
+      "sha256": "cd2bdfb3e3c11b64e46ceeb036713f693e7834ee2f5a5cb8ad149122952285ad"
+    },
+    {
+      "text": "89.52京。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 270758,
+      "sha256": "e4fde1cd6465738d756d49b9f8438b1fc25fa453646114a076f5596b3d50a1b1"
+    },
+    {
+      "text": "89.52千。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 270610,
+      "sha256": "da3005f2eed52af757158b9754d488ebe973895fa343153382bd81e232c97a87"
+    },
+    {
+      "text": "89.12兆。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 270854,
+      "sha256": "94486d4f6e462297bffcd5db239de69693818fd017ba436926e82706fd4a60d2"
+    },
+    {
+      "text": "A−年２月１日８9.５2京読む。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 522298,
+      "sha256": "048ff540593e7fc97b76ec7740b45db4d01dd50423d78c0a61cf6753dc5ba9b3"
+    }
+  ]
+}

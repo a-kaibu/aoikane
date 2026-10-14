@@ -1,0 +1,49 @@
+{
+  "source": "independent hook-free ordinary original SDK versus Go full synthesis; saved original and Go WAVs and reports rehashed",
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "original_threads": 6,
+  "avx512_convolutions": false,
+  "report_sha256": [
+    "759e56f9772a2a85f700e64f865f88de81593f46734dc38cd8e4868553c31786",
+    "181fb2b6a787236020db2f540ad1be8a9df32f9bee81eef0d2a1110a44a62e86"
+  ],
+  "cases": [
+    {
+      "text": "０８京本。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 192604,
+      "sha256": "4a5e4e91864a18f05cf309107862f1ddc3789a52f1c3b6430cd9099ec9c73737"
+    },
+    {
+      "text": "０１兆人。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 190774,
+      "sha256": "9c359a03d6e4fe9bf0111a23447cf91a68f81317da7d1fd5e934f47eb2c8fbc7"
+    },
+    {
+      "text": "０８京人。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 200066,
+      "sha256": "d906b025e7dd6347922d841f4d01585bed7e27b7ff67157a88b1422420b20173"
+    },
+    {
+      "text": "０８京本。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 192604,
+      "sha256": "4a5e4e91864a18f05cf309107862f1ddc3789a52f1c3b6430cd9099ec9c73737"
+    },
+    {
+      "text": "０１兆人。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 190774,
+      "sha256": "9c359a03d6e4fe9bf0111a23447cf91a68f81317da7d1fd5e934f47eb2c8fbc7"
+    },
+    {
+      "text": "０８京人。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 201630,
+      "sha256": "599d43857e8fabcac0bfafa4a11fbbb4822ffdfa577e4b563f998c9d85708e4c"
+    }
+  ]
+}

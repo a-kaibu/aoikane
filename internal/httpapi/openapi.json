@@ -1,0 +1,106 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Aoikane",
+    "version": "0.1.0"
+  },
+  "paths": {
+    "/healthz": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Engine ready"
+          }
+        }
+      }
+    },
+    "/v1/voices": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Installed voices"
+          }
+        }
+      }
+    },
+    "/v1/synthesize": {
+      "post": {
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "text"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                  "text": {
+                    "type": "string",
+                    "maxLength": 65536
+                  },
+                  "voice": {
+                    "type": "string"
+                  },
+                  "rate": {
+                    "type": "number",
+                    "default": 1
+                  },
+                  "pitch": {
+                    "type": "number",
+                    "default": 1
+                  },
+                  "volume": {
+                    "type": "number",
+                    "default": 1
+                  },
+                  "emphasis": {
+                    "type": "number",
+                    "default": 1
+                  },
+                  "format": {
+                    "type": "string",
+                    "enum": [
+                      "wav",
+                      "mp3"
+                    ],
+                    "default": "wav"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "WAV or MP3 audio",
+            "content": {
+              "audio/wav": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              },
+              "audio/mpeg": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid request"
+          },
+          "401": {
+            "description": "Bearer token required"
+          },
+          "422": {
+            "description": "Engine rejected synthesis parameters"
+          }
+        }
+      }
+    }
+  }
+}

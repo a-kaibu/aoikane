@@ -1,0 +1,25 @@
+{
+  "source": "direct call to the audited original torch_cpu imported UCRT powf; all random and captured inputs retained",
+  "dll_sha256": "5c52e3a303baaac0e0af8bd9b96134993da34bc9d834a31ef37e1d2cdc7fe192",
+  "rva": "a9f20",
+  "fma_flag_rva": "139e60",
+  "fma_flag": 3,
+  "base": 10,
+  "exponent_range": [
+    -5,
+    0
+  ],
+  "generator_seed": 19,
+  "random_count": 65536,
+  "captured_count": 110,
+  "boundary_count": 5,
+  "count": 65651,
+  "format": "interleaved float32 exponent and original result, little-endian",
+  "data_sha256": "3258fc4f632cb8a004b0ddbd1075db24c0c9d3e91cc258df0f48063616e05ece",
+  "log10_bits": "40026bb1bbb55515",
+  "inv_step_bits": "40571547652b82fe",
+  "step_bits": "3f862e42fefa39ef",
+  "exp_table_rva": "10c580",
+  "exp_table_sha256": "88c233557c8c42e92e6e0af7bd1704fcad9d649c3c5aeef5a87004915d81d98f",
+  "whole_wav_verified": false
+}

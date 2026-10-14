@@ -1,0 +1,18 @@
+{
+  "source": "finished Linux pure-Go strict reference replay of both ordinary-original seed19 case117 WAVs after powf reconstruction",
+  "complete_selected_cases": true,
+  "complete_corpus": false,
+  "go_version": "go1.26.8",
+  "cgo_enabled": 0,
+  "goos": "linux",
+  "goarch": "amd64",
+  "goamd64": "v1",
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "original_threads": 6,
+  "avx512_convolutions": false,
+  "whole_wav_count": 2,
+  "test_seconds": 526.24,
+  "log_sha256": "6c69f55c60a4418764601a16e7caa12a39ee8575cc2f0acbb57b062c508d26a8",
+  "test_binary_sha256": "9c325009f9e4c1bbff908987d0d66bd0cb14096bd9284f7c26af3e5f7c7e4944",
+  "reference_sha256": "fe2489e5691f2663a328ca94f6707475fb608ebae4260f39f7601508eabefbbe"
+}

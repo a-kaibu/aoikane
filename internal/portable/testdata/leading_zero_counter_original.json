@@ -1,0 +1,92 @@
+{
+  "source": "ordinary original Akane frontend; tools/probe_graph.py; no injected inputs",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "voice": "KotonohaAkane_ns_48",
+  "capture_sha256": [
+    "50f621dec802fabb160b5810d6b7ca465113ace249b91e044aee295b1fb2279f",
+    "e5cf59ac2d3d839a362b1abbe1f258166e1aeea7918981994b11d7106ea499cc"
+  ],
+  "rules_sha256": "8d960f8a82d5e02b31d4576051e6bae32770e793f0bf82bc4479181795fbcab7",
+  "cases": [
+    {
+      "text": "00人。",
+      "reading": "<S>ゼ^ロゼロ!ニン<F>"
+    },
+    {
+      "text": "01人。",
+      "reading": "<S>ゼ^ロイチ!ニン<F>"
+    },
+    {
+      "text": "001人。",
+      "reading": "<S>ゼ^ロゼ!ロ|0イ^チ!ニン<F>"
+    },
+    {
+      "text": "007人。",
+      "reading": "<S>ゼ^ロゼ!ロ|0ナ^ナ!ニン<F>"
+    },
+    {
+      "text": "012人。",
+      "reading": "<S>ゼ^ロイ!チ|0^ニ!ニン<F>"
+    },
+    {
+      "text": "01本。",
+      "reading": "<S>ゼ^ロイチ!ホン<F>"
+    },
+    {
+      "text": "016本。",
+      "reading": "<S>ゼ^ロイ!チ|0ロ^ク!ホン<F>"
+    },
+    {
+      "text": "00個。",
+      "reading": "<S>ゼ^ロゼロ!コ<F>"
+    },
+    {
+      "text": "006個。",
+      "reading": "<S>ゼ^ロゼ!ロ|0ロ^ク!コ<F>"
+    },
+    {
+      "text": "00円。",
+      "reading": "<S>ゼ^ロゼロ!エン<F>"
+    },
+    {
+      "text": "04年。",
+      "reading": "<S>ヨ^ネン<F>"
+    },
+    {
+      "text": "0000人。",
+      "reading": "<S>ゼ^ロゼ!ロ|0ゼ^ロゼロ!ニン<F>"
+    },
+    {
+      "text": "04月。",
+      "reading": "<S>^シ!ガツ<F>"
+    },
+    {
+      "text": "04日。",
+      "reading": "<S>ヨ^ッカ<F>"
+    },
+    {
+      "text": "04時。",
+      "reading": "<S>^ヨ!ジ<F>"
+    },
+    {
+      "text": "04分。",
+      "reading": "<S>^ヨ!ンプン<F>"
+    },
+    {
+      "text": "04秒。",
+      "reading": "<S>^ヨ!ンビョー<F>"
+    },
+    {
+      "text": "04期。",
+      "reading": "<S>^ヨ!ンキ<F>"
+    },
+    {
+      "text": "04年度。",
+      "reading": "<S>ヨ^ネ!ンド<F>"
+    },
+    {
+      "text": "00年。",
+      "reading": "<S>ゼ^ロ!ネン<F>"
+    }
+  ]
+}

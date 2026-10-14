@@ -1,0 +1,63 @@
+{
+  "source": "ordinary original direct engine API; no instrumentation or injected model inputs",
+  "source_sha256": "cd9ae9853c181ac568d3a6dd2c3927fd812fa9fd6cc948d8581d39c0537482b8",
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "voice": "KotonohaAkane_ns_48",
+  "original_threads": 6,
+  "avx512_convolutions": false,
+  "seed": 2,
+  "generator_version": 1,
+  "max_units": 12,
+  "cases": [
+    {
+      "index": 0,
+      "text": "ぜとててぎひかた。",
+      "bytes": 207078,
+      "sha256": "f0f926cdf7afed154a6a47cb9347c488648f4c139d70ec8b00de546dc04d014d"
+    },
+    {
+      "index": 1,
+      "text": "ｃ一金。",
+      "bytes": 181524,
+      "sha256": "ccd6762df5ee58e44b43fb25e7be37c093dbb8a08ebd40aed5ef7febc075dda0"
+    },
+    {
+      "index": 2,
+      "text": " －「（\n？。",
+      "bytes": 81644,
+      "sha256": "ca67ad155f7a6f0f81c54f8613e086e45a5e4ba3d9d6b5c49979f7cf89a7a3bc"
+    },
+    {
+      "index": 3,
+      "text": "昨日で上手三人とは青いがます。",
+      "bytes": 393614,
+      "sha256": "a88568b6eb6225f989fd17e09b08b03d1928d20fefca9137ac80c37eb590299c"
+    },
+    {
+      "index": 4,
+      "text": "のゆなむぷへぜつ。",
+      "bytes": 215328,
+      "sha256": "bbd8fa59115d1b5dc2e42996261d93c37199c3bef4b9efd8d9ff4dd5aa49edfe"
+    },
+    {
+      "index": 5,
+      "text": "火木。",
+      "bytes": 132940,
+      "sha256": "ab62c40f8f544887661c37a65f1179e3ce32c6a71613f69ed62b0d49bd22fd51"
+    },
+    {
+      "index": 6,
+      "text": "！（A０0。",
+      "bytes": 254542,
+      "sha256": "d2cacebf15d4c3688e178933a82e5d9d278f1b628994a0b13ce57ae823e4f7ae"
+    },
+    {
+      "index": 7,
+      "text": "窓ます口。",
+      "bytes": 178648,
+      "sha256": "8585391e721a68c872648ff51a38b7ce8665b836cf727489d2c47397340fb66e"
+    }
+  ],
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "torch_dll_sha256": "00ca5c937940a94d052dbe52ec5fb0909db11ffbfccfd6e65e19b468169ff5e5"
+}

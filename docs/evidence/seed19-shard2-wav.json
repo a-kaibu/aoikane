@@ -1,0 +1,252 @@
+{
+  "complete_shard": true,
+  "complete_corpus": false,
+  "seed": 19,
+  "generator_version": 1,
+  "count_per_voice": 128,
+  "max_units": 24,
+  "shard": 2,
+  "shards": 8,
+  "source": "finished ordinary original SDK/Go tests; whole saved WAVs rehashed against reports and prior original captures",
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "go_version": "go1.26.8",
+  "original_threads": 6,
+  "avx512_convolutions": false,
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "corpus_sha256": "006e062a26565e8a79235bcf9461a6e13f50dc91bd4abbc5598b78a279b10b40",
+  "report_sha256": [
+    "43fdc28e7b062625285ea64d4bae19e72fa6dc64f604c05063776aebdc980afc",
+    "601eda4a950bfd04c58a45c452636e6097956f25417055f076464d53e6192d3c"
+  ],
+  "capture_sha256": [
+    "b76ff618c7d211d80550bd8a3b3b2572c720817921c7b59ad3d1415b9ec2013f",
+    "62bf58ce634406920ca9bf98656ebdf0df45af0670170bed3282f04f289b2a43"
+  ],
+  "cases": [
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 2,
+      "text": "アЖ0（A😀。",
+      "bytes": 212648,
+      "sha256": "4ed0561600d0e73f1404b367521f2b8ec79a19483a4267cc865d812b22e23d01"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 10,
+      "text": "（😀 。。0漢0。",
+      "bytes": 257904,
+      "sha256": "34fc62a1ca002bbf30dd332ee1ba373c54500c59224546804d2e6547f800c5f8"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 18,
+      "text": "。漢。",
+      "bytes": 192524,
+      "sha256": "be90b8d828e37ac84d8dd7df4c571a5d4e1535e8336db0de19a02cbd93c58c7a"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 26,
+      "text": "A～\n\t）アA（。",
+      "bytes": 257828,
+      "sha256": "1aac26b0d99052475e2c4cd1101782ca261a07f635d65e1f138e1a054b1ea07b"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 34,
+      "text": "Ａ漢ΩあＡ～\n〜（漢Ж－−あ、？\n－0）「。",
+      "bytes": 571626,
+      "sha256": "9bff2bb14bf9ec3553af5bfb336d2dd928d6bac017ef678aab6a4b87d7ea1121"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 42,
+      "text": "！0？」あ 、・」。",
+      "bytes": 305804,
+      "sha256": "7693bfc106a87ee010710b84c47d8db8669538b7e525a507c94fdc24b78e5af8"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 50,
+      "text": "0。éア０\n「）（\nあ～あ0é（ア。",
+      "bytes": 529082,
+      "sha256": "5b48179d305f09dd55b27770eaa518bc430dc5cf042cb2947a3dfaa5f1955ecb"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 58,
+      "text": "（0\n。",
+      "bytes": 117644,
+      "sha256": "3809fc672c7e5946c56a5472e67835e7460a5a3b0f160c347be5727b982dbad4"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 66,
+      "text": "） ア ・ −  。",
+      "bytes": 98924,
+      "sha256": "11006097814c8b322634fb95d98312d5eb3b4b11cfcd0ccefbebe0d3d56bb024"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 74,
+      "text": "。（、－ЖＡ・0 、「−Ж～。",
+      "bytes": 366622,
+      "sha256": "51d57328b68763ee542ac85284054fa0a6012630e91d87e533bcb63e349fc310"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 82,
+      "text": "é０ 、・「〜あA。漢あアA。",
+      "bytes": 387380,
+      "sha256": "60c66151549d3842d9a781ab955a9cd72720c9202de3eefa84b7ea634183cb71"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 90,
+      "text": "アΩ「～−？。",
+      "bytes": 153072,
+      "sha256": "57ba558e3655ad7e3361d834e04bb73af696f3777ba63e2110cab5ba13f4f865"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 98,
+      "text": "\tΩ\nΩ！０（0０。",
+      "bytes": 455738,
+      "sha256": "a8daa7448646fc65a86d507aa24480d07eb78a7188d5b453201379a4f7f95426"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 106,
+      "text": "？\nΩ－\t！〜\t、・ 」é－\t0😀。",
+      "bytes": 384036,
+      "sha256": "e8ba8e369062d2483061659abc32820cd9ac8d3622cc79ceed0bb1221bed1c43"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 114,
+      "text": "ああé）０～－（－ア」😀。0Ω）？Ａ）−0Aé😀。",
+      "bytes": 599788,
+      "sha256": "b5bd51fac0a5fe11d7e88d8c77ca614a6f1879869513701e17e233c88c867d48"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 122,
+      "text": "）－A０ 漢ア。ア） Ж、－～ア）😀０（Ж。",
+      "bytes": 521704,
+      "sha256": "9cf89ea1e9605e04acb7a925c3466077d77b96c2c30d9d3161343151a7928239"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 2,
+      "text": "アЖ0（A😀。",
+      "bytes": 212830,
+      "sha256": "baebef240d99c5fb21cb28f5ddca88c9a38f2dd3c50367a83a7f9ef266a97f5d"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 10,
+      "text": "（😀 。。0漢0。",
+      "bytes": 257904,
+      "sha256": "34fc62a1ca002bbf30dd332ee1ba373c54500c59224546804d2e6547f800c5f8"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 18,
+      "text": "。漢。",
+      "bytes": 192524,
+      "sha256": "be90b8d828e37ac84d8dd7df4c571a5d4e1535e8336db0de19a02cbd93c58c7a"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 26,
+      "text": "A～\n\t）アA（。",
+      "bytes": 256394,
+      "sha256": "722dd97ea9e710de6a7b24a1e676c9a23a8b998f4b89e0811db47679b897b185"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 34,
+      "text": "Ａ漢ΩあＡ～\n〜（漢Ж－−あ、？\n－0）「。",
+      "bytes": 622756,
+      "sha256": "ccff03cf19f1bcca5bd534583244742ed38c5857b27ff48dddcca129e9e359a8"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 42,
+      "text": "！0？」あ 、・」。",
+      "bytes": 305324,
+      "sha256": "bbea282ba8719f1815c3e32052c95dfec569c97450d5f2fbd7e342b8078b6c0e"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 50,
+      "text": "0。éア０\n「）（\nあ～あ0é（ア。",
+      "bytes": 530508,
+      "sha256": "8bc3db48ef0a8000196823a7de47f68a21cc4299ce6593809830e3752b624c05"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 58,
+      "text": "（0\n。",
+      "bytes": 117644,
+      "sha256": "3809fc672c7e5946c56a5472e67835e7460a5a3b0f160c347be5727b982dbad4"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 66,
+      "text": "） ア ・ −  。",
+      "bytes": 98444,
+      "sha256": "2bd9a6674b3ac583fdeb88aca32814826b24d69882bfe6821d8fd87d7077738d"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 74,
+      "text": "。（、－ЖＡ・0 、「−Ж～。",
+      "bytes": 363820,
+      "sha256": "b082034072a8f16cc21b162de12815cd552e88a71eb465397da47b1b7a2a429f"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 82,
+      "text": "é０ 、・「〜あA。漢あアA。",
+      "bytes": 387608,
+      "sha256": "3b1794875a8458b1fdb026644899c0fcbc6bf25b62e724979e0f4da944053d76"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 90,
+      "text": "アΩ「～−？。",
+      "bytes": 152668,
+      "sha256": "1c00c0296fff7fcba29674ebba3290a7f043b472b3679ef17e5166cf67592a54"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 98,
+      "text": "\tΩ\nΩ！０（0０。",
+      "bytes": 455738,
+      "sha256": "a8daa7448646fc65a86d507aa24480d07eb78a7188d5b453201379a4f7f95426"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 106,
+      "text": "？\nΩ－\t！〜\t、・ 」é－\t0😀。",
+      "bytes": 409956,
+      "sha256": "1b0e8892b2fe39f9e76ca62c43616d1f5937d6bce506701156aadd8e12d171d9"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 114,
+      "text": "ああé）０～－（－ア」😀。0Ω）？Ａ）−0Aé😀。",
+      "bytes": 647646,
+      "sha256": "aa27afa05d3064571b4e5d12f0092fd8df87ea8b16a229a279bcba538267b740"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 122,
+      "text": "）－A０ 漢ア。ア） Ж、－～ア）😀０（Ж。",
+      "bytes": 567762,
+      "sha256": "f7a2b7c60017bc7c6cdf6dd62ab0235997317f31ff852946082563a46c894947"
+    }
+  ],
+  "pcm16_samples": 5495221
+}

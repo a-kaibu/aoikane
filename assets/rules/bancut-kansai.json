@@ -1,0 +1,1040 @@
+{
+  "version": 1,
+  "source_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "groups": {
+    "Is数": [
+      {
+        "kind": "H",
+        "id": 17170432
+      }
+    ],
+    "Isその他": [
+      {
+        "kind": "H",
+        "id": 100663296
+      },
+      {
+        "kind": "H",
+        "id": 117440512
+      },
+      {
+        "kind": "H",
+        "id": 167772160
+      },
+      {
+        "kind": "H",
+        "id": 184549376
+      },
+      {
+        "kind": "H",
+        "id": 201326592
+      },
+      {
+        "kind": "H",
+        "id": 218103808
+      },
+      {
+        "kind": "H",
+        "id": 218169344
+      },
+      {
+        "kind": "H",
+        "id": 218234880
+      },
+      {
+        "kind": "H",
+        "id": 218300416
+      }
+    ],
+    "Is型サ変スル": [
+      {
+        "kind": "G",
+        "id": 512
+      }
+    ],
+    "Is型自立語的": [
+      {
+        "kind": "G",
+        "id": 2816
+      },
+      {
+        "kind": "G",
+        "id": 3328
+      },
+      {
+        "kind": "G",
+        "id": 3329
+      },
+      {
+        "kind": "G",
+        "id": 3330
+      },
+      {
+        "kind": "G",
+        "id": 3331
+      },
+      {
+        "kind": "G",
+        "id": 3332
+      },
+      {
+        "kind": "G",
+        "id": 3333
+      },
+      {
+        "kind": "G",
+        "id": 3334
+      },
+      {
+        "kind": "G",
+        "id": 3335
+      },
+      {
+        "kind": "G",
+        "id": 3336
+      }
+    ],
+    "Is形容詞": [
+      {
+        "kind": "H",
+        "id": 67108864
+      },
+      {
+        "kind": "H",
+        "id": 67174400
+      },
+      {
+        "kind": "H",
+        "id": 67239936
+      }
+    ],
+    "Is固有": [
+      {
+        "kind": "J",
+        "value": "Is人名"
+      },
+      {
+        "kind": "H",
+        "id": 16842752
+      },
+      {
+        "kind": "H",
+        "id": 16843264
+      },
+      {
+        "kind": "H",
+        "id": 16843520
+      },
+      {
+        "kind": "H",
+        "id": 16843521
+      }
+    ],
+    "Is自立語": [
+      {
+        "kind": "J",
+        "value": "Is名詞"
+      },
+      {
+        "kind": "J",
+        "value": "Is副詞"
+      },
+      {
+        "kind": "H",
+        "id": 67108864
+      },
+      {
+        "kind": "H",
+        "id": 67174400
+      },
+      {
+        "kind": "H",
+        "id": 50331648
+      },
+      {
+        "kind": "H",
+        "id": 50397184
+      }
+    ],
+    "Is自立語結合型": [
+      {
+        "kind": "C",
+        "value": "P3"
+      }
+    ],
+    "Is助詞": [
+      {
+        "kind": "H",
+        "id": 134217728
+      },
+      {
+        "kind": "H",
+        "id": 134217984
+      },
+      {
+        "kind": "H",
+        "id": 134218240
+      },
+      {
+        "kind": "H",
+        "id": 134283264
+      },
+      {
+        "kind": "H",
+        "id": 134348800
+      },
+      {
+        "kind": "H",
+        "id": 134414336
+      },
+      {
+        "kind": "H",
+        "id": 134479872
+      },
+      {
+        "kind": "H",
+        "id": 134545408
+      },
+      {
+        "kind": "H",
+        "id": 134610944
+      },
+      {
+        "kind": "H",
+        "id": 134676480
+      },
+      {
+        "kind": "H",
+        "id": 134742016
+      },
+      {
+        "kind": "H",
+        "id": 134807552
+      },
+      {
+        "kind": "H",
+        "id": 134873088
+      }
+    ],
+    "Is助動詞": [
+      {
+        "kind": "H",
+        "id": 150994944
+      }
+    ],
+    "Is人名": [
+      {
+        "kind": "H",
+        "id": 16843008
+      },
+      {
+        "kind": "H",
+        "id": 16843009
+      },
+      {
+        "kind": "H",
+        "id": 16843010
+      }
+    ],
+    "Is接続詞的": [
+      {
+        "kind": "H",
+        "id": 17432576
+      }
+    ],
+    "Is接頭詞": [
+      {
+        "kind": "H",
+        "id": 33554432
+      },
+      {
+        "kind": "H",
+        "id": 33619968
+      },
+      {
+        "kind": "H",
+        "id": 33685504
+      },
+      {
+        "kind": "H",
+        "id": 33751040
+      }
+    ],
+    "Is接尾": [
+      {
+        "kind": "J",
+        "value": "Is名詞接尾"
+      },
+      {
+        "kind": "H",
+        "id": 50462720
+      },
+      {
+        "kind": "H",
+        "id": 67239936
+      }
+    ],
+    "Is代名詞": [
+      {
+        "kind": "H",
+        "id": 16908288
+      },
+      {
+        "kind": "H",
+        "id": 16908544
+      }
+    ],
+    "Is動形非自立": [
+      {
+        "kind": "H",
+        "id": 50397184
+      },
+      {
+        "kind": "H",
+        "id": 67174400
+      }
+    ],
+    "Is動詞": [
+      {
+        "kind": "H",
+        "id": 50331648
+      },
+      {
+        "kind": "H",
+        "id": 50397184
+      },
+      {
+        "kind": "H",
+        "id": 50462720
+      }
+    ],
+    "Is非自立語": [
+      {
+        "kind": "J",
+        "value": "Is名詞非自立"
+      },
+      {
+        "kind": "H",
+        "id": 17301504
+      },
+      {
+        "kind": "J",
+        "value": "Is動形非自立"
+      }
+    ],
+    "Is付属語": [
+      {
+        "kind": "J",
+        "value": "Is助動詞"
+      },
+      {
+        "kind": "J",
+        "value": "Is助詞"
+      }
+    ],
+    "Is副詞": [
+      {
+        "kind": "H",
+        "id": 83886080
+      },
+      {
+        "kind": "H",
+        "id": 83951616
+      }
+    ],
+    "Is副詞可能": [
+      {
+        "kind": "H",
+        "id": 16973824
+      },
+      {
+        "kind": "H",
+        "id": 17236224
+      },
+      {
+        "kind": "H",
+        "id": 17368576
+      }
+    ],
+    "Is名詞": [
+      {
+        "kind": "J",
+        "value": "Is固有"
+      },
+      {
+        "kind": "J",
+        "value": "Is代名詞"
+      },
+      {
+        "kind": "J",
+        "value": "Is名詞非自立"
+      },
+      {
+        "kind": "H",
+        "id": 16777216
+      },
+      {
+        "kind": "H",
+        "id": 16973824
+      },
+      {
+        "kind": "H",
+        "id": 17039360
+      },
+      {
+        "kind": "H",
+        "id": 17104896
+      },
+      {
+        "kind": "H",
+        "id": 17301504
+      },
+      {
+        "kind": "H",
+        "id": 17432576
+      },
+      {
+        "kind": "H",
+        "id": 17498112
+      },
+      {
+        "kind": "H",
+        "id": 17563648
+      },
+      {
+        "kind": "H",
+        "id": 17629184
+      }
+    ],
+    "Is名詞サ変": [
+      {
+        "kind": "H",
+        "id": 17039360
+      },
+      {
+        "kind": "H",
+        "id": 17367808
+      }
+    ],
+    "Is名詞接尾": [
+      {
+        "kind": "H",
+        "id": 17367040
+      },
+      {
+        "kind": "H",
+        "id": 17367296
+      },
+      {
+        "kind": "H",
+        "id": 17367552
+      },
+      {
+        "kind": "H",
+        "id": 17367808
+      },
+      {
+        "kind": "H",
+        "id": 17368064
+      },
+      {
+        "kind": "H",
+        "id": 17368320
+      },
+      {
+        "kind": "H",
+        "id": 17368576
+      },
+      {
+        "kind": "H",
+        "id": 17368832
+      },
+      {
+        "kind": "H",
+        "id": 17369088
+      }
+    ],
+    "Is名詞非自立": [
+      {
+        "kind": "H",
+        "id": 17235968
+      },
+      {
+        "kind": "H",
+        "id": 17236224
+      },
+      {
+        "kind": "H",
+        "id": 17236480
+      },
+      {
+        "kind": "H",
+        "id": 17236736
+      }
+    ],
+    "Is名詞非自立副詞可能": [
+      {
+        "kind": "H",
+        "id": 17236224
+      }
+    ],
+    "Is連体詞": [
+      {
+        "kind": "H",
+        "id": 100663296
+      }
+    ],
+    "Is連用形": [
+      {
+        "kind": "K",
+        "id": 1536
+      },
+      {
+        "kind": "K",
+        "id": 1792
+      }
+    ]
+  },
+  "judges": [
+    {
+      "cut": true,
+      "clauses": [
+        {
+          "group": "Is接頭詞",
+          "position": "p",
+          "positive": true
+        },
+        {
+          "group": "Is自立語結合型",
+          "position": "p",
+          "positive": true
+        }
+      ]
+    },
+    {
+      "cut": false,
+      "clauses": [
+        {
+          "group": "Is接頭詞",
+          "position": "p",
+          "positive": true
+        }
+      ]
+    },
+    {
+      "cut": false,
+      "clauses": [
+        {
+          "group": "Is名詞サ変",
+          "position": "p",
+          "positive": true
+        },
+        {
+          "group": "Is型サ変スル",
+          "position": "l",
+          "positive": true
+        }
+      ]
+    },
+    {
+      "cut": true,
+      "clauses": [
+        {
+          "group": "Is名詞",
+          "position": "p",
+          "positive": true
+        },
+        {
+          "group": "Is名詞サ変",
+          "position": "l",
+          "positive": true
+        },
+        {
+          "group": "Is型サ変スル",
+          "position": "n",
+          "positive": true
+        }
+      ]
+    },
+    {
+      "cut": false,
+      "clauses": [
+        {
+          "group": "Is動詞",
+          "position": "p",
+          "positive": true
+        },
+        {
+          "group": "Is連用形",
+          "position": "p",
+          "positive": true
+        },
+        {
+          "group": "Is動形非自立",
+          "position": "l",
+          "positive": true
+        }
+      ]
+    },
+    {
+      "cut": false,
+      "clauses": [
+        {
+          "group": "Is形容詞",
+          "position": "p",
+          "positive": true
+        },
+        {
+          "group": "Is連用形",
+          "position": "p",
+          "positive": true
+        },
+        {
+          "group": "Is動形非自立",
+          "position": "l",
+          "positive": true
+        }
+      ]
+    },
+    {
+      "cut": false,
+      "clauses": [
+        {
+          "group": "Is連用形",
+          "position": "p",
+          "positive": true
+        },
+        {
+          "group": "Is連用形",
+          "position": "l",
+          "positive": true
+        }
+      ]
+    },
+    {
+      "cut": true,
+      "clauses": [
+        {
+          "group": "Is名詞",
+          "position": "p",
+          "positive": true
+        },
+        {
+          "group": "Is名詞",
+          "position": "l",
+          "positive": true
+        },
+        {
+          "group": "Is数",
+          "position": "l",
+          "positive": true
+        }
+      ]
+    },
+    {
+      "cut": true,
+      "clauses": [
+        {
+          "group": "Is名詞",
+          "position": "p",
+          "positive": true
+        },
+        {
+          "group": "Is名詞",
+          "position": "l",
+          "positive": true
+        },
+        {
+          "group": "Is数",
+          "position": "p",
+          "positive": true
+        }
+      ]
+    },
+    {
+      "cut": true,
+      "clauses": [
+        {
+          "group": "Is名詞",
+          "position": "p",
+          "positive": true
+        },
+        {
+          "group": "Is名詞",
+          "position": "l",
+          "positive": true
+        },
+        {
+          "group": "Is固有",
+          "position": "l",
+          "positive": true
+        }
+      ]
+    },
+    {
+      "cut": true,
+      "clauses": [
+        {
+          "group": "Is名詞",
+          "position": "p",
+          "positive": true
+        },
+        {
+          "group": "Is名詞",
+          "position": "l",
+          "positive": true
+        },
+        {
+          "group": "Is代名詞",
+          "position": "l",
+          "positive": true
+        }
+      ]
+    },
+    {
+      "cut": true,
+      "clauses": [
+        {
+          "group": "Is名詞",
+          "position": "p",
+          "positive": true
+        },
+        {
+          "group": "Is名詞",
+          "position": "l",
+          "positive": true
+        },
+        {
+          "group": "Is人名",
+          "position": "p",
+          "positive": true
+        }
+      ]
+    },
+    {
+      "cut": true,
+      "clauses": [
+        {
+          "group": "Is名詞",
+          "position": "p",
+          "positive": true
+        },
+        {
+          "group": "Is名詞",
+          "position": "l",
+          "positive": true
+        },
+        {
+          "group": "Is代名詞",
+          "position": "p",
+          "positive": true
+        }
+      ]
+    },
+    {
+      "cut": true,
+      "clauses": [
+        {
+          "group": "Is名詞",
+          "position": "p",
+          "positive": true
+        },
+        {
+          "group": "Is名詞",
+          "position": "l",
+          "positive": true
+        },
+        {
+          "group": "Is副詞可能",
+          "position": "p",
+          "positive": true
+        }
+      ]
+    },
+    {
+      "cut": true,
+      "clauses": [
+        {
+          "group": "Is名詞",
+          "position": "p",
+          "positive": true
+        },
+        {
+          "group": "Is名詞",
+          "position": "l",
+          "positive": true
+        },
+        {
+          "group": "Is名詞非自立",
+          "position": "p",
+          "positive": true
+        }
+      ]
+    },
+    {
+      "cut": true,
+      "clauses": [
+        {
+          "group": "Is名詞",
+          "position": "p",
+          "positive": true
+        },
+        {
+          "group": "Is名詞",
+          "position": "l",
+          "positive": true
+        },
+        {
+          "group": "Is接続詞的",
+          "position": "p",
+          "positive": true
+        }
+      ]
+    },
+    {
+      "cut": true,
+      "clauses": [
+        {
+          "group": "Is名詞",
+          "position": "p",
+          "positive": true
+        },
+        {
+          "group": "Is名詞",
+          "position": "l",
+          "positive": true
+        },
+        {
+          "group": "Is接続詞的",
+          "position": "l",
+          "positive": true
+        }
+      ]
+    },
+    {
+      "cut": true,
+      "clauses": [
+        {
+          "group": "Is名詞",
+          "position": "p",
+          "positive": true
+        },
+        {
+          "group": "Is名詞",
+          "position": "l",
+          "positive": true
+        },
+        {
+          "group": "Is名詞サ変",
+          "position": "l",
+          "positive": true
+        },
+        {
+          "group": "Is型サ変スル",
+          "position": "n",
+          "positive": true
+        }
+      ]
+    },
+    {
+      "cut": false,
+      "clauses": [
+        {
+          "group": "Is名詞",
+          "position": "p",
+          "positive": true
+        },
+        {
+          "group": "Is名詞",
+          "position": "l",
+          "positive": true
+        }
+      ]
+    },
+    {
+      "cut": true,
+      "clauses": [
+        {
+          "group": "Is名詞",
+          "position": "p",
+          "positive": true
+        },
+        {
+          "group": "Is副詞可能",
+          "position": "p",
+          "positive": true
+        },
+        {
+          "group": "Is接尾",
+          "position": "l",
+          "positive": true
+        }
+      ]
+    },
+    {
+      "cut": true,
+      "clauses": [
+        {
+          "group": "Is名詞",
+          "position": "p",
+          "positive": true
+        },
+        {
+          "group": "Is名詞非自立",
+          "position": "p",
+          "positive": true
+        },
+        {
+          "group": "Is接尾",
+          "position": "l",
+          "positive": true
+        }
+      ]
+    },
+    {
+      "cut": true,
+      "clauses": [
+        {
+          "group": "Is名詞",
+          "position": "p",
+          "positive": true
+        },
+        {
+          "group": "Is接続詞的",
+          "position": "p",
+          "positive": true
+        },
+        {
+          "group": "Is接尾",
+          "position": "l",
+          "positive": true
+        }
+      ]
+    },
+    {
+      "cut": false,
+      "clauses": [
+        {
+          "group": "Is名詞",
+          "position": "p",
+          "positive": true
+        },
+        {
+          "group": "Is接尾",
+          "position": "l",
+          "positive": true
+        }
+      ]
+    },
+    {
+      "cut": true,
+      "clauses": [
+        {
+          "group": "Is自立語",
+          "position": "l",
+          "positive": true
+        }
+      ]
+    },
+    {
+      "cut": true,
+      "clauses": [
+        {
+          "group": "Is接頭詞",
+          "position": "l",
+          "positive": true
+        }
+      ]
+    },
+    {
+      "cut": false,
+      "clauses": [
+        {
+          "group": "Is助詞",
+          "position": "p",
+          "positive": true
+        },
+        {
+          "group": "Is助動詞",
+          "position": "l",
+          "positive": true
+        },
+        {
+          "group": "Is型自立語的",
+          "position": "l",
+          "positive": true
+        }
+      ]
+    },
+    {
+      "cut": true,
+      "clauses": [
+        {
+          "group": "Is助詞",
+          "position": "p",
+          "positive": true
+        },
+        {
+          "group": "Is助動詞",
+          "position": "l",
+          "positive": true
+        }
+      ]
+    },
+    {
+      "cut": true,
+      "clauses": [
+        {
+          "group": "Is助詞",
+          "position": "p",
+          "positive": true
+        },
+        {
+          "group": "Is助詞",
+          "position": "l",
+          "positive": false
+        }
+      ]
+    },
+    {
+      "cut": true,
+      "clauses": [
+        {
+          "group": "Is助動詞",
+          "position": "p",
+          "positive": true
+        },
+        {
+          "group": "Is付属語",
+          "position": "l",
+          "positive": false
+        }
+      ]
+    },
+    {
+      "cut": true,
+      "clauses": [
+        {
+          "group": "Is動詞",
+          "position": "p",
+          "positive": true
+        },
+        {
+          "group": "Is非自立語",
+          "position": "l",
+          "positive": true
+        }
+      ]
+    },
+    {
+      "cut": true,
+      "clauses": [
+        {
+          "group": "Is名詞非自立副詞可能",
+          "position": "l",
+          "positive": true
+        }
+      ]
+    }
+  ]
+}

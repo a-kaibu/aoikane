@@ -1,0 +1,1852 @@
+{
+  "complete": true,
+  "source": "all finished ordinary original SDK/Go random shards; all WAV files rehashed",
+  "seed": 19,
+  "generator_version": 1,
+  "count_per_voice": 128,
+  "max_units": 24,
+  "shards": 8,
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "go_version": "go1.26.8",
+  "original_threads": 6,
+  "avx512_convolutions": false,
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "corpus_sha256": "006e062a26565e8a79235bcf9461a6e13f50dc91bd4abbc5598b78a279b10b40",
+  "capture_sha256": [
+    "b76ff618c7d211d80550bd8a3b3b2572c720817921c7b59ad3d1415b9ec2013f",
+    "62bf58ce634406920ca9bf98656ebdf0df45af0670170bed3282f04f289b2a43"
+  ],
+  "report_sha256": [
+    "ca4fbe848dfa935a9328703f2f21d79ce609ffce467822126be3a9eafe7648c9",
+    "7c53ba18f218a4121b76a5719826a2c95cea7e4c91843e57e80229785ff4e731",
+    "43fdc28e7b062625285ea64d4bae19e72fa6dc64f604c05063776aebdc980afc",
+    "735dae5df6b2c1d3f039f9cc86e51ef2a1d9e3b1859b9fcbfd76cee2d3c39fb3",
+    "c69fd93aa0ebd03fd0e55378cc922d72d7e395f5370d952468659c1bf9e47795",
+    "91a82b52819dfef5704df3198ded01f2d860ee41707472a59333aa75780c3b7c",
+    "909824715d214819f8ef0b35696966ba63abcce60e0cca4b508eb33ef05b0a15",
+    "1861c6cff69c3c84d5e84c2b4460e7f6e0440cbaa7b67209108a5b08ba898c2b",
+    "50c58e5c61bab9b2c12931a6de5350d537d699eca8d7d1ecc630c23bc681b678",
+    "14db9e9f8e3091e11246fbd6542165c8ca89b4f2d765eb4f702705ff80f40b6e",
+    "601eda4a950bfd04c58a45c452636e6097956f25417055f076464d53e6192d3c",
+    "206bb5a6f6b0119514683a2aee814f362baad10c395ab9e4c4893e505d1d1808",
+    "30a598daf5dfc7d0cb9196a6c0796de7593f262247b39fffe3a62daeb3a1b71c",
+    "603ca390cd7f27c0cf60f3f361aa18093653b4825d41d1b4761bf7a17aa18658",
+    "c4e70677e2e182436b236722b1234f085efa03d31c04b1f1454d4410fc03d96c",
+    "a48e770a82ddd178ebb067d7a4e60938a0cfa4e9db944dcea0da309dc8a7237c"
+  ],
+  "pcm16_samples": 52834199,
+  "cases": [
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 0,
+      "text": "なふけふゃょせおてわじぴせるせ。",
+      "bytes": 291898,
+      "sha256": "c5aa0fe7344fda4931c16622bdcb331427a87c22706ff867c8cc09270d543228"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 8,
+      "text": "がをしとぐすまももそかゅひやすぬずてよののぜー。",
+      "bytes": 597426,
+      "sha256": "822e698e13e89bc93fd29922dc24875399cf1ab5ff2e598afa5eddb9390c4c5a"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 16,
+      "text": "ぬょやいちけ。",
+      "bytes": 183004,
+      "sha256": "0b229a5007c08d5ce8c77d8512e2bd390c3c34593e9056c275d6fabdca26d04f"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 24,
+      "text": "よしまじじぜねず。",
+      "bytes": 203940,
+      "sha256": "856f0955cd4ba7a86f2ecf9b2b2591265350a3d9e8303f9b790c56006f6675c6"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 32,
+      "text": "ぷごゃつわるめるげへのろょゅをまあくなのら。",
+      "bytes": 368506,
+      "sha256": "a4dc69701d7b5d45aa1a7b0ec8e354dcbee9ec31678610743ba0cd1e1e94c5f2"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 40,
+      "text": "よがりねぽぷてほさぽぱひぞちぬれがろ。",
+      "bytes": 384916,
+      "sha256": "60c2b0a1fc0bc1e189ee6f14d9bce5dc35bad195c71bc50ed1a708003f83a0d1"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 48,
+      "text": "れすごがゆがやげるぷげきごげーたぽ。",
+      "bytes": 370720,
+      "sha256": "7ff2b7a73ab714a43f8942165633c95a04592f25743d80902b4ca5e6ff44280f"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 56,
+      "text": "こげをとみあえくざすねにてしろぞちへぱざそ。",
+      "bytes": 417158,
+      "sha256": "46ff84b64380e6375628127c0540ed9066f3fcd0594dff9bb968a1cf4edfb2bd"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 64,
+      "text": "ねずきぐいゃふまとぺってかとほずずぺけむをみれず。",
+      "bytes": 489314,
+      "sha256": "68fdf24e29d8f939ff65cd7515099286caf867a993ea780b02ce5c1bb233457d"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 72,
+      "text": "ふやれご。",
+      "bytes": 147744,
+      "sha256": "75fd29f9fcfe02e8a8655560e4e1be85b8b46b3da65ba74ce6268b27d11e3cee"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 80,
+      "text": "れこすねよかよとげわっねぴ。",
+      "bytes": 301180,
+      "sha256": "9ebeae7e5d4c2d13f0403b97eab59733a5e9c6a76393ea7151dbd14f2b9b7486"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 88,
+      "text": "まぺいいまれよゅしぐぱさほほへずそらます。",
+      "bytes": 381730,
+      "sha256": "ef2ea7a6691d2ae75814ef5166807a6a7f62b0a122112eb660beb5ef92482c30"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 96,
+      "text": "やへっえめゃたえじはめくるくしおぽめ。",
+      "bytes": 433196,
+      "sha256": "054c4ac1f751584b3b456c6d2635311333aca605e14e0d53003bf2e51d51b3cb"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 104,
+      "text": "ゆれひゃはなおけほめそれざ。",
+      "bytes": 286128,
+      "sha256": "d77a1711d568209539e2846721bf48cc0870618e93c08f7853159db2d96f8bfb"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 112,
+      "text": "ゆえそぬけひじるにかよ。",
+      "bytes": 241578,
+      "sha256": "285436907c4769ec348a99c3cddf2a346ad58b8db6cd8cc72bad80e384625713"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 120,
+      "text": "たぜぬむゆぬゅねせしじままぎぎま。",
+      "bytes": 309566,
+      "sha256": "49bace5cbd2d7ef86cdbb514bd81fb38f0b7581aadb742e89861f5b290b36473"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 1,
+      "text": "8Ａ一生二9土ａａ学金7A閉6水37ＡＡ。",
+      "bytes": 644322,
+      "sha256": "dfed59b0607127a032b24b47b4a3a26741186c354a16a02a1a013fa67e313c73"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 9,
+      "text": "ー下）漢B日9ａ2。",
+      "bytes": 261410,
+      "sha256": "45af04b9a5feb372d2c1fa4c689790b445b6d8cd602083a4dc7c3fefa82498a7"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 17,
+      "text": "七漢。。",
+      "bytes": 145484,
+      "sha256": "1775ad277a6f3bf5b40b4f5159727ff90cdf55f754a3bec6c5e911d071b15515"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 25,
+      "text": "「8木開校9Ｃ日！生！7一九5七四）。",
+      "bytes": 653580,
+      "sha256": "a5cc98f22aaec11ebb5b8f041421437604048eb794260d86d2c3409675c695f8"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 33,
+      "text": "a76。学、」Ｂ月（木字、。",
+      "bytes": 462676,
+      "sha256": "a9c254c52639f8cdfe8e8962731b7cb5d0d17aaa0b3c2f4fd493c695905da909"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 41,
+      "text": "a学。",
+      "bytes": 139200,
+      "sha256": "77d9e43488159da1bd0db014b54ea4459435b7c7020d909b4bb49a10f321393e"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 49,
+      "text": "C6」ｃ下！金六閉学九木？0CＡ声（字閉。",
+      "bytes": 736716,
+      "sha256": "d76143fc5301743bade6a78709918947e57dd5287705440c317fd73fcf6dcdcf"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 57,
+      "text": "二）「45六7B閉六二木）火日。",
+      "bytes": 403330,
+      "sha256": "ecab2805a0a3fe6b8660c1b6b309a84a73b56a7c6b9fcec186eaeb5c0708099a"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 65,
+      "text": "五零開ｂ0（水Ｂ九葉「九字ｃ琴1。学人90木。",
+      "bytes": 727264,
+      "sha256": "a178ef86df3f136deda3a1e2f57ea0e8d7c78d2b71718fc1183da0a3a5a9b365"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 73,
+      "text": "、a。",
+      "bytes": 120044,
+      "sha256": "21838d64d65140e108f0ee8297baad3ec95568afb6f9b087cfe934b5a235b5df"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 81,
+      "text": "1。b声02二八六三木2音八七学。",
+      "bytes": 603272,
+      "sha256": "897101f25adabb05727076fbd5012b7854834faf51822539a2b792e57394b3ba"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 89,
+      "text": "「！1、「琴b。",
+      "bytes": 294896,
+      "sha256": "eeaf2b88b15f486dffa2fc09eb8c74a8a5f0b6b0737e45c53b09426a4d6d5e11"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 97,
+      "text": "一。",
+      "bytes": 120524,
+      "sha256": "eaaa5f88dde69cd68de88432a02b0f8ff9bb44f605b8eef72c0e84d8bf64ca67"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 105,
+      "text": "声a土上下9水七7土下ａＢ」四。「声42琴。",
+      "bytes": 656708,
+      "sha256": "a8207ebd5a847c730bb467c3f20d953f5390331b116ddaa53ab83a62a034b35d"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 113,
+      "text": "水学零b生C。ｃ」ｂ八Ｃ七。",
+      "bytes": 487454,
+      "sha256": "f0cea72cf68c5c642ab4bf8e28a16d9004846a50bb393e184bdc3647db15ae64"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 121,
+      "text": "37声音！！声ｂ？上水。",
+      "bytes": 521030,
+      "sha256": "3b5956f0801fdab9fe8bdd743d1fa47f30f7275bd4a37881543dc5901304d6cf"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 2,
+      "text": "アЖ0（A😀。",
+      "bytes": 212648,
+      "sha256": "4ed0561600d0e73f1404b367521f2b8ec79a19483a4267cc865d812b22e23d01"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 10,
+      "text": "（😀 。。0漢0。",
+      "bytes": 257904,
+      "sha256": "34fc62a1ca002bbf30dd332ee1ba373c54500c59224546804d2e6547f800c5f8"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 18,
+      "text": "。漢。",
+      "bytes": 192524,
+      "sha256": "be90b8d828e37ac84d8dd7df4c571a5d4e1535e8336db0de19a02cbd93c58c7a"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 26,
+      "text": "A～\n\t）アA（。",
+      "bytes": 257828,
+      "sha256": "1aac26b0d99052475e2c4cd1101782ca261a07f635d65e1f138e1a054b1ea07b"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 34,
+      "text": "Ａ漢ΩあＡ～\n〜（漢Ж－−あ、？\n－0）「。",
+      "bytes": 571626,
+      "sha256": "9bff2bb14bf9ec3553af5bfb336d2dd928d6bac017ef678aab6a4b87d7ea1121"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 42,
+      "text": "！0？」あ 、・」。",
+      "bytes": 305804,
+      "sha256": "7693bfc106a87ee010710b84c47d8db8669538b7e525a507c94fdc24b78e5af8"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 50,
+      "text": "0。éア０\n「）（\nあ～あ0é（ア。",
+      "bytes": 529082,
+      "sha256": "5b48179d305f09dd55b27770eaa518bc430dc5cf042cb2947a3dfaa5f1955ecb"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 58,
+      "text": "（0\n。",
+      "bytes": 117644,
+      "sha256": "3809fc672c7e5946c56a5472e67835e7460a5a3b0f160c347be5727b982dbad4"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 66,
+      "text": "） ア ・ −  。",
+      "bytes": 98924,
+      "sha256": "11006097814c8b322634fb95d98312d5eb3b4b11cfcd0ccefbebe0d3d56bb024"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 74,
+      "text": "。（、－ЖＡ・0 、「−Ж～。",
+      "bytes": 366622,
+      "sha256": "51d57328b68763ee542ac85284054fa0a6012630e91d87e533bcb63e349fc310"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 82,
+      "text": "é０ 、・「〜あA。漢あアA。",
+      "bytes": 387380,
+      "sha256": "60c66151549d3842d9a781ab955a9cd72720c9202de3eefa84b7ea634183cb71"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 90,
+      "text": "アΩ「～−？。",
+      "bytes": 153072,
+      "sha256": "57ba558e3655ad7e3361d834e04bb73af696f3777ba63e2110cab5ba13f4f865"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 98,
+      "text": "\tΩ\nΩ！０（0０。",
+      "bytes": 455738,
+      "sha256": "a8daa7448646fc65a86d507aa24480d07eb78a7188d5b453201379a4f7f95426"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 106,
+      "text": "？\nΩ－\t！〜\t、・ 」é－\t0😀。",
+      "bytes": 384036,
+      "sha256": "e8ba8e369062d2483061659abc32820cd9ac8d3622cc79ceed0bb1221bed1c43"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 114,
+      "text": "ああé）０～－（－ア」😀。0Ω）？Ａ）−0Aé😀。",
+      "bytes": 599788,
+      "sha256": "b5bd51fac0a5fe11d7e88d8c77ca614a6f1879869513701e17e233c88c867d48"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 122,
+      "text": "）－A０ 漢ア。ア） Ж、－～ア）😀０（Ж。",
+      "bytes": 521704,
+      "sha256": "9cf89ea1e9605e04acb7a925c3466077d77b96c2c30d9d3161343151a7928239"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 3,
+      "text": "で読むます猫駅に行く大きなます青い魚口開けるhello。",
+      "bytes": 588552,
+      "sha256": "c0cedb647e6ce3b0795dfaf142ebca0f12c80129f7d82f34a6a70479ad9f9d82"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 11,
+      "text": "の一人です食べるABC猫一人大きな口を。",
+      "bytes": 482844,
+      "sha256": "ba4fd9dec26caf24d874baecc1031c3950d12c5d42af5975fdb84b238a4771f6"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 19,
+      "text": "読む生で読む魚私口学校の上手昨日猫生青い青いの上手hello。",
+      "bytes": 705118,
+      "sha256": "0dbc8f60210a8d8d40c563e31a7a3435b4b950a69018a4c5d4ac872d757c3776"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 27,
+      "text": "昨日ををはを読むですと大きなと上手学校ます読む行く。",
+      "bytes": 539056,
+      "sha256": "40eb81fba12024d6c33cf0056d54e6b4913b2ec32713c44f86c7858287732ae7"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 35,
+      "text": "魚行く生魚魚猫です魚ABC読む行く口。",
+      "bytes": 503408,
+      "sha256": "9dbc7642105cbf62d7c0c0b5ea886b2a5afd40dcd12f9154458483826c4b6bd5"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 43,
+      "text": "で12を昨日昨日。",
+      "bytes": 290862,
+      "sha256": "aa8c50c7ab014cebf9379656d44e66245c9bcb9653afdcb85809ef0b60d7c90a"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 51,
+      "text": "猫をhello猫生でますです。",
+      "bytes": 348268,
+      "sha256": "63d585a28e078f60d41bf0348b93af99664d649b301c3a145f186265195782b3"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 59,
+      "text": "駅で駅。",
+      "bytes": 158632,
+      "sha256": "49f40c521a1896c86615a873bd60d866bb37545023913571865a6481a5ab3e0b"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 67,
+      "text": "青いがABC私ABC口私駅3.5hello。",
+      "bytes": 539384,
+      "sha256": "be38d50b1cd10e413b85dd29d90ae7124480d3b7468f7e70d655669f6a78d6b4"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 75,
+      "text": "にと昨日一人三人上手私に生学校3.5大きな魚一人今日駅。",
+      "bytes": 772990,
+      "sha256": "62fb20424b8031d0b6ced15a800abcc8c731126ec62e983412d4ccb55b3db45c"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 83,
+      "text": "窓12学校ますと大きな読む食べるます3.5今日のと行くは魚三人読むと。",
+      "bytes": 773570,
+      "sha256": "5ec3580f3758da3bf216e3b0d6e5cd07eddfbba6909bf7ef8fc2caff17cfc5d6"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 91,
+      "text": "で開けると読む魚大きな口青い口。",
+      "bytes": 427614,
+      "sha256": "5dbda9e92e322d5b9264ad81fdf8cdb15c791cbc8a27dbd8f7bd57effd887d1c"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 99,
+      "text": "猫駅読む私駅青いがではとの3.5一人。",
+      "bytes": 489312,
+      "sha256": "cca988916297e049ed6878882e80bbe401801f5b4f6c08e47965c8d210cef4ac"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 107,
+      "text": "大きな青い。",
+      "bytes": 184580,
+      "sha256": "f70c3e1b48f01bf29b9c1cf9e465ba2c9a8122db07ef31888d12b5b8c567616f"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 115,
+      "text": "ABC。",
+      "bytes": 166682,
+      "sha256": "a9124f3bbfdfaab1c58b367d2d72cace3a56b92874017b4ac3952baac117235c"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 123,
+      "text": "を。",
+      "bytes": 97004,
+      "sha256": "e3cf3f884a86ca382bdf24467057affaed3b60e7cd15591b27ad245a43286321"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 4,
+      "text": "がれよるつわはぜねはさらすげみゆぐなふのゆん。",
+      "bytes": 441452,
+      "sha256": "0db2bb188f3301b495a5276856ab4511b7baa08e143cf1e6d0181eeb24c34c82"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 12,
+      "text": "あぬふ。",
+      "bytes": 133366,
+      "sha256": "c9cfbc05c3494e2d1922d44a12e00fcb7bf2e7f9c545783d5d5725944c0ee8e1"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 20,
+      "text": "のげ。",
+      "bytes": 121004,
+      "sha256": "6340e99c0e5dee7ccecf3ba7a10a11e80b1f41d1dc2b84f3d7d6458a841f0208"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 28,
+      "text": "ぱぽよるてまんもほゃぬめけすめすせふきぞ。",
+      "bytes": 411652,
+      "sha256": "62a85b416000729b04acbdcfe81e05e270d1037da472c59b909a688cdf6cde07"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 36,
+      "text": "く。",
+      "bytes": 98924,
+      "sha256": "050cf86c9233e48dea1cf010cc61774eb5265dc9148eba7a223a5211f7827026"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 44,
+      "text": "てゅふいぴをぞせよ。",
+      "bytes": 209356,
+      "sha256": "3eadbb5c9514841f550bf84c68444a5ba7ac84f5a88b56f08f97f04758409940"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 52,
+      "text": "ぺさずぷ。",
+      "bytes": 145886,
+      "sha256": "0f66621214c49d56012fd133b65225dce64523ed8c1d0c2c26ffa6f73d9682f3"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 60,
+      "text": "ゆをょうわてげた。",
+      "bytes": 205814,
+      "sha256": "9dd7c275163b8662d4f3a2efbb06ae23699abf19062cbb76d151376ac69a26eb"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 68,
+      "text": "わこずみつぎうはつや。",
+      "bytes": 235164,
+      "sha256": "62237bbdf1865c2a502f51cd61565a0a9cad80bec06fdb2be3ad3c56cb9551b2"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 76,
+      "text": "ねたつきたくへぞざそゆぞしざりきずとおっがじじ。",
+      "bytes": 466966,
+      "sha256": "7bba53d65351adbf50d852091fe889e55e2cf929af08be8bbe4d4f0be907e265"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 84,
+      "text": "あへぺるせるょすょぐせーそみふさまおが。",
+      "bytes": 350984,
+      "sha256": "0384a788f42f2578b31e0526e04af0e4c80e3a2a677dc390bdf7ad7f8a0c354a"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 92,
+      "text": "んのせにいがほんなてひょっく。",
+      "bytes": 342510,
+      "sha256": "b5dc7770cb5f4b4f384a7c55cc793a4a0779f8196055753cf0dcb20a9a01d163"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 100,
+      "text": "ふめがろゅてまふん。",
+      "bytes": 237084,
+      "sha256": "73e43a296752b2303cbb6d525848babcd8f029829339753be5274ebf11694640"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 108,
+      "text": "をぐにっよすてゅなよむゆらぐなけっほくめぐろつも。",
+      "bytes": 501432,
+      "sha256": "bc2d323b6f1a431a8822e8f20d2feae4b8dccce59765e8238e3d93ca0e4be0d9"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 116,
+      "text": "げいうとこけよらざにろなへ。",
+      "bytes": 292130,
+      "sha256": "07742f396dd21ac7fe637f911bff8bc71378ee0cf28537a0d5ac30efb5093f09"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 124,
+      "text": "やるはゅるょぎぬらゃ。",
+      "bytes": 256606,
+      "sha256": "aa41d6dffc1f77e64d6347f2937660291b785e83c19f5392117901cd93c27245"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 5,
+      "text": "、字C。",
+      "bytes": 135948,
+      "sha256": "4e79c09f1374e6dcfe13c9f5208a089bf0425b52dcc88629309c9636dec4d577"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 13,
+      "text": "9火人。火ａa。",
+      "bytes": 331002,
+      "sha256": "a671f7cb9d15db4dd333165c7675dfdd94c99659c69b5073bc2cae999bafba6d"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 21,
+      "text": "生月二二漢私上1ｃ（ACＡ校4月！！。",
+      "bytes": 506674,
+      "sha256": "8ccaf3e20d13676c95537b66e54e35400180220e1f21198ddfccefa9df30160d"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 29,
+      "text": "人木0字ｂ、校下ｂ火。",
+      "bytes": 319986,
+      "sha256": "09c39aa73e0bf5194548cb033e110545db2384b87595adffbd17d4647d679407"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 37,
+      "text": "Ｃ）「Ｂ水BＢ閉校8人七」八零Ｂ琴「一二ｂＣ葉。",
+      "bytes": 651898,
+      "sha256": "5145ead832051f4abeb2dab3c690f6310d591eb8f5393d61827396fb0fcdd8bf"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 45,
+      "text": "零ー下葉9A字（ｃ6二木日。",
+      "bytes": 377830,
+      "sha256": "c751f305e91e4869eb9036f544adad75b7b57d48c42c35a614971a556c361bb2"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 53,
+      "text": "9）6開？ｃ八。",
+      "bytes": 382090,
+      "sha256": "cf624282b6072a23b4226aecdad8bc7c333183ff2abd1d41283a7914a6b50d17"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 61,
+      "text": "三b琴七ｂ「5五字零6七音閉葉566ー23。",
+      "bytes": 663728,
+      "sha256": "ebeedc824e15310b4ab62e7b5b78a2cccb20e2bef682315e8d0b912dd79a229e"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 69,
+      "text": "木9一7月6生九）12A木。",
+      "bytes": 430366,
+      "sha256": "c8a8b057d116eda494a5a4c2ef9efcc98ff1e36d4df759d12cfd157a11dd948a"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 77,
+      "text": "5ｂ漢ｃ閉下木b日3上0声Ｂ4火八私琴」六四閉。",
+      "bytes": 654112,
+      "sha256": "15be370c42b0f318f333e8ed57259be28c0ee2aef4a2c9d6ba2e714a1be5e947"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 85,
+      "text": "、上A生琴七1音。",
+      "bytes": 277548,
+      "sha256": "231a15a5bcbcc3e2449fcfe67511afa692b1c9985dd3b755d4150170a4e1f389"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 93,
+      "text": "私1。生生A8c「土四開漢。4金漢。",
+      "bytes": 693548,
+      "sha256": "08b9f0890909fcdbf9fe52239755ebf8738fba1fc76a67f40f0671373b89e0da"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 101,
+      "text": "、（二一漢音九0四（六Ｃ（五、」八Ｃ4閉C二Ｂ九。",
+      "bytes": 655908,
+      "sha256": "b9b8f6f548ccc5a75649f1ccba871623ae505df22c56faeaf941f9f26352aa31"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 109,
+      "text": "琴零日6」月Ｂ葉八一日3閉9人葉生八金aC！！8。",
+      "bytes": 747250,
+      "sha256": "f869081e0e495ccebac61e87da535b38c8f5f99fc139460a5cdf6af37b2f1051"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 117,
+      "text": "火閉漢字私六零四木1月78金土Ｂ六火A火三。",
+      "bytes": 592338,
+      "sha256": "baa37ebd752a3e50dee5d983bbd6881c190e17556281cadc09bf7e4aca0b6445"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 125,
+      "text": "C14C生1下c字閉ｂ七人。",
+      "bytes": 424362,
+      "sha256": "d220c9a142014a54e7db85aac98443dfc646ac01833f207b4024af9ea488bbea"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 6,
+      "text": "あ「。",
+      "bytes": 98924,
+      "sha256": "11006097814c8b322634fb95d98312d5eb3b4b11cfcd0ccefbebe0d3d56bb024"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 14,
+      "text": " 😀Ａア😀（\t －é。！〜（ｱ。",
+      "bytes": 241028,
+      "sha256": "06ebad8c0ebecb1c6d56ed1e5b86ed0f452052a0a4360e01888f7515d21613ac"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 22,
+      "text": "「Ω、？あ・漢・－漢「あ、ｱ漢😀−！ア。",
+      "bytes": 531682,
+      "sha256": "f46cf6809dc58dbbb90dfb431d64594662f8e167c6ed8f9ce296b9ebc82e9c99"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 30,
+      "text": "é）。",
+      "bytes": 81644,
+      "sha256": "ca67ad155f7a6f0f81c54f8613e086e45a5e4ba3d9d6b5c49979f7cf89a7a3bc"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 38,
+      "text": "」）。",
+      "bytes": 81644,
+      "sha256": "ca67ad155f7a6f0f81c54f8613e086e45a5e4ba3d9d6b5c49979f7cf89a7a3bc"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 46,
+      "text": "Ж！ｱ（「）ｱé）（〜−。",
+      "bytes": 256844,
+      "sha256": "384d0c26895554db47cf9c41963e1f95a289a03321a10318cc607f2a9bb28bfb"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 54,
+      "text": "）。",
+      "bytes": 81644,
+      "sha256": "ca67ad155f7a6f0f81c54f8613e086e45a5e4ba3d9d6b5c49979f7cf89a7a3bc"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 62,
+      "text": "〜－あΩ−）〜0、Ａ？）アアあ ～。。」Ω〜A。",
+      "bytes": 586278,
+      "sha256": "5ff8cf93568c14bf509cfe7f2ac9e6b4679e33a7a1aab982149e3fe2b34b47e5"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 70,
+      "text": "）Ω」\n「A、」Жあ・、」。",
+      "bytes": 349008,
+      "sha256": "734111b2139f619a7e18f031683d3511cb30794ab595e52130220a2d46344af6"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 78,
+      "text": "−ア？。",
+      "bytes": 100364,
+      "sha256": "b5fe393b3d8e2b655dba8c430539144f44da6ee9cb3bbaecf3f66372c4083695"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 86,
+      "text": "」0Ж！  −、漢～！ｱ０。",
+      "bytes": 411292,
+      "sha256": "7d12a9ab15d914579e396883afda0ff5156bb4454523f151c530510f29c313c6"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 94,
+      "text": "0あ \nあアア\téA！Ж。",
+      "bytes": 401476,
+      "sha256": "6b04182c87bdc0621bf55dc2ae55633f77ca409029cb466896cf445cda715994"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 102,
+      "text": "😀０あ0−」。",
+      "bytes": 160814,
+      "sha256": "008b8b00665ab4a2f68f8de432e6bc34c0d228470042966db34e01ef39ca2bdc"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 110,
+      "text": "\nｱ！、Ω\n0０。Ａ。",
+      "bytes": 574984,
+      "sha256": "7471de0a9a31cb17beebb024f7b9f7c56c95bdf9fb78b8802ef77e13a6e112ca"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 118,
+      "text": "（ア」〜・😀\n。",
+      "bytes": 98924,
+      "sha256": "11006097814c8b322634fb95d98312d5eb3b4b11cfcd0ccefbebe0d3d56bb024"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 126,
+      "text": "！！\t」AЖ。",
+      "bytes": 239084,
+      "sha256": "b19de9b043703596d02e670f12cc2e07e6b492b3f96ad6496582f19d23f7cf01"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 7,
+      "text": "helloに。",
+      "bytes": 145964,
+      "sha256": "6537744faec039c091e83f627245206a1e8d79645a8579aecbfcf826f3a4abfe"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 15,
+      "text": "三人にABC一人青いと行く上手。",
+      "bytes": 444998,
+      "sha256": "6702d248b19cab172a35c8cf1475d80204454dde4c51c190da56bf03c7a3fd34"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 23,
+      "text": "口で生昨日大きな猫食べる学校上手食べる昨日開ける生3.5食べる読むは今日青い。",
+      "bytes": 841880,
+      "sha256": "4a3dba2bdac8a5fa77f46a2fd633cabe86404becd99c93b44e70c9bfe94b390e"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 31,
+      "text": "三人helloを駅ですがが今日は口行く行くますの大きな青い大きな昨日。",
+      "bytes": 853678,
+      "sha256": "5dabfc6412856523ac536bc6036240ba9b3c95a063e15459606b5e4272e54395"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 39,
+      "text": "3.5ます生三人生です私読む口の私はABCと上手読むの。",
+      "bytes": 699996,
+      "sha256": "aaebafc852bf466a86602edd6a59986da0ce9ce171d4dbadb48943f489328d10"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 47,
+      "text": "で口青いののと猫今日駅生3.5三人猫学校開ける今日窓私ABC昨日。",
+      "bytes": 852098,
+      "sha256": "ec4b0f7b2289e905fcec03190c17faffd21d3419094e6aac5850d97100f58c1e"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 55,
+      "text": "helloを私hello読む一人に昨日の。",
+      "bytes": 433330,
+      "sha256": "915ebda16f7c380c9ce72ac8f2b6a3f0f609c5322bdbf3d6989b7d2f93f4a066"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 63,
+      "text": "が窓行くです窓hello昨日のに今日3.5とが大きな学校ですにに三人で。",
+      "bytes": 831244,
+      "sha256": "20291b466f68a64a3411932e18a5b0bd31e51b4f2ddf88ea9842b9d1acf87de0"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 71,
+      "text": "一人窓hello魚青い猫ABCが行く口ABCに上手三人は12魚一人。",
+      "bytes": 789694,
+      "sha256": "c1e20c51433ee01c4420a008e8f5d73bd7f1c1f5169c0835f9adc6aada7888fb"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 79,
+      "text": "ます昨日今日窓でhelloが3.5ABChello。",
+      "bytes": 485600,
+      "sha256": "25981759a64ad5edacf382808713b53a0412eaf5ba237b72a2b317a1110a3f99"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 87,
+      "text": "上手学校三人が青いのと行くに昨日生1212昨日大きな窓私12ますはと駅12今日。",
+      "bytes": 982560,
+      "sha256": "36dd4ffb19f0ca03570cba0b207b72d512e08f52d3b5c3f419affc4c79421748"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 95,
+      "text": "に上手窓三人駅12に私。",
+      "bytes": 400488,
+      "sha256": "93cfd25cd6e0f35c10b59c04c6a40b36908b983bad648d2dbe120d9428a775ac"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 103,
+      "text": "猫昨日三人駅青います三人昨日をは開けるで開ける上手を。",
+      "bytes": 576656,
+      "sha256": "162fc2463c6e4b8493a580e8a5d05270873b4a554729b7afc78eb2a4a36a59a7"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 111,
+      "text": "が大きな青い12開ける駅三人ABCでとがに昨日ます魚行くABCます三人で駅私駅を。",
+      "bytes": 999580,
+      "sha256": "08f6f173a6dbb8372e71ed2543107058081a6917a3a512627662b6ab3e49b84c"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 119,
+      "text": "ます口は大きな私食べる生hello行く大きな猫三人ですと3.5。",
+      "bytes": 692218,
+      "sha256": "078b29cbaf15a863d92500f68f34517762fb25319d76a8b6dfc2b8bc784605da"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 127,
+      "text": "大きなABCと昨日読むでです読む3.5駅です生。",
+      "bytes": 539442,
+      "sha256": "c8910098b2f37708504d03b10959047b6d11ff8387f0b0fd60bcabdfd4a61c3c"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 0,
+      "text": "なふけふゃょせおてわじぴせるせ。",
+      "bytes": 340380,
+      "sha256": "39f14d1e95b26aa3e0c5e831e2976cf40ef616aaab368adec73240034e0baca8"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 8,
+      "text": "がをしとぐすまももそかゅひやすぬずてよののぜー。",
+      "bytes": 435540,
+      "sha256": "9340654708f0cd6a14306346ecf510157215893d08418e05afcdfd25bf630feb"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 16,
+      "text": "ぬょやいちけ。",
+      "bytes": 183194,
+      "sha256": "202971117985bc15e00f1d39774603e9ad1edf6d741772a40aabda570ae0a0bc"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 24,
+      "text": "よしまじじぜねず。",
+      "bytes": 204692,
+      "sha256": "f3862b6e1477600b97c148ae4459704e3c2a7d183d2d4f3793f4c9db87f61297"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 32,
+      "text": "ぷごゃつわるめるげへのろょゅをまあくなのら。",
+      "bytes": 367094,
+      "sha256": "416be109026bbf8298c87790887bb3e760a385a5dfcb422bbf7ad010329c66a1"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 40,
+      "text": "よがりねぽぷてほさぽぱひぞちぬれがろ。",
+      "bytes": 342064,
+      "sha256": "07ab4bc81bfd19e997c6e38171fdfe7a1757a292ba24c1cb712a3509a20c72b5"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 48,
+      "text": "れすごがゆがやげるぷげきごげーたぽ。",
+      "bytes": 365760,
+      "sha256": "675ecbfccb6dbde035af3de68b60334d775b0145bf3b6ba94c83579ecfddec8f"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 56,
+      "text": "こげをとみあえくざすねにてしろぞちへぱざそ。",
+      "bytes": 415800,
+      "sha256": "e218ecf5160141e22797005de77782e819230c5d60aa25fd13aec44b06023215"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 64,
+      "text": "ねずきぐいゃふまとぺってかとほずずぺけむをみれず。",
+      "bytes": 447088,
+      "sha256": "93a7ec5513ac2d3a5726b9ec21a24c42fad79c1f02c81c73cc0eb82d4aa0155a"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 72,
+      "text": "ふやれご。",
+      "bytes": 148102,
+      "sha256": "e1d214567d5405b1d7e9f2a692a4bc9fa279ff2544941bd4b14dc4f64669ba50"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 80,
+      "text": "れこすねよかよとげわっねぴ。",
+      "bytes": 298834,
+      "sha256": "1ae933851e27717216be044cba0135892b7ec5140374e3f71be41ba7596ad0fb"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 88,
+      "text": "まぺいいまれよゅしぐぱさほほへずそらます。",
+      "bytes": 415454,
+      "sha256": "aa5ca2c4a9f7ac04cd617738fc2071e337eb05d53ca91782fed4aa70dcd7907c"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 96,
+      "text": "やへっえめゃたえじはめくるくしおぽめ。",
+      "bytes": 412866,
+      "sha256": "3cd8ed4d1a6e58b431a7ce78f2c71e226d9a9121f9c201d8c8a7f00d1f0ca048"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 104,
+      "text": "ゆれひゃはなおけほめそれざ。",
+      "bytes": 330702,
+      "sha256": "e79a9c9403b9676a7373ef787a3acdaae9039287ccf4e3c364ef97a5eb2b5a60"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 112,
+      "text": "ゆえそぬけひじるにかよ。",
+      "bytes": 247910,
+      "sha256": "15f516bb14f96ec43f5f23767fc52ea14a74b87fcd453d0e7b741de67877d92e"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 120,
+      "text": "たぜぬむゆぬゅねせしじままぎぎま。",
+      "bytes": 344568,
+      "sha256": "90db10fcdc452835b511ad6bbd35d2a65c9725309b89b1322b52d2c115fb27a5"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 1,
+      "text": "8Ａ一生二9土ａａ学金7A閉6水37ＡＡ。",
+      "bytes": 691104,
+      "sha256": "7cd723367a53ad12b5691e1ea373b2e01a13b5339f317208548d8138c9bab748"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 9,
+      "text": "ー下）漢B日9ａ2。",
+      "bytes": 284404,
+      "sha256": "925fad11cdbf495079383e5a76ff6a76d2fa72e628a1d72a02f928b40e36cceb"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 17,
+      "text": "七漢。。",
+      "bytes": 145484,
+      "sha256": "1775ad277a6f3bf5b40b4f5159727ff90cdf55f754a3bec6c5e911d071b15515"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 25,
+      "text": "「8木開校9Ｃ日！生！7一九5七四）。",
+      "bytes": 654368,
+      "sha256": "79887b1dac7cbfbc22f1d8bdde1ca21dee3474c9d60c770de9f4e5fbf0454334"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 33,
+      "text": "a76。学、」Ｂ月（木字、。",
+      "bytes": 490798,
+      "sha256": "f951fa56d8cb840dfcf3c90d1a6c812c432f10283eb2556d5dfe50a7cf5d542e"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 41,
+      "text": "a学。",
+      "bytes": 139200,
+      "sha256": "77d9e43488159da1bd0db014b54ea4459435b7c7020d909b4bb49a10f321393e"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 49,
+      "text": "C6」ｃ下！金六閉学九木？0CＡ声（字閉。",
+      "bytes": 703940,
+      "sha256": "7a2546f2da157eee0a65f19360d9e11b01b7c7a972f58a3b182c688e8b5bf672"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 57,
+      "text": "二）「45六7B閉六二木）火日。",
+      "bytes": 429466,
+      "sha256": "857a5ec8aa5dcab9acb9be7b2fce8d4c95520a5c43b55098f15875739cc7801c"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 65,
+      "text": "五零開ｂ0（水Ｂ九葉「九字ｃ琴1。学人90木。",
+      "bytes": 737942,
+      "sha256": "73071cf36644b13ef6645f43c278149d6e06addd377125184d5b117bf38cae7c"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 73,
+      "text": "、a。",
+      "bytes": 120044,
+      "sha256": "21838d64d65140e108f0ee8297baad3ec95568afb6f9b087cfe934b5a235b5df"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 81,
+      "text": "1。b声02二八六三木2音八七学。",
+      "bytes": 632022,
+      "sha256": "fd679d9d28c14881c9f288a180fa035bca9c0f549c2ad216b8a8e469fd20d5f8"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 89,
+      "text": "「！1、「琴b。",
+      "bytes": 295286,
+      "sha256": "4d613eee1b21515ccfd69a9727b51e766c8649ceb5f88de6e698e572faa86de6"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 97,
+      "text": "一。",
+      "bytes": 120524,
+      "sha256": "eaaa5f88dde69cd68de88432a02b0f8ff9bb44f605b8eef72c0e84d8bf64ca67"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 105,
+      "text": "声a土上下9水七7土下ａＢ」四。「声42琴。",
+      "bytes": 706964,
+      "sha256": "f8ef57950fff48050ccd3c845cddc67260108f9bc3f9a4e2e8af397c064e9341"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 113,
+      "text": "水学零b生C。ｃ」ｂ八Ｃ七。",
+      "bytes": 488510,
+      "sha256": "ac2136718cefd4fd0fa73738a0a966a5786a50e4a9ecbb28b6cd9aab2889207e"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 121,
+      "text": "37声音！！声ｂ？上水。",
+      "bytes": 519306,
+      "sha256": "340cf32bb06a890bb3ff09d3b7b775744e38e32081bc262157dcc84059540372"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 2,
+      "text": "アЖ0（A😀。",
+      "bytes": 212830,
+      "sha256": "baebef240d99c5fb21cb28f5ddca88c9a38f2dd3c50367a83a7f9ef266a97f5d"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 10,
+      "text": "（😀 。。0漢0。",
+      "bytes": 257904,
+      "sha256": "34fc62a1ca002bbf30dd332ee1ba373c54500c59224546804d2e6547f800c5f8"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 18,
+      "text": "。漢。",
+      "bytes": 192524,
+      "sha256": "be90b8d828e37ac84d8dd7df4c571a5d4e1535e8336db0de19a02cbd93c58c7a"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 26,
+      "text": "A～\n\t）アA（。",
+      "bytes": 256394,
+      "sha256": "722dd97ea9e710de6a7b24a1e676c9a23a8b998f4b89e0811db47679b897b185"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 34,
+      "text": "Ａ漢ΩあＡ～\n〜（漢Ж－−あ、？\n－0）「。",
+      "bytes": 622756,
+      "sha256": "ccff03cf19f1bcca5bd534583244742ed38c5857b27ff48dddcca129e9e359a8"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 42,
+      "text": "！0？」あ 、・」。",
+      "bytes": 305324,
+      "sha256": "bbea282ba8719f1815c3e32052c95dfec569c97450d5f2fbd7e342b8078b6c0e"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 50,
+      "text": "0。éア０\n「）（\nあ～あ0é（ア。",
+      "bytes": 530508,
+      "sha256": "8bc3db48ef0a8000196823a7de47f68a21cc4299ce6593809830e3752b624c05"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 58,
+      "text": "（0\n。",
+      "bytes": 117644,
+      "sha256": "3809fc672c7e5946c56a5472e67835e7460a5a3b0f160c347be5727b982dbad4"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 66,
+      "text": "） ア ・ −  。",
+      "bytes": 98444,
+      "sha256": "2bd9a6674b3ac583fdeb88aca32814826b24d69882bfe6821d8fd87d7077738d"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 74,
+      "text": "。（、－ЖＡ・0 、「−Ж～。",
+      "bytes": 363820,
+      "sha256": "b082034072a8f16cc21b162de12815cd552e88a71eb465397da47b1b7a2a429f"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 82,
+      "text": "é０ 、・「〜あA。漢あアA。",
+      "bytes": 387608,
+      "sha256": "3b1794875a8458b1fdb026644899c0fcbc6bf25b62e724979e0f4da944053d76"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 90,
+      "text": "アΩ「～−？。",
+      "bytes": 152668,
+      "sha256": "1c00c0296fff7fcba29674ebba3290a7f043b472b3679ef17e5166cf67592a54"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 98,
+      "text": "\tΩ\nΩ！０（0０。",
+      "bytes": 455738,
+      "sha256": "a8daa7448646fc65a86d507aa24480d07eb78a7188d5b453201379a4f7f95426"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 106,
+      "text": "？\nΩ－\t！〜\t、・ 」é－\t0😀。",
+      "bytes": 409956,
+      "sha256": "1b0e8892b2fe39f9e76ca62c43616d1f5937d6bce506701156aadd8e12d171d9"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 114,
+      "text": "ああé）０～－（－ア」😀。0Ω）？Ａ）−0Aé😀。",
+      "bytes": 647646,
+      "sha256": "aa27afa05d3064571b4e5d12f0092fd8df87ea8b16a229a279bcba538267b740"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 122,
+      "text": "）－A０ 漢ア。ア） Ж、－～ア）😀０（Ж。",
+      "bytes": 567762,
+      "sha256": "f7a2b7c60017bc7c6cdf6dd62ab0235997317f31ff852946082563a46c894947"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 3,
+      "text": "で読むます猫駅に行く大きなます青い魚口開けるhello。",
+      "bytes": 591546,
+      "sha256": "1ea747992cafd61e97b6259641fcaaddfc1a5fd48177bd74c42f3a546fc4ee60"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 11,
+      "text": "の一人です食べるABC猫一人大きな口を。",
+      "bytes": 554596,
+      "sha256": "9bc50b98d6447c9d174bd3840b14656b708f1185edaac244642e8152ff250355"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 19,
+      "text": "読む生で読む魚私口学校の上手昨日猫生青い青いの上手hello。",
+      "bytes": 776360,
+      "sha256": "65c6b4931bd83435eb9c01d1fa4245c9316fbe73049eac9836da0dee0e09ad43"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 27,
+      "text": "昨日ををはを読むですと大きなと上手学校ます読む行く。",
+      "bytes": 544534,
+      "sha256": "1dcfc78d98c8d468e85d74d7019b7e0d99b287bf44e172d13bbabfa3b8c19910"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 35,
+      "text": "魚行く生魚魚猫です魚ABC読む行く口。",
+      "bytes": 572154,
+      "sha256": "4f8ec66c10f6dbd1a2196511bfcd407b697c0c59f184ed1751356365fdb03ee2"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 43,
+      "text": "で12を昨日昨日。",
+      "bytes": 290490,
+      "sha256": "37f95b1d30f79080111ad5c8d6d232bd05179c97ee7f1cc48ba1d8aba52c9b86"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 51,
+      "text": "猫をhello猫生でますです。",
+      "bytes": 318840,
+      "sha256": "59c53c6687c1a1e2b32296cf565039bfcaa4acc564c7e5508fc79bb12f99b77e"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 59,
+      "text": "駅で駅。",
+      "bytes": 158632,
+      "sha256": "49f40c521a1896c86615a873bd60d866bb37545023913571865a6481a5ab3e0b"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 67,
+      "text": "青いがABC私ABC口私駅3.5hello。",
+      "bytes": 656480,
+      "sha256": "dc23514835921f56afb7ed137350a50e8ac6b1f9bc4f46aeb4e121fd0b51710e"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 75,
+      "text": "にと昨日一人三人上手私に生学校3.5大きな魚一人今日駅。",
+      "bytes": 769216,
+      "sha256": "6a09eb6aee1f1f63fc5111fbff4a56534c1f050b1b2b5152ea9f640cbee3cd67"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 83,
+      "text": "窓12学校ますと大きな読む食べるます3.5今日のと行くは魚三人読むと。",
+      "bytes": 758504,
+      "sha256": "3e0b5cef891658fc7f49ad05900e6b472d88333fa21d5ca32bf8806c12539f56"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 91,
+      "text": "で開けると読む魚大きな口青い口。",
+      "bytes": 449206,
+      "sha256": "b9c0f46c158410021d64a21bcc9b5da73339ab31a1768e2702d47670dd9a453a"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 99,
+      "text": "猫駅読む私駅青いがではとの3.5一人。",
+      "bytes": 488734,
+      "sha256": "17b7fd1f6d73d1a65828f2bf6a95692151d3aa4d6b5ba577e2ed4d74885303bc"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 107,
+      "text": "大きな青い。",
+      "bytes": 183532,
+      "sha256": "74ad4f41b98af611d4610d43050d9192e06408b24932ec8f09d405a3c6fe80c2"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 115,
+      "text": "ABC。",
+      "bytes": 166106,
+      "sha256": "6b3016aa8d3016398904532edc6f220ee855a196bf220c6faa98be34f49fd5a1"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 123,
+      "text": "を。",
+      "bytes": 97484,
+      "sha256": "71ddeee058d6308f77b53f3c7fbac2ca99879cf1ffd07318407fba51d328f9ca"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 4,
+      "text": "がれよるつわはぜねはさらすげみゆぐなふのゆん。",
+      "bytes": 487644,
+      "sha256": "987d6c17ad17b64ecef4ced22d926f24e0a0214791d9200d3cabf102e14b7c9a"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 12,
+      "text": "あぬふ。",
+      "bytes": 126764,
+      "sha256": "8905859e30d19e53eb7cd732c6cb709c36c64707721a4a9dc9e39428e29b86ff"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 20,
+      "text": "のげ。",
+      "bytes": 121484,
+      "sha256": "4608a66b1382a6aae44c91178506d88b2f4e6227f6481e7dc1e53f4db42bc837"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 28,
+      "text": "ぱぽよるてまんもほゃぬめけすめすせふきぞ。",
+      "bytes": 388440,
+      "sha256": "f3ee2465f3e9e72778c90f3cabe393366b5059759da3ca35340d8c9311d6464f"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 36,
+      "text": "く。",
+      "bytes": 94604,
+      "sha256": "c12718198e6ab5e790f8d91ae683a4bd7ce0200d76a58fc515b99f4506c0102a"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 44,
+      "text": "てゅふいぴをぞせよ。",
+      "bytes": 211798,
+      "sha256": "540986d4a2c6e80cc4a4b150b0c5daa952ce4d688c0d5662e67191f848b44aac"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 52,
+      "text": "ぺさずぷ。",
+      "bytes": 146892,
+      "sha256": "6f2b41f3945b979da559632a2ef6c42b136240c235e76fd117656281aaa11520"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 60,
+      "text": "ゆをょうわてげた。",
+      "bytes": 209464,
+      "sha256": "f25a461b17f1977c8dd60d1919d5c7b12f59549e2b751334fae79bfa6ac11bb2"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 68,
+      "text": "わこずみつぎうはつや。",
+      "bytes": 259738,
+      "sha256": "1fca3bc13a1a3200fb957c2db25cdb485f674f7a30a0cdd71196dc61e27f403a"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 76,
+      "text": "ねたつきたくへぞざそゆぞしざりきずとおっがじじ。",
+      "bytes": 494660,
+      "sha256": "2e32fedd27db0955839aebef4a07e22eb2407ed17b823c06e65d7f213669acc0"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 84,
+      "text": "あへぺるせるょすょぐせーそみふさまおが。",
+      "bytes": 426896,
+      "sha256": "c3fdb1eaef188c41aef8053b659ac658ecdfdfb753b880eb68701a096b3d8b65"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 92,
+      "text": "んのせにいがほんなてひょっく。",
+      "bytes": 293712,
+      "sha256": "d016aec170e1c02b0e88a6a3babdc8f5b5e20fda54eb47d4e957f18d6a03b0f1"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 100,
+      "text": "ふめがろゅてまふん。",
+      "bytes": 214540,
+      "sha256": "11c9fe0c87398b433b8c1ec8770424cb707cc8e7a997e1d4867ef9584d285062"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 108,
+      "text": "をぐにっよすてゅなよむゆらぐなけっほくめぐろつも。",
+      "bytes": 426026,
+      "sha256": "27adb597eadea7058785701f76f7b4ee66433fd5012a3367bf698a160c5b5ea6"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 116,
+      "text": "げいうとこけよらざにろなへ。",
+      "bytes": 318638,
+      "sha256": "c45ca5f9dc6e35202b7a5c62d24f461b2e9d8e0225ab9377351af8eacb881b4b"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 124,
+      "text": "やるはゅるょぎぬらゃ。",
+      "bytes": 256100,
+      "sha256": "1fdda68d1a4dfd36fb8b80a6aa9dfe6479d0fe1564a0df2d29ba358e3694e074"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 5,
+      "text": "、字C。",
+      "bytes": 135948,
+      "sha256": "4e79c09f1374e6dcfe13c9f5208a089bf0425b52dcc88629309c9636dec4d577"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 13,
+      "text": "9火人。火ａa。",
+      "bytes": 332786,
+      "sha256": "8ac29115c01434cde140f37975e1b4ff3785e4fbe12a8f7947e32da64f059749"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 21,
+      "text": "生月二二漢私上1ｃ（ACＡ校4月！！。",
+      "bytes": 540618,
+      "sha256": "631eccb8e7160feca856daf7c3e7b1dd24c4f898cbf1a16cf78ce297c4e0be3e"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 29,
+      "text": "人木0字ｂ、校下ｂ火。",
+      "bytes": 321792,
+      "sha256": "1ec6dc72fcd4466d430cf76c3e909a9d1cd4c2779d2765cc2c76b7695c9054a2"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 37,
+      "text": "Ｃ）「Ｂ水BＢ閉校8人七」八零Ｂ琴「一二ｂＣ葉。",
+      "bytes": 671562,
+      "sha256": "5bcec50bb6b3feb3bbebe68b3b6614662408413bafaaf81223865ab7f1f24d49"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 45,
+      "text": "零ー下葉9A字（ｃ6二木日。",
+      "bytes": 351206,
+      "sha256": "aa96015f3f42c4c271d09ea561308de42ac8b48eb20b829bab32a0c980850e0e"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 53,
+      "text": "9）6開？ｃ八。",
+      "bytes": 383904,
+      "sha256": "0bb1b5c4ec253f3baade19b776d40cf79437f372e3f534b8d06882319a500e0c"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 61,
+      "text": "三b琴七ｂ「5五字零6七音閉葉566ー23。",
+      "bytes": 665618,
+      "sha256": "abfa9c205e1e85777bc4f82e6cd13aa0c226ad359a31797c37b6a72eefa68dee"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 69,
+      "text": "木9一7月6生九）12A木。",
+      "bytes": 431956,
+      "sha256": "b163362dadbec6e7179c8a7f271920b0ce0ddef77d9e916a7b31f320a860ce67"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 77,
+      "text": "5ｂ漢ｃ閉下木b日3上0声Ｂ4火八私琴」六四閉。",
+      "bytes": 767834,
+      "sha256": "f37c89e9a9b5540efa72ae13f0447edb3438b301fad88f27e1d9251f6b8126c1"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 85,
+      "text": "、上A生琴七1音。",
+      "bytes": 272568,
+      "sha256": "90c4cba3b5c576504baa9896eb7476b84536bcbb78e7a7604fddf3cf8ce6b591"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 93,
+      "text": "私1。生生A8c「土四開漢。4金漢。",
+      "bytes": 695728,
+      "sha256": "96bb71a1aef2c57eff9c3df43a0b566036630dbc5fb67545fde3d3222d94433b"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 101,
+      "text": "、（二一漢音九0四（六Ｃ（五、」八Ｃ4閉C二Ｂ九。",
+      "bytes": 681168,
+      "sha256": "99688c3d047581cb9f9cc1ec524851f5f2bfda12862832518b7f210f20cc054c"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 109,
+      "text": "琴零日6」月Ｂ葉八一日3閉9人葉生八金aC！！8。",
+      "bytes": 738504,
+      "sha256": "52bc1cdd82f3fdd000f5d98d784fbc8e38d7300d9f400af6cc288a06cf8a8750"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 117,
+      "text": "火閉漢字私六零四木1月78金土Ｂ六火A火三。",
+      "bytes": 675304,
+      "sha256": "28769406e32b762f656dc0e32999637fe061ae7e9cf7cb3e63eca6a9c8819fe5"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 125,
+      "text": "C14C生1下c字閉ｂ七人。",
+      "bytes": 443764,
+      "sha256": "fc9de62b6641383bf6c98183d5ac8ad78b3135f1afbc08ce4a622ad8b62ebc88"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 6,
+      "text": "あ「。",
+      "bytes": 98444,
+      "sha256": "2bd9a6674b3ac583fdeb88aca32814826b24d69882bfe6821d8fd87d7077738d"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 14,
+      "text": " 😀Ａア😀（\t －é。！〜（ｱ。",
+      "bytes": 243390,
+      "sha256": "492b53eb2efae5a156819bbe7ed1749993cc20ff26d9c956e9c8fcd5d2149d8d"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 22,
+      "text": "「Ω、？あ・漢・－漢「あ、ｱ漢😀−！ア。",
+      "bytes": 553494,
+      "sha256": "48571effdc53a529fcf2cb10c1f2983ab04d046d5bf6b953e89f1fa39a221a6a"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 30,
+      "text": "é）。",
+      "bytes": 81644,
+      "sha256": "ca67ad155f7a6f0f81c54f8613e086e45a5e4ba3d9d6b5c49979f7cf89a7a3bc"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 38,
+      "text": "」）。",
+      "bytes": 81644,
+      "sha256": "ca67ad155f7a6f0f81c54f8613e086e45a5e4ba3d9d6b5c49979f7cf89a7a3bc"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 46,
+      "text": "Ж！ｱ（「）ｱé）（〜−。",
+      "bytes": 277964,
+      "sha256": "765f5710bd6211db0c5d24c802ec27e507060374de18a9fddb17ec891c146722"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 54,
+      "text": "）。",
+      "bytes": 81644,
+      "sha256": "ca67ad155f7a6f0f81c54f8613e086e45a5e4ba3d9d6b5c49979f7cf89a7a3bc"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 62,
+      "text": "〜－あΩ−）〜0、Ａ？）アアあ ～。。」Ω〜A。",
+      "bytes": 625468,
+      "sha256": "1f865c42a6882ffd143125d4274c0e2c296e60f454ec48b01a89d5c7b4a88a17"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 70,
+      "text": "）Ω」\n「A、」Жあ・、」。",
+      "bytes": 351438,
+      "sha256": "a59419fcc0f06b3e484eb417312ac0674a26b04b14af0169d1e71f8bd495474a"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 78,
+      "text": "−ア？。",
+      "bytes": 100364,
+      "sha256": "d1981ca836fe85bd2f273bce59ef78d12bcbf29dd1f65e499ccd96510e0e8771"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 86,
+      "text": "」0Ж！  −、漢～！ｱ０。",
+      "bytes": 412340,
+      "sha256": "dc7b20c4130cf26e172d91730f8c59ee6a3d5840c9d45bcd5b21afaa6486aa68"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 94,
+      "text": "0あ \nあアア\téA！Ж。",
+      "bytes": 400200,
+      "sha256": "f163fff31c4695cbb5dbc9d693d084da2da69fd32536d51659f19c87ac403cc5"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 102,
+      "text": "😀０あ0−」。",
+      "bytes": 160814,
+      "sha256": "008b8b00665ab4a2f68f8de432e6bc34c0d228470042966db34e01ef39ca2bdc"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 110,
+      "text": "\nｱ！、Ω\n0０。Ａ。",
+      "bytes": 574984,
+      "sha256": "09bcc6c0a985d2c96699f99b7d439b7083ce68481003984f4cfa7a13ad649c58"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 118,
+      "text": "（ア」〜・😀\n。",
+      "bytes": 98444,
+      "sha256": "2bd9a6674b3ac583fdeb88aca32814826b24d69882bfe6821d8fd87d7077738d"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 126,
+      "text": "！！\t」AЖ。",
+      "bytes": 239084,
+      "sha256": "b19de9b043703596d02e670f12cc2e07e6b492b3f96ad6496582f19d23f7cf01"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 7,
+      "text": "helloに。",
+      "bytes": 145964,
+      "sha256": "6537744faec039c091e83f627245206a1e8d79645a8579aecbfcf826f3a4abfe"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 15,
+      "text": "三人にABC一人青いと行く上手。",
+      "bytes": 424310,
+      "sha256": "32573f5915447ba48158ef4d0d762c53989881e5b022528d026907cfe2aa8051"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 23,
+      "text": "口で生昨日大きな猫食べる学校上手食べる昨日開ける生3.5食べる読むは今日青い。",
+      "bytes": 891370,
+      "sha256": "9662960deccbe28ab66d9b37ca68f601a9b8e15a94913824fc314855bba97dcc"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 31,
+      "text": "三人helloを駅ですがが今日は口行く行くますの大きな青い大きな昨日。",
+      "bytes": 742694,
+      "sha256": "d6db4762857ca6caa80ca4b5223756207092c21b472879682f39a83b45066aca"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 39,
+      "text": "3.5ます生三人生です私読む口の私はABCと上手読むの。",
+      "bytes": 723250,
+      "sha256": "81070a371b1b6a961ea15bc4076d807dfdc9995271b5e1e6af5c51d0454a27d0"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 47,
+      "text": "で口青いののと猫今日駅生3.5三人猫学校開ける今日窓私ABC昨日。",
+      "bytes": 973928,
+      "sha256": "934b5b38bd2b5f2e3fd9718691d2c3becf93a66dfbb89934430a51bf79ffbe68"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 55,
+      "text": "helloを私hello読む一人に昨日の。",
+      "bytes": 414724,
+      "sha256": "86d33630f071fc989e32ec14f02f736e30c8a948a05eea9b309f08c239219c80"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 63,
+      "text": "が窓行くです窓hello昨日のに今日3.5とが大きな学校ですにに三人で。",
+      "bytes": 787350,
+      "sha256": "136527c263de2351fa7fa90549103a31143cb6a00f9cbe6ea6db4009fa7fd45a"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 71,
+      "text": "一人窓hello魚青い猫ABCが行く口ABCに上手三人は12魚一人。",
+      "bytes": 881936,
+      "sha256": "e1c33e7f3f54c266e9adef77d3661c6a567adedde5cc866d43f9ccf34928b851"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 79,
+      "text": "ます昨日今日窓でhelloが3.5ABChello。",
+      "bytes": 533902,
+      "sha256": "f8ef08c5a8261891aaeab37ba07a65b7cfc242def2935e887e1d53942d535d0c"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 87,
+      "text": "上手学校三人が青いのと行くに昨日生1212昨日大きな窓私12ますはと駅12今日。",
+      "bytes": 1059388,
+      "sha256": "141a09c0a81356c0ac091fc642792323d058d6e59f0a244594fed17fbc93bea5"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 95,
+      "text": "に上手窓三人駅12に私。",
+      "bytes": 383220,
+      "sha256": "501daac4041bd86d3f11a47bdd6d9b06c540655ba88cf13618050c0a7e66038c"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 103,
+      "text": "猫昨日三人駅青います三人昨日をは開けるで開ける上手を。",
+      "bytes": 758556,
+      "sha256": "cff0e8733f93b0d43c9aab7c0af9cba6da20a8fde72d3d4bc076dadf43629813"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 111,
+      "text": "が大きな青い12開ける駅三人ABCでとがに昨日ます魚行くABCます三人で駅私駅を。",
+      "bytes": 1164990,
+      "sha256": "026d677ebb3e298a216c5dc435a16fd2e36b14585f0fb8b1ad675d8d62262c82"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 119,
+      "text": "ます口は大きな私食べる生hello行く大きな猫三人ですと3.5。",
+      "bytes": 798462,
+      "sha256": "1297a03500b52f536aa0961ed059ae28d3f5f57960e5ce87dd54096bf4d66971"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 127,
+      "text": "大きなABCと昨日読むでです読む3.5駅です生。",
+      "bytes": 585156,
+      "sha256": "fe9431e5b46e1cc428abb835f4cfad36bcd1ee9b92bb089bb63ae8a7b9049ac5"
+    }
+  ],
+  "rechecks_manifest_sha256": "4146c54fd710e02e42f5c1e4dc8b02c9211e225c51a2ba79bb5aa6d0adc09de0",
+  "rechecks": [
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "shard": 5,
+      "directory": "private/random-seed19-pow-fixed-wave/shard-5",
+      "log": "private/random-seed19-pow-fixed-shard5-aoi-wave.log",
+      "reason": "full assigned shard rerun after reconstructing original magnitude powf; previous failure remains archived",
+      "superseded_report_sha256": "a87e4f44311ac2bd02e284b0bfabb498c7f6e71720fb5ed6532acfa51bd11a81",
+      "superseded_log_sha256": "e0c5d11407840b39a4ad1089bd91a076d2bde4c116454377a0ab9b37210c78e0",
+      "superseded_differences": [
+        117
+      ]
+    }
+  ],
+  "independent_native_report_sha256": [
+    "b97ea639f09b1d1712f8a61297bedb6d6175e5333fa77fde242fd6925221de7f",
+    "72fde9f66508cfabea2467bb62d86e92f01b49ff1492e5cc1a047c5be5001f4b"
+  ],
+  "independent_native_wav_files_rehashed": 256
+}

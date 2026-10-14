@@ -1,0 +1,605 @@
+{
+  "scope": "Frontend-only observations; no tensor injection; formatter matched independent native capture",
+  "cases": [
+    {
+      "text": "．5。",
+      "raw_sha256": "2abc3481e21e89495c98565ba67fe06c14441d6169d45f876fa0109b18152a29",
+      "stage_counts": {
+        "11f9c0": 1,
+        "11ec50": 1,
+        "1b9f10": 1,
+        "1b9f60": 1
+      },
+      "numeric_calls": [
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "10b010",
+            "input_hex": "8254",
+            "caller": "0x101e0b",
+            "raw_args": [
+              "0x3fe0000000000000",
+              "0x0",
+              "0x4000000000000000",
+              "0x0",
+              "0x4000000000000000"
+            ],
+            "input": "．5。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "10b010",
+            "input_hex": "8254",
+            "result": "0x1",
+            "output_a": "8353",
+            "output_b": "8cdc",
+            "input": "．5。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "５",
+          "output_a_decoded": "ゴ",
+          "output_b_decoded": "五"
+        },
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "100a90",
+            "input_hex": "8254",
+            "caller": "0x10245a",
+            "raw_args": [
+              "0x429ffd8f0",
+              "0x7ffcc1133200",
+              "0x429ffdd00",
+              "0x19cee6bad00",
+              "0x0"
+            ],
+            "input": "．5。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "100a90",
+            "input_hex": "8254",
+            "result": "0x1",
+            "output_a": "8353",
+            "output_b": "8cdc",
+            "input": "．5。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "５",
+          "output_a_decoded": "ゴ",
+          "output_b_decoded": "五"
+        }
+      ],
+      "formatted": [
+        "<S>^ゴ<F>"
+      ]
+    },
+    {
+      "text": "．5．2。",
+      "raw_sha256": "2abc3481e21e89495c98565ba67fe06c14441d6169d45f876fa0109b18152a29",
+      "stage_counts": {
+        "11f9c0": 1,
+        "11ec50": 1,
+        "1b9f10": 1,
+        "1b9f60": 1
+      },
+      "numeric_calls": [
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "100a90",
+            "input_hex": "",
+            "caller": "0x102cfd",
+            "raw_args": [
+              "0x5b17dfd5b8",
+              "0x7ffcc112c300",
+              "0x1",
+              "0x80166ba113301",
+              "0x166ba180340"
+            ],
+            "input": "．5．2。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "100a90",
+            "input_hex": "",
+            "result": "0x0",
+            "output_a": "",
+            "output_b": "",
+            "input": "．5．2。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "",
+          "output_a_decoded": "",
+          "output_b_decoded": ""
+        },
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "1043f0",
+            "input_hex": "8254",
+            "caller": "0x102dc6",
+            "raw_args": [
+              "0x5b17dfd500",
+              "0x7ffcc112c301",
+              "0x2",
+              "0x5b17dfd5b8",
+              "0x5b17dfd5f8"
+            ],
+            "input": "．5．2。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "1043f0",
+            "input_hex": "8254",
+            "result": "0x1",
+            "output_a": "836583938353",
+            "output_b": "81458cdc",
+            "input": "．5．2。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "５",
+          "output_a_decoded": "テンゴ",
+          "output_b_decoded": "・五"
+        },
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "1043f0",
+            "input_hex": "8251",
+            "caller": "0x10307b",
+            "raw_args": [
+              "0x5b17dfd500",
+              "0x7ffcc112c301",
+              "0x2",
+              "0x5b17dfd5b8",
+              "0x5b17dfd5f8"
+            ],
+            "input": "．5．2。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "1043f0",
+            "input_hex": "8251",
+            "result": "0x1",
+            "output_a": "83658393835383658393836a",
+            "output_b": "81458cdc814593f1",
+            "input": "．5．2。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "２",
+          "output_a_decoded": "テンゴテンニ",
+          "output_b_decoded": "・五・二"
+        }
+      ],
+      "formatted": [
+        "<S>テン|0^ゴ!テン|0^ニ<F>"
+      ]
+    },
+    {
+      "text": "．12．34。",
+      "raw_sha256": "2abc3481e21e89495c98565ba67fe06c14441d6169d45f876fa0109b18152a29",
+      "stage_counts": {
+        "11f9c0": 1,
+        "11ec50": 1,
+        "1b9f10": 1,
+        "1b9f60": 1
+      },
+      "numeric_calls": [
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "100a90",
+            "input_hex": "",
+            "caller": "0x102cfd",
+            "raw_args": [
+              "0xf6b3dfd568",
+              "0x7ffcc112c300",
+              "0x1",
+              "0x8023439853201",
+              "0x234398bfc20"
+            ],
+            "input": "．12．34。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "100a90",
+            "input_hex": "",
+            "result": "0x0",
+            "output_a": "",
+            "output_b": "",
+            "input": "．12．34。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "",
+          "output_a_decoded": "",
+          "output_b_decoded": ""
+        },
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "1043f0",
+            "input_hex": "82508251",
+            "caller": "0x102dc6",
+            "raw_args": [
+              "0xf6b3dfd500",
+              "0x7ffcc112c301",
+              "0x2",
+              "0xf6b3dfd568",
+              "0xf6b3dfd5a8"
+            ],
+            "input": "．12．34。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "1043f0",
+            "input_hex": "82508251",
+            "result": "0x1",
+            "output_a": "8365839383438360836a815b",
+            "output_b": "814588ea93f1",
+            "input": "．12．34。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "１２",
+          "output_a_decoded": "テンイチニー",
+          "output_b_decoded": "・一二"
+        },
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "1043f0",
+            "input_hex": "82528253",
+            "caller": "0x10307b",
+            "raw_args": [
+              "0x0",
+              "0x7ffcc112c301",
+              "0x2",
+              "0xf6b3dfd568",
+              "0xf6b3dfd5a8"
+            ],
+            "input": "．12．34。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "1043f0",
+            "input_hex": "82528253",
+            "result": "0x1",
+            "output_a": "8365839383438360836a815b836583938354839383888393",
+            "output_b": "814588ea93f181458e4f8e6c",
+            "input": "．12．34。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "３４",
+          "output_a_decoded": "テンイチニーテンサンヨン",
+          "output_b_decoded": "・一二・三四"
+        }
+      ],
+      "formatted": [
+        "<S>テ^ン|0イ^チニ!ーテン|0サ^ンヨ!ン<F>"
+      ]
+    },
+    {
+      "text": "．5．二。",
+      "raw_sha256": "7264b4db77a23b4bedfefc5345b65135b0353d1b937677ce588e1c04f368be3f",
+      "stage_counts": {
+        "11f9c0": 1,
+        "11ec50": 1,
+        "1b9f10": 1,
+        "1b9f60": 1
+      },
+      "numeric_calls": [
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "10b010",
+            "input_hex": "8254",
+            "caller": "0x100fec",
+            "raw_args": [
+              "0x3fe0000000000000",
+              "0x0",
+              "0x4000000000000000",
+              "0x0",
+              "0x4000000000000000"
+            ],
+            "input": "．5．二。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "10b010",
+            "input_hex": "8254",
+            "result": "0x1",
+            "output_a": "8353",
+            "output_b": "8cdc",
+            "input": "．5．二。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "５",
+          "output_a_decoded": "ゴ",
+          "output_b_decoded": "五"
+        },
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "10b010",
+            "input_hex": "93f1",
+            "caller": "0x101e0b",
+            "raw_args": [
+              "0x3fe0000000000000",
+              "0x0",
+              "0x4000000000000000",
+              "0x0",
+              "0x4000000000000000"
+            ],
+            "input": "．5．二。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "10b010",
+            "input_hex": "93f1",
+            "result": "0x1",
+            "output_a": "8353836583938282836a",
+            "output_b": "8cdc814493f1",
+            "input": "．5．二。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "二",
+          "output_a_decoded": "ゴテンｂニ",
+          "output_b_decoded": "五．二"
+        },
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "100a90",
+            "input_hex": "8254814493f1",
+            "caller": "0x10245a",
+            "raw_args": [
+              "0x723e9fdcb0",
+              "0x7ffd1d1e3200",
+              "0x723e9fe000",
+              "0x1c2d6e81400",
+              "0x0"
+            ],
+            "input": "．5．二。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "100a90",
+            "input_hex": "8254814493f1",
+            "result": "0x1",
+            "output_a": "8353836583938282836a",
+            "output_b": "8cdc814493f1",
+            "input": "．5．二。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "５．二",
+          "output_a_decoded": "ゴテンｂニ",
+          "output_b_decoded": "五．二"
+        }
+      ],
+      "formatted": [
+        "<S>^ゴ!テン|0^ニ<F>"
+      ]
+    },
+    {
+      "text": "．万．2。",
+      "raw_sha256": "7264b4db77a23b4bedfefc5345b65135b0353d1b937677ce588e1c04f368be3f",
+      "stage_counts": {
+        "11f9c0": 1,
+        "11ec50": 1,
+        "1b9f10": 1,
+        "1b9f60": 1
+      },
+      "numeric_calls": [
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "100a90",
+            "input_hex": "",
+            "caller": "0x102cfd",
+            "raw_args": [
+              "0x1d0b5fd5c8",
+              "0x7ffd1d1dc300",
+              "0x1",
+              "0x8018cff053301",
+              "0x18cff0afe20"
+            ],
+            "input": "．万．2。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "100a90",
+            "input_hex": "",
+            "result": "0x0",
+            "output_a": "",
+            "output_b": "",
+            "input": "．万．2。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "",
+          "output_a_decoded": "",
+          "output_b_decoded": ""
+        },
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "1043f0",
+            "input_hex": "969c",
+            "caller": "0x102dc6",
+            "raw_args": [
+              "0x1d0b5fd500",
+              "0x7ffd1d1dc301",
+              "0x2",
+              "0x1d0b5fd5c8",
+              "0x1d0b5fd608"
+            ],
+            "input": "．万．2。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "1043f0",
+            "input_hex": "969c",
+            "result": "0x0",
+            "output_a": "83658393837d8393",
+            "output_b": "8145969c",
+            "input": "．万．2。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "万",
+          "output_a_decoded": "テンマン",
+          "output_b_decoded": "・万"
+        },
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "1043f0",
+            "input_hex": "8251",
+            "caller": "0x10307b",
+            "raw_args": [
+              "0x1d0b5fd500",
+              "0x7ffd1d1dc301",
+              "0x2",
+              "0x1d0b5fd5c8",
+              "0x1d0b5fd608"
+            ],
+            "input": "．万．2。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "1043f0",
+            "input_hex": "8251",
+            "result": "0x1",
+            "output_a": "83658393837d839383658393836a",
+            "output_b": "8145969c814593f1",
+            "input": "．万．2。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "２",
+          "output_a_decoded": "テンマンテンニ",
+          "output_b_decoded": "・万・二"
+        }
+      ],
+      "formatted": [
+        "<S>テ^ンマ!ン|0テン|0^ニ<F>"
+      ]
+    },
+    {
+      "text": "．5・2。",
+      "raw_sha256": "7264b4db77a23b4bedfefc5345b65135b0353d1b937677ce588e1c04f368be3f",
+      "stage_counts": {
+        "11f9c0": 1,
+        "11ec50": 1,
+        "1b9f10": 1,
+        "1b9f60": 1
+      },
+      "numeric_calls": [
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "100a90",
+            "input_hex": "",
+            "caller": "0x102cfd",
+            "raw_args": [
+              "0x7d3f1fd728",
+              "0x7ffd1d1dc300",
+              "0x1",
+              "0x8024fc3f63301",
+              "0x24fc3fd0340"
+            ],
+            "input": "．5・2。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "100a90",
+            "input_hex": "",
+            "result": "0x0",
+            "output_a": "",
+            "output_b": "",
+            "input": "．5・2。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "",
+          "output_a_decoded": "",
+          "output_b_decoded": ""
+        },
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "1043f0",
+            "input_hex": "8254",
+            "caller": "0x102dc6",
+            "raw_args": [
+              "0x7d3f1fd700",
+              "0x7ffd1d1dc301",
+              "0x2",
+              "0x7d3f1fd728",
+              "0x7d3f1fd768"
+            ],
+            "input": "．5・2。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "1043f0",
+            "input_hex": "8254",
+            "result": "0x1",
+            "output_a": "836583938353",
+            "output_b": "81458cdc",
+            "input": "．5・2。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "５",
+          "output_a_decoded": "テンゴ",
+          "output_b_decoded": "・五"
+        },
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "1043f0",
+            "input_hex": "8251",
+            "caller": "0x10307b",
+            "raw_args": [
+              "0x7d3f1fd700",
+              "0x7ffd1d1dc301",
+              "0x2",
+              "0x7d3f1fd728",
+              "0x7d3f1fd768"
+            ],
+            "input": "．5・2。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "1043f0",
+            "input_hex": "8251",
+            "result": "0x1",
+            "output_a": "83658393835383658393836a",
+            "output_b": "81458cdc814593f1",
+            "input": "．5・2。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "２",
+          "output_a_decoded": "テンゴテンニ",
+          "output_b_decoded": "・五・二"
+        }
+      ],
+      "formatted": [
+        "<S>テン|0^ゴ!テン|0^ニ<F>"
+      ]
+    }
+  ]
+}

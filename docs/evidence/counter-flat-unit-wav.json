@@ -1,0 +1,192 @@
+{
+  "scope": "Four counter inputs in both voices on the specified CPU; arbitrary inputs/settings/CPUs remain unproven",
+  "reports": [
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "log_sha256": "96a2609a11ed50f6cf22b8dadf3ac4bbcfbf0e07cefc6b44b41cbed24ac2f17e",
+      "report_sha256": "2d489e4e44b9cce05ae0a594da60555ba3fd2ee8cbf8d4627d73764e5dd3de2d",
+      "report": {
+        "shard": 0,
+        "shards": 1,
+        "seed": 0,
+        "generator_version": 1,
+        "count": 4,
+        "max_units": 0,
+        "go_version": "go1.26.8",
+        "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+        "voice": "KotonohaAkane_ns_48",
+        "original_threads": 6,
+        "avx512_convolutions": false,
+        "results": [
+          {
+            "index": 0,
+            "text": "京個年。",
+            "original_sha256": "5c5816643a4a1d63babc2743782ac2bd9f75391d85f33af682dc934c3e22ff49",
+            "go_sha256": "5c5816643a4a1d63babc2743782ac2bd9f75391d85f33af682dc934c3e22ff49",
+            "original_bytes": 152738,
+            "go_bytes": 152738,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 1,
+            "text": "2京個年。",
+            "original_sha256": "2bbbadbe7ab6b022949a84f9072caf32712550e703bfe7d08cc9e7b927371263",
+            "go_sha256": "2bbbadbe7ab6b022949a84f9072caf32712550e703bfe7d08cc9e7b927371263",
+            "original_bytes": 168524,
+            "go_bytes": 168524,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 2,
+            "text": "21京個年。",
+            "original_sha256": "01fb026a3343e65436c44d17ed46bfac5d40b7c3a71fe4be957d65ed7b75b369",
+            "go_sha256": "01fb026a3343e65436c44d17ed46bfac5d40b7c3a71fe4be957d65ed7b75b369",
+            "original_bytes": 216158,
+            "go_bytes": 216158,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 3,
+            "text": "京泳法。",
+            "original_sha256": "835fce38b07e03ae84ab4559b31d21fc4a88068d4c14a2c2af6233c50a5b6455",
+            "go_sha256": "835fce38b07e03ae84ab4559b31d21fc4a88068d4c14a2c2af6233c50a5b6455",
+            "original_bytes": 171958,
+            "go_bytes": 171958,
+            "first_difference": -1,
+            "equal": true
+          }
+        ]
+      }
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "log_sha256": "402a5afa7ecc8f729edf7afecb21799c3d7beb4b40b9cb04e4abd27e7d260643",
+      "report_sha256": "eb45ecf71e6cf6d9fb9a04a8b149ce3596ee62c4d2fd15a6172b09a69a863acf",
+      "report": {
+        "shard": 0,
+        "shards": 1,
+        "seed": 0,
+        "generator_version": 1,
+        "count": 4,
+        "max_units": 0,
+        "go_version": "go1.26.8",
+        "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+        "voice": "KotonohaAoi_ns_48",
+        "original_threads": 6,
+        "avx512_convolutions": false,
+        "results": [
+          {
+            "index": 0,
+            "text": "京個年。",
+            "original_sha256": "5c5816643a4a1d63babc2743782ac2bd9f75391d85f33af682dc934c3e22ff49",
+            "go_sha256": "5c5816643a4a1d63babc2743782ac2bd9f75391d85f33af682dc934c3e22ff49",
+            "original_bytes": 152738,
+            "go_bytes": 152738,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 1,
+            "text": "2京個年。",
+            "original_sha256": "2bbbadbe7ab6b022949a84f9072caf32712550e703bfe7d08cc9e7b927371263",
+            "go_sha256": "2bbbadbe7ab6b022949a84f9072caf32712550e703bfe7d08cc9e7b927371263",
+            "original_bytes": 168524,
+            "go_bytes": 168524,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 2,
+            "text": "21京個年。",
+            "original_sha256": "01fb026a3343e65436c44d17ed46bfac5d40b7c3a71fe4be957d65ed7b75b369",
+            "go_sha256": "01fb026a3343e65436c44d17ed46bfac5d40b7c3a71fe4be957d65ed7b75b369",
+            "original_bytes": 216158,
+            "go_bytes": 216158,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 3,
+            "text": "京泳法。",
+            "original_sha256": "835fce38b07e03ae84ab4559b31d21fc4a88068d4c14a2c2af6233c50a5b6455",
+            "go_sha256": "835fce38b07e03ae84ab4559b31d21fc4a88068d4c14a2c2af6233c50a5b6455",
+            "original_bytes": 171958,
+            "go_bytes": 171958,
+            "first_difference": -1,
+            "equal": true
+          }
+        ]
+      }
+    }
+  ],
+  "reference": {
+    "source": "Completed ordinary SDK/Go WAV tests; whole files rehashed against independent native captures",
+    "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+    "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+    "original_threads": 6,
+    "avx512_convolutions": false,
+    "report_sha256": [
+      "2d489e4e44b9cce05ae0a594da60555ba3fd2ee8cbf8d4627d73764e5dd3de2d",
+      "eb45ecf71e6cf6d9fb9a04a8b149ce3596ee62c4d2fd15a6172b09a69a863acf"
+    ],
+    "capture_sha256": [
+      "85c1d157300a5cb5c0d338e498aece55611914df699cc5b2ef5e7b3ce8821d0c",
+      "36448c1da476863f464ef8da47e3f08f6d066c3d5dcbe0344e81769b4010c4b9",
+      "8ac9aa767e2c8ab1d95a99220bb3e52408e37fba954ff762599306f4af1d7414",
+      "c02eec3002eab5df2f75dcd6fd6db967e015a894fa3d4dec88e77e4b2239f648"
+    ],
+    "cases": [
+      {
+        "text": "京個年。",
+        "voice": "KotonohaAkane_ns_48",
+        "bytes": 152738,
+        "sha256": "5c5816643a4a1d63babc2743782ac2bd9f75391d85f33af682dc934c3e22ff49"
+      },
+      {
+        "text": "2京個年。",
+        "voice": "KotonohaAkane_ns_48",
+        "bytes": 168524,
+        "sha256": "2bbbadbe7ab6b022949a84f9072caf32712550e703bfe7d08cc9e7b927371263"
+      },
+      {
+        "text": "21京個年。",
+        "voice": "KotonohaAkane_ns_48",
+        "bytes": 216158,
+        "sha256": "01fb026a3343e65436c44d17ed46bfac5d40b7c3a71fe4be957d65ed7b75b369"
+      },
+      {
+        "text": "京泳法。",
+        "voice": "KotonohaAkane_ns_48",
+        "bytes": 171958,
+        "sha256": "835fce38b07e03ae84ab4559b31d21fc4a88068d4c14a2c2af6233c50a5b6455"
+      },
+      {
+        "text": "京個年。",
+        "voice": "KotonohaAoi_ns_48",
+        "bytes": 152738,
+        "sha256": "5c5816643a4a1d63babc2743782ac2bd9f75391d85f33af682dc934c3e22ff49"
+      },
+      {
+        "text": "2京個年。",
+        "voice": "KotonohaAoi_ns_48",
+        "bytes": 168524,
+        "sha256": "2bbbadbe7ab6b022949a84f9072caf32712550e703bfe7d08cc9e7b927371263"
+      },
+      {
+        "text": "21京個年。",
+        "voice": "KotonohaAoi_ns_48",
+        "bytes": 216158,
+        "sha256": "01fb026a3343e65436c44d17ed46bfac5d40b7c3a71fe4be957d65ed7b75b369"
+      },
+      {
+        "text": "京泳法。",
+        "voice": "KotonohaAoi_ns_48",
+        "bytes": 171958,
+        "sha256": "835fce38b07e03ae84ab4559b31d21fc4a88068d4c14a2c2af6233c50a5b6455"
+      }
+    ]
+  }
+}

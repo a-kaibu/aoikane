@@ -1,0 +1,171 @@
+{
+  "source": "ordinary original SDK talk; formatter observed without tensor injection; frontend-only capture",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "voice": "KotonohaAoi_ns_48",
+  "corpus_sha256": "391753f59be5879c5a5da12e53c1d5f7fc9f28808a0a2fbe813aa1b537ae2446",
+  "cases": [
+    {
+      "index": 0,
+      "text": "京亜型。",
+      "status": 0,
+      "readings": [
+        "<S>ケ^イアケー<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83505e834383418350815b3c463e"
+      ],
+      "wav_bytes": 167038,
+      "wav_sha256": "e313330cd7b41a3d7a441cd5245d3353b3264e880ad6c455d9eada5cf3bf11a8"
+    },
+    {
+      "index": 1,
+      "text": "万亜型。",
+      "status": 0,
+      "readings": [
+        "<S>マ^ンアケー<F>"
+      ],
+      "cp932_hex": [
+        "3c533e837d5e839383418350815b3c463e"
+      ],
+      "wav_bytes": 164338,
+      "wav_sha256": "aaaa620a117e48530e98233956db31f9e4323f3419e3b4a93ab1f5f25d20ac85"
+    },
+    {
+      "index": 2,
+      "text": "1京亜型。",
+      "status": 0,
+      "readings": [
+        "<S>イ^ッケイアケー<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83435e83628350834383418350815b3c463e"
+      ],
+      "wav_bytes": 184734,
+      "wav_sha256": "ebe258d6124dd7a0a4e8ee6d290cd81d4219825eddba476cb05e3fe19f138e5f"
+    },
+    {
+      "index": 3,
+      "text": "2京亜型。",
+      "status": 0,
+      "readings": [
+        "<S>ニ^ケイアケー<F>"
+      ],
+      "cp932_hex": [
+        "3c533e836a5e8350834383418350815b3c463e"
+      ],
+      "wav_bytes": 179714,
+      "wav_sha256": "c7bc391bc3347e039565060480d8042d38fbc334dd93d00e826bd856c304fc7e"
+    },
+    {
+      "index": 4,
+      "text": "1亜型。",
+      "status": 0,
+      "readings": [
+        "<S>イ^チア!ケー<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83435e83608341218350815b3c463e"
+      ],
+      "wav_bytes": 163866,
+      "wav_sha256": "634af8aedd38acd7ca8b6ac2b2528fb7855f575bb398094748f557ec5edcc17e"
+    },
+    {
+      "index": 5,
+      "text": "3亜型。",
+      "status": 0,
+      "readings": [
+        "<S>サ^ンア!ケー<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83545e83938341218350815b3c463e"
+      ],
+      "wav_bytes": 171476,
+      "wav_sha256": "e2150585c332c5ac9a21a932132585c96af4c9d98256439719cfe3a77c22db5f"
+    },
+    {
+      "index": 6,
+      "text": "京泳法。",
+      "status": 0,
+      "readings": [
+        "<S>ケ^イエーホー<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83505e83438347815b837a815b3c463e"
+      ],
+      "wav_bytes": 171958,
+      "wav_sha256": "835fce38b07e03ae84ab4559b31d21fc4a88068d4c14a2c2af6233c50a5b6455"
+    },
+    {
+      "index": 7,
+      "text": "万泳法。",
+      "status": 0,
+      "readings": [
+        "<S>マ^ンエーホー<F>"
+      ],
+      "cp932_hex": [
+        "3c533e837d5e83938347815b837a815b3c463e"
+      ],
+      "wav_bytes": 172816,
+      "wav_sha256": "1741c890bdec7c4b1caa9146e9d8cd68971e058ce9f82f5eea6df36cd3d02751"
+    },
+    {
+      "index": 8,
+      "text": "1京泳法。",
+      "status": 0,
+      "readings": [
+        "<S>イ^ッケイエーホー<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83435e8362835083438347815b837a815b3c463e"
+      ],
+      "wav_bytes": 191546,
+      "wav_sha256": "2cfff3d19a9d5813b603b917aed4a9749564670e9b20c843eaadb8d220e67713"
+    },
+    {
+      "index": 9,
+      "text": "2京泳法。",
+      "status": 0,
+      "readings": [
+        "<S>ニ^ケイエーホー<F>"
+      ],
+      "cp932_hex": [
+        "3c533e836a5e835083438347815b837a815b3c463e"
+      ],
+      "wav_bytes": 186628,
+      "wav_sha256": "637fe9cf04b21037f6d0d43841eb06a89c994ea12f86143c3a48b56cb209698d"
+    },
+    {
+      "index": 10,
+      "text": "1泳法。",
+      "status": 0,
+      "readings": [
+        "<S>イ^チエ!ーホー<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83435e8360834721815b837a815b3c463e"
+      ],
+      "wav_bytes": 171382,
+      "wav_sha256": "288fdf4b5dbdbf3f88eeb5fbd944e74501abb6a34984a5ec9a65f9ef44f5d4c4"
+    },
+    {
+      "index": 11,
+      "text": "3泳法。",
+      "status": 0,
+      "readings": [
+        "<S>サ^ンエ!ーホー<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83545e8393834721815b837a815b3c463e"
+      ],
+      "wav_bytes": 178170,
+      "wav_sha256": "30f50845a34c69b7186e65ca31d796ce15aa710573d8b99607ed552b9751b0ef"
+    }
+  ],
+  "complete": true,
+  "errors": [],
+  "executable_sha256": "de3be1e7979db53006add27f30131eb4c308c28ba78d6b7bb6365aecb01b3f2d",
+  "detach_reason": "process-terminated",
+  "crash": null,
+  "timed_out": false,
+  "native_report_sha256": "f9f63d08a5cd3b967ec4d7a42d7cc96dfa123d55d10988fbc6c71a7fbcda1085"
+}

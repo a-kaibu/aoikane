@@ -1,0 +1,49 @@
+{
+  "source": "ordinary original SDK direct API; no instrumentation or injected inputs",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "cases": [
+    {
+      "text": "\n）！é。é 😀A。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 364844,
+      "sha256": "d3791657a4613eabce36710b1125281ae9d5052046513da3910850b5551df494"
+    },
+    {
+      "text": "\nあ。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 180524,
+      "sha256": "02ad8964ace53160d77763a758293dacf3a26d0aa625d39a712cf60d680a2430"
+    },
+    {
+      "text": "\n。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 81644,
+      "sha256": "ca67ad155f7a6f0f81c54f8613e086e45a5e4ba3d9d6b5c49979f7cf89a7a3bc"
+    },
+    {
+      "text": "\n）！é。é 😀A。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 364844,
+      "sha256": "d3791657a4613eabce36710b1125281ae9d5052046513da3910850b5551df494"
+    },
+    {
+      "text": "\nあ。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 180044,
+      "sha256": "122988842f5d62b237c8e5abe5f60bfb1f7edad73c04bb0fdeaace933294623b"
+    },
+    {
+      "text": "\n。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 81644,
+      "sha256": "ca67ad155f7a6f0f81c54f8613e086e45a5e4ba3d9d6b5c49979f7cf89a7a3bc"
+    }
+  ],
+  "report_sha256": [
+    "b7f7de6a43a1b068e0781793dd0406ee3c8acdb841b46547b92b288b0e6c228f",
+    "5f9e16e13bec5b88e213e56bdd69456516570b03457fb75f2b79c87e0790f55a"
+  ],
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "original_threads": 6,
+  "avx512_convolutions": false
+}

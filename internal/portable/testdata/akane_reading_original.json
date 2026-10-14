@@ -1,0 +1,524 @@
+{
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "voice": "KotonohaAkane_ns_48",
+  "first_sentence_only": true,
+  "rules": {
+    "reading-rules-kansai.txt": "0b79813779721138b03394a01e51e2da16bfe15ef5e5ce167e18159fa401068f",
+    "bound-rules-kansai.txt": "bd3e1def477f017f514cb309896071348c7554fb1824a57ed029d05a3a67be85",
+    "bancharcx-kansai.txt": "8d960f8a82d5e02b31d4576051e6bae32770e793f0bf82bc4479181795fbcab7",
+    "bancut-kansai.json": "925e9f015ec3174b41186586823a3400c8317d45118d57f7794cb71f2c680dfd",
+    "kansai-chunk-bound.json": "3279a317f961fbd926fbe35041e96c18237f8fddb2bd5a0dea3dc692f81ab25b"
+  },
+  "cases": [
+    {
+      "text": "こんにちは。",
+      "reading": "<S>コンニチ^ワ<F>",
+      "source": "private/kansai-bound-rules-fresh.jsonl",
+      "source_sha256": "4850826ee2cb71059298e46aaec2a2e8a08700bd06e16f9b297a595ed501de5a"
+    },
+    {
+      "text": "今日はええ天気やな。",
+      "reading": "<S>キョ^ー|0ハ^エ!ー|0^テ!ンキヤナ<H>",
+      "source": "private/kansai-bound-rules-fresh.jsonl",
+      "source_sha256": "4850826ee2cb71059298e46aaec2a2e8a08700bd06e16f9b297a595ed501de5a"
+    },
+    {
+      "text": "明日、大阪へ行きます。",
+      "reading": "<S>^ア!ス$2_2^オーサカエ|0^イキマス<F>",
+      "source": "private/kansai-bound-rules-fresh.jsonl",
+      "source_sha256": "4850826ee2cb71059298e46aaec2a2e8a08700bd06e16f9b297a595ed501de5a"
+    },
+    {
+      "text": "なんでやねん。",
+      "reading": "<S>ナン^デ!ヤネン<F>",
+      "source": "private/kansai-bound-rules-fresh.jsonl",
+      "source_sha256": "4850826ee2cb71059298e46aaec2a2e8a08700bd06e16f9b297a595ed501de5a"
+    },
+    {
+      "text": "私は学校で本を読みます。",
+      "reading": "<S>ワタシ^ワ$2_2ガッコーデ|0^ホ!ンオ|0ヨミマ^ス<F>",
+      "source": "private/kansai-bound-rules-fresh.jsonl",
+      "source_sha256": "4850826ee2cb71059298e46aaec2a2e8a08700bd06e16f9b297a595ed501de5a"
+    },
+    {
+      "text": "これは本当においしいです。",
+      "reading": "<S>^コレワ|0ホントー^ニ|0オイ^シ!イデス<F>",
+      "source": "private/kansai-bound-rules-fresh.jsonl",
+      "source_sha256": "4850826ee2cb71059298e46aaec2a2e8a08700bd06e16f9b297a595ed501de5a"
+    },
+    {
+      "text": "こんにちは。",
+      "reading": "<S>コンニチ^ワ<F>",
+      "source": "private/stages_akane/c000.jsonl",
+      "source_sha256": "85a2f2a11b182634e437a07e2fb57a6fad528b28fa979762c109af69e099ed4f"
+    },
+    {
+      "text": "琴葉葵です。",
+      "reading": "<S>^コトノハ|0^アオイデス<F>",
+      "source": "private/stages_akane/c001.jsonl",
+      "source_sha256": "5939f52e3ea9a5d2108a0e1f31ef7f59020dcd10a021976442c810506b1325ae"
+    },
+    {
+      "text": "東京の天気は晴れです。",
+      "reading": "<S>^トーキョーノ|0^テ!ンキワ|0^ハ!レデス<F>",
+      "source": "private/stages_akane/c002.jsonl",
+      "source_sha256": "a0639cc2de1eb2ae3176815b7b585de3f1f2c48a2c47c814921bb0f0196c3622"
+    },
+    {
+      "text": "今日は学校へ行きます。",
+      "reading": "<S>キョ^ー!ワ|0ガッコーエ|0^イキマス<F>",
+      "source": "private/stages_akane/c003.jsonl",
+      "source_sha256": "7c4edde65bb7f0e5e112198cbe6356b285798e3b748048faaf1db0c540f32f44"
+    },
+    {
+      "text": "昨日学校へ行ってきました。",
+      "reading": "<S>^キ!ノー|0ガッコーエ|0^イッテ|0^キマ!シタ<F>",
+      "source": "private/stages_akane/c004.jsonl",
+      "source_sha256": "1afd90e18b187e80a430eb3312aa5f21af22098ea1116dc8f2e8d2ef4b135f79"
+    },
+    {
+      "text": "来る人を待ちます。",
+      "reading": "<S>クル|0^ヒ!トオ|0マチマ^ス<F>",
+      "source": "private/stages_akane/c005.jsonl",
+      "source_sha256": "f14c66ddab6d6b7ff32e35f4daca1f1ffa7287f7ad6903e9b9adfd7c0ecac845"
+    },
+    {
+      "text": "明日は雨が降るでしょう。",
+      "reading": "<S>^ア!スワ|0ア^メ!ガ|0フ^ル!デショー<F>",
+      "source": "private/stages_akane/c006.jsonl",
+      "source_sha256": "0587cb12eecc2b6bb81d8c1888e1cc489b3969a395bf36e98f4bcc6c9590c4ee"
+    },
+    {
+      "text": "私は毎朝コーヒーを飲みます。",
+      "reading": "<S>ワタシ^ワ|0マイ^ア!サ|0コー^ヒ!ーオ|0ノミマ^ス<F>",
+      "source": "private/stages_akane/c007.jsonl",
+      "source_sha256": "23e98b50aa91a6c5c1e75a78b4016f704c328dc9ac85d2781ca76a10813bf4a6"
+    },
+    {
+      "text": "彼は走るのが速いです。",
+      "reading": "<S>^カ!レワ|0^ハシル!ノガ|0^ハ!ヤイデス<F>",
+      "source": "private/stages_akane/c008.jsonl",
+      "source_sha256": "dbd5e34893c344d0d77e55e55a7320b902033fd8bbc6c8646905eb28303f9fa3"
+    },
+    {
+      "text": "この本はとても面白かった。",
+      "reading": "<S>^コノ|0^ホ!ンワ|0ト^テ!モ|0^オモシロ!カッタ<F>",
+      "source": "private/stages_akane/c009.jsonl",
+      "source_sha256": "f20fac954b4560b2dbf5dd6665e7052a811a88f3c675938c370c85fe4fd67619"
+    },
+    {
+      "text": "駅まで歩いて十分かかります。",
+      "reading": "<S>^エ!キマデ|0ア^ル!イテ$1_1ジュー^ブ!ン|0^カカリマス<F>",
+      "source": "private/stages_akane/c010.jsonl",
+      "source_sha256": "8ecfbf3f88c3fb837d359d98adc5b20a240bbf4dabffa04b11b0ec324011010f"
+    },
+    {
+      "text": "お腹が空いたので何か食べたい。",
+      "reading": "<S>オナカガ|0^ス!イタノデ$1_1ナ^ニ!カ|0タ^ベ!タイ<F>",
+      "source": "private/stages_akane/c011.jsonl",
+      "source_sha256": "0358b66adf63aa4ae97f5becd9f4a465e2875646a5fe8609b827eb343cf4f275"
+    },
+    {
+      "text": "桜の花が咲いています。",
+      "reading": "<S>^サクラノ|0^ハ!ナガ|0^サイテ|0^イマス<F>",
+      "source": "private/stages_akane/c012.jsonl",
+      "source_sha256": "d00197709515e678c785db1661890fac353b64439911c1530cf9c1f9239a75cb"
+    },
+    {
+      "text": "先生に質問をしてもいいですか。",
+      "reading": "<S>^セ!ンセーニ|0^シツモンオ|0^シ!テモ|0イ^ー!デスカ<F>",
+      "source": "private/stages_akane/c013.jsonl",
+      "source_sha256": "9fb002d2379a4e05c636df3a884c6f249cb02e85bc3d6c7a1c4a259f2012267e"
+    },
+    {
+      "text": "犬と猫が庭で遊んでいる。",
+      "reading": "<S>^イ!ヌト|0^ネ!コガ|0^ニワデ|0アソンデ|0^イル<F>",
+      "source": "private/stages_akane/c014.jsonl",
+      "source_sha256": "3c606e6ec557ecefedf1817876b4a74e7cf71484cd453ab4f1fbb222764b6d33"
+    },
+    {
+      "text": "電車が遅れて会議に間に合わなかった。",
+      "reading": "<S>^デンシャガ|0^オク!レテ$1_1カ^イ!ギニ|0^マニアワナ!カッタ<F>",
+      "source": "private/stages_akane/c015.jsonl",
+      "source_sha256": "a2acf64aa9072b8f97feb23d12262ea60f91b2dda2dc59af9dbdb3cda7868cc2"
+    },
+    {
+      "text": "彼女は美しい声で歌を歌う。",
+      "reading": "<S>^カ!ノジョワ$2_2^ウツク!シイ|0コ^エ!デ|0^ウ!タオ|0^ウタウ<F>",
+      "source": "private/stages_akane/c016.jsonl",
+      "source_sha256": "f04660e7eb962f289f7d8cd0b43f406bcfadef6430c54662f0dec1056f3f7669"
+    },
+    {
+      "text": "夏休みに家族と海へ行きました。",
+      "reading": "<S>^ナツヤ!スミニ$2_2^カ!ゾクト|0ウミエ|0^イキマ!シタ<F>",
+      "source": "private/stages_akane/c017.jsonl",
+      "source_sha256": "6519b76af2c3771d889749a609d1800dfe756ca29f200d1fe6bacd9bc8016e95"
+    },
+    {
+      "text": "新しいパソコンを買おうと思っています。",
+      "reading": "<S>^アタラ!シイ|0パソコンオ|0^カオ!ート|0^オモッテ|0^イマス<F>",
+      "source": "private/stages_akane/c018.jsonl",
+      "source_sha256": "f8328a8026d50d2aa414d9be0ffa300c37b3541a585f0c181f033206ea2c9e9f"
+    },
+    {
+      "text": "その問題は簡単に解けるはずだ。",
+      "reading": "<S>^ソノ|0^モンダイワ$1_1カンタンニ|0^トケルハズ!ダ<F>",
+      "source": "private/stages_akane/c019.jsonl",
+      "source_sha256": "70e1bb4c491ae73713320564e64dbeef9c65a82c92b86489ab283d72166470bf"
+    },
+    {
+      "text": "早く寝ないと明日起きられないよ。",
+      "reading": "<S>ハ^ヤ!ク|0^ネ!ナイト$1_1^ア!ス|0オキラ^レ!ナイ|0^ヨ<F>",
+      "source": "private/stages_akane/c020.jsonl",
+      "source_sha256": "c5a4139ff85b0045376b874a44fd10a539b6c98d3526b0b0d98ef2500efe96b3"
+    },
+    {
+      "text": "図書館で借りた本を返しに行く。",
+      "reading": "<S>ト^ショ!カンデ|0^カ!リタ|0^ホ!ンオ|0^カエシニ|0^イク<F>",
+      "source": "private/stages_akane/c021.jsonl",
+      "source_sha256": "cc21b898a373293f73c2aecbf6a9fd18af6f346f5ad020c9b6311f33b59e44c0"
+    },
+    {
+      "text": "雨が止んだら散歩に出かけましょう。",
+      "reading": "<S>ア^メ!ガ|0^ヤ!ンダラ$1_1サンポニ|0^デカケマショー<F>",
+      "source": "private/stages_akane/c022.jsonl",
+      "source_sha256": "204803f81299ee36ba155f04057102f2d96fc380074ca8440429a8c017349a40"
+    },
+    {
+      "text": "日本の首都は東京です。",
+      "reading": "<S>^ニホンノ|0^シュ!トワ|0^トーキョーデス<F>",
+      "source": "private/stages_akane/c023.jsonl",
+      "source_sha256": "a7e7cafd3f16ba5c03ddc1240c3733b7614ffd8c308793d686f488e76ea3945a"
+    },
+    {
+      "text": "彼の話を聞いて驚いた。",
+      "reading": "<S>^カ!レノ|0^ハ!ナシオ|0^キ!イテ|0^オドロ!イタ<F>",
+      "source": "private/stages_akane/c024.jsonl",
+      "source_sha256": "797cb2df42d94e5de67249d9184e49aa1b715d0bbc1ea39933a2a8dcd11fe5f1"
+    },
+    {
+      "text": "美味しいお寿司を食べに行きたいな。",
+      "reading": "<S>オイ^シ!イ|0オ^ス!シオ|0タベニ|0^イキ!タイナ<H>",
+      "source": "private/stages_akane/c025.jsonl",
+      "source_sha256": "e51960b42b74e762e9abcd603ea03a75899689cdd4cc85bd630e22bfb7a1d6e8"
+    },
+    {
+      "text": "窓を開けると涼しい風が入ってきた。",
+      "reading": "<S>マ^ド!オ|0^アケルト$2_2^スズ!シイ|0^カゼガ|0ハイッテ|0^キ!タ<F>",
+      "source": "private/stages_akane/c026.jsonl",
+      "source_sha256": "e4f4ade52e2a918b077f2ed2b2fdfee426bd7827f72c71fcf82200b37b020920"
+    },
+    {
+      "text": "読書は私の趣味の一つです。",
+      "reading": "<S>^ド!クショワ$2_2ワタシノ|0^シュ!ミノ|0ヒ^ト!ツデス<F>",
+      "source": "private/stages_akane/c027.jsonl",
+      "source_sha256": "157cf25424764a795a9669837f9dca234a9dde6387feee2bba364041fe3aeeaa"
+    },
+    {
+      "text": "きれいな花を買ってきてください。",
+      "reading": "<S>^キ!レーナ|0^ハ!ナオ|0^カッテ|0^キテ|0^クダ!サイ<F>",
+      "source": "private/stages_akane/c028.jsonl",
+      "source_sha256": "0e437f6e27397e456230141099d18d15b73644d941db7985ba41d85c1d55afd5"
+    },
+    {
+      "text": "子供たちは公園で元気に遊んでいます。",
+      "reading": "<S>^コドモ!タチワ$2_2^コーエンデ|0^ゲ!ンキニ|0アソンデ|0^イマス<F>",
+      "source": "private/stages_akane/c029.jsonl",
+      "source_sha256": "0aa1b1fefb3a197b83080e9b3be6eecac9569a5d686910e7f4189ab81e184705"
+    },
+    {
+      "text": "この道をまっすぐ行くと駅があります。",
+      "reading": "<S>^コノ|0^ミチオ|0マッ^ス!グ|0^イクト$1_1^エ!キガ|0アリマ^ス<F>",
+      "source": "private/stages_akane/c030.jsonl",
+      "source_sha256": "f09e260f8483959aa653fe53b1ad38846d1a36508c8d9ea87230862101e5168f"
+    },
+    {
+      "text": "彼はいつも忙しそうにしている。",
+      "reading": "<S>^カ!レワ$2_2イ^ツ!モ|0^イソガシソ!ーニ|0^シテイル<F>",
+      "source": "private/stages_akane/c031.jsonl",
+      "source_sha256": "2793cbd088acf479ee57492c7c407f53fd7f76218a525e8fa124316326fac95e"
+    },
+    {
+      "text": "音楽を聞きながら勉強するのが好きです。",
+      "reading": "<S>オ^ン!ガクオ|0^キキナガラ|0^ベンキョー|0^スル!ノガ|0^ス!キデス<F>",
+      "source": "private/stages_akane/c032.jsonl",
+      "source_sha256": "7869b778368c42f3b3732feebdcd0a7eeddb8b1ea3f474d64727a7aee36d98f9"
+    },
+    {
+      "text": "冬は寒いので暖かい服を着てください。",
+      "reading": "<S>^フ!ユワ|0^サ!ムイノデ$2_2^アタタ!カイ|0^フ!クオ|0^キテ|0^クダ!サイ<F>",
+      "source": "private/stages_akane/c033.jsonl",
+      "source_sha256": "000152f179e4f3552722977c2d0e518141f97b1d0f1fe70626a1ab4978139efa"
+    },
+    {
+      "text": "今度の日曜日に映画を見に行きませんか。",
+      "reading": "<S>コ^ン!ドノ|0^ニチヨ!ービニ$2_2^エ!ーガオ|0^ミニ|0^イキマセンカ<F>",
+      "source": "private/stages_akane/c034.jsonl",
+      "source_sha256": "69d00f1663847cc21437bb4253ba4a3dc0bead6067470cbd8012973329b2cf18"
+    },
+    {
+      "text": "彼女は医者になるために一生懸命勉強している。",
+      "reading": "<S>^カ!ノジョワ$2_2^イシャニ|0ナル^タ!メニ$1_1^イッショーケ!ンメー|0^ベンキョー|0^シテイル<F>",
+      "source": "private/stages_akane/c035.jsonl",
+      "source_sha256": "2324da62901080d198a64423c554584748919be27e486bc9b42413eb6bf1e56c"
+    },
+    {
+      "text": "私たちは一緒に昼ご飯を食べた。",
+      "reading": "<S>ワタ^シ!タチワ$2_2イッショニ|0^ヒルゴ!ハンオ|0タ^ベ!タ<F>",
+      "source": "private/stages_akane/c036.jsonl",
+      "source_sha256": "51c5107ab12b9b26a2fbef6d211f37e52872f4e195c831f46abe7c90d5d1152f"
+    },
+    {
+      "text": "富士山は日本で一番高い山です。",
+      "reading": "<S>^フ!ジサンワ$2_2ニ^ホ!ンデ$2_2^イチバン|0^タ!カイ|0^ヤ!マデス<F>",
+      "source": "private/stages_akane/c037.jsonl",
+      "source_sha256": "334c91f8cf693a59c039a3deafcaed7212aea41f3255546b5bfa81c6914e0fad"
+    },
+    {
+      "text": "スマートフォンの電池がなくなりそうだ。",
+      "reading": "<S>^スマート!フォンノ|0デンチガ|0^ナクナリソ!ーダ<F>",
+      "source": "private/stages_akane/c038.jsonl",
+      "source_sha256": "0a8d050d5eaa2593071030380fcd94bef77ce444c3a55b59f9d4a00c364b25d8"
+    },
+    {
+      "text": "もっとゆっくり話してくださいませんか。",
+      "reading": "<S>^モ!ット|0ユッ^ク!リ|0^ハナシテ|0^クダサイマセンカ<F>",
+      "source": "private/stages_akane/c039.jsonl",
+      "source_sha256": "130bed4d716e592a20ef9b00bf21d779282e1c85416963d5207441aaea7bfe4d"
+    },
+    {
+      "text": "学校の帰りに友達と買い物をした。",
+      "reading": "<S>ガッコーノ|0^カエリニ$2_2^トモダチト|0^カイモノオ|0^シ!タ<F>",
+      "source": "private/stages_akane/c040.jsonl",
+      "source_sha256": "0f5acb490c6bbd5fc3115f29fe3df5b2f8fda05c55b1662e3f4bfdfe1eeeb3c4"
+    },
+    {
+      "text": "彼は嘘をついているに違いない。",
+      "reading": "<S>^カ!レワ|0^ウ!ソオ|0ツイテ|0^イルニ|0^チガイ|0ナ^イ<F>",
+      "source": "private/stages_akane/c041.jsonl",
+      "source_sha256": "2c072a099b621f060e81ace0fcbaf77f3238838a2c5039eab7e34dc3744b4901"
+    },
+    {
+      "text": "お茶をもう一杯いかがですか。",
+      "reading": "<S>オチャ^オ$2_2^モー|0イッパ^イ|0イ^カ!ガデスカ<F>",
+      "source": "private/stages_akane/c042.jsonl",
+      "source_sha256": "6dbcbd3b5d6ad865e9a7e049fcc279bed8d893aa8b4b0d9ea5e291fc9fd8d8bf"
+    },
+    {
+      "text": "昔々あるところにおじいさんとおばあさんが住んでいました。",
+      "reading": "<S>ムカシムカ^シ|0アル^ト!コロニ$2_2オ^ジ!ーサント|0オ^バ!ーサンガ|0スンデ|0^イマ!シタ<F>",
+      "source": "private/stages_akane/c043.jsonl",
+      "source_sha256": "1b57d82284b8bb8945ab2eb104c2b14f444799c3f931b80398369fc91231ed2e"
+    },
+    {
+      "text": "大きな声で挨拶をしましょう。",
+      "reading": "<S>^オ!ーキナ|0コ^エ!デ$1_1^ア!イサツオ|0^シマショー<F>",
+      "source": "private/stages_akane/c044.jsonl",
+      "source_sha256": "dfa77ae84477ea774b679f935bce802406cd443dc76d3da5a8200935a9eae702"
+    },
+    {
+      "text": "電話をかけたけれど誰も出なかった。",
+      "reading": "<S>^デンワオ|0カ^ケ!タケレド$1_1ダ^レ!モ|0^デナ!カッタ<F>",
+      "source": "private/stages_akane/c045.jsonl",
+      "source_sha256": "58ec98e11c54e4a5f045819924a8b1a68e9c45f2a426324ac0a82941d0bf316c"
+    },
+    {
+      "text": "この料理は少し辛すぎる。",
+      "reading": "<S>^コノ|0^リョ!ーリワ|0ス^コ!シ|0^カラスギル<F>",
+      "source": "private/stages_akane/c046.jsonl",
+      "source_sha256": "7088dff9adc29bd96d6c5b90833ba45dd5d2d40675bb08bd24e1f8634669a334"
+    },
+    {
+      "text": "彼女の笑顔はとても素敵です。",
+      "reading": "<S>^カ!ノジョノ|0^エ!ガオワ$1_1ト^テ!モ|0ステキデ^ス<F>",
+      "source": "private/stages_akane/c047.jsonl",
+      "source_sha256": "459793766d94270163de9266e86c1cbe3bee2d35fffc7b1b1ce64ca49eeb833b"
+    },
+    {
+      "text": "忘れ物をしないように気をつけてね。",
+      "reading": "<S>^ワスレモノオ|0^シ!ナイヨーニ|0^キオツケテネ<H>",
+      "source": "private/stages_akane/c048.jsonl",
+      "source_sha256": "d1b4f90b28dd64d50437369b37b6753c5b826a0027247e1a71502beac0647e97"
+    },
+    {
+      "text": "いろいろな国の人と話すのは楽しい。",
+      "reading": "<S>イ^ロ!イロナ|0^クニノ|0^ヒ!トト|0^ハナス!ノワ|0^タノ!シイ<F>",
+      "source": "private/stages_akane/c049.jsonl",
+      "source_sha256": "d30ca70c11ca510bfc03169b573fac4077cd78fe096665661203b9d37dd771e6"
+    },
+    {
+      "text": "朝ご飯を食べずに家を出た。",
+      "reading": "<S>^アサゴ!ハンオ|0タベズニ|0^イ!エオ|0^デ!タ<F>",
+      "source": "private/stages_akane/c050.jsonl",
+      "source_sha256": "7f9b99d4e2cb28669551ff77e1e88247f3ddf395d905eca606f974a4c1966652"
+    },
+    {
+      "text": "彼は毎日ジョギングをしている。",
+      "reading": "<S>^カ!レワ$2_2マイ^ニ!チ|0^ジョギングオ|0^シテイル<F>",
+      "source": "private/stages_akane/c051.jsonl",
+      "source_sha256": "62dfc6c964ceaea7bfe765da8d3901cd3ec935ea105d325df63eef56f0d939c7"
+    },
+    {
+      "text": "うん？ええ！はぁ？",
+      "reading": "<S>ウ^ン<R>",
+      "source": "private/stages_akane/c052.jsonl",
+      "source_sha256": "7fa50de29027c0cf10ff227528da53cfca8d05af4cc2b535e4b701bf611faaf0"
+    },
+    {
+      "text": "ありがとうございます。",
+      "reading": "<S>アリガトーゴザイマ^ス<F>",
+      "source": "private/stages_akane/c053.jsonl",
+      "source_sha256": "a6ebe69f5a2f972d3a6d4ac6303616df232fff6c4eabcb775b1e9bce07042378"
+    },
+    {
+      "text": "おはようございます。",
+      "reading": "<S>オハヨ^ー/1ゴザイ^マ!ス<F>",
+      "source": "private/stages_akane/c054.jsonl",
+      "source_sha256": "733252b97e411e6949081b14d47a0fd4cda213b6284fd32ba18a51ed08ffb26c"
+    },
+    {
+      "text": "さようなら、また明日。",
+      "reading": "<S>サヨーナ^ラ$2_2^マタアシタ<F>",
+      "source": "private/stages_akane/c055.jsonl",
+      "source_sha256": "35db8562bbc2f96ac2eb254b61ee389948c83b55fbb21fc44c6df877b3ff1bdc"
+    },
+    {
+      "text": "すみません、ちょっと待ってください。",
+      "reading": "<S>スミマ^セ!ン$2_2^チョ!ット|0マッテ|0^クダ!サイ<F>",
+      "source": "private/stages_akane/c056.jsonl",
+      "source_sha256": "d4d578610f0fa346b9610e784688bfeefab53cc52713181b0290fdeabbccc904"
+    },
+    {
+      "text": "いただきます。",
+      "reading": "<S>^イタダキマス<F>",
+      "source": "private/stages_akane/c057.jsonl",
+      "source_sha256": "f66c216cc004aef0b1073b3daec1933f82a919eeaef85463288d23f63b310fd8"
+    },
+    {
+      "text": "どうぞよろしくお願いします。",
+      "reading": "<S>^ド!ーゾ|0ヨロシクオネガイシ^マ!ス<F>",
+      "source": "private/stages_akane/c058.jsonl",
+      "source_sha256": "8153e29918df301612949614f838d73c8011842822c701fc41c7453a4dad5737"
+    },
+    {
+      "text": "今何時ですか。",
+      "reading": "<S>イ^マ|0^イ!ツデスカ<F>",
+      "source": "private/stages_akane/c059.jsonl",
+      "source_sha256": "ff62e59c3e78cd47a5ae8aba9c29805963800681ef2bc6e941a6acacdee1a65b"
+    },
+    {
+      "text": "これはいくらですか。",
+      "reading": "<S>^コレワ|0イクラデス^カ<F>",
+      "source": "private/stages_akane/c060.jsonl",
+      "source_sha256": "19c75b26a185ce0eaeb4c4c4b2e44652c4bb1a5f6d99998f45120d5fae33171c"
+    },
+    {
+      "text": "トイレはどこにありますか。",
+      "reading": "<S>^ト!イレワ|0^ドコニ|0アリマス^カ<F>",
+      "source": "private/stages_akane/c061.jsonl",
+      "source_sha256": "c6d3f85ba859e44e75a8023840def87178ae5004c73ebb0301d057cc35d74d08"
+    },
+    {
+      "text": "私の名前は田中です。",
+      "reading": "<S>ワタシノ|0^ナマエワ|0^タナカデス<F>",
+      "source": "private/stages_akane/c062.jsonl",
+      "source_sha256": "b1e6d8c81c1a159452a4126d8d4b6f51a7beb6928e57a087752981947e0ab4af"
+    },
+    {
+      "text": "お元気ですか。",
+      "reading": "<S>オ^ゲ!ンキデスカ<F>",
+      "source": "private/stages_akane/c063.jsonl",
+      "source_sha256": "1953ffeb957137646ea9b26f3edd1ef4b8da41e810a033a6d10a99b8fec53171"
+    },
+    {
+      "text": "とても嬉しいです。",
+      "reading": "<S>ト^テ!モ|0^ウレ!シイデス<F>",
+      "source": "private/stages_akane/c064.jsonl",
+      "source_sha256": "bad3b26f4aa81711770f39908a30431a4766c3be7c3b9bd36e7e02e2f1c9808e"
+    },
+    {
+      "text": "それは本当ですか。",
+      "reading": "<S>^ソレワ|0ホントーデス^カ<F>",
+      "source": "private/stages_akane/c065.jsonl",
+      "source_sha256": "01216331f83e6233a05dcbf85563b3c46d8a044439e1bb6e51777d5dc0f51210"
+    },
+    {
+      "text": "一緒に行きましょう。",
+      "reading": "<S>イッショニ|0^イキマショー<F>",
+      "source": "private/stages_akane/c066.jsonl",
+      "source_sha256": "c2c842cde84281af6bcb9a61c9996c60af9dcee2c1f96d8fea52d297ca89823a"
+    },
+    {
+      "text": "頑張ってください。",
+      "reading": "<S>^ガンバッテ|0^クダ!サイ<F>",
+      "source": "private/stages_akane/c067.jsonl",
+      "source_sha256": "fad19c897fad66eeb3e78aa7c570b1d49c22d815755296b0a22a90889f1a5c26"
+    },
+    {
+      "text": "気をつけて帰ってね。",
+      "reading": "<S>^キオツ!ケテ|0^カエッテネ<H>",
+      "source": "private/stages_akane/c068.jsonl",
+      "source_sha256": "76f452b17a4e884d66cf789c6a117ae66685ac9de5643ac24d5017ed97fa264b"
+    },
+    {
+      "text": "彼は大学で経済学を専攻している。",
+      "reading": "<S>^カ!レワ$2_2^ダイガクデ|0^ケーザ!イガクオ|0^センコー|0^シテイル<F>",
+      "source": "private/stages_akane/c069.jsonl",
+      "source_sha256": "a2cb38412831b1abe46754470b73ccc3d90f4744b4cb10868f422f3e9ac5eb9c"
+    },
+    {
+      "text": "研究の成果を学会で発表する予定です。",
+      "reading": "<S>^ケンキューノ|0^セ!ーカオ|0^ガッカイデ|0^ハッピョー|0^スル|0ヨテーデ^ス<F>",
+      "source": "private/stages_akane/c070.jsonl",
+      "source_sha256": "111b0a16b5d579f23cba47372a3212b459b3e858c7f10e6eb6514577b142219f"
+    },
+    {
+      "text": "政府は新しい政策を発表した。",
+      "reading": "<S>^セ!ーフワ$2_2^アタラ!シイ|0^セーサクオ|0^ハッピョー|0^シ!タ<F>",
+      "source": "private/stages_akane/c071.jsonl",
+      "source_sha256": "69620227e7c74fe8bed55cf98780a2166024473a6a30672be7ab5d557056ee29"
+    },
+    {
+      "text": "経済が回復するには時間がかかる。",
+      "reading": "<S>^ケ!ーザイガ|0^カイフク|0^スル!ニワ$1_1^ジ!カンガ|0^カカル<F>",
+      "source": "private/stages_akane/c072.jsonl",
+      "source_sha256": "992b72b175d127881f09a52fbb0554970c7d29ada846aa74930d33afe81910ec"
+    },
+    {
+      "text": "環境問題について真剣に考える必要がある。",
+      "reading": "<S>^カンキョーモ!ンダイニ|0ツイ^テ$1_1シンケンニ|0^カンガエル|0^ヒツヨーガ|0ア^ル<F>",
+      "source": "private/stages_akane/c073.jsonl",
+      "source_sha256": "2617db40d11d2662da15acfe8ff679d5fd226571bf09705b33d6cb5dbd319ea4"
+    },
+    {
+      "text": "技術の進歩により生活が便利になった。",
+      "reading": "<S>^ギ!ジュツノ|0^シ!ンポニヨリ$1_1セーカツガ|0^ベ!ンリニ|0ナッ^タ<F>",
+      "source": "private/stages_akane/c074.jsonl",
+      "source_sha256": "2424b03328cbd89d2dedbe629570698c0338d79994f811553e3fbda1286a36ad"
+    },
+    {
+      "text": "地震の後、多くの人が避難所に集まった。",
+      "reading": "<S>^ジシンノ|0ア^ト$2_2^オ!ークノ|0^ヒ!トガ$1_1^ヒナンジョニ|0^アツマ!ッタ<F>",
+      "source": "private/stages_akane/c075.jsonl",
+      "source_sha256": "b932dd961ebd7a5ef83f88b9802244e5cceb50d3368ac39ce03bcb8f59b10387"
+    },
+    {
+      "text": "会社の業績が悪化している。",
+      "reading": "<S>カイシャノ|0^ギョーセキガ|0アッカ|0^シテイル<F>",
+      "source": "private/stages_akane/c076.jsonl",
+      "source_sha256": "918118136a8783e5ea7dbc94eca7dc2f788e0d202ec9bd9f907a5e3327aad39c"
+    },
+    {
+      "text": "彼女は国際会議で通訳を務めた。",
+      "reading": "<S>^カ!ノジョワ$2_2^コクサイカ!イギデ$1_1^ツ!ーヤクオ|0^ツト!メタ<F>",
+      "source": "private/stages_akane/c077.jsonl",
+      "source_sha256": "4971066ccc601bfec2d9d1dec037c4397f4a4746b8dee8c13cdbc2cb0f1661de"
+    },
+    {
+      "text": "医療制度の改革が議論されている。",
+      "reading": "<S>^イリョーセ!ードノ|0^カイカクガ|0^ギ!ロン|0^サレテ|0^イル<F>",
+      "source": "private/stages_akane/c078.jsonl",
+      "source_sha256": "c1645255c47422421d41cae3ee05eaee8f9b956bd0796e1e8623719f086d3889"
+    }
+  ]
+}

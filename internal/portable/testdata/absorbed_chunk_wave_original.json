@@ -1,0 +1,57 @@
+{
+  "source": "independent hook-free ordinary original SDK versus Go full synthesis; saved original and Go WAV files and reports rehashed; read-only formatter capture provenance retained separately",
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "original_threads": 6,
+  "avx512_convolutions": false,
+  "report_sha256": [
+    "64001ecff4755b437fb078b9b21ebfc761044ea7be066e2979534272cc730700",
+    "618bd8b8b724ea33916266e7979f6430827e1aafc4256f90bf94bde2b9ae3c2a"
+  ],
+  "capture_sha256": [
+    "a0912b24daae5809c97369c1f7b03d2cd1169a7780f1ad9c0059ab3b8dcb6031",
+    "9c2d69f8dea5bfdc2620d8d4c61b61d83bcf8dbd63a6c761f7c7ee3e9cdfc814"
+  ],
+  "cases": [
+    {
+      "text": "読む行くに一人はがと3.5ABC読む開ける今日。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 478724,
+      "sha256": "e1d9a41557e0ddc3d67790719bc9788962d85e59b60f43554a21380ebf1c18d8"
+    },
+    {
+      "text": "行くに一人はがと3.5ABC読む開ける今日。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 449008,
+      "sha256": "c340288756bc3009433fa897a4284c480d0f90060b17c40c52765adf36ae847f"
+    },
+    {
+      "text": "読む行くに一人はがと35ABC読む開ける今日。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 478344,
+      "sha256": "11167f990f84bbd35f7697f89e390921089b29b45df0eff37cb624ce051cc5e4"
+    },
+    {
+      "text": "読む行くに一人はがと3.5ABC読む開ける今日。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 559384,
+      "sha256": "60039a990bc68e80bdb59cb17f76a321edcd61adbb36f465b81840bb2975ab2c"
+    },
+    {
+      "text": "行くに一人はがと3.5ABC読む開ける今日。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 528732,
+      "sha256": "71c038e7e2a9e4cead89fec2cea0ba7bba2a23bec1912abb113816cc69932bf2"
+    },
+    {
+      "text": "読む行くに一人はがと35ABC読む開ける今日。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 557370,
+      "sha256": "2f5d7ae09d638b0fbb92ba4ccdb2b167969e755962321a6f2c8fdb8e895527b7"
+    }
+  ],
+  "capture_report_sha256": [
+    "0f5690afd48054e88e407209fddb2c88fb018f5d3e30ff74ce491afde72ad925",
+    "51f22d5759b7d9c6848549dd961362d47144ed578e9502547f40a4357b6963aa"
+  ]
+}

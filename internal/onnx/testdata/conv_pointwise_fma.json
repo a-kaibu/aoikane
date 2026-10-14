@@ -1,0 +1,280 @@
+{
+  "dll_sha256": "00ca5c937940a94d052dbe52ec5fb0909db11ffbfccfd6e65e19b468169ff5e5",
+  "model_sha256": "0341bdce841395eec505afab8d804038b681fe682cd1bb43894e63797bd4a142",
+  "trace_sha256": "9e1326451b7e4ff38ca38950401e002ad64c102ee309d3014345d3c45d0155b9",
+  "ordinary_wav_sha256": "6be20e8718dc8a1329426baa824b9dabef10315dddc2099a3ad11ffac6032d7d",
+  "cpu": "Intel64 Family 6 Model 207 Stepping 2, GenuineIntel",
+  "original_threads": 1,
+  "run": 14,
+  "source": "private/cpu-numeric-ci-37927408109/cpu-original-replica-3/trace",
+  "storage": "little endian float32 input, output-major weight, bias, output per case",
+  "reference_sha256": "f3f1476debbfed31ee987eef5fa6b77104d430f54da5c8e7bcede35c82002e84",
+  "output_sha256": "90fbb217b8b70671eb4a84344be8b1204070016dbbf2ad06dd4d0d7a3cabba09",
+  "values": 231104,
+  "cases": [
+    {
+      "operation": 4,
+      "length": 11,
+      "in": 8,
+      "out": 64
+    },
+    {
+      "operation": 5,
+      "length": 11,
+      "in": 64,
+      "out": 64
+    },
+    {
+      "operation": 6,
+      "length": 11,
+      "in": 64,
+      "out": 64
+    },
+    {
+      "operation": 8,
+      "length": 11,
+      "in": 256,
+      "out": 64
+    },
+    {
+      "operation": 10,
+      "length": 11,
+      "in": 128,
+      "out": 64
+    },
+    {
+      "operation": 12,
+      "length": 11,
+      "in": 128,
+      "out": 64
+    },
+    {
+      "operation": 14,
+      "length": 11,
+      "in": 64,
+      "out": 256
+    },
+    {
+      "operation": 16,
+      "length": 11,
+      "in": 8,
+      "out": 64
+    },
+    {
+      "operation": 17,
+      "length": 11,
+      "in": 64,
+      "out": 64
+    },
+    {
+      "operation": 18,
+      "length": 11,
+      "in": 64,
+      "out": 64
+    },
+    {
+      "operation": 22,
+      "length": 11,
+      "in": 256,
+      "out": 64
+    },
+    {
+      "operation": 23,
+      "length": 11,
+      "in": 256,
+      "out": 64
+    },
+    {
+      "operation": 25,
+      "length": 11,
+      "in": 128,
+      "out": 64
+    },
+    {
+      "operation": 27,
+      "length": 11,
+      "in": 128,
+      "out": 64
+    },
+    {
+      "operation": 29,
+      "length": 11,
+      "in": 128,
+      "out": 64
+    },
+    {
+      "operation": 31,
+      "length": 11,
+      "in": 128,
+      "out": 64
+    },
+    {
+      "operation": 33,
+      "length": 199,
+      "in": 16,
+      "out": 64
+    },
+    {
+      "operation": 35,
+      "length": 199,
+      "in": 16,
+      "out": 64
+    },
+    {
+      "operation": 37,
+      "length": 199,
+      "in": 16,
+      "out": 64
+    },
+    {
+      "operation": 40,
+      "length": 11,
+      "in": 64,
+      "out": 256
+    },
+    {
+      "operation": 44,
+      "length": 11,
+      "in": 256,
+      "out": 64
+    },
+    {
+      "operation": 45,
+      "length": 11,
+      "in": 8,
+      "out": 64
+    },
+    {
+      "operation": 46,
+      "length": 11,
+      "in": 256,
+      "out": 64
+    },
+    {
+      "operation": 47,
+      "length": 11,
+      "in": 256,
+      "out": 64
+    },
+    {
+      "operation": 49,
+      "length": 11,
+      "in": 128,
+      "out": 64
+    },
+    {
+      "operation": 51,
+      "length": 11,
+      "in": 128,
+      "out": 64
+    },
+    {
+      "operation": 53,
+      "length": 11,
+      "in": 128,
+      "out": 64
+    },
+    {
+      "operation": 55,
+      "length": 11,
+      "in": 128,
+      "out": 64
+    },
+    {
+      "operation": 57,
+      "length": 11,
+      "in": 64,
+      "out": 256
+    },
+    {
+      "operation": 59,
+      "length": 199,
+      "in": 16,
+      "out": 64
+    },
+    {
+      "operation": 61,
+      "length": 199,
+      "in": 16,
+      "out": 64
+    },
+    {
+      "operation": 63,
+      "length": 199,
+      "in": 16,
+      "out": 64
+    },
+    {
+      "operation": 65,
+      "length": 11,
+      "in": 256,
+      "out": 256
+    },
+    {
+      "operation": 66,
+      "length": 11,
+      "in": 8,
+      "out": 256
+    },
+    {
+      "operation": 67,
+      "length": 11,
+      "in": 256,
+      "out": 256
+    },
+    {
+      "operation": 68,
+      "length": 11,
+      "in": 256,
+      "out": 256
+    },
+    {
+      "operation": 69,
+      "length": 11,
+      "in": 256,
+      "out": 256
+    },
+    {
+      "operation": 91,
+      "length": 199,
+      "in": 256,
+      "out": 256
+    },
+    {
+      "operation": 92,
+      "length": 11,
+      "in": 256,
+      "out": 256
+    },
+    {
+      "operation": 93,
+      "length": 11,
+      "in": 8,
+      "out": 256
+    },
+    {
+      "operation": 94,
+      "length": 11,
+      "in": 256,
+      "out": 256
+    },
+    {
+      "operation": 95,
+      "length": 11,
+      "in": 256,
+      "out": 256
+    },
+    {
+      "operation": 96,
+      "length": 11,
+      "in": 256,
+      "out": 256
+    },
+    {
+      "operation": 99,
+      "length": 199,
+      "in": 256,
+      "out": 256
+    }
+  ]
+}

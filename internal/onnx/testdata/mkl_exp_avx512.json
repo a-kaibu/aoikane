@@ -1,0 +1,194 @@
+{
+  "dll_sha256": "00ca5c937940a94d052dbe52ec5fb0909db11ffbfccfd6e65e19b468169ff5e5",
+  "entry_rva": "0x31640",
+  "mode": 1310978,
+  "reconstructed_worker_rva": "0x4234a0",
+  "worker_dispatch_observed": false,
+  "values": 21810,
+  "output_sha256": "487935e2fe81b176d7ec628f6073f74fbc88efe6f3c50e7c28aeb18b03baf13c",
+  "reference_sha256": "3f42086590cd96d09f04a33f4c2f1e08a595aec9c13520e0811f66ae267fecbb",
+  "reference_source": "private/cpu-numeric-ci-37927408109/cpu-original-replica-3/kernels/mkl_exp.json",
+  "independent_capture_count": 4,
+  "cases": [
+    {
+      "values": 1,
+      "input_alignment": 0
+    },
+    {
+      "values": 1,
+      "input_alignment": 4
+    },
+    {
+      "values": 1,
+      "input_alignment": 8
+    },
+    {
+      "values": 1,
+      "input_alignment": 12
+    },
+    {
+      "values": 2,
+      "input_alignment": 0
+    },
+    {
+      "values": 2,
+      "input_alignment": 4
+    },
+    {
+      "values": 2,
+      "input_alignment": 8
+    },
+    {
+      "values": 2,
+      "input_alignment": 12
+    },
+    {
+      "values": 3,
+      "input_alignment": 0
+    },
+    {
+      "values": 3,
+      "input_alignment": 4
+    },
+    {
+      "values": 3,
+      "input_alignment": 8
+    },
+    {
+      "values": 3,
+      "input_alignment": 12
+    },
+    {
+      "values": 4,
+      "input_alignment": 0
+    },
+    {
+      "values": 4,
+      "input_alignment": 4
+    },
+    {
+      "values": 4,
+      "input_alignment": 8
+    },
+    {
+      "values": 4,
+      "input_alignment": 12
+    },
+    {
+      "values": 5,
+      "input_alignment": 0
+    },
+    {
+      "values": 5,
+      "input_alignment": 4
+    },
+    {
+      "values": 5,
+      "input_alignment": 8
+    },
+    {
+      "values": 5,
+      "input_alignment": 12
+    },
+    {
+      "values": 7,
+      "input_alignment": 0
+    },
+    {
+      "values": 7,
+      "input_alignment": 4
+    },
+    {
+      "values": 7,
+      "input_alignment": 8
+    },
+    {
+      "values": 7,
+      "input_alignment": 12
+    },
+    {
+      "values": 8,
+      "input_alignment": 0
+    },
+    {
+      "values": 8,
+      "input_alignment": 4
+    },
+    {
+      "values": 8,
+      "input_alignment": 8
+    },
+    {
+      "values": 8,
+      "input_alignment": 12
+    },
+    {
+      "values": 9,
+      "input_alignment": 0
+    },
+    {
+      "values": 9,
+      "input_alignment": 4
+    },
+    {
+      "values": 9,
+      "input_alignment": 8
+    },
+    {
+      "values": 9,
+      "input_alignment": 12
+    },
+    {
+      "values": 17,
+      "input_alignment": 0
+    },
+    {
+      "values": 17,
+      "input_alignment": 4
+    },
+    {
+      "values": 17,
+      "input_alignment": 8
+    },
+    {
+      "values": 17,
+      "input_alignment": 12
+    },
+    {
+      "values": 257,
+      "input_alignment": 0
+    },
+    {
+      "values": 257,
+      "input_alignment": 4
+    },
+    {
+      "values": 257,
+      "input_alignment": 8
+    },
+    {
+      "values": 257,
+      "input_alignment": 12
+    },
+    {
+      "values": 4096,
+      "input_alignment": 0
+    },
+    {
+      "values": 4096,
+      "input_alignment": 4
+    },
+    {
+      "values": 4096,
+      "input_alignment": 8
+    },
+    {
+      "values": 4096,
+      "input_alignment": 12
+    },
+    {
+      "values": 4174,
+      "input_alignment": 0
+    }
+  ]
+}

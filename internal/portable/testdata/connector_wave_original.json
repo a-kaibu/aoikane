@@ -1,0 +1,49 @@
+{
+  "source": "independent ordinary SDK Synthesize without instrumentation or injected inputs",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "cases": [
+    {
+      "text": "葉音3ー一。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 208912,
+      "sha256": "2395b0b75741d75fd41e9b9eb98373927b9b22d1343ea0115a173d5b77f124e3"
+    },
+    {
+      "text": "ЖＡ−\t0（あΩ。。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 254084,
+      "sha256": "50e50cb4cada86bceb9c1f965fd40e4a489d0c9792883f4bd436cbfb48ed22d5"
+    },
+    {
+      "text": "3ー一人。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 186754,
+      "sha256": "c43807c757ee3fcd59399f0803dceb0e60e7cc148db64ee6339f2dd2d0175ea9"
+    },
+    {
+      "text": "葉音3ー一。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 209234,
+      "sha256": "22ef26ecc291fd3bca6baf7ac11cf8252c3eff9720fc3ada44908db4f3052bfa"
+    },
+    {
+      "text": "ЖＡ−\t0（あΩ。。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 252482,
+      "sha256": "eadf47dd68c061339963680d74ba7ab344ba5942239f15afb5c86b448de6d511"
+    },
+    {
+      "text": "3ー一人。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 186754,
+      "sha256": "c43807c757ee3fcd59399f0803dceb0e60e7cc148db64ee6339f2dd2d0175ea9"
+    }
+  ],
+  "report_sha256": [
+    "564e778fe08f82d70f6f36dc1104758b4980ea1917e62cd7b8e96b65b38fd502",
+    "083d95f508998739515830027081da4523d04dcf4a206014ae44f171b4f07678"
+  ],
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "original_threads": 6,
+  "avx512_convolutions": false
+}

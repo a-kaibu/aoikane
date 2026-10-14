@@ -1,0 +1,53 @@
+{
+  "source": "Finished ordinary SDK/Go WAV tests; saved files independently compared with native capture WAVs",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "original_threads": 6,
+  "avx512_convolutions": false,
+  "report_sha256": [
+    "ae2b79537a1447da4a168d5cfd291e30174062e6cd8057d29ac823923eb3ceee",
+    "a1e5d1fd8e9045405191298f61036ffe2b2ba6ac907d23b2ef0dcc92edebcc10"
+  ],
+  "capture_sha256": [
+    "cd095ba264d2a3e38b02ffba29cb1cb75a30a0f17a69f598a232254078d4a919",
+    "eb7d7cf6c0007eddc66fcc747a134cdfcb967c2ec70a1b8af39b477b818fb91f"
+  ],
+  "cases": [
+    {
+      "text": "一-012本。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 235764,
+      "sha256": "61b544077682d99ab518fbb1b664ea14bfb37ebf5763ab0925c6c3cac0eee802"
+    },
+    {
+      "text": "012-一。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 226694,
+      "sha256": "5a2ddd84c8c0f7969ac73a5e40ef37e596f7ddad0f9cbd6fe9d9731284022dcb"
+    },
+    {
+      "text": "二８Ａ8は１零百－0１2－本。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 405546,
+      "sha256": "4e66358c5f97bd6fa1e1e9dad6108d6d79fd004ec47f957d6946d2250732fac7"
+    },
+    {
+      "text": "一-012本。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 235764,
+      "sha256": "61b544077682d99ab518fbb1b664ea14bfb37ebf5763ab0925c6c3cac0eee802"
+    },
+    {
+      "text": "012-一。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 226694,
+      "sha256": "5a2ddd84c8c0f7969ac73a5e40ef37e596f7ddad0f9cbd6fe9d9731284022dcb"
+    },
+    {
+      "text": "二８Ａ8は１零百－0１2－本。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 406564,
+      "sha256": "4f6e489a1077f319441451b121c49c0fb2593a1b1f620b39d0c8e499d948dc74"
+    }
+  ]
+}

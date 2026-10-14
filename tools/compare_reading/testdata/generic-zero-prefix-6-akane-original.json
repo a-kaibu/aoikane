@@ -1,0 +1,93 @@
+{
+  "source": "ordinary original SDK talk; formatter observed without tensor injection; frontend-only capture",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "voice": "KotonohaAkane_ns_48",
+  "corpus_sha256": "76431774b980574ae9806f15d1bef7c04e21b9b5c401aac5b8de651854465093",
+  "cases": [
+    {
+      "index": 0,
+      "text": "02-一。",
+      "status": 0,
+      "readings": [
+        "<S>ゼ^ロニ!ー$1_1イ^チ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e835b5e838d836a21815b24315f3183435e83603c463e"
+      ],
+      "wav_bytes": 194162,
+      "wav_sha256": "d9bda2fb2e2910a4df8e2f8572aa603bb7a8eceb2145507b2ae6129160a171e6"
+    },
+    {
+      "index": 1,
+      "text": "05-一。",
+      "status": 0,
+      "readings": [
+        "<S>ゼ^ロゴ!ー$1_1イ^チ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e835b5e838d835321815b24315f3183435e83603c463e"
+      ],
+      "wav_bytes": 196808,
+      "wav_sha256": "a09f1dc0e53c528c01b375021d4bb602999a1451933f5e487c0979c18551c646"
+    },
+    {
+      "index": 2,
+      "text": "0012-一。",
+      "status": 0,
+      "readings": [
+        "<S>ゼ^ロゼ!ロ|0イ^チニ!ー$1_1イ^チ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e835b5e838d835b21838d7c3083435e8360836a21815b24315f3183435e83603c463e"
+      ],
+      "wav_bytes": 247072,
+      "wav_sha256": "629ddd1bfb3df5df9a6381b53fa8d24013fe684bbb84ef5150e5114ae3c23ff4"
+    },
+    {
+      "index": 3,
+      "text": "０１２-一。",
+      "status": 0,
+      "readings": [
+        "<S>ゼ^ロイ!チ|0^ニ!ー$1_1イ^チ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e835b5e838d83432183607c305e836a21815b24315f3183435e83603c463e"
+      ],
+      "wav_bytes": 226694,
+      "wav_sha256": "5a2ddd84c8c0f7969ac73a5e40ef37e596f7ddad0f9cbd6fe9d9731284022dcb"
+    },
+    {
+      "index": 4,
+      "text": "〇一二-1。",
+      "status": 0,
+      "readings": [
+        "<S>ゼ^ロイ!チ|0^ニ!ー$1_1イ^チ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e835b5e838d83432183607c305e836a21815b24315f3183435e83603c463e"
+      ],
+      "wav_bytes": 226694,
+      "wav_sha256": "5a2ddd84c8c0f7969ac73a5e40ef37e596f7ddad0f9cbd6fe9d9731284022dcb"
+    },
+    {
+      "index": 5,
+      "text": "〇一五-1。",
+      "status": 0,
+      "readings": [
+        "<S>ゼ^ロイ!チ|0^ゴ!ー$1_1イ^チ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e835b5e838d83432183607c305e835321815b24315f3183435e83603c463e"
+      ],
+      "wav_bytes": 224684,
+      "wav_sha256": "5b0913412aca857e6073ca07305cc8d9047be12dea77b3f285bf7718c9356ae4"
+    }
+  ],
+  "complete": true,
+  "errors": [],
+  "executable_sha256": "de3be1e7979db53006add27f30131eb4c308c28ba78d6b7bb6365aecb01b3f2d",
+  "detach_reason": "process-terminated",
+  "crash": null,
+  "timed_out": false,
+  "native_report_sha256": "34541b9196f579c7217985558c0ffbccd49b2560fc22c33f23e9563c0768b834"
+}

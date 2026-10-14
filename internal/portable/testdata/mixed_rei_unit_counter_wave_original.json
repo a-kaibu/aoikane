@@ -1,0 +1,69 @@
+{
+  "source": "independent hook-free ordinary original SDK versus Go full synthesis; saved original and Go WAV files and reports rehashed; read-only formatter capture provenance retained separately",
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "original_threads": 6,
+  "avx512_convolutions": false,
+  "report_sha256": [
+    "186aa2e344399704932b4ae9694d0ef1f321c67724d1d834850a6f77785c662f",
+    "b13cb8931bb5720378c0258b76fbe7963bc737f9fb6adfa1a1252ae4deec77bb"
+  ],
+  "capture_sha256": [
+    "e1270f62b79872aa6e549ed0f5e595e00e22a708656a9c1a3c9d0a58ac6de68b",
+    "0e63f796e164937bc1e0048619bab3d421027d031145c046c3b17abf185f2fa9"
+  ],
+  "cases": [
+    {
+      "text": "一零０３人。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 220454,
+      "sha256": "795053ef1b5f04d75c8f0dfd6882b83c0797fa4cc4a687532829ba3cb45a53fa"
+    },
+    {
+      "text": "一零０３本。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 221762,
+      "sha256": "154bf9b1ae2021a678b7fca8cfa2d30d2a7796e028fd8dd5848ef477ff5acf8a"
+    },
+    {
+      "text": "一零十67人。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 274176,
+      "sha256": "b54586f326255ad4fcd7c079b01f8d4bcb3e52c73b33f7f120346493ff900a59"
+    },
+    {
+      "text": "一零67十本。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 276924,
+      "sha256": "7096f521d19c7d1745c0911608720bd38f3adc88a8cbff0c21141ce9814f7918"
+    },
+    {
+      "text": "一零０３人。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 220454,
+      "sha256": "795053ef1b5f04d75c8f0dfd6882b83c0797fa4cc4a687532829ba3cb45a53fa"
+    },
+    {
+      "text": "一零０３本。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 221762,
+      "sha256": "154bf9b1ae2021a678b7fca8cfa2d30d2a7796e028fd8dd5848ef477ff5acf8a"
+    },
+    {
+      "text": "一零十67人。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 274176,
+      "sha256": "b54586f326255ad4fcd7c079b01f8d4bcb3e52c73b33f7f120346493ff900a59"
+    },
+    {
+      "text": "一零67十本。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 276924,
+      "sha256": "7096f521d19c7d1745c0911608720bd38f3adc88a8cbff0c21141ce9814f7918"
+    }
+  ],
+  "capture_report_sha256": [
+    "88ecd6aba1115f15985a9205ce8b2308b4c93e678fc4d163410d2d876cbd275f",
+    "54265049a4d79c37433c9ec688905102a6afa650ff4b6cd035df68b8692235b1"
+  ]
+}

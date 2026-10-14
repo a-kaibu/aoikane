@@ -1,0 +1,48 @@
+{
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "report_sha256": [
+    "aa4b80463f70e63b86428255379a2a9ad58c81af55e70ab5a483aabf7c276332",
+    "8ab2e99842ca9dfd2b581b527a6d9dca9cd62faa18fa674907d3bb62fe004af8"
+  ],
+  "original_threads": 6,
+  "avx512_convolutions": false,
+  "cases": [
+    {
+      "text": "漢（「－）～\n😀Ж「アあ。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 356204,
+      "sha256": "6d314a15d70fdf3c25206260b776dea091df4661b55573067254fafd39d75b38"
+    },
+    {
+      "text": "漢（－）。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 184844,
+      "sha256": "01f60462bbea074ec8ac608e45e9475b75b7c8e55606890027b199daf9057eb9"
+    },
+    {
+      "text": "漢「－」。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 184844,
+      "sha256": "01f60462bbea074ec8ac608e45e9475b75b7c8e55606890027b199daf9057eb9"
+    },
+    {
+      "text": "漢（「－）～\n😀Ж「アあ。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 401804,
+      "sha256": "4cac377a55f809d2bc773d76c859c9568ae38e5871621fcbca76dd5444b9257d"
+    },
+    {
+      "text": "漢（－）。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 185324,
+      "sha256": "5c99f957619505c379c4d8f3f28178b2cd997bcbd8c42d769686b7ed62d915f1"
+    },
+    {
+      "text": "漢「－」。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 185324,
+      "sha256": "5c99f957619505c379c4d8f3f28178b2cd997bcbd8c42d769686b7ed62d915f1"
+    }
+  ]
+}

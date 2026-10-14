@@ -1,0 +1,431 @@
+{
+  "source": "ordinary original SDK talk; formatter observed without tensor injection; frontend-only capture",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "voice": "KotonohaAoi_ns_48",
+  "corpus_sha256": "142df004e0fbd07022e48d70c954de24788ce26a6ed00dcb57ee0b81354e7415",
+  "cases": [
+    {
+      "index": 0,
+      "text": "万個年。",
+      "status": 0,
+      "readings": [
+        "<S>マ^ンカネン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e837d5e8393834a836c83933c463e"
+      ],
+      "wav_bytes": 154172,
+      "wav_sha256": "bcd740d2aed2061ac4bd17ab99e6d8033c59ce4a97352dab26e5d97ae4c0037d"
+    },
+    {
+      "index": 1,
+      "text": "億個年。",
+      "status": 0,
+      "readings": [
+        "<S>オ^クカネン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83495e834e834a836c83933c463e"
+      ],
+      "wav_bytes": 154058,
+      "wav_sha256": "ece4f761f36b22473852059ddcf3308c908c6eb7509919a8da9fe832680d8389"
+    },
+    {
+      "index": 2,
+      "text": "兆個年。",
+      "status": 0,
+      "readings": [
+        "<S>チョ^ーカネン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e836083875e815b834a836c83933c463e"
+      ],
+      "wav_bytes": 154056,
+      "wav_sha256": "a2ad2af2a9b5e444c163c17942a06457cf1e70447428c394ad443729d5668524"
+    },
+    {
+      "index": 3,
+      "text": "京個年。",
+      "status": 0,
+      "readings": [
+        "<S>ケ^イカネン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83505e8343834a836c83933c463e"
+      ],
+      "wav_bytes": 152738,
+      "wav_sha256": "5c5816643a4a1d63babc2743782ac2bd9f75391d85f33af682dc934c3e22ff49"
+    },
+    {
+      "index": 4,
+      "text": "垓個年。",
+      "status": 0,
+      "readings": [
+        "<S>ガ^イカネン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e834b5e8343834a836c83933c463e"
+      ],
+      "wav_bytes": 151720,
+      "wav_sha256": "33439e6c96b373c2965edddf8f405faf8963d0f3415873ca3265e6f23a460025"
+    },
+    {
+      "index": 5,
+      "text": "1万個年。",
+      "status": 0,
+      "readings": [
+        "<S>イ^チマンカネン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83435e8360837d8393834a836c83933c463e"
+      ],
+      "wav_bytes": 179036,
+      "wav_sha256": "9a2b35eaf478452cda749403ae7d721c7b4d58a2598b3edfdf948edda6ff0e99"
+    },
+    {
+      "index": 6,
+      "text": "1億個年。",
+      "status": 0,
+      "readings": [
+        "<S>イ^チオクカネン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83435e83608349834e834a836c83933c463e"
+      ],
+      "wav_bytes": 179418,
+      "wav_sha256": "dc7434fd58545501c1c497b9d7a9f9921aff994d3cf5cb9e3bf211ebb91b9d09"
+    },
+    {
+      "index": 7,
+      "text": "1兆個年。",
+      "status": 0,
+      "readings": [
+        "<S>イ^ッチョーカネン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83435e836283608387815b834a836c83933c463e"
+      ],
+      "wav_bytes": 177184,
+      "wav_sha256": "f977321b159d2f2337eefa2c6693d218497a16edd257da809a9d3fb147fee51f"
+    },
+    {
+      "index": 8,
+      "text": "1京個年。",
+      "status": 0,
+      "readings": [
+        "<S>イ^ッケイカネン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83435e836283508343834a836c83933c463e"
+      ],
+      "wav_bytes": 173042,
+      "wav_sha256": "2110682e695814749585b2a25273412a77791eea3793f7dde0d6432533857eb7"
+    },
+    {
+      "index": 9,
+      "text": "1垓個年。",
+      "status": 0,
+      "readings": [
+        "<S>イ^チガイカネン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83435e8360834b8343834a836c83933c463e"
+      ],
+      "wav_bytes": 178918,
+      "wav_sha256": "8e2ec3b4d2b394dddfa1ad7d5e0f2094c56a41517e0774ae3f4809091f8a5424"
+    },
+    {
+      "index": 10,
+      "text": "2万個年。",
+      "status": 0,
+      "readings": [
+        "<S>ニ^マンカネン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e836a5e837d8393834a836c83933c463e"
+      ],
+      "wav_bytes": 166898,
+      "wav_sha256": "c785efad2d051a4c98b1bb005fd77bd714eef9d53548081db287e1ce7d4438ab"
+    },
+    {
+      "index": 11,
+      "text": "2億個年。",
+      "status": 0,
+      "readings": [
+        "<S>ニ^オクカネン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e836a5e8349834e834a836c83933c463e"
+      ],
+      "wav_bytes": 165644,
+      "wav_sha256": "2a186fe963772190ed96ff4b0016700a5cf354ef631071436b3001755d430bd1"
+    },
+    {
+      "index": 12,
+      "text": "2兆個年。",
+      "status": 0,
+      "readings": [
+        "<S>ニ^チョーカネン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e836a5e83608387815b834a836c83933c463e"
+      ],
+      "wav_bytes": 169004,
+      "wav_sha256": "619339fa42b8900f804ca148f53b9fc1a420a9dabd7d970d45191459c7c49987"
+    },
+    {
+      "index": 13,
+      "text": "2京個年。",
+      "status": 0,
+      "readings": [
+        "<S>ニ^ケイカネン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e836a5e83508343834a836c83933c463e"
+      ],
+      "wav_bytes": 168524,
+      "wav_sha256": "2bbbadbe7ab6b022949a84f9072caf32712550e703bfe7d08cc9e7b927371263"
+    },
+    {
+      "index": 14,
+      "text": "2垓個年。",
+      "status": 0,
+      "readings": [
+        "<S>ニ^ガイカネン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e836a5e834b8343834a836c83933c463e"
+      ],
+      "wav_bytes": 166888,
+      "wav_sha256": "5be2d9bdd0f77863c41ac1bc910de5b911207671d98e82fbbd70adabfed9a6fe"
+    },
+    {
+      "index": 15,
+      "text": "3京個年。",
+      "status": 0,
+      "readings": [
+        "<S>サ^ンケイカネン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83545e839383508343834a836c83933c463e"
+      ],
+      "wav_bytes": 182824,
+      "wav_sha256": "1a60ab616487eacea603af1cbdecf0c41db55e9f903f5bf554efdaa4e22ee2d2"
+    },
+    {
+      "index": 16,
+      "text": "5京個年。",
+      "status": 0,
+      "readings": [
+        "<S>ゴ^ケイカネン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83535e83508343834a836c83933c463e"
+      ],
+      "wav_bytes": 169004,
+      "wav_sha256": "2364281a5f510b54465f369e88750e97a50b7e61b68284e4dcc8dab4c119fd6a"
+    },
+    {
+      "index": 17,
+      "text": "10京個年。",
+      "status": 0,
+      "readings": [
+        "<S>ジュ^ッケイカネン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e835783855e836283508343834a836c83933c463e"
+      ],
+      "wav_bytes": 178888,
+      "wav_sha256": "4cca04f7f30b78c557188df3031051b068bdbac83efbe614da75fe3c0273682b"
+    },
+    {
+      "index": 18,
+      "text": "21京個年。",
+      "status": 0,
+      "readings": [
+        "<S>^ニ!ジュー|0イ^ッケイカネン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e836a2183578385815b7c3083435e836283508343834a836c83933c463e"
+      ],
+      "wav_bytes": 216158,
+      "wav_sha256": "01fb026a3343e65436c44d17ed46bfac5d40b7c3a71fe4be957d65ed7b75b369"
+    },
+    {
+      "index": 19,
+      "text": "100京個年。",
+      "status": 0,
+      "readings": [
+        "<S>ヒャ^クケイカネン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e837183835e834e83508343834a836c83933c463e"
+      ],
+      "wav_bytes": 184992,
+      "wav_sha256": "22aa9c7b62dda7678a93400b31572e11bca24b08c1ce1a90071287c0e67260ba"
+    },
+    {
+      "index": 20,
+      "text": "千個年。",
+      "status": 0,
+      "readings": [
+        "<S>セ^ンカ!ネン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e835a5e8393834a21836c83933c463e"
+      ],
+      "wav_bytes": 156334,
+      "wav_sha256": "f85397092c612ff83fcd92e8c538cef0b9f350f3d7d160367f607c3205e29b35"
+    },
+    {
+      "index": 21,
+      "text": "1千個年。",
+      "status": 0,
+      "readings": [
+        "<S>イ^ッセンカネン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83435e8362835a8393834a836c83933c463e"
+      ],
+      "wav_bytes": 174626,
+      "wav_sha256": "72d74640a080c240a82e49e680973efb69b1a3229de2d6ed1d0b5a8e53a64af5"
+    },
+    {
+      "index": 22,
+      "text": "2千個年。",
+      "status": 0,
+      "readings": [
+        "<S>ニ^センカネン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e836a5e835a8393834a836c83933c463e"
+      ],
+      "wav_bytes": 170126,
+      "wav_sha256": "a03affb10950a3ac3b3fe735300b4e3b7f287a7ac1641c8e0c5c8eb525bdb7ef"
+    },
+    {
+      "index": 23,
+      "text": "十個年。",
+      "status": 0,
+      "readings": [
+        "<S>ジュ^ッカ!ネン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e835783855e8362834a21836c83933c463e"
+      ],
+      "wav_bytes": 151120,
+      "wav_sha256": "db5bea8b1b259d26906136ef2cd9f4b10e71a539c43db32a89207002e6df6059"
+    },
+    {
+      "index": 24,
+      "text": "百個年。",
+      "status": 0,
+      "readings": [
+        "<S>ヒャ^ッカ!ネン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e837183835e8362834a21836c83933c463e"
+      ],
+      "wav_bytes": 154562,
+      "wav_sha256": "e98a01e352b1e4a362cbc8cb30e376f971ca90fee6aa44c86d30b3f227d1066c"
+    },
+    {
+      "index": 25,
+      "text": "1個年。",
+      "status": 0,
+      "readings": [
+        "<S>イ^ッカ!ネン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83435e8362834a21836c83933c463e"
+      ],
+      "wav_bytes": 147860,
+      "wav_sha256": "6e4c76b2c26d1e120470a8d969bd234384c116404f7199181e1ac529fcd7dc6a"
+    },
+    {
+      "index": 26,
+      "text": "2個年。",
+      "status": 0,
+      "readings": [
+        "<S>ニ^カ!ネン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e836a5e834a21836c83933c463e"
+      ],
+      "wav_bytes": 143214,
+      "wav_sha256": "d2534fb5a07b2aff34e343d9f1552ab6262742d26d2c0006a426c43cca74854f"
+    },
+    {
+      "index": 27,
+      "text": "3個年。",
+      "status": 0,
+      "readings": [
+        "<S>サ^ンカ!ネン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83545e8393834a21836c83933c463e"
+      ],
+      "wav_bytes": 156618,
+      "wav_sha256": "49b75cb08022e72baef8223957a1166df575beb7f131db06d6c8879dae976243"
+    },
+    {
+      "index": 28,
+      "text": "10個年。",
+      "status": 0,
+      "readings": [
+        "<S>ジュ^ッカ!ネン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e835783855e8362834a21836c83933c463e"
+      ],
+      "wav_bytes": 151120,
+      "wav_sha256": "db5bea8b1b259d26906136ef2cd9f4b10e71a539c43db32a89207002e6df6059"
+    },
+    {
+      "index": 29,
+      "text": "京カ年。",
+      "status": 0,
+      "readings": [
+        "<S>ケ^イカネン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83505e8343834a836c83933c463e"
+      ],
+      "wav_bytes": 152738,
+      "wav_sha256": "5c5816643a4a1d63babc2743782ac2bd9f75391d85f33af682dc934c3e22ff49"
+    },
+    {
+      "index": 30,
+      "text": "京か年。",
+      "status": 0,
+      "readings": [
+        "<S>ケ^イカネン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83505e8343834a836c83933c463e"
+      ],
+      "wav_bytes": 152738,
+      "wav_sha256": "5c5816643a4a1d63babc2743782ac2bd9f75391d85f33af682dc934c3e22ff49"
+    },
+    {
+      "index": 31,
+      "text": "京個年－個十二２0AA。",
+      "status": 0,
+      "readings": [
+        "<S>ケ^イカネン|0コ|0ジュ^ーニ|0^ニ!ジュー|0エ^ーエ!ー<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83505e8343834a836c83937c3083527c30835783855e815b836a7c305e836a2183578385815b7c3083475e815b834721815b3c463e"
+      ],
+      "wav_bytes": 315754,
+      "wav_sha256": "353f33ba74cae9970396c4bc89334ead3caca0c19eec9e499a4f4efb98a9ba2d"
+    }
+  ],
+  "complete": true,
+  "errors": [],
+  "executable_sha256": "de3be1e7979db53006add27f30131eb4c308c28ba78d6b7bb6365aecb01b3f2d",
+  "detach_reason": "process-terminated",
+  "crash": null,
+  "timed_out": false,
+  "native_report_sha256": "c4f25c320b2aa1682514b82dd69d39e905739322e8aa88e5c1f7e185edc2c237"
+}

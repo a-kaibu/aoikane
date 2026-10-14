@@ -1,0 +1,252 @@
+{
+  "complete_shard": true,
+  "complete_corpus": false,
+  "seed": 19,
+  "generator_version": 1,
+  "count_per_voice": 128,
+  "max_units": 24,
+  "shard": 0,
+  "shards": 8,
+  "source": "finished ordinary original SDK/Go tests; whole saved WAVs rehashed against reports and prior original captures",
+  "pcm16_samples": 5353322,
+  "report_sha256": [
+    "ca4fbe848dfa935a9328703f2f21d79ce609ffce467822126be3a9eafe7648c9",
+    "50c58e5c61bab9b2c12931a6de5350d537d699eca8d7d1ecc630c23bc681b678"
+  ],
+  "capture_sha256": [
+    "b76ff618c7d211d80550bd8a3b3b2572c720817921c7b59ad3d1415b9ec2013f",
+    "62bf58ce634406920ca9bf98656ebdf0df45af0670170bed3282f04f289b2a43"
+  ],
+  "cases": [
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 0,
+      "text": "なふけふゃょせおてわじぴせるせ。",
+      "bytes": 291898,
+      "sha256": "c5aa0fe7344fda4931c16622bdcb331427a87c22706ff867c8cc09270d543228"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 8,
+      "text": "がをしとぐすまももそかゅひやすぬずてよののぜー。",
+      "bytes": 597426,
+      "sha256": "822e698e13e89bc93fd29922dc24875399cf1ab5ff2e598afa5eddb9390c4c5a"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 16,
+      "text": "ぬょやいちけ。",
+      "bytes": 183004,
+      "sha256": "0b229a5007c08d5ce8c77d8512e2bd390c3c34593e9056c275d6fabdca26d04f"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 24,
+      "text": "よしまじじぜねず。",
+      "bytes": 203940,
+      "sha256": "856f0955cd4ba7a86f2ecf9b2b2591265350a3d9e8303f9b790c56006f6675c6"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 32,
+      "text": "ぷごゃつわるめるげへのろょゅをまあくなのら。",
+      "bytes": 368506,
+      "sha256": "a4dc69701d7b5d45aa1a7b0ec8e354dcbee9ec31678610743ba0cd1e1e94c5f2"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 40,
+      "text": "よがりねぽぷてほさぽぱひぞちぬれがろ。",
+      "bytes": 384916,
+      "sha256": "60c2b0a1fc0bc1e189ee6f14d9bce5dc35bad195c71bc50ed1a708003f83a0d1"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 48,
+      "text": "れすごがゆがやげるぷげきごげーたぽ。",
+      "bytes": 370720,
+      "sha256": "7ff2b7a73ab714a43f8942165633c95a04592f25743d80902b4ca5e6ff44280f"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 56,
+      "text": "こげをとみあえくざすねにてしろぞちへぱざそ。",
+      "bytes": 417158,
+      "sha256": "46ff84b64380e6375628127c0540ed9066f3fcd0594dff9bb968a1cf4edfb2bd"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 64,
+      "text": "ねずきぐいゃふまとぺってかとほずずぺけむをみれず。",
+      "bytes": 489314,
+      "sha256": "68fdf24e29d8f939ff65cd7515099286caf867a993ea780b02ce5c1bb233457d"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 72,
+      "text": "ふやれご。",
+      "bytes": 147744,
+      "sha256": "75fd29f9fcfe02e8a8655560e4e1be85b8b46b3da65ba74ce6268b27d11e3cee"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 80,
+      "text": "れこすねよかよとげわっねぴ。",
+      "bytes": 301180,
+      "sha256": "9ebeae7e5d4c2d13f0403b97eab59733a5e9c6a76393ea7151dbd14f2b9b7486"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 88,
+      "text": "まぺいいまれよゅしぐぱさほほへずそらます。",
+      "bytes": 381730,
+      "sha256": "ef2ea7a6691d2ae75814ef5166807a6a7f62b0a122112eb660beb5ef92482c30"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 96,
+      "text": "やへっえめゃたえじはめくるくしおぽめ。",
+      "bytes": 433196,
+      "sha256": "054c4ac1f751584b3b456c6d2635311333aca605e14e0d53003bf2e51d51b3cb"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 104,
+      "text": "ゆれひゃはなおけほめそれざ。",
+      "bytes": 286128,
+      "sha256": "d77a1711d568209539e2846721bf48cc0870618e93c08f7853159db2d96f8bfb"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 112,
+      "text": "ゆえそぬけひじるにかよ。",
+      "bytes": 241578,
+      "sha256": "285436907c4769ec348a99c3cddf2a346ad58b8db6cd8cc72bad80e384625713"
+    },
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "index": 120,
+      "text": "たぜぬむゆぬゅねせしじままぎぎま。",
+      "bytes": 309566,
+      "sha256": "49bace5cbd2d7ef86cdbb514bd81fb38f0b7581aadb742e89861f5b290b36473"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 0,
+      "text": "なふけふゃょせおてわじぴせるせ。",
+      "bytes": 340380,
+      "sha256": "39f14d1e95b26aa3e0c5e831e2976cf40ef616aaab368adec73240034e0baca8"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 8,
+      "text": "がをしとぐすまももそかゅひやすぬずてよののぜー。",
+      "bytes": 435540,
+      "sha256": "9340654708f0cd6a14306346ecf510157215893d08418e05afcdfd25bf630feb"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 16,
+      "text": "ぬょやいちけ。",
+      "bytes": 183194,
+      "sha256": "202971117985bc15e00f1d39774603e9ad1edf6d741772a40aabda570ae0a0bc"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 24,
+      "text": "よしまじじぜねず。",
+      "bytes": 204692,
+      "sha256": "f3862b6e1477600b97c148ae4459704e3c2a7d183d2d4f3793f4c9db87f61297"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 32,
+      "text": "ぷごゃつわるめるげへのろょゅをまあくなのら。",
+      "bytes": 367094,
+      "sha256": "416be109026bbf8298c87790887bb3e760a385a5dfcb422bbf7ad010329c66a1"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 40,
+      "text": "よがりねぽぷてほさぽぱひぞちぬれがろ。",
+      "bytes": 342064,
+      "sha256": "07ab4bc81bfd19e997c6e38171fdfe7a1757a292ba24c1cb712a3509a20c72b5"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 48,
+      "text": "れすごがゆがやげるぷげきごげーたぽ。",
+      "bytes": 365760,
+      "sha256": "675ecbfccb6dbde035af3de68b60334d775b0145bf3b6ba94c83579ecfddec8f"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 56,
+      "text": "こげをとみあえくざすねにてしろぞちへぱざそ。",
+      "bytes": 415800,
+      "sha256": "e218ecf5160141e22797005de77782e819230c5d60aa25fd13aec44b06023215"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 64,
+      "text": "ねずきぐいゃふまとぺってかとほずずぺけむをみれず。",
+      "bytes": 447088,
+      "sha256": "93a7ec5513ac2d3a5726b9ec21a24c42fad79c1f02c81c73cc0eb82d4aa0155a"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 72,
+      "text": "ふやれご。",
+      "bytes": 148102,
+      "sha256": "e1d214567d5405b1d7e9f2a692a4bc9fa279ff2544941bd4b14dc4f64669ba50"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 80,
+      "text": "れこすねよかよとげわっねぴ。",
+      "bytes": 298834,
+      "sha256": "1ae933851e27717216be044cba0135892b7ec5140374e3f71be41ba7596ad0fb"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 88,
+      "text": "まぺいいまれよゅしぐぱさほほへずそらます。",
+      "bytes": 415454,
+      "sha256": "aa5ca2c4a9f7ac04cd617738fc2071e337eb05d53ca91782fed4aa70dcd7907c"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 96,
+      "text": "やへっえめゃたえじはめくるくしおぽめ。",
+      "bytes": 412866,
+      "sha256": "3cd8ed4d1a6e58b431a7ce78f2c71e226d9a9121f9c201d8c8a7f00d1f0ca048"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 104,
+      "text": "ゆれひゃはなおけほめそれざ。",
+      "bytes": 330702,
+      "sha256": "e79a9c9403b9676a7373ef787a3acdaae9039287ccf4e3c364ef97a5eb2b5a60"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 112,
+      "text": "ゆえそぬけひじるにかよ。",
+      "bytes": 247910,
+      "sha256": "15f516bb14f96ec43f5f23767fc52ea14a74b87fcd453d0e7b741de67877d92e"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "index": 120,
+      "text": "たぜぬむゆぬゅねせしじままぎぎま。",
+      "bytes": 344568,
+      "sha256": "90db10fcdc452835b511ad6bbd35d2a65c9725309b89b1322b52d2c115fb27a5"
+    }
+  ],
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "go_version": "go1.26.8",
+  "original_threads": 6,
+  "avx512_convolutions": false,
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "corpus_sha256": "006e062a26565e8a79235bcf9461a6e13f50dc91bd4abbc5598b78a279b10b40"
+}

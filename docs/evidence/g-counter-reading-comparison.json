@@ -1,0 +1,1187 @@
+{
+  "scope": "All32 new G-counter inputs and all16 prior C2/C1 counter inputs per voice retained. Reading comparison only, not arbitrary-input waveform proof.",
+  "captures": [
+    {
+      "stem": "g-counter-24",
+      "voice": "KotonohaAkane_ns_48",
+      "sha256": "db71017440ee6eb65e6e658bf35fd7d944a3b9f659d9ad205fc67583c6f139e2",
+      "corpus_sha256": "976e9528dd8b0599e07cc54e6276e0748e3767be1a54a8bbe288f76bbe1c30ec",
+      "native_report_sha256": "c26fce266a0b471a149c912c8f03629950778d8d8d860938b024e558bf35a16c"
+    },
+    {
+      "stem": "g-counter-24",
+      "voice": "KotonohaAoi_ns_48",
+      "sha256": "3c019b0a8b4fa8c76297717ed29f8ff3810680e27b118fff2f5e415b11989cf4",
+      "corpus_sha256": "976e9528dd8b0599e07cc54e6276e0748e3767be1a54a8bbe288f76bbe1c30ec",
+      "native_report_sha256": "3f0d95ca2758fd0808ddc01a9d0bb93b8a70be812f65456d904463c2f7554eba"
+    },
+    {
+      "stem": "g-counter-boundary-8",
+      "voice": "KotonohaAkane_ns_48",
+      "sha256": "3dc0a112e60cc7e6d13e32c2d4c0527b823946b8d90db7c544bb7487deb2d970",
+      "corpus_sha256": "0cc6f2a976ea031e156a5202e5f55413777ae83975e9e5adc5d4eedd717f8c63",
+      "native_report_sha256": "3f4016ef03a24f680c767bd44b1a463c596ff9d302050499ae9b08feb81504fd"
+    },
+    {
+      "stem": "g-counter-boundary-8",
+      "voice": "KotonohaAoi_ns_48",
+      "sha256": "71a9443adebdc346776b350a2d39a04978c8c0df6861b0fced69401a3ac67c1f",
+      "corpus_sha256": "0cc6f2a976ea031e156a5202e5f55413777ae83975e9e5adc5d4eedd717f8c63",
+      "native_report_sha256": "8f4604fbd9b5c86ab58794cbe5d38d91346aae594b02778d59143b55a029ee1d"
+    }
+  ],
+  "reports": [
+    {
+      "stem": "g-counter-24",
+      "voice": "KotonohaAkane_ns_48",
+      "sha256": "225465c381170fd9caa25b0afd547d2912e16e87ab158e0dd7f0d72fedddb05a",
+      "report": {
+        "cases": [
+          {
+            "index": 0,
+            "text": "一回転。",
+            "Original": [
+              "<S>イ^ッカ!イテン<F>"
+            ],
+            "Go": [
+              "<S>イ^ッカ!イテン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 1,
+            "text": "二回転。",
+            "Original": [
+              "<S>ニ^カ!イテン<F>"
+            ],
+            "Go": [
+              "<S>ニ^カ!イテン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 2,
+            "text": "三回転。",
+            "Original": [
+              "<S>サ^ンカ!イテン<F>"
+            ],
+            "Go": [
+              "<S>サ^ンカ!イテン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 3,
+            "text": "四回転。",
+            "Original": [
+              "<S>ヨ^ンカ!イテン<F>"
+            ],
+            "Go": [
+              "<S>ヨ^ンカ!イテン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 4,
+            "text": "五回転。",
+            "Original": [
+              "<S>ゴ^カ!イテン<F>"
+            ],
+            "Go": [
+              "<S>ゴ^カ!イテン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 5,
+            "text": "六回転。",
+            "Original": [
+              "<S>ロ^ッカ!イテン<F>"
+            ],
+            "Go": [
+              "<S>ロ^ッカ!イテン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 6,
+            "text": "七回転。",
+            "Original": [
+              "<S>ナ^ナカ!イテン<F>"
+            ],
+            "Go": [
+              "<S>ナ^ナカ!イテン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 7,
+            "text": "八回転。",
+            "Original": [
+              "<S>ハ^ッカ!イテン<F>"
+            ],
+            "Go": [
+              "<S>ハ^ッカ!イテン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 8,
+            "text": "九回転。",
+            "Original": [
+              "<S>キュ^ーカ!イテン<F>"
+            ],
+            "Go": [
+              "<S>キュ^ーカ!イテン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 9,
+            "text": "十回転。",
+            "Original": [
+              "<S>ジュ^ッカ!イテン<F>"
+            ],
+            "Go": [
+              "<S>ジュ^ッカ!イテン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 10,
+            "text": "十八回転。",
+            "Original": [
+              "<S>ジュ^ーハッカ!イテン<F>"
+            ],
+            "Go": [
+              "<S>ジュ^ーハッカ!イテン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 11,
+            "text": "百回転。",
+            "Original": [
+              "<S>ヒャ^ッカ!イテン<F>"
+            ],
+            "Go": [
+              "<S>ヒャ^ッカ!イテン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 12,
+            "text": "千回転。",
+            "Original": [
+              "<S>セ^ンカ!イテン<F>"
+            ],
+            "Go": [
+              "<S>セ^ンカ!イテン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 13,
+            "text": "一−零八回転。",
+            "Original": [
+              "<S>イ^チ!カラ|0^レ!ー|0ハ^ッカ!イテン<F>"
+            ],
+            "Go": [
+              "<S>イ^チ!カラ|0^レ!ー|0ハ^ッカ!イテン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 14,
+            "text": "零八回転。",
+            "Original": [
+              "<S>レ^ーハチカ!イテン<F>"
+            ],
+            "Go": [
+              "<S>レ^ーハチカ!イテン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 15,
+            "text": "〇八回転。",
+            "Original": [
+              "<S>ゼ^ロハチカ!イテン<F>"
+            ],
+            "Go": [
+              "<S>ゼ^ロハチカ!イテン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 16,
+            "text": "一−０８回転。",
+            "Original": [
+              "<S>イ^チ$1_1^ゼ!ロ|0ハ^ッカ!イテン<F>"
+            ],
+            "Go": [
+              "<S>イ^チ$1_1^ゼ!ロ|0ハ^ッカ!イテン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 17,
+            "text": "八気筒。",
+            "Original": [
+              "<S>ハ^ッキ!トー<F>"
+            ],
+            "Go": [
+              "<S>ハ^ッキ!トー<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 18,
+            "text": "八冠。",
+            "Original": [
+              "<S>ハ^ッカン<F>"
+            ],
+            "Go": [
+              "<S>ハ^ッカン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 19,
+            "text": "八角。",
+            "Original": [
+              "<S>^ヤ!スミ<F>"
+            ],
+            "Go": [
+              "<S>^ヤ!スミ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 20,
+            "text": "八泊。",
+            "Original": [
+              "<S>ハ^ッパク<F>"
+            ],
+            "Go": [
+              "<S>ハ^ッパク<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 21,
+            "text": "八匹。",
+            "Original": [
+              "<S>ハ^ッピキ<F>"
+            ],
+            "Go": [
+              "<S>ハ^ッピキ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 22,
+            "text": "一−零八角。",
+            "Original": [
+              "<S>イ^チ!ノ|0^レ!ー|0^ハッカ!ク<F>"
+            ],
+            "Go": [
+              "<S>イ^チ!ノ|0^レ!ー|0^ハッカ!ク<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 23,
+            "text": "一−零八匹。",
+            "Original": [
+              "<S>イ^チ!カラ|0^レ!ー|0ハ^ッピキ<F>"
+            ],
+            "Go": [
+              "<S>イ^チ!カラ|0^レ!ー|0ハ^ッピキ<F>"
+            ],
+            "equal": true
+          }
+        ],
+        "corpus_sha256": "976e9528dd8b0599e07cc54e6276e0748e3767be1a54a8bbe288f76bbe1c30ec",
+        "count": 24,
+        "different": 0,
+        "native_report_sha256": "c26fce266a0b471a149c912c8f03629950778d8d8d860938b024e558bf35a16c",
+        "source_reference": "private/g-counter-24-akane-original.json",
+        "source_reference_sha256": "db71017440ee6eb65e6e658bf35fd7d944a3b9f659d9ad205fc67583c6f139e2",
+        "voice": "KotonohaAkane_ns_48"
+      }
+    },
+    {
+      "stem": "g-counter-24",
+      "voice": "KotonohaAoi_ns_48",
+      "sha256": "0fb8e229f7d47e26c54d1b70c00d0af2aadd80d1277f3c9d4bd36ea81ea44a0f",
+      "report": {
+        "cases": [
+          {
+            "index": 0,
+            "text": "一回転。",
+            "Original": [
+              "<S>イ^ッカ!イテン<F>"
+            ],
+            "Go": [
+              "<S>イ^ッカ!イテン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 1,
+            "text": "二回転。",
+            "Original": [
+              "<S>ニ^カ!イテン<F>"
+            ],
+            "Go": [
+              "<S>ニ^カ!イテン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 2,
+            "text": "三回転。",
+            "Original": [
+              "<S>サ^ンカ!イテン<F>"
+            ],
+            "Go": [
+              "<S>サ^ンカ!イテン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 3,
+            "text": "四回転。",
+            "Original": [
+              "<S>ヨ^ンカ!イテン<F>"
+            ],
+            "Go": [
+              "<S>ヨ^ンカ!イテン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 4,
+            "text": "五回転。",
+            "Original": [
+              "<S>ゴ^カ!イテン<F>"
+            ],
+            "Go": [
+              "<S>ゴ^カ!イテン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 5,
+            "text": "六回転。",
+            "Original": [
+              "<S>ロ^ッカ!イテン<F>"
+            ],
+            "Go": [
+              "<S>ロ^ッカ!イテン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 6,
+            "text": "七回転。",
+            "Original": [
+              "<S>ナ^ナカ!イテン<F>"
+            ],
+            "Go": [
+              "<S>ナ^ナカ!イテン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 7,
+            "text": "八回転。",
+            "Original": [
+              "<S>ハ^ッカ!イテン<F>"
+            ],
+            "Go": [
+              "<S>ハ^ッカ!イテン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 8,
+            "text": "九回転。",
+            "Original": [
+              "<S>キュ^ーカ!イテン<F>"
+            ],
+            "Go": [
+              "<S>キュ^ーカ!イテン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 9,
+            "text": "十回転。",
+            "Original": [
+              "<S>ジュ^ッカ!イテン<F>"
+            ],
+            "Go": [
+              "<S>ジュ^ッカ!イテン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 10,
+            "text": "十八回転。",
+            "Original": [
+              "<S>ジュ^ーハッカ!イテン<F>"
+            ],
+            "Go": [
+              "<S>ジュ^ーハッカ!イテン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 11,
+            "text": "百回転。",
+            "Original": [
+              "<S>ヒャ^ッカ!イテン<F>"
+            ],
+            "Go": [
+              "<S>ヒャ^ッカ!イテン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 12,
+            "text": "千回転。",
+            "Original": [
+              "<S>セ^ンカ!イテン<F>"
+            ],
+            "Go": [
+              "<S>セ^ンカ!イテン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 13,
+            "text": "一−零八回転。",
+            "Original": [
+              "<S>イ^チ!カラ|0^レ!ー|0ハ^ッカ!イテン<F>"
+            ],
+            "Go": [
+              "<S>イ^チ!カラ|0^レ!ー|0ハ^ッカ!イテン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 14,
+            "text": "零八回転。",
+            "Original": [
+              "<S>レ^ーハチカ!イテン<F>"
+            ],
+            "Go": [
+              "<S>レ^ーハチカ!イテン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 15,
+            "text": "〇八回転。",
+            "Original": [
+              "<S>ゼ^ロハチカ!イテン<F>"
+            ],
+            "Go": [
+              "<S>ゼ^ロハチカ!イテン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 16,
+            "text": "一−０８回転。",
+            "Original": [
+              "<S>イ^チ$1_1^ゼ!ロ|0ハ^ッカ!イテン<F>"
+            ],
+            "Go": [
+              "<S>イ^チ$1_1^ゼ!ロ|0ハ^ッカ!イテン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 17,
+            "text": "八気筒。",
+            "Original": [
+              "<S>ハ^ッキ!トー<F>"
+            ],
+            "Go": [
+              "<S>ハ^ッキ!トー<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 18,
+            "text": "八冠。",
+            "Original": [
+              "<S>ハ^ッカン<F>"
+            ],
+            "Go": [
+              "<S>ハ^ッカン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 19,
+            "text": "八角。",
+            "Original": [
+              "<S>^ヤ!スミ<F>"
+            ],
+            "Go": [
+              "<S>^ヤ!スミ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 20,
+            "text": "八泊。",
+            "Original": [
+              "<S>ハ^ッパク<F>"
+            ],
+            "Go": [
+              "<S>ハ^ッパク<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 21,
+            "text": "八匹。",
+            "Original": [
+              "<S>ハ^ッピキ<F>"
+            ],
+            "Go": [
+              "<S>ハ^ッピキ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 22,
+            "text": "一−零八角。",
+            "Original": [
+              "<S>イ^チ!カラ|0^レ!ー|0ハ^ッカク<F>"
+            ],
+            "Go": [
+              "<S>イ^チ!カラ|0^レ!ー|0ハ^ッカク<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 23,
+            "text": "一−零八匹。",
+            "Original": [
+              "<S>イ^チ!カラ|0^レ!ー|0ハ^ッピキ<F>"
+            ],
+            "Go": [
+              "<S>イ^チ!カラ|0^レ!ー|0ハ^ッピキ<F>"
+            ],
+            "equal": true
+          }
+        ],
+        "corpus_sha256": "976e9528dd8b0599e07cc54e6276e0748e3767be1a54a8bbe288f76bbe1c30ec",
+        "count": 24,
+        "different": 0,
+        "native_report_sha256": "3f0d95ca2758fd0808ddc01a9d0bb93b8a70be812f65456d904463c2f7554eba",
+        "source_reference": "private/g-counter-24-aoi-original.json",
+        "source_reference_sha256": "3c019b0a8b4fa8c76297717ed29f8ff3810680e27b118fff2f5e415b11989cf4",
+        "voice": "KotonohaAoi_ns_48"
+      }
+    },
+    {
+      "stem": "g-counter-boundary-8",
+      "voice": "KotonohaAkane_ns_48",
+      "sha256": "258affc90758d54eca2fd5f4c6b4588b448d25d63aaa7357de0791fabab36061",
+      "report": {
+        "cases": [
+          {
+            "index": 0,
+            "text": "十八匹。",
+            "Original": [
+              "<S>ジュ^ーハッピキ<F>"
+            ],
+            "Go": [
+              "<S>ジュ^ーハッピキ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 1,
+            "text": "一−零一回転。",
+            "Original": [
+              "<S>イ^チ!カラ|0^レ!ー|0イ^ッカ!イテン<F>"
+            ],
+            "Go": [
+              "<S>イ^チ!カラ|0^レ!ー|0イ^ッカ!イテン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 2,
+            "text": "一−零六回転。",
+            "Original": [
+              "<S>イ^チ!カラ|0^レ!ー|0ロ^ッカ!イテン<F>"
+            ],
+            "Go": [
+              "<S>イ^チ!カラ|0^レ!ー|0ロ^ッカ!イテン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 3,
+            "text": "一−零十回転。",
+            "Original": [
+              "<S>イ^チ!カラ|0^レ!ー|0ジュ^ッカ!イテン<F>"
+            ],
+            "Go": [
+              "<S>イ^チ!カラ|0^レ!ー|0ジュ^ッカ!イテン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 4,
+            "text": "一−零百回転。",
+            "Original": [
+              "<S>イ^チ!カラ|0^レ!ー|0ヒャ^ッカ!イテン<F>"
+            ],
+            "Go": [
+              "<S>イ^チ!カラ|0^レ!ー|0ヒャ^ッカ!イテン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 5,
+            "text": "一−零八冠。",
+            "Original": [
+              "<S>イ^チ!カラ|0^レ!ー|0ハ^ッカン<F>"
+            ],
+            "Go": [
+              "<S>イ^チ!カラ|0^レ!ー|0ハ^ッカン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 6,
+            "text": "一−零八気筒。",
+            "Original": [
+              "<S>イ^チ!カラ|0^レ!ー|0ハ^ッキ!トー<F>"
+            ],
+            "Go": [
+              "<S>イ^チ!カラ|0^レ!ー|0ハ^ッキ!トー<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 7,
+            "text": "一−零八館。",
+            "Original": [
+              "<S>イ^チ!カラ|0^レ!ー|0^ハ!ッカン<F>"
+            ],
+            "Go": [
+              "<S>イ^チ!カラ|0^レ!ー|0^ハ!ッカン<F>"
+            ],
+            "equal": true
+          }
+        ],
+        "corpus_sha256": "0cc6f2a976ea031e156a5202e5f55413777ae83975e9e5adc5d4eedd717f8c63",
+        "count": 8,
+        "different": 0,
+        "native_report_sha256": "3f4016ef03a24f680c767bd44b1a463c596ff9d302050499ae9b08feb81504fd",
+        "source_reference": "private/g-counter-boundary-8-akane-original.json",
+        "source_reference_sha256": "3dc0a112e60cc7e6d13e32c2d4c0527b823946b8d90db7c544bb7487deb2d970",
+        "voice": "KotonohaAkane_ns_48"
+      }
+    },
+    {
+      "stem": "g-counter-boundary-8",
+      "voice": "KotonohaAoi_ns_48",
+      "sha256": "06fa1f523f0abf2691cd5901671d5275c12417dc3202faa2cf502d70a63c22a7",
+      "report": {
+        "cases": [
+          {
+            "index": 0,
+            "text": "十八匹。",
+            "Original": [
+              "<S>ジュ^ーハッピキ<F>"
+            ],
+            "Go": [
+              "<S>ジュ^ーハッピキ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 1,
+            "text": "一−零一回転。",
+            "Original": [
+              "<S>イ^チ!カラ|0^レ!ー|0イ^ッカ!イテン<F>"
+            ],
+            "Go": [
+              "<S>イ^チ!カラ|0^レ!ー|0イ^ッカ!イテン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 2,
+            "text": "一−零六回転。",
+            "Original": [
+              "<S>イ^チ!カラ|0^レ!ー|0ロ^ッカ!イテン<F>"
+            ],
+            "Go": [
+              "<S>イ^チ!カラ|0^レ!ー|0ロ^ッカ!イテン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 3,
+            "text": "一−零十回転。",
+            "Original": [
+              "<S>イ^チ!カラ|0^レ!ー|0ジュ^ッカ!イテン<F>"
+            ],
+            "Go": [
+              "<S>イ^チ!カラ|0^レ!ー|0ジュ^ッカ!イテン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 4,
+            "text": "一−零百回転。",
+            "Original": [
+              "<S>イ^チ!カラ|0^レ!ー|0ヒャ^ッカ!イテン<F>"
+            ],
+            "Go": [
+              "<S>イ^チ!カラ|0^レ!ー|0ヒャ^ッカ!イテン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 5,
+            "text": "一−零八冠。",
+            "Original": [
+              "<S>イ^チ!カラ|0^レ!ー|0ハ^ッカン<F>"
+            ],
+            "Go": [
+              "<S>イ^チ!カラ|0^レ!ー|0ハ^ッカン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 6,
+            "text": "一−零八気筒。",
+            "Original": [
+              "<S>イ^チ!カラ|0^レ!ー|0ハ^ッキ!トー<F>"
+            ],
+            "Go": [
+              "<S>イ^チ!カラ|0^レ!ー|0ハ^ッキ!トー<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 7,
+            "text": "一−零八館。",
+            "Original": [
+              "<S>イ^チ!カラ|0^レ!ー|0^ハ!ッカン<F>"
+            ],
+            "Go": [
+              "<S>イ^チ!カラ|0^レ!ー|0^ハ!ッカン<F>"
+            ],
+            "equal": true
+          }
+        ],
+        "corpus_sha256": "0cc6f2a976ea031e156a5202e5f55413777ae83975e9e5adc5d4eedd717f8c63",
+        "count": 8,
+        "different": 0,
+        "native_report_sha256": "8f4604fbd9b5c86ab58794cbe5d38d91346aae594b02778d59143b55a029ee1d",
+        "source_reference": "private/g-counter-boundary-8-aoi-original.json",
+        "source_reference_sha256": "71a9443adebdc346776b350a2d39a04978c8c0df6861b0fced69401a3ac67c1f",
+        "voice": "KotonohaAoi_ns_48"
+      }
+    },
+    {
+      "stem": "c2-counter-16",
+      "voice": "KotonohaAkane_ns_48",
+      "sha256": "8496061c77b526f1a9c06ed3c17d15ac00c9a0ad2e58df68a8ae5ae7d038dda8",
+      "report": {
+        "cases": [
+          {
+            "index": 0,
+            "text": "九零八日目。",
+            "Original": [
+              "<S>キュ^ーレ!ー|0ハ^チニ!チメ<F>"
+            ],
+            "Go": [
+              "<S>キュ^ーレ!ー|0ハ^チニ!チメ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 1,
+            "text": "一−九零八日目。",
+            "Original": [
+              "<S>イ^チ!カラ|0キュ^ーレ!ー|0ハ^チニチメ<F>"
+            ],
+            "Go": [
+              "<S>イ^チ!カラ|0キュ^ーレ!ー|0ハ^チニチメ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 2,
+            "text": "零八日目。",
+            "Original": [
+              "<S>レ^ーハチニ!チメ<F>"
+            ],
+            "Go": [
+              "<S>レ^ーハチニ!チメ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 3,
+            "text": "一−零八日目。",
+            "Original": [
+              "<S>イ^チ!カラ|0レ^ーハチニチメ<F>"
+            ],
+            "Go": [
+              "<S>イ^チ!カラ|0レ^ーハチニチメ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 4,
+            "text": "8日目。",
+            "Original": [
+              "<S>ヨ^ーカメ<F>"
+            ],
+            "Go": [
+              "<S>ヨ^ーカメ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 5,
+            "text": "18日目。",
+            "Original": [
+              "<S>ジュ^ーハチニチメ<F>"
+            ],
+            "Go": [
+              "<S>ジュ^ーハチニチメ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 6,
+            "text": "1日目。",
+            "Original": [
+              "<S>イ^チニチメ<F>"
+            ],
+            "Go": [
+              "<S>イ^チニチメ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 7,
+            "text": "9日目。",
+            "Original": [
+              "<S>コ^コノカメ<F>"
+            ],
+            "Go": [
+              "<S>コ^コノカメ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 8,
+            "text": "九零八学年。",
+            "Original": [
+              "<S>キュ^ーレ!ー|0ハ^チガ!クネン<F>"
+            ],
+            "Go": [
+              "<S>キュ^ーレ!ー|0ハ^チガ!クネン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 9,
+            "text": "九零八階級。",
+            "Original": [
+              "<S>キュ^ーレ!ー|0ハ^チカ!イキュー<F>"
+            ],
+            "Go": [
+              "<S>キュ^ーレ!ー|0ハ^チカ!イキュー<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 10,
+            "text": "零八往復。",
+            "Original": [
+              "<S>レ^ーハチオ!ーフク<F>"
+            ],
+            "Go": [
+              "<S>レ^ーハチオ!ーフク<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 11,
+            "text": "一−零八学年。",
+            "Original": [
+              "<S>イ^チ!カラ|0レ^ーハチガ!クネン<F>"
+            ],
+            "Go": [
+              "<S>イ^チ!カラ|0レ^ーハチガ!クネン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 12,
+            "text": "九零八日間。",
+            "Original": [
+              "<S>キュ^ーレ!ー|0ハ^チニチ!カン<F>"
+            ],
+            "Go": [
+              "<S>キュ^ーレ!ー|0ハ^チニチ!カン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 13,
+            "text": "一−九零八日間。",
+            "Original": [
+              "<S>イ^チ!カラ|0キュ^ーレ!ー|0ハ^チニチ!カン<F>"
+            ],
+            "Go": [
+              "<S>イ^チ!カラ|0キュ^ーレ!ー|0ハ^チニチ!カン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 14,
+            "text": "零八回転。",
+            "Original": [
+              "<S>レ^ーハチカ!イテン<F>"
+            ],
+            "Go": [
+              "<S>レ^ーハチカ!イテン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 15,
+            "text": "一−零八回転。",
+            "Original": [
+              "<S>イ^チ!カラ|0^レ!ー|0ハ^ッカ!イテン<F>"
+            ],
+            "Go": [
+              "<S>イ^チ!カラ|0^レ!ー|0ハ^ッカ!イテン<F>"
+            ],
+            "equal": true
+          }
+        ],
+        "corpus_sha256": "29481d2ba40edc8721e7ef17a0fc33cee18bf57c9a3f58163066633b3e64e600",
+        "count": 16,
+        "different": 0,
+        "native_report_sha256": "fa33bff7b3c2c444961e2b2108f8e623b843d981674a5a8e1d0d517d7533d22d",
+        "source_reference": "tools/compare_reading/testdata/c2-counter-16-akane-original.json",
+        "source_reference_sha256": "289e716a716b5b668b34d02bccea82c43885d45c3b7efc769a97a463cf930358",
+        "voice": "KotonohaAkane_ns_48"
+      }
+    },
+    {
+      "stem": "c2-counter-16",
+      "voice": "KotonohaAoi_ns_48",
+      "sha256": "b687e9b622c04953c06314848bb1cea230662f75be192d828bb2bd4c33e0df63",
+      "report": {
+        "cases": [
+          {
+            "index": 0,
+            "text": "九零八日目。",
+            "Original": [
+              "<S>キュ^ーレ!ー|0ハ^チニ!チメ<F>"
+            ],
+            "Go": [
+              "<S>キュ^ーレ!ー|0ハ^チニ!チメ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 1,
+            "text": "一−九零八日目。",
+            "Original": [
+              "<S>イ^チ!カラ|0キュ^ーレ!ー|0ハ^チニチメ<F>"
+            ],
+            "Go": [
+              "<S>イ^チ!カラ|0キュ^ーレ!ー|0ハ^チニチメ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 2,
+            "text": "零八日目。",
+            "Original": [
+              "<S>レ^ーハチニ!チメ<F>"
+            ],
+            "Go": [
+              "<S>レ^ーハチニ!チメ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 3,
+            "text": "一−零八日目。",
+            "Original": [
+              "<S>イ^チ!カラ|0レ^ーハチニチメ<F>"
+            ],
+            "Go": [
+              "<S>イ^チ!カラ|0レ^ーハチニチメ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 4,
+            "text": "8日目。",
+            "Original": [
+              "<S>ヨ^ーカメ<F>"
+            ],
+            "Go": [
+              "<S>ヨ^ーカメ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 5,
+            "text": "18日目。",
+            "Original": [
+              "<S>ジュ^ーハチニチメ<F>"
+            ],
+            "Go": [
+              "<S>ジュ^ーハチニチメ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 6,
+            "text": "1日目。",
+            "Original": [
+              "<S>イ^チニチメ<F>"
+            ],
+            "Go": [
+              "<S>イ^チニチメ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 7,
+            "text": "9日目。",
+            "Original": [
+              "<S>コ^コノカメ<F>"
+            ],
+            "Go": [
+              "<S>コ^コノカメ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 8,
+            "text": "九零八学年。",
+            "Original": [
+              "<S>キュ^ーレ!ー|0ハ^チガ!クネン<F>"
+            ],
+            "Go": [
+              "<S>キュ^ーレ!ー|0ハ^チガ!クネン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 9,
+            "text": "九零八階級。",
+            "Original": [
+              "<S>キュ^ーレ!ー|0ハ^チカ!イキュー<F>"
+            ],
+            "Go": [
+              "<S>キュ^ーレ!ー|0ハ^チカ!イキュー<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 10,
+            "text": "零八往復。",
+            "Original": [
+              "<S>レ^ーハチオ!ーフク<F>"
+            ],
+            "Go": [
+              "<S>レ^ーハチオ!ーフク<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 11,
+            "text": "一−零八学年。",
+            "Original": [
+              "<S>イ^チ!カラ|0レ^ーハチガ!クネン<F>"
+            ],
+            "Go": [
+              "<S>イ^チ!カラ|0レ^ーハチガ!クネン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 12,
+            "text": "九零八日間。",
+            "Original": [
+              "<S>キュ^ーレ!ー|0ハ^チニチ!カン<F>"
+            ],
+            "Go": [
+              "<S>キュ^ーレ!ー|0ハ^チニチ!カン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 13,
+            "text": "一−九零八日間。",
+            "Original": [
+              "<S>イ^チ!カラ|0キュ^ーレ!ー|0ハ^チニチ!カン<F>"
+            ],
+            "Go": [
+              "<S>イ^チ!カラ|0キュ^ーレ!ー|0ハ^チニチ!カン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 14,
+            "text": "零八回転。",
+            "Original": [
+              "<S>レ^ーハチカ!イテン<F>"
+            ],
+            "Go": [
+              "<S>レ^ーハチカ!イテン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 15,
+            "text": "一−零八回転。",
+            "Original": [
+              "<S>イ^チ!カラ|0^レ!ー|0ハ^ッカ!イテン<F>"
+            ],
+            "Go": [
+              "<S>イ^チ!カラ|0^レ!ー|0ハ^ッカ!イテン<F>"
+            ],
+            "equal": true
+          }
+        ],
+        "corpus_sha256": "29481d2ba40edc8721e7ef17a0fc33cee18bf57c9a3f58163066633b3e64e600",
+        "count": 16,
+        "different": 0,
+        "native_report_sha256": "e7bf8dcb9c956534f57f858d4b89817269de4ba064fdc543af1201e411a2c923",
+        "source_reference": "tools/compare_reading/testdata/c2-counter-16-aoi-original.json",
+        "source_reference_sha256": "9fc6e8b8b9e2b03d3ccbb340dda82070e3ecc1a4181320432fcb0f88d0590ff3",
+        "voice": "KotonohaAoi_ns_48"
+      }
+    }
+  ]
+}

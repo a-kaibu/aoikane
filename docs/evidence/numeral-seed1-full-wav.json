@@ -1,0 +1,2613 @@
+{
+  "scope": "All pinned numeral seed1 inputs, 128 per voice, ordinary original SDK versus Go complete WAVs; processes launched before subsequent frontend updates, not a latest-head rerun",
+  "seed": 1,
+  "count_per_voice": 128,
+  "voice_count": 2,
+  "pcm_samples": 40818294,
+  "reports": [
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "log_sha256": "cbb795b2d462bb6e2a6464ddf3376010169953536f47b23bd8c27f6d601c25e5",
+      "report_sha256": "98108a34a3c8679fc5d0ee440e009bd47f7ec12fad301760f96c3dbbf4e855b0",
+      "capture_sha256": "b740f7e6bc91248b705f534c1714bf019147b929c0c4efc2fbc8a984a947295a",
+      "corpus_sha256": "d6c6d416b365a96ae03e2e0b6436bfaf13d556eb747fd16e47d5cef57f1fbf83",
+      "report": {
+        "shard": 0,
+        "shards": 1,
+        "seed": 1,
+        "generator_version": 1,
+        "count": 128,
+        "max_units": 16,
+        "go_version": "go1.26.8",
+        "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+        "voice": "KotonohaAkane_ns_48",
+        "original_threads": 6,
+        "avx512_convolutions": false,
+        "results": [
+          {
+            "index": 0,
+            "text": "1秒２の５時分Ｃ本円月％２秒Ａ5。",
+            "original_sha256": "70e347265debad0e2071d88bcddc0998569fdaac217b64b9c6f5c832c14b99e9",
+            "go_sha256": "70e347265debad0e2071d88bcddc0998569fdaac217b64b9c6f5c832c14b99e9",
+            "original_bytes": 487062,
+            "go_bytes": 487062,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 1,
+            "text": "本・読む−日千読む9０本。",
+            "original_sha256": "90c6c3bf36160d79c56d86fb691a663789787d3a6d5ec297059e5099b8b22b2f",
+            "go_sha256": "90c6c3bf36160d79c56d86fb691a663789787d3a6d5ec297059e5099b8b22b2f",
+            "original_bytes": 318318,
+            "go_bytes": 318318,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 2,
+            "text": "億九日9１五．の億一五百分Ａ2〇。",
+            "original_sha256": "9095df0940592a061c45a61dbe41b4a3c6684944b7220e604f7f9158455749ac",
+            "go_sha256": "9095df0940592a061c45a61dbe41b4a3c6684944b7220e604f7f9158455749ac",
+            "original_bytes": 499648,
+            "go_bytes": 499648,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 3,
+            "text": "０三２一－円。",
+            "original_sha256": "56ad296837e1bad96cdda53ea392199f71e20866204edf6d1394f017750a4568",
+            "go_sha256": "56ad296837e1bad96cdda53ea392199f71e20866204edf6d1394f017750a4568",
+            "original_bytes": 209018,
+            "go_bytes": 209018,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 4,
+            "text": "学校百十９1。",
+            "original_sha256": "fd455499f91f2cb3ebb69867e99e3d37358cb44c3a92016172bc2c32bf1b62f1",
+            "go_sha256": "fd455499f91f2cb3ebb69867e99e3d37358cb44c3a92016172bc2c32bf1b62f1",
+            "original_bytes": 292802,
+            "go_bytes": 292802,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 5,
+            "text": "兆一零．千Ａ19。",
+            "original_sha256": "dfa869438b46854e426842a449de13da9acec1376cfc181a9ba1d304dc636ec8",
+            "go_sha256": "dfa869438b46854e426842a449de13da9acec1376cfc181a9ba1d304dc636ec8",
+            "original_bytes": 314848,
+            "go_bytes": 314848,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 6,
+            "text": "零零二。",
+            "original_sha256": "d917704d167315767c053902431e454283de0d78b843b452be6e99490e621e5d",
+            "go_sha256": "d917704d167315767c053902431e454283de0d78b843b452be6e99490e621e5d",
+            "original_bytes": 159438,
+            "go_bytes": 159438,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 7,
+            "text": "億9Ｃ年人京三分0〇。",
+            "original_sha256": "0558fa4ebfa5ef683a363f90f7a6ac1fac00c40c78bd16e49a6af6f85d764d86",
+            "go_sha256": "0558fa4ebfa5ef683a363f90f7a6ac1fac00c40c78bd16e49a6af6f85d764d86",
+            "original_bytes": 360628,
+            "go_bytes": 360628,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 8,
+            "text": "個年五十九分５読む千2一〇年年零。",
+            "original_sha256": "16f2943f2bd8d2405cdbea26de9a7f5c93031f0404759143815eb9bcbad5a761",
+            "go_sha256": "16f2943f2bd8d2405cdbea26de9a7f5c93031f0404759143815eb9bcbad5a761",
+            "original_bytes": 416524,
+            "go_bytes": 416524,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 9,
+            "text": "8百．－時８Ｃ円８〇Ａ二八0本。",
+            "original_sha256": "f0834d7a69c2df26c9e01d01ca060651dbf438fa730a9d1c8bb9093fff205037",
+            "go_sha256": "f0834d7a69c2df26c9e01d01ca060651dbf438fa730a9d1c8bb9093fff205037",
+            "original_bytes": 478808,
+            "go_bytes": 478808,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 10,
+            "text": "５5。",
+            "original_sha256": "ec567ab568c4948b2bfc1b644888f2a38dea47acafe3f1fe810f5e2a9108feda",
+            "go_sha256": "ec567ab568c4948b2bfc1b644888f2a38dea47acafe3f1fe810f5e2a9108feda",
+            "original_bytes": 153620,
+            "go_bytes": 153620,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 11,
+            "text": "9〇二2９日.八０－は円Ａ９京。",
+            "original_sha256": "37df5faeb5da2a3aac9496cd914c0525061076298cc124ac0fd8f98003c52022",
+            "go_sha256": "37df5faeb5da2a3aac9496cd914c0525061076298cc124ac0fd8f98003c52022",
+            "original_bytes": 469898,
+            "go_bytes": 469898,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 12,
+            "text": "学校十A２十年分・日二学校）。",
+            "original_sha256": "9e9b7874c3862a4fd9ea55dd66a34490e37cf6be9945ada6c07a330046de04ba",
+            "go_sha256": "9e9b7874c3862a4fd9ea55dd66a34490e37cf6be9945ada6c07a330046de04ba",
+            "original_bytes": 408606,
+            "go_bytes": 408606,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 13,
+            "text": "千．千２億5。",
+            "original_sha256": "a6a794da771a05f7b74310ae2ee06dc156db44b1cf2be957604f75e4cb0805c7",
+            "go_sha256": "a6a794da771a05f7b74310ae2ee06dc156db44b1cf2be957604f75e4cb0805c7",
+            "original_bytes": 239970,
+            "go_bytes": 239970,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 14,
+            "text": "百学校。",
+            "original_sha256": "90ecd0227be2372f6da1688c5918d7aca3776ed35937964f4b692e7501b9be9e",
+            "go_sha256": "90ecd0227be2372f6da1688c5918d7aca3776ed35937964f4b692e7501b9be9e",
+            "original_bytes": 177072,
+            "go_bytes": 177072,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 15,
+            "text": "五）・の0．分）九読む人個二）％。",
+            "original_sha256": "743e568d0e6e39592328b0e798dc4e180efa984b88f9511a7275d5a107eaeed6",
+            "go_sha256": "743e568d0e6e39592328b0e798dc4e180efa984b88f9511a7275d5a107eaeed6",
+            "original_bytes": 443512,
+            "go_bytes": 443512,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 16,
+            "text": "時．学校。",
+            "original_sha256": "168ca5db60e33f1e57d54def304b56b5acdf19501f9618d9f8583c5525d1a105",
+            "go_sha256": "168ca5db60e33f1e57d54def304b56b5acdf19501f9618d9f8583c5525d1a105",
+            "original_bytes": 208158,
+            "go_bytes": 208158,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 17,
+            "text": "）万Ａ0１声０。",
+            "original_sha256": "4972b955d10be0202761524dd3cc71961b6a3f07a661ed4d17951ba0d87fdc57",
+            "go_sha256": "4972b955d10be0202761524dd3cc71961b6a3f07a661ed4d17951ba0d87fdc57",
+            "original_bytes": 256550,
+            "go_bytes": 256550,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 18,
+            "text": "１．５。",
+            "original_sha256": "f3af8c436a88af86bb8f1097f48ee7d21e8c5750ef3e703cc4455bad785b01d9",
+            "go_sha256": "f3af8c436a88af86bb8f1097f48ee7d21e8c5750ef3e703cc4455bad785b01d9",
+            "original_bytes": 159832,
+            "go_bytes": 159832,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 19,
+            "text": "８。",
+            "original_sha256": "a76486e6298d15250c8f8b47d012ae16d3a95b636eb0739b8e47c0b69f7ffe48",
+            "go_sha256": "a76486e6298d15250c8f8b47d012ae16d3a95b636eb0739b8e47c0b69f7ffe48",
+            "original_bytes": 126906,
+            "go_bytes": 126906,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 20,
+            "text": "万5百時分百−。",
+            "original_sha256": "1751dabb3efbce6158437b4f7a69c92a021855d0f35fb7bfd0e7cc6e630a3867",
+            "go_sha256": "1751dabb3efbce6158437b4f7a69c92a021855d0f35fb7bfd0e7cc6e630a3867",
+            "original_bytes": 232952,
+            "go_bytes": 232952,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 21,
+            "text": "三三円９八・0零Ａ8。",
+            "original_sha256": "0f30d877cbd275ad828cab43a7c69d7b965d04a1bd153526086cb70fcc5c484e",
+            "go_sha256": "0f30d877cbd275ad828cab43a7c69d7b965d04a1bd153526086cb70fcc5c484e",
+            "original_bytes": 394886,
+            "go_bytes": 394886,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 22,
+            "text": "％個、（日。",
+            "original_sha256": "18566de69023e591239d3f38facc56e090cc240e36d5f4231b93831a46e36a86",
+            "go_sha256": "18566de69023e591239d3f38facc56e090cc240e36d5f4231b93831a46e36a86",
+            "original_bytes": 234162,
+            "go_bytes": 234162,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 23,
+            "text": "・億本万（兆1九９.万万Ｃ。",
+            "original_sha256": "def960aed75550495f59dad31346b340321dcd644b5b8f9fcf4207dcfd9ce9ce",
+            "go_sha256": "def960aed75550495f59dad31346b340321dcd644b5b8f9fcf4207dcfd9ce9ce",
+            "original_bytes": 405744,
+            "go_bytes": 405744,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 24,
+            "text": "月兆個％。",
+            "original_sha256": "a6c7e3d3edbf05ae6fb990b6f7886e74721592a3a28e88ed8aa5eaf4c5ac0004",
+            "go_sha256": "a6c7e3d3edbf05ae6fb990b6f7886e74721592a3a28e88ed8aa5eaf4c5ac0004",
+            "original_bytes": 230360,
+            "go_bytes": 230360,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 25,
+            "text": "は円8．8２。",
+            "original_sha256": "a2d224a4893ceff94b78ebafedaeba1f3419a1720713c9137ea10bc58fc93770",
+            "go_sha256": "a2d224a4893ceff94b78ebafedaeba1f3419a1720713c9137ea10bc58fc93770",
+            "original_bytes": 243048,
+            "go_bytes": 243048,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 26,
+            "text": "千２時兆個。",
+            "original_sha256": "45bea2660d15fbaea038efedfd150a78059f4ebb8d61574ba7813b3b051c66a0",
+            "go_sha256": "45bea2660d15fbaea038efedfd150a78059f4ebb8d61574ba7813b3b051c66a0",
+            "original_bytes": 200118,
+            "go_bytes": 200118,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 27,
+            "text": "京・）％個0十八。",
+            "original_sha256": "4085603781dc484bf53b317d24023208bc76360e5f19a9a512ab99a1f3a4310d",
+            "go_sha256": "4085603781dc484bf53b317d24023208bc76360e5f19a9a512ab99a1f3a4310d",
+            "original_bytes": 307924,
+            "go_bytes": 307924,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 28,
+            "text": "千８人Ｃ.一２８読む。",
+            "original_sha256": "5249e8254b2e7a89be478d5c916086ee625ed9ad245407f0af657a7fe9371607",
+            "go_sha256": "5249e8254b2e7a89be478d5c916086ee625ed9ad245407f0af657a7fe9371607",
+            "original_bytes": 373630,
+            "go_bytes": 373630,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 29,
+            "text": "五読む零秒月（本2。",
+            "original_sha256": "5c388da84649c25bb71aec749753a400c8e5efc7f27b3ac67629c42ae3f22fe0",
+            "go_sha256": "5c388da84649c25bb71aec749753a400c8e5efc7f27b3ac67629c42ae3f22fe0",
+            "original_bytes": 280702,
+            "go_bytes": 280702,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 30,
+            "text": "万2５・声－2。",
+            "original_sha256": "4742392d4705006e4f0365aad70d7926e9dc111527131c8fe7315217547335a5",
+            "go_sha256": "4742392d4705006e4f0365aad70d7926e9dc111527131c8fe7315217547335a5",
+            "original_bytes": 298332,
+            "go_bytes": 298332,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 31,
+            "text": "９−。",
+            "original_sha256": "eb19e32bd0327b12fd3a6a1614ac8962ee608e756b4d316cee9082701d68ee14",
+            "go_sha256": "eb19e32bd0327b12fd3a6a1614ac8962ee608e756b4d316cee9082701d68ee14",
+            "original_bytes": 124584,
+            "go_bytes": 124584,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 32,
+            "text": "は分。",
+            "original_sha256": "7520c3be264043284898b7f72958a28e60ddcac139aeb8db8aaedeff76c79db7",
+            "go_sha256": "7520c3be264043284898b7f72958a28e60ddcac139aeb8db8aaedeff76c79db7",
+            "original_bytes": 132828,
+            "go_bytes": 132828,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 33,
+            "text": ".9.億、九日・・千の時・。",
+            "original_sha256": "dbd9aaf2b3e6ff4126257c410f8dbab3a5ae184ced4c4e86ad8598dbb404a12a",
+            "go_sha256": "dbd9aaf2b3e6ff4126257c410f8dbab3a5ae184ced4c4e86ad8598dbb404a12a",
+            "original_bytes": 369928,
+            "go_bytes": 369928,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 34,
+            "text": "・年％9、〇秒2声。",
+            "original_sha256": "7cda24de5d9014bd5954cdfc7c89ecc5a8e43ef027d78f81f107bc8e44d1800e",
+            "go_sha256": "7cda24de5d9014bd5954cdfc7c89ecc5a8e43ef027d78f81f107bc8e44d1800e",
+            "original_bytes": 358294,
+            "go_bytes": 358294,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 35,
+            "text": "京億Ｃ八ＡＡ日。",
+            "original_sha256": "0a4b807d9463ae93a869a5eb1139b8e51afb53544b49f16c4675c9b98557180d",
+            "go_sha256": "0a4b807d9463ae93a869a5eb1139b8e51afb53544b49f16c4675c9b98557180d",
+            "original_bytes": 274406,
+            "go_bytes": 274406,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 36,
+            "text": "学校・零五5五月本。",
+            "original_sha256": "b0dd72140a54f3727ace6e9e1a1d2271f20ecdeb142d5deeecb891a400128765",
+            "go_sha256": "b0dd72140a54f3727ace6e9e1a1d2271f20ecdeb142d5deeecb891a400128765",
+            "original_bytes": 288006,
+            "go_bytes": 288006,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 37,
+            "text": "二.は学校１百5Ｃ％A、A九％。",
+            "original_sha256": "45bbf2ee86f0ed0cd373aefef9fcd4fb89eadeb5abc053ea4cc982af3116f0af",
+            "go_sha256": "45bbf2ee86f0ed0cd373aefef9fcd4fb89eadeb5abc053ea4cc982af3116f0af",
+            "original_bytes": 610146,
+            "go_bytes": 610146,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 38,
+            "text": "８千。",
+            "original_sha256": "fbd358935a05f6881a20112779b698224058c8271a61ec0ca88e6de4d705e739",
+            "go_sha256": "fbd358935a05f6881a20112779b698224058c8271a61ec0ca88e6de4d705e739",
+            "original_bytes": 140820,
+            "go_bytes": 140820,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 39,
+            "text": "百）億月、１5二Ｃ百兆本五兆年9。",
+            "original_sha256": "143966ec2f64b9ea5733f6aedf896885a066fe687d8017968e50a48e60bc9c4f",
+            "go_sha256": "143966ec2f64b9ea5733f6aedf896885a066fe687d8017968e50a48e60bc9c4f",
+            "original_bytes": 522118,
+            "go_bytes": 522118,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 40,
+            "text": "分％。",
+            "original_sha256": "29c9b3d2e8d66333b144a430ad8650746ad5e1fd72c1b527ce2f6881a510ff4a",
+            "go_sha256": "29c9b3d2e8d66333b144a430ad8650746ad5e1fd72c1b527ce2f6881a510ff4a",
+            "original_bytes": 187240,
+            "go_bytes": 187240,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 41,
+            "text": "、十十.）０個）〇読む８％.１－。",
+            "original_sha256": "b248e96c414cc41708ce38b529c47127a9726d158705c5fb05ba06e0db595733",
+            "go_sha256": "b248e96c414cc41708ce38b529c47127a9726d158705c5fb05ba06e0db595733",
+            "original_bytes": 489880,
+            "go_bytes": 489880,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 42,
+            "text": "2千.１十０円円人1％九本十二0。",
+            "original_sha256": "9e0786f89828dd13446cc145fcdb330e4d8286053349bb3bbc0ea617871461ff",
+            "go_sha256": "9e0786f89828dd13446cc145fcdb330e4d8286053349bb3bbc0ea617871461ff",
+            "original_bytes": 580612,
+            "go_bytes": 580612,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 43,
+            "text": "％（Ｃ千一。",
+            "original_sha256": "a8d45d6a2617e3ea849e4889cab413b1f424d031cc5182f45c64c7ac8e4bfaf4",
+            "go_sha256": "a8d45d6a2617e3ea849e4889cab413b1f424d031cc5182f45c64c7ac8e4bfaf4",
+            "original_bytes": 277888,
+            "go_bytes": 277888,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 44,
+            "text": "０億一〇は分三零8〇時Ａ京一年。",
+            "original_sha256": "dc9a8083c34282c1a35d75ae9788ffbe506cdba8f6e30583cfff3ca6904e22a4",
+            "go_sha256": "dc9a8083c34282c1a35d75ae9788ffbe506cdba8f6e30583cfff3ca6904e22a4",
+            "original_bytes": 437088,
+            "go_bytes": 437088,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 45,
+            "text": "2。",
+            "original_sha256": "b6e7feef6b38cf6346cffd9454a5c5d6f3bca827f3055e9af9cd3fb3f3d9ece6",
+            "go_sha256": "b6e7feef6b38cf6346cffd9454a5c5d6f3bca827f3055e9af9cd3fb3f3d9ece6",
+            "original_bytes": 105164,
+            "go_bytes": 105164,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 46,
+            "text": "十Ａ（.（0本。",
+            "original_sha256": "64fbc306f3202a2fdfffda8729cdf2bc8607ba7bd0ee0e007096256a010db0ef",
+            "go_sha256": "64fbc306f3202a2fdfffda8729cdf2bc8607ba7bd0ee0e007096256a010db0ef",
+            "original_bytes": 237820,
+            "go_bytes": 237820,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 47,
+            "text": "）年百。",
+            "original_sha256": "f639c10b31c62c3ec52da1627459c985fa968341d0871c893ae5a1602f03c838",
+            "go_sha256": "f639c10b31c62c3ec52da1627459c985fa968341d0871c893ae5a1602f03c838",
+            "original_bytes": 152562,
+            "go_bytes": 152562,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 48,
+            "text": "〇は零は月－本。",
+            "original_sha256": "6fd21b49b04cc4faebf4d724d2b6a4f777a67a47b6dadf2b90e987e9536fcf21",
+            "go_sha256": "6fd21b49b04cc4faebf4d724d2b6a4f777a67a47b6dadf2b90e987e9536fcf21",
+            "original_bytes": 225838,
+            "go_bytes": 225838,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 49,
+            "text": "一兆％円20人％。",
+            "original_sha256": "08cfd942960fd588962fb42374a983b538bfc8648f254bba8b4b21001a6f4492",
+            "go_sha256": "08cfd942960fd588962fb42374a983b538bfc8648f254bba8b4b21001a6f4492",
+            "original_bytes": 365090,
+            "go_bytes": 365090,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 50,
+            "text": "0二.、。",
+            "original_sha256": "bbf7f3f44948b44aaa0ebad8ec9ecd27d97bcc7fc5205b42a6cda5be571ddc90",
+            "go_sha256": "bbf7f3f44948b44aaa0ebad8ec9ecd27d97bcc7fc5205b42a6cda5be571ddc90",
+            "original_bytes": 135478,
+            "go_bytes": 135478,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 51,
+            "text": "千2A零秒十一百九２声万8。",
+            "original_sha256": "37315d97516a31c183d251f5c9ba3cd09997a5d5368abe78edf5c208c496ed11",
+            "go_sha256": "37315d97516a31c183d251f5c9ba3cd09997a5d5368abe78edf5c208c496ed11",
+            "original_bytes": 435236,
+            "go_bytes": 435236,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 52,
+            "text": "・五０.8十1１.〇五学校.。",
+            "original_sha256": "20457929568e6a84fd5c96d82f407af1ebe3a14c026500bcb59932069ee238b6",
+            "go_sha256": "20457929568e6a84fd5c96d82f407af1ebe3a14c026500bcb59932069ee238b6",
+            "original_bytes": 385392,
+            "go_bytes": 385392,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 53,
+            "text": "読む％1。",
+            "original_sha256": "19d27dbfe8bd7becd3ac99f4f3f883f30851ce9ce591fc256e42d7c43b074ed8",
+            "go_sha256": "19d27dbfe8bd7becd3ac99f4f3f883f30851ce9ce591fc256e42d7c43b074ed8",
+            "original_bytes": 219948,
+            "go_bytes": 219948,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 54,
+            "text": "二百−.京十千A分1−八．A零分。",
+            "original_sha256": "2c01cdad18f13ef14a50655c78809859495c7ed26bb6c22c662f317d4d9fbaac",
+            "go_sha256": "2c01cdad18f13ef14a50655c78809859495c7ed26bb6c22c662f317d4d9fbaac",
+            "original_bytes": 523182,
+            "go_bytes": 523182,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 55,
+            "text": "兆。",
+            "original_sha256": "6cf54a963df5526208f2f4f0ff058ac131921fab90c035d0603c7248a6e6c67c",
+            "go_sha256": "6cf54a963df5526208f2f4f0ff058ac131921fab90c035d0603c7248a6e6c67c",
+            "original_bytes": 121004,
+            "go_bytes": 121004,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 56,
+            "text": "秒個。",
+            "original_sha256": "05e42ef59c47ccd9d39bfc21397580a4d35f4218aac657c0cf2fae67449c5d36",
+            "go_sha256": "05e42ef59c47ccd9d39bfc21397580a4d35f4218aac657c0cf2fae67449c5d36",
+            "original_bytes": 139244,
+            "go_bytes": 139244,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 57,
+            "text": "年。",
+            "original_sha256": "6add040a3f080b5ab45b90a0fdba05f85ce0ecfa0aa0369442651e8bce8f6620",
+            "go_sha256": "6add040a3f080b5ab45b90a0fdba05f85ce0ecfa0aa0369442651e8bce8f6620",
+            "original_bytes": 113804,
+            "go_bytes": 113804,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 58,
+            "text": "万0個二円は。",
+            "original_sha256": "3962d7215bbd5b0bb8a9f672ebbb9218b8fa5a35e7723a9059e5e0647a05172b",
+            "go_sha256": "3962d7215bbd5b0bb8a9f672ebbb9218b8fa5a35e7723a9059e5e0647a05172b",
+            "original_bytes": 223244,
+            "go_bytes": 223244,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 59,
+            "text": "〇9〇十。",
+            "original_sha256": "da874fe660223fa67ca239b5902a23d7e75bb2f2405f2c3d2e5c389549f657e3",
+            "go_sha256": "da874fe660223fa67ca239b5902a23d7e75bb2f2405f2c3d2e5c389549f657e3",
+            "original_bytes": 210284,
+            "go_bytes": 210284,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 60,
+            "text": "－８〇−日円読む0．－時１日5日兆。",
+            "original_sha256": "74fdb8535b248d434fdb150c2b996eca861974571d56fc576f9d571191ad88af",
+            "go_sha256": "74fdb8535b248d434fdb150c2b996eca861974571d56fc576f9d571191ad88af",
+            "original_bytes": 526716,
+            "go_bytes": 526716,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 61,
+            "text": "）日８（一．三八2万。",
+            "original_sha256": "1b23269db3a3b8315aa46b6d2e799b392c08263ced5f8a0e96adca6b90e13a52",
+            "go_sha256": "1b23269db3a3b8315aa46b6d2e799b392c08263ced5f8a0e96adca6b90e13a52",
+            "original_bytes": 347838,
+            "go_bytes": 347838,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 62,
+            "text": "年5）8分00個１５。",
+            "original_sha256": "d5505d5391508a4efd9d0a2f099cd2acc8c74531abe3feb02c14058957783c14",
+            "go_sha256": "d5505d5391508a4efd9d0a2f099cd2acc8c74531abe3feb02c14058957783c14",
+            "original_bytes": 330612,
+            "go_bytes": 330612,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 63,
+            "text": "学校％8秒読む京.読む九秒は二は月時人。",
+            "original_sha256": "ed16442a5c14c496d583e07475d115bec210e7bb58ca8e113bcf907a57ea3c8d",
+            "go_sha256": "ed16442a5c14c496d583e07475d115bec210e7bb58ca8e113bcf907a57ea3c8d",
+            "original_bytes": 599740,
+            "go_bytes": 599740,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 64,
+            "text": "８読む01零２十。",
+            "original_sha256": "eb6923d09f4da878b2f2c517e62f732fddce09db3d10bf2d0f53420233d6654e",
+            "go_sha256": "eb6923d09f4da878b2f2c517e62f732fddce09db3d10bf2d0f53420233d6654e",
+            "original_bytes": 274454,
+            "go_bytes": 274454,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 65,
+            "text": "二８本Ｃ零.0円（Ｃ日の。",
+            "original_sha256": "be4b7319e349173e006703e594d7baba0fc97320e896ce89931534b2570bba34",
+            "go_sha256": "be4b7319e349173e006703e594d7baba0fc97320e896ce89931534b2570bba34",
+            "original_bytes": 364864,
+            "go_bytes": 364864,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 66,
+            "text": "－分1－万二京０。",
+            "original_sha256": "a1ec78beb7db004b6baad1b05769950036dd7068fe312bac32fa6395e9de0123",
+            "go_sha256": "a1ec78beb7db004b6baad1b05769950036dd7068fe312bac32fa6395e9de0123",
+            "original_bytes": 272644,
+            "go_bytes": 272644,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 67,
+            "text": "一。",
+            "original_sha256": "eaaa5f88dde69cd68de88432a02b0f8ff9bb44f605b8eef72c0e84d8bf64ca67",
+            "go_sha256": "eaaa5f88dde69cd68de88432a02b0f8ff9bb44f605b8eef72c0e84d8bf64ca67",
+            "original_bytes": 120524,
+            "go_bytes": 120524,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 68,
+            "text": "ＣA）時0日２は。",
+            "original_sha256": "c016d93495f1a7f06023a86e6985372aefc52b562f36b43fab73ef77978e2315",
+            "go_sha256": "c016d93495f1a7f06023a86e6985372aefc52b562f36b43fab73ef77978e2315",
+            "original_bytes": 249490,
+            "go_bytes": 249490,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 69,
+            "text": "Ｃ5。",
+            "original_sha256": "ef293520d035934797c299809daf33fa985b91af882ec1f424076b408a335f90",
+            "go_sha256": "ef293520d035934797c299809daf33fa985b91af882ec1f424076b408a335f90",
+            "original_bytes": 142124,
+            "go_bytes": 142124,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 70,
+            "text": "日時は１十月－．二Ａ月）0９０−。",
+            "original_sha256": "4c4aabf0bb4bc5e5ddb25c6b683ef80f78fd5d1a9886b4628d57dfa4c0afce86",
+            "go_sha256": "4c4aabf0bb4bc5e5ddb25c6b683ef80f78fd5d1a9886b4628d57dfa4c0afce86",
+            "original_bytes": 415974,
+            "go_bytes": 415974,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 71,
+            "text": "円〇（－1５。",
+            "original_sha256": "7b2229db89f6f402ea8a22ec0ce21a9e3bb00e18ad6f6c6ed0edf314e01a4b9e",
+            "go_sha256": "7b2229db89f6f402ea8a22ec0ce21a9e3bb00e18ad6f6c6ed0edf314e01a4b9e",
+            "original_bytes": 265492,
+            "go_bytes": 265492,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 72,
+            "text": "・本京−億九日三一5本万・一－－。",
+            "original_sha256": "a7a1448ea062d868c99e8ffab0f2b28a820810c42fd5270b15f9a678fe60c747",
+            "go_sha256": "a7a1448ea062d868c99e8ffab0f2b28a820810c42fd5270b15f9a678fe60c747",
+            "original_bytes": 457554,
+            "go_bytes": 457554,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 73,
+            "text": "は兆.。",
+            "original_sha256": "85aca2e0a1572f87ac9cfcb316637811ae41a8e5051e32afd4608b955d4e00e2",
+            "go_sha256": "85aca2e0a1572f87ac9cfcb316637811ae41a8e5051e32afd4608b955d4e00e2",
+            "original_bytes": 139314,
+            "go_bytes": 139314,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 74,
+            "text": "一兆十８読む五５％一兆五（A。",
+            "original_sha256": "738df507eb5c874cfd22948b88f8c36867f50435bf091d74922bda949a900a1a",
+            "go_sha256": "738df507eb5c874cfd22948b88f8c36867f50435bf091d74922bda949a900a1a",
+            "original_bytes": 448338,
+            "go_bytes": 448338,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 75,
+            "text": "％・秒万（2。",
+            "original_sha256": "10251e768508158fb6310200aecfdccfd9bfa6f59be515500560b960af302f23",
+            "go_sha256": "10251e768508158fb6310200aecfdccfd9bfa6f59be515500560b960af302f23",
+            "original_bytes": 272768,
+            "go_bytes": 272768,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 76,
+            "text": "）万５.8百（億年万千。",
+            "original_sha256": "58a2ed6ec00ef26786991798ee6df7aae388f5bc3df0a944cf61f6bcf4f7ac13",
+            "go_sha256": "58a2ed6ec00ef26786991798ee6df7aae388f5bc3df0a944cf61f6bcf4f7ac13",
+            "original_bytes": 341696,
+            "go_bytes": 341696,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 77,
+            "text": "の円万八2三（分．京０）－京８２。",
+            "original_sha256": "da5cb00b6d7d190554560e1bc2447e5599fa3ceab8a54dc80cfe4d4770c24c64",
+            "go_sha256": "da5cb00b6d7d190554560e1bc2447e5599fa3ceab8a54dc80cfe4d4770c24c64",
+            "original_bytes": 498318,
+            "go_bytes": 498318,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 78,
+            "text": "円兆9兆）日本円九声。",
+            "original_sha256": "e4fd95cb32fd0b6a8fa82f7172bd93fb038de3e12feb56a82ca62051c3287b78",
+            "go_sha256": "e4fd95cb32fd0b6a8fa82f7172bd93fb038de3e12feb56a82ca62051c3287b78",
+            "original_bytes": 347964,
+            "go_bytes": 347964,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 79,
+            "text": "八％二〇・。",
+            "original_sha256": "617f838fc6b75f2c084238a7881def8c45a50de08c0083a4b9613b4c4f2c16d0",
+            "go_sha256": "617f838fc6b75f2c084238a7881def8c45a50de08c0083a4b9613b4c4f2c16d0",
+            "original_bytes": 234070,
+            "go_bytes": 234070,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 80,
+            "text": "五Ａ百。",
+            "original_sha256": "9e88800bab9d7efaef7799d4f344129e3b94cd27459194a8df4c570db525b226",
+            "go_sha256": "9e88800bab9d7efaef7799d4f344129e3b94cd27459194a8df4c570db525b226",
+            "original_bytes": 165590,
+            "go_bytes": 165590,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 81,
+            "text": "声千兆円、秒。",
+            "original_sha256": "c0bccbeb918ca164d5f36a3008c467cfcbb58ce3c7a9962765b7830d260941ff",
+            "go_sha256": "c0bccbeb918ca164d5f36a3008c467cfcbb58ce3c7a9962765b7830d260941ff",
+            "original_bytes": 272740,
+            "go_bytes": 272740,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 82,
+            "text": "年時読む個Ｃ9－読む、二個。",
+            "original_sha256": "26c68c965b7b024093ecc4664b60a3afbbd06f5db092e2d0784252e165864698",
+            "go_sha256": "26c68c965b7b024093ecc4664b60a3afbbd06f5db092e2d0784252e165864698",
+            "original_bytes": 338712,
+            "go_bytes": 338712,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 83,
+            "text": "のＡ。",
+            "original_sha256": "45dea243eca32aa38c25aa722882eb7da33be67d0ce5eb3a07ace24724b66f38",
+            "go_sha256": "45dea243eca32aa38c25aa722882eb7da33be67d0ce5eb3a07ace24724b66f38",
+            "original_bytes": 145222,
+            "go_bytes": 145222,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 84,
+            "text": "個81）日人億分９一Ｃ．０.本。",
+            "original_sha256": "12c4bf9c4472bc870c78bf57847e1bb12bcd372444e5509a6891562db3bfda0b",
+            "go_sha256": "12c4bf9c4472bc870c78bf57847e1bb12bcd372444e5509a6891562db3bfda0b",
+            "original_bytes": 538222,
+            "go_bytes": 538222,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 85,
+            "text": "8．。",
+            "original_sha256": "a76486e6298d15250c8f8b47d012ae16d3a95b636eb0739b8e47c0b69f7ffe48",
+            "go_sha256": "a76486e6298d15250c8f8b47d012ae16d3a95b636eb0739b8e47c0b69f7ffe48",
+            "original_bytes": 126906,
+            "go_bytes": 126906,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 86,
+            "text": "億日Ｃ声．年０億．〇は８月Ｃ本。",
+            "original_sha256": "0202737c6bc9655fb6c09899e0743df08c0e8a301f36f56db1d99096ebed9b80",
+            "go_sha256": "0202737c6bc9655fb6c09899e0743df08c0e8a301f36f56db1d99096ebed9b80",
+            "original_bytes": 518002,
+            "go_bytes": 518002,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 87,
+            "text": "９2－％Aの学校五2９５日Ｃ５。",
+            "original_sha256": "3cb0ce28186d560a1a9cad5b76a3872bd2867c18dd708f971bd90381959d53a7",
+            "go_sha256": "3cb0ce28186d560a1a9cad5b76a3872bd2867c18dd708f971bd90381959d53a7",
+            "original_bytes": 507952,
+            "go_bytes": 507952,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 88,
+            "text": "0五京は分21.A5の声９.。",
+            "original_sha256": "346c907f082c41b6054d03c5748da06df957510af7688fba38ba8597e84dabb0",
+            "go_sha256": "346c907f082c41b6054d03c5748da06df957510af7688fba38ba8597e84dabb0",
+            "original_bytes": 455784,
+            "go_bytes": 455784,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 89,
+            "text": "秒5人は京・兆８は円５。",
+            "original_sha256": "169a3fe0236659e0a868212e2417dfebbd78a7d7a49263d50a181b459c186db2",
+            "go_sha256": "169a3fe0236659e0a868212e2417dfebbd78a7d7a49263d50a181b459c186db2",
+            "original_bytes": 346814,
+            "go_bytes": 346814,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 90,
+            "text": "千三十２8％２読む。",
+            "original_sha256": "181a8b305f340e3b920d608805eb954a448676f5e96ed0eb2bbca081d6a8c04a",
+            "go_sha256": "181a8b305f340e3b920d608805eb954a448676f5e96ed0eb2bbca081d6a8c04a",
+            "original_bytes": 356630,
+            "go_bytes": 356630,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 91,
+            "text": "五−千8人兆８月一０秒２・。",
+            "original_sha256": "5e8a5a78d643e356451a31c761e3312ca8604888554d39ba4bf4cd6646ba3024",
+            "go_sha256": "5e8a5a78d643e356451a31c761e3312ca8604888554d39ba4bf4cd6646ba3024",
+            "original_bytes": 421560,
+            "go_bytes": 421560,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 92,
+            "text": "個−月20年．は声分。",
+            "original_sha256": "0239560d9bb7440ce1c1ca5e03998f445a3ab511a48b87cc0d7b7ec6cb74159e",
+            "go_sha256": "0239560d9bb7440ce1c1ca5e03998f445a3ab511a48b87cc0d7b7ec6cb74159e",
+            "original_bytes": 314694,
+            "go_bytes": 314694,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 93,
+            "text": "本本・０1十秒声日〇声、。",
+            "original_sha256": "b936767ec979f8bb92a06410a2051a4566bd7085fa8de16744a5f4f318cb5f51",
+            "go_sha256": "b936767ec979f8bb92a06410a2051a4566bd7085fa8de16744a5f4f318cb5f51",
+            "original_bytes": 345064,
+            "go_bytes": 345064,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 94,
+            "text": "A億一Ｃ5二万五A9零．－月五〇。",
+            "original_sha256": "8e51a0c1f2325b34dd6e79e68824b974016318194c3551454e4680275f729388",
+            "go_sha256": "8e51a0c1f2325b34dd6e79e68824b974016318194c3551454e4680275f729388",
+            "original_bytes": 471538,
+            "go_bytes": 471538,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 95,
+            "text": "日京は２本時個円。",
+            "original_sha256": "139119f2616557f2fa3f0c623c62511378a91f4dee1e9c8dd30f1d5e4156f44a",
+            "go_sha256": "139119f2616557f2fa3f0c623c62511378a91f4dee1e9c8dd30f1d5e4156f44a",
+            "original_bytes": 239506,
+            "go_bytes": 239506,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 96,
+            "text": "２5。",
+            "original_sha256": "626228f223c8d60e38de04ebe72f5022482182ebf0f04455025ecce6c240cad9",
+            "go_sha256": "626228f223c8d60e38de04ebe72f5022482182ebf0f04455025ecce6c240cad9",
+            "original_bytes": 152208,
+            "go_bytes": 152208,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 97,
+            "text": "１５％人八5万.学校時。",
+            "original_sha256": "391b2c81171665260cc5a50545be7d97ec2285f50932557e4eda9954f20e1f1d",
+            "go_sha256": "391b2c81171665260cc5a50545be7d97ec2285f50932557e4eda9954f20e1f1d",
+            "original_bytes": 404020,
+            "go_bytes": 404020,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 98,
+            "text": "２本２9十日（８三九Ａ・声５.二。",
+            "original_sha256": "79aae5604195f68fbddaa7f2d6e2f1aa35ea3e3a3c8318b9ea683c564c739533",
+            "go_sha256": "79aae5604195f68fbddaa7f2d6e2f1aa35ea3e3a3c8318b9ea683c564c739533",
+            "original_bytes": 535082,
+            "go_bytes": 535082,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 99,
+            "text": "は万円百。",
+            "original_sha256": "a56fea93a6bbcf3e14dac607a3d075a8c4296cc7d3c5525bb224550768b65e80",
+            "go_sha256": "a56fea93a6bbcf3e14dac607a3d075a8c4296cc7d3c5525bb224550768b65e80",
+            "original_bytes": 193200,
+            "go_bytes": 193200,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 100,
+            "text": "時〇。",
+            "original_sha256": "4080858106837bbd85d33e52f8c3a86a8964432263d1d275590cf01e03ee7748",
+            "go_sha256": "4080858106837bbd85d33e52f8c3a86a8964432263d1d275590cf01e03ee7748",
+            "original_bytes": 146840,
+            "go_bytes": 146840,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 101,
+            "text": "９十8・三。",
+            "original_sha256": "83b845c8144890495c0501caecbd494d7a35031dd5cd5fc725a155acec01cfb3",
+            "go_sha256": "83b845c8144890495c0501caecbd494d7a35031dd5cd5fc725a155acec01cfb3",
+            "original_bytes": 226568,
+            "go_bytes": 226568,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 102,
+            "text": "分学校年1九５－）年５。",
+            "original_sha256": "064997d21bf7e11523bc04db4ebd4ab678d7c06e47e42d16ba6750face1c2603",
+            "go_sha256": "064997d21bf7e11523bc04db4ebd4ab678d7c06e47e42d16ba6750face1c2603",
+            "original_bytes": 303686,
+            "go_bytes": 303686,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 103,
+            "text": "零三百Ａ二5。",
+            "original_sha256": "e6f599652aea1b716aeed8d8497738f258fe502552c77bec0b7d087443948707",
+            "go_sha256": "e6f599652aea1b716aeed8d8497738f258fe502552c77bec0b7d087443948707",
+            "original_bytes": 234040,
+            "go_bytes": 234040,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 104,
+            "text": "5は.秒百ＣＣ京）十読む億千九。",
+            "original_sha256": "a7087b8252f4de0a4a9184f6cb96dbbc2768194ae32749a9a338a64d1a752e7f",
+            "go_sha256": "a7087b8252f4de0a4a9184f6cb96dbbc2768194ae32749a9a338a64d1a752e7f",
+            "original_bytes": 473302,
+            "go_bytes": 473302,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 105,
+            "text": "個三三Ａ個。",
+            "original_sha256": "6a41d66a704ca613a690d75a826596171c49812a242d7d46a256c939cb11d0f5",
+            "go_sha256": "6a41d66a704ca613a690d75a826596171c49812a242d7d46a256c939cb11d0f5",
+            "original_bytes": 234348,
+            "go_bytes": 234348,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 106,
+            "text": "九日、分・。",
+            "original_sha256": "c0054b64770336d7fa41b83a4aba055165bdca27aabf401d76195e3495f74ab8",
+            "go_sha256": "c0054b64770336d7fa41b83a4aba055165bdca27aabf401d76195e3495f74ab8",
+            "original_bytes": 221320,
+            "go_bytes": 221320,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 107,
+            "text": "A。",
+            "original_sha256": "21838d64d65140e108f0ee8297baad3ec95568afb6f9b087cfe934b5a235b5df",
+            "go_sha256": "21838d64d65140e108f0ee8297baad3ec95568afb6f9b087cfe934b5a235b5df",
+            "original_bytes": 120044,
+            "go_bytes": 120044,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 108,
+            "text": "三万８５万日八十〇ＡAＣ京。",
+            "original_sha256": "8f1ed6d04d329997e3f667897de640c366d4669204bdbe6acb9e1c7fa8f28109",
+            "go_sha256": "8f1ed6d04d329997e3f667897de640c366d4669204bdbe6acb9e1c7fa8f28109",
+            "original_bytes": 463442,
+            "go_bytes": 463442,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 109,
+            "text": "個8万千％）－日九％。",
+            "original_sha256": "b5038b3bc5c6663461aeb3a7db3c6374f63cfacae103638c7d354bd3b8c52366",
+            "go_sha256": "b5038b3bc5c6663461aeb3a7db3c6374f63cfacae103638c7d354bd3b8c52366",
+            "original_bytes": 407308,
+            "go_bytes": 407308,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 110,
+            "text": "の秒.零二時－Ａ声年．百零円1。",
+            "original_sha256": "da71a4e3a0b292476097e81d3b83b803d7360ed8bab7d8bdbc9e202c3d94142f",
+            "go_sha256": "da71a4e3a0b292476097e81d3b83b803d7360ed8bab7d8bdbc9e202c3d94142f",
+            "original_bytes": 483828,
+            "go_bytes": 483828,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 111,
+            "text": "人0本〇学校一９1秒。",
+            "original_sha256": "b36179384edba5ca2f598462888a18299757e77d1854d524104dacc7d5a93f80",
+            "go_sha256": "b36179384edba5ca2f598462888a18299757e77d1854d524104dacc7d5a93f80",
+            "original_bytes": 383910,
+            "go_bytes": 383910,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 112,
+            "text": "１－９８秒分秒８A年Ｃ.〇。",
+            "original_sha256": "bd4e1ce3985c2d992c28fdc6ef0db63810d6b86b3d4c5110ccb41114c3674d08",
+            "go_sha256": "bd4e1ce3985c2d992c28fdc6ef0db63810d6b86b3d4c5110ccb41114c3674d08",
+            "original_bytes": 481946,
+            "go_bytes": 481946,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 113,
+            "text": "）万５・個兆.。",
+            "original_sha256": "fd8311e94f66e59c53c05152401166432408e43adcd590ae8e57620035823143",
+            "go_sha256": "fd8311e94f66e59c53c05152401166432408e43adcd590ae8e57620035823143",
+            "original_bytes": 200206,
+            "go_bytes": 200206,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 114,
+            "text": "万）Ａ0京秒万八京Ｃ声個月。",
+            "original_sha256": "f860e96618d0b74c8facbcf057819a95d5d44e0b929823709a5e418e27b70fd5",
+            "go_sha256": "f860e96618d0b74c8facbcf057819a95d5d44e0b929823709a5e418e27b70fd5",
+            "original_bytes": 409918,
+            "go_bytes": 409918,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 115,
+            "text": "Ｃ秒三時本。",
+            "original_sha256": "51390eb2790e94632187a51b1b8e72f7284d9076f657eaf1b441de104c14f1b5",
+            "go_sha256": "51390eb2790e94632187a51b1b8e72f7284d9076f657eaf1b441de104c14f1b5",
+            "original_bytes": 211524,
+            "go_bytes": 211524,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 116,
+            "text": "９百分三京の2二秒％月零の。",
+            "original_sha256": "d658c44c56bdb44eb597d9e2fafe195e80c51b4e6987626d1d550ebf114028be",
+            "go_sha256": "d658c44c56bdb44eb597d9e2fafe195e80c51b4e6987626d1d550ebf114028be",
+            "original_bytes": 463770,
+            "go_bytes": 463770,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 117,
+            "text": "百日本円−.十本．月）。",
+            "original_sha256": "d3e0ce128a7e7b6c879ebd5c37d43b0164547ad444097b3471615b98a68601c5",
+            "go_sha256": "d3e0ce128a7e7b6c879ebd5c37d43b0164547ad444097b3471615b98a68601c5",
+            "original_bytes": 350576,
+            "go_bytes": 350576,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 118,
+            "text": "（２個１１は。",
+            "original_sha256": "ca476b99289003a754fb1cb2598d6179ddda76f814e46835e217eb16fddf2509",
+            "go_sha256": "ca476b99289003a754fb1cb2598d6179ddda76f814e46835e217eb16fddf2509",
+            "original_bytes": 196844,
+            "go_bytes": 196844,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 119,
+            "text": "A、時兆零一％1（二百八。",
+            "original_sha256": "08b8fc883896645dbd37af6c2d33fc666e3b892c312ee8e9cdc8813d9b343b6d",
+            "go_sha256": "08b8fc883896645dbd37af6c2d33fc666e3b892c312ee8e9cdc8813d9b343b6d",
+            "original_bytes": 463324,
+            "go_bytes": 463324,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 120,
+            "text": "8分５5億９。",
+            "original_sha256": "f85fc86f7826856f2a108adec9302ed7014d9ce9673245acf5c36e2ac884da87",
+            "go_sha256": "f85fc86f7826856f2a108adec9302ed7014d9ce9673245acf5c36e2ac884da87",
+            "original_bytes": 262376,
+            "go_bytes": 262376,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 121,
+            "text": "－分、の月年二秒百％．五一京％。",
+            "original_sha256": "5922e052ab55001406e2e97e70a3fcafb16a30997f6a876473f71bd5f9de47df",
+            "go_sha256": "5922e052ab55001406e2e97e70a3fcafb16a30997f6a876473f71bd5f9de47df",
+            "original_bytes": 565706,
+            "go_bytes": 565706,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 122,
+            "text": "京−９〇9。",
+            "original_sha256": "db8e89816dee2d7c4fd3244d0fabbb016dc87d7970bbf8ef17beca08d19dfc8c",
+            "go_sha256": "db8e89816dee2d7c4fd3244d0fabbb016dc87d7970bbf8ef17beca08d19dfc8c",
+            "original_bytes": 262908,
+            "go_bytes": 262908,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 123,
+            "text": "８2人Ａ.三Ａ2２月）五。",
+            "original_sha256": "13942534af744309390a02b8d175465d084a33e14b05aa25f5c04061f1770c36",
+            "go_sha256": "13942534af744309390a02b8d175465d084a33e14b05aa25f5c04061f1770c36",
+            "original_bytes": 390928,
+            "go_bytes": 390928,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 124,
+            "text": "〇分−１１月）十）年二２．％8・。",
+            "original_sha256": "f502c93437d949a71f6558eb4dfe17907ea4a07b729a852ae062b6f032fbb23a",
+            "go_sha256": "f502c93437d949a71f6558eb4dfe17907ea4a07b729a852ae062b6f032fbb23a",
+            "original_bytes": 478814,
+            "go_bytes": 478814,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 125,
+            "text": "分三分京年－秒％学校学校日。",
+            "original_sha256": "c7d2be0054a15c8a17e0fe0b52238dc1d6d31355b9b68e1f504a6f9dfaf6fbfd",
+            "go_sha256": "c7d2be0054a15c8a17e0fe0b52238dc1d6d31355b9b68e1f504a6f9dfaf6fbfd",
+            "original_bytes": 433960,
+            "go_bytes": 433960,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 126,
+            "text": "秒九本千千8。",
+            "original_sha256": "205bf33b55842cf1322f1d338f971093819faedebb93fe232dcd40a0acf47bf0",
+            "go_sha256": "205bf33b55842cf1322f1d338f971093819faedebb93fe232dcd40a0acf47bf0",
+            "original_bytes": 271744,
+            "go_bytes": 271744,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 127,
+            "text": "人０・％分０秒8億A二個21。",
+            "original_sha256": "7f64d69e884a650760fc4646a21c4b5b10fe4f6b02c35ac63a7da6387e8e9936",
+            "go_sha256": "7f64d69e884a650760fc4646a21c4b5b10fe4f6b02c35ac63a7da6387e8e9936",
+            "original_bytes": 500786,
+            "go_bytes": 500786,
+            "first_difference": -1,
+            "equal": true
+          }
+        ]
+      }
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "log_sha256": "5aca8515616946294884056b0f2d356064da87898c050864fbdd878cf40b4f74",
+      "report_sha256": "a479e250483a91ea77c310fbf16f591c7738e5eb4f32d315cd7e36bc83fb1d8c",
+      "capture_sha256": "acdc324207421e3908dcaba01ad12d9dc45c7b15b29c1a1247a0a24877b0833c",
+      "corpus_sha256": "231a849afc29ae332e6ef9dcffc153197e344bde7d14110ac954f1203f794526",
+      "report": {
+        "shard": 0,
+        "shards": 1,
+        "seed": 1,
+        "generator_version": 1,
+        "count": 128,
+        "max_units": 16,
+        "go_version": "go1.26.8",
+        "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+        "voice": "KotonohaAoi_ns_48",
+        "original_threads": 6,
+        "avx512_convolutions": false,
+        "results": [
+          {
+            "index": 0,
+            "text": "1秒２の５時分Ｃ本円月％２秒Ａ5。",
+            "original_sha256": "95a3467454a3fce329551ec2bc113456b7a7d1d1ceefc6825fa0ea809833faaa",
+            "go_sha256": "95a3467454a3fce329551ec2bc113456b7a7d1d1ceefc6825fa0ea809833faaa",
+            "original_bytes": 565046,
+            "go_bytes": 565046,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 1,
+            "text": "本・読む−日千読む9０本。",
+            "original_sha256": "f827ed29e157788cabca1d21b56d71cf2230293935da11ab43f180e8b627bfda",
+            "go_sha256": "f827ed29e157788cabca1d21b56d71cf2230293935da11ab43f180e8b627bfda",
+            "original_bytes": 351870,
+            "go_bytes": 351870,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 2,
+            "text": "億九日9１五．の億一五百分Ａ2〇。",
+            "original_sha256": "03cba9ecf9bedb7dad4d377fc555d990c76264f335acf449feb6086708f217c1",
+            "go_sha256": "03cba9ecf9bedb7dad4d377fc555d990c76264f335acf449feb6086708f217c1",
+            "original_bytes": 522274,
+            "go_bytes": 522274,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 3,
+            "text": "０三２一－円。",
+            "original_sha256": "c65d36f693bf7b3b9766669b0d8f4aada94e37301f8750e9d6fa39bbdacde23f",
+            "go_sha256": "c65d36f693bf7b3b9766669b0d8f4aada94e37301f8750e9d6fa39bbdacde23f",
+            "original_bytes": 211196,
+            "go_bytes": 211196,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 4,
+            "text": "学校百十９1。",
+            "original_sha256": "31a3b8fbe279c25d4a0d9ff110ad6262d6a3c13cc9d2e0026100f80b78779210",
+            "go_sha256": "31a3b8fbe279c25d4a0d9ff110ad6262d6a3c13cc9d2e0026100f80b78779210",
+            "original_bytes": 293298,
+            "go_bytes": 293298,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 5,
+            "text": "兆一零．千Ａ19。",
+            "original_sha256": "6551d5705fa336da8f25fead0ccc3db1f20b72a3eca73fc9c73c1d33a54802ab",
+            "go_sha256": "6551d5705fa336da8f25fead0ccc3db1f20b72a3eca73fc9c73c1d33a54802ab",
+            "original_bytes": 310092,
+            "go_bytes": 310092,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 6,
+            "text": "零零二。",
+            "original_sha256": "72f478941a683e17953261a406f7bc84079117826309c4c82e541fa297fe692e",
+            "go_sha256": "72f478941a683e17953261a406f7bc84079117826309c4c82e541fa297fe692e",
+            "original_bytes": 157942,
+            "go_bytes": 157942,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 7,
+            "text": "億9Ｃ年人京三分0〇。",
+            "original_sha256": "9784be69a916e8b1b8994d5b46d78ab1689ee9efaa5b92734dd19aea9f620294",
+            "go_sha256": "9784be69a916e8b1b8994d5b46d78ab1689ee9efaa5b92734dd19aea9f620294",
+            "original_bytes": 357928,
+            "go_bytes": 357928,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 8,
+            "text": "個年五十九分５読む千2一〇年年零。",
+            "original_sha256": "209e2813496a8613d1b55e9ac967d6dd8b54c4b62d5e0a59263be83c0860947f",
+            "go_sha256": "209e2813496a8613d1b55e9ac967d6dd8b54c4b62d5e0a59263be83c0860947f",
+            "original_bytes": 445052,
+            "go_bytes": 445052,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 9,
+            "text": "8百．－時８Ｃ円８〇Ａ二八0本。",
+            "original_sha256": "403a9974663f45c237f43590beec960980d4f03d26f960f4d68675a5b4b33e33",
+            "go_sha256": "403a9974663f45c237f43590beec960980d4f03d26f960f4d68675a5b4b33e33",
+            "original_bytes": 496160,
+            "go_bytes": 496160,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 10,
+            "text": "５5。",
+            "original_sha256": "37ed5b337eeb6e653055f613f34adadf7bf348cc221b7c21f5b996dbba92a2a1",
+            "go_sha256": "37ed5b337eeb6e653055f613f34adadf7bf348cc221b7c21f5b996dbba92a2a1",
+            "original_bytes": 155166,
+            "go_bytes": 155166,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 11,
+            "text": "9〇二2９日.八０－は円Ａ９京。",
+            "original_sha256": "6fead0eca98d17a6956023d59be75a740a5db96000d4897bcac120a7152f2c6e",
+            "go_sha256": "6fead0eca98d17a6956023d59be75a740a5db96000d4897bcac120a7152f2c6e",
+            "original_bytes": 491662,
+            "go_bytes": 491662,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 12,
+            "text": "学校十A２十年分・日二学校）。",
+            "original_sha256": "db11a0b9820285d563c4751f6be9335573900a3e689466dbcb500a59414b9272",
+            "go_sha256": "db11a0b9820285d563c4751f6be9335573900a3e689466dbcb500a59414b9272",
+            "original_bytes": 398986,
+            "go_bytes": 398986,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 13,
+            "text": "千．千２億5。",
+            "original_sha256": "ac5e2737beda335468d073b8f2b650e8dcecd616e7fc54f3b5c9d86a252f3e73",
+            "go_sha256": "ac5e2737beda335468d073b8f2b650e8dcecd616e7fc54f3b5c9d86a252f3e73",
+            "original_bytes": 238432,
+            "go_bytes": 238432,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 14,
+            "text": "百学校。",
+            "original_sha256": "a0391f036dc4776390c8e9a0c45fce1b3f808f7889fa577c95bdc0f598c3a96d",
+            "go_sha256": "a0391f036dc4776390c8e9a0c45fce1b3f808f7889fa577c95bdc0f598c3a96d",
+            "original_bytes": 178694,
+            "go_bytes": 178694,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 15,
+            "text": "五）・の0．分）九読む人個二）％。",
+            "original_sha256": "10f62e3c73cb28939afefcf2de86ab9b82f1cb03cd2ea0dd06d22d9c1864b15a",
+            "go_sha256": "10f62e3c73cb28939afefcf2de86ab9b82f1cb03cd2ea0dd06d22d9c1864b15a",
+            "original_bytes": 399278,
+            "go_bytes": 399278,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 16,
+            "text": "時．学校。",
+            "original_sha256": "6a0ebbf0f64183719292e44c3b1781b5f6538225e8ef54cb769146eabf96bd9f",
+            "go_sha256": "6a0ebbf0f64183719292e44c3b1781b5f6538225e8ef54cb769146eabf96bd9f",
+            "original_bytes": 171974,
+            "go_bytes": 171974,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 17,
+            "text": "）万Ａ0１声０。",
+            "original_sha256": "d756f33f6585f78db81e27ef0e33bd5067e7f0276d64287d107ee708e5578ee4",
+            "go_sha256": "d756f33f6585f78db81e27ef0e33bd5067e7f0276d64287d107ee708e5578ee4",
+            "original_bytes": 258160,
+            "go_bytes": 258160,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 18,
+            "text": "１．５。",
+            "original_sha256": "d7961a0593addbdd03795891ba5d991f3ce5e2f3f3f5081693506ff45ad138c6",
+            "go_sha256": "d7961a0593addbdd03795891ba5d991f3ce5e2f3f3f5081693506ff45ad138c6",
+            "original_bytes": 158288,
+            "go_bytes": 158288,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 19,
+            "text": "８。",
+            "original_sha256": "a76486e6298d15250c8f8b47d012ae16d3a95b636eb0739b8e47c0b69f7ffe48",
+            "go_sha256": "a76486e6298d15250c8f8b47d012ae16d3a95b636eb0739b8e47c0b69f7ffe48",
+            "original_bytes": 126906,
+            "go_bytes": 126906,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 20,
+            "text": "万5百時分百−。",
+            "original_sha256": "1751dabb3efbce6158437b4f7a69c92a021855d0f35fb7bfd0e7cc6e630a3867",
+            "go_sha256": "1751dabb3efbce6158437b4f7a69c92a021855d0f35fb7bfd0e7cc6e630a3867",
+            "original_bytes": 232952,
+            "go_bytes": 232952,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 21,
+            "text": "三三円９八・0零Ａ8。",
+            "original_sha256": "b419949db386f5f386a6afb21c93e5a6a0cf4a0da49204a1d60bd4d3e4c5dc4b",
+            "go_sha256": "b419949db386f5f386a6afb21c93e5a6a0cf4a0da49204a1d60bd4d3e4c5dc4b",
+            "original_bytes": 389102,
+            "go_bytes": 389102,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 22,
+            "text": "％個、（日。",
+            "original_sha256": "ecd3f0188740db63b5b6fe3bc79f5cb546fcaedf6721c2de9bbf7c66bb9382ba",
+            "go_sha256": "ecd3f0188740db63b5b6fe3bc79f5cb546fcaedf6721c2de9bbf7c66bb9382ba",
+            "original_bytes": 225064,
+            "go_bytes": 225064,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 23,
+            "text": "・億本万（兆1九９.万万Ｃ。",
+            "original_sha256": "def960aed75550495f59dad31346b340321dcd644b5b8f9fcf4207dcfd9ce9ce",
+            "go_sha256": "def960aed75550495f59dad31346b340321dcd644b5b8f9fcf4207dcfd9ce9ce",
+            "original_bytes": 405744,
+            "go_bytes": 405744,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 24,
+            "text": "月兆個％。",
+            "original_sha256": "de5b3fcd79210096372f68ad928e6bfdc1ff4e7ac8ca4f8d884549df68830d7c",
+            "go_sha256": "de5b3fcd79210096372f68ad928e6bfdc1ff4e7ac8ca4f8d884549df68830d7c",
+            "original_bytes": 230414,
+            "go_bytes": 230414,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 25,
+            "text": "は円8．8２。",
+            "original_sha256": "abfac8045268d34469dabeacc23e6d77bf9af1a9fe0e7c708c7ee8211aa42378",
+            "go_sha256": "abfac8045268d34469dabeacc23e6d77bf9af1a9fe0e7c708c7ee8211aa42378",
+            "original_bytes": 285002,
+            "go_bytes": 285002,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 26,
+            "text": "千２時兆個。",
+            "original_sha256": "45bea2660d15fbaea038efedfd150a78059f4ebb8d61574ba7813b3b051c66a0",
+            "go_sha256": "45bea2660d15fbaea038efedfd150a78059f4ebb8d61574ba7813b3b051c66a0",
+            "original_bytes": 200118,
+            "go_bytes": 200118,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 27,
+            "text": "京・）％個0十八。",
+            "original_sha256": "7ad5e3dcd1a0d32707a5f4d9d27bbb693efb4feb753c8239a92a80e592b337ce",
+            "go_sha256": "7ad5e3dcd1a0d32707a5f4d9d27bbb693efb4feb753c8239a92a80e592b337ce",
+            "original_bytes": 308980,
+            "go_bytes": 308980,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 28,
+            "text": "千８人Ｃ.一２８読む。",
+            "original_sha256": "ff03dab4169df0770748ceb66caf566e8b43b2c577eb5f30f81e2d532a9d84f6",
+            "go_sha256": "ff03dab4169df0770748ceb66caf566e8b43b2c577eb5f30f81e2d532a9d84f6",
+            "original_bytes": 372954,
+            "go_bytes": 372954,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 29,
+            "text": "五読む零秒月（本2。",
+            "original_sha256": "f2271852b4700c5951ace81a47223c10786fbae992d887503cb0ff2e2e136362",
+            "go_sha256": "f2271852b4700c5951ace81a47223c10786fbae992d887503cb0ff2e2e136362",
+            "original_bytes": 280500,
+            "go_bytes": 280500,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 30,
+            "text": "万2５・声－2。",
+            "original_sha256": "2cb0cfadf55ae834145d6ead86dbd12cfc3f42b70dce503b5ee454f28eb4ad4a",
+            "go_sha256": "2cb0cfadf55ae834145d6ead86dbd12cfc3f42b70dce503b5ee454f28eb4ad4a",
+            "original_bytes": 296562,
+            "go_bytes": 296562,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 31,
+            "text": "９−。",
+            "original_sha256": "eb19e32bd0327b12fd3a6a1614ac8962ee608e756b4d316cee9082701d68ee14",
+            "go_sha256": "eb19e32bd0327b12fd3a6a1614ac8962ee608e756b4d316cee9082701d68ee14",
+            "original_bytes": 124584,
+            "go_bytes": 124584,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 32,
+            "text": "は分。",
+            "original_sha256": "7520c3be264043284898b7f72958a28e60ddcac139aeb8db8aaedeff76c79db7",
+            "go_sha256": "7520c3be264043284898b7f72958a28e60ddcac139aeb8db8aaedeff76c79db7",
+            "original_bytes": 132828,
+            "go_bytes": 132828,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 33,
+            "text": ".9.億、九日・・千の時・。",
+            "original_sha256": "a9852e5af4efe1a2603b095db8f17c899edc1a23135d8b90851dc4916bb36b22",
+            "go_sha256": "a9852e5af4efe1a2603b095db8f17c899edc1a23135d8b90851dc4916bb36b22",
+            "original_bytes": 376352,
+            "go_bytes": 376352,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 34,
+            "text": "・年％9、〇秒2声。",
+            "original_sha256": "8e31f8e1b9ee6558340ef75b256c4fee3c49ec39108cbc77514c6125ed692f34",
+            "go_sha256": "8e31f8e1b9ee6558340ef75b256c4fee3c49ec39108cbc77514c6125ed692f34",
+            "original_bytes": 360472,
+            "go_bytes": 360472,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 35,
+            "text": "京億Ｃ八ＡＡ日。",
+            "original_sha256": "4c587b370049aa1959ec60523f5b4bda49a9d122e327309b0b48aacc874a19b3",
+            "go_sha256": "4c587b370049aa1959ec60523f5b4bda49a9d122e327309b0b48aacc874a19b3",
+            "original_bytes": 276314,
+            "go_bytes": 276314,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 36,
+            "text": "学校・零五5五月本。",
+            "original_sha256": "8a487a5e6e70efe97046e826654d6f6d49db57694ee0e4abc50f73cf601e9f0a",
+            "go_sha256": "8a487a5e6e70efe97046e826654d6f6d49db57694ee0e4abc50f73cf601e9f0a",
+            "original_bytes": 290452,
+            "go_bytes": 290452,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 37,
+            "text": "二.は学校１百5Ｃ％A、A九％。",
+            "original_sha256": "fed3d643c99ccdd787dfc4c796c70a5058074b2bbed773602f18faa186992c07",
+            "go_sha256": "fed3d643c99ccdd787dfc4c796c70a5058074b2bbed773602f18faa186992c07",
+            "original_bytes": 543396,
+            "go_bytes": 543396,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 38,
+            "text": "８千。",
+            "original_sha256": "fbd358935a05f6881a20112779b698224058c8271a61ec0ca88e6de4d705e739",
+            "go_sha256": "fbd358935a05f6881a20112779b698224058c8271a61ec0ca88e6de4d705e739",
+            "original_bytes": 140820,
+            "go_bytes": 140820,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 39,
+            "text": "百）億月、１5二Ｃ百兆本五兆年9。",
+            "original_sha256": "c8becf4750f29a59d48e9eca6a9f3391a9d3f707bfeb6b186f8c521cd57b0bb7",
+            "go_sha256": "c8becf4750f29a59d48e9eca6a9f3391a9d3f707bfeb6b186f8c521cd57b0bb7",
+            "original_bytes": 547164,
+            "go_bytes": 547164,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 40,
+            "text": "分％。",
+            "original_sha256": "1a717d451cc0ee2f34f021e6fde8f0c3f86276aa083c0234da48e112f0168c44",
+            "go_sha256": "1a717d451cc0ee2f34f021e6fde8f0c3f86276aa083c0234da48e112f0168c44",
+            "original_bytes": 187650,
+            "go_bytes": 187650,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 41,
+            "text": "、十十.）０個）〇読む８％.１－。",
+            "original_sha256": "06916e1dde9711415fc510c2c6df83b89c46ffa25d0ef6ca9f30389ab55a4206",
+            "go_sha256": "06916e1dde9711415fc510c2c6df83b89c46ffa25d0ef6ca9f30389ab55a4206",
+            "original_bytes": 492406,
+            "go_bytes": 492406,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 42,
+            "text": "2千.１十０円円人1％九本十二0。",
+            "original_sha256": "941601e9ad4798254ed1acd6188fefa00a19493378fef8c6c3141658b31d7b84",
+            "go_sha256": "941601e9ad4798254ed1acd6188fefa00a19493378fef8c6c3141658b31d7b84",
+            "original_bytes": 535206,
+            "go_bytes": 535206,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 43,
+            "text": "％（Ｃ千一。",
+            "original_sha256": "6036671737b93b5263d14359901a8d3c338dbd819b463f63a2f43ade7d0313ef",
+            "go_sha256": "6036671737b93b5263d14359901a8d3c338dbd819b463f63a2f43ade7d0313ef",
+            "original_bytes": 274280,
+            "go_bytes": 274280,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 44,
+            "text": "０億一〇は分三零8〇時Ａ京一年。",
+            "original_sha256": "5c2e0693297e2aecde1a5baea3f5b12bb44a15696d01be39f7afe41404b80165",
+            "go_sha256": "5c2e0693297e2aecde1a5baea3f5b12bb44a15696d01be39f7afe41404b80165",
+            "original_bytes": 462582,
+            "go_bytes": 462582,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 45,
+            "text": "2。",
+            "original_sha256": "d5c222f9d646a46dad7c04e65748fc2359dd8261ceaad0111e0db00c59a5501e",
+            "go_sha256": "d5c222f9d646a46dad7c04e65748fc2359dd8261ceaad0111e0db00c59a5501e",
+            "original_bytes": 104204,
+            "go_bytes": 104204,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 46,
+            "text": "十Ａ（.（0本。",
+            "original_sha256": "d2cbf6694f87ead68ecb0dd42f6950616b940dee7d534bba07a7cab3fbb3fd47",
+            "go_sha256": "d2cbf6694f87ead68ecb0dd42f6950616b940dee7d534bba07a7cab3fbb3fd47",
+            "original_bytes": 240218,
+            "go_bytes": 240218,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 47,
+            "text": "）年百。",
+            "original_sha256": "f639c10b31c62c3ec52da1627459c985fa968341d0871c893ae5a1602f03c838",
+            "go_sha256": "f639c10b31c62c3ec52da1627459c985fa968341d0871c893ae5a1602f03c838",
+            "original_bytes": 152562,
+            "go_bytes": 152562,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 48,
+            "text": "〇は零は月－本。",
+            "original_sha256": "f7f632fa782a359eca8d14caea92dbc00a5722323edaaeafecf18031930e40a5",
+            "go_sha256": "f7f632fa782a359eca8d14caea92dbc00a5722323edaaeafecf18031930e40a5",
+            "original_bytes": 247374,
+            "go_bytes": 247374,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 49,
+            "text": "一兆％円20人％。",
+            "original_sha256": "3c0d0a02b14b9713868b42c703de3ca56a8147846d6d548e21f19244476c8919",
+            "go_sha256": "3c0d0a02b14b9713868b42c703de3ca56a8147846d6d548e21f19244476c8919",
+            "original_bytes": 368826,
+            "go_bytes": 368826,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 50,
+            "text": "0二.、。",
+            "original_sha256": "53fa40b73c6d81f14cd3eb2197b2d63072312d1b26a1b3b4b33c149775679b8c",
+            "go_sha256": "53fa40b73c6d81f14cd3eb2197b2d63072312d1b26a1b3b4b33c149775679b8c",
+            "original_bytes": 133812,
+            "go_bytes": 133812,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 51,
+            "text": "千2A零秒十一百九２声万8。",
+            "original_sha256": "bf7d573927ad317c7a3f09e36641b39edbf484ee5332c333bca85667f7012e50",
+            "go_sha256": "bf7d573927ad317c7a3f09e36641b39edbf484ee5332c333bca85667f7012e50",
+            "original_bytes": 438200,
+            "go_bytes": 438200,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 52,
+            "text": "・五０.8十1１.〇五学校.。",
+            "original_sha256": "b39b0e79719e11e4b9501c80ec7bf518b407594447976101e64ecc93e5be7ce7",
+            "go_sha256": "b39b0e79719e11e4b9501c80ec7bf518b407594447976101e64ecc93e5be7ce7",
+            "original_bytes": 389312,
+            "go_bytes": 389312,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 53,
+            "text": "読む％1。",
+            "original_sha256": "3449d66c35a4b7b5194dbf1f41f111387482ddd96ed0aa2c828a92c045ac0ff5",
+            "go_sha256": "3449d66c35a4b7b5194dbf1f41f111387482ddd96ed0aa2c828a92c045ac0ff5",
+            "original_bytes": 221430,
+            "go_bytes": 221430,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 54,
+            "text": "二百−.京十千A分1−八．A零分。",
+            "original_sha256": "8c9b350da2d16566f082f1cf8c21f4858a2a9eaa5b2826e2d1b82d82ed708423",
+            "go_sha256": "8c9b350da2d16566f082f1cf8c21f4858a2a9eaa5b2826e2d1b82d82ed708423",
+            "original_bytes": 433954,
+            "go_bytes": 433954,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 55,
+            "text": "兆。",
+            "original_sha256": "6cf54a963df5526208f2f4f0ff058ac131921fab90c035d0603c7248a6e6c67c",
+            "go_sha256": "6cf54a963df5526208f2f4f0ff058ac131921fab90c035d0603c7248a6e6c67c",
+            "original_bytes": 121004,
+            "go_bytes": 121004,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 56,
+            "text": "秒個。",
+            "original_sha256": "05e42ef59c47ccd9d39bfc21397580a4d35f4218aac657c0cf2fae67449c5d36",
+            "go_sha256": "05e42ef59c47ccd9d39bfc21397580a4d35f4218aac657c0cf2fae67449c5d36",
+            "original_bytes": 139244,
+            "go_bytes": 139244,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 57,
+            "text": "年。",
+            "original_sha256": "e816110bf2ab32d67e2fa83c11b47ef214881861372396a0c863933672121363",
+            "go_sha256": "e816110bf2ab32d67e2fa83c11b47ef214881861372396a0c863933672121363",
+            "original_bytes": 121484,
+            "go_bytes": 121484,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 58,
+            "text": "万0個二円は。",
+            "original_sha256": "3962d7215bbd5b0bb8a9f672ebbb9218b8fa5a35e7723a9059e5e0647a05172b",
+            "go_sha256": "3962d7215bbd5b0bb8a9f672ebbb9218b8fa5a35e7723a9059e5e0647a05172b",
+            "original_bytes": 223244,
+            "go_bytes": 223244,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 59,
+            "text": "〇9〇十。",
+            "original_sha256": "da874fe660223fa67ca239b5902a23d7e75bb2f2405f2c3d2e5c389549f657e3",
+            "go_sha256": "da874fe660223fa67ca239b5902a23d7e75bb2f2405f2c3d2e5c389549f657e3",
+            "original_bytes": 210284,
+            "go_bytes": 210284,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 60,
+            "text": "－８〇−日円読む0．－時１日5日兆。",
+            "original_sha256": "b071e73ceeaef6d5e2cfe779b372bf5fc73619757ca8ec0175bc77286f8e3f0f",
+            "go_sha256": "b071e73ceeaef6d5e2cfe779b372bf5fc73619757ca8ec0175bc77286f8e3f0f",
+            "original_bytes": 469498,
+            "go_bytes": 469498,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 61,
+            "text": "）日８（一．三八2万。",
+            "original_sha256": "1b23269db3a3b8315aa46b6d2e799b392c08263ced5f8a0e96adca6b90e13a52",
+            "go_sha256": "1b23269db3a3b8315aa46b6d2e799b392c08263ced5f8a0e96adca6b90e13a52",
+            "original_bytes": 347838,
+            "go_bytes": 347838,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 62,
+            "text": "年5）8分00個１５。",
+            "original_sha256": "1b60da2762dc1c64baf4546c26dbca1ca8a6216a1dd86f104906a993cf0ebf5d",
+            "go_sha256": "1b60da2762dc1c64baf4546c26dbca1ca8a6216a1dd86f104906a993cf0ebf5d",
+            "original_bytes": 343254,
+            "go_bytes": 343254,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 63,
+            "text": "学校％8秒読む京.読む九秒は二は月時人。",
+            "original_sha256": "8992d61fd014b9a35fc352817ea43547d2691a1523d457e761e2edbba705103b",
+            "go_sha256": "8992d61fd014b9a35fc352817ea43547d2691a1523d457e761e2edbba705103b",
+            "original_bytes": 586902,
+            "go_bytes": 586902,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 64,
+            "text": "８読む01零２十。",
+            "original_sha256": "861000b9060711d567a4119d087ba63459d1676745129d23091c532a24a2af2a",
+            "go_sha256": "861000b9060711d567a4119d087ba63459d1676745129d23091c532a24a2af2a",
+            "original_bytes": 274832,
+            "go_bytes": 274832,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 65,
+            "text": "二８本Ｃ零.0円（Ｃ日の。",
+            "original_sha256": "e891989c1e9cd5060d54b1e73f4919b285d248408a5cf19ba82db2a2226b1870",
+            "go_sha256": "e891989c1e9cd5060d54b1e73f4919b285d248408a5cf19ba82db2a2226b1870",
+            "original_bytes": 365706,
+            "go_bytes": 365706,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 66,
+            "text": "－分1－万二京０。",
+            "original_sha256": "0c5e8e5e22d93f5fcaa4285c18897afdac18dc32e133dfe60e2f197b1d30f19e",
+            "go_sha256": "0c5e8e5e22d93f5fcaa4285c18897afdac18dc32e133dfe60e2f197b1d30f19e",
+            "original_bytes": 272788,
+            "go_bytes": 272788,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 67,
+            "text": "一。",
+            "original_sha256": "eaaa5f88dde69cd68de88432a02b0f8ff9bb44f605b8eef72c0e84d8bf64ca67",
+            "go_sha256": "eaaa5f88dde69cd68de88432a02b0f8ff9bb44f605b8eef72c0e84d8bf64ca67",
+            "original_bytes": 120524,
+            "go_bytes": 120524,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 68,
+            "text": "ＣA）時0日２は。",
+            "original_sha256": "5eefd049975bda01373c1e00746400b52cf5f6ae773eff09a76faa0f5e9922a2",
+            "go_sha256": "5eefd049975bda01373c1e00746400b52cf5f6ae773eff09a76faa0f5e9922a2",
+            "original_bytes": 249506,
+            "go_bytes": 249506,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 69,
+            "text": "Ｃ5。",
+            "original_sha256": "576c3b41ac64957026173d4e2ddd4fe37422288f64da5fd136d763b792742a9e",
+            "go_sha256": "576c3b41ac64957026173d4e2ddd4fe37422288f64da5fd136d763b792742a9e",
+            "original_bytes": 140684,
+            "go_bytes": 140684,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 70,
+            "text": "日時は１十月－．二Ａ月）0９０−。",
+            "original_sha256": "ee0bb76417f85ee79ea5ff8eb45ffeb85a72746438ee272f72a566da43bb62f2",
+            "go_sha256": "ee0bb76417f85ee79ea5ff8eb45ffeb85a72746438ee272f72a566da43bb62f2",
+            "original_bytes": 375374,
+            "go_bytes": 375374,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 71,
+            "text": "円〇（－1５。",
+            "original_sha256": "d37ced0b3435be9f8e4f882bb51b61fad8550f799daf37e9d2a323258eb2c779",
+            "go_sha256": "d37ced0b3435be9f8e4f882bb51b61fad8550f799daf37e9d2a323258eb2c779",
+            "original_bytes": 266422,
+            "go_bytes": 266422,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 72,
+            "text": "・本京−億九日三一5本万・一－－。",
+            "original_sha256": "e6fed0da2ebab365fc9ac63043bc89fa196e4379366b477a6c717806d3bc00d4",
+            "go_sha256": "e6fed0da2ebab365fc9ac63043bc89fa196e4379366b477a6c717806d3bc00d4",
+            "original_bytes": 486050,
+            "go_bytes": 486050,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 73,
+            "text": "は兆.。",
+            "original_sha256": "aca6401780e14ce1e5a2613f5696fc6f0b05a5ed9ff50856c5506894f8eb7d14",
+            "go_sha256": "aca6401780e14ce1e5a2613f5696fc6f0b05a5ed9ff50856c5506894f8eb7d14",
+            "original_bytes": 137720,
+            "go_bytes": 137720,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 74,
+            "text": "一兆十８読む五５％一兆五（A。",
+            "original_sha256": "60836ee7c923372ecc05bbe4121f3b3d42bb0fd3fd025f9fe52f232ce0e42d32",
+            "go_sha256": "60836ee7c923372ecc05bbe4121f3b3d42bb0fd3fd025f9fe52f232ce0e42d32",
+            "original_bytes": 448898,
+            "go_bytes": 448898,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 75,
+            "text": "％・秒万（2。",
+            "original_sha256": "2d03b68e9f2e21665d103d1445d6bbc92d8efb41665a81e18293eb88681e43dd",
+            "go_sha256": "2d03b68e9f2e21665d103d1445d6bbc92d8efb41665a81e18293eb88681e43dd",
+            "original_bytes": 271304,
+            "go_bytes": 271304,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 76,
+            "text": "）万５.8百（億年万千。",
+            "original_sha256": "58a2ed6ec00ef26786991798ee6df7aae388f5bc3df0a944cf61f6bcf4f7ac13",
+            "go_sha256": "58a2ed6ec00ef26786991798ee6df7aae388f5bc3df0a944cf61f6bcf4f7ac13",
+            "original_bytes": 341696,
+            "go_bytes": 341696,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 77,
+            "text": "の円万八2三（分．京０）－京８２。",
+            "original_sha256": "8c2895ab75f4b84b3e66475e991430f3097750f6e619f3cf9c9bf681e1689856",
+            "go_sha256": "8c2895ab75f4b84b3e66475e991430f3097750f6e619f3cf9c9bf681e1689856",
+            "original_bytes": 459678,
+            "go_bytes": 459678,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 78,
+            "text": "円兆9兆）日本円九声。",
+            "original_sha256": "d8f109ed515a60ddc12d815886ed3e8f6bc24fcee9b6b129acab0a4fd81a0cd7",
+            "go_sha256": "d8f109ed515a60ddc12d815886ed3e8f6bc24fcee9b6b129acab0a4fd81a0cd7",
+            "original_bytes": 351616,
+            "go_bytes": 351616,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 79,
+            "text": "八％二〇・。",
+            "original_sha256": "617f838fc6b75f2c084238a7881def8c45a50de08c0083a4b9613b4c4f2c16d0",
+            "go_sha256": "617f838fc6b75f2c084238a7881def8c45a50de08c0083a4b9613b4c4f2c16d0",
+            "original_bytes": 234070,
+            "go_bytes": 234070,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 80,
+            "text": "五Ａ百。",
+            "original_sha256": "a4ef7dc599ee88b26e74da6d3814bfbfa3323606990339485958be39f599b594",
+            "go_sha256": "a4ef7dc599ee88b26e74da6d3814bfbfa3323606990339485958be39f599b594",
+            "original_bytes": 158982,
+            "go_bytes": 158982,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 81,
+            "text": "声千兆円、秒。",
+            "original_sha256": "c751e634600c9ef569b1cc0ed7a964da7cfaeb79e3581a4855eb4dacb9e0dada",
+            "go_sha256": "c751e634600c9ef569b1cc0ed7a964da7cfaeb79e3581a4855eb4dacb9e0dada",
+            "original_bytes": 273174,
+            "go_bytes": 273174,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 82,
+            "text": "年時読む個Ｃ9－読む、二個。",
+            "original_sha256": "d72c076d0cfbe4534a7453d6af7df76ac8c1c72a59d60d1653c794ed50b47cdc",
+            "go_sha256": "d72c076d0cfbe4534a7453d6af7df76ac8c1c72a59d60d1653c794ed50b47cdc",
+            "original_bytes": 356254,
+            "go_bytes": 356254,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 83,
+            "text": "のＡ。",
+            "original_sha256": "45dea243eca32aa38c25aa722882eb7da33be67d0ce5eb3a07ace24724b66f38",
+            "go_sha256": "45dea243eca32aa38c25aa722882eb7da33be67d0ce5eb3a07ace24724b66f38",
+            "original_bytes": 145222,
+            "go_bytes": 145222,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 84,
+            "text": "個81）日人億分９一Ｃ．０.本。",
+            "original_sha256": "c415e81759557d0f0888f3bef8b6ca16847b288e05c6aaa30af32a92887056a9",
+            "go_sha256": "c415e81759557d0f0888f3bef8b6ca16847b288e05c6aaa30af32a92887056a9",
+            "original_bytes": 556858,
+            "go_bytes": 556858,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 85,
+            "text": "8．。",
+            "original_sha256": "a76486e6298d15250c8f8b47d012ae16d3a95b636eb0739b8e47c0b69f7ffe48",
+            "go_sha256": "a76486e6298d15250c8f8b47d012ae16d3a95b636eb0739b8e47c0b69f7ffe48",
+            "original_bytes": 126906,
+            "go_bytes": 126906,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 86,
+            "text": "億日Ｃ声．年０億．〇は８月Ｃ本。",
+            "original_sha256": "9927ca043e8dd34310880e16951c2f61b2e1bd8839ce3c6e15f36e2fc92cc2d2",
+            "go_sha256": "9927ca043e8dd34310880e16951c2f61b2e1bd8839ce3c6e15f36e2fc92cc2d2",
+            "original_bytes": 537060,
+            "go_bytes": 537060,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 87,
+            "text": "９2－％Aの学校五2９５日Ｃ５。",
+            "original_sha256": "ff5286ab290c4dc0f357549720e3808e816c3e12fa41569f7823e75a7fdbfa61",
+            "go_sha256": "ff5286ab290c4dc0f357549720e3808e816c3e12fa41569f7823e75a7fdbfa61",
+            "original_bytes": 508644,
+            "go_bytes": 508644,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 88,
+            "text": "0五京は分21.A5の声９.。",
+            "original_sha256": "921d92b0c7022c6fbf90963d96ea3edc412437cdc56ce5a99d20ae5be8ce6c1d",
+            "go_sha256": "921d92b0c7022c6fbf90963d96ea3edc412437cdc56ce5a99d20ae5be8ce6c1d",
+            "original_bytes": 391032,
+            "go_bytes": 391032,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 89,
+            "text": "秒5人は京・兆８は円５。",
+            "original_sha256": "0379253b30d385df2374ad494a3778bd7d804a7b274a7cee578a1838939f2451",
+            "go_sha256": "0379253b30d385df2374ad494a3778bd7d804a7b274a7cee578a1838939f2451",
+            "original_bytes": 345404,
+            "go_bytes": 345404,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 90,
+            "text": "千三十２8％２読む。",
+            "original_sha256": "bb192b5ff5a4930b0c2df2b7cba6bc673ebaef101fd6b53a2efe9379dc10f229",
+            "go_sha256": "bb192b5ff5a4930b0c2df2b7cba6bc673ebaef101fd6b53a2efe9379dc10f229",
+            "original_bytes": 355902,
+            "go_bytes": 355902,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 91,
+            "text": "五−千8人兆８月一０秒２・。",
+            "original_sha256": "305f549e5875bab7de6f2d77db19945fc0d7697f3743d5854bc5f65a8fc783c2",
+            "go_sha256": "305f549e5875bab7de6f2d77db19945fc0d7697f3743d5854bc5f65a8fc783c2",
+            "original_bytes": 411760,
+            "go_bytes": 411760,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 92,
+            "text": "個−月20年．は声分。",
+            "original_sha256": "b744f0b3cde36d582401b8cbd28c0a83ddc33eca82c6808996a984248f2a54c0",
+            "go_sha256": "b744f0b3cde36d582401b8cbd28c0a83ddc33eca82c6808996a984248f2a54c0",
+            "original_bytes": 290416,
+            "go_bytes": 290416,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 93,
+            "text": "本本・０1十秒声日〇声、。",
+            "original_sha256": "e3b3d938301022e4e0d6a2fb4c07ec4345c2345bc50f4ab02337ea3b9a530fe2",
+            "go_sha256": "e3b3d938301022e4e0d6a2fb4c07ec4345c2345bc50f4ab02337ea3b9a530fe2",
+            "original_bytes": 373536,
+            "go_bytes": 373536,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 94,
+            "text": "A億一Ｃ5二万五A9零．－月五〇。",
+            "original_sha256": "00a85be45a962b5da5d5c5da300932fe0743878d95439a5b0d5ce98cadba50b3",
+            "go_sha256": "00a85be45a962b5da5d5c5da300932fe0743878d95439a5b0d5ce98cadba50b3",
+            "original_bytes": 464940,
+            "go_bytes": 464940,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 95,
+            "text": "日京は２本時個円。",
+            "original_sha256": "632205bb72ddf57005f58a377fd0a63ca3f629c3ec50492ca76f859b028030bc",
+            "go_sha256": "632205bb72ddf57005f58a377fd0a63ca3f629c3ec50492ca76f859b028030bc",
+            "original_bytes": 287804,
+            "go_bytes": 287804,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 96,
+            "text": "２5。",
+            "original_sha256": "2394228d259fbacf142fc80e5469f76a20b99e6e7735a716340f2afbdfd14d1e",
+            "go_sha256": "2394228d259fbacf142fc80e5469f76a20b99e6e7735a716340f2afbdfd14d1e",
+            "original_bytes": 152276,
+            "go_bytes": 152276,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 97,
+            "text": "１５％人八5万.学校時。",
+            "original_sha256": "398be998c0286025d48c6276a714434aad3ffa94a9b21015df3e31e39b8ac208",
+            "go_sha256": "398be998c0286025d48c6276a714434aad3ffa94a9b21015df3e31e39b8ac208",
+            "original_bytes": 404060,
+            "go_bytes": 404060,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 98,
+            "text": "２本２9十日（８三九Ａ・声５.二。",
+            "original_sha256": "6b177ae2d8972ae0408835f5c5dfe979e28c1ff2d363139153842b95ba95aece",
+            "go_sha256": "6b177ae2d8972ae0408835f5c5dfe979e28c1ff2d363139153842b95ba95aece",
+            "original_bytes": 536514,
+            "go_bytes": 536514,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 99,
+            "text": "は万円百。",
+            "original_sha256": "46f3ecffc3e4615f0065ad078c26f081de05b5a3d1578341d1d86d420a049e75",
+            "go_sha256": "46f3ecffc3e4615f0065ad078c26f081de05b5a3d1578341d1d86d420a049e75",
+            "original_bytes": 211686,
+            "go_bytes": 211686,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 100,
+            "text": "時〇。",
+            "original_sha256": "23dcfc2dd58eb644b2123e3e96cee3a47fa0085287ebfb3af772ef7591f9eb4c",
+            "go_sha256": "23dcfc2dd58eb644b2123e3e96cee3a47fa0085287ebfb3af772ef7591f9eb4c",
+            "original_bytes": 145928,
+            "go_bytes": 145928,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 101,
+            "text": "９十8・三。",
+            "original_sha256": "83b845c8144890495c0501caecbd494d7a35031dd5cd5fc725a155acec01cfb3",
+            "go_sha256": "83b845c8144890495c0501caecbd494d7a35031dd5cd5fc725a155acec01cfb3",
+            "original_bytes": 226568,
+            "go_bytes": 226568,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 102,
+            "text": "分学校年1九５－）年５。",
+            "original_sha256": "959af6d125e696eb7fba57806205a1025fe2e4a951cc88cdcc04269a939cd62e",
+            "go_sha256": "959af6d125e696eb7fba57806205a1025fe2e4a951cc88cdcc04269a939cd62e",
+            "original_bytes": 347256,
+            "go_bytes": 347256,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 103,
+            "text": "零三百Ａ二5。",
+            "original_sha256": "8da39db9c78a331b4ae32b42e65a6d7065a82b1d8f194057b75edc07a4b1b219",
+            "go_sha256": "8da39db9c78a331b4ae32b42e65a6d7065a82b1d8f194057b75edc07a4b1b219",
+            "original_bytes": 230526,
+            "go_bytes": 230526,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 104,
+            "text": "5は.秒百ＣＣ京）十読む億千九。",
+            "original_sha256": "6481086c92c1230dc9aa45478864eff5f085e8a3a98b30059d958a73e5bce021",
+            "go_sha256": "6481086c92c1230dc9aa45478864eff5f085e8a3a98b30059d958a73e5bce021",
+            "original_bytes": 489346,
+            "go_bytes": 489346,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 105,
+            "text": "個三三Ａ個。",
+            "original_sha256": "6a41d66a704ca613a690d75a826596171c49812a242d7d46a256c939cb11d0f5",
+            "go_sha256": "6a41d66a704ca613a690d75a826596171c49812a242d7d46a256c939cb11d0f5",
+            "original_bytes": 234348,
+            "go_bytes": 234348,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 106,
+            "text": "九日、分・。",
+            "original_sha256": "c0054b64770336d7fa41b83a4aba055165bdca27aabf401d76195e3495f74ab8",
+            "go_sha256": "c0054b64770336d7fa41b83a4aba055165bdca27aabf401d76195e3495f74ab8",
+            "original_bytes": 221320,
+            "go_bytes": 221320,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 107,
+            "text": "A。",
+            "original_sha256": "21838d64d65140e108f0ee8297baad3ec95568afb6f9b087cfe934b5a235b5df",
+            "go_sha256": "21838d64d65140e108f0ee8297baad3ec95568afb6f9b087cfe934b5a235b5df",
+            "original_bytes": 120044,
+            "go_bytes": 120044,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 108,
+            "text": "三万８５万日八十〇ＡAＣ京。",
+            "original_sha256": "bd7aa4e77d82e40e34032004456152fefdbc3b2b3756db96a116335f99f75b4f",
+            "go_sha256": "bd7aa4e77d82e40e34032004456152fefdbc3b2b3756db96a116335f99f75b4f",
+            "original_bytes": 463662,
+            "go_bytes": 463662,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 109,
+            "text": "個8万千％）－日九％。",
+            "original_sha256": "95df6a17ebf5cb53e99a05d1b0892fba01712fbad358cc4a82da703355ed31ab",
+            "go_sha256": "95df6a17ebf5cb53e99a05d1b0892fba01712fbad358cc4a82da703355ed31ab",
+            "original_bytes": 407338,
+            "go_bytes": 407338,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 110,
+            "text": "の秒.零二時－Ａ声年．百零円1。",
+            "original_sha256": "85ae22f79507ddab0aa6429609662e20dd0a0884089c6784c12fd139e0397c19",
+            "go_sha256": "85ae22f79507ddab0aa6429609662e20dd0a0884089c6784c12fd139e0397c19",
+            "original_bytes": 436788,
+            "go_bytes": 436788,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 111,
+            "text": "人0本〇学校一９1秒。",
+            "original_sha256": "17fa6b886fa56f1673025046e10425759ec1adc2b85e1f6592e64331cc8e7c1b",
+            "go_sha256": "17fa6b886fa56f1673025046e10425759ec1adc2b85e1f6592e64331cc8e7c1b",
+            "original_bytes": 408546,
+            "go_bytes": 408546,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 112,
+            "text": "１－９８秒分秒８A年Ｃ.〇。",
+            "original_sha256": "e8ac7b5cf00e043226e6c0c4e8bbee8dcd214f4f143cdf3d197cb9047235f30b",
+            "go_sha256": "e8ac7b5cf00e043226e6c0c4e8bbee8dcd214f4f143cdf3d197cb9047235f30b",
+            "original_bytes": 445288,
+            "go_bytes": 445288,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 113,
+            "text": "）万５・個兆.。",
+            "original_sha256": "4839f0e0216ff76ad1fab6a5b730d42552c57651045fc3e9ea4acff16f8e695b",
+            "go_sha256": "4839f0e0216ff76ad1fab6a5b730d42552c57651045fc3e9ea4acff16f8e695b",
+            "original_bytes": 198118,
+            "go_bytes": 198118,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 114,
+            "text": "万）Ａ0京秒万八京Ｃ声個月。",
+            "original_sha256": "f860e96618d0b74c8facbcf057819a95d5d44e0b929823709a5e418e27b70fd5",
+            "go_sha256": "f860e96618d0b74c8facbcf057819a95d5d44e0b929823709a5e418e27b70fd5",
+            "original_bytes": 409918,
+            "go_bytes": 409918,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 115,
+            "text": "Ｃ秒三時本。",
+            "original_sha256": "51390eb2790e94632187a51b1b8e72f7284d9076f657eaf1b441de104c14f1b5",
+            "go_sha256": "51390eb2790e94632187a51b1b8e72f7284d9076f657eaf1b441de104c14f1b5",
+            "original_bytes": 211524,
+            "go_bytes": 211524,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 116,
+            "text": "９百分三京の2二秒％月零の。",
+            "original_sha256": "e9f08474366366db198584511295c2fedebe718d52506d700b7ba60b35d44c42",
+            "go_sha256": "e9f08474366366db198584511295c2fedebe718d52506d700b7ba60b35d44c42",
+            "original_bytes": 425098,
+            "go_bytes": 425098,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 117,
+            "text": "百日本円−.十本．月）。",
+            "original_sha256": "3173ba4b695a2902459039bbf8a8713d2ca05c5ee98da5565acd2bebcb31d011",
+            "go_sha256": "3173ba4b695a2902459039bbf8a8713d2ca05c5ee98da5565acd2bebcb31d011",
+            "original_bytes": 275300,
+            "go_bytes": 275300,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 118,
+            "text": "（２個１１は。",
+            "original_sha256": "ca476b99289003a754fb1cb2598d6179ddda76f814e46835e217eb16fddf2509",
+            "go_sha256": "ca476b99289003a754fb1cb2598d6179ddda76f814e46835e217eb16fddf2509",
+            "original_bytes": 196844,
+            "go_bytes": 196844,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 119,
+            "text": "A、時兆零一％1（二百八。",
+            "original_sha256": "69254b0ff0de5cd7fe9c387ecd8642a3383ab0ed5408ee883fabea21baa129d6",
+            "go_sha256": "69254b0ff0de5cd7fe9c387ecd8642a3383ab0ed5408ee883fabea21baa129d6",
+            "original_bytes": 462724,
+            "go_bytes": 462724,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 120,
+            "text": "8分５5億９。",
+            "original_sha256": "f85fc86f7826856f2a108adec9302ed7014d9ce9673245acf5c36e2ac884da87",
+            "go_sha256": "f85fc86f7826856f2a108adec9302ed7014d9ce9673245acf5c36e2ac884da87",
+            "original_bytes": 262376,
+            "go_bytes": 262376,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 121,
+            "text": "－分、の月年二秒百％．五一京％。",
+            "original_sha256": "43b812341f7b5ae12f5cf823bd82cc4fa1c673b2c12056301eb90255877ef658",
+            "go_sha256": "43b812341f7b5ae12f5cf823bd82cc4fa1c673b2c12056301eb90255877ef658",
+            "original_bytes": 587752,
+            "go_bytes": 587752,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 122,
+            "text": "京−９〇9。",
+            "original_sha256": "c7faf925b0ca4510cbda2355a564e250aa38d260679ef861b1a657fecf9ef5ee",
+            "go_sha256": "c7faf925b0ca4510cbda2355a564e250aa38d260679ef861b1a657fecf9ef5ee",
+            "original_bytes": 274746,
+            "go_bytes": 274746,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 123,
+            "text": "８2人Ａ.三Ａ2２月）五。",
+            "original_sha256": "ac6f3d9c1f2a1b06f0f596f0a995d3405110ea4de1e69299a7b7b606eef9d155",
+            "go_sha256": "ac6f3d9c1f2a1b06f0f596f0a995d3405110ea4de1e69299a7b7b606eef9d155",
+            "original_bytes": 332166,
+            "go_bytes": 332166,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 124,
+            "text": "〇分−１１月）十）年二２．％8・。",
+            "original_sha256": "d829d9295925dd02a2a8755034ba4bf0c9b965339a4fa6843c727a04d9adbb0c",
+            "go_sha256": "d829d9295925dd02a2a8755034ba4bf0c9b965339a4fa6843c727a04d9adbb0c",
+            "original_bytes": 477840,
+            "go_bytes": 477840,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 125,
+            "text": "分三分京年－秒％学校学校日。",
+            "original_sha256": "d91abaee94c36eac9d5972f1fabb5689e7ad04784082b9f7fd2f661c3778b09a",
+            "go_sha256": "d91abaee94c36eac9d5972f1fabb5689e7ad04784082b9f7fd2f661c3778b09a",
+            "original_bytes": 432570,
+            "go_bytes": 432570,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 126,
+            "text": "秒九本千千8。",
+            "original_sha256": "205bf33b55842cf1322f1d338f971093819faedebb93fe232dcd40a0acf47bf0",
+            "go_sha256": "205bf33b55842cf1322f1d338f971093819faedebb93fe232dcd40a0acf47bf0",
+            "original_bytes": 271744,
+            "go_bytes": 271744,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 127,
+            "text": "人０・％分０秒8億A二個21。",
+            "original_sha256": "64a0001255a8208251a29f934f9fbc81d9503c001293da5ef76c0cd77ef84485",
+            "go_sha256": "64a0001255a8208251a29f934f9fbc81d9503c001293da5ef76c0cd77ef84485",
+            "original_bytes": 499820,
+            "go_bytes": 499820,
+            "first_difference": -1,
+            "equal": true
+          }
+        ]
+      }
+    }
+  ]
+}

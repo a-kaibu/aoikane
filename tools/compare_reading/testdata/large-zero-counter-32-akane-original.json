@@ -1,0 +1,431 @@
+{
+  "source": "ordinary original SDK talk; formatter observed without tensor injection; frontend-only capture",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "voice": "KotonohaAkane_ns_48",
+  "corpus_sha256": "c04fd02a70c45c14ff418e290f1e685f237ecea7d2b62f494f9e846d5a6f7b9b",
+  "cases": [
+    {
+      "index": 0,
+      "text": "2兆零十。",
+      "status": 0,
+      "readings": [
+        "<S>^ニ!チョー|0^レ!ー|0^ジュ!ー<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e836a2183608387815b7c305e838c21815b7c305e8357838521815b3c463e"
+      ],
+      "wav_bytes": 197888,
+      "wav_sha256": "cb455f9676c95a01b4349fe75a25258031dcaf1cdeb84f4e2bd079beabdf66ff"
+    },
+    {
+      "index": 1,
+      "text": "2兆零。",
+      "status": 0,
+      "readings": [
+        "<S>^ニ!チョー|0^レ!ー<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e836a2183608387815b7c305e838c21815b3c463e"
+      ],
+      "wav_bytes": 166558,
+      "wav_sha256": "8a4d69b2ac29086bf3ebe5f3c671983587c81d6016356ef911535de6566a8fd6"
+    },
+    {
+      "index": 2,
+      "text": "２兆零三。",
+      "status": 0,
+      "readings": [
+        "<S>^ニ!チョー|0レ^ーサ!ン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e836a2183608387815b7c30838c5e815b83542183933c463e"
+      ],
+      "wav_bytes": 180262,
+      "wav_sha256": "e245cad5064d1cb9e674a742a2bba39ff4aed058c79e61fca1141a57ee92efeb"
+    },
+    {
+      "index": 3,
+      "text": "1兆零十。",
+      "status": 0,
+      "readings": [
+        "<S>^イ!ッチョー|0^レ!ー|0^ジュ!ー<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e834321836283608387815b7c305e838c21815b7c305e8357838521815b3c463e"
+      ],
+      "wav_bytes": 206334,
+      "wav_sha256": "70ee8d5956e95f64bac3430ac7873eff721c15f8e2aaba0b6240e3d76ec904c0"
+    },
+    {
+      "index": 4,
+      "text": "1万零十。",
+      "status": 0,
+      "readings": [
+        "<S>イ^チマ!ン|0^レ!ー|0^ジュ!ー<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83435e8360837d2183937c305e838c21815b7c305e8357838521815b3c463e"
+      ],
+      "wav_bytes": 207758,
+      "wav_sha256": "10d025fc9c1c1f70a2e6d2d2be8a5481b1660d04caad23526ef118c40514a80d"
+    },
+    {
+      "index": 5,
+      "text": "2億零十。",
+      "status": 0,
+      "readings": [
+        "<S>^ニ!オク|0^レ!ー|0^ジュ!ー<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e836a218349834e7c305e838c21815b7c305e8357838521815b3c463e"
+      ],
+      "wav_bytes": 193312,
+      "wav_sha256": "8cff0efded6ec300f6987c691b4b2174c0c097a1d4f769a81421c6f168829a86"
+    },
+    {
+      "index": 6,
+      "text": "2京零十。",
+      "status": 0,
+      "readings": [
+        "<S>^ニ!ケイ|0^レ!ー|0^ジュ!ー<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e836a21835083437c305e838c21815b7c305e8357838521815b3c463e"
+      ],
+      "wav_bytes": 197788,
+      "wav_sha256": "bc576eea087085238090c920005b2769555afcc6abd533a6a25ae7bfdf118e31"
+    },
+    {
+      "index": 7,
+      "text": "9千万円。",
+      "status": 0,
+      "readings": [
+        "<S>キュ^ーセンマ!ンエン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e834c83855e815b835a8393837d218393834783933c463e"
+      ],
+      "wav_bytes": 194362,
+      "wav_sha256": "5ec16fd324d7a4b48110658333acffde5f855aa15a2bd842fe0310acff58643b"
+    },
+    {
+      "index": 8,
+      "text": "1千万円。",
+      "status": 0,
+      "readings": [
+        "<S>イ^ッセンマ!ンエン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83435e8362835a8393837d218393834783933c463e"
+      ],
+      "wav_bytes": 188112,
+      "wav_sha256": "4ec575d1f2e197e924c5918fb78bb194e11304e879767074282818aaca6dffc5"
+    },
+    {
+      "index": 9,
+      "text": "2千万円。",
+      "status": 0,
+      "readings": [
+        "<S>ニ^センマ!ンエン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e836a5e835a8393837d218393834783933c463e"
+      ],
+      "wav_bytes": 184660,
+      "wav_sha256": "39e70ec0389590d099d27a42ab1b15d00e5ae2b50b5910b9535c89c2ebd51d00"
+    },
+    {
+      "index": 10,
+      "text": "3千万円。",
+      "status": 0,
+      "readings": [
+        "<S>サ^ンゼンマ!ンエン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83545e8393835b8393837d218393834783933c463e"
+      ],
+      "wav_bytes": 198956,
+      "wav_sha256": "13cbbd6b0967e3a024374f4f471a631ccb32fe43037bfd9285f1c317ca5e4f7d"
+    },
+    {
+      "index": 11,
+      "text": "8千万円。",
+      "status": 0,
+      "readings": [
+        "<S>ハ^ッセンマ!ンエン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e836e5e8362835a8393837d218393834783933c463e"
+      ],
+      "wav_bytes": 193778,
+      "wav_sha256": "9da058e1d3035a35a111241416ffc03290ff174cd68cf8c629fc25b093a6a31e"
+    },
+    {
+      "index": 12,
+      "text": "9千万。",
+      "status": 0,
+      "readings": [
+        "<S>キュ^ーセンマ!ン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e834c83855e815b835a8393837d2183933c463e"
+      ],
+      "wav_bytes": 164148,
+      "wav_sha256": "3c68c359d3b8e0a2d5d9e4092819844310f3dc838fdbc34f840074b83252475f"
+    },
+    {
+      "index": 13,
+      "text": "9万。",
+      "status": 0,
+      "readings": [
+        "<S>キュ^ーマ!ン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e834c83855e815b837d2183933c463e"
+      ],
+      "wav_bytes": 138818,
+      "wav_sha256": "649fe3a072432f43ed8baa31bfa822c39df61b04abab08a1fda9f93b2e5827a0"
+    },
+    {
+      "index": 14,
+      "text": "9万円。",
+      "status": 0,
+      "readings": [
+        "<S>キュ^ーマンエン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e834c83855e815b837d8393834783933c463e"
+      ],
+      "wav_bytes": 167196,
+      "wav_sha256": "0e762f987caf235d92f7810d1e8a6452dc55ac7b8e7d165835a5ecb029e13d21"
+    },
+    {
+      "index": 15,
+      "text": "1万円。",
+      "status": 0,
+      "readings": [
+        "<S>イ^チマンエン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83435e8360837d8393834783933c463e"
+      ],
+      "wav_bytes": 168588,
+      "wav_sha256": "65ca3f114501512f83dd094207cb6890e9de1bf70ba68f203d8cbcfebed0b3e7"
+    },
+    {
+      "index": 16,
+      "text": "10万円。",
+      "status": 0,
+      "readings": [
+        "<S>ジュ^ーマンエン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e835783855e815b837d8393834783933c463e"
+      ],
+      "wav_bytes": 168674,
+      "wav_sha256": "a19f0c440b99646d4ddb899094378bf75ab76db920d64f6d28d99191d805c62d"
+    },
+    {
+      "index": 17,
+      "text": "100万円。",
+      "status": 0,
+      "readings": [
+        "<S>ヒャ^クマンエン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e837183835e834e837d8393834783933c463e"
+      ],
+      "wav_bytes": 174754,
+      "wav_sha256": "58cf3ec025ef722228f58885e3af1ed3fe8b9c7f09c4a23d1f5973426ce870ea"
+    },
+    {
+      "index": 18,
+      "text": "900万円。",
+      "status": 0,
+      "readings": [
+        "<S>キュ^ーヒャクマ!ンエン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e834c83855e815b83718383834e837d218393834783933c463e"
+      ],
+      "wav_bytes": 191610,
+      "wav_sha256": "30e9bd0e5231b80f9abc2c3ac08aed923ff94d894fcdf6ffaea87ee101479f23"
+    },
+    {
+      "index": 19,
+      "text": "1000万円。",
+      "status": 0,
+      "readings": [
+        "<S>イ^ッセンマ!ンエン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83435e8362835a8393837d218393834783933c463e"
+      ],
+      "wav_bytes": 188112,
+      "wav_sha256": "4ec575d1f2e197e924c5918fb78bb194e11304e879767074282818aaca6dffc5"
+    },
+    {
+      "index": 20,
+      "text": "9000万円。",
+      "status": 0,
+      "readings": [
+        "<S>キュ^ーセンマ!ンエン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e834c83855e815b835a8393837d218393834783933c463e"
+      ],
+      "wav_bytes": 194362,
+      "wav_sha256": "5ec16fd324d7a4b48110658333acffde5f855aa15a2bd842fe0310acff58643b"
+    },
+    {
+      "index": 21,
+      "text": "90000000円。",
+      "status": 0,
+      "readings": [
+        "<S>キュ^ーセンマ!ンエン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e834c83855e815b835a8393837d218393834783933c463e"
+      ],
+      "wav_bytes": 194362,
+      "wav_sha256": "5ec16fd324d7a4b48110658333acffde5f855aa15a2bd842fe0310acff58643b"
+    },
+    {
+      "index": 22,
+      "text": "9千万人。",
+      "status": 0,
+      "readings": [
+        "<S>キュ^ーセンマ!ンニン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e834c83855e815b835a8393837d218393836a83933c463e"
+      ],
+      "wav_bytes": 188432,
+      "wav_sha256": "a3561b6cab8e7b3f2a974f26990332d2bfe707f005b1394701ad017a67027f83"
+    },
+    {
+      "index": 23,
+      "text": "9千万秒。",
+      "status": 0,
+      "readings": [
+        "<S>キュ^ーセンマ!ンビョー<F>"
+      ],
+      "cp932_hex": [
+        "3c533e834c83855e815b835a8393837d21839383728387815b3c463e"
+      ],
+      "wav_bytes": 196500,
+      "wav_sha256": "4c107841bef15aa616abfd3efaaf227d78754dcbc524cba96c54ab09502905e0"
+    },
+    {
+      "index": 24,
+      "text": "9千万個年。",
+      "status": 0,
+      "readings": [
+        "<S>キュ^ーセンマンカ!ネン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e834c83855e815b835a8393837d8393834a21836c83933c463e"
+      ],
+      "wav_bytes": 204134,
+      "wav_sha256": "f5ce80a18ffb1816f00f83d46d714cb0a62e448bd4110895a872b9b018df9c23"
+    },
+    {
+      "index": 25,
+      "text": "9千万ドル。",
+      "status": 0,
+      "readings": [
+        "<S>キュ^ーセンマ!ンドル<F>"
+      ],
+      "cp932_hex": [
+        "3c533e834c83855e815b835a8393837d2183938368838b3c463e"
+      ],
+      "wav_bytes": 190940,
+      "wav_sha256": "0860b5ebc0cd258d44325030fc6792675aa509fc2c3a13f135ef42db985a605a"
+    },
+    {
+      "index": 26,
+      "text": "9千万本。",
+      "status": 0,
+      "readings": [
+        "<S>キュ^ーセンマ!ンボン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e834c83855e815b835a8393837d218393837b83933c463e"
+      ],
+      "wav_bytes": 192208,
+      "wav_sha256": "b29683a28e520fc73715fc5b42026973a1486f0e8fc8dccc4e9339a6ad08eb06"
+    },
+    {
+      "index": 27,
+      "text": "2兆零十円。",
+      "status": 0,
+      "readings": [
+        "<S>^ニ!チョー|0^レ!ー|0ジュ^ーエン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e836a2183608387815b7c305e838c21815b7c30835783855e815b834783933c463e"
+      ],
+      "wav_bytes": 215674,
+      "wav_sha256": "89fea3a7bd2fb16bc1af7f5f6e3e86ee78ceec2e5a4b5d6b9258fdf30c679262"
+    },
+    {
+      "index": 28,
+      "text": "2兆零百。",
+      "status": 0,
+      "readings": [
+        "<S>^ニ!チョー|0^レ!ー|0ヒャ^ク<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e836a2183608387815b7c305e838c21815b7c30837183835e834e3c463e"
+      ],
+      "wav_bytes": 194078,
+      "wav_sha256": "c1481a91d978aa34399994277ef9702799fb5948d9fa820254238147a727aca0"
+    },
+    {
+      "index": 29,
+      "text": "2兆零零。",
+      "status": 0,
+      "readings": [
+        "<S>^ニ!チョー|0レ^ーレ!ー<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e836a2183608387815b7c30838c5e815b838c21815b3c463e"
+      ],
+      "wav_bytes": 187844,
+      "wav_sha256": "3909020367cda6916bed3ecb729391ef65e477d7594367610719cca8a9a0d271"
+    },
+    {
+      "index": 30,
+      "text": "2兆零三十。",
+      "status": 0,
+      "readings": [
+        "<S>^ニ!チョー|0レ^ーサ!ン|0^ジュ!ー<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e836a2183608387815b7c30838c5e815b83542183937c305e8357838521815b3c463e"
+      ],
+      "wav_bytes": 217440,
+      "wav_sha256": "7293b25b2bee617ca726a9d76318a6989d7b3dc7e38d20a5ae1f545e0dbe00bc"
+    },
+    {
+      "index": 31,
+      "text": "京・9千万円2兆零十、。",
+      "status": 0,
+      "readings": [
+        "<S>^キョ!ー$1_1キュ^ーセンマ!ンエン|0^ニ!チョー|0^レ!ー|0^ジュ!ー<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e834c838721815b24315f31834c83855e815b835a8393837d218393834783937c305e836a2183608387815b7c305e838c21815b7c305e8357838521815b3c463e"
+      ],
+      "wav_bytes": 343918,
+      "wav_sha256": "34e98fc5327a9299fe355a2cd149d0b26cc0b46edc723832dd1dfbebc8550630"
+    }
+  ],
+  "complete": true,
+  "errors": [],
+  "executable_sha256": "de3be1e7979db53006add27f30131eb4c308c28ba78d6b7bb6365aecb01b3f2d",
+  "detach_reason": "process-terminated",
+  "crash": null,
+  "timed_out": false,
+  "native_report_sha256": "a6eaf4b58f9685d90595d6ea81c3f17cf55f4596a42aa717a6d651d43ec93877"
+}

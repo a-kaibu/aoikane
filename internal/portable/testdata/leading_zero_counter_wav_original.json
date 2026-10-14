@@ -1,0 +1,27 @@
+{
+  "source": "ordinary original direct engine API; no instrumentation or injected model inputs",
+  "source_sha256": "66280c2673204bd8d8fcf3121a2a425e5d7471c89fe84e4487969c9fc69692b7",
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "voice": "KotonohaAkane_ns_48",
+  "original_threads": 6,
+  "avx512_convolutions": false,
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "torch_dll_sha256": "00ca5c937940a94d052dbe52ec5fb0909db11ffbfccfd6e65e19b468169ff5e5",
+  "cases": [
+    {
+      "text": "001人。",
+      "bytes": 189268,
+      "sha256": "04dec38cdcfa749c8a7aaa0e710c1821a34bb51e86e92d89cb811c7508a1766c"
+    },
+    {
+      "text": "016本。",
+      "bytes": 189666,
+      "sha256": "a546fb5d05bfd2514c3f321e418b1e7aa06925f8df67ba184dc3b2d3b266aa79"
+    },
+    {
+      "text": "04年。",
+      "bytes": 132602,
+      "sha256": "f1b707716cbedf6c2cd69c6ab8a0cbaa95524c816b6b38222b847b250e0db775"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "source": "finished ordinary original SDK/Go tests; whole WAVs rehashed against reports and independent ordinary native captures",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "original_threads": 6,
+  "avx512_convolutions": false,
+  "report_sha256": [
+    "446de9c3d624d3c170e323ae306e7242d2983da3ef52705791ac34ea78401bc4",
+    "d973e3a41795628569371203c3e11e60af60b256f9c344169dfa02169be4ad6e"
+  ],
+  "capture_sha256": [
+    "e13e7bf2a26eb6c9a7454d989dc2bb61860bfbbc3ddbbdce6285e786ddf3ae8f",
+    "1af23cf2991a34647e941b9d20a19c68eeeaa77971738d9e6261690f14a79121",
+    "b64914c67d97065be59bdcad8f63b7c8759e1716f5510c54e2e1421b3fa2916d",
+    "dd0a9e990f9fe1b9e7c27afd31c4cedae81cb6931667707d1757aaedaa4a024d",
+    "839a9d7b79159bdeb46f704a4467c6a655c37b6e9ec59d5dc0304fa6416adbc6",
+    "da62be4a80274b6d87bf0c0508e581ef95f9404427d24b015b6990023b14ae91"
+  ],
+  "cases": [
+    {
+      "text": "0京秒1。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 175184,
+      "sha256": "720f38c865d54aef04297d01ebf330c77901e0566d034b7a479f3fa66f2516cf"
+    },
+    {
+      "text": "1京秒1。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 203876,
+      "sha256": "ff4bec2331e52a089ff367a51585ee76d05134651663d8cf9046cf014be3dc13"
+    },
+    {
+      "text": "〇一京秒一二。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 224528,
+      "sha256": "9f834daf5116a3f2f649fc6771bb02d2c5403c7d2f37950dbeb789553616c1e0"
+    },
+    {
+      "text": "0十秒１。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 178346,
+      "sha256": "3d12178f2425ac00ed169cb66410ee4247fd13fa96c8dbe6356b4e23fe64c59c"
+    },
+    {
+      "text": "万）Ａ0京秒万八京Ｃ声個月。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 409918,
+      "sha256": "f860e96618d0b74c8facbcf057819a95d5d44e0b929823709a5e418e27b70fd5"
+    },
+    {
+      "text": "0京秒1。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 175184,
+      "sha256": "720f38c865d54aef04297d01ebf330c77901e0566d034b7a479f3fa66f2516cf"
+    },
+    {
+      "text": "1京秒1。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 203876,
+      "sha256": "ff4bec2331e52a089ff367a51585ee76d05134651663d8cf9046cf014be3dc13"
+    },
+    {
+      "text": "〇一京秒一二。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 224528,
+      "sha256": "9f834daf5116a3f2f649fc6771bb02d2c5403c7d2f37950dbeb789553616c1e0"
+    },
+    {
+      "text": "0十秒１。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 178346,
+      "sha256": "3d12178f2425ac00ed169cb66410ee4247fd13fa96c8dbe6356b4e23fe64c59c"
+    },
+    {
+      "text": "万）Ａ0京秒万八京Ｃ声個月。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 409918,
+      "sha256": "f860e96618d0b74c8facbcf057819a95d5d44e0b929823709a5e418e27b70fd5"
+    }
+  ]
+}

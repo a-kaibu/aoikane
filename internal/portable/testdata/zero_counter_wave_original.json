@@ -1,0 +1,65 @@
+{
+  "source": "finished ordinary original SDK/Go tests; whole WAVs rehashed against reports and independent native captures",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "original_threads": 6,
+  "avx512_convolutions": false,
+  "report_sha256": [
+    "d4a484aae2ab1b66f19f75bf42202bc78ee4acd87d4109a9d9edbd962507922e",
+    "69c3d6dae6382d50652d3f89ab084afb209f8a8099d1d383d8e32b4d3b2e9a44"
+  ],
+  "capture_sha256": [
+    "48337bad004d385c2b8a0857b7ac13cb175865d3c4e8811afd77433f90cdc430",
+    "632068669f45227a8b98fe2a55dd0bb55f7667c21392752a00a23e19034c2552"
+  ],
+  "cases": [
+    {
+      "text": "〇秒２声。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 189668,
+      "sha256": "51ca8d6fee0ed63a32c88af77cb0c158d72e5a8dcd73b2a288c971241b868849"
+    },
+    {
+      "text": "〇秒零秒。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 197062,
+      "sha256": "65912f8729c7bd04af6b3469156bde307b419efe562b3c19518970bb0265cdb8"
+    },
+    {
+      "text": "零秒八億Ａ。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 233194,
+      "sha256": "e97477efe54168f7e7572239bc58f442b4e1d7e7dfe82922b229891bce78def9"
+    },
+    {
+      "text": "零分。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 142958,
+      "sha256": "ca560739fbe9b1ac98fdedb19c18160eda5ab5febec1a7e6ef4fddad11c6dd00"
+    },
+    {
+      "text": "〇秒２声。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 191714,
+      "sha256": "ee71b8d1b40609b4b2033495c05687bb5d98c70ad22fe2f18a276faaff974381"
+    },
+    {
+      "text": "〇秒零秒。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 198706,
+      "sha256": "9194fe067f91e1e967e30e38c522180abbb2d18b4089dfaecaf9f883bd5c4d31"
+    },
+    {
+      "text": "零秒八億Ａ。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 233194,
+      "sha256": "e97477efe54168f7e7572239bc58f442b4e1d7e7dfe82922b229891bce78def9"
+    },
+    {
+      "text": "零分。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 142958,
+      "sha256": "ca560739fbe9b1ac98fdedb19c18160eda5ab5febec1a7e6ef4fddad11c6dd00"
+    }
+  ]
+}

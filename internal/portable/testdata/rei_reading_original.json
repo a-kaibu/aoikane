@@ -1,0 +1,965 @@
+{
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "capture_sha256": [
+    "4d026fbf45b0c0cd9ff3281a07bbc01ed24a8c141beb49451445bc092cdc844c",
+    "8b1ce960b1682fe8fa28ec7e0cea98f2ad0c5e9be47faf10da5286ec35a84b46",
+    "96167873f3e26498e163057ad13f2437ae7954388ddcec23ad763cf42f4730f1",
+    "e2b037871b845a8bec71b801e202e1dea86869ed8aa5a9310e190888f9b0c2c7",
+    "f1c217f760fd3bfb69a22ba475585672e4bf583b40c3c45a390e5432397a9fad",
+    "c1a35ea03bea1c0903c449cd636b65c5d6e6796f3547b55654a1f25eb3a26251"
+  ],
+  "cases": [
+    {
+      "text": "零。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^レ!ー<F>"
+      ]
+    },
+    {
+      "text": "零日。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^レ!ーニチ<F>"
+      ]
+    },
+    {
+      "text": "零日ー。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^レ!ーニチ<H>"
+      ]
+    },
+    {
+      "text": "零C。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>レ^ーシ!ー<F>"
+      ]
+    },
+    {
+      "text": "零Ｃ校。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>レ^ーシ!ーコー<F>"
+      ]
+    },
+    {
+      "text": "零一。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^レーイチ<F>"
+      ]
+    },
+    {
+      "text": "零二。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^レ!ージ<F>"
+      ]
+    },
+    {
+      "text": "零零。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>レ^ーレ!ー<F>"
+      ]
+    },
+    {
+      "text": "零十。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^レ!ー|0^ジュ!ー<F>"
+      ]
+    },
+    {
+      "text": "零万。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^レ!ー|0^マ!ン<F>"
+      ]
+    },
+    {
+      "text": "零人。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^レ!ーニン<F>"
+      ]
+    },
+    {
+      "text": "零本。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^レーホン<F>"
+      ]
+    },
+    {
+      "text": "零0。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^レ!ー|0^ゼ!ロ<F>"
+      ]
+    },
+    {
+      "text": "0零。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^ゼ!ロ|0^レ!ー<F>"
+      ]
+    },
+    {
+      "text": "〇零。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>ゼ^ロレ!ー<F>"
+      ]
+    },
+    {
+      "text": "零〇。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>レ^ーゼ!ロ<F>"
+      ]
+    },
+    {
+      "text": "一零。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>イ^チレ!ー<F>"
+      ]
+    },
+    {
+      "text": "零一日。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>レ^ーイチ!ニチ<F>"
+      ]
+    },
+    {
+      "text": "零一C。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>レ^ーイチシ!ー<F>"
+      ]
+    },
+    {
+      "text": "零１。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^レ!ー|0イ^チ<F>"
+      ]
+    },
+    {
+      "text": "零．一。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^レ!ーテン|0イ^チ<F>"
+      ]
+    },
+    {
+      "text": "零点一。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^レーテン|0イ^チ<F>"
+      ]
+    },
+    {
+      "text": "開0a土木土零日ー下A三。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^ヒ!ラキ|0ゼ^ロエ!ー|0^ドボク!ド|0^レ!ーニチ|0^シタエ!ー|0サ^ン<F>"
+      ]
+    },
+    {
+      "text": "七金六九B零C校3。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>ナ^ナキン|0ロ^クジュー|0キュ^ービ!ー|0レ^ーシ!ーコー|0サ^ン<F>"
+      ]
+    },
+    {
+      "text": "零。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^レ!ー<F>"
+      ]
+    },
+    {
+      "text": "零日。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^レ!ーニチ<F>"
+      ]
+    },
+    {
+      "text": "零日ー。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^レ!ーニチ<H>"
+      ]
+    },
+    {
+      "text": "零C。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>レ^ーシ!ー<F>"
+      ]
+    },
+    {
+      "text": "零Ｃ校。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>レ^ーシ!ーコー<F>"
+      ]
+    },
+    {
+      "text": "零一。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>レ^ーイチ<F>"
+      ]
+    },
+    {
+      "text": "零二。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^レ!ージ<F>"
+      ]
+    },
+    {
+      "text": "零零。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>レ^ーレ!ー<F>"
+      ]
+    },
+    {
+      "text": "零十。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^レ!ー|0^ジュ!ー<F>"
+      ]
+    },
+    {
+      "text": "零万。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^レ!ー|0^マ!ン<F>"
+      ]
+    },
+    {
+      "text": "零人。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^レ!ーニン<F>"
+      ]
+    },
+    {
+      "text": "零本。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>レ^ーホン<F>"
+      ]
+    },
+    {
+      "text": "零0。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^レ!ー|0^ゼ!ロ<F>"
+      ]
+    },
+    {
+      "text": "0零。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^ゼ!ロ|0^レ!ー<F>"
+      ]
+    },
+    {
+      "text": "〇零。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ゼ^ロレ!ー<F>"
+      ]
+    },
+    {
+      "text": "零〇。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>レ^ーゼ!ロ<F>"
+      ]
+    },
+    {
+      "text": "一零。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>イ^チレ!ー<F>"
+      ]
+    },
+    {
+      "text": "零一日。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>レ^ーイチ!ニチ<F>"
+      ]
+    },
+    {
+      "text": "零一C。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>レ^ーイチシ!ー<F>"
+      ]
+    },
+    {
+      "text": "零１。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^レ!ー|0イ^チ<F>"
+      ]
+    },
+    {
+      "text": "零．一。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^レ!ーテン|0イ^チ<F>"
+      ]
+    },
+    {
+      "text": "零点一。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>レ^ーテ!ン|0イ^チ<F>"
+      ]
+    },
+    {
+      "text": "開0a土木土零日ー下A三。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^ヒ!ラキ|0ゼ^ロエ!ー|0ド^ボク!ド|0^レ!ーニチ|0シ^タ|0^エ!ー|0サ^ン<F>"
+      ]
+    },
+    {
+      "text": "七金六九B零C校3。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ナ^ナキン$1_1ロ^クジュー|0キュ^ービ!ー|0レ^ーシ!ーコー|0サ^ン<F>"
+      ]
+    },
+    {
+      "text": "零一十。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^レーイチ|0^ジュ!ー<F>"
+      ]
+    },
+    {
+      "text": "一零十。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>イ^チレ!ー|0^ジュ!ー<F>"
+      ]
+    },
+    {
+      "text": "零百。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^レ!ー|0ヒャ^ク<F>"
+      ]
+    },
+    {
+      "text": "零千。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^レ!ー|0^セ!ン<F>"
+      ]
+    },
+    {
+      "text": "零十人。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^レ!ー|0^ジュ!ーニン<F>"
+      ]
+    },
+    {
+      "text": "零万人。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^レ!ー|0マ^ンニン<F>"
+      ]
+    },
+    {
+      "text": "一零万。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>イ^チレ!ー|0^マ!ン<F>"
+      ]
+    },
+    {
+      "text": "零一万。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^レーイチ|0^マ!ン<F>"
+      ]
+    },
+    {
+      "text": "十零。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^ジュ!ー|0^レ!ー<F>"
+      ]
+    },
+    {
+      "text": "零零日。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>レ^ーレ!ーニチ<F>"
+      ]
+    },
+    {
+      "text": "零〇日。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>レ^ーゼロ!ニチ<F>"
+      ]
+    },
+    {
+      "text": "〇零日。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>ゼ^ロレ!ーニチ<F>"
+      ]
+    },
+    {
+      "text": "零01。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^レ!ー|0ゼ^ロイ!チ<F>"
+      ]
+    },
+    {
+      "text": "０零一。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^ゼ!ロ|0レ^ーイ!チ<F>"
+      ]
+    },
+    {
+      "text": "零0一。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^レ!ー|0^ゼ!ロ|0イ^チ<F>"
+      ]
+    },
+    {
+      "text": "零〇十。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>レ^ーゼ!ロ|0^ジュ!ー<F>"
+      ]
+    },
+    {
+      "text": "零三本。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>レ^ーサ!ンホン<F>"
+      ]
+    },
+    {
+      "text": "零三日。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>レ^ーサ!ンニチ<F>"
+      ]
+    },
+    {
+      "text": "零零零。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>レ^ーレ!ー|0^レ!ー<F>"
+      ]
+    },
+    {
+      "text": "零零零日。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>レ^ーレ!ー|0^レ!ーニチ<F>"
+      ]
+    },
+    {
+      "text": "零一二三。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^レーイチ|0^ニ!ジュー|0サ^ン<F>"
+      ]
+    },
+    {
+      "text": "一二零三。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>イ^チニ!ー|0レ^ーサ!ン<F>"
+      ]
+    },
+    {
+      "text": "零．零。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^レ!ーテン|0^レ!ー<F>"
+      ]
+    },
+    {
+      "text": "零時。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^レ!ージ<F>"
+      ]
+    },
+    {
+      "text": "零一十。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>レ^ーイチ|0^ジュ!ー<F>"
+      ]
+    },
+    {
+      "text": "一零十。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>イ^チレ!ー|0^ジュ!ー<F>"
+      ]
+    },
+    {
+      "text": "零百。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^レ!ー|0ヒャ^ク<F>"
+      ]
+    },
+    {
+      "text": "零千。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^レ!ー|0^セ!ン<F>"
+      ]
+    },
+    {
+      "text": "零十人。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^レ!ー|0^ジュ!ーニン<F>"
+      ]
+    },
+    {
+      "text": "零万人。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^レ!ー|0マ^ンニン<F>"
+      ]
+    },
+    {
+      "text": "一零万。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>イ^チレ!ー|0^マ!ン<F>"
+      ]
+    },
+    {
+      "text": "零一万。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>レ^ーイチ|0^マ!ン<F>"
+      ]
+    },
+    {
+      "text": "十零。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^ジュ!ー|0^レ!ー<F>"
+      ]
+    },
+    {
+      "text": "零零日。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>レ^ーレ!ーニチ<F>"
+      ]
+    },
+    {
+      "text": "零〇日。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>レ^ーゼロ!ニチ<F>"
+      ]
+    },
+    {
+      "text": "〇零日。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ゼ^ロレ!ーニチ<F>"
+      ]
+    },
+    {
+      "text": "零01。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^レ!ー|0ゼ^ロイ!チ<F>"
+      ]
+    },
+    {
+      "text": "０零一。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^ゼ!ロ|0レ^ーイ!チ<F>"
+      ]
+    },
+    {
+      "text": "零0一。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^レ!ー|0^ゼ!ロ|0イ^チ<F>"
+      ]
+    },
+    {
+      "text": "零〇十。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>レ^ーゼ!ロ|0^ジュ!ー<F>"
+      ]
+    },
+    {
+      "text": "零三本。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>レ^ーサ!ンホン<F>"
+      ]
+    },
+    {
+      "text": "零三日。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>レ^ーサ!ンニチ<F>"
+      ]
+    },
+    {
+      "text": "零零零。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>レ^ーレ!ー|0^レ!ー<F>"
+      ]
+    },
+    {
+      "text": "零零零日。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>レ^ーレ!ー|0^レ!ーニチ<F>"
+      ]
+    },
+    {
+      "text": "零一二三。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>レ^ーイチ|0^ニ!ジュー|0サ^ン<F>"
+      ]
+    },
+    {
+      "text": "一二零三。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>イ^チニ!ー|0レ^ーサ!ン<F>"
+      ]
+    },
+    {
+      "text": "零．零。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^レ!ーテン|0^レ!ー<F>"
+      ]
+    },
+    {
+      "text": "零時。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^レ!ージ<F>"
+      ]
+    },
+    {
+      "text": "万。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^マ!ン<F>"
+      ]
+    },
+    {
+      "text": "億。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>オ^ク<F>"
+      ]
+    },
+    {
+      "text": "兆。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>チョ^ー<F>"
+      ]
+    },
+    {
+      "text": "千。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^セ!ン<F>"
+      ]
+    },
+    {
+      "text": "十。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^ジュ!ー<F>"
+      ]
+    },
+    {
+      "text": "百。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>ヒャ^ク<F>"
+      ]
+    },
+    {
+      "text": "学校万。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>ガッコー|0^マ!ン<F>"
+      ]
+    },
+    {
+      "text": "学校億。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>ガッコ^ー|0オ^ク<F>"
+      ]
+    },
+    {
+      "text": "学校千。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>ガッコー|0^セ!ン<F>"
+      ]
+    },
+    {
+      "text": "一万。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>イ^チマ!ン<F>"
+      ]
+    },
+    {
+      "text": "一一万。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>ジュ^ーイチマ!ン<F>"
+      ]
+    },
+    {
+      "text": "零一万。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^レーイチ|0^マ!ン<F>"
+      ]
+    },
+    {
+      "text": "零一億。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^レーイチ|0オ^ク<F>"
+      ]
+    },
+    {
+      "text": "零一千。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^レーイチ|0^セ!ン<F>"
+      ]
+    },
+    {
+      "text": "零二万。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>レ^ーニ!ー|0^マ!ン<F>"
+      ]
+    },
+    {
+      "text": "レーイチ万。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^レ!ーイチ|0^マ!ン<F>"
+      ]
+    },
+    {
+      "text": "零一 万。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^レーイチ$1_1^マ!ン<F>"
+      ]
+    },
+    {
+      "text": "こんにちは万。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>コンニチ^ワ|0^マ!ン<F>"
+      ]
+    },
+    {
+      "text": "声万。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>コ^エ|0^マ!ン<F>"
+      ]
+    },
+    {
+      "text": "人万。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^ヒ!ト|0^マ!ン<F>"
+      ]
+    },
+    {
+      "text": "万。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^マ!ン<F>"
+      ]
+    },
+    {
+      "text": "億。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>オ^ク<F>"
+      ]
+    },
+    {
+      "text": "兆。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>チョ^ー<F>"
+      ]
+    },
+    {
+      "text": "千。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^セ!ン<F>"
+      ]
+    },
+    {
+      "text": "十。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^ジュ!ー<F>"
+      ]
+    },
+    {
+      "text": "百。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ヒャ^ク<F>"
+      ]
+    },
+    {
+      "text": "学校万。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ガ^ッコー|0^マ!ン<F>"
+      ]
+    },
+    {
+      "text": "学校億。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ガ^ッコー|0オ^ク<F>"
+      ]
+    },
+    {
+      "text": "学校千。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ガ^ッコー|0^セ!ン<F>"
+      ]
+    },
+    {
+      "text": "一万。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>イ^チマ!ン<F>"
+      ]
+    },
+    {
+      "text": "一一万。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ジュ^ーイチマ!ン<F>"
+      ]
+    },
+    {
+      "text": "零一万。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>レ^ーイチ|0^マ!ン<F>"
+      ]
+    },
+    {
+      "text": "零一億。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>レ^ーイチ|0オ^ク<F>"
+      ]
+    },
+    {
+      "text": "零一千。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>レ^ーイチ|0^セ!ン<F>"
+      ]
+    },
+    {
+      "text": "零二万。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>レ^ーニ!ー|0^マ!ン<F>"
+      ]
+    },
+    {
+      "text": "レーイチ万。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^レ!ーイチ|0^マ!ン<F>"
+      ]
+    },
+    {
+      "text": "零一 万。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>レ^ーイチ$1_1^マ!ン<F>"
+      ]
+    },
+    {
+      "text": "こんにちは万。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>コ^ンニチワ|0^マ!ン<F>"
+      ]
+    },
+    {
+      "text": "声万。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^コ!エ|0^マ!ン<F>"
+      ]
+    },
+    {
+      "text": "人万。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ヒ^ト|0^マ!ン<F>"
+      ]
+    }
+  ]
+}

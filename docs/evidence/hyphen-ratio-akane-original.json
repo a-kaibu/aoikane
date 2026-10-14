@@ -1,0 +1,249 @@
+{
+  "scope": "Frontend-only original observations, all stages/numeric stack checked; formatter matches independent SDK. Not waveform proof.",
+  "sha256": "65ae64f977d4effa09c09506e06bc30d6310fe7bd949f3c69dd7ed51ab6d0e45",
+  "cases": [
+    {
+      "text": "8−0AA。",
+      "counts": {
+        "hooked": 1,
+        "stage_enter_1b9f10": 1,
+        "stage_enter_11f9c0": 1,
+        "numeral_segment_enter": 4,
+        "numeral_segment_leave": 4,
+        "stage_leave_11f9c0": 1,
+        "stage_enter_11ec50": 1,
+        "stage_leave_11ec50": 1,
+        "stage_leave_1b9f10": 1,
+        "stage_enter_1b9f60": 1,
+        "stage_leave_1b9f60": 1,
+        "graph_in": 1,
+        "graph_built": 1,
+        "graph_after": 1,
+        "format": 1,
+        "done": 1
+      },
+      "segments": [
+        {
+          "rva": "10b010",
+          "number": "８",
+          "caller": "0x101e0b",
+          "output": [
+            "ハチ",
+            "八"
+          ]
+        },
+        {
+          "rva": "100a90",
+          "number": "８",
+          "caller": "0x103e42",
+          "output": [
+            "ハチ",
+            "八"
+          ]
+        },
+        {
+          "rva": "10b010",
+          "number": "０",
+          "caller": "0x101e0b",
+          "output": [
+            "ハチタイゼロ",
+            "八対〇"
+          ]
+        },
+        {
+          "rva": "100a90",
+          "number": "０",
+          "caller": "0x103e42",
+          "output": [
+            "ハチタイゼロ",
+            "八対〇"
+          ]
+        }
+      ],
+      "counters": [],
+      "formatted": [
+        "<S>ハ^チタ!イ|0^ゼ!ロ|0^エーエ!ー<F>"
+      ]
+    },
+    {
+      "text": "8対0。",
+      "counts": {
+        "hooked": 1,
+        "stage_enter_1b9f10": 1,
+        "stage_enter_11f9c0": 1,
+        "numeral_segment_enter": 4,
+        "numeral_segment_leave": 4,
+        "stage_leave_11f9c0": 1,
+        "stage_enter_11ec50": 1,
+        "stage_leave_11ec50": 1,
+        "stage_leave_1b9f10": 1,
+        "stage_enter_1b9f60": 1,
+        "stage_leave_1b9f60": 1,
+        "graph_in": 1,
+        "graph_built": 1,
+        "graph_after": 1,
+        "format": 1,
+        "done": 1
+      },
+      "segments": [
+        {
+          "rva": "10b010",
+          "number": "８",
+          "caller": "0x101e0b",
+          "output": [
+            "ハチ",
+            "八"
+          ]
+        },
+        {
+          "rva": "100a90",
+          "number": "８",
+          "caller": "0x103e42",
+          "output": [
+            "ハチ",
+            "八"
+          ]
+        },
+        {
+          "rva": "10b010",
+          "number": "０",
+          "caller": "0x101e0b",
+          "output": [
+            "ハチタイゼロ",
+            "八対〇"
+          ]
+        },
+        {
+          "rva": "100a90",
+          "number": "０",
+          "caller": "0x103e42",
+          "output": [
+            "ハチタイゼロ",
+            "八対〇"
+          ]
+        }
+      ],
+      "counters": [],
+      "formatted": [
+        "<S>ハ^チタ!イ|0^ゼ!ロ<F>"
+      ]
+    },
+    {
+      "text": ".個8－0AA・５（五0零十。",
+      "counts": {
+        "hooked": 1,
+        "stage_enter_1b9f10": 1,
+        "stage_enter_11f9c0": 2,
+        "stage_leave_11f9c0": 2,
+        "stage_enter_11ec50": 2,
+        "stage_leave_11ec50": 2,
+        "numeral_segment_enter": 10,
+        "numeral_segment_leave": 10,
+        "stage_leave_1b9f10": 1,
+        "stage_enter_1b9f60": 1,
+        "stage_leave_1b9f60": 1,
+        "graph_in": 1,
+        "graph_built": 1,
+        "graph_after": 1,
+        "format": 1,
+        "done": 1
+      },
+      "segments": [
+        {
+          "rva": "10b010",
+          "number": "８",
+          "caller": "0x101e0b",
+          "output": [
+            "ハチ",
+            "八"
+          ]
+        },
+        {
+          "rva": "100a90",
+          "number": "８",
+          "caller": "0x103e42",
+          "output": [
+            "ハチ",
+            "八"
+          ]
+        },
+        {
+          "rva": "10b010",
+          "number": "０",
+          "caller": "0x101e0b",
+          "output": [
+            "ハチタイゼロ",
+            "八対〇"
+          ]
+        },
+        {
+          "rva": "100a90",
+          "number": "０",
+          "caller": "0x103e42",
+          "output": [
+            "ハチタイゼロ",
+            "八対〇"
+          ]
+        },
+        {
+          "rva": "10b010",
+          "number": "５",
+          "caller": "0x100fec",
+          "output": [
+            "ゴ",
+            "五"
+          ]
+        },
+        {
+          "rva": "10b010",
+          "number": "五",
+          "caller": "0x101b09",
+          "output": [
+            "ゴｐゴ",
+            "五（五"
+          ]
+        },
+        {
+          "rva": "10b010",
+          "number": "０",
+          "caller": "0x1012b0",
+          "output": [
+            "ゴｐゴｂゼロ",
+            "五（五〇"
+          ]
+        },
+        {
+          "rva": "1043f0",
+          "number": "零",
+          "caller": "0x1018a0",
+          "output": [
+            "ゴｐゴｂゼロｂレー",
+            "五（五〇零"
+          ]
+        },
+        {
+          "rva": "10b010",
+          "number": "十",
+          "caller": "0x101e0b",
+          "output": [
+            "ゴｐゴｂゼロｂレーｂジュー",
+            "五（五〇零十"
+          ]
+        },
+        {
+          "rva": "100a90",
+          "number": "５（五０零十",
+          "caller": "0x10245a",
+          "output": [
+            "ゴｐゴｂゼロｂレーｂジュー",
+            "五（五〇零十"
+          ]
+        }
+      ],
+      "counters": [],
+      "formatted": [
+        "<S>^コ|0ハ^チタ!イ|0^ゼ!ロ|0^エーエ!ー$1_1^ゴ$1_1^ゴ|0^ゼ!ロ|0^レ!ー|0^ジュ!ー<F>"
+      ]
+    }
+  ]
+}

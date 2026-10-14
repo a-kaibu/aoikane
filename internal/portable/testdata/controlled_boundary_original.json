@@ -1,0 +1,132 @@
+{
+  "source": "ordinary original direct engine API; public configuration setters; no instrumentation or injected model inputs",
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "original_threads": 6,
+  "corpus_sha256": "4fe56c38e0866ed6fb3b400cce4ad87dd976af6dd1150ddc54ab2a5e32e62ab0",
+  "corpus_file_sha256": "4fe56c38e0866ed6fb3b400cce4ad87dd976af6dd1150ddc54ab2a5e32e62ab0",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "torch_dll_sha256": "00ca5c937940a94d052dbe52ec5fb0909db11ffbfccfd6e65e19b468169ff5e5",
+  "cases": [
+    {
+      "name": "akane-quiet",
+      "request": {
+        "format": "wav",
+        "text": "あ。",
+        "voice": "KotonohaAkane_ns_48",
+        "rate": 1,
+        "pitch": 1,
+        "volume": 0.001,
+        "emphasis": 1
+      },
+      "bytes": 98924,
+      "sha256": "f3b20203850c668cfff2eba0607eb90ead2a75efb3342eb2aae127aaa973c2fc",
+      "equal": true
+    },
+    {
+      "name": "akane-flat",
+      "request": {
+        "format": "wav",
+        "text": "あ。",
+        "voice": "KotonohaAkane_ns_48",
+        "rate": 1,
+        "pitch": 1,
+        "volume": 1,
+        "emphasis": 1e-06
+      },
+      "bytes": 98924,
+      "sha256": "d17b823a9ba807777d2d78883ac0b29cc1576855cde7db8c63cb5cbb38c2a2b9",
+      "equal": true
+    },
+    {
+      "name": "akane-upper",
+      "request": {
+        "format": "wav",
+        "text": "あ。",
+        "voice": "KotonohaAkane_ns_48",
+        "rate": 4,
+        "pitch": 2,
+        "volume": 2,
+        "emphasis": 2
+      },
+      "bytes": 85964,
+      "sha256": "b36eff261d2e017a3d3ea40b83ef230d059be5611500c33ba0d6f8bf4479d55a",
+      "equal": true
+    },
+    {
+      "name": "akane-slow-quiet",
+      "request": {
+        "format": "wav",
+        "text": "あ。",
+        "voice": "KotonohaAkane_ns_48",
+        "rate": 0.5,
+        "pitch": 0.5,
+        "volume": 0.001,
+        "emphasis": 2
+      },
+      "bytes": 116204,
+      "sha256": "57cafb620034e191a8458e38f12b177e7a5f33336a49eee14851c809fb5d49ed",
+      "equal": true
+    },
+    {
+      "name": "aoi-quiet",
+      "request": {
+        "format": "wav",
+        "text": "あ。",
+        "voice": "KotonohaAoi_ns_48",
+        "rate": 1,
+        "pitch": 1,
+        "volume": 0.001,
+        "emphasis": 1
+      },
+      "bytes": 98444,
+      "sha256": "1a61e7b41eeae89e3f4ca5a0e498d52f00bb95e8dbf8cc7d2bcd973c067c8653",
+      "equal": true
+    },
+    {
+      "name": "aoi-flat",
+      "request": {
+        "format": "wav",
+        "text": "あ。",
+        "voice": "KotonohaAoi_ns_48",
+        "rate": 1,
+        "pitch": 1,
+        "volume": 1,
+        "emphasis": 1e-06
+      },
+      "bytes": 98444,
+      "sha256": "e77b72dfacd143971cdf080ba60c3150bf052dd099b8a92ca5eabbc8ec28d4c3",
+      "equal": true
+    },
+    {
+      "name": "aoi-upper",
+      "request": {
+        "format": "wav",
+        "text": "あ。",
+        "voice": "KotonohaAoi_ns_48",
+        "rate": 4,
+        "pitch": 2,
+        "volume": 2,
+        "emphasis": 2
+      },
+      "bytes": 85964,
+      "sha256": "8cc6c18e612d0f18cd384f2d34cbda1c0cdc7bbe72a591cbf0de28be5759a667",
+      "equal": true
+    },
+    {
+      "name": "aoi-slow-quiet",
+      "request": {
+        "format": "wav",
+        "text": "あ。",
+        "voice": "KotonohaAoi_ns_48",
+        "rate": 0.5,
+        "pitch": 0.5,
+        "volume": 0.001,
+        "emphasis": 2
+      },
+      "bytes": 115244,
+      "sha256": "1d1cdcd62143b0b6b9eab79f15f1b328dfb464385b09e6edb7df982749f01ff7",
+      "equal": true
+    }
+  ],
+  "source_report_sha256": "4cc414d3c53c107923b3a988b270d44efdd5afad44a35f6512f76f4b851e0a13"
+}

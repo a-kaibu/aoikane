@@ -1,0 +1,144 @@
+{
+  "source": "ordinary original Akane frontend; PROBE_MULTI=100; all formats retained through normal completion; no injected inputs",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "voice": "KotonohaAkane_ns_48",
+  "capture_sha256": [
+    "eb9b1eea6d1cfe80357b8f48706d16f2405c93080d7e2273df2d88e1fbce060a",
+    "ed787ad695e3058b5497deb521fa9d53f139c80175065eb86920ee6ed1d1ba07",
+    "6f0f4e0d2b4680aaa191269ecc2ebfdc4b9cdb16e09f93682149254ba73cbcd9",
+    "b5fb8648ec84c089fd3cb232284569adefa039570a8a8ed4f8aa36dcb19f3dfa"
+  ],
+  "cases": [
+    {
+      "text": "－\n？。",
+      "readings": [
+        "<S><F>"
+      ]
+    },
+    {
+      "text": "（\n？。",
+      "readings": [
+        "<S><F>"
+      ]
+    },
+    {
+      "text": "「\n？。",
+      "readings": [
+        "<S><F>"
+      ]
+    },
+    {
+      "text": "－（\n？。",
+      "readings": [
+        "<S><F>"
+      ]
+    },
+    {
+      "text": "あ（\n？。",
+      "readings": [
+        "<S>^ア<F>"
+      ]
+    },
+    {
+      "text": "－\nあ。",
+      "readings": [
+        "<S><F>",
+        "<S>^ア<F>"
+      ]
+    },
+    {
+      "text": "あ\n？。",
+      "readings": [
+        "<S>^ア<F>"
+      ]
+    },
+    {
+      "text": "あ\n。",
+      "readings": [
+        "<S>^ア<F>"
+      ]
+    },
+    {
+      "text": "－\n。",
+      "readings": [
+        "<S><F>"
+      ]
+    },
+    {
+      "text": "－\n！",
+      "readings": [
+        "<S><F>"
+      ]
+    },
+    {
+      "text": "－\n?",
+      "readings": [
+        "<S><F>"
+      ]
+    },
+    {
+      "text": "あ\n？",
+      "readings": [
+        "<S>^ア<F>"
+      ]
+    },
+    {
+      "text": "あ\n！",
+      "readings": [
+        "<S>^ア<F>"
+      ]
+    },
+    {
+      "text": "－\n\t。",
+      "readings": [
+        "<S><F>",
+        "<S><F>"
+      ]
+    },
+    {
+      "text": "－\n 。",
+      "readings": [
+        "<S><F>",
+        "<S><F>"
+      ]
+    },
+    {
+      "text": "－\n　。",
+      "readings": [
+        "<S><F>",
+        "<S><F>"
+      ]
+    },
+    {
+      "text": "－\n\n。",
+      "readings": [
+        "<S><F>"
+      ]
+    },
+    {
+      "text": "－\r。",
+      "readings": [
+        "<S><F>"
+      ]
+    },
+    {
+      "text": "－\n\t？。",
+      "readings": [
+        "<S><F>",
+        "<S><R>"
+      ]
+    },
+    {
+      "text": "😀０～\n。",
+      "readings": [
+        "<S>^ゼ!ロカラ<F>"
+      ]
+    },
+    {
+      "text": " －「（\n？。",
+      "readings": [
+        "<S><F>"
+      ]
+    }
+  ]
+}

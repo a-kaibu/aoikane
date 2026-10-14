@@ -1,0 +1,63 @@
+{
+  "source": "ordinary original direct engine API; no instrumentation or injected model inputs",
+  "source_sha256": "75b66fa560f6521478322bc813efab75ef831c5ba016b73a4de70b06ce83ef45",
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "voice": "KotonohaAkane_ns_48",
+  "original_threads": 6,
+  "avx512_convolutions": false,
+  "seed": 3,
+  "generator_version": 1,
+  "max_units": 12,
+  "cases": [
+    {
+      "index": 0,
+      "text": "けにーちゆあせぜーこっい。",
+      "bytes": 257584,
+      "sha256": "3982e6cf4a80e59433be72bbbbe3b1c89565a551a6d3223a086945b2bb42e13a"
+    },
+    {
+      "index": 1,
+      "text": "四ｃ一。",
+      "bytes": 187244,
+      "sha256": "019e7a6e4620236c98bbbaed5054b33654e5eb833ea6ce99fcadd345a5492c8d"
+    },
+    {
+      "index": 2,
+      "text": " Ж「アA？）。",
+      "bytes": 273528,
+      "sha256": "682d8bc876bb989e3bd22f29b962846a7d4c64356d363384bf2a3c2c6d381ede"
+    },
+    {
+      "index": 3,
+      "text": "と一人私ますに開ける12行く大きな今日ABC開ける。",
+      "bytes": 617836,
+      "sha256": "857eb61786cd3607a11ff3fe5280b321c3a983c772864f012c4243638ff96e21"
+    },
+    {
+      "index": 4,
+      "text": "しょるわ。",
+      "bytes": 140352,
+      "sha256": "647a9b95933d34714af50b616b9074564156d11310920ad42b97c018d2a24f1d"
+    },
+    {
+      "index": 5,
+      "text": "火Ｂｃ。",
+      "bytes": 161436,
+      "sha256": "261487a663ca9ed2d6ee80da71da6216ac51a3f12ab44cec2ac90c2a8c91d49e"
+    },
+    {
+      "index": 6,
+      "text": "。Ω😀）。",
+      "bytes": 215178,
+      "sha256": "63b3bb84e9f5f45ccd7f969f30780558e0afc86e3a408a087ba28cd688c0f977"
+    },
+    {
+      "index": 7,
+      "text": "私青い窓にhelloABC生。",
+      "bytes": 424962,
+      "sha256": "2283c15a4ff3d4feaf66e2c497c9a0b902065b37c1ee6f8be1cc85f543afeb31"
+    }
+  ],
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "torch_dll_sha256": "00ca5c937940a94d052dbe52ec5fb0909db11ffbfccfd6e65e19b468169ff5e5"
+}

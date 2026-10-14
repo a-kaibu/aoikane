@@ -1,0 +1,665 @@
+{
+  "scope": "All three failed seed4 input frontend observations validated against independent native capture; not waveform proof",
+  "raw_sha256": "f527e26922dd9eb59704a3eb8081f0cba14ee4759500a918958849d46bfe74ca",
+  "cases": [
+    {
+      "index": 8,
+      "text": "二８Ａ8は１零百－0１2－本。",
+      "stage_counts": {
+        "11f9c0": 2,
+        "11ec50": 2,
+        "1b9f10": 1,
+        "1b9f60": 1
+      },
+      "numeric_calls": [
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "10b010",
+            "input_hex": "93f1",
+            "caller": "0x101b09",
+            "raw_args": [
+              "0x3fe0000000000000",
+              "0x0",
+              "0x4000000000000000",
+              "0x0",
+              "0x4000000000000000"
+            ],
+            "input": "二８Ａ8は１零百－0１2－本。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "10b010",
+            "input_hex": "93f1",
+            "result": "0x1",
+            "output_a": "836a",
+            "output_b": "93f1",
+            "input": "二８Ａ8は１零百－0１2－本。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "二",
+          "output_a_decoded": "ニ",
+          "output_b_decoded": "二"
+        },
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "10b010",
+            "input_hex": "8257",
+            "caller": "0x101e0b",
+            "raw_args": [
+              "0x3fe0000000000000",
+              "0x0",
+              "0x4000000000000000",
+              "0x0",
+              "0x4000000000000000"
+            ],
+            "input": "二８Ａ8は１零百－0１2－本。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "10b010",
+            "input_hex": "8257",
+            "result": "0x1",
+            "output_a": "836a8282836e8360",
+            "output_b": "93f194aa",
+            "input": "二８Ａ8は１零百－0１2－本。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "８",
+          "output_a_decoded": "ニｂハチ",
+          "output_b_decoded": "二八"
+        },
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "100a90",
+            "input_hex": "93f18257",
+            "caller": "0x10245a",
+            "raw_args": [
+              "0xdbd33fda60",
+              "0x7ffca65b3200",
+              "0xdbd33fde00",
+              "0x286eb121400",
+              "0x0"
+            ],
+            "input": "二８Ａ8は１零百－0１2－本。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "100a90",
+            "input_hex": "93f18257",
+            "result": "0x1",
+            "output_a": "836a8282836e8360",
+            "output_b": "93f194aa",
+            "input": "二８Ａ8は１零百－0１2－本。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "二８",
+          "output_a_decoded": "ニｂハチ",
+          "output_b_decoded": "二八"
+        },
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "10b010",
+            "input_hex": "8257",
+            "caller": "0x101e0b",
+            "raw_args": [
+              "0x3fe0000000000000",
+              "0x0",
+              "0x4000000000000000",
+              "0x0",
+              "0x4000000000000000"
+            ],
+            "input": "二８Ａ8は１零百－0１2－本。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "10b010",
+            "input_hex": "8257",
+            "result": "0x1",
+            "output_a": "836e8360",
+            "output_b": "94aa",
+            "input": "二８Ａ8は１零百－0１2－本。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "８",
+          "output_a_decoded": "ハチ",
+          "output_b_decoded": "八"
+        },
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "100a90",
+            "input_hex": "8257",
+            "caller": "0x10245a",
+            "raw_args": [
+              "0xdbd33fda60",
+              "0x0",
+              "0x286db4ece00",
+              "0x286e9290e00",
+              "0xdbd33fe000"
+            ],
+            "input": "二８Ａ8は１零百－0１2－本。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "100a90",
+            "input_hex": "8257",
+            "result": "0x1",
+            "output_a": "836e8360",
+            "output_b": "94aa",
+            "input": "二８Ａ8は１零百－0１2－本。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "８",
+          "output_a_decoded": "ハチ",
+          "output_b_decoded": "八"
+        },
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "10b010",
+            "input_hex": "8250",
+            "caller": "0x1012b0",
+            "raw_args": [
+              "0x3fe0000000000000",
+              "0x0",
+              "0x4000000000000000",
+              "0x0",
+              "0x4000000000000000"
+            ],
+            "input": "二８Ａ8は１零百－0１2－本。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "10b010",
+            "input_hex": "8250",
+            "result": "0x1",
+            "output_a": "83438360",
+            "output_b": "88ea",
+            "input": "二８Ａ8は１零百－0１2－本。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "１",
+          "output_a_decoded": "イチ",
+          "output_b_decoded": "一"
+        },
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "1043f0",
+            "input_hex": "97eb",
+            "caller": "0x1018a0",
+            "raw_args": [
+              "0x3fe0000000000000",
+              "0x0",
+              "0x4000000000000002",
+              "0xdbd33fd8f8",
+              "0xdbd33fd940"
+            ],
+            "input": "二８Ａ8は１零百－0１2－本。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "1043f0",
+            "input_hex": "97eb",
+            "result": "0x1",
+            "output_a": "834383608282838c815b",
+            "output_b": "88ea97eb",
+            "input": "二８Ａ8は１零百－0１2－本。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "零",
+          "output_a_decoded": "イチｂレー",
+          "output_b_decoded": "一零"
+        },
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "10b010",
+            "input_hex": "9553",
+            "caller": "0x100e5b",
+            "raw_args": [
+              "0x3fe0000000000000",
+              "0x0",
+              "0x4000000000000002",
+              "0xdbd33fd8f8",
+              "0xdbd33fd940"
+            ],
+            "input": "二８Ａ8は１零百－0１2－本。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "10b010",
+            "input_hex": "9553",
+            "result": "0x1",
+            "output_a": "834383608282838c815b828283718383834e",
+            "output_b": "88ea97eb9553",
+            "input": "二８Ａ8は１零百－0１2－本。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "百",
+          "output_a_decoded": "イチｂレーｂヒャク",
+          "output_b_decoded": "一零百"
+        },
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "10b010",
+            "input_hex": "824f82508251",
+            "caller": "0x101e0b",
+            "raw_args": [
+              "0x3fe0000000000000",
+              "0x0",
+              "0x4000000000000002",
+              "0xdbd33fd8f8",
+              "0xdbd33fd940"
+            ],
+            "input": "二８Ａ8は１零百－0１2－本。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "10b010",
+            "input_hex": "824f82508251",
+            "result": "0x1",
+            "output_a": "834383608282838c815b828283718383834e8290835b838d83578385815b836a",
+            "output_b": "88ea97eb9553817c815a8f5c93f1",
+            "input": "二８Ａ8は１零百－0１2－本。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "０１２",
+          "output_a_decoded": "イチｂレーｂヒャクｐゼロジューニ",
+          "output_b_decoded": "一零百－〇十二"
+        },
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "100a90",
+            "input_hex": "825097eb9553817c824f82508251",
+            "caller": "0x10245a",
+            "raw_args": [
+              "0xdbd33fda60",
+              "0x7ffca65b3200",
+              "0xdbd33fde00",
+              "0x286eb121400",
+              "0x0"
+            ],
+            "input": "二８Ａ8は１零百－0１2－本。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "100a90",
+            "input_hex": "825097eb9553817c824f82508251",
+            "result": "0x1",
+            "output_a": "834383608282838c815b828283718383834e8290835b838d83578385815b836a",
+            "output_b": "88ea97eb9553817c815a8f5c93f1",
+            "input": "二８Ａ8は１零百－0１2－本。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "１零百－０１２",
+          "output_a_decoded": "イチｂレーｂヒャクｐゼロジューニ",
+          "output_b_decoded": "一零百－〇十二"
+        }
+      ],
+      "counter_calls": [],
+      "formatted": [
+        "<S>^ニ|0ハ^チエ!ー|0ハ^チ!ワ|0イ^チ|0^レ!ー|0ヒャ^ク$1_1^ゼ!ロ|0ジュ^ーニ|0^ホ!ン<F>"
+      ]
+    },
+    {
+      "index": 26,
+      "text": "9.千分一５分読む。",
+      "stage_counts": {
+        "11f9c0": 3,
+        "11ec50": 3,
+        "1b9f10": 1,
+        "1b9f60": 1
+      },
+      "numeric_calls": [
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "10b010",
+            "input_hex": "8258",
+            "caller": "0x100fec",
+            "raw_args": [
+              "0x3fe0000000000000",
+              "0x0",
+              "0x4000000000000000",
+              "0x0",
+              "0x4000000000000000"
+            ],
+            "input": "9.千分一５分読む。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "10b010",
+            "input_hex": "8258",
+            "result": "0x1",
+            "output_a": "834c8385815b",
+            "output_b": "8be3",
+            "input": "9.千分一５分読む。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "９",
+          "output_a_decoded": "キュー",
+          "output_b_decoded": "九"
+        },
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "10b010",
+            "input_hex": "90e7",
+            "caller": "0x101e0b",
+            "raw_args": [
+              "0x3fe0000000000000",
+              "0x0",
+              "0x4000000000000000",
+              "0x0",
+              "0x4000000000000000"
+            ],
+            "input": "9.千分一５分読む。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "10b010",
+            "input_hex": "90e7",
+            "result": "0x1",
+            "output_a": "834c8385815b836583938282835a8393",
+            "output_b": "8be3814490e7",
+            "input": "9.千分一５分読む。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "千",
+          "output_a_decoded": "キューテンｂセン",
+          "output_b_decoded": "九．千"
+        },
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "100a90",
+            "input_hex": "8258814490e7",
+            "caller": "0x10245a",
+            "raw_args": [
+              "0xf69fbfd520",
+              "0x7ffca65b3200",
+              "0xf69fbfd900",
+              "0x24eb4371400",
+              "0x0"
+            ],
+            "input": "9.千分一５分読む。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "100a90",
+            "input_hex": "8258814490e7",
+            "result": "0x1",
+            "output_a": "834c8385815b836583938282835a8393",
+            "output_b": "8be3814490e7",
+            "input": "9.千分一５分読む。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "９．千",
+          "output_a_decoded": "キューテンｂセン",
+          "output_b_decoded": "九．千"
+        },
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "10b010",
+            "input_hex": "88ea",
+            "caller": "0x101b09",
+            "raw_args": [
+              "0x3fe0000000000000",
+              "0x0",
+              "0x4000000000000000",
+              "0x0",
+              "0x4000000000000000"
+            ],
+            "input": "9.千分一５分読む。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "10b010",
+            "input_hex": "88ea",
+            "result": "0x1",
+            "output_a": "83438360",
+            "output_b": "88ea",
+            "input": "9.千分一５分読む。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "一",
+          "output_a_decoded": "イチ",
+          "output_b_decoded": "一"
+        },
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "10b010",
+            "input_hex": "8254",
+            "caller": "0x101e0b",
+            "raw_args": [
+              "0x3fe0000000000000",
+              "0x0",
+              "0x4000000000000000",
+              "0x0",
+              "0x4000000000000000"
+            ],
+            "input": "9.千分一５分読む。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "10b010",
+            "input_hex": "8254",
+            "result": "0x1",
+            "output_a": "8343836082828353",
+            "output_b": "88ea8cdc",
+            "input": "9.千分一５分読む。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "５",
+          "output_a_decoded": "イチｂゴ",
+          "output_b_decoded": "一五"
+        },
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "100a90",
+            "input_hex": "88ea8254",
+            "caller": "0x10245a",
+            "raw_args": [
+              "0xf69fbfd520",
+              "0x7ffca65b3200",
+              "0xf69fbfd900",
+              "0x24eb4371400",
+              "0x0"
+            ],
+            "input": "9.千分一５分読む。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "100a90",
+            "input_hex": "88ea8254",
+            "result": "0x1",
+            "output_a": "8343836082828353",
+            "output_b": "88ea8cdc",
+            "input": "9.千分一５分読む。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "一５",
+          "output_a_decoded": "イチｂゴ",
+          "output_b_decoded": "一五"
+        }
+      ],
+      "counter_calls": [
+        {
+          "event": "numeral_counter_enter",
+          "caller": "0x106ce5",
+          "number_hex": "8258814490e7",
+          "number_accent_hex": "312d312d342c73302c312d312d32",
+          "number_spelling_hex": "8be3814490e7",
+          "counter_key_hex": "95aa",
+          "counter_read_hex": "83768393",
+          "counter_sound_hex": "83768393",
+          "param11": 1,
+          "param12": 1,
+          "input": "9.千分一５分読む。",
+          "sentence": 0,
+          "number_hex_decoded": "９．千",
+          "number_accent_hex_decoded": "1-1-4,s0,1-1-2",
+          "number_spelling_hex_decoded": "九．千",
+          "counter_key_hex_decoded": "分",
+          "counter_read_hex_decoded": "プン",
+          "counter_sound_hex_decoded": "プン"
+        },
+        {
+          "event": "numeral_counter_enter",
+          "caller": "0x106ce5",
+          "number_hex": "88ea8254",
+          "number_accent_hex": "322d322d322c73302c312d312d31",
+          "number_spelling_hex": "88ea8cdc",
+          "counter_key_hex": "95aa",
+          "counter_read_hex": "83748393",
+          "counter_sound_hex": "83748393",
+          "param11": 1,
+          "param12": 0,
+          "input": "9.千分一５分読む。",
+          "sentence": 0,
+          "number_hex_decoded": "一５",
+          "number_accent_hex_decoded": "2-2-2,s0,1-1-1",
+          "number_spelling_hex_decoded": "一五",
+          "counter_key_hex_decoded": "分",
+          "counter_read_hex_decoded": "フン",
+          "counter_sound_hex_decoded": "フン"
+        }
+      ],
+      "formatted": [
+        "<S>^キュ!ーテン|0セ^ンプン|0イ^チ|0^ゴ!フン|0ヨ^ム<F>"
+      ]
+    },
+    {
+      "index": 127,
+      "text": "時時8０五。",
+      "stage_counts": {
+        "11f9c0": 2,
+        "11ec50": 2,
+        "1b9f10": 1,
+        "1b9f60": 1
+      },
+      "numeric_calls": [
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "10b010",
+            "input_hex": "8257824f",
+            "caller": "0x1012b0",
+            "raw_args": [
+              "0x3fe0000000000000",
+              "0x0",
+              "0x4000000000000000",
+              "0x0",
+              "0x4000000000000000"
+            ],
+            "input": "時時8０五。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "10b010",
+            "input_hex": "8257824f",
+            "result": "0x1",
+            "output_a": "836e836083578385815b",
+            "output_b": "94aa8f5c",
+            "input": "時時8０五。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "８０",
+          "output_a_decoded": "ハチジュー",
+          "output_b_decoded": "八十"
+        },
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "10b010",
+            "input_hex": "8cdc",
+            "caller": "0x101e0b",
+            "raw_args": [
+              "0x3fe0000000000000",
+              "0x0",
+              "0x4000000000000000",
+              "0x0",
+              "0x4000000000000000"
+            ],
+            "input": "時時8０五。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "10b010",
+            "input_hex": "8cdc",
+            "result": "0x1",
+            "output_a": "836e836083578385815b82828353",
+            "output_b": "94aa8f5c8cdc",
+            "input": "時時8０五。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "五",
+          "output_a_decoded": "ハチジューｂゴ",
+          "output_b_decoded": "八十五"
+        },
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "100a90",
+            "input_hex": "8257824f8cdc",
+            "caller": "0x10245a",
+            "raw_args": [
+              "0x6dba1fd560",
+              "0x7ffca65b3200",
+              "0x6dba1fd900",
+              "0x177e67a1400",
+              "0x0"
+            ],
+            "input": "時時8０五。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "100a90",
+            "input_hex": "8257824f8cdc",
+            "result": "0x1",
+            "output_a": "836e836083578385815b82828353",
+            "output_b": "94aa8f5c8cdc",
+            "input": "時時8０五。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "８０五",
+          "output_a_decoded": "ハチジューｂゴ",
+          "output_b_decoded": "八十五"
+        }
+      ],
+      "counter_calls": [],
+      "formatted": [
+        "<S>トキ^ド!キ|0ハ^チジュ!ー|0^ゴ<F>"
+      ]
+    }
+  ]
+}

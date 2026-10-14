@@ -1,0 +1,84 @@
+{
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "original_threads": 6,
+  "avx512_convolutions": false,
+  "report_sha256": [
+    "9989eeb57697f13aede1615df2e4aaa4308de5e5f9ffb1dded532e844e44a299",
+    "674ebb9534f17c8e9e6f91b7a9d6e07489d8dd3d20614a65c30c45bfc74ce070"
+  ],
+  "cases": [
+    {
+      "Text": "1−万．〇０。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 252072,
+      "SHA256": "c5edae4e3bd1ab630fcfc850364d842fb6e995f32f4dcc75077c72ce03a92e93"
+    },
+    {
+      "Text": "1−万．００。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 252524,
+      "SHA256": "b61de8efa2f478b0ff9e9bd289c97cd73cc659285693ccdeef286b7d98506a54"
+    },
+    {
+      "Text": "万．〇０。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 202536,
+      "SHA256": "84a15ed46e97d9bc657d5995914f49bb83fa7f1a7ec0e9faefe97441de3b9bb4"
+    },
+    {
+      "Text": "億５－万．〇０.。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 269814,
+      "SHA256": "b368a63f186404b542d3f5478a8f12845ce94dc633a1f43c8d575c02467469a8"
+    },
+    {
+      "Text": "電話1−2.3。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 282840,
+      "SHA256": "428f09cee3afdd3b2c98a1e443094cee07ed6e7f785dbfd8833034ac8f7b188b"
+    },
+    {
+      "Text": "電話1−万.00。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 308334,
+      "SHA256": "d273fbde6618550eb8e7385029cd26d9570c94ae045030996cd49eb62176d6ce"
+    },
+    {
+      "Text": "1−万．〇０。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 251542,
+      "SHA256": "8f443b1939fe44ea747e98bf9cbccac2a5ed6e22121851c7e13be10cb7adc580"
+    },
+    {
+      "Text": "1−万．００。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 252524,
+      "SHA256": "b61de8efa2f478b0ff9e9bd289c97cd73cc659285693ccdeef286b7d98506a54"
+    },
+    {
+      "Text": "万．〇０。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 202536,
+      "SHA256": "84a15ed46e97d9bc657d5995914f49bb83fa7f1a7ec0e9faefe97441de3b9bb4"
+    },
+    {
+      "Text": "億５－万．〇０.。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 268402,
+      "SHA256": "36afb9cef0dd110a10b3d57a3520a41f334acc10a0824c19a26abedebb9243ca"
+    },
+    {
+      "Text": "電話1−2.3。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 282642,
+      "SHA256": "e12e2762976fcc076478f72b3c8802fd65b591c042c9c746dadff4c05bad0941"
+    },
+    {
+      "Text": "電話1−万.00。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 308104,
+      "SHA256": "2b8da786e2c36fa8d16b213661da936c4f139f7e768f14777d62be3fd52dbfca"
+    }
+  ]
+}

@@ -1,0 +1,302 @@
+{
+  "source": "ordinary original compileToImphoneme and normal model inputs; observed whole WAV identical to independent ordinary SDK capture",
+  "text": "（0\n。",
+  "voice": "KotonohaAoi_ns_48",
+  "wav_bytes": 117644,
+  "wav_sha256": "3809fc672c7e5946c56a5472e67835e7460a5a3b0f160c347be5727b982dbad4",
+  "events_sha256": "d5921deb3ea2237c0f1672272349ae9ceff099ab6c34b2db9dba1e956ce629bf",
+  "phones": [
+    {
+      "displayName": "--",
+      "f0": 20,
+      "dur": 50,
+      "pow": 7.603876292705536e-05,
+      "speed": 1,
+      "pitch": 1,
+      "into": 1,
+      "loud": 1,
+      "pause_dur": 50,
+      "phlabel": "--_S",
+      "phnn": 0,
+      "art": "00100000000000000000000000000001",
+      "acc": 0,
+      "beos": 2,
+      "punc": 0,
+      "nima": 0,
+      "niab": 0,
+      "style": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "phinfo": "CF00",
+      "prsinfo": "0010",
+      "inf_style_param": [
+        {
+          "D": 1
+        },
+        {
+          "C": 0
+        },
+        {
+          "J": 0
+        },
+        {
+          "S": 0
+        },
+        {
+          "A": 0
+        }
+      ]
+    },
+    {
+      "displayName": "z_",
+      "f0": 215.43849182128906,
+      "dur": 60,
+      "pow": 0.6877940893173218,
+      "speed": 1,
+      "pitch": 1,
+      "into": 1,
+      "loud": 1,
+      "phlabel": "z___",
+      "phnn": 15,
+      "art": "00000000010000000010000000001100",
+      "acc": 3,
+      "beos": 0,
+      "punc": 1,
+      "nima": 0.25,
+      "niab": 0.5,
+      "style": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "phinfo": "4600",
+      "prsinfo": "0000",
+      "inf_style_param": [
+        {
+          "D": 1
+        },
+        {
+          "C": 0
+        },
+        {
+          "J": 0
+        },
+        {
+          "S": 0
+        },
+        {
+          "A": 0
+        }
+      ]
+    },
+    {
+      "displayName": "e_",
+      "f0": 330.7514953613281,
+      "dur": 113,
+      "pow": 0.8177943825721741,
+      "speed": 1,
+      "pitch": 1,
+      "into": 1,
+      "loud": 1,
+      "phlabel": "e__*",
+      "phnn": 4,
+      "art": "00000000000000000000001000101010",
+      "acc": 3,
+      "beos": 0,
+      "punc": 1,
+      "nima": 0.25,
+      "niab": 0.5,
+      "style": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "phinfo": "8501",
+      "prsinfo": "000C",
+      "inf_style_param": [
+        {
+          "D": 1
+        },
+        {
+          "C": 0
+        },
+        {
+          "J": 0
+        },
+        {
+          "S": 0
+        },
+        {
+          "A": 0
+        }
+      ]
+    },
+    {
+      "displayName": "r_",
+      "f0": 303.3695068359375,
+      "dur": 34,
+      "pow": 0.7072736620903015,
+      "speed": 1,
+      "pitch": 1,
+      "into": 1,
+      "loud": 1,
+      "phlabel": "r___",
+      "phnn": 45,
+      "art": "00000000001000000010000000001100",
+      "acc": 1,
+      "beos": 0,
+      "punc": 1,
+      "nima": 0.75,
+      "niab": 0.5,
+      "style": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "phinfo": "4800",
+      "prsinfo": "0000",
+      "inf_style_param": [
+        {
+          "D": 1
+        },
+        {
+          "C": 0
+        },
+        {
+          "J": 0
+        },
+        {
+          "S": 0
+        },
+        {
+          "A": 0
+        }
+      ]
+    },
+    {
+      "displayName": "o_",
+      "f0": 237.23922729492188,
+      "dur": 167,
+      "pow": 0.7488962411880493,
+      "speed": 1,
+      "pitch": 1,
+      "into": 1,
+      "loud": 1,
+      "phlabel": "o__$",
+      "phnn": 5,
+      "art": "00000000000000000000001010001010",
+      "acc": 1,
+      "beos": 0,
+      "punc": 1,
+      "nima": 0.75,
+      "niab": 0.5,
+      "style": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "phinfo": "8101",
+      "prsinfo": "0001",
+      "inf_style_param": [
+        {
+          "D": 1
+        },
+        {
+          "C": 0
+        },
+        {
+          "J": 0
+        },
+        {
+          "S": 0
+        },
+        {
+          "A": 0
+        }
+      ]
+    },
+    {
+      "displayName": "--",
+      "f0": 20,
+      "dur": 800,
+      "pow": 9.071361273527145e-05,
+      "speed": 1,
+      "pitch": 1,
+      "into": 1,
+      "loud": 1,
+      "pause_dur": 800,
+      "phlabel": "--_N",
+      "phnn": 0,
+      "art": "01000000000000000000000000000001",
+      "acc": 0,
+      "beos": 4,
+      "punc": 2,
+      "nima": 0,
+      "niab": 0,
+      "style": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "phinfo": "CF00",
+      "prsinfo": "0015",
+      "inf_style_param": [
+        {
+          "D": 1
+        },
+        {
+          "C": 0
+        },
+        {
+          "J": 0
+        },
+        {
+          "S": 0
+        },
+        {
+          "A": 0
+        }
+      ]
+    }
+  ],
+  "model_tokens": {
+    "acc": [
+      0,
+      3,
+      3,
+      1,
+      1,
+      0
+    ],
+    "phn": [
+      0,
+      15,
+      4,
+      45,
+      5,
+      0
+    ],
+    "punc": [
+      0,
+      1,
+      1,
+      1,
+      1,
+      2
+    ]
+  }
+}

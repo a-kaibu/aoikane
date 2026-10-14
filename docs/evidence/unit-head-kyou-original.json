@@ -1,0 +1,191 @@
+{
+  "source": "read-only original numeral and selected dictionary POS observation",
+  "raw_sha256": "49ef3f8baaf662e46da3f841a102fc46c12a61bd3df5947425c25efbad446431",
+  "event_counts": {
+    "hooked": 4,
+    "stage_enter_11f9c0": 6,
+    "numeral_segment_enter": 6,
+    "numeral_segment_leave": 6,
+    "stage_leave_11f9c0": 6,
+    "stage_enter_11ec50": 6,
+    "stage_leave_11ec50": 6,
+    "graph_in": 4,
+    "graph_built": 4,
+    "graph_after": 4,
+    "format": 4,
+    "done": 4,
+    "numeral_counter_enter": 1
+  },
+  "events": [
+    {
+      "event": "numeral_segment_enter",
+      "input": "京5。",
+      "rva": "100a90",
+      "input_hex": "５"
+    },
+    {
+      "event": "numeral_segment_enter",
+      "input": "京5。",
+      "rva": "10b010",
+      "input_hex": "５"
+    },
+    {
+      "event": "numeral_segment_leave",
+      "input": "京5。",
+      "rva": "10b010",
+      "input_hex": "５",
+      "output_a": "ゴ",
+      "output_b": "五"
+    },
+    {
+      "event": "numeral_segment_leave",
+      "input": "京5。",
+      "rva": "100a90",
+      "input_hex": "５",
+      "output_a": "ゴ",
+      "output_b": "五"
+    },
+    {
+      "event": "format",
+      "input": "京5。",
+      "text": "<S>^キョ!ー|0^ゴ<F>"
+    },
+    {
+      "event": "format",
+      "input": "京五。",
+      "text": "<S>^キョ!ーゴ<F>"
+    },
+    {
+      "event": "numeral_segment_enter",
+      "input": "京五本。",
+      "rva": "100a90",
+      "input_hex": "五"
+    },
+    {
+      "event": "numeral_segment_enter",
+      "input": "京五本。",
+      "rva": "10b010",
+      "input_hex": "五"
+    },
+    {
+      "event": "numeral_segment_leave",
+      "input": "京五本。",
+      "rva": "10b010",
+      "input_hex": "五",
+      "output_a": "ゴ",
+      "output_b": "五"
+    },
+    {
+      "event": "numeral_segment_leave",
+      "input": "京五本。",
+      "rva": "100a90",
+      "input_hex": "五",
+      "output_a": "ゴ",
+      "output_b": "五"
+    },
+    {
+      "event": "format",
+      "input": "京五本。",
+      "text": "<S>^キョ!ー|0ゴ^ホン<F>"
+    },
+    {
+      "event": "numeral_segment_enter",
+      "input": "京一五百。",
+      "rva": "100a90",
+      "input_hex": "五百"
+    },
+    {
+      "event": "numeral_segment_enter",
+      "input": "京一五百。",
+      "rva": "10b010",
+      "input_hex": "五百"
+    },
+    {
+      "event": "numeral_segment_leave",
+      "input": "京一五百。",
+      "rva": "10b010",
+      "input_hex": "五百",
+      "output_a": "ゴヒャク",
+      "output_b": "五百"
+    },
+    {
+      "event": "numeral_segment_leave",
+      "input": "京一五百。",
+      "rva": "100a90",
+      "input_hex": "五百",
+      "output_a": "ゴヒャク",
+      "output_b": "五百"
+    },
+    {
+      "event": "format",
+      "input": "京一五百。",
+      "text": "<S>^キョーイチ|0ゴ^ヒャク<F>"
+    }
+  ],
+  "dictionary_morphs": [
+    {
+      "input": "京5。",
+      "surface": "京",
+      "pos": "01010300",
+      "readings": [
+        [
+          "キョウ",
+          "キョー",
+          "1-1-2",
+          "*"
+        ],
+        [
+          "ケイ",
+          "ケー",
+          "1-1-2",
+          "C3"
+        ]
+      ]
+    },
+    {
+      "input": "京五。",
+      "surface": "京五",
+      "pos": "01010102",
+      "readings": [
+        [
+          "キョウゴ",
+          "キョーゴ",
+          "1-1-3",
+          "C1"
+        ]
+      ]
+    },
+    {
+      "input": "京五本。",
+      "surface": "京",
+      "pos": "01010300",
+      "readings": [
+        [
+          "キョウ",
+          "キョー",
+          "1-1-2",
+          "*"
+        ],
+        [
+          "ケイ",
+          "ケー",
+          "1-1-2",
+          "C3"
+        ]
+      ]
+    },
+    {
+      "input": "京一五百。",
+      "surface": "京一",
+      "pos": "01010102",
+      "readings": [
+        [
+          "キョウイチ",
+          "キョーイチ",
+          "1-0-4",
+          "*"
+        ]
+      ]
+    }
+  ]
+}

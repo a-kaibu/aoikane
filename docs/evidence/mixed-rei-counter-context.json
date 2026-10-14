@@ -1,0 +1,56 @@
+{
+  "source": "read-only 10f0a0 argument observation; formatter ends diagnostic; not WAV proof",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "trace_sha256": "5f0da54130bd7055c5f9148f54ebdaa46802074fa877997c20b08c84c522c67a",
+  "voice": "KotonohaAoi_ns_48",
+  "cases": [
+    {
+      "text": "一零０３本。",
+      "caller_rva": "0x106ce5",
+      "param11": 1,
+      "param12": 1,
+      "number": "一零０３",
+      "number_accent": "2-3-4,s0,2-3-4",
+      "number_spelling": "一零〇三",
+      "counter_key": "本",
+      "counter_read": "ボン",
+      "counter_sound": "ボン"
+    },
+    {
+      "text": "０３本。",
+      "caller_rva": "0x106ce5",
+      "param11": 0,
+      "param12": 0,
+      "number": "０３",
+      "number_accent": "2-3-4",
+      "number_spelling": "〇三",
+      "counter_key": "本",
+      "counter_read": "ホン",
+      "counter_sound": "ホン"
+    },
+    {
+      "text": "一零０３人。",
+      "caller_rva": "0x106ce5",
+      "param11": 1,
+      "param12": 0,
+      "number": "一零０３",
+      "number_accent": "2-3-4,s0,2-3-4",
+      "number_spelling": "一零〇三",
+      "counter_key": "人",
+      "counter_read": "ニン",
+      "counter_sound": "ニン"
+    },
+    {
+      "text": "０３人。",
+      "caller_rva": "0x106ce5",
+      "param11": 0,
+      "param12": 0,
+      "number": "０３",
+      "number_accent": "2-3-4",
+      "number_spelling": "〇三",
+      "counter_key": "人",
+      "counter_read": "ニン",
+      "counter_sound": "ニン"
+    }
+  ]
+}

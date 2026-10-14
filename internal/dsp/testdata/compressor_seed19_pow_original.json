@@ -1,0 +1,88 @@
+{
+  "source": "all 14 ordinary original compressor invocations; observation whole WAV equals independent ordinary SDK capture; no tensor injection",
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "threads": 6,
+  "avx512_convolutions": false,
+  "text": "火閉漢字私六零四木1月78金土Ｂ六火A火三。",
+  "voice": "KotonohaAoi_ns_48",
+  "engine_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "config_sha256": "cc6409b2162eaa00a3262d2518bb18d43a0187140410684860faacd2981d895e",
+  "observed_wav_sha256": "28769406e32b762f656dc0e32999637fe061ae7e9cf7cb3e63eca6a9c8819fe5",
+  "ordinary_wav_sha256": "28769406e32b762f656dc0e32999637fe061ae7e9cf7cb3e63eca6a9c8819fe5",
+  "events_sha256": "cdea7fd9e6f48030508c933730ac7e1270ba7faf01e94cf41a768a374145e2cf",
+  "calls": [
+    {
+      "run": 35,
+      "frames": 70,
+      "samples": 16800
+    },
+    {
+      "run": 49,
+      "frames": 110,
+      "samples": 26400
+    },
+    {
+      "run": 63,
+      "frames": 96,
+      "samples": 23040
+    },
+    {
+      "run": 81,
+      "frames": 110,
+      "samples": 26400
+    },
+    {
+      "run": 95,
+      "frames": 110,
+      "samples": 26400
+    },
+    {
+      "run": 113,
+      "frames": 110,
+      "samples": 26400
+    },
+    {
+      "run": 131,
+      "frames": 110,
+      "samples": 26400
+    },
+    {
+      "run": 145,
+      "frames": 110,
+      "samples": 26400
+    },
+    {
+      "run": 163,
+      "frames": 110,
+      "samples": 26400
+    },
+    {
+      "run": 181,
+      "frames": 44,
+      "samples": 10560
+    },
+    {
+      "run": 199,
+      "frames": 110,
+      "samples": 26400
+    },
+    {
+      "run": 213,
+      "frames": 110,
+      "samples": 26400
+    },
+    {
+      "run": 231,
+      "frames": 110,
+      "samples": 26400
+    },
+    {
+      "run": 249,
+      "frames": 85,
+      "samples": 20400
+    }
+  ],
+  "values": 334800,
+  "reference_sha256": "83692b01766dadbbb00e0d9cd8c4c48d384869bcee472338f1a68b76a0496ad6",
+  "format": "per call: float32 wave, power, original output; little-endian"
+}

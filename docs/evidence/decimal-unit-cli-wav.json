@@ -1,0 +1,24 @@
+{
+  "source": "clean committed standalone embedded pure-Go CLI; full bytes compared with ordinary original SDK and independent native capture",
+  "source_commit": "65370e2795a78e40b4358663839e272075f42605",
+  "go_version": "go1.26.8",
+  "cgo_enabled": 0,
+  "goamd64": "v1",
+  "vcs_modified": false,
+  "build_info_sha256": "9026bdbfcbd138824dfd69f19284a9f31a97b6e5d89c0540e5d014560e0a07ee",
+  "executable_sha256": "fdc4386abebc2e92e09261a976e110a6eabf42f03704cb20b7b8efc978c3c505",
+  "cases": [
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "text": "万．５。",
+      "bytes": 165166,
+      "sha256": "c35e8ca65208fd540e33ce7946e19f4863671aac5ad5de442b40584c0804ed1c"
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "text": "万．５。",
+      "bytes": 163520,
+      "sha256": "4a5a64cb7ad9fa23b9887e4ee6a922146411e8564cbe3179ac622027cdfb8309"
+    }
+  ]
+}

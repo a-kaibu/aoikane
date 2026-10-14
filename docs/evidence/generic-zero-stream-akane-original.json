@@ -1,0 +1,222 @@
+{
+  "scope": "Three frontend observations validated against independent native captures; not waveform proof",
+  "raw_sha256": "9091d10726cdc88604c1e161b4299126fe78ef2a867b345a6b36e2236b4901f5",
+  "cases": [
+    {
+      "text": "012-一。",
+      "stage_counts": {
+        "11f9c0": 1,
+        "11ec50": 1,
+        "1b9f10": 1,
+        "1b9f60": 1
+      },
+      "numeric_calls": [
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "1043f0",
+            "input_hex": "824f82508251817c88ea",
+            "caller": "0x11116f",
+            "raw_args": [
+              "0x0",
+              "0x0",
+              "0x2",
+              "0x24355fdd60",
+              "0x24355fdd90"
+            ],
+            "input": "012-一。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "1043f0",
+            "input_hex": "824f82508251817c88ea",
+            "result": "0x1",
+            "output_a": "835b838d834383608282836a815b829083438360",
+            "output_b": "815a88ea93f1817c88ea",
+            "input": "012-一。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "０１２－一",
+          "output_a_decoded": "ゼロイチｂニーｐイチ",
+          "output_b_decoded": "〇一二－一"
+        }
+      ],
+      "counter_calls": [],
+      "formatted": [
+        "<S>ゼ^ロイ!チ|0^ニ!ー$1_1イ^チ<F>"
+      ]
+    },
+    {
+      "text": "一-013本。",
+      "stage_counts": {
+        "11f9c0": 1,
+        "11ec50": 1,
+        "1b9f10": 1,
+        "1b9f60": 1
+      },
+      "numeric_calls": [
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "10b010",
+            "input_hex": "88ea",
+            "caller": "0x10148c",
+            "raw_args": [
+              "0x3fe0000000000000",
+              "0x0",
+              "0x4000000000000000",
+              "0x0",
+              "0x4000000000000000"
+            ],
+            "input": "一-013本。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "10b010",
+            "input_hex": "88ea",
+            "result": "0x1",
+            "output_a": "83438360",
+            "output_b": "88ea",
+            "input": "一-013本。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "一",
+          "output_a_decoded": "イチ",
+          "output_b_decoded": "一"
+        },
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "10b010",
+            "input_hex": "824f82508252",
+            "caller": "0x101e0b",
+            "raw_args": [
+              "0x3fe0000000000000",
+              "0x0",
+              "0x4000000000000000",
+              "0x0",
+              "0x4000000000000000"
+            ],
+            "input": "一-013本。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "10b010",
+            "input_hex": "824f82508252",
+            "result": "0x1",
+            "output_a": "834383608290835b838d83578385815b83548393",
+            "output_b": "88ea817c815a8f5c8e4f",
+            "input": "一-013本。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "０１３",
+          "output_a_decoded": "イチｐゼロジューサン",
+          "output_b_decoded": "一－〇十三"
+        },
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "100a90",
+            "input_hex": "88ea817c824f82508252",
+            "caller": "0x10245a",
+            "raw_args": [
+              "0xcb04dfd530",
+              "0x7ffcb48d3200",
+              "0xcb04dfd900",
+              "0x286a8c11400",
+              "0x0"
+            ],
+            "input": "一-013本。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "100a90",
+            "input_hex": "88ea817c824f82508252",
+            "result": "0x1",
+            "output_a": "834383608290835b838d83578385815b83548393",
+            "output_b": "88ea817c815a8f5c8e4f",
+            "input": "一-013本。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "一－０１３",
+          "output_a_decoded": "イチｐゼロジューサン",
+          "output_b_decoded": "一－〇十三"
+        }
+      ],
+      "counter_calls": [
+        {
+          "event": "numeral_counter_enter",
+          "caller": "0x106ce5",
+          "number_hex": "88ea817c824f82508252",
+          "number_accent_hex": "312d312d34",
+          "number_spelling_hex": "88ea817c815a8f5c8e4f",
+          "counter_key_hex": "967b",
+          "counter_read_hex": "837b8393",
+          "counter_sound_hex": "837b8393",
+          "param11": 1,
+          "param12": 1,
+          "input": "一-013本。",
+          "sentence": 0,
+          "number_hex_decoded": "一－０１３",
+          "number_accent_hex_decoded": "1-1-4",
+          "number_spelling_hex_decoded": "一－〇十三",
+          "counter_key_hex_decoded": "本",
+          "counter_read_hex_decoded": "ボン",
+          "counter_sound_hex_decoded": "ボン"
+        }
+      ],
+      "formatted": [
+        "<S>イ^チ$1_1^ゼ!ロ|0ジュ^ーサ!ンボン<F>"
+      ]
+    },
+    {
+      "text": "〇一五-1。",
+      "stage_counts": {
+        "11f9c0": 1,
+        "11ec50": 1,
+        "1b9f10": 1,
+        "1b9f60": 1
+      },
+      "numeric_calls": [
+        {
+          "enter": {
+            "event": "numeral_segment_enter",
+            "rva": "1043f0",
+            "input_hex": "815a88ea8cdc817c8250",
+            "caller": "0x11116f",
+            "raw_args": [
+              "0x0",
+              "0x0",
+              "0x2",
+              "0x946d9fdae0",
+              "0x946d9fdb10"
+            ],
+            "input": "〇一五-1。",
+            "sentence": 0
+          },
+          "leave": {
+            "event": "numeral_segment_leave",
+            "rva": "1043f0",
+            "input_hex": "815a88ea8cdc817c8250",
+            "result": "0x1",
+            "output_a": "835b838d8343836082828353815b829083438360",
+            "output_b": "815a88ea8cdc817c88ea",
+            "input": "〇一五-1。",
+            "sentence": 0
+          },
+          "input_hex_decoded": "〇一五－１",
+          "output_a_decoded": "ゼロイチｂゴーｐイチ",
+          "output_b_decoded": "〇一五－一"
+        }
+      ],
+      "counter_calls": [],
+      "formatted": [
+        "<S>ゼ^ロイ!チ|0^ゴ!ー$1_1イ^チ<F>"
+      ]
+    }
+  ]
+}

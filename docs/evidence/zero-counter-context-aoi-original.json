@@ -1,0 +1,235 @@
+{
+  "source": "read-only original numeric dispatch and numeral candidates; balanced enter/leaves; formatter equals independent ordinary SDK capture; not a whole-WAV proof",
+  "raw_sha256": "d76d45f3b914803507dc2cf40a0a449b2d21c10d90a2427be04c2dc9b99a2e0e",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "capture_sha256": "632068669f45227a8b98fe2a55dd0bb55f7667c21392752a00a23e19034c2552",
+  "cases": [
+    {
+      "text": "〇秒零秒。",
+      "format": [
+        "<S>ゼ^ロ!ビョー|0^レ!ービョー<F>"
+      ],
+      "segments": [
+        {
+          "rva": "10b010",
+          "result": "0x1",
+          "number": "〇",
+          "sound": "ゼロ",
+          "canonical": "〇"
+        },
+        {
+          "rva": "1043f0",
+          "result": "0x1",
+          "number": "零",
+          "sound": "ゼロビョーｂレー",
+          "canonical": "〇秒零"
+        },
+        {
+          "rva": "100a90",
+          "result": "0x0",
+          "number": "〇秒零",
+          "sound": "ゼロビョーｂレー",
+          "canonical": "〇秒零"
+        }
+      ],
+      "after_numeral_candidates": [
+        {
+          "surface": "。",
+          "candidates": [
+            [
+              "＊",
+              "",
+              "*",
+              "*"
+            ]
+          ]
+        },
+        {
+          "surface": "〇秒零秒",
+          "candidates": [
+            [
+              "ゼロビョウレイビョウ",
+              "ゼロビョーレービョー",
+              "2-2-4,s0,2-2-4",
+              "*"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "text": "〇秒２声。",
+      "format": [
+        "<S>ゼ^ロ!ビョー|0ニ|0^コ!エ<F>"
+      ],
+      "segments": [
+        {
+          "rva": "10b010",
+          "result": "0x1",
+          "number": "〇",
+          "sound": "ゼロ",
+          "canonical": "〇"
+        },
+        {
+          "rva": "10b010",
+          "result": "0x1",
+          "number": "２",
+          "sound": "ゼロビョーｂニ",
+          "canonical": "〇秒二"
+        },
+        {
+          "rva": "100a90",
+          "result": "0x1",
+          "number": "〇秒２",
+          "sound": "ゼロビョーｂニ",
+          "canonical": "〇秒二"
+        }
+      ],
+      "after_numeral_candidates": [
+        {
+          "surface": "。",
+          "candidates": [
+            [
+              "＊",
+              "",
+              "*",
+              "*"
+            ]
+          ]
+        },
+        {
+          "surface": "声",
+          "candidates": [
+            [
+              "コエ",
+              "コエ",
+              "1-1-2",
+              "C3"
+            ]
+          ]
+        },
+        {
+          "surface": "〇秒２",
+          "candidates": [
+            [
+              "ゼロビョウニ",
+              "ゼロビョーニ",
+              "2-2-4,s0,1-1-1",
+              "*"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "text": "０秒八億Ａ。",
+      "format": [
+        "<S>ゼ^ロ!ビョー|0ハ^チオクエ!ー<F>"
+      ],
+      "segments": [
+        {
+          "rva": "10b010",
+          "result": "0x1",
+          "number": "０",
+          "sound": "ゼロ",
+          "canonical": "〇"
+        },
+        {
+          "rva": "10b010",
+          "result": "0x1",
+          "number": "八億",
+          "sound": "ゼロビョーｂハチオク",
+          "canonical": "〇秒八億"
+        },
+        {
+          "rva": "100a90",
+          "result": "0x1",
+          "number": "０秒八億",
+          "sound": "ゼロビョーｂハチオク",
+          "canonical": "〇秒八億"
+        }
+      ],
+      "after_numeral_candidates": [
+        {
+          "surface": "。",
+          "candidates": [
+            [
+              "＊",
+              "",
+              "*",
+              "*"
+            ]
+          ]
+        },
+        {
+          "surface": "Ａ",
+          "candidates": [
+            [
+              "エイ",
+              "エー",
+              "1-1-2",
+              "C1"
+            ]
+          ]
+        },
+        {
+          "surface": "０秒八億",
+          "candidates": [
+            [
+              "ゼロビョウハチオク",
+              "ゼロビョーハチオク",
+              "2-2-4,s0,2-2-4",
+              "*"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "text": "零分。",
+      "format": [
+        "<S>^レ!ーフン<F>"
+      ],
+      "segments": [
+        {
+          "rva": "1043f0",
+          "result": "0x1",
+          "number": "零",
+          "sound": "レー",
+          "canonical": "零"
+        },
+        {
+          "rva": "100a90",
+          "result": "0x0",
+          "number": "零",
+          "sound": "レー",
+          "canonical": "零"
+        }
+      ],
+      "after_numeral_candidates": [
+        {
+          "surface": "。",
+          "candidates": [
+            [
+              "＊",
+              "",
+              "*",
+              "*"
+            ]
+          ]
+        },
+        {
+          "surface": "零分",
+          "candidates": [
+            [
+              "レイフン",
+              "レーフン",
+              "2-2-4",
+              "*"
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

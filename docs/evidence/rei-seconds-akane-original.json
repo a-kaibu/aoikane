@@ -1,0 +1,1770 @@
+{
+  "source": "read-only native frontend snapshots; all calls retained; formatter matches independent ordinary SDK capture",
+  "raw_sha256": "aa459de3faca01e66fa3f362f8e49fa397a74aa81da0489e90497d14c0b46814",
+  "cases": [
+    {
+      "text": "零秒月。",
+      "formats": [
+        "<S>レ^ービョ!ーガツ<F>"
+      ],
+      "segments": [
+        {
+          "rva": "1043f0",
+          "result": "0x1",
+          "number": "零",
+          "sound": "レー",
+          "canonical": "零"
+        },
+        {
+          "rva": "100a90",
+          "result": "0x0",
+          "number": "零",
+          "sound": "レー",
+          "canonical": "零"
+        }
+      ],
+      "stages": [
+        {
+          "stage": "11f9c0",
+          "call_index": 0,
+          "morphs": [
+            {
+              "surface": "",
+              "candidates": []
+            },
+            {
+              "surface": "。",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "月",
+              "candidates": [
+                [
+                  "ガツ",
+                  "ガツ",
+                  "1-1-2",
+                  "C3"
+                ],
+                [
+                  "ヅキ",
+                  "ズキ",
+                  "1-1-2",
+                  "C3"
+                ]
+              ]
+            },
+            {
+              "surface": "零秒",
+              "candidates": [
+                [
+                  "レイビョウ",
+                  "レービョー",
+                  "2-2-4",
+                  "*"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "11ec50",
+          "call_index": 0,
+          "morphs": [
+            {
+              "surface": "",
+              "candidates": []
+            },
+            {
+              "surface": "。",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "月",
+              "candidates": [
+                [
+                  "ガツ",
+                  "ガツ",
+                  "1-1-2",
+                  "C3"
+                ],
+                [
+                  "ヅキ",
+                  "ズキ",
+                  "1-1-2",
+                  "C3"
+                ]
+              ]
+            },
+            {
+              "surface": "零秒",
+              "candidates": [
+                [
+                  "レイビョウ",
+                  "レービョー",
+                  "2-2-4",
+                  "*"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "1b9f10",
+          "call_index": 0,
+          "morphs": [
+            {
+              "surface": "",
+              "candidates": []
+            },
+            {
+              "surface": "。",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "月",
+              "candidates": [
+                [
+                  "ガツ",
+                  "ガツ",
+                  "1-1-2",
+                  "C3"
+                ],
+                [
+                  "ヅキ",
+                  "ズキ",
+                  "1-1-2",
+                  "C3"
+                ]
+              ]
+            },
+            {
+              "surface": "零秒",
+              "candidates": [
+                [
+                  "レイビョウ",
+                  "レービョー",
+                  "2-2-4",
+                  "*"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "1b9f60",
+          "call_index": 0,
+          "morphs": [
+            {
+              "surface": "",
+              "candidates": []
+            },
+            {
+              "surface": "。",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "月",
+              "candidates": [
+                [
+                  "ガツ",
+                  "ガツ",
+                  "1-1-2",
+                  "C3"
+                ],
+                [
+                  "ヅキ",
+                  "ズキ",
+                  "1-1-2",
+                  "C3"
+                ]
+              ]
+            },
+            {
+              "surface": "零秒",
+              "candidates": [
+                [
+                  "レイビョウ",
+                  "レービョー",
+                  "2-2-4",
+                  "*"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "五読む零秒月。",
+      "formats": [
+        "<S>^ゴ|0ヨ^ム|0レ^ービョ!ーガツ<F>"
+      ],
+      "segments": [
+        {
+          "rva": "10b010",
+          "result": "0x1",
+          "number": "五",
+          "sound": "ゴ",
+          "canonical": "五"
+        },
+        {
+          "rva": "100a90",
+          "result": "0x1",
+          "number": "五",
+          "sound": "ゴ",
+          "canonical": "五"
+        },
+        {
+          "rva": "1043f0",
+          "result": "0x1",
+          "number": "零",
+          "sound": "レー",
+          "canonical": "零"
+        },
+        {
+          "rva": "100a90",
+          "result": "0x0",
+          "number": "零",
+          "sound": "レー",
+          "canonical": "零"
+        }
+      ],
+      "stages": [
+        {
+          "stage": "11f9c0",
+          "call_index": 0,
+          "morphs": [
+            {
+              "surface": "",
+              "candidates": []
+            },
+            {
+              "surface": "。",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "月",
+              "candidates": [
+                [
+                  "ガツ",
+                  "ガツ",
+                  "1-1-2",
+                  "C3"
+                ],
+                [
+                  "ヅキ",
+                  "ズキ",
+                  "1-1-2",
+                  "C3"
+                ]
+              ]
+            },
+            {
+              "surface": "秒",
+              "candidates": [
+                [
+                  "ビョウ",
+                  "ビョー",
+                  "1-1-2",
+                  "C3"
+                ]
+              ]
+            },
+            {
+              "surface": "零",
+              "candidates": [
+                [
+                  "レイ",
+                  "レー",
+                  "1-1-2",
+                  "C3"
+                ]
+              ]
+            },
+            {
+              "surface": "五",
+              "candidates": [
+                [
+                  "ゴ",
+                  "ゴ",
+                  "1-1-1",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "読む",
+              "candidates": [
+                [
+                  "ヨム",
+                  "ヨム",
+                  "2-0-2",
+                  "*"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "11f9c0",
+          "call_index": 1,
+          "morphs": [
+            {
+              "surface": "",
+              "candidates": []
+            },
+            {
+              "surface": "。",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "月",
+              "candidates": [
+                [
+                  "ガツ",
+                  "ガツ",
+                  "1-1-2",
+                  "C3"
+                ],
+                [
+                  "ヅキ",
+                  "ズキ",
+                  "1-1-2",
+                  "C3"
+                ]
+              ]
+            },
+            {
+              "surface": "零秒",
+              "candidates": [
+                [
+                  "レイビョウ",
+                  "レービョー",
+                  "2-2-4",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "読む",
+              "candidates": [
+                [
+                  "ヨム",
+                  "ヨム",
+                  "2-0-2",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "五",
+              "candidates": [
+                [
+                  "ゴ",
+                  "ゴ",
+                  "1-1-1",
+                  "*"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "11ec50",
+          "call_index": 0,
+          "morphs": [
+            {
+              "surface": "",
+              "candidates": []
+            },
+            {
+              "surface": "。",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "月",
+              "candidates": [
+                [
+                  "ガツ",
+                  "ガツ",
+                  "1-1-2",
+                  "C3"
+                ],
+                [
+                  "ヅキ",
+                  "ズキ",
+                  "1-1-2",
+                  "C3"
+                ]
+              ]
+            },
+            {
+              "surface": "秒",
+              "candidates": [
+                [
+                  "ビョウ",
+                  "ビョー",
+                  "1-1-2",
+                  "C3"
+                ]
+              ]
+            },
+            {
+              "surface": "零",
+              "candidates": [
+                [
+                  "レイ",
+                  "レー",
+                  "1-1-2",
+                  "C3"
+                ]
+              ]
+            },
+            {
+              "surface": "五",
+              "candidates": [
+                [
+                  "ゴ",
+                  "ゴ",
+                  "1-1-1",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "読む",
+              "candidates": [
+                [
+                  "ヨム",
+                  "ヨム",
+                  "2-0-2",
+                  "*"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "11ec50",
+          "call_index": 1,
+          "morphs": [
+            {
+              "surface": "",
+              "candidates": []
+            },
+            {
+              "surface": "。",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "月",
+              "candidates": [
+                [
+                  "ガツ",
+                  "ガツ",
+                  "1-1-2",
+                  "C3"
+                ],
+                [
+                  "ヅキ",
+                  "ズキ",
+                  "1-1-2",
+                  "C3"
+                ]
+              ]
+            },
+            {
+              "surface": "零秒",
+              "candidates": [
+                [
+                  "レイビョウ",
+                  "レービョー",
+                  "2-2-4",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "読む",
+              "candidates": [
+                [
+                  "ヨム",
+                  "ヨム",
+                  "2-0-2",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "五",
+              "candidates": [
+                [
+                  "ゴ",
+                  "ゴ",
+                  "1-1-1",
+                  "*"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "1b9f10",
+          "call_index": 0,
+          "morphs": [
+            {
+              "surface": "",
+              "candidates": []
+            },
+            {
+              "surface": "。",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "月",
+              "candidates": [
+                [
+                  "ガツ",
+                  "ガツ",
+                  "1-1-2",
+                  "C3"
+                ],
+                [
+                  "ヅキ",
+                  "ズキ",
+                  "1-1-2",
+                  "C3"
+                ]
+              ]
+            },
+            {
+              "surface": "零秒",
+              "candidates": [
+                [
+                  "レイビョウ",
+                  "レービョー",
+                  "2-2-4",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "読む",
+              "candidates": [
+                [
+                  "ヨム",
+                  "ヨム",
+                  "2-0-2",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "五",
+              "candidates": [
+                [
+                  "ゴ",
+                  "ゴ",
+                  "1-1-1",
+                  "*"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "1b9f60",
+          "call_index": 0,
+          "morphs": [
+            {
+              "surface": "",
+              "candidates": []
+            },
+            {
+              "surface": "。",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "月",
+              "candidates": [
+                [
+                  "ガツ",
+                  "ガツ",
+                  "1-1-2",
+                  "C3"
+                ],
+                [
+                  "ヅキ",
+                  "ズキ",
+                  "1-1-2",
+                  "C3"
+                ]
+              ]
+            },
+            {
+              "surface": "零秒",
+              "candidates": [
+                [
+                  "レイビョウ",
+                  "レービョー",
+                  "2-2-4",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "読む",
+              "candidates": [
+                [
+                  "ヨム",
+                  "ヨム",
+                  "2-0-2",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "五",
+              "candidates": [
+                [
+                  "ゴ",
+                  "ゴ",
+                  "1-1-1",
+                  "*"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "五読む零秒月（本2。",
+      "formats": [
+        "<S>^ゴ|0ヨ^ム|0レ^ービョ!ーガツ$1_1^ホ!ン|0^ニ<F>"
+      ],
+      "segments": [
+        {
+          "rva": "10b010",
+          "result": "0x1",
+          "number": "五",
+          "sound": "ゴ",
+          "canonical": "五"
+        },
+        {
+          "rva": "100a90",
+          "result": "0x1",
+          "number": "五",
+          "sound": "ゴ",
+          "canonical": "五"
+        },
+        {
+          "rva": "1043f0",
+          "result": "0x1",
+          "number": "零",
+          "sound": "レー",
+          "canonical": "零"
+        },
+        {
+          "rva": "100a90",
+          "result": "0x0",
+          "number": "零",
+          "sound": "レー",
+          "canonical": "零"
+        },
+        {
+          "rva": "10b010",
+          "result": "0x1",
+          "number": "２",
+          "sound": "ニ",
+          "canonical": "二"
+        },
+        {
+          "rva": "100a90",
+          "result": "0x1",
+          "number": "２",
+          "sound": "ニ",
+          "canonical": "二"
+        }
+      ],
+      "stages": [
+        {
+          "stage": "11f9c0",
+          "call_index": 0,
+          "morphs": [
+            {
+              "surface": "",
+              "candidates": []
+            },
+            {
+              "surface": "。",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "２",
+              "candidates": [
+                [
+                  "ニ",
+                  "ニ",
+                  "1-1-1",
+                  "C3"
+                ]
+              ]
+            },
+            {
+              "surface": "本",
+              "candidates": [
+                [
+                  "ホン",
+                  "ホン",
+                  "1-1-2",
+                  "P3"
+                ]
+              ]
+            },
+            {
+              "surface": "（",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "零",
+              "candidates": [
+                [
+                  "レイ",
+                  "レー",
+                  "1-1-2",
+                  "C3"
+                ]
+              ]
+            },
+            {
+              "surface": "秒",
+              "candidates": [
+                [
+                  "ビョウ",
+                  "ビョー",
+                  "1-1-2",
+                  "C3"
+                ]
+              ]
+            },
+            {
+              "surface": "月",
+              "candidates": [
+                [
+                  "ガツ",
+                  "ガツ",
+                  "1-1-2",
+                  "C3"
+                ],
+                [
+                  "ヅキ",
+                  "ズキ",
+                  "1-1-2",
+                  "C3"
+                ]
+              ]
+            },
+            {
+              "surface": "読む",
+              "candidates": [
+                [
+                  "ヨム",
+                  "ヨム",
+                  "2-0-2",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "五",
+              "candidates": [
+                [
+                  "ゴ",
+                  "ゴ",
+                  "1-1-1",
+                  "*"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "11f9c0",
+          "call_index": 1,
+          "morphs": [
+            {
+              "surface": "",
+              "candidates": []
+            },
+            {
+              "surface": "。",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "２",
+              "candidates": [
+                [
+                  "ニ",
+                  "ニ",
+                  "1-1-1",
+                  "C3"
+                ]
+              ]
+            },
+            {
+              "surface": "本",
+              "candidates": [
+                [
+                  "ホン",
+                  "ホン",
+                  "1-1-2",
+                  "P3"
+                ]
+              ]
+            },
+            {
+              "surface": "（",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "零秒",
+              "candidates": [
+                [
+                  "レイビョウ",
+                  "レービョー",
+                  "2-2-4",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "月",
+              "candidates": [
+                [
+                  "ガツ",
+                  "ガツ",
+                  "1-1-2",
+                  "C3"
+                ],
+                [
+                  "ヅキ",
+                  "ズキ",
+                  "1-1-2",
+                  "C3"
+                ]
+              ]
+            },
+            {
+              "surface": "読む",
+              "candidates": [
+                [
+                  "ヨム",
+                  "ヨム",
+                  "2-0-2",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "五",
+              "candidates": [
+                [
+                  "ゴ",
+                  "ゴ",
+                  "1-1-1",
+                  "*"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "11f9c0",
+          "call_index": 2,
+          "morphs": [
+            {
+              "surface": "",
+              "candidates": []
+            },
+            {
+              "surface": "。",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "２",
+              "candidates": [
+                [
+                  "ニ",
+                  "ニ",
+                  "1-1-1",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "本",
+              "candidates": [
+                [
+                  "ホン",
+                  "ホン",
+                  "1-1-2",
+                  "P3"
+                ]
+              ]
+            },
+            {
+              "surface": "（",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "零秒",
+              "candidates": [
+                [
+                  "レイビョウ",
+                  "レービョー",
+                  "2-2-4",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "月",
+              "candidates": [
+                [
+                  "ガツ",
+                  "ガツ",
+                  "1-1-2",
+                  "C3"
+                ],
+                [
+                  "ヅキ",
+                  "ズキ",
+                  "1-1-2",
+                  "C3"
+                ]
+              ]
+            },
+            {
+              "surface": "読む",
+              "candidates": [
+                [
+                  "ヨム",
+                  "ヨム",
+                  "2-0-2",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "五",
+              "candidates": [
+                [
+                  "ゴ",
+                  "ゴ",
+                  "1-1-1",
+                  "*"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "11ec50",
+          "call_index": 0,
+          "morphs": [
+            {
+              "surface": "",
+              "candidates": []
+            },
+            {
+              "surface": "。",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "２",
+              "candidates": [
+                [
+                  "ニ",
+                  "ニ",
+                  "1-1-1",
+                  "C3"
+                ]
+              ]
+            },
+            {
+              "surface": "本",
+              "candidates": [
+                [
+                  "ホン",
+                  "ホン",
+                  "1-1-2",
+                  "P3"
+                ]
+              ]
+            },
+            {
+              "surface": "（",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "零",
+              "candidates": [
+                [
+                  "レイ",
+                  "レー",
+                  "1-1-2",
+                  "C3"
+                ]
+              ]
+            },
+            {
+              "surface": "秒",
+              "candidates": [
+                [
+                  "ビョウ",
+                  "ビョー",
+                  "1-1-2",
+                  "C3"
+                ]
+              ]
+            },
+            {
+              "surface": "月",
+              "candidates": [
+                [
+                  "ガツ",
+                  "ガツ",
+                  "1-1-2",
+                  "C3"
+                ],
+                [
+                  "ヅキ",
+                  "ズキ",
+                  "1-1-2",
+                  "C3"
+                ]
+              ]
+            },
+            {
+              "surface": "読む",
+              "candidates": [
+                [
+                  "ヨム",
+                  "ヨム",
+                  "2-0-2",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "五",
+              "candidates": [
+                [
+                  "ゴ",
+                  "ゴ",
+                  "1-1-1",
+                  "*"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "11ec50",
+          "call_index": 1,
+          "morphs": [
+            {
+              "surface": "",
+              "candidates": []
+            },
+            {
+              "surface": "。",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "２",
+              "candidates": [
+                [
+                  "ニ",
+                  "ニ",
+                  "1-1-1",
+                  "C3"
+                ]
+              ]
+            },
+            {
+              "surface": "本",
+              "candidates": [
+                [
+                  "ホン",
+                  "ホン",
+                  "1-1-2",
+                  "P3"
+                ]
+              ]
+            },
+            {
+              "surface": "（",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "零秒",
+              "candidates": [
+                [
+                  "レイビョウ",
+                  "レービョー",
+                  "2-2-4",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "月",
+              "candidates": [
+                [
+                  "ガツ",
+                  "ガツ",
+                  "1-1-2",
+                  "C3"
+                ],
+                [
+                  "ヅキ",
+                  "ズキ",
+                  "1-1-2",
+                  "C3"
+                ]
+              ]
+            },
+            {
+              "surface": "読む",
+              "candidates": [
+                [
+                  "ヨム",
+                  "ヨム",
+                  "2-0-2",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "五",
+              "candidates": [
+                [
+                  "ゴ",
+                  "ゴ",
+                  "1-1-1",
+                  "*"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "11ec50",
+          "call_index": 2,
+          "morphs": [
+            {
+              "surface": "",
+              "candidates": []
+            },
+            {
+              "surface": "。",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "２",
+              "candidates": [
+                [
+                  "ニ",
+                  "ニ",
+                  "1-1-1",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "本",
+              "candidates": [
+                [
+                  "ホン",
+                  "ホン",
+                  "1-1-2",
+                  "P3"
+                ]
+              ]
+            },
+            {
+              "surface": "（",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "零秒",
+              "candidates": [
+                [
+                  "レイビョウ",
+                  "レービョー",
+                  "2-2-4",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "月",
+              "candidates": [
+                [
+                  "ガツ",
+                  "ガツ",
+                  "1-1-2",
+                  "C3"
+                ],
+                [
+                  "ヅキ",
+                  "ズキ",
+                  "1-1-2",
+                  "C3"
+                ]
+              ]
+            },
+            {
+              "surface": "読む",
+              "candidates": [
+                [
+                  "ヨム",
+                  "ヨム",
+                  "2-0-2",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "五",
+              "candidates": [
+                [
+                  "ゴ",
+                  "ゴ",
+                  "1-1-1",
+                  "*"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "1b9f10",
+          "call_index": 0,
+          "morphs": [
+            {
+              "surface": "",
+              "candidates": []
+            },
+            {
+              "surface": "。",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "２",
+              "candidates": [
+                [
+                  "ニ",
+                  "ニ",
+                  "1-1-1",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "本",
+              "candidates": [
+                [
+                  "ホン",
+                  "ホン",
+                  "1-1-2",
+                  "P3"
+                ]
+              ]
+            },
+            {
+              "surface": "（",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "零秒",
+              "candidates": [
+                [
+                  "レイビョウ",
+                  "レービョー",
+                  "2-2-4",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "月",
+              "candidates": [
+                [
+                  "ガツ",
+                  "ガツ",
+                  "1-1-2",
+                  "C3"
+                ],
+                [
+                  "ヅキ",
+                  "ズキ",
+                  "1-1-2",
+                  "C3"
+                ]
+              ]
+            },
+            {
+              "surface": "読む",
+              "candidates": [
+                [
+                  "ヨム",
+                  "ヨム",
+                  "2-0-2",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "五",
+              "candidates": [
+                [
+                  "ゴ",
+                  "ゴ",
+                  "1-1-1",
+                  "*"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "1b9f60",
+          "call_index": 0,
+          "morphs": [
+            {
+              "surface": "",
+              "candidates": []
+            },
+            {
+              "surface": "。",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "２",
+              "candidates": [
+                [
+                  "ニ",
+                  "ニ",
+                  "1-1-1",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "本",
+              "candidates": [
+                [
+                  "ホン",
+                  "ホン",
+                  "1-1-2",
+                  "P3"
+                ]
+              ]
+            },
+            {
+              "surface": "（",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "零秒",
+              "candidates": [
+                [
+                  "レイビョウ",
+                  "レービョー",
+                  "2-2-4",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "月",
+              "candidates": [
+                [
+                  "ガツ",
+                  "ガツ",
+                  "1-1-2",
+                  "C3"
+                ],
+                [
+                  "ヅキ",
+                  "ズキ",
+                  "1-1-2",
+                  "C3"
+                ]
+              ]
+            },
+            {
+              "surface": "読む",
+              "candidates": [
+                [
+                  "ヨム",
+                  "ヨム",
+                  "2-0-2",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "五",
+              "candidates": [
+                [
+                  "ゴ",
+                  "ゴ",
+                  "1-1-1",
+                  "*"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "零秒。",
+      "formats": [
+        "<S>^レ!ービョー<F>"
+      ],
+      "segments": [
+        {
+          "rva": "1043f0",
+          "result": "0x1",
+          "number": "零",
+          "sound": "レー",
+          "canonical": "零"
+        },
+        {
+          "rva": "100a90",
+          "result": "0x0",
+          "number": "零",
+          "sound": "レー",
+          "canonical": "零"
+        }
+      ],
+      "stages": [
+        {
+          "stage": "11f9c0",
+          "call_index": 0,
+          "morphs": [
+            {
+              "surface": "",
+              "candidates": []
+            },
+            {
+              "surface": "。",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "零秒",
+              "candidates": [
+                [
+                  "レイビョウ",
+                  "レービョー",
+                  "2-2-4",
+                  "*"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "11ec50",
+          "call_index": 0,
+          "morphs": [
+            {
+              "surface": "",
+              "candidates": []
+            },
+            {
+              "surface": "。",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "零秒",
+              "candidates": [
+                [
+                  "レイビョウ",
+                  "レービョー",
+                  "2-2-4",
+                  "*"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "1b9f10",
+          "call_index": 0,
+          "morphs": [
+            {
+              "surface": "",
+              "candidates": []
+            },
+            {
+              "surface": "。",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "零秒",
+              "candidates": [
+                [
+                  "レイビョウ",
+                  "レービョー",
+                  "2-2-4",
+                  "*"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "1b9f60",
+          "call_index": 0,
+          "morphs": [
+            {
+              "surface": "",
+              "candidates": []
+            },
+            {
+              "surface": "。",
+              "candidates": [
+                [
+                  "＊",
+                  "",
+                  "*",
+                  "*"
+                ]
+              ]
+            },
+            {
+              "surface": "零秒",
+              "candidates": [
+                [
+                  "レイビョウ",
+                  "レービョー",
+                  "2-2-4",
+                  "*"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

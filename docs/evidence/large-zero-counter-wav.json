@@ -1,0 +1,192 @@
+{
+  "scope": "Four representative inputs in both voices on specified CPU; paired-unit propagation subsequently tested by full reading regressions",
+  "reports": [
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "log_sha256": "89d753275170db9c696702ba8578394d6c0223fa79105d42617e7e717aba3767",
+      "report_sha256": "5737f1ad9b756cd88066535ac07813108711f370e81dbcd8df7e969f63921e6d",
+      "report": {
+        "shard": 0,
+        "shards": 1,
+        "seed": 0,
+        "generator_version": 1,
+        "count": 4,
+        "max_units": 0,
+        "go_version": "go1.26.8",
+        "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+        "voice": "KotonohaAkane_ns_48",
+        "original_threads": 6,
+        "avx512_convolutions": false,
+        "results": [
+          {
+            "index": 0,
+            "text": "2兆零十。",
+            "original_sha256": "cb455f9676c95a01b4349fe75a25258031dcaf1cdeb84f4e2bd079beabdf66ff",
+            "go_sha256": "cb455f9676c95a01b4349fe75a25258031dcaf1cdeb84f4e2bd079beabdf66ff",
+            "original_bytes": 197888,
+            "go_bytes": 197888,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 1,
+            "text": "9千万円。",
+            "original_sha256": "5ec16fd324d7a4b48110658333acffde5f855aa15a2bd842fe0310acff58643b",
+            "go_sha256": "5ec16fd324d7a4b48110658333acffde5f855aa15a2bd842fe0310acff58643b",
+            "original_bytes": 194362,
+            "go_bytes": 194362,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 2,
+            "text": "20万個年。",
+            "original_sha256": "f37ee472d7f1cd9bdee492fac6b26dacbbb2ebe618259a0677913d3ddb68031f",
+            "go_sha256": "f37ee472d7f1cd9bdee492fac6b26dacbbb2ebe618259a0677913d3ddb68031f",
+            "original_bytes": 192700,
+            "go_bytes": 192700,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 3,
+            "text": "京・9千万円2兆零十、。",
+            "original_sha256": "34e98fc5327a9299fe355a2cd149d0b26cc0b46edc723832dd1dfbebc8550630",
+            "go_sha256": "34e98fc5327a9299fe355a2cd149d0b26cc0b46edc723832dd1dfbebc8550630",
+            "original_bytes": 343918,
+            "go_bytes": 343918,
+            "first_difference": -1,
+            "equal": true
+          }
+        ]
+      }
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "log_sha256": "c7f59708906f601e065899fc2a385200019e7c91fdd6e8a04ab6b467747dc94d",
+      "report_sha256": "77f0ed6206931fdcb5e5ebbae1ee50cf703ee7b61b94963b6498aaf0dbaa8f29",
+      "report": {
+        "shard": 0,
+        "shards": 1,
+        "seed": 0,
+        "generator_version": 1,
+        "count": 4,
+        "max_units": 0,
+        "go_version": "go1.26.8",
+        "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+        "voice": "KotonohaAoi_ns_48",
+        "original_threads": 6,
+        "avx512_convolutions": false,
+        "results": [
+          {
+            "index": 0,
+            "text": "2兆零十。",
+            "original_sha256": "cb455f9676c95a01b4349fe75a25258031dcaf1cdeb84f4e2bd079beabdf66ff",
+            "go_sha256": "cb455f9676c95a01b4349fe75a25258031dcaf1cdeb84f4e2bd079beabdf66ff",
+            "original_bytes": 197888,
+            "go_bytes": 197888,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 1,
+            "text": "9千万円。",
+            "original_sha256": "5ec16fd324d7a4b48110658333acffde5f855aa15a2bd842fe0310acff58643b",
+            "go_sha256": "5ec16fd324d7a4b48110658333acffde5f855aa15a2bd842fe0310acff58643b",
+            "original_bytes": 194362,
+            "go_bytes": 194362,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 2,
+            "text": "20万個年。",
+            "original_sha256": "f37ee472d7f1cd9bdee492fac6b26dacbbb2ebe618259a0677913d3ddb68031f",
+            "go_sha256": "f37ee472d7f1cd9bdee492fac6b26dacbbb2ebe618259a0677913d3ddb68031f",
+            "original_bytes": 192700,
+            "go_bytes": 192700,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 3,
+            "text": "京・9千万円2兆零十、。",
+            "original_sha256": "34e98fc5327a9299fe355a2cd149d0b26cc0b46edc723832dd1dfbebc8550630",
+            "go_sha256": "34e98fc5327a9299fe355a2cd149d0b26cc0b46edc723832dd1dfbebc8550630",
+            "original_bytes": 343918,
+            "go_bytes": 343918,
+            "first_difference": -1,
+            "equal": true
+          }
+        ]
+      }
+    }
+  ],
+  "reference": {
+    "source": "Finished ordinary SDK/Go WAV tests; saved files verified against independent native captures",
+    "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+    "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+    "original_threads": 6,
+    "avx512_convolutions": false,
+    "report_sha256": [
+      "5737f1ad9b756cd88066535ac07813108711f370e81dbcd8df7e969f63921e6d",
+      "77f0ed6206931fdcb5e5ebbae1ee50cf703ee7b61b94963b6498aaf0dbaa8f29"
+    ],
+    "capture_sha256": [
+      "e5559591a13f74b5853e8eb84f64c9cc0131b4d468c46183eeadcb2bc3e6e52f",
+      "7bd84896ef94bbac63c685d6c67dbb0d01dc4c53c76c08fd88afd6fc885c434f",
+      "dae0241ce1acc6b37a88c3b24267533e44ccb331f7a77cd788211d0cfad26598",
+      "34ed1919e4d8e0203977be82a687ee9b63571d570443f21744320f4ab4761ea6"
+    ],
+    "cases": [
+      {
+        "text": "2兆零十。",
+        "voice": "KotonohaAkane_ns_48",
+        "bytes": 197888,
+        "sha256": "cb455f9676c95a01b4349fe75a25258031dcaf1cdeb84f4e2bd079beabdf66ff"
+      },
+      {
+        "text": "9千万円。",
+        "voice": "KotonohaAkane_ns_48",
+        "bytes": 194362,
+        "sha256": "5ec16fd324d7a4b48110658333acffde5f855aa15a2bd842fe0310acff58643b"
+      },
+      {
+        "text": "20万個年。",
+        "voice": "KotonohaAkane_ns_48",
+        "bytes": 192700,
+        "sha256": "f37ee472d7f1cd9bdee492fac6b26dacbbb2ebe618259a0677913d3ddb68031f"
+      },
+      {
+        "text": "京・9千万円2兆零十、。",
+        "voice": "KotonohaAkane_ns_48",
+        "bytes": 343918,
+        "sha256": "34e98fc5327a9299fe355a2cd149d0b26cc0b46edc723832dd1dfbebc8550630"
+      },
+      {
+        "text": "2兆零十。",
+        "voice": "KotonohaAoi_ns_48",
+        "bytes": 197888,
+        "sha256": "cb455f9676c95a01b4349fe75a25258031dcaf1cdeb84f4e2bd079beabdf66ff"
+      },
+      {
+        "text": "9千万円。",
+        "voice": "KotonohaAoi_ns_48",
+        "bytes": 194362,
+        "sha256": "5ec16fd324d7a4b48110658333acffde5f855aa15a2bd842fe0310acff58643b"
+      },
+      {
+        "text": "20万個年。",
+        "voice": "KotonohaAoi_ns_48",
+        "bytes": 192700,
+        "sha256": "f37ee472d7f1cd9bdee492fac6b26dacbbb2ebe618259a0677913d3ddb68031f"
+      },
+      {
+        "text": "京・9千万円2兆零十、。",
+        "voice": "KotonohaAoi_ns_48",
+        "bytes": 343918,
+        "sha256": "34e98fc5327a9299fe355a2cd149d0b26cc0b46edc723832dd1dfbebc8550630"
+      }
+    ]
+  }
+}

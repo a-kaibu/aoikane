@@ -1,0 +1,472 @@
+{
+  "source": "ordinary original seventh compressor invocation; observation WAV unchanged versus ordinary SDK; isolated Go compressor and pow replay",
+  "text": "火閉漢字私六零四木1月78金土Ｂ六火A火三。",
+  "voice": "KotonohaAoi_ns_48",
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "original_threads": 6,
+  "ordinary_wav_sha256": "28769406e32b762f656dc0e32999637fe061ae7e9cf7cb3e63eca6a9c8819fe5",
+  "observation_wav_sha256": "28769406e32b762f656dc0e32999637fe061ae7e9cf7cb3e63eca6a9c8819fe5",
+  "events_sha256": "d1d6b67441d0b2af14996548998e8c15c3b3c0db27469eda2653a6b9629fdff9",
+  "pow_input_sha256": "4524dcd40dde0f23d2858a5aeec63a6d3c6d4ca5402ad74a922c233b1b479aaa",
+  "pow_output_sha256": "ad925c80e330878d7afe92f9bd7bcd6484977125ee6dbb7275db28bb1c5c3198",
+  "pow_values": 110,
+  "pow_differing_values": 1,
+  "pow_difference": {
+    "index": 23,
+    "exponent_bits": "bf947b96",
+    "original_bits": "3d8dae11",
+    "go_math_pow_bits": "3d8dae12"
+  },
+  "sqrt_differing_values": 0,
+  "sqrt_values": 110,
+  "compressor_calls": 14,
+  "compressor_values": 334800,
+  "compressor_differing_values": 240,
+  "compressor_differing_calls": 1,
+  "stage_diagnostic_log_sha256": "aab179d5272a3fe227a845694334aa7e2d7e23dc620b60ddddc7b959889f4ba6",
+  "compressor_diagnostic_log_sha256": "e17a5640b09d38d283af9526d25e52c2a6f905b4973d38628e122186c312fc7a",
+  "pow_reference": [
+    {
+      "exponent_bits": "c03507e2",
+      "original_bits": "3ac27e30"
+    },
+    {
+      "exponent_bits": "c044e106",
+      "original_bits": "3a5bf0d1"
+    },
+    {
+      "exponent_bits": "c05c1d73",
+      "original_bits": "39beaa69"
+    },
+    {
+      "exponent_bits": "c0800102",
+      "original_bits": "38d1a7e3"
+    },
+    {
+      "exponent_bits": "c09c965e",
+      "original_bits": "37567810"
+    },
+    {
+      "exponent_bits": "c09d614d",
+      "original_bits": "374a93fa"
+    },
+    {
+      "exponent_bits": "c09d2eba",
+      "original_bits": "374d7a72"
+    },
+    {
+      "exponent_bits": "c09d4f55",
+      "original_bits": "374b9a91"
+    },
+    {
+      "exponent_bits": "c09e45b8",
+      "original_bits": "373dfb0a"
+    },
+    {
+      "exponent_bits": "c09e19e4",
+      "original_bits": "374055e2"
+    },
+    {
+      "exponent_bits": "c09ed75a",
+      "original_bits": "37365c68"
+    },
+    {
+      "exponent_bits": "c09f8f6e",
+      "original_bits": "372d2a5f"
+    },
+    {
+      "exponent_bits": "c09f831c",
+      "original_bits": "372dc426"
+    },
+    {
+      "exponent_bits": "c0a00000",
+      "original_bits": "3727c5ac"
+    },
+    {
+      "exponent_bits": "c09f67be",
+      "original_bits": "372f1ba8"
+    },
+    {
+      "exponent_bits": "c0a00000",
+      "original_bits": "3727c5ac"
+    },
+    {
+      "exponent_bits": "c0a00000",
+      "original_bits": "3727c5ac"
+    },
+    {
+      "exponent_bits": "c0927d71",
+      "original_bits": "37ddc1c7"
+    },
+    {
+      "exponent_bits": "c04a1396",
+      "original_bits": "3a366de4"
+    },
+    {
+      "exponent_bits": "c014fa0a",
+      "original_bits": "3b9a0f42"
+    },
+    {
+      "exponent_bits": "bfe791d6",
+      "original_bits": "3c7e4323"
+    },
+    {
+      "exponent_bits": "bfbb2ab0",
+      "original_bits": "3d0d4aee"
+    },
+    {
+      "exponent_bits": "bfa46906",
+      "original_bits": "3d54c46e"
+    },
+    {
+      "exponent_bits": "bf947b96",
+      "original_bits": "3d8dae11"
+    },
+    {
+      "exponent_bits": "bf8b8966",
+      "original_bits": "3da66aeb"
+    },
+    {
+      "exponent_bits": "bf84ec96",
+      "original_bits": "3dbb7061"
+    },
+    {
+      "exponent_bits": "bf82f3b0",
+      "original_bits": "3dc2355f"
+    },
+    {
+      "exponent_bits": "bf811a4a",
+      "original_bits": "3dc8c70e"
+    },
+    {
+      "exponent_bits": "bf8264cd",
+      "original_bits": "3dc42b14"
+    },
+    {
+      "exponent_bits": "bf82379a",
+      "original_bits": "3dc4cad5"
+    },
+    {
+      "exponent_bits": "bf832c26",
+      "original_bits": "3dc17083"
+    },
+    {
+      "exponent_bits": "bf8b24d6",
+      "original_bits": "3da79909"
+    },
+    {
+      "exponent_bits": "bf93d48d",
+      "original_bits": "3d8f5a4b"
+    },
+    {
+      "exponent_bits": "bfa1d390",
+      "original_bits": "3d5ee3e7"
+    },
+    {
+      "exponent_bits": "bfba3d2a",
+      "original_bits": "3d0fabb6"
+    },
+    {
+      "exponent_bits": "bfce8ab6",
+      "original_bits": "3cc76d10"
+    },
+    {
+      "exponent_bits": "bfecec4e",
+      "original_bits": "3c66eb1b"
+    },
+    {
+      "exponent_bits": "c0022f42",
+      "original_bits": "3c1774a7"
+    },
+    {
+      "exponent_bits": "c00d36ad",
+      "original_bits": "3bcbb2d0"
+    },
+    {
+      "exponent_bits": "c014506c",
+      "original_bits": "3b9dc6b2"
+    },
+    {
+      "exponent_bits": "c0191e9f",
+      "original_bits": "3b84b9da"
+    },
+    {
+      "exponent_bits": "c01d41ef",
+      "original_bits": "3b64bbe5"
+    },
+    {
+      "exponent_bits": "c020d72f",
+      "original_bits": "3b4911ca"
+    },
+    {
+      "exponent_bits": "c022a480",
+      "original_bits": "3b3c727b"
+    },
+    {
+      "exponent_bits": "c01e955a",
+      "original_bits": "3b5a1446"
+    },
+    {
+      "exponent_bits": "c015463d",
+      "original_bits": "3b986b29"
+    },
+    {
+      "exponent_bits": "c00bd572",
+      "original_bits": "3bd610d8"
+    },
+    {
+      "exponent_bits": "c002bc60",
+      "original_bits": "3c147b46"
+    },
+    {
+      "exponent_bits": "bff7c162",
+      "original_bits": "3c3e08a7"
+    },
+    {
+      "exponent_bits": "bfe79dfe",
+      "original_bits": "3c7e0b8f"
+    },
+    {
+      "exponent_bits": "bfddb4c3",
+      "original_bits": "3c97d050"
+    },
+    {
+      "exponent_bits": "bfd61fd6",
+      "original_bits": "3cadff66"
+    },
+    {
+      "exponent_bits": "bfd006c0",
+      "original_bits": "3cc22bba"
+    },
+    {
+      "exponent_bits": "bfca42c6",
+      "original_bits": "3cd7640c"
+    },
+    {
+      "exponent_bits": "bfc7668a",
+      "original_bits": "3ce2c376"
+    },
+    {
+      "exponent_bits": "bfc1f283",
+      "original_bits": "3cfa22df"
+    },
+    {
+      "exponent_bits": "bfb8403d",
+      "original_bits": "3d14e6d3"
+    },
+    {
+      "exponent_bits": "bfaa1d46",
+      "original_bits": "3d400492"
+    },
+    {
+      "exponent_bits": "bf9b85d3",
+      "original_bits": "3d79a76a"
+    },
+    {
+      "exponent_bits": "bf8f6476",
+      "original_bits": "3d9b441f"
+    },
+    {
+      "exponent_bits": "bf85b5ba",
+      "original_bits": "3db8cef0"
+    },
+    {
+      "exponent_bits": "bf7ac7e6",
+      "original_bits": "3dd6a4ac"
+    },
+    {
+      "exponent_bits": "bf786126",
+      "original_bits": "3ddb546c"
+    },
+    {
+      "exponent_bits": "bf797a73",
+      "original_bits": "3dd92c38"
+    },
+    {
+      "exponent_bits": "bf7a078d",
+      "original_bits": "3dd81947"
+    },
+    {
+      "exponent_bits": "bf7a7f46",
+      "original_bits": "3dd73110"
+    },
+    {
+      "exponent_bits": "bf7a5d40",
+      "original_bits": "3dd772f5"
+    },
+    {
+      "exponent_bits": "bf7d1666",
+      "original_bits": "3dd23c66"
+    },
+    {
+      "exponent_bits": "bf7fee60",
+      "original_bits": "3dcced47"
+    },
+    {
+      "exponent_bits": "bf7ae586",
+      "original_bits": "3dd66b82"
+    },
+    {
+      "exponent_bits": "bf740206",
+      "original_bits": "3de42029"
+    },
+    {
+      "exponent_bits": "bf748706",
+      "original_bits": "3de30fe6"
+    },
+    {
+      "exponent_bits": "bf763b4d",
+      "original_bits": "3ddf9baf"
+    },
+    {
+      "exponent_bits": "bf774526",
+      "original_bits": "3ddd877d"
+    },
+    {
+      "exponent_bits": "bf770060",
+      "original_bits": "3dde10b0"
+    },
+    {
+      "exponent_bits": "bf778ee0",
+      "original_bits": "3ddcf4c7"
+    },
+    {
+      "exponent_bits": "bf76ba73",
+      "original_bits": "3dde9c87"
+    },
+    {
+      "exponent_bits": "bf7291a6",
+      "original_bits": "3de718ee"
+    },
+    {
+      "exponent_bits": "bf6f6f60",
+      "original_bits": "3dedb443"
+    },
+    {
+      "exponent_bits": "bf6da5fa",
+      "original_bits": "3df18e17"
+    },
+    {
+      "exponent_bits": "bf6acde6",
+      "original_bits": "3df7d05d"
+    },
+    {
+      "exponent_bits": "bf65d673",
+      "original_bits": "3e01914f"
+    },
+    {
+      "exponent_bits": "bf616b2d",
+      "original_bits": "3e06d23d"
+    },
+    {
+      "exponent_bits": "bf6159ed",
+      "original_bits": "3e06e72a"
+    },
+    {
+      "exponent_bits": "bf604b80",
+      "original_bits": "3e0830db"
+    },
+    {
+      "exponent_bits": "bf5f88cd",
+      "original_bits": "3e09202d"
+    },
+    {
+      "exponent_bits": "bf62b346",
+      "original_bits": "3e0546a8"
+    },
+    {
+      "exponent_bits": "bf665486",
+      "original_bits": "3e00feb5"
+    },
+    {
+      "exponent_bits": "bf67f2b3",
+      "original_bits": "3dfe434a"
+    },
+    {
+      "exponent_bits": "bf6a08a6",
+      "original_bits": "3df9898d"
+    },
+    {
+      "exponent_bits": "bf6fe053",
+      "original_bits": "3decc340"
+    },
+    {
+      "exponent_bits": "bf7cba40",
+      "original_bits": "3dd2eaee"
+    },
+    {
+      "exponent_bits": "bf8afeb3",
+      "original_bits": "3da80c2b"
+    },
+    {
+      "exponent_bits": "bfa3fb50",
+      "original_bits": "3d5669f7"
+    },
+    {
+      "exponent_bits": "bfc286e3",
+      "original_bits": "3cf78ab3"
+    },
+    {
+      "exponent_bits": "bfe9d2fe",
+      "original_bits": "3c742817"
+    },
+    {
+      "exponent_bits": "c0039eb9",
+      "original_bits": "3c0fd524"
+    },
+    {
+      "exponent_bits": "c010503f",
+      "original_bits": "3bb6339a"
+    },
+    {
+      "exponent_bits": "c01926e5",
+      "original_bits": "3b84925e"
+    },
+    {
+      "exponent_bits": "c01eedc4",
+      "original_bits": "3b5762de"
+    },
+    {
+      "exponent_bits": "c0229cc7",
+      "original_bits": "3b3ca6de"
+    },
+    {
+      "exponent_bits": "c0265a33",
+      "original_bits": "3b24e6c9"
+    },
+    {
+      "exponent_bits": "c0275319",
+      "original_bits": "3b1f3ba5"
+    },
+    {
+      "exponent_bits": "c025655e",
+      "original_bits": "3b2aac9b"
+    },
+    {
+      "exponent_bits": "c0199eba",
+      "original_bits": "3b825b99"
+    },
+    {
+      "exponent_bits": "c00522e0",
+      "original_bits": "3c083256"
+    },
+    {
+      "exponent_bits": "bfefab32",
+      "original_bits": "3c5bca3f"
+    },
+    {
+      "exponent_bits": "bfdbb6ad",
+      "original_bits": "3c9d5a9c"
+    },
+    {
+      "exponent_bits": "bfcf52d0",
+      "original_bits": "3cc4a43a"
+    },
+    {
+      "exponent_bits": "bfcdeeb3",
+      "original_bits": "3cc99fd4"
+    }
+  ],
+  "complete_engine": false,
+  "remaining": "Reconstruct original pow_scalar rounding and prove end-to-end whole WAV equality; other unresolved CPU/input contexts remain."
+}

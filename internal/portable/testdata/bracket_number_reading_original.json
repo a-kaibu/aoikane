@@ -1,0 +1,993 @@
+{
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "capture_sha256": [
+    "6d376e634557fcf5daa45dc4ec3c6a43b852f0ac6f9ae0640e0fbd43ed8d5b28",
+    "0cb216da0ee682242cccfeaec67a9b757cba1709556211958abed626f8ce32d1",
+    "fc0bdff92c6dbe309842a7d381701f2e9cb174aea5f289cf4c1cfba56d6f41f9",
+    "054fbbfea9da74fbf81fd595df9c88590923e5817384a485143641457f0a2f52",
+    "2bc0285c73e61bd0a6c4feb9593238152d599ec84a4c666fc06416863044441a",
+    "ebd32b3397d6bd45740ac8a29843b8c3148b2518ee52342988e007c5591d2cd3"
+  ],
+  "cases": [
+    {
+      "text": "日1四（6七ａ声。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^ヒ|0イ^チ|0^ヨ!ン$1_1ロ^ク|0ナ^ナエーゴ!エ<F>"
+      ]
+    },
+    {
+      "text": "6七ａ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>ロ^ク|0ナ^ナエ!ー<F>"
+      ]
+    },
+    {
+      "text": "67ａ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>ロ^クジュー|0ナ^ナエ!ー<F>"
+      ]
+    },
+    {
+      "text": "六七ａ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>ロ^クジュー|0ナ^ナエ!ー<F>"
+      ]
+    },
+    {
+      "text": "七ａ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>ナ^ナエ!ー<F>"
+      ]
+    },
+    {
+      "text": "7ａ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>ナ^ナエ!ー<F>"
+      ]
+    },
+    {
+      "text": "6七Ａ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>ロ^ク|0^ナナエ!ー<F>"
+      ]
+    },
+    {
+      "text": "6七a。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>ロ^ク|0ナ^ナエ!ー<F>"
+      ]
+    },
+    {
+      "text": "6七ha。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>ロ^ク|0ナ^ナヘクタ!ール<F>"
+      ]
+    },
+    {
+      "text": "6七ｍ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>ロ^ク|0ナ^ナメ!ートル<F>"
+      ]
+    },
+    {
+      "text": "6七ｂ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>ロ^ク|0^ナ!ナ|0^ビ!ー<F>"
+      ]
+    },
+    {
+      "text": "6七声。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>ロ^ク|0^ナ!ナ|0コ^エ<F>"
+      ]
+    },
+    {
+      "text": "1四ａ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>イ^チ|0ヨ^ンエ!ー<F>"
+      ]
+    },
+    {
+      "text": "１四（６七ａ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>イ^チ|0^ヨ!ン$1_1ロ^ク|0ナ^ナエ!ー<F>"
+      ]
+    },
+    {
+      "text": "1四（6七。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>イ^チ|0^ヨ!ン$1_1ロ^ク|0^ナ!ナ<F>"
+      ]
+    },
+    {
+      "text": "1四（6七Ａ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>イ^チ|0^ヨ!ン$1_1ロ^ク|0^ナナエ!ー<F>"
+      ]
+    },
+    {
+      "text": "1四（6七ｂ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>イ^チ|0^ヨ!ン$1_1ロ^ク|0^ナ!ナ|0^ビ!ー<F>"
+      ]
+    },
+    {
+      "text": "1四（6七ａ声。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>イ^チ|0^ヨ!ン$1_1ロ^ク|0ナ^ナエーゴ!エ<F>"
+      ]
+    },
+    {
+      "text": "日1四（6七声。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^ヒ|0イ^チ|0^ヨ!ン$1_1ロ^ク|0^ナ!ナ|0コ^エ<F>"
+      ]
+    },
+    {
+      "text": "六7ａ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>ロ^ク|0ナ^ナエ!ー<F>"
+      ]
+    },
+    {
+      "text": "6七ｈａ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>ロ^ク|0ナ^ナヘクタ!ール<F>"
+      ]
+    },
+    {
+      "text": "6七アール。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>ロ^ク|0ナ^ナア!ール<F>"
+      ]
+    },
+    {
+      "text": "6七ａ声。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>ロ^ク|0ナ^ナエーゴ!エ<F>"
+      ]
+    },
+    {
+      "text": "七ａ声。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>ナ^ナエーゴ!エ<F>"
+      ]
+    },
+    {
+      "text": "1（6ａ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1ロ^クエ!ー<F>"
+      ]
+    },
+    {
+      "text": "1（67ａ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1ロ^クジュー|0ナ^ナエ!ー<F>"
+      ]
+    },
+    {
+      "text": "一（六七ａ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1ロ^クジュー|0ナ^ナエ!ー<F>"
+      ]
+    },
+    {
+      "text": "1（6七人。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1ロ^ク|0シ^チ!ニン<F>"
+      ]
+    },
+    {
+      "text": "1（3人。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1サ^ンニ!ン<F>"
+      ]
+    },
+    {
+      "text": "1（2。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1^ニ<F>"
+      ]
+    },
+    {
+      "text": "1）2。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1^ニ<F>"
+      ]
+    },
+    {
+      "text": "一（二。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1^ニ<F>"
+      ]
+    },
+    {
+      "text": "1「2。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1^ニ<F>"
+      ]
+    },
+    {
+      "text": "1［2。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1^ニ<F>"
+      ]
+    },
+    {
+      "text": "1（2）。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1^ニ<F>"
+      ]
+    },
+    {
+      "text": "1（2（3ａ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1^ニ$1_1サ^ンエ!ー<F>"
+      ]
+    },
+    {
+      "text": "1（2）3ａ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1^ニ$1_1サ^ンエ!ー<F>"
+      ]
+    },
+    {
+      "text": "1（2ａ）。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1ニ^エ!ー<F>"
+      ]
+    },
+    {
+      "text": "1 （2ａ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1ニ^エ!ー<F>"
+      ]
+    },
+    {
+      "text": "1（ 2ａ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1ニ^エ!ー<F>"
+      ]
+    },
+    {
+      "text": "電話1（23ａ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^デンワ|0イ^チ$1_1^ニ!ジュー|0サ^ンエ!ー<F>"
+      ]
+    },
+    {
+      "text": "1（2ｂ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1^ニ|0^ビ!ー<F>"
+      ]
+    },
+    {
+      "text": "1（2Ｒ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1ニ^ラ!ウンド<F>"
+      ]
+    },
+    {
+      "text": "1（2アール。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1ニ^ア!ール<F>"
+      ]
+    },
+    {
+      "text": "日1四（6七ａ声。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ヒ|0イ^チ|0^ヨ!ン$1_1ロ^ク|0ナ^ナエーゴ!エ<F>"
+      ]
+    },
+    {
+      "text": "6七ａ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ロ^ク|0ナ^ナエ!ー<F>"
+      ]
+    },
+    {
+      "text": "67ａ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ロ^クジュー|0ナ^ナエ!ー<F>"
+      ]
+    },
+    {
+      "text": "六七ａ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ロ^クジュー|0ナ^ナエ!ー<F>"
+      ]
+    },
+    {
+      "text": "七ａ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ナ^ナエ!ー<F>"
+      ]
+    },
+    {
+      "text": "7ａ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ナ^ナエ!ー<F>"
+      ]
+    },
+    {
+      "text": "6七Ａ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ロ^ク|0ナ^ナエ!ー<F>"
+      ]
+    },
+    {
+      "text": "6七a。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ロ^ク|0ナ^ナエ!ー<F>"
+      ]
+    },
+    {
+      "text": "6七ha。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ロ^ク|0ナ^ナヘクタ!ール<F>"
+      ]
+    },
+    {
+      "text": "6七ｍ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ロ^ク|0ナ^ナメ!ートル<F>"
+      ]
+    },
+    {
+      "text": "6七ｂ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ロ^ク|0^ナ!ナ|0^ビ!ー<F>"
+      ]
+    },
+    {
+      "text": "6七声。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ロ^ク|0^ナ!ナ|0^コ!エ<F>"
+      ]
+    },
+    {
+      "text": "1四ａ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>イ^チ|0ヨ^ンエ!ー<F>"
+      ]
+    },
+    {
+      "text": "１四（６七ａ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>イ^チ|0^ヨ!ン$1_1ロ^ク|0ナ^ナエ!ー<F>"
+      ]
+    },
+    {
+      "text": "1四（6七。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>イ^チ|0^ヨ!ン$1_1ロ^ク|0^ナ!ナ<F>"
+      ]
+    },
+    {
+      "text": "1四（6七Ａ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>イ^チ|0^ヨ!ン$1_1ロ^ク|0ナ^ナエ!ー<F>"
+      ]
+    },
+    {
+      "text": "1四（6七ｂ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>イ^チ|0^ヨ!ン$1_1ロ^ク|0^ナ!ナ|0^ビ!ー<F>"
+      ]
+    },
+    {
+      "text": "1四（6七ａ声。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>イ^チ|0^ヨ!ン$1_1ロ^ク|0ナ^ナエーゴ!エ<F>"
+      ]
+    },
+    {
+      "text": "日1四（6七声。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ヒ|0イ^チ|0^ヨ!ン$1_1ロ^ク|0^ナ!ナ|0^コ!エ<F>"
+      ]
+    },
+    {
+      "text": "六7ａ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ロ^ク|0ナ^ナエ!ー<F>"
+      ]
+    },
+    {
+      "text": "6七ｈａ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ロ^ク|0ナ^ナヘクタ!ール<F>"
+      ]
+    },
+    {
+      "text": "6七アール。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ロ^ク|0ナ^ナア!ール<F>"
+      ]
+    },
+    {
+      "text": "6七ａ声。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ロ^ク|0ナ^ナエーゴ!エ<F>"
+      ]
+    },
+    {
+      "text": "七ａ声。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ナ^ナエーゴ!エ<F>"
+      ]
+    },
+    {
+      "text": "1（6ａ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1ロ^クエ!ー<F>"
+      ]
+    },
+    {
+      "text": "1（67ａ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1ロ^クジュー|0ナ^ナエ!ー<F>"
+      ]
+    },
+    {
+      "text": "一（六七ａ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1ロ^クジュー|0ナ^ナエ!ー<F>"
+      ]
+    },
+    {
+      "text": "1（6七人。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1ロ^ク|0シ^チ!ニン<F>"
+      ]
+    },
+    {
+      "text": "1（3人。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1サ^ンニ!ン<F>"
+      ]
+    },
+    {
+      "text": "1（2。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1ニ<F>"
+      ]
+    },
+    {
+      "text": "1）2。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1ニ<F>"
+      ]
+    },
+    {
+      "text": "一（二。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1ニ<F>"
+      ]
+    },
+    {
+      "text": "1「2。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>イ^チ$2_2ニ<F>"
+      ]
+    },
+    {
+      "text": "1［2。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>イ^チ$2_2ニ<F>"
+      ]
+    },
+    {
+      "text": "1（2）。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1ニ<F>"
+      ]
+    },
+    {
+      "text": "1（2（3ａ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1ニ$1_1サ^ンエ!ー<F>"
+      ]
+    },
+    {
+      "text": "1（2）3ａ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1ニ$1_1サ^ンエ!ー<F>"
+      ]
+    },
+    {
+      "text": "1（2ａ）。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1ニ^エ!ー<F>"
+      ]
+    },
+    {
+      "text": "1 （2ａ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>イ^チ$2_2ニ^エ!ー<F>"
+      ]
+    },
+    {
+      "text": "1（ 2ａ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>イ^チ$2_2ニ^エ!ー<F>"
+      ]
+    },
+    {
+      "text": "電話1（23ａ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>デ^ンワ|0イ^チ$1_1^ニ!ジュー|0サ^ンエ!ー<F>"
+      ]
+    },
+    {
+      "text": "1（2ｂ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1ニ|0^ビ!ー<F>"
+      ]
+    },
+    {
+      "text": "1（2Ｒ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1ニ^ラ!ウンド<F>"
+      ]
+    },
+    {
+      "text": "1（2アール。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1ニ^ア!ール<F>"
+      ]
+    },
+    {
+      "text": "1（1人。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1イ^チ!ニン<F>"
+      ]
+    },
+    {
+      "text": "1（2人。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1^ニ!ニン<F>"
+      ]
+    },
+    {
+      "text": "一（二人。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1^ニ!ニン<F>"
+      ]
+    },
+    {
+      "text": "1）1人。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1イ^チ!ニン<F>"
+      ]
+    },
+    {
+      "text": "1（1日。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1イ^チニチ<F>"
+      ]
+    },
+    {
+      "text": "1（2日。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1ニ^ニチ<F>"
+      ]
+    },
+    {
+      "text": "1（4人。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1ヨ^ニ!ン<F>"
+      ]
+    },
+    {
+      "text": "1（20日。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1ニ^ジュ!ーニチ<F>"
+      ]
+    },
+    {
+      "text": "1（0ａ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1ゼ^ロエ!ー<F>"
+      ]
+    },
+    {
+      "text": "1（01ａ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1ゼ^ロイチエ!ー<F>"
+      ]
+    },
+    {
+      "text": "1（〇一ａ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1ゼ^ロイチエ!ー<F>"
+      ]
+    },
+    {
+      "text": "1（零ａ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1レ^ーエ!ー<F>"
+      ]
+    },
+    {
+      "text": "01（23）。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>ゼ^ロイ!チ$1_1^ニ!ジュー|0サ^ン<F>"
+      ]
+    },
+    {
+      "text": "電話01（23）4567。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^デンワ|0ゼ^ロイ!チノ$1_1ニ^ーサ!ンノ$1_1ヨ^ンゴ!ー|0ロ^クナ!ナ<F>"
+      ]
+    },
+    {
+      "text": "1（2（3人。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1^ニ$1_1サ^ンニ!ン<F>"
+      ]
+    },
+    {
+      "text": "1（2）3人。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1^ニ$1_1サ^ンニ!ン<F>"
+      ]
+    },
+    {
+      "text": "1（1人。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1イ^チ!ニン<F>"
+      ]
+    },
+    {
+      "text": "1（2人。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1^ニ!ニン<F>"
+      ]
+    },
+    {
+      "text": "一（二人。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1^ニ!ニン<F>"
+      ]
+    },
+    {
+      "text": "1）1人。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1イ^チ!ニン<F>"
+      ]
+    },
+    {
+      "text": "1（1日。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1イ^チニチ<F>"
+      ]
+    },
+    {
+      "text": "1（2日。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1ニ^ニチ<F>"
+      ]
+    },
+    {
+      "text": "1（4人。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1ヨ^ニ!ン<F>"
+      ]
+    },
+    {
+      "text": "1（20日。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1ニ^ジュ!ーニチ<F>"
+      ]
+    },
+    {
+      "text": "1（0ａ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1ゼ^ロエ!ー<F>"
+      ]
+    },
+    {
+      "text": "1（01ａ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1ゼ^ロイチエ!ー<F>"
+      ]
+    },
+    {
+      "text": "1（〇一ａ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1ゼ^ロイチエ!ー<F>"
+      ]
+    },
+    {
+      "text": "1（零ａ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1レ^ーエ!ー<F>"
+      ]
+    },
+    {
+      "text": "01（23）。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ゼ^ロイ!チ$1_1^ニ!ジュー|0サ^ン<F>"
+      ]
+    },
+    {
+      "text": "電話01（23）4567。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>デ^ンワ|0ゼ^ロイ!チノ$1_1ニ^ーサ!ンノ$1_1ヨ^ンゴ!ー|0ロ^クナ!ナ<F>"
+      ]
+    },
+    {
+      "text": "1（2（3人。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1ニ$1_1サ^ンニ!ン<F>"
+      ]
+    },
+    {
+      "text": "1（2）3人。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>イ^チ$1_1ニ$1_1サ^ンニ!ン<F>"
+      ]
+    },
+    {
+      "text": "電話1（23）4567。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^デンワ|0イ^チ!ノ$1_1ニ^ーサ!ンノ$1_1ヨ^ンゴ!ー|0ロ^クナ!ナ<F>"
+      ]
+    },
+    {
+      "text": "電話 01（23）4567。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^デンワ$1_1ゼ^ロイ!チノ$1_1ニ^ーサ!ンノ$1_1ヨ^ンゴ!ー|0ロ^クナ!ナ<F>"
+      ]
+    },
+    {
+      "text": "電話番号01（23）4567。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>デンワ^バ!ンゴー$1_1ゼ^ロイ!チノ$1_1ニ^ーサ!ンノ$1_1ヨ^ンゴ!ー|0ロ^クナ!ナ<F>"
+      ]
+    },
+    {
+      "text": "ＦＡＸ01（23）4567。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^ファ!ックス$1_1ゼ^ロイ!チノ$1_1ニ^ーサ!ンノ$1_1ヨ^ンゴ!ー|0ロ^クナ!ナ<F>"
+      ]
+    },
+    {
+      "text": "ＴＥＬ01（23）4567。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^テ!ル$1_1ゼ^ロイ!チノ$1_1ニ^ーサ!ンノ$1_1ヨ^ンゴ!ー|0ロ^クナ!ナ<F>"
+      ]
+    },
+    {
+      "text": "郵便番号01（23）4567。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>ユービン^バ!ンゴー$1_1ゼ^ロイ!チノ$1_1ニ^ーサ!ンノ$1_1ヨ^ンゴ!ー|0ロ^クナ!ナ<F>"
+      ]
+    },
+    {
+      "text": "01（23）4567。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>ゼ^ロイ!チノ$1_1ニ^ーサ!ンノ$1_1ヨ^ンゴ!ー|0ロ^クナ!ナ<F>"
+      ]
+    },
+    {
+      "text": "電話01（23。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^デンワ|0ゼ^ロイ!チノ$1_1ニ^ーサ!ン<F>"
+      ]
+    },
+    {
+      "text": "電話一（二三）四五六七。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^デンワ|0イ^チ!ノ$1_1ニ^ーサ!ンノ$1_1ヨ^ンゴ!ー|0ロ^クナ!ナ<F>"
+      ]
+    },
+    {
+      "text": "電話01（23）4567ａ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^デンワ|0ゼ^ロイ!チノ$1_1ニ^ーサ!ンノ$1_1ヨ^ンゴ!ー|0ロ^クナナエ!ー<F>"
+      ]
+    },
+    {
+      "text": "電話1（23）4567。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>デ^ンワ|0イ^チ!ノ$1_1ニ^ーサ!ンノ$1_1ヨ^ンゴ!ー|0ロ^クナ!ナ<F>"
+      ]
+    },
+    {
+      "text": "電話 01（23）4567。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>デ^ンワ$1_1ゼ^ロイ!チノ$1_1ニ^ーサ!ンノ$1_1ヨ^ンゴ!ー|0ロ^クナ!ナ<F>"
+      ]
+    },
+    {
+      "text": "電話番号01（23）4567。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>デ^ンワバ!ンゴー$1_1ゼ^ロイ!チノ$1_1ニ^ーサ!ンノ$1_1ヨ^ンゴ!ー|0ロ^クナ!ナ<F>"
+      ]
+    },
+    {
+      "text": "ＦＡＸ01（23）4567。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^ファ!ックス$1_1ゼ^ロイ!チノ$1_1ニ^ーサ!ンノ$1_1ヨ^ンゴ!ー|0ロ^クナ!ナ<F>"
+      ]
+    },
+    {
+      "text": "ＴＥＬ01（23）4567。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^テ!ル$1_1ゼ^ロイ!チノ$1_1ニ^ーサ!ンノ$1_1ヨ^ンゴ!ー|0ロ^クナ!ナ<F>"
+      ]
+    },
+    {
+      "text": "郵便番号01（23）4567。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ユ^ービンバ!ンゴー$1_1ゼ^ロイ!チノ$1_1ニ^ーサ!ンノ$1_1ヨ^ンゴ!ー|0ロ^クナ!ナ<F>"
+      ]
+    },
+    {
+      "text": "01（23）4567。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ゼ^ロイ!チノ$1_1ニ^ーサ!ンノ$1_1ヨ^ンゴ!ー|0ロ^クナ!ナ<F>"
+      ]
+    },
+    {
+      "text": "電話01（23。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>デ^ンワ|0ゼ^ロイ!チノ$1_1ニ^ーサ!ン<F>"
+      ]
+    },
+    {
+      "text": "電話一（二三）四五六七。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>デ^ンワ|0イ^チ!ノ$1_1ニ^ーサ!ンノ$1_1ヨ^ンゴ!ー|0ロ^クナ!ナ<F>"
+      ]
+    },
+    {
+      "text": "電話01（23）4567ａ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>デ^ンワ|0ゼ^ロイ!チノ$1_1ニ^ーサ!ンノ$1_1ヨ^ンゴ!ー|0ロ^クナナエ!ー<F>"
+      ]
+    }
+  ]
+}

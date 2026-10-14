@@ -1,0 +1,1453 @@
+{
+  "scope": "All new28 inputs per voice and all32 previous unit-chain inputs retained and equal. No equality-based selection. Arbitrary input/settings/CPU unproven.",
+  "reports": [
+    {
+      "stem": "zero-large-unit-chain-20",
+      "voice": "akane",
+      "sha256": "cebe72c1c5ae8179c4e2a69c5de52f7c2192f8adc817c10c533e23cf62edf7b4",
+      "report": {
+        "cases": [
+          {
+            "index": 0,
+            "text": "00兆万。",
+            "Original": [
+              "<S>ゼ^ロゼロ!チョー|0^マ!ン<F>"
+            ],
+            "Go": [
+              "<S>ゼ^ロゼロ!チョー|0^マ!ン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 1,
+            "text": "零兆万。",
+            "Original": [
+              "<S>^レ!ー|0チョー|0^マ!ン<F>"
+            ],
+            "Go": [
+              "<S>^レ!ー|0チョー|0^マ!ン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 2,
+            "text": "00億万。",
+            "Original": [
+              "<S>ゼ^ロゼロ!オク|0^マ!ン<F>"
+            ],
+            "Go": [
+              "<S>ゼ^ロゼロ!オク|0^マ!ン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 3,
+            "text": "00万兆。",
+            "Original": [
+              "<S>ゼ^ロゼロマ!ン|0チョ^ー<F>"
+            ],
+            "Go": [
+              "<S>ゼ^ロゼロマ!ン|0チョ^ー<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 4,
+            "text": "000兆万。",
+            "Original": [
+              "<S>ゼ^ロゼ!ロ|0ゼ^ロ!チョー|0^マ!ン<F>"
+            ],
+            "Go": [
+              "<S>ゼ^ロゼ!ロ|0ゼ^ロ!チョー|0^マ!ン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 5,
+            "text": "01兆万。",
+            "Original": [
+              "<S>^ゼ!ロ|0^イ!ッチョー|0^マ!ン<F>"
+            ],
+            "Go": [
+              "<S>^ゼ!ロ|0^イ!ッチョー|0^マ!ン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 6,
+            "text": "09兆万。",
+            "Original": [
+              "<S>ゼ^ロキュ!ーチョー|0^マ!ン<F>"
+            ],
+            "Go": [
+              "<S>ゼ^ロキュ!ーチョー|0^マ!ン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 7,
+            "text": "00兆万本。",
+            "Original": [
+              "<S>ゼ^ロゼロ!チョー|0マ^ンボン<F>"
+            ],
+            "Go": [
+              "<S>ゼ^ロゼロ!チョー|0マ^ンボン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 8,
+            "text": "00兆万秒。",
+            "Original": [
+              "<S>ゼ^ロゼロ!チョー|0マ^ンビョー<F>"
+            ],
+            "Go": [
+              "<S>ゼ^ロゼロ!チョー|0マ^ンビョー<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 9,
+            "text": "00兆万1。",
+            "Original": [
+              "<S>ゼ^ロゼロ!チョー|0^マ!ン|0イ^チ<F>"
+            ],
+            "Go": [
+              "<S>ゼ^ロゼロ!チョー|0^マ!ン|0イ^チ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 10,
+            "text": "〇〇兆万。",
+            "Original": [
+              "<S>ゼ^ロゼロ!チョー|0^マ!ン<F>"
+            ],
+            "Go": [
+              "<S>ゼ^ロゼロ!チョー|0^マ!ン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 11,
+            "text": "零兆億万。",
+            "Original": [
+              "<S>^レ!ー|0チョ^ー|0オ^クマ!ン<F>"
+            ],
+            "Go": [
+              "<S>^レ!ー|0チョ^ー|0オ^クマ!ン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 12,
+            "text": "兆万。",
+            "Original": [
+              "<S>チョ^ーマ!ン<F>"
+            ],
+            "Go": [
+              "<S>チョ^ーマ!ン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 13,
+            "text": "千兆万。",
+            "Original": [
+              "<S>^セ!ンチョー|0^マ!ン<F>"
+            ],
+            "Go": [
+              "<S>^セ!ンチョー|0^マ!ン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 14,
+            "text": "00兆兆。",
+            "Original": [
+              "<S>ゼ^ロゼロ!チョー|0チョ^ー<F>"
+            ],
+            "Go": [
+              "<S>ゼ^ロゼロ!チョー|0チョ^ー<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 15,
+            "text": "００兆万兆。",
+            "Original": [
+              "<S>ゼ^ロゼロ!チョー|0^マ!ンチョー<F>"
+            ],
+            "Go": [
+              "<S>ゼ^ロゼロ!チョー|0^マ!ンチョー<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 16,
+            "text": "08兆万。",
+            "Original": [
+              "<S>^ゼ!ロ|0^ハ!ッチョー|0^マ!ン<F>"
+            ],
+            "Go": [
+              "<S>^ゼ!ロ|0^ハ!ッチョー|0^マ!ン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 17,
+            "text": "00兆零万。",
+            "Original": [
+              "<S>ゼ^ロゼロ!チョー|0^レ!ー|0^マ!ン<F>"
+            ],
+            "Go": [
+              "<S>ゼ^ロゼロ!チョー|0^レ!ー|0^マ!ン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 18,
+            "text": "00兆万零。",
+            "Original": [
+              "<S>ゼ^ロゼロ!チョー|0^マ!ン|0^レ!ー<F>"
+            ],
+            "Go": [
+              "<S>ゼ^ロゼロ!チョー|0^マ!ン|0^レ!ー<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 19,
+            "text": "零兆万本。",
+            "Original": [
+              "<S>^レ!ー|0チョ^ー|0マ^ンボン<F>"
+            ],
+            "Go": [
+              "<S>^レ!ー|0チョ^ー|0マ^ンボン<F>"
+            ],
+            "equal": true
+          }
+        ],
+        "corpus_sha256": "c4b60aaf46b619a079fe2a4c562b38f7f6380b304b8675be9c52fcb9bf5260ac",
+        "count": 20,
+        "different": 0,
+        "native_report_sha256": "a6c3555ced525bf6d7b685fa05b7c310ff55d7a1f7e42050c328885b138e5dd2",
+        "source_reference": "private/zero-large-unit-chain-20-akane-original.json",
+        "source_reference_sha256": "b852296d5c2fce9061ec9734bb85d998552803bee4dbb4850f5aae5f701d256a",
+        "voice": "KotonohaAkane_ns_48"
+      }
+    },
+    {
+      "stem": "zero-large-unit-chain-20",
+      "voice": "aoi",
+      "sha256": "d4baba6429dbf864ace51ea6993ce542a328edade3baafd069c2e5399e3f9e13",
+      "report": {
+        "cases": [
+          {
+            "index": 0,
+            "text": "00兆万。",
+            "Original": [
+              "<S>ゼ^ロゼロ!チョー|0^マ!ン<F>"
+            ],
+            "Go": [
+              "<S>ゼ^ロゼロ!チョー|0^マ!ン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 1,
+            "text": "零兆万。",
+            "Original": [
+              "<S>^レ!ー|0チョ^ー|0^マ!ン<F>"
+            ],
+            "Go": [
+              "<S>^レ!ー|0チョ^ー|0^マ!ン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 2,
+            "text": "00億万。",
+            "Original": [
+              "<S>ゼ^ロゼロ!オク|0^マ!ン<F>"
+            ],
+            "Go": [
+              "<S>ゼ^ロゼロ!オク|0^マ!ン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 3,
+            "text": "00万兆。",
+            "Original": [
+              "<S>ゼ^ロゼロマ!ン|0チョ^ー<F>"
+            ],
+            "Go": [
+              "<S>ゼ^ロゼロマ!ン|0チョ^ー<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 4,
+            "text": "000兆万。",
+            "Original": [
+              "<S>ゼ^ロゼ!ロ|0ゼ^ロ!チョー|0^マ!ン<F>"
+            ],
+            "Go": [
+              "<S>ゼ^ロゼ!ロ|0ゼ^ロ!チョー|0^マ!ン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 5,
+            "text": "01兆万。",
+            "Original": [
+              "<S>^ゼ!ロ|0^イ!ッチョー|0^マ!ン<F>"
+            ],
+            "Go": [
+              "<S>^ゼ!ロ|0^イ!ッチョー|0^マ!ン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 6,
+            "text": "09兆万。",
+            "Original": [
+              "<S>ゼ^ロキュ!ーチョー|0^マ!ン<F>"
+            ],
+            "Go": [
+              "<S>ゼ^ロキュ!ーチョー|0^マ!ン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 7,
+            "text": "00兆万本。",
+            "Original": [
+              "<S>ゼ^ロゼロ!チョー|0マ^ンボン<F>"
+            ],
+            "Go": [
+              "<S>ゼ^ロゼロ!チョー|0マ^ンボン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 8,
+            "text": "00兆万秒。",
+            "Original": [
+              "<S>ゼ^ロゼロ!チョー|0マ^ンビョー<F>"
+            ],
+            "Go": [
+              "<S>ゼ^ロゼロ!チョー|0マ^ンビョー<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 9,
+            "text": "00兆万1。",
+            "Original": [
+              "<S>ゼ^ロゼロ!チョー|0^マ!ン|0イ^チ<F>"
+            ],
+            "Go": [
+              "<S>ゼ^ロゼロ!チョー|0^マ!ン|0イ^チ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 10,
+            "text": "〇〇兆万。",
+            "Original": [
+              "<S>ゼ^ロゼロ!チョー|0^マ!ン<F>"
+            ],
+            "Go": [
+              "<S>ゼ^ロゼロ!チョー|0^マ!ン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 11,
+            "text": "零兆億万。",
+            "Original": [
+              "<S>^レ!ー|0チョ^ー|0オ^クマ!ン<F>"
+            ],
+            "Go": [
+              "<S>^レ!ー|0チョ^ー|0オ^クマ!ン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 12,
+            "text": "兆万。",
+            "Original": [
+              "<S>チョ^ーマ!ン<F>"
+            ],
+            "Go": [
+              "<S>チョ^ーマ!ン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 13,
+            "text": "千兆万。",
+            "Original": [
+              "<S>^セ!ンチョー|0^マ!ン<F>"
+            ],
+            "Go": [
+              "<S>^セ!ンチョー|0^マ!ン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 14,
+            "text": "00兆兆。",
+            "Original": [
+              "<S>ゼ^ロゼロ!チョー|0チョ^ー<F>"
+            ],
+            "Go": [
+              "<S>ゼ^ロゼロ!チョー|0チョ^ー<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 15,
+            "text": "００兆万兆。",
+            "Original": [
+              "<S>ゼ^ロゼロ!チョー|0^マ!ンチョー<F>"
+            ],
+            "Go": [
+              "<S>ゼ^ロゼロ!チョー|0^マ!ンチョー<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 16,
+            "text": "08兆万。",
+            "Original": [
+              "<S>^ゼ!ロ|0^ハ!ッチョー|0^マ!ン<F>"
+            ],
+            "Go": [
+              "<S>^ゼ!ロ|0^ハ!ッチョー|0^マ!ン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 17,
+            "text": "00兆零万。",
+            "Original": [
+              "<S>ゼ^ロゼロ!チョー|0^レ!ー|0^マ!ン<F>"
+            ],
+            "Go": [
+              "<S>ゼ^ロゼロ!チョー|0^レ!ー|0^マ!ン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 18,
+            "text": "00兆万零。",
+            "Original": [
+              "<S>ゼ^ロゼロ!チョー|0^マ!ン|0^レ!ー<F>"
+            ],
+            "Go": [
+              "<S>ゼ^ロゼロ!チョー|0^マ!ン|0^レ!ー<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 19,
+            "text": "零兆万本。",
+            "Original": [
+              "<S>^レ!ー|0チョ^ー|0マ^ンボン<F>"
+            ],
+            "Go": [
+              "<S>^レ!ー|0チョ^ー|0マ^ンボン<F>"
+            ],
+            "equal": true
+          }
+        ],
+        "corpus_sha256": "c4b60aaf46b619a079fe2a4c562b38f7f6380b304b8675be9c52fcb9bf5260ac",
+        "count": 20,
+        "different": 0,
+        "native_report_sha256": "28a94e02101f5240e05c6ba87e6d66e82e33d91d97939a42124d39e5a37aca14",
+        "source_reference": "private/zero-large-unit-chain-20-aoi-original.json",
+        "source_reference_sha256": "8f13489c4d9bbb12a1e6e8bab80cfcea41b9d1bcea6659be91eaf21116421fb9",
+        "voice": "KotonohaAoi_ns_48"
+      }
+    },
+    {
+      "stem": "zero-large-unit-chain-boundary-8",
+      "voice": "akane",
+      "sha256": "f5268a1417e2679adc6806069151a329750ba8eb88c5dfef88b7d44b925c0c5e",
+      "report": {
+        "cases": [
+          {
+            "index": 0,
+            "text": "0000兆万。",
+            "Original": [
+              "<S>ゼ^ロゼ!ロ|0ゼ^ロゼロ!チョー|0^マ!ン<F>"
+            ],
+            "Go": [
+              "<S>ゼ^ロゼ!ロ|0ゼ^ロゼロ!チョー|0^マ!ン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 1,
+            "text": "零億兆京。",
+            "Original": [
+              "<S>^レ!ー|0オク|0^チョ!ーケイ<F>"
+            ],
+            "Go": [
+              "<S>^レ!ー|0オク|0^チョ!ーケイ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 2,
+            "text": "一零兆万。",
+            "Original": [
+              "<S>イ^チレ!ー|0チョー|0^マ!ン<F>"
+            ],
+            "Go": [
+              "<S>イ^チレ!ー|0チョー|0^マ!ン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 3,
+            "text": "00兆万1本。",
+            "Original": [
+              "<S>ゼ^ロゼロ!チョー|0^マ!ン|0^イ!ッポン<F>"
+            ],
+            "Go": [
+              "<S>ゼ^ロゼロ!チョー|0^マ!ン|0^イ!ッポン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 4,
+            "text": "01兆万本。",
+            "Original": [
+              "<S>^ゼ!ロ|0^イ!ッチョー|0マ^ンボン<F>"
+            ],
+            "Go": [
+              "<S>^ゼ!ロ|0^イ!ッチョー|0マ^ンボン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 5,
+            "text": "09兆万本。",
+            "Original": [
+              "<S>ゼ^ロキュ!ーチョー|0マ^ンボン<F>"
+            ],
+            "Go": [
+              "<S>ゼ^ロキュ!ーチョー|0マ^ンボン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 6,
+            "text": "〇0兆万。",
+            "Original": [
+              "<S>^ゼ!ロ|0ゼ^ロ!チョー|0^マ!ン<F>"
+            ],
+            "Go": [
+              "<S>^ゼ!ロ|0ゼ^ロ!チョー|0^マ!ン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 7,
+            "text": "00兆京億万。",
+            "Original": [
+              "<S>ゼ^ロゼロ!チョー|0ケ^イ!オク|0^マ!ン<F>"
+            ],
+            "Go": [
+              "<S>ゼ^ロゼロ!チョー|0ケ^イ!オク|0^マ!ン<F>"
+            ],
+            "equal": true
+          }
+        ],
+        "corpus_sha256": "8d5a9fc52d55936b3b72c160adadee35bc51752e8a5d840bd5f5f29d955ba9e9",
+        "count": 8,
+        "different": 0,
+        "native_report_sha256": "433f59082788657e9a43541c8d8e47675cd4dbd2ec2b2ea3d3fdf2fa166fdbdb",
+        "source_reference": "private/zero-large-unit-chain-boundary-8-akane-original.json",
+        "source_reference_sha256": "c18792cce673e62c5389ad6d51718d87f67f7d98262a011470a59e53fdf1646e",
+        "voice": "KotonohaAkane_ns_48"
+      }
+    },
+    {
+      "stem": "zero-large-unit-chain-boundary-8",
+      "voice": "aoi",
+      "sha256": "1b5cf9a36a708f180959ca6188c9a98367d5018bd3f2eaeab72329428dbb754b",
+      "report": {
+        "cases": [
+          {
+            "index": 0,
+            "text": "0000兆万。",
+            "Original": [
+              "<S>ゼ^ロゼ!ロ|0ゼ^ロゼロ!チョー|0^マ!ン<F>"
+            ],
+            "Go": [
+              "<S>ゼ^ロゼ!ロ|0ゼ^ロゼロ!チョー|0^マ!ン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 1,
+            "text": "零億兆京。",
+            "Original": [
+              "<S>^レ!ー|0オ^ク|0^チョ!ーケイ<F>"
+            ],
+            "Go": [
+              "<S>^レ!ー|0オ^ク|0^チョ!ーケイ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 2,
+            "text": "一零兆万。",
+            "Original": [
+              "<S>イ^チレ!ー|0チョ^ー|0^マ!ン<F>"
+            ],
+            "Go": [
+              "<S>イ^チレ!ー|0チョ^ー|0^マ!ン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 3,
+            "text": "00兆万1本。",
+            "Original": [
+              "<S>ゼ^ロゼロ!チョー|0^マ!ン|0^イ!ッポン<F>"
+            ],
+            "Go": [
+              "<S>ゼ^ロゼロ!チョー|0^マ!ン|0^イ!ッポン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 4,
+            "text": "01兆万本。",
+            "Original": [
+              "<S>^ゼ!ロ|0^イ!ッチョー|0マ^ンボン<F>"
+            ],
+            "Go": [
+              "<S>^ゼ!ロ|0^イ!ッチョー|0マ^ンボン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 5,
+            "text": "09兆万本。",
+            "Original": [
+              "<S>ゼ^ロキュ!ーチョー|0マ^ンボン<F>"
+            ],
+            "Go": [
+              "<S>ゼ^ロキュ!ーチョー|0マ^ンボン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 6,
+            "text": "〇0兆万。",
+            "Original": [
+              "<S>^ゼ!ロ|0ゼ^ロ!チョー|0^マ!ン<F>"
+            ],
+            "Go": [
+              "<S>^ゼ!ロ|0ゼ^ロ!チョー|0^マ!ン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 7,
+            "text": "00兆京億万。",
+            "Original": [
+              "<S>ゼ^ロゼロ!チョー|0ケ^イ!オク|0^マ!ン<F>"
+            ],
+            "Go": [
+              "<S>ゼ^ロゼロ!チョー|0ケ^イ!オク|0^マ!ン<F>"
+            ],
+            "equal": true
+          }
+        ],
+        "corpus_sha256": "8d5a9fc52d55936b3b72c160adadee35bc51752e8a5d840bd5f5f29d955ba9e9",
+        "count": 8,
+        "different": 0,
+        "native_report_sha256": "e9fd3ddbb912f0988dc6942ac25cc9073414d5d2b249fd2f73be500a5ed10927",
+        "source_reference": "private/zero-large-unit-chain-boundary-8-aoi-original.json",
+        "source_reference_sha256": "9f08b274ef3c9b9f4988d5aca15859acd5be7a5281fb486a53b3581855f4f2e1",
+        "voice": "KotonohaAoi_ns_48"
+      }
+    },
+    {
+      "stem": "large-unit-chain-12",
+      "voice": "akane",
+      "sha256": "f1b3088e64e3c5d0aa96ce34911c4d1949c0726e5da2d0de22e38f6036a82a49",
+      "report": {
+        "cases": [
+          {
+            "index": 0,
+            "text": "2兆万。",
+            "Original": [
+              "<S>ニ^チョーマ!ン<F>"
+            ],
+            "Go": [
+              "<S>ニ^チョーマ!ン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 1,
+            "text": "2兆万1。",
+            "Original": [
+              "<S>ニ^チョーマ!ン|0イ^チ<F>"
+            ],
+            "Go": [
+              "<S>ニ^チョーマ!ン|0イ^チ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 2,
+            "text": "二兆万一。",
+            "Original": [
+              "<S>ニ^チョーマ!ン|0イ^チ<F>"
+            ],
+            "Go": [
+              "<S>ニ^チョーマ!ン|0イ^チ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 3,
+            "text": "2兆万1円。",
+            "Original": [
+              "<S>ニ^チョーマ!ン|0イ^チ!エン<F>"
+            ],
+            "Go": [
+              "<S>ニ^チョーマ!ン|0イ^チ!エン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 4,
+            "text": "2兆万1円．5。",
+            "Original": [
+              "<S>ニ^チョーマ!ン|0イ^チ!エン$2_2^ゴ<F>"
+            ],
+            "Go": [
+              "<S>ニ^チョーマ!ン|0イ^チ!エン$2_2^ゴ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 5,
+            "text": "8兆。",
+            "Original": [
+              "<S>^ハ!ッチョー<F>"
+            ],
+            "Go": [
+              "<S>^ハ!ッチョー<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 6,
+            "text": "8兆1。",
+            "Original": [
+              "<S>^ハ!ッチョー|0イ^チ<F>"
+            ],
+            "Go": [
+              "<S>^ハ!ッチョー|0イ^チ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 7,
+            "text": "8兆1時。",
+            "Original": [
+              "<S>^ハ!ッチョー|0イ^チ!ジ<F>"
+            ],
+            "Go": [
+              "<S>^ハ!ッチョー|0イ^チ!ジ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 8,
+            "text": "八兆一時。",
+            "Original": [
+              "<S>^ハ!ッチョー|0イ^チ!ジ<F>"
+            ],
+            "Go": [
+              "<S>^ハ!ッチョー|0イ^チ!ジ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 9,
+            "text": "千二兆千秒8兆1時。",
+            "Original": [
+              "<S>^セ!ン|0^ニ!チョー|0^セ!ンビョー|0^ハ!ッチョー|0イ^チ!ジ<F>"
+            ],
+            "Go": [
+              "<S>^セ!ン|0^ニ!チョー|0^セ!ンビョー|0^ハ!ッチョー|0イ^チ!ジ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 10,
+            "text": "9−千二兆千秒8兆1時。",
+            "Original": [
+              "<S>^キュ!ー$1_1^セ!ン|0^ニ!チョー|0^セ!ンビョー|0^ハ!ッチョー|0イ^チ!ジ<F>"
+            ],
+            "Go": [
+              "<S>^キュ!ー$1_1^セ!ン|0^ニ!チョー|0^セ!ンビョー|0^ハ!ッチョー|0イ^チ!ジ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 11,
+            "text": "２兆万1円．５は、Ｃ個．は9。",
+            "Original": [
+              "<S>ニ^チョーマ!ン|0イ^チ!エン$2_2^ゴ!ワ$2_2^シ!ーコ$2_2ワ|0^キュ!ー<F>"
+            ],
+            "Go": [
+              "<S>ニ^チョーマ!ン|0イ^チ!エン$2_2^ゴ!ワ$2_2^シ!ーコ$2_2ワ|0^キュ!ー<F>"
+            ],
+            "equal": true
+          }
+        ],
+        "corpus_sha256": "c64d71186d91589ce4d7b4489f6cc3741358be995e83d9b7bffb79a372466779",
+        "count": 12,
+        "different": 0,
+        "native_report_sha256": "23b248f304a1f5ec76bbe2972fb1d55a5961f257bea4303a1d6040dce5911773",
+        "source_reference": "private/large-unit-chain-12-akane-original.json",
+        "source_reference_sha256": "90af804f62c0f603f75fb508449e6a26ffa7b47bd3e123a271b36985ebf22500",
+        "voice": "KotonohaAkane_ns_48"
+      }
+    },
+    {
+      "stem": "large-unit-chain-12",
+      "voice": "aoi",
+      "sha256": "e908a1a66fea2daed168cef3275a5076ce552a5f0f30d97c493bbd9657e9667e",
+      "report": {
+        "cases": [
+          {
+            "index": 0,
+            "text": "2兆万。",
+            "Original": [
+              "<S>ニ^チョーマ!ン<F>"
+            ],
+            "Go": [
+              "<S>ニ^チョーマ!ン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 1,
+            "text": "2兆万1。",
+            "Original": [
+              "<S>ニ^チョーマ!ン|0イ^チ<F>"
+            ],
+            "Go": [
+              "<S>ニ^チョーマ!ン|0イ^チ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 2,
+            "text": "二兆万一。",
+            "Original": [
+              "<S>ニ^チョーマ!ン|0イ^チ<F>"
+            ],
+            "Go": [
+              "<S>ニ^チョーマ!ン|0イ^チ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 3,
+            "text": "2兆万1円。",
+            "Original": [
+              "<S>ニ^チョーマ!ン|0イ^チ!エン<F>"
+            ],
+            "Go": [
+              "<S>ニ^チョーマ!ン|0イ^チ!エン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 4,
+            "text": "2兆万1円．5。",
+            "Original": [
+              "<S>ニ^チョーマ!ン|0イ^チ!エン$2_2ゴ<F>"
+            ],
+            "Go": [
+              "<S>ニ^チョーマ!ン|0イ^チ!エン$2_2ゴ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 5,
+            "text": "8兆。",
+            "Original": [
+              "<S>^ハ!ッチョー<F>"
+            ],
+            "Go": [
+              "<S>^ハ!ッチョー<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 6,
+            "text": "8兆1。",
+            "Original": [
+              "<S>^ハ!ッチョー|0イ^チ<F>"
+            ],
+            "Go": [
+              "<S>^ハ!ッチョー|0イ^チ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 7,
+            "text": "8兆1時。",
+            "Original": [
+              "<S>^ハ!ッチョー|0イ^チ!ジ<F>"
+            ],
+            "Go": [
+              "<S>^ハ!ッチョー|0イ^チ!ジ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 8,
+            "text": "八兆一時。",
+            "Original": [
+              "<S>^ハ!ッチョー|0イ^チ!ジ<F>"
+            ],
+            "Go": [
+              "<S>^ハ!ッチョー|0イ^チ!ジ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 9,
+            "text": "千二兆千秒8兆1時。",
+            "Original": [
+              "<S>^セ!ン|0^ニ!チョー|0^セ!ンビョー|0^ハ!ッチョー|0イ^チ!ジ<F>"
+            ],
+            "Go": [
+              "<S>^セ!ン|0^ニ!チョー|0^セ!ンビョー|0^ハ!ッチョー|0イ^チ!ジ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 10,
+            "text": "9−千二兆千秒8兆1時。",
+            "Original": [
+              "<S>^キュ!ー$1_1^セ!ン|0^ニ!チョー|0^セ!ンビョー|0^ハ!ッチョー|0イ^チ!ジ<F>"
+            ],
+            "Go": [
+              "<S>^キュ!ー$1_1^セ!ン|0^ニ!チョー|0^セ!ンビョー|0^ハ!ッチョー|0イ^チ!ジ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 11,
+            "text": "２兆万1円．５は、Ｃ個．は9。",
+            "Original": [
+              "<S>ニ^チョーマ!ン|0イ^チ!エン$2_2^ゴ!ワ$2_2^シ!ーコ|0ワ|0^キュ!ー<F>"
+            ],
+            "Go": [
+              "<S>ニ^チョーマ!ン|0イ^チ!エン$2_2^ゴ!ワ$2_2^シ!ーコ|0ワ|0^キュ!ー<F>"
+            ],
+            "equal": true
+          }
+        ],
+        "corpus_sha256": "c64d71186d91589ce4d7b4489f6cc3741358be995e83d9b7bffb79a372466779",
+        "count": 12,
+        "different": 0,
+        "native_report_sha256": "ab9a22c6a769ecbb977cee28de02232ee05908d73cab219e8aaf14580b53dbd1",
+        "source_reference": "private/large-unit-chain-12-aoi-original.json",
+        "source_reference_sha256": "64fa237ad387ac39a2ee2877731723b1a561d8ea89e3bb36b24f4b0a988fd370",
+        "voice": "KotonohaAoi_ns_48"
+      }
+    },
+    {
+      "stem": "large-unit-chain-boundary-20",
+      "voice": "akane",
+      "sha256": "df50812842a0a2df4e67d0dc3c902a4a15f91ca0ab21f755891c8c3dfaea8ce9",
+      "report": {
+        "cases": [
+          {
+            "index": 0,
+            "text": "2兆万本。",
+            "Original": [
+              "<S>ニ^チョーマンボン<F>"
+            ],
+            "Go": [
+              "<S>ニ^チョーマンボン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 1,
+            "text": "2兆万秒。",
+            "Original": [
+              "<S>ニ^チョーマンビョー<F>"
+            ],
+            "Go": [
+              "<S>ニ^チョーマンビョー<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 2,
+            "text": "2万兆。",
+            "Original": [
+              "<S>ニ^マ!ン|0チョ^ー<F>"
+            ],
+            "Go": [
+              "<S>ニ^マ!ン|0チョ^ー<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 3,
+            "text": "2億万。",
+            "Original": [
+              "<S>^ニ!オク|0^マ!ン<F>"
+            ],
+            "Go": [
+              "<S>^ニ!オク|0^マ!ン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 4,
+            "text": "2兆億万。",
+            "Original": [
+              "<S>ニ^チョ!ーオク|0^マ!ン<F>"
+            ],
+            "Go": [
+              "<S>ニ^チョ!ーオク|0^マ!ン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 5,
+            "text": "8兆万。",
+            "Original": [
+              "<S>^ハ!ッチョー|0^マ!ン<F>"
+            ],
+            "Go": [
+              "<S>^ハ!ッチョー|0^マ!ン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 6,
+            "text": "1兆万。",
+            "Original": [
+              "<S>^イ!ッチョー|0^マ!ン<F>"
+            ],
+            "Go": [
+              "<S>^イ!ッチョー|0^マ!ン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 7,
+            "text": "十兆万。",
+            "Original": [
+              "<S>^ジュ!ッチョー|0^マ!ン<F>"
+            ],
+            "Go": [
+              "<S>^ジュ!ッチョー|0^マ!ン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 8,
+            "text": "兆万。",
+            "Original": [
+              "<S>チョ^ーマ!ン<F>"
+            ],
+            "Go": [
+              "<S>チョ^ーマ!ン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 9,
+            "text": "万兆。",
+            "Original": [
+              "<S>^マ!ンチョー<F>"
+            ],
+            "Go": [
+              "<S>^マ!ンチョー<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 10,
+            "text": "2兆兆。",
+            "Original": [
+              "<S>ニ^チョ!ーチョー<F>"
+            ],
+            "Go": [
+              "<S>ニ^チョ!ーチョー<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 11,
+            "text": "2京兆万。",
+            "Original": [
+              "<S>^ニ|0^ケ!ーチョー|0^マ!ン<F>"
+            ],
+            "Go": [
+              "<S>^ニ|0^ケ!ーチョー|0^マ!ン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 12,
+            "text": "0兆万。",
+            "Original": [
+              "<S>ゼ^ロ!チョー|0^マ!ン<F>"
+            ],
+            "Go": [
+              "<S>ゼ^ロ!チョー|0^マ!ン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 13,
+            "text": "00兆万。",
+            "Original": [
+              "<S>ゼ^ロゼロ!チョー|0^マ!ン<F>"
+            ],
+            "Go": [
+              "<S>ゼ^ロゼロ!チョー|0^マ!ン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 14,
+            "text": "零兆万。",
+            "Original": [
+              "<S>^レ!ー|0チョー|0^マ!ン<F>"
+            ],
+            "Go": [
+              "<S>^レ!ー|0チョー|0^マ!ン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 15,
+            "text": "2兆万零。",
+            "Original": [
+              "<S>ニ^チョーマ!ン|0^レ!ー<F>"
+            ],
+            "Go": [
+              "<S>ニ^チョーマ!ン|0^レ!ー<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 16,
+            "text": "2兆万1本。",
+            "Original": [
+              "<S>ニ^チョーマ!ン|0^イ!ッポン<F>"
+            ],
+            "Go": [
+              "<S>ニ^チョーマ!ン|0^イ!ッポン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 17,
+            "text": "2兆万1秒。",
+            "Original": [
+              "<S>ニ^チョーマ!ン|0イ^チ!ビョー<F>"
+            ],
+            "Go": [
+              "<S>ニ^チョーマ!ン|0イ^チ!ビョー<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 18,
+            "text": "2万億1。",
+            "Original": [
+              "<S>ニ^マ!ン|0オ^ク|0イ^チ<F>"
+            ],
+            "Go": [
+              "<S>ニ^マ!ン|0オ^ク|0イ^チ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 19,
+            "text": "2兆万兆。",
+            "Original": [
+              "<S>ニ^チョーマ!ン|0チョ^ー<F>"
+            ],
+            "Go": [
+              "<S>ニ^チョーマ!ン|0チョ^ー<F>"
+            ],
+            "equal": true
+          }
+        ],
+        "corpus_sha256": "6c7e9c0d352f6a69d7d0ebd24b55bd7f455534ca7603bbf7a0fcf7813e7eba52",
+        "count": 20,
+        "different": 0,
+        "native_report_sha256": "e0db7fe813d4f0fc06f8810cd5c933d654b887c674625ba1a280a39f81752ef8",
+        "source_reference": "private/large-unit-chain-boundary-20-akane-original.json",
+        "source_reference_sha256": "a0ee70ca675b1905afab8e5569ba9303730a7a1567d0f28bfb78b013ac927366",
+        "voice": "KotonohaAkane_ns_48"
+      }
+    },
+    {
+      "stem": "large-unit-chain-boundary-20",
+      "voice": "aoi",
+      "sha256": "002ca65a930a5d6f440209bb53d313c3c3cef872d87459ccf21fe031d2a79041",
+      "report": {
+        "cases": [
+          {
+            "index": 0,
+            "text": "2兆万本。",
+            "Original": [
+              "<S>ニ^チョーマンボン<F>"
+            ],
+            "Go": [
+              "<S>ニ^チョーマンボン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 1,
+            "text": "2兆万秒。",
+            "Original": [
+              "<S>ニ^チョーマンビョー<F>"
+            ],
+            "Go": [
+              "<S>ニ^チョーマンビョー<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 2,
+            "text": "2万兆。",
+            "Original": [
+              "<S>ニ^マ!ン|0チョ^ー<F>"
+            ],
+            "Go": [
+              "<S>ニ^マ!ン|0チョ^ー<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 3,
+            "text": "2億万。",
+            "Original": [
+              "<S>^ニ!オク|0^マ!ン<F>"
+            ],
+            "Go": [
+              "<S>^ニ!オク|0^マ!ン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 4,
+            "text": "2兆億万。",
+            "Original": [
+              "<S>ニ^チョ!ーオク|0^マ!ン<F>"
+            ],
+            "Go": [
+              "<S>ニ^チョ!ーオク|0^マ!ン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 5,
+            "text": "8兆万。",
+            "Original": [
+              "<S>^ハ!ッチョー|0^マ!ン<F>"
+            ],
+            "Go": [
+              "<S>^ハ!ッチョー|0^マ!ン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 6,
+            "text": "1兆万。",
+            "Original": [
+              "<S>^イ!ッチョー|0^マ!ン<F>"
+            ],
+            "Go": [
+              "<S>^イ!ッチョー|0^マ!ン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 7,
+            "text": "十兆万。",
+            "Original": [
+              "<S>^ジュ!ッチョー|0^マ!ン<F>"
+            ],
+            "Go": [
+              "<S>^ジュ!ッチョー|0^マ!ン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 8,
+            "text": "兆万。",
+            "Original": [
+              "<S>チョ^ーマ!ン<F>"
+            ],
+            "Go": [
+              "<S>チョ^ーマ!ン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 9,
+            "text": "万兆。",
+            "Original": [
+              "<S>^マ!ンチョー<F>"
+            ],
+            "Go": [
+              "<S>^マ!ンチョー<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 10,
+            "text": "2兆兆。",
+            "Original": [
+              "<S>ニ^チョ!ーチョー<F>"
+            ],
+            "Go": [
+              "<S>ニ^チョ!ーチョー<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 11,
+            "text": "2京兆万。",
+            "Original": [
+              "<S>ニ|0^ケ!ーチョー|0^マ!ン<F>"
+            ],
+            "Go": [
+              "<S>ニ|0^ケ!ーチョー|0^マ!ン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 12,
+            "text": "0兆万。",
+            "Original": [
+              "<S>ゼ^ロ!チョー|0^マ!ン<F>"
+            ],
+            "Go": [
+              "<S>ゼ^ロ!チョー|0^マ!ン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 13,
+            "text": "00兆万。",
+            "Original": [
+              "<S>ゼ^ロゼロ!チョー|0^マ!ン<F>"
+            ],
+            "Go": [
+              "<S>ゼ^ロゼロ!チョー|0^マ!ン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 14,
+            "text": "零兆万。",
+            "Original": [
+              "<S>^レ!ー|0チョ^ー|0^マ!ン<F>"
+            ],
+            "Go": [
+              "<S>^レ!ー|0チョ^ー|0^マ!ン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 15,
+            "text": "2兆万零。",
+            "Original": [
+              "<S>ニ^チョーマ!ン|0^レ!ー<F>"
+            ],
+            "Go": [
+              "<S>ニ^チョーマ!ン|0^レ!ー<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 16,
+            "text": "2兆万1本。",
+            "Original": [
+              "<S>ニ^チョーマ!ン|0^イ!ッポン<F>"
+            ],
+            "Go": [
+              "<S>ニ^チョーマ!ン|0^イ!ッポン<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 17,
+            "text": "2兆万1秒。",
+            "Original": [
+              "<S>ニ^チョーマ!ン|0イ^チ!ビョー<F>"
+            ],
+            "Go": [
+              "<S>ニ^チョーマ!ン|0イ^チ!ビョー<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 18,
+            "text": "2万億1。",
+            "Original": [
+              "<S>ニ^マ!ン|0オ^ク|0イ^チ<F>"
+            ],
+            "Go": [
+              "<S>ニ^マ!ン|0オ^ク|0イ^チ<F>"
+            ],
+            "equal": true
+          },
+          {
+            "index": 19,
+            "text": "2兆万兆。",
+            "Original": [
+              "<S>ニ^チョーマ!ン|0チョ^ー<F>"
+            ],
+            "Go": [
+              "<S>ニ^チョーマ!ン|0チョ^ー<F>"
+            ],
+            "equal": true
+          }
+        ],
+        "corpus_sha256": "6c7e9c0d352f6a69d7d0ebd24b55bd7f455534ca7603bbf7a0fcf7813e7eba52",
+        "count": 20,
+        "different": 0,
+        "native_report_sha256": "7e092713ad192065df97a03f3761a3ad0254ad1b26e2eadf4d0242dd233cbcf7",
+        "source_reference": "private/large-unit-chain-boundary-20-aoi-original.json",
+        "source_reference_sha256": "f043fb67e5c8e27ec26305a3e1485fd3241257db64af141580d9df2dbc56526b",
+        "voice": "KotonohaAoi_ns_48"
+      }
+    }
+  ]
+}

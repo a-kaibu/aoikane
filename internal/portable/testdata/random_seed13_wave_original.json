@@ -1,0 +1,71 @@
+{
+  "seed": 13,
+  "generator_version": 1,
+  "max_units": 24,
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "report_sha256": [
+    "13c5adb8ef437fe0778c7726f94ddf61038807dddf609f6dcd3a17193c32eced",
+    "14b7611345ac3b3db3883a8342bd3a1686ee54d0cbb56661d912675c5d313599"
+  ],
+  "original_threads": 6,
+  "avx512_convolutions": false,
+  "cases": [
+    {
+      "index": 0,
+      "text": "をゃあうたよふねぬたらねーへょ。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 300172,
+      "sha256": "4c529d75c282210859e3f0fde1da3d59021c381ffa142beb4fe0313744cb4a78"
+    },
+    {
+      "index": 1,
+      "text": "四。、（！九声六閉ｂ琴私。人上木Ａ！5「。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 797284,
+      "sha256": "4f130ce7fc8526f5a5ca056ded7ae29d73169ef5e03d4ef68930b3b8c67257d4"
+    },
+    {
+      "index": 2,
+      "text": "－！０ Ж－（？\n\t\tЖ0ΩΩ－、、０！ア。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 660466,
+      "sha256": "d04a1c581474f0c73da28385c44b16cf0e53669d5ced506736066ada4cb277cd"
+    },
+    {
+      "index": 3,
+      "text": "がはABC開ける今日で昨日生が魚青い。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 505648,
+      "sha256": "33b4a986e34c4771f6c729518b32b6d367b06ff0de023f3aea4b674b69c81407"
+    },
+    {
+      "index": 0,
+      "text": "をゃあうたよふねぬたらねーへょ。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 330018,
+      "sha256": "76b9e2b498eea962e1a07de6e9e999af86a204d04ecd941a3fb0b6ff88605299"
+    },
+    {
+      "index": 1,
+      "text": "四。、（！九声六閉ｂ琴私。人上木Ａ！5「。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 803748,
+      "sha256": "ce27f7e47afdec5dfd6e53d71a0461bfe0c524f9ce3b348ada372933657954d5"
+    },
+    {
+      "index": 2,
+      "text": "－！０ Ж－（？\n\t\tЖ0ΩΩ－、、０！ア。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 681874,
+      "sha256": "4a66d0364a20cfbb0bb4661a9fdaca2f883c9f8aeea828d75d782e19b9a3bc0c"
+    },
+    {
+      "index": 3,
+      "text": "がはABC開ける今日で昨日生が魚青い。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 550228,
+      "sha256": "40535568a536eb80b2f88c9010c3bd8af5bf249c4cbfe0bfeb4f1db5c8106254"
+    }
+  ]
+}

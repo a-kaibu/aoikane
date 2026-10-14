@@ -1,0 +1,48 @@
+{
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "report_sha256": [
+    "3fc3d9eb9ae9f2c317a43f4c8e8a3fa2fc7a35a7853f0ff0ed0a86ea2ebcfa93",
+    "1b53994d725139f1c57150983f9dd1f0e9c0f4a22d506013fddc2c29b30ed219"
+  ],
+  "original_threads": 6,
+  "avx512_convolutions": false,
+  "cases": [
+    {
+      "text": "日1四（6七ａ声。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 290398,
+      "sha256": "23908d15e92c366225197b4ba7155aee340c412015b44b417ec58275389d73fa"
+    },
+    {
+      "text": "1（2）3ａ。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 244242,
+      "sha256": "d54c964685a510f615045da251023d4f594f3bfa760a7dd6a800896339ec6caa"
+    },
+    {
+      "text": "電話01（23）4567ａ。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 449796,
+      "sha256": "a954eda2aa2a2ebcdfa13c30a07ba206216e4672df9c0645b7c6056c73d47ed4"
+    },
+    {
+      "text": "日1四（6七ａ声。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 290864,
+      "sha256": "fe25375d73108764bde8285eb9af3d846d67d1084a5f296abcd344ed80f19d7b"
+    },
+    {
+      "text": "1（2）3ａ。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 243404,
+      "sha256": "057ee6cf75e508c1b692dbd14f42110471f137d424588ee14e8bda1d91230247"
+    },
+    {
+      "text": "電話01（23）4567ａ。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 448670,
+      "sha256": "184aafc5e668be55216e681731b731f4ddfe5f435d11b98b0975473ec23d4400"
+    }
+  ]
+}

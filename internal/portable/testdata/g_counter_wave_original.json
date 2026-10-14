@@ -1,0 +1,84 @@
+{
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "original_threads": 6,
+  "avx512_convolutions": false,
+  "report_sha256": [
+    "7855da06a8ed4d32c786def059e0dfd74354e1a10c8e92125330b4bbac05717b",
+    "3c73d696a21729d22aa4392b38ff190c411ad52692fc4632507a6ef0427a88a7"
+  ],
+  "cases": [
+    {
+      "Text": "一回転。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 160762,
+      "SHA256": "5f189550341d64135b5c19fe651d6a1a3740a28ccf33450c868e000c74600cd0"
+    },
+    {
+      "Text": "六回転。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 164580,
+      "SHA256": "9abf919ed0142dd4c363d93fc7f15bb6fff9c9eaf5946743bd9f4ce38c716c51"
+    },
+    {
+      "Text": "八回転。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 164702,
+      "SHA256": "b6a7a8798c539f9d34892c596cc53cb935be4b90e4ec8e4c9e659a72dd26ba36"
+    },
+    {
+      "Text": "十回転。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 165750,
+      "SHA256": "df0f679feeee6cda7d409a8caf29c8f7818694add69c9ed098775a003c802632"
+    },
+    {
+      "Text": "百回転。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 168478,
+      "SHA256": "a503ea4592c233e843621047f9a2ada901ab972484fef9ebb42353d1d9bc3fd3"
+    },
+    {
+      "Text": "一−零八回転。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 239466,
+      "SHA256": "a809b55329fa96d3b6d8a63779516e0d8b7f393576b1286986f7c56c89883abc"
+    },
+    {
+      "Text": "一回転。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 160762,
+      "SHA256": "5f189550341d64135b5c19fe651d6a1a3740a28ccf33450c868e000c74600cd0"
+    },
+    {
+      "Text": "六回転。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 164580,
+      "SHA256": "9abf919ed0142dd4c363d93fc7f15bb6fff9c9eaf5946743bd9f4ce38c716c51"
+    },
+    {
+      "Text": "八回転。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 164702,
+      "SHA256": "b6a7a8798c539f9d34892c596cc53cb935be4b90e4ec8e4c9e659a72dd26ba36"
+    },
+    {
+      "Text": "十回転。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 165750,
+      "SHA256": "df0f679feeee6cda7d409a8caf29c8f7818694add69c9ed098775a003c802632"
+    },
+    {
+      "Text": "百回転。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 168478,
+      "SHA256": "a503ea4592c233e843621047f9a2ada901ab972484fef9ebb42353d1d9bc3fd3"
+    },
+    {
+      "Text": "一−零八回転。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 239466,
+      "SHA256": "a809b55329fa96d3b6d8a63779516e0d8b7f393576b1286986f7c56c89883abc"
+    }
+  ]
+}

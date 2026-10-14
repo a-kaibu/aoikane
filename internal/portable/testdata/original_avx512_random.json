@@ -1,0 +1,58 @@
+{
+  "source": "ordinary uninstrumented original; Actions 37895253763 seed-1",
+  "cpu": "AMD64 Family 25 Model 17 Stepping 1, AuthenticAMD",
+  "original_threads": 1,
+  "voice": "KotonohaAoi_ns_48",
+  "seed": 1,
+  "generator_version": 1,
+  "cases": [
+    {
+      "index": 0,
+      "text": "うんこぞ。",
+      "bytes": 143564,
+      "sha256": "1601540dddf2e707f7b2d1300d211e7ebab3017b13d15f2e691cc0adf16d0997"
+    },
+    {
+      "index": 1,
+      "text": "89。",
+      "bytes": 186452,
+      "sha256": "43c96c35c180dc5bb57c1aeac8d637633c0539c6dbf99c43c0da60f9be147810"
+    },
+    {
+      "index": 2,
+      "text": "−－。？é？。",
+      "bytes": 163244,
+      "sha256": "f729f75ec32c43fa077d25e8d5852627a5e5e9cce511f46404e8cb022f061e5c"
+    },
+    {
+      "index": 3,
+      "text": "行く読む学校ますますの。",
+      "bytes": 294374,
+      "sha256": "e5e76820846ca1b4951f413d2880bd8f0727b1ed7fd1e6a02e099a251f9ce7bb"
+    },
+    {
+      "index": 4,
+      "text": "ふぺきけ。",
+      "bytes": 150284,
+      "sha256": "7d83d3137da91d12472883b83efc45b51b1a31a17108e21a26109a0ee55a7021"
+    },
+    {
+      "index": 5,
+      "text": "声八一7。",
+      "bytes": 226772,
+      "sha256": "39a302e8f51a290d0d7d97310d4c6293d66d4754efa7d679de70d63e80574402"
+    },
+    {
+      "index": 6,
+      "text": "漢。",
+      "bytes": 110924,
+      "sha256": "5205a43b5629e2ff7d9945b8560efe089fca6a2c5b7be33162be6a4e421b29c4"
+    },
+    {
+      "index": 7,
+      "text": "がを。",
+      "bytes": 119564,
+      "sha256": "cd8ce7c3e82133f496d8881a7bf26b790bf3651b6a86598c5cde0734612d7a6b"
+    }
+  ]
+}

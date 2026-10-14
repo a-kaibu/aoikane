@@ -1,0 +1,288 @@
+{
+  "dll_sha256": "00ca5c937940a94d052dbe52ec5fb0909db11ffbfccfd6e65e19b468169ff5e5",
+  "model_sha256": "0341bdce841395eec505afab8d804038b681fe682cd1bb43894e63797bd4a142",
+  "trace_sha256": "9e1326451b7e4ff38ca38950401e002ad64c102ee309d3014345d3c45d0155b9",
+  "ordinary_wav_sha256": "6be20e8718dc8a1329426baa824b9dabef10315dddc2099a3ad11ffac6032d7d",
+  "cpu": "Intel64 Family 6 Model 207 Stepping 2, GenuineIntel",
+  "original_threads": 1,
+  "run": 14,
+  "source": "private/cpu-numeric-ci-37927408109/cpu-original-replica-3/trace",
+  "storage": "little endian float32 input, output-major weight, bias, output per case",
+  "reference_sha256": "fd1c68dc173c3470ace29b7483106e0783072a58cd611581fb9f3528f5aa75d4",
+  "output_sha256": "d62f5ac408ec4c92a32a924a2fc0e8c8b83ab36006898c29d6469bee25c8c2f5",
+  "values": 961440,
+  "cases": [
+    {
+      "operation": 26,
+      "length": 11,
+      "in": 64,
+      "out": 128,
+      "kernel": 9,
+      "padding": 4
+    },
+    {
+      "operation": 28,
+      "length": 11,
+      "in": 64,
+      "out": 128,
+      "kernel": 17,
+      "padding": 8
+    },
+    {
+      "operation": 30,
+      "length": 11,
+      "in": 64,
+      "out": 128,
+      "kernel": 33,
+      "padding": 16
+    },
+    {
+      "operation": 32,
+      "length": 199,
+      "in": 64,
+      "out": 16,
+      "kernel": 21,
+      "padding": 10
+    },
+    {
+      "operation": 34,
+      "length": 199,
+      "in": 64,
+      "out": 16,
+      "kernel": 31,
+      "padding": 15
+    },
+    {
+      "operation": 36,
+      "length": 199,
+      "in": 64,
+      "out": 16,
+      "kernel": 41,
+      "padding": 20
+    },
+    {
+      "operation": 50,
+      "length": 11,
+      "in": 64,
+      "out": 128,
+      "kernel": 9,
+      "padding": 4
+    },
+    {
+      "operation": 52,
+      "length": 11,
+      "in": 64,
+      "out": 128,
+      "kernel": 17,
+      "padding": 8
+    },
+    {
+      "operation": 54,
+      "length": 11,
+      "in": 64,
+      "out": 128,
+      "kernel": 33,
+      "padding": 16
+    },
+    {
+      "operation": 58,
+      "length": 199,
+      "in": 64,
+      "out": 16,
+      "kernel": 11,
+      "padding": 5
+    },
+    {
+      "operation": 60,
+      "length": 199,
+      "in": 64,
+      "out": 16,
+      "kernel": 15,
+      "padding": 7
+    },
+    {
+      "operation": 62,
+      "length": 199,
+      "in": 64,
+      "out": 16,
+      "kernel": 21,
+      "padding": 10
+    },
+    {
+      "operation": 70,
+      "length": 11,
+      "in": 256,
+      "out": 512,
+      "kernel": 5,
+      "padding": 2
+    },
+    {
+      "operation": 71,
+      "length": 11,
+      "in": 512,
+      "out": 256,
+      "kernel": 1,
+      "padding": 0
+    },
+    {
+      "operation": 73,
+      "length": 199,
+      "in": 512,
+      "out": 256,
+      "kernel": 1,
+      "padding": 0
+    },
+    {
+      "operation": 75,
+      "length": 199,
+      "in": 512,
+      "out": 256,
+      "kernel": 1,
+      "padding": 0
+    },
+    {
+      "operation": 77,
+      "length": 199,
+      "in": 512,
+      "out": 256,
+      "kernel": 1,
+      "padding": 0
+    },
+    {
+      "operation": 79,
+      "length": 199,
+      "in": 512,
+      "out": 256,
+      "kernel": 1,
+      "padding": 0
+    },
+    {
+      "operation": 81,
+      "length": 199,
+      "in": 512,
+      "out": 256,
+      "kernel": 1,
+      "padding": 0
+    },
+    {
+      "operation": 83,
+      "length": 199,
+      "in": 512,
+      "out": 256,
+      "kernel": 1,
+      "padding": 0
+    },
+    {
+      "operation": 85,
+      "length": 199,
+      "in": 512,
+      "out": 256,
+      "kernel": 1,
+      "padding": 0
+    },
+    {
+      "operation": 87,
+      "length": 199,
+      "in": 512,
+      "out": 256,
+      "kernel": 1,
+      "padding": 0
+    },
+    {
+      "operation": 89,
+      "length": 199,
+      "in": 512,
+      "out": 256,
+      "kernel": 1,
+      "padding": 0
+    },
+    {
+      "operation": 97,
+      "length": 11,
+      "in": 256,
+      "out": 512,
+      "kernel": 5,
+      "padding": 2
+    },
+    {
+      "operation": 98,
+      "length": 11,
+      "in": 512,
+      "out": 256,
+      "kernel": 1,
+      "padding": 0
+    },
+    {
+      "operation": 101,
+      "length": 199,
+      "in": 512,
+      "out": 256,
+      "kernel": 1,
+      "padding": 0
+    },
+    {
+      "operation": 103,
+      "length": 199,
+      "in": 512,
+      "out": 256,
+      "kernel": 1,
+      "padding": 0
+    },
+    {
+      "operation": 105,
+      "length": 199,
+      "in": 512,
+      "out": 256,
+      "kernel": 1,
+      "padding": 0
+    },
+    {
+      "operation": 107,
+      "length": 199,
+      "in": 512,
+      "out": 256,
+      "kernel": 1,
+      "padding": 0
+    },
+    {
+      "operation": 109,
+      "length": 199,
+      "in": 512,
+      "out": 256,
+      "kernel": 1,
+      "padding": 0
+    },
+    {
+      "operation": 111,
+      "length": 199,
+      "in": 512,
+      "out": 256,
+      "kernel": 1,
+      "padding": 0
+    },
+    {
+      "operation": 113,
+      "length": 199,
+      "in": 512,
+      "out": 256,
+      "kernel": 1,
+      "padding": 0
+    },
+    {
+      "operation": 115,
+      "length": 199,
+      "in": 512,
+      "out": 256,
+      "kernel": 1,
+      "padding": 0
+    },
+    {
+      "operation": 117,
+      "length": 199,
+      "in": 512,
+      "out": 256,
+      "kernel": 1,
+      "padding": 0
+    }
+  ]
+}

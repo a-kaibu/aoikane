@@ -1,0 +1,459 @@
+{
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "capture_sha256": [
+    "e5c83518e1b753f69bdc05075db1995f93b4c851d15329279af608b9cc41534b",
+    "c0e46cc3ee3e1a169e5ab251b58e5821388760a6195236663173d9cfe11422d7"
+  ],
+  "cases": [
+    {
+      "text": " （あＡ－！0ЖＡ〜）−－－\n。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^アエ!ー<A>",
+        "<S>^ゼ!ロ|0^ジェ!ー|0^エ!ー<F>"
+      ]
+    },
+    {
+      "text": "0ЖＡ～）－－－。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^ゼ!ロ|0^ジェ!ー|0^エ!ー<F>"
+      ]
+    },
+    {
+      "text": "0ЖＡ～）－－。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^ゼ!ロ|0^ジェ!ー|0^エ!ー<F>"
+      ]
+    },
+    {
+      "text": "0ЖＡ～）－。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^ゼ!ロ|0^ジェ!ー|0^エ!ー<F>"
+      ]
+    },
+    {
+      "text": "0ЖＡ～）－－。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^ゼ!ロ|0^ジェ!ー|0^エ!ー<F>"
+      ]
+    },
+    {
+      "text": "0ЖＡ～）－－－。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^ゼ!ロ|0^ジェ!ー|0^エ!ー<F>"
+      ]
+    },
+    {
+      "text": "0ЖＡ～）－－－－。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^ゼ!ロ|0^ジェ!ー|0^エ!ー<F>"
+      ]
+    },
+    {
+      "text": "0ЖＡ～）－－－－－。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^ゼ!ロ|0^ジェ!ー|0^エ!ー<F>"
+      ]
+    },
+    {
+      "text": "0ЖＡ～）－－－－－－。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^ゼ!ロ|0^ジェ!ー|0^エ!ー<F>"
+      ]
+    },
+    {
+      "text": "0ЖＡ～）－－－－－－－。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^ゼ!ロ|0^ジェ!ー|0^エ!ー<F>"
+      ]
+    },
+    {
+      "text": "九Ｃ（－。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>キュ^ーシ!ー<F>"
+      ]
+    },
+    {
+      "text": "九Ｃ（－－。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>キュ^ーシ!ー<F>"
+      ]
+    },
+    {
+      "text": "九Ｃ（－－－。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>キュ^ーシ!ー<F>"
+      ]
+    },
+    {
+      "text": "九Ｃ（－－－－。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>キュ^ーシ!ー<F>"
+      ]
+    },
+    {
+      "text": "九Ｃ（－－－－－。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>キュ^ーシ!ー<F>"
+      ]
+    },
+    {
+      "text": "九Ｃ（－－－－－－。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>キュ^ーシ!ー<F>"
+      ]
+    },
+    {
+      "text": "九Ｃ（－－－－－－－。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>キュ^ーシ!ー<F>"
+      ]
+    },
+    {
+      "text": "ABC－。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^エービーシ!ー<F>"
+      ]
+    },
+    {
+      "text": "ABC－－。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^エービーシ!ー<F>"
+      ]
+    },
+    {
+      "text": "ABC－－－。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^エービーシ!ー<F>"
+      ]
+    },
+    {
+      "text": "ABC－－－－。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^エービーシ!ー<F>"
+      ]
+    },
+    {
+      "text": "ABC－－－－－。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^エービーシ!ー<F>"
+      ]
+    },
+    {
+      "text": "ABC－－－－－－。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^エービーシ!ー<F>"
+      ]
+    },
+    {
+      "text": "ABC－－－－－－－。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^エービーシ!ー<F>"
+      ]
+    },
+    {
+      "text": "漢字－。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>カン^ジ<F>"
+      ]
+    },
+    {
+      "text": "漢字－－。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>カン^ジ<F>"
+      ]
+    },
+    {
+      "text": "漢字－－－。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>カン^ジ<F>"
+      ]
+    },
+    {
+      "text": "漢字－－－－。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>カン^ジ<F>"
+      ]
+    },
+    {
+      "text": "漢字－－－－－。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>カン^ジ<F>"
+      ]
+    },
+    {
+      "text": "漢字－－－－－－。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>カン^ジ<F>"
+      ]
+    },
+    {
+      "text": "漢字－－－－－－－。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>カン^ジ<F>"
+      ]
+    },
+    {
+      "text": "－－－。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S><F>"
+      ]
+    },
+    {
+      "text": " （あＡ－！0ЖＡ〜）−－－\n。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ア^エ!ー<A>",
+        "<S>ゼ^ロジェーエ!ー<F>"
+      ]
+    },
+    {
+      "text": "0ЖＡ～）－－－。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^ゼ!ロ|0ジェ^ーエ!ー<F>"
+      ]
+    },
+    {
+      "text": "0ЖＡ～）－－。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^ゼ!ロ$1_1ジェ^ーエ!ー<F>"
+      ]
+    },
+    {
+      "text": "0ЖＡ～）－。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^ゼ!ロ|0ジェ^ーエ!ー<F>"
+      ]
+    },
+    {
+      "text": "0ЖＡ～）－－。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^ゼ!ロ$1_1ジェ^ーエ!ー<F>"
+      ]
+    },
+    {
+      "text": "0ЖＡ～）－－－。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^ゼ!ロ|0ジェ^ーエ!ー<F>"
+      ]
+    },
+    {
+      "text": "0ЖＡ～）－－－－。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^ゼ!ロ$1_1ジェ^ーエ!ー<F>"
+      ]
+    },
+    {
+      "text": "0ЖＡ～）－－－－－。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^ゼ!ロ$1_1ジェ^ーエ!ー<F>"
+      ]
+    },
+    {
+      "text": "0ЖＡ～）－－－－－－。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^ゼ!ロ$1_1ジェ^ーエ!ー<F>"
+      ]
+    },
+    {
+      "text": "0ЖＡ～）－－－－－－－。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^ゼ!ロ$1_1ジェ^ーエ!ー<F>"
+      ]
+    },
+    {
+      "text": "九Ｃ（－。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>キュ^ーシ!ー<F>"
+      ]
+    },
+    {
+      "text": "九Ｃ（－－。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>キュ^ーシ!ー<F>"
+      ]
+    },
+    {
+      "text": "九Ｃ（－－－。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>キュ^ーシ!ー<F>"
+      ]
+    },
+    {
+      "text": "九Ｃ（－－－－。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>キュ^ーシ!ー<F>"
+      ]
+    },
+    {
+      "text": "九Ｃ（－－－－－。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>キュ^ーシ!ー<F>"
+      ]
+    },
+    {
+      "text": "九Ｃ（－－－－－－。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>キュ^ーシ!ー<F>"
+      ]
+    },
+    {
+      "text": "九Ｃ（－－－－－－－。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>キュ^ーシ!ー<F>"
+      ]
+    },
+    {
+      "text": "ABC－。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>エ^ービーシ!ー<F>"
+      ]
+    },
+    {
+      "text": "ABC－－。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>エ^ービーシ!ー<F>"
+      ]
+    },
+    {
+      "text": "ABC－－－。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>エ^ービーシ!ー<F>"
+      ]
+    },
+    {
+      "text": "ABC－－－－。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>エ^ービーシ!ー<F>"
+      ]
+    },
+    {
+      "text": "ABC－－－－－。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>エ^ービーシ!ー<F>"
+      ]
+    },
+    {
+      "text": "ABC－－－－－－。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>エ^ービーシ!ー<F>"
+      ]
+    },
+    {
+      "text": "ABC－－－－－－－。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>エ^ービーシ!ー<F>"
+      ]
+    },
+    {
+      "text": "漢字－。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>カ^ンジ<F>"
+      ]
+    },
+    {
+      "text": "漢字－－。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>カ^ンジ<F>"
+      ]
+    },
+    {
+      "text": "漢字－－－。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>カ^ンジ<F>"
+      ]
+    },
+    {
+      "text": "漢字－－－－。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>カ^ンジ<F>"
+      ]
+    },
+    {
+      "text": "漢字－－－－－。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>カ^ンジ<F>"
+      ]
+    },
+    {
+      "text": "漢字－－－－－－。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>カ^ンジ<F>"
+      ]
+    },
+    {
+      "text": "漢字－－－－－－－。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>カ^ンジ<F>"
+      ]
+    },
+    {
+      "text": "－－－。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S><F>"
+      ]
+    }
+  ]
+}

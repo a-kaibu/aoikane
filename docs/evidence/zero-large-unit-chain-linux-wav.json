@@ -1,0 +1,7 @@
+{
+  "scope": "Linux CGO=0 reference replay: all8 whole WAVs identical, terminal PASS and WSL comparison processes absent. The original launch handle was unavailable after context transition; exit code is not independently recorded. AMD64 Family25 Model33, threads6, AVX512 convolutions false.",
+  "count": 8,
+  "log_sha256": "1d0e0b548f4228e633d67cda8368f526b381eeb02bf64fdc94595a93498eec78",
+  "binary_sha256": "4948c00b9b3d2c3d476e7f90bec038bc94beaa8d030447177140181d7a7486e7",
+  "reference_sha256": "9ffdf9c33b4ae323113e8929b7a87e7e393ffb7b717e24ee8b901abe8d50fdfb"
+}

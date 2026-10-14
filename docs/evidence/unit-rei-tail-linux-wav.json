@@ -1,0 +1,18 @@
+{
+  "source": "finished Linux CGO=0 strict replay of all 8 ordinary-original whole WAV references",
+  "complete": true,
+  "whole_wav_count": 8,
+  "test_seconds": 481.14,
+  "go_version": "go1.26.8",
+  "cgo_enabled": 0,
+  "goos": "linux",
+  "goarch": "amd64",
+  "goamd64": "v1",
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "original_threads": 6,
+  "avx512_convolutions": false,
+  "log_sha256": "20a0c1901879b395050c25b85a02d9a4239872ea7eb62d8b67675af0f5ad1b6e",
+  "reference_sha256": "7e42b20cb40fbddcd48ed27c4fc8ad3248b4e040407b214d1907f454ea04714f",
+  "test_binary_sha256": "f3a4033c590249a39000a74a3fa0d1514d22e310e2cf32919305ce60c2d26e8e",
+  "all_reading_regression_log_sha256": "d938fa189912f8776c3deb31a6bec42f403f57b9c8e3ed936bdb076caf6bd61c"
+}

@@ -1,0 +1,85 @@
+{
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "snapshot_sha256": "b16587969998be8469aac5870e078e0f16b07fa2d512252f245368070ab67574",
+  "input": " （あＡ－！0ЖＡ〜）−－－\n。",
+  "sentence": 1,
+  "words": [
+    {
+      "surface": "０",
+      "base": "０",
+      "pos": 17170432,
+      "candidate": {
+        "Reading": "ゼロ",
+        "Pronunciation": "ゼロ",
+        "Accent": "1-1-2",
+        "Connection": "*"
+      }
+    },
+    {
+      "surface": "Ж",
+      "base": "Ж",
+      "pos": 184549376,
+      "candidate": {
+        "Reading": "ジェー",
+        "Pronunciation": "ジェー",
+        "Accent": "1-1-2",
+        "Connection": "*"
+      }
+    },
+    {
+      "surface": "Ａ",
+      "base": "Ａ",
+      "pos": 184811520,
+      "candidate": {
+        "Reading": "エイ",
+        "Pronunciation": "エー",
+        "Accent": "1-1-2",
+        "Connection": "C1"
+      }
+    },
+    {
+      "surface": "～",
+      "base": "～",
+      "pos": 184549376,
+      "candidate": {
+        "Reading": "＊",
+        "Pronunciation": "",
+        "Accent": "*",
+        "Connection": "*"
+      }
+    },
+    {
+      "surface": "）",
+      "base": "）",
+      "pos": 184942592,
+      "candidate": {
+        "Reading": "＊",
+        "Pronunciation": "",
+        "Accent": "*",
+        "Connection": "*"
+      }
+    },
+    {
+      "surface": "－－",
+      "base": "－－",
+      "pos": 184549376,
+      "candidate": {
+        "Reading": "＊",
+        "Pronunciation": "",
+        "Accent": "*",
+        "Connection": "*"
+      }
+    },
+    {
+      "surface": "－",
+      "base": "－",
+      "pos": 184549376,
+      "candidate": {
+        "Reading": "＊",
+        "Pronunciation": "",
+        "Accent": "*",
+        "Connection": "*"
+      }
+    }
+  ]
+}

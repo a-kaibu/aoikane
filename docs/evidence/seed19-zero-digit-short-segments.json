@@ -1,0 +1,308 @@
+{
+  "source": "read-only original formatter/numeral stage observation; diagnostic, not complete WAV comparison",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "trace_sha256": "7daf636ae3b8405dc30037bb2287059f3a9be5dd64a8b4331b63f1a57a2af4ca",
+  "balanced_segment_calls": {
+    "100a90": 3,
+    "10b010": 6
+  },
+  "events": [
+    {
+      "event": "numeral_segment_enter",
+      "rva": "100a90",
+      "input_hex": "824f8251825493f1",
+      "caller": "0x10245a",
+      "raw_args": [
+        "0xfe01dfdac0",
+        "0x7ffd0c223200",
+        "0xfe01dfde00",
+        "0x2689ce8ad00",
+        "0x0"
+      ],
+      "input": "025二。",
+      "sentence": 0,
+      "input_hex_cp932": "０２５二"
+    },
+    {
+      "event": "numeral_segment_enter",
+      "rva": "10b010",
+      "input_hex": "824f82518254",
+      "caller": "0x1012b0",
+      "raw_args": [
+        "0x3fe0000000000000",
+        "0x0",
+        "0x4000000000000000",
+        "0x0",
+        "0x4000000000000000"
+      ],
+      "input": "025二。",
+      "sentence": 0,
+      "input_hex_cp932": "０２５"
+    },
+    {
+      "event": "numeral_segment_leave",
+      "rva": "10b010",
+      "input_hex": "824f82518254",
+      "result": "0x1",
+      "output_a": "835b838d836a83578385815b8353",
+      "output_b": "815a93f18f5c8cdc",
+      "input": "025二。",
+      "sentence": 0,
+      "input_hex_cp932": "０２５",
+      "output_a_cp932": "ゼロニジューゴ",
+      "output_b_cp932": "〇二十五"
+    },
+    {
+      "event": "numeral_segment_enter",
+      "rva": "10b010",
+      "input_hex": "93f1",
+      "caller": "0x101e0b",
+      "raw_args": [
+        "0x3fe0000000000000",
+        "0x0",
+        "0x4000000000000000",
+        "0x0",
+        "0x4000000000000000"
+      ],
+      "input": "025二。",
+      "sentence": 0,
+      "input_hex_cp932": "二"
+    },
+    {
+      "event": "numeral_segment_leave",
+      "rva": "10b010",
+      "input_hex": "93f1",
+      "result": "0x1",
+      "output_a": "835b838d836a83578385815b83538282836a",
+      "output_b": "815a93f18f5c8cdc93f1",
+      "input": "025二。",
+      "sentence": 0,
+      "input_hex_cp932": "二",
+      "output_a_cp932": "ゼロニジューゴｂニ",
+      "output_b_cp932": "〇二十五二"
+    },
+    {
+      "event": "numeral_segment_leave",
+      "rva": "100a90",
+      "input_hex": "824f8251825493f1",
+      "result": "0x1",
+      "output_a": "835b838d836a83578385815b83538282836a",
+      "output_b": "815a93f18f5c8cdc93f1",
+      "input": "025二。",
+      "sentence": 0,
+      "input_hex_cp932": "０２５二",
+      "output_a_cp932": "ゼロニジューゴｂニ",
+      "output_b_cp932": "〇二十五二"
+    },
+    {
+      "event": "format",
+      "text": "3c533e5e835b21838d7c305e836a2183578385815b7c305e83537c305e836a3c463e",
+      "input": "025二。",
+      "sentence": 0,
+      "text_cp932": "<S>^ゼ!ロ|0^ニ!ジュー|0^ゴ|0^ニ<F>"
+    },
+    {
+      "event": "done",
+      "input": "025二。",
+      "sentence": 0
+    },
+    {
+      "event": "numeral_segment_enter",
+      "rva": "100a90",
+      "input_hex": "824f824f825193f1",
+      "caller": "0x10245a",
+      "raw_args": [
+        "0xba2f3fda50",
+        "0x7ffd0c223200",
+        "0xba2f3fde00",
+        "0x209a7611400",
+        "0x0"
+      ],
+      "input": "002二。",
+      "sentence": 0,
+      "input_hex_cp932": "００２二"
+    },
+    {
+      "event": "numeral_segment_enter",
+      "rva": "10b010",
+      "input_hex": "824f824f8251",
+      "caller": "0x1012b0",
+      "raw_args": [
+        "0x3fe0000000000000",
+        "0x0",
+        "0x4000000000000000",
+        "0x0",
+        "0x4000000000000000"
+      ],
+      "input": "002二。",
+      "sentence": 0,
+      "input_hex_cp932": "００２"
+    },
+    {
+      "event": "numeral_segment_leave",
+      "rva": "10b010",
+      "input_hex": "824f824f8251",
+      "result": "0x1",
+      "output_a": "835b838d835b838d836a",
+      "output_b": "815a815a93f1",
+      "input": "002二。",
+      "sentence": 0,
+      "input_hex_cp932": "００２",
+      "output_a_cp932": "ゼロゼロニ",
+      "output_b_cp932": "〇〇二"
+    },
+    {
+      "event": "numeral_segment_enter",
+      "rva": "10b010",
+      "input_hex": "93f1",
+      "caller": "0x101e0b",
+      "raw_args": [
+        "0x3fe0000000000000",
+        "0x0",
+        "0x4000000000000000",
+        "0x0",
+        "0x4000000000000000"
+      ],
+      "input": "002二。",
+      "sentence": 0,
+      "input_hex_cp932": "二"
+    },
+    {
+      "event": "numeral_segment_leave",
+      "rva": "10b010",
+      "input_hex": "93f1",
+      "result": "0x1",
+      "output_a": "835b838d835b838d836a8282836a",
+      "output_b": "815a815a93f193f1",
+      "input": "002二。",
+      "sentence": 0,
+      "input_hex_cp932": "二",
+      "output_a_cp932": "ゼロゼロニｂニ",
+      "output_b_cp932": "〇〇二二"
+    },
+    {
+      "event": "numeral_segment_leave",
+      "rva": "100a90",
+      "input_hex": "824f824f825193f1",
+      "result": "0x1",
+      "output_a": "835b838d835b838d836a8282836a",
+      "output_b": "815a815a93f193f1",
+      "input": "002二。",
+      "sentence": 0,
+      "input_hex_cp932": "００２二",
+      "output_a_cp932": "ゼロゼロニｂニ",
+      "output_b_cp932": "〇〇二二"
+    },
+    {
+      "event": "format",
+      "text": "3c533e835b5e838d835b21838d7c305e836a7c305e836a3c463e",
+      "input": "002二。",
+      "sentence": 0,
+      "text_cp932": "<S>ゼ^ロゼ!ロ|0^ニ|0^ニ<F>"
+    },
+    {
+      "event": "done",
+      "input": "002二。",
+      "sentence": 0
+    },
+    {
+      "event": "numeral_segment_enter",
+      "rva": "100a90",
+      "input_hex": "824f82548e4f",
+      "caller": "0x10245a",
+      "raw_args": [
+        "0x2bb63fd510",
+        "0x7ffd0c223200",
+        "0x2bb63fd900",
+        "0x22a00741400",
+        "0x0"
+      ],
+      "input": "05三。",
+      "sentence": 0,
+      "input_hex_cp932": "０５三"
+    },
+    {
+      "event": "numeral_segment_enter",
+      "rva": "10b010",
+      "input_hex": "824f8254",
+      "caller": "0x1012b0",
+      "raw_args": [
+        "0x3fe0000000000000",
+        "0x0",
+        "0x4000000000000000",
+        "0x0",
+        "0x4000000000000000"
+      ],
+      "input": "05三。",
+      "sentence": 0,
+      "input_hex_cp932": "０５"
+    },
+    {
+      "event": "numeral_segment_leave",
+      "rva": "10b010",
+      "input_hex": "824f8254",
+      "result": "0x1",
+      "output_a": "835b838d8353",
+      "output_b": "815a8cdc",
+      "input": "05三。",
+      "sentence": 0,
+      "input_hex_cp932": "０５",
+      "output_a_cp932": "ゼロゴ",
+      "output_b_cp932": "〇五"
+    },
+    {
+      "event": "numeral_segment_enter",
+      "rva": "10b010",
+      "input_hex": "8e4f",
+      "caller": "0x101e0b",
+      "raw_args": [
+        "0x3fe0000000000000",
+        "0x0",
+        "0x4000000000000000",
+        "0x0",
+        "0x4000000000000000"
+      ],
+      "input": "05三。",
+      "sentence": 0,
+      "input_hex_cp932": "三"
+    },
+    {
+      "event": "numeral_segment_leave",
+      "rva": "10b010",
+      "input_hex": "8e4f",
+      "result": "0x1",
+      "output_a": "835b838d8353828283548393",
+      "output_b": "815a8cdc8e4f",
+      "input": "05三。",
+      "sentence": 0,
+      "input_hex_cp932": "三",
+      "output_a_cp932": "ゼロゴｂサン",
+      "output_b_cp932": "〇五三"
+    },
+    {
+      "event": "numeral_segment_leave",
+      "rva": "100a90",
+      "input_hex": "824f82548e4f",
+      "result": "0x1",
+      "output_a": "835b838d8353828283548393",
+      "output_b": "815a8cdc8e4f",
+      "input": "05三。",
+      "sentence": 0,
+      "input_hex_cp932": "０５三",
+      "output_a_cp932": "ゼロゴｂサン",
+      "output_b_cp932": "〇五三"
+    },
+    {
+      "event": "format",
+      "text": "3c533e835b5e838d83537c3083545e83933c463e",
+      "input": "05三。",
+      "sentence": 0,
+      "text_cp932": "<S>ゼ^ロゴ|0サ^ン<F>"
+    },
+    {
+      "event": "done",
+      "input": "05三。",
+      "sentence": 0
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "source": "independent ordinary SDK Synthesize without instrumentation or injected inputs",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "cases": [
+    {
+      "text": "開0a土木土零日ー下A三。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 360702,
+      "sha256": "03cde41b76e36d7f11cee6463f1ad62277e066476c08d4e1a5325b6b2e2f0ba7"
+    },
+    {
+      "text": "七金六九B零C校3。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 357530,
+      "sha256": "67c15947225742560d5b5de63a15ffdcec6ce192ce4cb0db19c03ca66944d0c4"
+    },
+    {
+      "text": "開0a土木土零日ー下A三。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 364024,
+      "sha256": "7fd346369645d6ef14d6b407cfabf4a8b534913057dcfba82a8e8c8b2836e50f"
+    },
+    {
+      "text": "七金六九B零C校3。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 378230,
+      "sha256": "73c689307d32c923f485489905b57f6eec54ba9f49061cee5b84e42b6b99e278"
+    },
+    {
+      "text": "万。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 114764,
+      "sha256": "eb2723eaaccc43e82d31762d67bae11edcffb4bfa6a67d50a6fe9ec4368f379f"
+    },
+    {
+      "text": "零零零日。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 194492,
+      "sha256": "e3abce5b35c6000d43e2ed3181639d42db9ac34696bf52048080fe79bce21572"
+    },
+    {
+      "text": "零万人。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 166764,
+      "sha256": "07439b90c62001dcf8dd1d6d29adb369783d44a0ed48e64e71794ccc8bfa5498"
+    },
+    {
+      "text": "万。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 114764,
+      "sha256": "eb2723eaaccc43e82d31762d67bae11edcffb4bfa6a67d50a6fe9ec4368f379f"
+    },
+    {
+      "text": "零零零日。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 194492,
+      "sha256": "e3abce5b35c6000d43e2ed3181639d42db9ac34696bf52048080fe79bce21572"
+    },
+    {
+      "text": "零万人。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 166764,
+      "sha256": "07439b90c62001dcf8dd1d6d29adb369783d44a0ed48e64e71794ccc8bfa5498"
+    }
+  ],
+  "report_sha256": [
+    "dce9c0a8b256556b08a427e48043af604ec97e0f9164d25e2cb48bef35aad039",
+    "ea40c289661b9376884b29b603eb353b5f41526b7a56ed0adafb76c9f1ca5d68",
+    "85586904e50b17794f46463e5aee9ff0d90158506440c44dd6f9f92cbfa4396f",
+    "0e34f8e724f4e48de22fea323491ebb79a012fdd5fed20fa9a5da9a0391fec9a"
+  ],
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "original_threads": 6,
+  "avx512_convolutions": false
+}

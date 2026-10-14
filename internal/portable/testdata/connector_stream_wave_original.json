@@ -1,0 +1,103 @@
+{
+  "source": "finished ordinary original SDK/Go tests; whole WAVs rehashed against reports and independent ordinary native captures",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "original_threads": 6,
+  "avx512_convolutions": false,
+  "report_sha256": [
+    "19933ab07419ff53c2150af58000eed4f6531294aca254f4e6fa8527bfd690c9",
+    "fbc1c78ad2e6b5fae481eb460044781d15ec380e440848587c923a1b80375be1"
+  ],
+  "capture_sha256": [
+    "23a69ac2f0ad0f791ada4cd045b9d60e069c1490cd9ef6827bcbbb6a2a39e1f9",
+    "76dc33d7c64826c8eaf7a347e3531116bb9a82a5dd17cec1533887c4fda46248",
+    "f752110020b8efe9c6f0bb3f3f524cb988447680006655e570e52436c256cc72",
+    "9f7f2284ea30a9fc0636c0049e19857d70cee55ea7036e6b9c791746daf06696"
+  ],
+  "cases": [
+    {
+      "text": "0-8円。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 193870,
+      "sha256": "7cefa8d2f8e4d479b57d3ee292506321e9f45d487a05378cf5dd90549da4cf52"
+    },
+    {
+      "text": "本円兆0－５。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 226780,
+      "sha256": "7cbbaefa1203c268f2b5f4e6e1adcab3a3d4b460de851be9507812114fa0bb99"
+    },
+    {
+      "text": "零三・２－5。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 210284,
+      "sha256": "6d6fb0f491956d3f3f0814e952a708ca797229a8fa179fe1944f66ed20c1268f"
+    },
+    {
+      "text": "1・2-3。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 204890,
+      "sha256": "d29aa225e63b3c52310f212e0d0cc809514870306541871556c0689cefda20f8"
+    },
+    {
+      "text": "29・兆51日。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 319562,
+      "sha256": "a105d34348066b6f62d0372c1ce315c696d51758518293a37ef36fec24b529a8"
+    },
+    {
+      "text": "〇・八百。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 199466,
+      "sha256": "372ce0f9cc3170c3d0a070ee34f6c4816b6b9bb688daa49420ffc6fbc204e9ad"
+    },
+    {
+      "text": "電話二・千。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 227878,
+      "sha256": "46fc5860314a2b6882a9518961e22d22077314719237fd82192af5822d2532e7"
+    },
+    {
+      "text": "0-8円。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 193870,
+      "sha256": "7cefa8d2f8e4d479b57d3ee292506321e9f45d487a05378cf5dd90549da4cf52"
+    },
+    {
+      "text": "本円兆0－５。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 226974,
+      "sha256": "776fdcc48457e9d63a74804025df29a919191d4cfd1eea9f9ff8b642c7b8dfca"
+    },
+    {
+      "text": "零三・２－5。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 210582,
+      "sha256": "ff866bce0d0e8cff54ea712a34f56b9e42325b5deec6e6fa18a24ea79f82dc7b"
+    },
+    {
+      "text": "1・2-3。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 204890,
+      "sha256": "d29aa225e63b3c52310f212e0d0cc809514870306541871556c0689cefda20f8"
+    },
+    {
+      "text": "29・兆51日。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 319562,
+      "sha256": "a105d34348066b6f62d0372c1ce315c696d51758518293a37ef36fec24b529a8"
+    },
+    {
+      "text": "〇・八百。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 199466,
+      "sha256": "372ce0f9cc3170c3d0a070ee34f6c4816b6b9bb688daa49420ffc6fbc204e9ad"
+    },
+    {
+      "text": "電話二・千。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 227154,
+      "sha256": "3e05492b72b6dd4e74d98de57c935ce6c10bfbba7f0985e25c51ca58093779c6"
+    }
+  ]
+}

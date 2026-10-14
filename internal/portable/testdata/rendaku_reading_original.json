@@ -1,0 +1,681 @@
+{
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "capture_sha256": [
+    "2f4233abcf957eb722cc5b75b46e90da6b97c65731ffc4b41e75ccfdec87c254",
+    "d0edafb7c82dff3318d64b1a579ebbcbb7b94f77318202999c7f12c5e9b583d8"
+  ],
+  "cases": [
+    {
+      "text": "日火Ａ三ｃ47。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^ヒビエ!ー|0サン|0^シ!ー|0^ヨ!ンジュー|0^ナ!ナ<F>"
+      ]
+    },
+    {
+      "text": "日火。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^ヒ!ビ<F>"
+      ]
+    },
+    {
+      "text": "山火。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^ヤ!マビ<F>"
+      ]
+    },
+    {
+      "text": "木火。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^キ!ビ<F>"
+      ]
+    },
+    {
+      "text": "学火。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^ガク!ビ<F>"
+      ]
+    },
+    {
+      "text": "服火。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^フク!ビ<F>"
+      ]
+    },
+    {
+      "text": "先火。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^サキ!ビ<F>"
+      ]
+    },
+    {
+      "text": "日紙。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^ヒ!シ<F>"
+      ]
+    },
+    {
+      "text": "日川。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^ニ!ッカワ<F>"
+      ]
+    },
+    {
+      "text": "日声。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^ヒゴ!エ<F>"
+      ]
+    },
+    {
+      "text": "日葉。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^ヒ!バ<F>"
+      ]
+    },
+    {
+      "text": "日魚。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^ヒ!ギョ<F>"
+      ]
+    },
+    {
+      "text": "金声。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^キンゴ!エ<F>"
+      ]
+    },
+    {
+      "text": "魚声。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^サカナゴ!エ<F>"
+      ]
+    },
+    {
+      "text": "学声。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^ガクゴ!エ<F>"
+      ]
+    },
+    {
+      "text": "学校声。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>ガッコー^ゴ!エ<F>"
+      ]
+    },
+    {
+      "text": "一火。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>イ^チ|0ヒ<F>"
+      ]
+    },
+    {
+      "text": "二声。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^ニ|0コ^エ<F>"
+      ]
+    },
+    {
+      "text": "私魚。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>ワタ^シ!ギョ<F>"
+      ]
+    },
+    {
+      "text": "私魚生。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>ワタシ|0^サカナ!セー<F>"
+      ]
+    },
+    {
+      "text": "今日魚。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^キョ!ーギョ<F>"
+      ]
+    },
+    {
+      "text": "昨日魚。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^キノ!ーギョ<F>"
+      ]
+    },
+    {
+      "text": "hello魚。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^ハロ!ーギョ<F>"
+      ]
+    },
+    {
+      "text": "日会社。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^ヒガ!イシャ<F>"
+      ]
+    },
+    {
+      "text": "学会社。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^ガッカ!イシャ<F>"
+      ]
+    },
+    {
+      "text": "山会社。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^サンカ!イシャ<F>"
+      ]
+    },
+    {
+      "text": "日菓子。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^ヒガ!シ<F>"
+      ]
+    },
+    {
+      "text": "学校菓子。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>ガッコー^ガ!シ<F>"
+      ]
+    },
+    {
+      "text": "私菓子。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>ワタシ^ガ!シ<F>"
+      ]
+    },
+    {
+      "text": "日不足。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^ヒブ!ソク<F>"
+      ]
+    },
+    {
+      "text": "日豆腐。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^ヒド!ーフ<F>"
+      ]
+    },
+    {
+      "text": "火火。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^ヒ!ビ<F>"
+      ]
+    },
+    {
+      "text": "火紙。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^ヒ!シ<F>"
+      ]
+    },
+    {
+      "text": "日風。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^ヒフー<F>"
+      ]
+    },
+    {
+      "text": "日日火。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^ヒ!ビ|0ヒ<F>"
+      ]
+    },
+    {
+      "text": "日袋。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^ヒブ!クロ<F>"
+      ]
+    },
+    {
+      "text": "日先。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^ヒサキ<F>"
+      ]
+    },
+    {
+      "text": "日服。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^ヒ!フク<F>"
+      ]
+    },
+    {
+      "text": "日火火。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^ヒビ!ビ<F>"
+      ]
+    },
+    {
+      "text": "山川。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>ヤ^マ!カワ<F>"
+      ]
+    },
+    {
+      "text": "山、火。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^ヤ!マ$2_2ヒ<F>"
+      ]
+    },
+    {
+      "text": "日（火）。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^ニ!チ$1_1^カ<F>"
+      ]
+    },
+    {
+      "text": "八開三九）9声。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^ハチ!カイ|0^サ!ンジュー|0^キュ!ー$1_1^キュ!ー|0コ^エ<F>"
+      ]
+    },
+    {
+      "text": "金校月Ｂｃ九校ｃ金日三。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^キ!ンコー|0^ツ!キ|0ビー^シ!ー|0キュ^ーコーシーキン|0^ニッサン<F>"
+      ]
+    },
+    {
+      "text": "水私葉6ｂ火C。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^ミズ|0ワタシ|0^ハ|0ロ^ク|0^ビーヒシ!ー<F>"
+      ]
+    },
+    {
+      "text": "5火字、三。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^ゴ|0^ヒ!ジ$2_2サ^ン<F>"
+      ]
+    },
+    {
+      "text": "hello魚を学校口今日昨日青い12。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^ハ!ロー|0^サカナオ$2_2^ガッコ!ーグチ|0キョー|0^キ!ノー|0^ア!オイ|0ジュ^ーニ<F>"
+      ]
+    },
+    {
+      "text": "日火の火。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^ヒ!ヒーノ|0ヒ<F>"
+      ]
+    },
+    {
+      "text": "日火Ａ三ｃ47。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ヒ$1_1ビ^エ!ーサン|0^シ!ー|0^ヨ!ンジュー|0^ナ!ナ<F>"
+      ]
+    },
+    {
+      "text": "日火。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^ヒ!ビ<F>"
+      ]
+    },
+    {
+      "text": "山火。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^ヤ!マビ<F>"
+      ]
+    },
+    {
+      "text": "木火。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^キ!ビ<F>"
+      ]
+    },
+    {
+      "text": "学火。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ガ^ク!ビ<F>"
+      ]
+    },
+    {
+      "text": "服火。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>フ^ク!ビ<F>"
+      ]
+    },
+    {
+      "text": "先火。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>サ^キ|0ビ<F>"
+      ]
+    },
+    {
+      "text": "日紙。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^ヒ!シ<F>"
+      ]
+    },
+    {
+      "text": "日川。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^ニ!ッカワ<F>"
+      ]
+    },
+    {
+      "text": "日声。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ヒ^ゴ!エ<F>"
+      ]
+    },
+    {
+      "text": "日葉。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^ヒ!バ<F>"
+      ]
+    },
+    {
+      "text": "日魚。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^ヒ!ギョ<F>"
+      ]
+    },
+    {
+      "text": "金声。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>キ^ンゴ!エ<F>"
+      ]
+    },
+    {
+      "text": "魚声。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>サ^カナゴ!エ<F>"
+      ]
+    },
+    {
+      "text": "学声。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ガ^クゴ!エ<F>"
+      ]
+    },
+    {
+      "text": "学校声。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ガ^ッコーゴ!エ<F>"
+      ]
+    },
+    {
+      "text": "一火。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>イ^チ|0ヒ<F>"
+      ]
+    },
+    {
+      "text": "二声。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ニ|0^コ!エ<F>"
+      ]
+    },
+    {
+      "text": "私魚。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ワ^タシ!ギョ<F>"
+      ]
+    },
+    {
+      "text": "私魚生。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ワ^タシサカナ!セー<F>"
+      ]
+    },
+    {
+      "text": "今日魚。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^キョ!ー|0サ^カナ<F>"
+      ]
+    },
+    {
+      "text": "昨日魚。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>キ^ノー|0サ^カナ<F>"
+      ]
+    },
+    {
+      "text": "hello魚。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^ハ!ロー|0サ^カナ<F>"
+      ]
+    },
+    {
+      "text": "日会社。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ヒ^ガ!イシャ<F>"
+      ]
+    },
+    {
+      "text": "学会社。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ガ^ッカ!イシャ<F>"
+      ]
+    },
+    {
+      "text": "山会社。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>サ^ンカ!イシャ<F>"
+      ]
+    },
+    {
+      "text": "日菓子。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ヒ^ガ!シ<F>"
+      ]
+    },
+    {
+      "text": "学校菓子。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ガ^ッコーガ!シ<F>"
+      ]
+    },
+    {
+      "text": "私菓子。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ワ^タシガ!シ<F>"
+      ]
+    },
+    {
+      "text": "日不足。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ヒ^ブ!ソク<F>"
+      ]
+    },
+    {
+      "text": "日豆腐。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ヒ^ド!ーフ<F>"
+      ]
+    },
+    {
+      "text": "火火。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^ヒ!ビ<F>"
+      ]
+    },
+    {
+      "text": "火紙。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^ヒ!シ<F>"
+      ]
+    },
+    {
+      "text": "日風。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ヒ^フー<F>"
+      ]
+    },
+    {
+      "text": "日日火。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^ヒ!ビ|0ヒ<F>"
+      ]
+    },
+    {
+      "text": "日袋。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ヒ^ブ!クロ<F>"
+      ]
+    },
+    {
+      "text": "日先。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ヒ^サキ<F>"
+      ]
+    },
+    {
+      "text": "日服。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^ヒ!フク<F>"
+      ]
+    },
+    {
+      "text": "日火火。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ヒ|0^ビ!ビ<F>"
+      ]
+    },
+    {
+      "text": "山川。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ヤ^マ!カワ<F>"
+      ]
+    },
+    {
+      "text": "山、火。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ヤ^マ$2_2ヒ<F>"
+      ]
+    },
+    {
+      "text": "日（火）。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^ニ!チ|0カ<F>"
+      ]
+    },
+    {
+      "text": "八開三九）9声。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ハ^チ!カイ|0^サ!ンジュー|0^キュ!ー$1_1^キュ!ー|0^コ!エ<F>"
+      ]
+    },
+    {
+      "text": "金校月Ｂｃ九校ｃ金日三。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^キ!ンコー$1_1ツ^キ!ビーシー|0^キュ!ーコー|0シ^ーキン|0ニ^ッサン<F>"
+      ]
+    },
+    {
+      "text": "水私葉6ｂ火C。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ミ^ズ|0ワ^タシ|0ハ|0ロ^ク|0^ビ!ー|0ヒ^シ!ー<F>"
+      ]
+    },
+    {
+      "text": "5火字、三。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ゴ$2_2^ヒ!ジ$2_2サ^ン<F>"
+      ]
+    },
+    {
+      "text": "hello魚を学校口今日昨日青い12。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>^ハ!ロー|0サ^カナオ$2_2ガ^ッコ!ーグチ|0^キョ!ー|0キ^ノー|0ア^オ!イ|0ジュ^ーニ<F>"
+      ]
+    },
+    {
+      "text": "日火の火。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ヒ|0^ビ!ノ|0ヒ<F>"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "source": "independent hook-free ordinary original SDK versus Go full synthesis; saved original and Go WAV files and reports rehashed; read-only formatter capture provenance retained separately",
+  "seed": 17,
+  "generator_version": 1,
+  "max_units": 24,
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "original_threads": 6,
+  "avx512_convolutions": false,
+  "report_sha256": [
+    "d16d14785221fa93dd4a0b091f8b42cec01d18ce86404f38ac0e431f8f384d08",
+    "f92b2335c7c8621e3ca96c44df4cea9e68126bd11574d54a3051d4c4a9455d36"
+  ],
+  "capture_sha256": [
+    "5c7cb0bf660439457d28bb5d32087ef051178fbba84a6ae16e9a2be0caf4c14b",
+    "ed42620477cf2b5bba3ec82a3833895e475ddda3a8f9d96042a9e98c434c5553"
+  ],
+  "cases": [
+    {
+      "index": 0,
+      "text": "さざへぐちにみうみやおぜちゅもゃはく。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 436706,
+      "sha256": "91ff3fd63d6646af627b16bf4336971b4d99bce69cf44431cf97e228033f0f0e"
+    },
+    {
+      "index": 1,
+      "text": "漢。。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 110924,
+      "sha256": "d4e7a1291fc8da82e9a0298305b3b86399a93c4bb90359facfa838cbe9bf05cf"
+    },
+    {
+      "index": 2,
+      "text": "é 0\t！０アAé\t\t ～−。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 287608,
+      "sha256": "398072f7b06a187276f69a764ce5f02261d1946e594c033263faa6665663c34f"
+    },
+    {
+      "index": 3,
+      "text": "生ABC生私に今日ます読む食べるですはにでの開ける駅。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 550494,
+      "sha256": "f826801795d628ada33f84b302ffe34bbf60ed630959dfecc08aae879eef4bf1"
+    },
+    {
+      "index": 0,
+      "text": "さざへぐちにみうみやおぜちゅもゃはく。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 362772,
+      "sha256": "f5ed01f0bf4489ac0b9ed0cd6c8e0ea7b89d51248898f59d3546d3031a8ac9c9"
+    },
+    {
+      "index": 1,
+      "text": "漢。。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 110924,
+      "sha256": "d4e7a1291fc8da82e9a0298305b3b86399a93c4bb90359facfa838cbe9bf05cf"
+    },
+    {
+      "index": 2,
+      "text": "é 0\t！０アAé\t\t ～−。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 298438,
+      "sha256": "0c582165db63a6d8ba058679bcb8c5afacb8a0dd3801659dba810b8e3856eb8e"
+    },
+    {
+      "index": 3,
+      "text": "生ABC生私に今日ます読む食べるですはにでの開ける駅。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 613384,
+      "sha256": "96465c6fdcb1e83a67a76b930490e14c9090bc87c22fbba5f09945906fb9545b"
+    }
+  ],
+  "capture_report_sha256": [
+    "53eacf5a4b29db0d49f94fbc23798ec8f9a7b9c7905723d785b5f0ed07d89b6f",
+    "45ef2cdcf27f604516dc574eb7751f1c57503c30bd0fb49d18615eff9d183840"
+  ]
+}

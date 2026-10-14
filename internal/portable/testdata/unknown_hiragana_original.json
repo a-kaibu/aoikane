@@ -1,0 +1,31 @@
+{
+  "source": "Reading: observed ordinary SDK formatter; WAV: independent ordinary SDK without instrumentation",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "original_threads": 6,
+  "avx512_convolutions": false,
+  "cases": [
+    {
+      "text": "きぱこごてみんあながぐげ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^キ|0パ^コ|0ゴテ^ミ!ン|0^ア!ナガ|0グゲ<F>"
+      ],
+      "bytes": 253046,
+      "sha256": "72e9b2818f28cf03ab72a7ffb803c2bb0bdf0db9b1802a37b78358ef11c073a2",
+      "wave_report_sha256": "9f9938873ce9fb53453b38e6809e4e344998807035a8aa81325b1c37f8bcbb47",
+      "reading_capture_sha256": "fabf476a301e6579f4991b4e746638f506a114080a205d79ed7dc5d3d046f65f"
+    },
+    {
+      "text": "きぱこごてみんあながぐげ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>キ$1_1パ^コ|0ゴ^テミ!ン$1_1ア^ナ!ガ|0グ^ゲ<F>"
+      ],
+      "bytes": 285702,
+      "sha256": "d6e14f048fa4baed73d14f77bbc87995feaa10816ca4cbda983ca5115c01c940",
+      "wave_report_sha256": "57b8434f8f507f3d0ba5aab50f5dec5767c5b265e2c8e2a0b9e93a2bb8d0e995",
+      "reading_capture_sha256": "1cb721fb9c63ec0a35536c585d151cd020f7c17d3196228fd10774cf31f0e4e1"
+    }
+  ]
+}

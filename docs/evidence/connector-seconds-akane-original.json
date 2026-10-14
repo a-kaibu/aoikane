@@ -1,0 +1,343 @@
+{
+  "scope": "Frontend-only original observations; all stages and numeric stack checked; formatter matches independent SDK; not waveform evidence.",
+  "observation_sha256": "58e95b3e24e55929fad10bf1d271ce2d4339e514229aa0fb8e87644f9e42f33b",
+  "cases": [
+    {
+      "text": "9−千二兆千秒8兆1時。",
+      "event_counts": {
+        "hooked": 1,
+        "stage_enter_1b9f10": 1,
+        "stage_enter_11f9c0": 1,
+        "numeral_segment_enter": 6,
+        "numeral_segment_leave": 6,
+        "numeral_counter_enter": 1,
+        "stage_leave_11f9c0": 1,
+        "stage_enter_11ec50": 1,
+        "stage_leave_11ec50": 1,
+        "stage_leave_1b9f10": 1,
+        "stage_enter_1b9f60": 1,
+        "stage_leave_1b9f60": 1,
+        "graph_in": 1,
+        "graph_built": 1,
+        "graph_after": 1,
+        "format": 1,
+        "done": 1
+      },
+      "segments": [
+        {
+          "rva": "10b010",
+          "number": "９",
+          "caller": "0x100fec",
+          "raw_args": [
+            "0x3fe0000000000000",
+            "0x0",
+            "0x4000000000000000",
+            "0x0",
+            "0x4000000000000000"
+          ],
+          "output": [
+            "キュー",
+            "九"
+          ]
+        },
+        {
+          "rva": "10b010",
+          "number": "千",
+          "caller": "0x100f60",
+          "raw_args": [
+            "0x3fe0000000000000",
+            "0x0",
+            "0x4000000000000000",
+            "0x0",
+            "0x4000000000000000"
+          ],
+          "output": [
+            "キューｐセン",
+            "九－千"
+          ]
+        },
+        {
+          "rva": "10b010",
+          "number": "二兆千",
+          "caller": "0x100e5b",
+          "raw_args": [
+            "0x3fe0000000000000",
+            "0x0",
+            "0x4000000000000000",
+            "0x0",
+            "0x4000000000000000"
+          ],
+          "output": [
+            "キューｐセンニチョーセン",
+            "九－千二兆千"
+          ]
+        },
+        {
+          "rva": "10b010",
+          "number": "８兆",
+          "caller": "0x100f60",
+          "raw_args": [
+            "0x3fe0000000000000",
+            "0x0",
+            "0x4000000000000000",
+            "0x0",
+            "0x4000000000000000"
+          ],
+          "output": [
+            "キューｐセンニチョーセンビョーｂハッチョー",
+            "九－千二兆千秒八兆"
+          ]
+        },
+        {
+          "rva": "10b010",
+          "number": "１",
+          "caller": "0x101e0b",
+          "raw_args": [
+            "0x3fe0000000000000",
+            "0x0",
+            "0x4000000000000000",
+            "0x0",
+            "0x4000000000000000"
+          ],
+          "output": [
+            "キューｐセンニチョーセンビョーｂハッチョーイチ",
+            "九－千二兆千秒八兆一"
+          ]
+        },
+        {
+          "rva": "100a90",
+          "number": "９－千二兆千秒８兆１",
+          "caller": "0x10245a",
+          "raw_args": [
+            "0xf70e1fd6c0",
+            "0x7ffc00000000",
+            "0xf70e1fda00",
+            "0x2b8be221400",
+            "0x0"
+          ],
+          "output": [
+            "キューｐセンニチョーセンビョーｂハッチョーイチ",
+            "九－千二兆千秒八兆一"
+          ]
+        }
+      ],
+      "counters": [
+        {
+          "event": "numeral_counter_enter",
+          "caller": "0x106ce5",
+          "number_hex": "９－千二兆千秒８兆１",
+          "number_accent_hex": "2-2-4,2-2-2",
+          "number_spelling_hex": "九－千二兆千秒八兆一",
+          "counter_key_hex": "時",
+          "counter_read_hex": "ジ",
+          "counter_sound_hex": "ジ",
+          "param11": 1,
+          "param12": 0,
+          "input": "9−千二兆千秒8兆1時。",
+          "sentence": 0
+        }
+      ],
+      "formatted": [
+        "<S>^キュ!ー$1_1^セ!ン|0^ニ!チョー|0^セ!ンビョー|0^ハ!ッチョー|0イ^チ!ジ<F>"
+      ]
+    },
+    {
+      "text": "9−千秒8本。",
+      "event_counts": {
+        "hooked": 1,
+        "stage_enter_1b9f10": 1,
+        "stage_enter_11f9c0": 1,
+        "numeral_segment_enter": 4,
+        "numeral_segment_leave": 4,
+        "numeral_counter_enter": 1,
+        "stage_leave_11f9c0": 1,
+        "stage_enter_11ec50": 1,
+        "stage_leave_11ec50": 1,
+        "stage_leave_1b9f10": 1,
+        "stage_enter_1b9f60": 1,
+        "stage_leave_1b9f60": 1,
+        "graph_in": 1,
+        "graph_built": 1,
+        "graph_after": 1,
+        "format": 1,
+        "done": 1
+      },
+      "segments": [
+        {
+          "rva": "10b010",
+          "number": "９",
+          "caller": "0x100fec",
+          "raw_args": [
+            "0x3fe0000000000000",
+            "0x0",
+            "0x4000000000000000",
+            "0x0",
+            "0x4000000000000000"
+          ],
+          "output": [
+            "キュー",
+            "九"
+          ]
+        },
+        {
+          "rva": "10b010",
+          "number": "千",
+          "caller": "0x100e5b",
+          "raw_args": [
+            "0x3fe0000000000000",
+            "0x0",
+            "0x4000000000000000",
+            "0x0",
+            "0x4000000000000000"
+          ],
+          "output": [
+            "キューｐセン",
+            "九－千"
+          ]
+        },
+        {
+          "rva": "10b010",
+          "number": "８",
+          "caller": "0x101e0b",
+          "raw_args": [
+            "0x3fe0000000000000",
+            "0x0",
+            "0x4000000000000000",
+            "0x0",
+            "0x4000000000000000"
+          ],
+          "output": [
+            "キューｐセンビョーｂハチ",
+            "九－千秒八"
+          ]
+        },
+        {
+          "rva": "100a90",
+          "number": "９－千秒８",
+          "caller": "0x10245a",
+          "raw_args": [
+            "0x407bffdad0",
+            "0x7ffcb4213200",
+            "0x407bffde00",
+            "0x15f6c06ad00",
+            "0x0"
+          ],
+          "output": [
+            "キューｐセンビョーｂハチ",
+            "九－千秒八"
+          ]
+        }
+      ],
+      "counters": [
+        {
+          "event": "numeral_counter_enter",
+          "caller": "0x106ce5",
+          "number_hex": "９－千秒８",
+          "number_accent_hex": "2-2-2",
+          "number_spelling_hex": "九－千秒八",
+          "counter_key_hex": "本",
+          "counter_read_hex": "ホン",
+          "counter_sound_hex": "ホン",
+          "param11": 1,
+          "param12": 0,
+          "input": "9−千秒8本。",
+          "sentence": 0
+        }
+      ],
+      "formatted": [
+        "<S>^キュ!ー$1_1^セ!ンビョー|0ハ^チ!ホン<F>"
+      ]
+    },
+    {
+      "text": "9−1秒8。",
+      "event_counts": {
+        "hooked": 1,
+        "stage_enter_1b9f10": 1,
+        "stage_enter_11f9c0": 1,
+        "numeral_segment_enter": 4,
+        "numeral_segment_leave": 4,
+        "stage_leave_11f9c0": 1,
+        "stage_enter_11ec50": 1,
+        "stage_leave_11ec50": 1,
+        "stage_leave_1b9f10": 1,
+        "stage_enter_1b9f60": 1,
+        "stage_leave_1b9f60": 1,
+        "graph_in": 1,
+        "graph_built": 1,
+        "graph_after": 1,
+        "format": 1,
+        "done": 1
+      },
+      "segments": [
+        {
+          "rva": "10b010",
+          "number": "９",
+          "caller": "0x100fec",
+          "raw_args": [
+            "0x3fe0000000000000",
+            "0x0",
+            "0x4000000000000000",
+            "0x0",
+            "0x4000000000000000"
+          ],
+          "output": [
+            "キュー",
+            "九"
+          ]
+        },
+        {
+          "rva": "10b010",
+          "number": "１",
+          "caller": "0x100fec",
+          "raw_args": [
+            "0x3fe0000000000000",
+            "0x0",
+            "0x4000000000000000",
+            "0x0",
+            "0x4000000000000000"
+          ],
+          "output": [
+            "キューｐイチ",
+            "九－一"
+          ]
+        },
+        {
+          "rva": "10b010",
+          "number": "８",
+          "caller": "0x101e0b",
+          "raw_args": [
+            "0x3fe0000000000000",
+            "0x0",
+            "0x4000000000000000",
+            "0x0",
+            "0x4000000000000000"
+          ],
+          "output": [
+            "キューｐイチビョーｂハチ",
+            "九－一秒八"
+          ]
+        },
+        {
+          "rva": "100a90",
+          "number": "９－１秒８",
+          "caller": "0x10245a",
+          "raw_args": [
+            "0xbf841fd580",
+            "0x7ffcb4213200",
+            "0xbf841fd900",
+            "0x2bcc8941400",
+            "0x0"
+          ],
+          "output": [
+            "キューｐイチビョーｂハチ",
+            "九－一秒八"
+          ]
+        }
+      ],
+      "counters": [],
+      "formatted": [
+        "<S>^キュ!ー$1_1イ^チ!ビョー|0ハ^チ<F>"
+      ]
+    }
+  ]
+}

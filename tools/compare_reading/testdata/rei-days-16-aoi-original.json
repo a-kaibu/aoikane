@@ -1,0 +1,223 @@
+{
+  "source": "ordinary original SDK talk; formatter observed without tensor injection; frontend-only capture",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "voice": "KotonohaAoi_ns_48",
+  "corpus_sha256": "f1b403dac4efe0640d6406c6408cdbabebcd5050b9f7085fb954ec278131bea7",
+  "cases": [
+    {
+      "index": 0,
+      "text": "千0五−九零八日9．二一百。",
+      "status": 0,
+      "readings": [
+        "<S>^セ!ン|0^ゼ!ロ|0ゴ$1_1キュ^ーレ!ー|0ハ^チ!ニチ|0^キュ!ーテン|0^ニ!ジュー|0イ^チ|0ヒャ^ク<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e835a2183937c305e835b21838d7c30835324315f31834c83855e815b838c21815b7c30836e5e836021836a83607c305e834c838521815b836583937c305e836a2183578385815b7c3083435e83607c30837183835e834e3c463e"
+      ],
+      "wav_bytes": 447728,
+      "wav_sha256": "595db6649cb7a2d6cab8739467b2cec0386a9d7caf8cc9c45d5822ac3a6dc6cf"
+    },
+    {
+      "index": 1,
+      "text": "九零八日。",
+      "status": 0,
+      "readings": [
+        "<S>キュ^ーレ!ー|0ハ^チ!ニチ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e834c83855e815b838c21815b7c30836e5e836021836a83603c463e"
+      ],
+      "wav_bytes": 201116,
+      "wav_sha256": "8cc9f8d5dfe9e13bc5e72dd8a74dddf8b02ec0a499f301833b3467b2391750f7"
+    },
+    {
+      "index": 2,
+      "text": "一−九零八日。",
+      "status": 0,
+      "readings": [
+        "<S>イ^チ!カラ|0キュ^ーレ!ー|0ハ^チニチ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83435e836021834a83897c30834c83855e815b838c21815b7c30836e5e8360836a83603c463e"
+      ],
+      "wav_bytes": 261462,
+      "wav_sha256": "e9a4fdd5ce2f8aa4d1ba4a910bb70ca2ac79c6a3bec19c6e5f023992141c587f"
+    },
+    {
+      "index": 3,
+      "text": "九零八日",
+      "status": 0,
+      "readings": [
+        "<S>キュ^ーレ!ー|0ハ^チ!ニチ<N>"
+      ],
+      "cp932_hex": [
+        "3c533e834c83855e815b838c21815b7c30836e5e836021836a83603c4e3e"
+      ],
+      "wav_bytes": 201116,
+      "wav_sha256": "8cc9f8d5dfe9e13bc5e72dd8a74dddf8b02ec0a499f301833b3467b2391750f7"
+    },
+    {
+      "index": 4,
+      "text": "九零八本。",
+      "status": 0,
+      "readings": [
+        "<S>キュ^ーレ!ー|0ハ^チ!ホン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e834c83855e815b838c21815b7c30836e5e836021837a83933c463e"
+      ],
+      "wav_bytes": 192900,
+      "wav_sha256": "ce39f123bbc0b28e3ac893bc62f723d4590174572c1bdf4de7fa5d61efd0efe1"
+    },
+    {
+      "index": 5,
+      "text": "一−九零八本。",
+      "status": 0,
+      "readings": [
+        "<S>イ^チ!カラ|0キュ^ーレ!ー|0ハ^チ!ホン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83435e836021834a83897c30834c83855e815b838c21815b7c30836e5e836021837a83933c463e"
+      ],
+      "wav_bytes": 249644,
+      "wav_sha256": "8bd1f89c8f0d7850e772d400aca1fd9a6ac5ef7fd787993732ec427aa65a4dfa"
+    },
+    {
+      "index": 6,
+      "text": "一−九零八円。",
+      "status": 0,
+      "readings": [
+        "<S>イ^チ!カラ|0キュ^ーレ!ー|0ハ^チ!エン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83435e836021834a83897c30834c83855e815b838c21815b7c30836e5e836021834783933c463e"
+      ],
+      "wav_bytes": 252208,
+      "wav_sha256": "9b13df1649a27d89f8ba32878a5f6597076a0b18ca16eb8d604445bb090595eb"
+    },
+    {
+      "index": 7,
+      "text": "一−九〇八日。",
+      "status": 0,
+      "readings": [
+        "<S>イ^チ!カラ|0^キュ!ーヒャク|0ハ^チニチ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83435e836021834a83897c305e834c838521815b83718383834e7c30836e5e8360836a83603c463e"
+      ],
+      "wav_bytes": 262186,
+      "wav_sha256": "5f87a61f339dfe7308a41d30a932800be71c74b9f5bcb7dfe066720e9f9b0063"
+    },
+    {
+      "index": 8,
+      "text": "一−908日。",
+      "status": 0,
+      "readings": [
+        "<S>イ^チ$1_1^キュ!ーヒャク|0ハ^チニチ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83435e836024315f315e834c838521815b83718383834e7c30836e5e8360836a83603c463e"
+      ],
+      "wav_bytes": 254602,
+      "wav_sha256": "1a4243c2fa95a1dd4db11c30f52570e61a375f52c14d64aae00527375b83f8ec"
+    },
+    {
+      "index": 9,
+      "text": "零八日。",
+      "status": 0,
+      "readings": [
+        "<S>レ^ーハチ!ニチ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e838c5e815b836e836021836a83603c463e"
+      ],
+      "wav_bytes": 172844,
+      "wav_sha256": "cc6b7bcbc8141408ace7953a5823da7b633281c92d887fb0d87b4cb0288fc580"
+    },
+    {
+      "index": 10,
+      "text": "一−零八日。",
+      "status": 0,
+      "readings": [
+        "<S>イ^チ!カラ|0レ^ーハチニチ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83435e836021834a83897c30838c5e815b836e8360836a83603c463e"
+      ],
+      "wav_bytes": 227308,
+      "wav_sha256": "ddc2e000d8c126e8a7bc1caf75aaf6a69030830cac65d92e3e251cdbe4f78fdb"
+    },
+    {
+      "index": 11,
+      "text": "一−零五日。",
+      "status": 0,
+      "readings": [
+        "<S>イ^チ!カラ|0レ^ーゴ!ーニチ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83435e836021834a83897c30838c5e815b835321815b836a83603c463e"
+      ],
+      "wav_bytes": 220306,
+      "wav_sha256": "a4484faa0ae1095957d57841289ad1ddad90f1858b1d2c4e186b3b1484d946e2"
+    },
+    {
+      "index": 12,
+      "text": "一−零四日。",
+      "status": 0,
+      "readings": [
+        "<S>イ^チ!カラ|0レ^ーヨ!ンニチ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83435e836021834a83897c30838c5e815b8388218393836a83603c463e"
+      ],
+      "wav_bytes": 219958,
+      "wav_sha256": "a1d68410017c67dd6dc544f090ee0bc92ab24c3433552a9b347d89a2253654b6"
+    },
+    {
+      "index": 13,
+      "text": "一−零七日。",
+      "status": 0,
+      "readings": [
+        "<S>イ^チ!カラ|0レ^ーナナニチ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83435e836021834a83897c30838c5e815b83698369836a83603c463e"
+      ],
+      "wav_bytes": 226364,
+      "wav_sha256": "150a31cc4102f450aa9ccceba9a9a23dc2ad67dbb4ce65c281094234fb098ab5"
+    },
+    {
+      "index": 14,
+      "text": "一−零九日。",
+      "status": 0,
+      "readings": [
+        "<S>イ^チ!カラ|0^レ!ー|0^ク!ニチ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83435e836021834a83897c305e838c21815b7c305e834e21836a83603c463e"
+      ],
+      "wav_bytes": 212014,
+      "wav_sha256": "ca4b76c5d523a16143bc5c301131db57b0e659fa96bfe2df12224070a4d81f7a"
+    },
+    {
+      "index": 15,
+      "text": "一−零十日。",
+      "status": 0,
+      "readings": [
+        "<S>イ^チ!カラ|0^レ!ー|0^ジュ!ーニチ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83435e836021834a83897c305e838c21815b7c305e8357838521815b836a83603c463e"
+      ],
+      "wav_bytes": 228026,
+      "wav_sha256": "b1e9b8d1b98a82f8e3b301c78db771ec5ab8b37da817aad570d5139027692562"
+    }
+  ],
+  "complete": true,
+  "errors": [],
+  "executable_sha256": "de3be1e7979db53006add27f30131eb4c308c28ba78d6b7bb6365aecb01b3f2d",
+  "detach_reason": "process-terminated",
+  "crash": null,
+  "timed_out": false,
+  "native_report_sha256": "47a7a9b0025ef358e02cc6191329c41536809fc64974d417d8612877888d69e6"
+}

@@ -1,0 +1,327 @@
+{
+  "source": "ordinary original SDK talk; formatter observed without tensor injection; frontend-only capture",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "voice": "KotonohaAkane_ns_48",
+  "corpus_sha256": "976e9528dd8b0599e07cc54e6276e0748e3767be1a54a8bbe288f76bbe1c30ec",
+  "cases": [
+    {
+      "index": 0,
+      "text": "一回転。",
+      "status": 0,
+      "readings": [
+        "<S>イ^ッカ!イテン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83435e8362834a218343836583933c463e"
+      ],
+      "wav_bytes": 160762,
+      "wav_sha256": "5f189550341d64135b5c19fe651d6a1a3740a28ccf33450c868e000c74600cd0"
+    },
+    {
+      "index": 1,
+      "text": "二回転。",
+      "status": 0,
+      "readings": [
+        "<S>ニ^カ!イテン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e836a5e834a218343836583933c463e"
+      ],
+      "wav_bytes": 156952,
+      "wav_sha256": "c9a0dc7541806d1b41b07ab305f9c7f608d8cdc4b66da457a91dd5ce1d6fc2fc"
+    },
+    {
+      "index": 2,
+      "text": "三回転。",
+      "status": 0,
+      "readings": [
+        "<S>サ^ンカ!イテン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83545e8393834a218343836583933c463e"
+      ],
+      "wav_bytes": 170392,
+      "wav_sha256": "0bb369f8d0e30921650795143fc7834795c37d244ea3c6c943cf31c68d376370"
+    },
+    {
+      "index": 3,
+      "text": "四回転。",
+      "status": 0,
+      "readings": [
+        "<S>ヨ^ンカ!イテン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83885e8393834a218343836583933c463e"
+      ],
+      "wav_bytes": 167508,
+      "wav_sha256": "52c6b5423f32453c6fba195b1bc5db290176bc0582fe59ea058b1e10ecd10846"
+    },
+    {
+      "index": 4,
+      "text": "五回転。",
+      "status": 0,
+      "readings": [
+        "<S>ゴ^カ!イテン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83535e834a218343836583933c463e"
+      ],
+      "wav_bytes": 155898,
+      "wav_sha256": "3fb867f44e43847fe25d8d8e193cc0c3afc3ee465d781f7f030ea3e5f95f85c7"
+    },
+    {
+      "index": 5,
+      "text": "六回転。",
+      "status": 0,
+      "readings": [
+        "<S>ロ^ッカ!イテン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e838d5e8362834a218343836583933c463e"
+      ],
+      "wav_bytes": 164580,
+      "wav_sha256": "9abf919ed0142dd4c363d93fc7f15bb6fff9c9eaf5946743bd9f4ce38c716c51"
+    },
+    {
+      "index": 6,
+      "text": "七回転。",
+      "status": 0,
+      "readings": [
+        "<S>ナ^ナカ!イテン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83695e8369834a218343836583933c463e"
+      ],
+      "wav_bytes": 169922,
+      "wav_sha256": "08b4c4fb7e0eeb4c2c0fc31f43e46ebff4f62f881529b3c8ad88370abd0c10c7"
+    },
+    {
+      "index": 7,
+      "text": "八回転。",
+      "status": 0,
+      "readings": [
+        "<S>ハ^ッカ!イテン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e836e5e8362834a218343836583933c463e"
+      ],
+      "wav_bytes": 164702,
+      "wav_sha256": "b6a7a8798c539f9d34892c596cc53cb935be4b90e4ec8e4c9e659a72dd26ba36"
+    },
+    {
+      "index": 8,
+      "text": "九回転。",
+      "status": 0,
+      "readings": [
+        "<S>キュ^ーカ!イテン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e834c83855e815b834a218343836583933c463e"
+      ],
+      "wav_bytes": 164850,
+      "wav_sha256": "7fd905322f185c9265662715c689df6ffe04aab5aec2a2f60fa1ab61e53e47e9"
+    },
+    {
+      "index": 9,
+      "text": "十回転。",
+      "status": 0,
+      "readings": [
+        "<S>ジュ^ッカ!イテン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e835783855e8362834a218343836583933c463e"
+      ],
+      "wav_bytes": 165750,
+      "wav_sha256": "df0f679feeee6cda7d409a8caf29c8f7818694add69c9ed098775a003c802632"
+    },
+    {
+      "index": 10,
+      "text": "十八回転。",
+      "status": 0,
+      "readings": [
+        "<S>ジュ^ーハッカ!イテン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e835783855e815b836e8362834a218343836583933c463e"
+      ],
+      "wav_bytes": 188744,
+      "wav_sha256": "4c0f1f8564e802f1f9e19cc27bfee18982df1a4b38329f969aacdcef11a2c55f"
+    },
+    {
+      "index": 11,
+      "text": "百回転。",
+      "status": 0,
+      "readings": [
+        "<S>ヒャ^ッカ!イテン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e837183835e8362834a218343836583933c463e"
+      ],
+      "wav_bytes": 168478,
+      "wav_sha256": "a503ea4592c233e843621047f9a2ada901ab972484fef9ebb42353d1d9bc3fd3"
+    },
+    {
+      "index": 12,
+      "text": "千回転。",
+      "status": 0,
+      "readings": [
+        "<S>セ^ンカ!イテン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e835a5e8393834a218343836583933c463e"
+      ],
+      "wav_bytes": 170360,
+      "wav_sha256": "64d115c1f5242d584d3a1568771181e40c1f27cb227feb91a105e7903664342d"
+    },
+    {
+      "index": 13,
+      "text": "一−零八回転。",
+      "status": 0,
+      "readings": [
+        "<S>イ^チ!カラ|0^レ!ー|0ハ^ッカ!イテン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83435e836021834a83897c305e838c21815b7c30836e5e8362834a218343836583933c463e"
+      ],
+      "wav_bytes": 239466,
+      "wav_sha256": "a809b55329fa96d3b6d8a63779516e0d8b7f393576b1286986f7c56c89883abc"
+    },
+    {
+      "index": 14,
+      "text": "零八回転。",
+      "status": 0,
+      "readings": [
+        "<S>レ^ーハチカ!イテン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e838c5e815b836e8360834a218343836583933c463e"
+      ],
+      "wav_bytes": 194052,
+      "wav_sha256": "2174609fea44d5747abc871188c46ca831e04e3a09ea65256fa12d46a74ad32f"
+    },
+    {
+      "index": 15,
+      "text": "〇八回転。",
+      "status": 0,
+      "readings": [
+        "<S>ゼ^ロハチカ!イテン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e835b5e838d836e8360834a218343836583933c463e"
+      ],
+      "wav_bytes": 192930,
+      "wav_sha256": "6a204064d61d4a44c89373407e5699336195dbcdd5ef8ef2de70d7a026721217"
+    },
+    {
+      "index": 16,
+      "text": "一−０８回転。",
+      "status": 0,
+      "readings": [
+        "<S>イ^チ$1_1^ゼ!ロ|0ハ^ッカ!イテン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83435e836024315f315e835b21838d7c30836e5e8362834a218343836583933c463e"
+      ],
+      "wav_bytes": 239992,
+      "wav_sha256": "5389528679d0c66142ba693ba686569b0a049802a2347cb6b0584426dc24f410"
+    },
+    {
+      "index": 17,
+      "text": "八気筒。",
+      "status": 0,
+      "readings": [
+        "<S>ハ^ッキ!トー<F>"
+      ],
+      "cp932_hex": [
+        "3c533e836e5e8362834c218367815b3c463e"
+      ],
+      "wav_bytes": 158032,
+      "wav_sha256": "1a8efa2e670015ec60348d92757fa2159eb63ac43c89d72fff5aae076d8481f2"
+    },
+    {
+      "index": 18,
+      "text": "八冠。",
+      "status": 0,
+      "readings": [
+        "<S>ハ^ッカン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e836e5e8362834a83933c463e"
+      ],
+      "wav_bytes": 139858,
+      "wav_sha256": "fe5f7da7a549135da8a70d7ac5b08108dff44584f8f11793520b857af5144a99"
+    },
+    {
+      "index": 19,
+      "text": "八角。",
+      "status": 0,
+      "readings": [
+        "<S>^ヤ!スミ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e8384218358837e3c463e"
+      ],
+      "wav_bytes": 137838,
+      "wav_sha256": "3fe436ad48521253202505ee3983cd6b24fca0c641229c68d8aba9dcfb81da6f"
+    },
+    {
+      "index": 20,
+      "text": "八泊。",
+      "status": 0,
+      "readings": [
+        "<S>ハ^ッパク<F>"
+      ],
+      "cp932_hex": [
+        "3c533e836e5e83628370834e3c463e"
+      ],
+      "wav_bytes": 144962,
+      "wav_sha256": "5afee4f0da8b4a5ae59cad7e5f293205ff3bf413f19401aad60e209c380acb0a"
+    },
+    {
+      "index": 21,
+      "text": "八匹。",
+      "status": 0,
+      "readings": [
+        "<S>ハ^ッピキ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e836e5e83628373834c3c463e"
+      ],
+      "wav_bytes": 144524,
+      "wav_sha256": "6246f2bc48b72983ebb4f6e59f79b3d26e849fd82b3df48c0db4631403571f2f"
+    },
+    {
+      "index": 22,
+      "text": "一−零八角。",
+      "status": 0,
+      "readings": [
+        "<S>イ^チ!ノ|0^レ!ー|0^ハッカ!ク<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83435e836021836d7c305e838c21815b7c305e836e8362834a21834e3c463e"
+      ],
+      "wav_bytes": 202914,
+      "wav_sha256": "0fded96e086f061e4301860a5812ee660ae68c3656d97641226819d4166fe08f"
+    },
+    {
+      "index": 23,
+      "text": "一−零八匹。",
+      "status": 0,
+      "readings": [
+        "<S>イ^チ!カラ|0^レ!ー|0ハ^ッピキ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83435e836021834a83897c305e838c21815b7c30836e5e83628373834c3c463e"
+      ],
+      "wav_bytes": 220488,
+      "wav_sha256": "d80f87a0f11da66b016bf9a509670d29203341a503859d68ee773d3640c202af"
+    }
+  ],
+  "complete": true,
+  "errors": [],
+  "executable_sha256": "de3be1e7979db53006add27f30131eb4c308c28ba78d6b7bb6365aecb01b3f2d",
+  "detach_reason": "process-terminated",
+  "crash": null,
+  "timed_out": false,
+  "native_report_sha256": "c26fce266a0b471a149c912c8f03629950778d8d8d860938b024e558bf35a16c"
+}

@@ -1,0 +1,200 @@
+{
+  "dll_sha256": "00ca5c937940a94d052dbe52ec5fb0909db11ffbfccfd6e65e19b468169ff5e5",
+  "entry_rva": "0x31300",
+  "reconstructed_worker_rva": "0x4081c0",
+  "worker_dispatch_observed": false,
+  "cpu": "Intel64 Family 6 Model 207 Stepping 2, GenuineIntel",
+  "mode": 1310978,
+  "cases": [
+    {
+      "values": 1,
+      "input_alignment": 0
+    },
+    {
+      "values": 2,
+      "input_alignment": 0
+    },
+    {
+      "values": 3,
+      "input_alignment": 0
+    },
+    {
+      "values": 4,
+      "input_alignment": 0
+    },
+    {
+      "values": 5,
+      "input_alignment": 0
+    },
+    {
+      "values": 7,
+      "input_alignment": 0
+    },
+    {
+      "values": 8,
+      "input_alignment": 0
+    },
+    {
+      "values": 9,
+      "input_alignment": 0
+    },
+    {
+      "values": 17,
+      "input_alignment": 0
+    },
+    {
+      "values": 257,
+      "input_alignment": 0
+    },
+    {
+      "values": 4096,
+      "input_alignment": 0
+    },
+    {
+      "values": 1,
+      "input_alignment": 4
+    },
+    {
+      "values": 2,
+      "input_alignment": 4
+    },
+    {
+      "values": 3,
+      "input_alignment": 4
+    },
+    {
+      "values": 4,
+      "input_alignment": 4
+    },
+    {
+      "values": 5,
+      "input_alignment": 4
+    },
+    {
+      "values": 7,
+      "input_alignment": 4
+    },
+    {
+      "values": 8,
+      "input_alignment": 4
+    },
+    {
+      "values": 9,
+      "input_alignment": 4
+    },
+    {
+      "values": 17,
+      "input_alignment": 4
+    },
+    {
+      "values": 257,
+      "input_alignment": 4
+    },
+    {
+      "values": 4096,
+      "input_alignment": 4
+    },
+    {
+      "values": 1,
+      "input_alignment": 8
+    },
+    {
+      "values": 2,
+      "input_alignment": 8
+    },
+    {
+      "values": 3,
+      "input_alignment": 8
+    },
+    {
+      "values": 4,
+      "input_alignment": 8
+    },
+    {
+      "values": 5,
+      "input_alignment": 8
+    },
+    {
+      "values": 7,
+      "input_alignment": 8
+    },
+    {
+      "values": 8,
+      "input_alignment": 8
+    },
+    {
+      "values": 9,
+      "input_alignment": 8
+    },
+    {
+      "values": 17,
+      "input_alignment": 8
+    },
+    {
+      "values": 257,
+      "input_alignment": 8
+    },
+    {
+      "values": 4096,
+      "input_alignment": 8
+    },
+    {
+      "values": 1,
+      "input_alignment": 12
+    },
+    {
+      "values": 2,
+      "input_alignment": 12
+    },
+    {
+      "values": 3,
+      "input_alignment": 12
+    },
+    {
+      "values": 4,
+      "input_alignment": 12
+    },
+    {
+      "values": 5,
+      "input_alignment": 12
+    },
+    {
+      "values": 7,
+      "input_alignment": 12
+    },
+    {
+      "values": 8,
+      "input_alignment": 12
+    },
+    {
+      "values": 9,
+      "input_alignment": 12
+    },
+    {
+      "values": 17,
+      "input_alignment": 12
+    },
+    {
+      "values": 257,
+      "input_alignment": 12
+    },
+    {
+      "values": 4096,
+      "input_alignment": 12
+    },
+    {
+      "values": 120574,
+      "input_alignment": 0
+    }
+  ],
+  "values": 138210,
+  "reference_sha256": "38a74408477ffe9df4fb1f00ac64c15366f1397c843407b1f18a011aca68979f",
+  "output_sha256": "dcc0ce2dfd01cc04528698490298967a7e6d6a21a1e0a371bea95bf0084c846c",
+  "format": "little-endian uint32 input_bits, uint32 output_bits; concatenated cases",
+  "independent_original_captures": [
+    "private\\cpu-numeric-ci-37927408109\\cpu-original-replica-3\\kernels\\mkl_sqrt.json",
+    "private\\cpu-jit-ci-37924216406\\cpu-original-replica-1\\kernels\\mkl_sqrt.json",
+    "private\\cpu-jit-ci-37924216406\\cpu-original-replica-3\\kernels\\mkl_sqrt.json",
+    "private\\cpu-jit-ci-37924216406\\cpu-original-replica-4\\kernels\\mkl_sqrt.json"
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "scope": "All8 ordinary SDK/Go pairs and independent SDK captures rehashed and byte-compared. Terminal PASS in both logs; no running test process. Tool exit codes unavailable after session transition. No tensor injection.",
+  "pcm_samples": 959102,
+  "reports": [
+    {
+      "voice": "KotonohaAkane_ns_48",
+      "sha256": "17f605e144f6e1d0ee276a58e96d8f7b769f4f56682b9369424a6f2401ec3b94",
+      "report": {
+        "shard": 0,
+        "shards": 1,
+        "seed": 0,
+        "generator_version": 1,
+        "count": 4,
+        "max_units": 0,
+        "go_version": "go1.26.8",
+        "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+        "voice": "KotonohaAkane_ns_48",
+        "original_threads": 6,
+        "avx512_convolutions": false,
+        "results": [
+          {
+            "index": 0,
+            "text": "8−0。",
+            "original_sha256": "2883ee33436584b96abd9101f188556a4ac883c3fd1bf42681e043f82fe6abeb",
+            "go_sha256": "2883ee33436584b96abd9101f188556a4ac883c3fd1bf42681e043f82fe6abeb",
+            "original_bytes": 178222,
+            "go_bytes": 178222,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 1,
+            "text": "10−0。",
+            "original_sha256": "2fcb08b766c2edc1728ac9fe28baeee2005e18c23cb8737d28b0ebcfc20dbfeb",
+            "go_sha256": "2fcb08b766c2edc1728ac9fe28baeee2005e18c23cb8737d28b0ebcfc20dbfeb",
+            "original_bytes": 176382,
+            "go_bytes": 176382,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 2,
+            "text": "8対0本。",
+            "original_sha256": "1e9ac5346b8d5ee492b9b03d2dd8600c4822904d8d2aad7b2dff53b736ebc37d",
+            "go_sha256": "1e9ac5346b8d5ee492b9b03d2dd8600c4822904d8d2aad7b2dff53b736ebc37d",
+            "original_bytes": 197768,
+            "go_bytes": 197768,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 3,
+            "text": ".個8－0AA・５（五0零十。",
+            "original_sha256": "bd3e8a934ac5d26347c915002946e71346e685f2591b4c2390a1975d6a953fd1",
+            "go_sha256": "bd3e8a934ac5d26347c915002946e71346e685f2591b4c2390a1975d6a953fd1",
+            "original_bytes": 406404,
+            "go_bytes": 406404,
+            "first_difference": -1,
+            "equal": true
+          }
+        ]
+      }
+    },
+    {
+      "voice": "KotonohaAoi_ns_48",
+      "sha256": "daf60d833bde15cbd8655a6dd7a2ae625c09650ac331655d182875b4d566d9d2",
+      "report": {
+        "shard": 0,
+        "shards": 1,
+        "seed": 0,
+        "generator_version": 1,
+        "count": 4,
+        "max_units": 0,
+        "go_version": "go1.26.8",
+        "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+        "voice": "KotonohaAoi_ns_48",
+        "original_threads": 6,
+        "avx512_convolutions": false,
+        "results": [
+          {
+            "index": 0,
+            "text": "8−0。",
+            "original_sha256": "2883ee33436584b96abd9101f188556a4ac883c3fd1bf42681e043f82fe6abeb",
+            "go_sha256": "2883ee33436584b96abd9101f188556a4ac883c3fd1bf42681e043f82fe6abeb",
+            "original_bytes": 178222,
+            "go_bytes": 178222,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 1,
+            "text": "10−0。",
+            "original_sha256": "2fcb08b766c2edc1728ac9fe28baeee2005e18c23cb8737d28b0ebcfc20dbfeb",
+            "go_sha256": "2fcb08b766c2edc1728ac9fe28baeee2005e18c23cb8737d28b0ebcfc20dbfeb",
+            "original_bytes": 176382,
+            "go_bytes": 176382,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 2,
+            "text": "8対0本。",
+            "original_sha256": "1e9ac5346b8d5ee492b9b03d2dd8600c4822904d8d2aad7b2dff53b736ebc37d",
+            "go_sha256": "1e9ac5346b8d5ee492b9b03d2dd8600c4822904d8d2aad7b2dff53b736ebc37d",
+            "original_bytes": 197768,
+            "go_bytes": 197768,
+            "first_difference": -1,
+            "equal": true
+          },
+          {
+            "index": 3,
+            "text": ".個8－0AA・５（五0零十。",
+            "original_sha256": "41b789f8a6366f32792fedaaa1542954c78e30afcd924526319b8b23b69b7d62",
+            "go_sha256": "41b789f8a6366f32792fedaaa1542954c78e30afcd924526319b8b23b69b7d62",
+            "original_bytes": 407408,
+            "go_bytes": 407408,
+            "first_difference": -1,
+            "equal": true
+          }
+        ]
+      }
+    }
+  ]
+}

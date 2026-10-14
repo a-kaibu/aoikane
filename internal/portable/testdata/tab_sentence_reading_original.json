@@ -1,0 +1,545 @@
+{
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "capture_sha256": [
+    "10cccdcce5a500ff99a4d104e59fce3345be0e217cfd2f5628bbf1872edf2028",
+    "4a73abed1940422ba4d8e4be67367d68780dcb7b41e3fce833bedfe1e4732992"
+  ],
+  "cases": [
+    {
+      "text": "。\t。−？0！。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S><F>",
+        "<S><R>",
+        "<S>^ゼ!ロ<A>"
+      ]
+    },
+    {
+      "text": "。。あ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S>^ア<F>"
+      ]
+    },
+    {
+      "text": "。 。あ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S><F>",
+        "<S>^ア<F>"
+      ]
+    },
+    {
+      "text": "。\t。あ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S><F>",
+        "<S>^ア<F>"
+      ]
+    },
+    {
+      "text": "。\n。あ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S>^ア<F>"
+      ]
+    },
+    {
+      "text": "。\r。あ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S>^ア<F>"
+      ]
+    },
+    {
+      "text": "。　。あ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S><F>",
+        "<S>^ア<F>"
+      ]
+    },
+    {
+      "text": "！！あ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S>^ア<F>"
+      ]
+    },
+    {
+      "text": "！ ！あ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S><F>",
+        "<S>^ア<F>"
+      ]
+    },
+    {
+      "text": "！\t！あ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S><F>",
+        "<S>^ア<F>"
+      ]
+    },
+    {
+      "text": "！\n！あ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S>^ア<F>"
+      ]
+    },
+    {
+      "text": "！\r！あ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S>^ア<F>"
+      ]
+    },
+    {
+      "text": "！　！あ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S><F>",
+        "<S>^ア<F>"
+      ]
+    },
+    {
+      "text": "？？あ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S><R>",
+        "<S>^ア<F>"
+      ]
+    },
+    {
+      "text": "？ ？あ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S><R>",
+        "<S><R>",
+        "<S>^ア<F>"
+      ]
+    },
+    {
+      "text": "？\t？あ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S><R>",
+        "<S><R>",
+        "<S>^ア<F>"
+      ]
+    },
+    {
+      "text": "？\n？あ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S><R>",
+        "<S>^ア<F>"
+      ]
+    },
+    {
+      "text": "？\r？あ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S><R>",
+        "<S>^ア<F>"
+      ]
+    },
+    {
+      "text": "？　？あ。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S><R>",
+        "<S><R>",
+        "<S>^ア<F>"
+      ]
+    },
+    {
+      "text": "あ。\t。い。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^ア<F>",
+        "<S><F>",
+        "<S>^イ<F>"
+      ]
+    },
+    {
+      "text": "あ。 。い。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^ア<F>",
+        "<S><F>",
+        "<S>^イ<F>"
+      ]
+    },
+    {
+      "text": "あ。\n。い。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^ア<F>",
+        "<S>^イ<F>"
+      ]
+    },
+    {
+      "text": "あ。\r。い。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S>^ア<F>",
+        "<S>^イ<F>"
+      ]
+    },
+    {
+      "text": "。\t。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S><F>"
+      ]
+    },
+    {
+      "text": "。\t\t。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S><F>"
+      ]
+    },
+    {
+      "text": "。 \t 。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S><F>"
+      ]
+    },
+    {
+      "text": "。\t 。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S><F>"
+      ]
+    },
+    {
+      "text": "。\t\n。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S><F>"
+      ]
+    },
+    {
+      "text": "。\u000b。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S><F>"
+      ]
+    },
+    {
+      "text": "。\f。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S><F>"
+      ]
+    },
+    {
+      "text": "。 。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S><F>"
+      ]
+    },
+    {
+      "text": "。\r\n。",
+      "voice": "KotonohaAkane_ns_48",
+      "readings": [
+        "<S><F>"
+      ]
+    },
+    {
+      "text": "。\t。−？0！。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S><F>",
+        "<S><R>",
+        "<S>^ゼ!ロ<A>"
+      ]
+    },
+    {
+      "text": "。。あ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S>ア<F>"
+      ]
+    },
+    {
+      "text": "。 。あ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S><F>",
+        "<S>ア<F>"
+      ]
+    },
+    {
+      "text": "。\t。あ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S><F>",
+        "<S>ア<F>"
+      ]
+    },
+    {
+      "text": "。\n。あ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S>ア<F>"
+      ]
+    },
+    {
+      "text": "。\r。あ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S>ア<F>"
+      ]
+    },
+    {
+      "text": "。　。あ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S><F>",
+        "<S>ア<F>"
+      ]
+    },
+    {
+      "text": "！！あ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S>ア<F>"
+      ]
+    },
+    {
+      "text": "！ ！あ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S><F>",
+        "<S>ア<F>"
+      ]
+    },
+    {
+      "text": "！\t！あ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S><F>",
+        "<S>ア<F>"
+      ]
+    },
+    {
+      "text": "！\n！あ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S>ア<F>"
+      ]
+    },
+    {
+      "text": "！\r！あ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S>ア<F>"
+      ]
+    },
+    {
+      "text": "！　！あ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S><F>",
+        "<S>ア<F>"
+      ]
+    },
+    {
+      "text": "？？あ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S><R>",
+        "<S>ア<F>"
+      ]
+    },
+    {
+      "text": "？ ？あ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S><R>",
+        "<S><R>",
+        "<S>ア<F>"
+      ]
+    },
+    {
+      "text": "？\t？あ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S><R>",
+        "<S><R>",
+        "<S>ア<F>"
+      ]
+    },
+    {
+      "text": "？\n？あ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S><R>",
+        "<S>ア<F>"
+      ]
+    },
+    {
+      "text": "？\r？あ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S><R>",
+        "<S>ア<F>"
+      ]
+    },
+    {
+      "text": "？　？あ。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S><R>",
+        "<S><R>",
+        "<S>ア<F>"
+      ]
+    },
+    {
+      "text": "あ。\t。い。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ア<F>",
+        "<S><F>",
+        "<S>イ<F>"
+      ]
+    },
+    {
+      "text": "あ。 。い。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ア<F>",
+        "<S><F>",
+        "<S>イ<F>"
+      ]
+    },
+    {
+      "text": "あ。\n。い。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ア<F>",
+        "<S>イ<F>"
+      ]
+    },
+    {
+      "text": "あ。\r。い。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S>ア<F>",
+        "<S>イ<F>"
+      ]
+    },
+    {
+      "text": "。\t。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S><F>"
+      ]
+    },
+    {
+      "text": "。\t\t。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S><F>"
+      ]
+    },
+    {
+      "text": "。 \t 。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S><F>"
+      ]
+    },
+    {
+      "text": "。\t 。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S><F>"
+      ]
+    },
+    {
+      "text": "。\t\n。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S><F>"
+      ]
+    },
+    {
+      "text": "。\u000b。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S><F>"
+      ]
+    },
+    {
+      "text": "。\f。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S><F>"
+      ]
+    },
+    {
+      "text": "。 。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S><F>",
+        "<S><F>"
+      ]
+    },
+    {
+      "text": "。\r\n。",
+      "voice": "KotonohaAoi_ns_48",
+      "readings": [
+        "<S><F>"
+      ]
+    }
+  ]
+}

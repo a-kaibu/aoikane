@@ -1,0 +1,223 @@
+{
+  "source": "ordinary original SDK talk; formatter observed without tensor injection; frontend-only capture",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "voice": "KotonohaAkane_ns_48",
+  "corpus_sha256": "7fd71370e7efe062f84480f2e4262ce48fb3dee7bcf6a4e02cd2778d8f88e205",
+  "cases": [
+    {
+      "index": 0,
+      "text": "10万円。",
+      "status": 0,
+      "readings": [
+        "<S>ジュ^ーマンエン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e835783855e815b837d8393834783933c463e"
+      ],
+      "wav_bytes": 168674,
+      "wav_sha256": "a19f0c440b99646d4ddb899094378bf75ab76db920d64f6d28d99191d805c62d"
+    },
+    {
+      "index": 1,
+      "text": "10万個年。",
+      "status": 0,
+      "readings": [
+        "<S>ジュ^ーマンカネン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e835783855e815b837d8393834a836c83933c463e"
+      ],
+      "wav_bytes": 179852,
+      "wav_sha256": "25432e394682f58eae46204c1fc5352399cf5b1fd6eb1718694ad9f95c20e6cc"
+    },
+    {
+      "index": 2,
+      "text": "20万円。",
+      "status": 0,
+      "readings": [
+        "<S>ニ^ジューマ!ンエン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e836a5e83578385815b837d218393834783933c463e"
+      ],
+      "wav_bytes": 182206,
+      "wav_sha256": "e21597f0709bb17ae9100858d0802225d88f78fee2586741e830003c88c6b254"
+    },
+    {
+      "index": 3,
+      "text": "20万個年。",
+      "status": 0,
+      "readings": [
+        "<S>ニ^ジューマンカ!ネン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e836a5e83578385815b837d8393834a21836c83933c463e"
+      ],
+      "wav_bytes": 192700,
+      "wav_sha256": "f37ee472d7f1cd9bdee492fac6b26dacbbb2ebe618259a0677913d3ddb68031f"
+    },
+    {
+      "index": 4,
+      "text": "30万円。",
+      "status": 0,
+      "readings": [
+        "<S>サ^ンジューマ!ンエン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83545e839383578385815b837d218393834783933c463e"
+      ],
+      "wav_bytes": 198352,
+      "wav_sha256": "59c0078f76a708c68c398febb4b62a778aa6c87e85bd986d2e2e9d18de920b66"
+    },
+    {
+      "index": 5,
+      "text": "30万個年。",
+      "status": 0,
+      "readings": [
+        "<S>サ^ンジューマンカ!ネン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83545e839383578385815b837d8393834a21836c83933c463e"
+      ],
+      "wav_bytes": 208364,
+      "wav_sha256": "dff18ac33fdb1acd1478bde20afd8edd56f0e5cb06d705b027c1a78576fa6f9b"
+    },
+    {
+      "index": 6,
+      "text": "100万円。",
+      "status": 0,
+      "readings": [
+        "<S>ヒャ^クマンエン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e837183835e834e837d8393834783933c463e"
+      ],
+      "wav_bytes": 174754,
+      "wav_sha256": "58cf3ec025ef722228f58885e3af1ed3fe8b9c7f09c4a23d1f5973426ce870ea"
+    },
+    {
+      "index": 7,
+      "text": "100万個年。",
+      "status": 0,
+      "readings": [
+        "<S>ヒャ^クマンカネン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e837183835e834e837d8393834a836c83933c463e"
+      ],
+      "wav_bytes": 186502,
+      "wav_sha256": "9b4d86190c0e1867b0842af3ec90c40f337a8830fc2fc2239ec2af2981978d69"
+    },
+    {
+      "index": 8,
+      "text": "200万円。",
+      "status": 0,
+      "readings": [
+        "<S>ニ^ヒャクマ!ンエン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e836a5e83718383834e837d218393834783933c463e"
+      ],
+      "wav_bytes": 182470,
+      "wav_sha256": "2004dbbc2a07d0ddcc611d2e8b85e49c705b4d839739dfd535f2c40c8aeeaa4b"
+    },
+    {
+      "index": 9,
+      "text": "200万個年。",
+      "status": 0,
+      "readings": [
+        "<S>ニ^ヒャクマンカ!ネン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e836a5e83718383834e837d8393834a21836c83933c463e"
+      ],
+      "wav_bytes": 193248,
+      "wav_sha256": "581f00c721c5c330e866cdd75d43e20337febfae2a77f288f42e9e40dfa44e13"
+    },
+    {
+      "index": 10,
+      "text": "千億円。",
+      "status": 0,
+      "readings": [
+        "<S>セ^ンオクエン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e835a5e83938349834e834783933c463e"
+      ],
+      "wav_bytes": 177152,
+      "wav_sha256": "7be6b5426d52074c934d88ba26922c2178dfcca5316a1bef6772689f9dec07fe"
+    },
+    {
+      "index": 11,
+      "text": "千億個年。",
+      "status": 0,
+      "readings": [
+        "<S>セ^ンオクカネン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e835a5e83938349834e834a836c83933c463e"
+      ],
+      "wav_bytes": 186214,
+      "wav_sha256": "9f26c96b09751eb1cdcdf085e6c13dfa089ada58233b37fec670e63cf3bebda3"
+    },
+    {
+      "index": 12,
+      "text": "20億円。",
+      "status": 0,
+      "readings": [
+        "<S>ニ^ジューオ!クエン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e836a5e83578385815b834921834e834783933c463e"
+      ],
+      "wav_bytes": 183920,
+      "wav_sha256": "3bf30158b929fe5fa9b6df0d548f25dfa0bbe14997a711c5412dab78f3cebbb8"
+    },
+    {
+      "index": 13,
+      "text": "20億個年。",
+      "status": 0,
+      "readings": [
+        "<S>ニ^ジューオクカ!ネン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e836a5e83578385815b8349834e834a21836c83933c463e"
+      ],
+      "wav_bytes": 191160,
+      "wav_sha256": "d0920c1ab3361c1b25574dafd205ca2e9e902b886fa99bf528403525357bc26b"
+    },
+    {
+      "index": 14,
+      "text": "百億円。",
+      "status": 0,
+      "readings": [
+        "<S>ヒャ^クオクエン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e837183835e834e8349834e834783933c463e"
+      ],
+      "wav_bytes": 178912,
+      "wav_sha256": "aa106788b40767f8b55e249e86674347be18fddfac1ec2a758eb5c78899a9278"
+    },
+    {
+      "index": 15,
+      "text": "百億個年。",
+      "status": 0,
+      "readings": [
+        "<S>ヒャ^クオクカネン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e837183835e834e8349834e834a836c83933c463e"
+      ],
+      "wav_bytes": 186596,
+      "wav_sha256": "3f87f4cdc69efd1e78b4c524c6872f9583526fb84b082bc5936e6931adecd30d"
+    }
+  ],
+  "complete": true,
+  "errors": [],
+  "executable_sha256": "de3be1e7979db53006add27f30131eb4c308c28ba78d6b7bb6365aecb01b3f2d",
+  "detach_reason": "process-terminated",
+  "crash": null,
+  "timed_out": false,
+  "native_report_sha256": "23c2ff00bc527b03c3c861fbe77e8d8a81f28570c9c10f0de8c20aff2d40fcff"
+}

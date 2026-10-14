@@ -1,0 +1,35 @@
+{
+  "dll_sha256": "00ca5c937940a94d052dbe52ec5fb0909db11ffbfccfd6e65e19b468169ff5e5",
+  "model_sha256": "0341bdce841395eec505afab8d804038b681fe682cd1bb43894e63797bd4a142",
+  "trace_sha256": "9e1326451b7e4ff38ca38950401e002ad64c102ee309d3014345d3c45d0155b9",
+  "ordinary_wav_sha256": "6be20e8718dc8a1329426baa824b9dabef10315dddc2099a3ad11ffac6032d7d",
+  "cpu": "Intel64 Family 6 Model 207 Stepping 2, GenuineIntel",
+  "original_threads": 1,
+  "run": 14,
+  "source": "private/cpu-numeric-ci-37927408109/cpu-original-replica-3/trace",
+  "independent_capture_count": 4,
+  "storage": "little endian float32 input, output-major weight, output per case",
+  "reference_sha256": "d5bdc78c1e9a039f12bfbf9845161278677956847fdf9f0a4dc3303a527edac6",
+  "output_sha256": "6c8be4169f00311c685f01f46b194d316769ca16c7221fe1bd89a9c1d3f2490a",
+  "values": 8448,
+  "cases": [
+    {
+      "operation": 1,
+      "rows": 11,
+      "in": 32,
+      "out": 256
+    },
+    {
+      "operation": 2,
+      "rows": 11,
+      "in": 10,
+      "out": 256
+    },
+    {
+      "operation": 3,
+      "rows": 11,
+      "in": 5,
+      "out": 256
+    }
+  ]
+}

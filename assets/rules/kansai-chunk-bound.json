@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "source_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "rules": [
+    {
+      "kind": 1,
+      "pos": [],
+      "distance": [
+        1
+      ],
+      "between": [],
+      "inclusive": []
+    },
+    {
+      "kind": 4,
+      "pos": [
+        184680448,
+        184614912
+      ],
+      "distance": [
+        3,
+        9999
+      ],
+      "between": [],
+      "inclusive": []
+    },
+    {
+      "kind": 4,
+      "pos": [],
+      "distance": [
+        3,
+        9999
+      ],
+      "between": [],
+      "inclusive": [
+        10,
+        9999
+      ]
+    },
+    {
+      "kind": 4,
+      "pos": [
+        184680448,
+        184614912
+      ],
+      "distance": [
+        2
+      ],
+      "between": [],
+      "inclusive": []
+    },
+    {
+      "kind": 3,
+      "pos": [],
+      "distance": [
+        3,
+        9999
+      ],
+      "between": [],
+      "inclusive": []
+    },
+    {
+      "kind": 3,
+      "pos": [],
+      "distance": [
+        2
+      ],
+      "between": [
+        10,
+        9999
+      ],
+      "inclusive": []
+    }
+  ]
+}

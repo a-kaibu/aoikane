@@ -1,0 +1,26 @@
+{
+  "source": "finished clean CGO=0 CLI synth --portable embedded executions; both whole WAVs match ordinary-original references",
+  "commit": "90243b17360395f81cd8333d4193fa7c7ab9d232",
+  "vcs_modified": false,
+  "go_version": "go1.26.8",
+  "cgo_enabled": 0,
+  "goos": "windows",
+  "goarch": "amd64",
+  "goamd64": "v1",
+  "build_info_sha256": "343a7a89ed079714ccf202230147cd98197eb3f2ea8c37424b87010cb1538a0c",
+  "reference_sha256": "fc8068cc430c13f6c87b72ef08ee0b2b88a897736c1ba200023183d1982f243e",
+  "cases": [
+    {
+      "text": "・五０.8十1１.〇五学校.。",
+      "voice": "KotonohaAkane_ns_48",
+      "bytes": 385392,
+      "sha256": "20457929568e6a84fd5c96d82f407af1ebe3a14c026500bcb59932069ee238b6"
+    },
+    {
+      "text": "・五０.8十1１.〇五学校.。",
+      "voice": "KotonohaAoi_ns_48",
+      "bytes": 389312,
+      "sha256": "b39b0e79719e11e4b9501c80ec7bf518b407594447976101e64ecc93e5be7ce7"
+    }
+  ]
+}

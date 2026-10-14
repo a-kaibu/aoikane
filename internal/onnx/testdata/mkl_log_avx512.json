@@ -1,0 +1,178 @@
+{
+  "dll_sha256": "00ca5c937940a94d052dbe52ec5fb0909db11ffbfccfd6e65e19b468169ff5e5",
+  "rva": "0x31b10",
+  "mode": 1310978,
+  "output_sha256": "bedd876a754895a4a03f237253b41d4c1d2a66583e704bf2a84bd72afa39a234",
+  "subnormal_count": 8388607,
+  "subnormal_sha256": "89d249fe3d4239a352992c0eae776df6904f2e1d1738c3b3cbd044dfb9497d1d",
+  "reconstructed_worker_rva": "0x443ad0",
+  "entry_rva": "0x31b10",
+  "values": 33548,
+  "reference_sha256": "88e4f25b81f049088933cff3369eaaa3b4bee02cd4cea31ff5adaa266f69e1f9",
+  "reference_source": "private/cpu-numeric-ci-37927408109/cpu-original-replica-3/kernels/mkl_log.json",
+  "worker_dispatch_observed": false,
+  "cases": [
+    {
+      "values": 1,
+      "input_alignment": 0
+    },
+    {
+      "values": 2,
+      "input_alignment": 0
+    },
+    {
+      "values": 3,
+      "input_alignment": 0
+    },
+    {
+      "values": 4,
+      "input_alignment": 0
+    },
+    {
+      "values": 5,
+      "input_alignment": 0
+    },
+    {
+      "values": 7,
+      "input_alignment": 0
+    },
+    {
+      "values": 8,
+      "input_alignment": 0
+    },
+    {
+      "values": 9,
+      "input_alignment": 0
+    },
+    {
+      "values": 17,
+      "input_alignment": 0
+    },
+    {
+      "values": 8331,
+      "input_alignment": 0
+    },
+    {
+      "values": 1,
+      "input_alignment": 4
+    },
+    {
+      "values": 2,
+      "input_alignment": 4
+    },
+    {
+      "values": 3,
+      "input_alignment": 4
+    },
+    {
+      "values": 4,
+      "input_alignment": 4
+    },
+    {
+      "values": 5,
+      "input_alignment": 4
+    },
+    {
+      "values": 7,
+      "input_alignment": 4
+    },
+    {
+      "values": 8,
+      "input_alignment": 4
+    },
+    {
+      "values": 9,
+      "input_alignment": 4
+    },
+    {
+      "values": 17,
+      "input_alignment": 4
+    },
+    {
+      "values": 8331,
+      "input_alignment": 4
+    },
+    {
+      "values": 1,
+      "input_alignment": 8
+    },
+    {
+      "values": 2,
+      "input_alignment": 8
+    },
+    {
+      "values": 3,
+      "input_alignment": 8
+    },
+    {
+      "values": 4,
+      "input_alignment": 8
+    },
+    {
+      "values": 5,
+      "input_alignment": 8
+    },
+    {
+      "values": 7,
+      "input_alignment": 8
+    },
+    {
+      "values": 8,
+      "input_alignment": 8
+    },
+    {
+      "values": 9,
+      "input_alignment": 8
+    },
+    {
+      "values": 17,
+      "input_alignment": 8
+    },
+    {
+      "values": 8331,
+      "input_alignment": 8
+    },
+    {
+      "values": 1,
+      "input_alignment": 12
+    },
+    {
+      "values": 2,
+      "input_alignment": 12
+    },
+    {
+      "values": 3,
+      "input_alignment": 12
+    },
+    {
+      "values": 4,
+      "input_alignment": 12
+    },
+    {
+      "values": 5,
+      "input_alignment": 12
+    },
+    {
+      "values": 7,
+      "input_alignment": 12
+    },
+    {
+      "values": 8,
+      "input_alignment": 12
+    },
+    {
+      "values": 9,
+      "input_alignment": 12
+    },
+    {
+      "values": 17,
+      "input_alignment": 12
+    },
+    {
+      "values": 8331,
+      "input_alignment": 12
+    }
+  ],
+  "independent_capture_count": 4,
+  "instruction_reference": "https://www.intel.com/content/dam/develop/external/us/en/documents/319433-024-697869.pdf"
+}

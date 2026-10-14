@@ -1,0 +1,27 @@
+{
+  "source": "ordinary original Akane frontend; tools/probe_graph.py; graph formats, no injected inputs",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "voice": "KotonohaAkane_ns_48",
+  "capture_sha256": [
+    "e33985cf92fc1ebccdec0ba9140274502d421a7fe8cab15e927a1a39dc2c5552",
+    "b5fb8648ec84c089fd3cb232284569adefa039570a8a8ed4f8aa36dcb19f3dfa"
+  ],
+  "cases": [
+    {
+      "text": "つ。",
+      "reading": "<S>^ツ<F>"
+    },
+    {
+      "text": "ぜつ。",
+      "reading": "<S>ゼ|0^ツ<F>"
+    },
+    {
+      "text": "むぷへぜつ。",
+      "reading": "<S>^ムプエ!ゼ|0^ツ<F>"
+    },
+    {
+      "text": "のゆなむぷへぜつ。",
+      "reading": "<S>ノ|0^ユ!ナ|0^ムプエ!ゼ|0^ツ<F>"
+    }
+  ]
+}

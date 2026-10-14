@@ -1,0 +1,228 @@
+{
+  "source": "read-only ordinary original numeral fragment observation; no tensor injection",
+  "raw_sha256": "e70d9c200885e1da5906eef57692387b1bd5bbb47fb102d2c7c65e4bfddb2a2e",
+  "event_counts": {
+    "hooked": 3,
+    "stage_enter_11f9c0": 5,
+    "stage_leave_11f9c0": 5,
+    "stage_enter_11ec50": 5,
+    "stage_leave_11ec50": 5,
+    "numeral_segment_enter": 12,
+    "numeral_segment_leave": 12,
+    "graph_in": 3,
+    "graph_built": 3,
+    "graph_after": 3,
+    "format": 3,
+    "done": 3,
+    "numeral_counter_enter": 1
+  },
+  "events": [
+    {
+      "event": "numeral_segment_enter",
+      "input": "学校百十９1。",
+      "rva": "100a90",
+      "caller": "0x10245a",
+      "input_hex": "百十９１"
+    },
+    {
+      "event": "numeral_segment_enter",
+      "input": "学校百十９1。",
+      "rva": "10b010",
+      "caller": "0x100f60",
+      "input_hex": "百十"
+    },
+    {
+      "event": "numeral_segment_leave",
+      "input": "学校百十９1。",
+      "rva": "10b010",
+      "result": "0x1",
+      "input_hex": "百十",
+      "output_a": "ヒャクジュー",
+      "output_b": "百十"
+    },
+    {
+      "event": "numeral_segment_enter",
+      "input": "学校百十９1。",
+      "rva": "10b010",
+      "caller": "0x101e0b",
+      "input_hex": "９１"
+    },
+    {
+      "event": "numeral_segment_leave",
+      "input": "学校百十９1。",
+      "rva": "10b010",
+      "result": "0x1",
+      "input_hex": "９１",
+      "output_a": "ヒャクジューキュージューイチ",
+      "output_b": "百十九十一"
+    },
+    {
+      "event": "numeral_segment_leave",
+      "input": "学校百十９1。",
+      "rva": "100a90",
+      "result": "0x1",
+      "input_hex": "百十９１",
+      "output_a": "ヒャクジューキュージューイチ",
+      "output_b": "百十九十一"
+    },
+    {
+      "event": "format",
+      "input": "学校百十９1。",
+      "text": "<S>ガッコ^ー|0ヒャ^ク|0ジュ^ーキュ!ー|0ジュ^ーイチ<F>"
+    },
+    {
+      "event": "numeral_segment_enter",
+      "input": "万5百時分百−。",
+      "rva": "100a90",
+      "caller": "0x10245a",
+      "input_hex": "万５百"
+    },
+    {
+      "event": "numeral_segment_enter",
+      "input": "万5百時分百−。",
+      "rva": "10b010",
+      "caller": "0x100f60",
+      "input_hex": "万"
+    },
+    {
+      "event": "numeral_segment_leave",
+      "input": "万5百時分百−。",
+      "rva": "10b010",
+      "result": "0x1",
+      "input_hex": "万",
+      "output_a": "マン",
+      "output_b": "万"
+    },
+    {
+      "event": "numeral_segment_enter",
+      "input": "万5百時分百−。",
+      "rva": "10b010",
+      "caller": "0x101e0b",
+      "input_hex": "５百"
+    },
+    {
+      "event": "numeral_segment_leave",
+      "input": "万5百時分百−。",
+      "rva": "10b010",
+      "result": "0x1",
+      "input_hex": "５百",
+      "output_a": "マンゴヒャク",
+      "output_b": "万五百"
+    },
+    {
+      "event": "numeral_segment_leave",
+      "input": "万5百時分百−。",
+      "rva": "100a90",
+      "result": "0x1",
+      "input_hex": "万５百",
+      "output_a": "マンゴヒャク",
+      "output_b": "万五百"
+    },
+    {
+      "event": "numeral_segment_enter",
+      "input": "万5百時分百−。",
+      "rva": "100a90",
+      "caller": "0x10245a",
+      "input_hex": "百"
+    },
+    {
+      "event": "numeral_segment_enter",
+      "input": "万5百時分百−。",
+      "rva": "10b010",
+      "caller": "0x101e0b",
+      "input_hex": "百"
+    },
+    {
+      "event": "numeral_segment_leave",
+      "input": "万5百時分百−。",
+      "rva": "10b010",
+      "result": "0x1",
+      "input_hex": "百",
+      "output_a": "ヒャク",
+      "output_b": "百"
+    },
+    {
+      "event": "numeral_segment_leave",
+      "input": "万5百時分百−。",
+      "rva": "100a90",
+      "result": "0x1",
+      "input_hex": "百",
+      "output_a": "ヒャク",
+      "output_b": "百"
+    },
+    {
+      "event": "format",
+      "input": "万5百時分百−。",
+      "text": "<S>^マ!ン|0ゴ^ヒャクジ!ブン|0ヒャ^ク<F>"
+    },
+    {
+      "event": "numeral_segment_enter",
+      "input": "９十8・三。",
+      "rva": "100a90",
+      "caller": "0x10245a",
+      "input_hex": "９十８・三"
+    },
+    {
+      "event": "numeral_segment_enter",
+      "input": "９十8・三。",
+      "rva": "10b010",
+      "caller": "0x100f60",
+      "input_hex": "９十"
+    },
+    {
+      "event": "numeral_segment_leave",
+      "input": "９十8・三。",
+      "rva": "10b010",
+      "result": "0x1",
+      "input_hex": "９十",
+      "output_a": "キュージュー",
+      "output_b": "九十"
+    },
+    {
+      "event": "numeral_segment_enter",
+      "input": "９十8・三。",
+      "rva": "10b010",
+      "caller": "0x100fec",
+      "input_hex": "８"
+    },
+    {
+      "event": "numeral_segment_leave",
+      "input": "９十8・三。",
+      "rva": "10b010",
+      "result": "0x1",
+      "input_hex": "８",
+      "output_a": "キュージューハチ",
+      "output_b": "九十八"
+    },
+    {
+      "event": "numeral_segment_enter",
+      "input": "９十8・三。",
+      "rva": "10b010",
+      "caller": "0x101e0b",
+      "input_hex": "三"
+    },
+    {
+      "event": "numeral_segment_leave",
+      "input": "９十8・三。",
+      "rva": "10b010",
+      "result": "0x1",
+      "input_hex": "三",
+      "output_a": "キュージューハチｐサン",
+      "output_b": "九十八・三"
+    },
+    {
+      "event": "numeral_segment_leave",
+      "input": "９十8・三。",
+      "rva": "100a90",
+      "result": "0x1",
+      "input_hex": "９十８・三",
+      "output_a": "キュージューハチｐサン",
+      "output_b": "九十八・三"
+    },
+    {
+      "event": "format",
+      "input": "９十8・三。",
+      "text": "<S>^キュ!ージュー|0ハ^チ$1_1サ^ン<F>"
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "source": "ordinary original direct engine API; public configuration setters; no instrumentation or injected model inputs",
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "original_threads": 6,
+  "corpus_sha256": "acf8296722a1d89e24694a254534a03b4ca78172847616cdf4abf0adeb75ec43",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "torch_dll_sha256": "00ca5c937940a94d052dbe52ec5fb0909db11ffbfccfd6e65e19b468169ff5e5",
+  "cases": [
+    {
+      "name": "rate",
+      "request": {
+        "format": "wav",
+        "text": "あ。",
+        "voice": "KotonohaAkane_ns_48",
+        "rate": 1.3,
+        "pitch": 1,
+        "volume": 1,
+        "emphasis": 1
+      },
+      "bytes": 95084,
+      "sha256": "e76c6ee0d20a9a374dd0fbd8b6a169c3791f16636e9e884982d742ca6d509682",
+      "equal": true
+    },
+    {
+      "name": "pitch",
+      "request": {
+        "format": "wav",
+        "text": "あ。",
+        "voice": "KotonohaAkane_ns_48",
+        "rate": 1,
+        "pitch": 0.7,
+        "volume": 1,
+        "emphasis": 1
+      },
+      "bytes": 98924,
+      "sha256": "47fb9480f33307f32369ebbd128a795e59e569ae569c743dfa9b7f57f2d1a225",
+      "equal": true
+    },
+    {
+      "name": "volume",
+      "request": {
+        "format": "wav",
+        "text": "あ。",
+        "voice": "KotonohaAkane_ns_48",
+        "rate": 1,
+        "pitch": 1,
+        "volume": 0.7,
+        "emphasis": 1
+      },
+      "bytes": 98924,
+      "sha256": "c9937958b36f7b3a4f6715bd8c192c8187dbac4f8019682c144a5772427863a6",
+      "equal": true
+    },
+    {
+      "name": "emphasis",
+      "request": {
+        "format": "wav",
+        "text": "あ。",
+        "voice": "KotonohaAkane_ns_48",
+        "rate": 1,
+        "pitch": 1,
+        "volume": 1,
+        "emphasis": 0.7
+      },
+      "bytes": 98924,
+      "sha256": "5654c728579d90dfb2ac5a83752091dc2fbc8247c99deb3d2d4fa96fa64c4ea9",
+      "equal": true
+    },
+    {
+      "name": "mixed-short",
+      "request": {
+        "format": "wav",
+        "text": "こんにちは。",
+        "voice": "KotonohaAkane_ns_48",
+        "rate": 1.3,
+        "pitch": 0.7,
+        "volume": 0.7,
+        "emphasis": 1.7
+      },
+      "bytes": 140810,
+      "sha256": "7eaf1e0fc429851ac730bfa6255dc13cebaad926cb7eccd2e69017b4b3c10f44",
+      "equal": true
+    },
+    {
+      "name": "mixed-kansai",
+      "request": {
+        "format": "wav",
+        "text": "今日はええ天気やな。",
+        "voice": "KotonohaAkane_ns_48",
+        "rate": 0.7,
+        "pitch": 1.3,
+        "volume": 1.7,
+        "emphasis": 0.7
+      },
+      "bytes": 296966,
+      "sha256": "da2f8a27e493d83d8a32718cd286bb6808b043cbdbbdb09208d5b65bf187c90c",
+      "equal": true
+    },
+    {
+      "name": "high",
+      "request": {
+        "format": "wav",
+        "text": "あ。",
+        "voice": "KotonohaAkane_ns_48",
+        "rate": 2,
+        "pitch": 2,
+        "volume": 2,
+        "emphasis": 0.01
+      },
+      "bytes": 90284,
+      "sha256": "8c9ebcafa13df525900c4bb25d86a114635d0669c3929618f8ddf9636ae19e92",
+      "equal": true
+    },
+    {
+      "name": "low",
+      "request": {
+        "format": "wav",
+        "text": "あ。",
+        "voice": "KotonohaAkane_ns_48",
+        "rate": 0.5,
+        "pitch": 0.5,
+        "volume": 0.5,
+        "emphasis": 2
+      },
+      "bytes": 116204,
+      "sha256": "af4fe12bf64cf5757fd42f8af8fe9636955d195a1edab708a9e4461cf26abbf2",
+      "equal": true
+    }
+  ],
+  "source_report_sha256": "98a1b7a938208121be024b1c94cf2d7c936ea456365b56d7236eda5bc4a6d30c",
+  "corpus_file_sha256": "68bd975d62d8d31cfed7870f22b76bfdedba23823518935776807ff7033b32a4"
+}
