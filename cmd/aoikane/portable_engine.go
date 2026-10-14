@@ -28,7 +28,7 @@ func openEngine(dir string) (engine.Synthesizer, func(), error) {
 }
 
 const backendName = "portable"
-const backendUsage = "\nPure-Go backend: embedded dictionaries/models by default, no original DLL.\nUse --assets DIR to load external dictionaries/models.\n"
+const backendUsage = ""
 
 func engineFlags(f *flag.FlagSet) *string {
 	dir := os.Getenv("AOIKANE_PORTABLE")

@@ -23,7 +23,7 @@ import (
 
 var version = "0.1.0"
 
-const usage = `aoikane - A.I.VOICE2 CLI / HTTP API
+const usage = `aoikane - text-to-speech CLI / HTTP API
 
   aoikane --text "こんにちは" --output speech.wav
   aoikane synth --text "こんにちは" --output speech.mp3
@@ -34,7 +34,7 @@ const usage = `aoikane - A.I.VOICE2 CLI / HTTP API
   aoikane help
   aoikane serve --listen 127.0.0.1:8080
   aoikane voices
-  aoikane synth --url http://WINDOWS_HOST:8080 --text "こんにちは" -o speech.wav
+  aoikane synth --url http://SERVER_HOST:8080 --text "こんにちは" -o speech.wav
 
 The default command is synth; no input reads UTF-8 stdin.
 Use synth --help for synthesis options. Text files and stdin must be UTF-8.
@@ -60,7 +60,7 @@ func run(args []string) error {
 	}
 	switch args[0] {
 	case "version", "--version", "-version", "-v":
-		fmt.Printf("aoikane %s (%s) %s/%s\n", version, backendName, runtime.GOOS, runtime.GOARCH)
+		fmt.Printf("aoikane %s %s/%s\n", version, runtime.GOOS, runtime.GOARCH)
 		return nil
 	case "pack", "bundle":
 		return nativeCommand(args)
