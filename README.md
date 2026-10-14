@@ -1,50 +1,41 @@
 # Aoikane
 
-文章読み上げをGoだけで実行するCLI / HTTP API。
-辞書とモデルを埋め込み、`CGO_ENABLED=0`でビルドできる。元エンジンのDLL、ONNX Runtime、認証用ランタイムは不要。
+文章から音声ファイルと字幕を作成するCLI / HTTP API。
 
-## ビルドと使い方
+## インストール
 
-```powershell
-$env:CGO_ENABLED='0'
-go build -trimpath -o aoikane.exe ./cmd/aoikane
-.\aoikane.exe 台本.txt --voice aoi
-.\aoikane.exe 台本.txt --voice akane --srt --vtt
-.\aoikane.exe --text "こんにちは。" --output speech.wav
-.\aoikane.exe --version
-.\aoikane.exe --help
+Goをインストールして、以下を実行する。
+
+```sh
+go install github.com/a-kaibu/aoikane/cmd/aoikane@latest
 ```
 
-Linuxでは`CGO_ENABLED=0 go build -trimpath -o aoikane ./cmd/aoikane`。
-通常ビルドがPure Go版で、ビルドタグの指定は不要。
+`aoikane`が見つからない場合は、実行ファイルの保存先を`PATH`に追加する。
+通常は`go env GOPATH`で表示される場所の`bin`。
 
-`synth`は省略可能。入力ファイルと標準入力はUTF-8。入力を省略すると標準入力を読む。
+## 使い方
+
+```sh
+aoikane 台本.txt --voice aoi
+aoikane 台本.txt --voice akane --srt --vtt
+aoikane 台本.txt --format mp3
+aoikane --text "こんにちは。" --output speech.wav
+aoikane --version
+aoikane --help
+```
+
+入力ファイルと標準入力はUTF-8。入力を省略すると標準入力を読む。
 `--voice aoi` / `--voice akane`で音声を切り替える。
 `-o` / `--output`を省略すると入力名から音声の名前を決める。
 `--srt` / `--vtt`も音声と同じ名前が既定で、明示的なパスも指定できる。
-`--format mp3`、`--rate`、`--pitch`、`--volume`、`--emphasis`にも対応する。
-モデル・辞書は埋め込みが既定。外部データは`--assets DIR`で指定する。
+`--rate`、`--pitch`、`--volume`、`--emphasis`で速度・高さ・音量・抑揚を調整できる。
 
 ## HTTP API
 
-```powershell
-.\aoikane.exe serve --listen 127.0.0.1:8080
+```sh
+aoikane serve --listen 127.0.0.1:8080
 ```
 
 `GET /healthz`、`GET /v1/voices`、`POST /v1/synthesize`、`GET /openapi.json`。
 任意で`--token` / `AOIKANE_TOKEN`を設定できる。
 
-## テスト
-
-```sh
-CGO_ENABLED=0 go test ./...
-```
-
-原版から採取した読みと波形参照を回帰テストで比較する。
-任意入力・全設定・全CPUの完全一致はまだ未達。
-
-開発ログ・解析ツール・原版DLLの呼び出し・通常SDKとの直接比較は、非公開の別リポジトリ
-[aoikane-dll](https://github.com/a-kaibu/aoikane-dll)に分離した。
-
-MP3エンコードは同梱した[shine-mp3](third_party/shine-mp3)を使用する。
-変更点とライセンスは同ディレクトリを参照。

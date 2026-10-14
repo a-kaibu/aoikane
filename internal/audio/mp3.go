@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/braheezy/shine-mp3/pkg/mp3"
+	"github.com/a-kaibu/aoikane/third_party/shine-mp3/pkg/mp3"
 	"github.com/go-audio/wav"
 )
 
