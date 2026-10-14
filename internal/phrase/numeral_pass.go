@@ -164,8 +164,9 @@ func (f *Frontend) findNumeralRuns(words []frontend.Word, starts map[int]bool) [
 				blockedBefore = false
 			}
 		}
-		// patterns joining numbers
-		if j+1 < len(words) && !blockedBefore {
+		// Numeric connectors cannot cross a chunk boundary retained by the
+		// numeral prepass. The number on either side is read independently.
+		if j+1 < len(words) && !blockedBefore && !starts[j] {
 			conn := words[j].Text
 			switch conn {
 			case "～", "対", "／", "：", "−", "ー", "―", "（", "）", "・", "点":
@@ -268,7 +269,7 @@ func (f *Frontend) findNumeralRuns(words []frontend.Word, starts map[int]bool) [
 		// other side (3-5, 12:30); brackets and the like do not block
 		// Once a counter has been consumed, the following connector starts a
 		// separate numeric expression (native 11f9c0); it cannot block this run.
-		blocked := blockedBefore || (counter == "" && j+1 < len(words) && rules.IsConnector(words[j].Text) && f.isNumeralWord(words[j+1]))
+		blocked := blockedBefore || (counter == "" && j+1 < len(words) && !starts[j] && rules.IsConnector(words[j].Text) && f.isNumeralWord(words[j+1]))
 		if !blocked && !(indefinite && run.counter == "") {
 			read := rules.Read
 			if i > 0 && run.counter == "" && englishPrefixes[words[i-1].Text] {
