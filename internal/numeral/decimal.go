@@ -215,7 +215,14 @@ func (r *Rules) decimalFraction(req Request, fraction string) ([]Group, error) {
 			w = Digit{Word: Word{Read: "レイ", Sound: "レー"}}
 		}
 		if counterOnLast {
-			rs, err := r.withCounter(Request{Number: key, Counter: req.Counter, CounterFall: req.CounterFall, CounterMoras: req.CounterMoras, CounterHasInfo: req.CounterHasInfo}, []chunk{{Read: w.Read, Sound: w.Sound, Key: key, TkKey: key}}, !req.rangeTail)
+			c := chunk{Read: w.Read, Sound: w.Sound}
+			// Ordinary 1043f0 fractional tails reach 10f0a0 without
+			// integer digit adjustments, including a lone final digit.
+			// Ranges rebuild the tail with its numeric counter key.
+			if req.rangeTail {
+				c.Key, c.TkKey = key, key
+			}
+			rs, err := r.withCounter(Request{Number: key, Counter: req.Counter, CounterFall: req.CounterFall, CounterMoras: req.CounterMoras, CounterHasInfo: req.CounterHasInfo}, []chunk{c}, !req.rangeTail)
 			if err != nil {
 				return nil, err
 			}

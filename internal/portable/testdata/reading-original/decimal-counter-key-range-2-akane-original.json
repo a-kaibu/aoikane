@@ -1,0 +1,41 @@
+{
+  "source": "ordinary original SDK talk; formatter observed without tensor injection; frontend-only capture",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "voice": "KotonohaAkane_ns_48",
+  "corpus_sha256": "c6028f4783c855d456fa688de5b164e3f8864e52a93110c40dad61cafa845f09",
+  "cases": [
+    {
+      "index": 0,
+      "text": "1−1.1個。",
+      "status": 0,
+      "readings": [
+        "<S>イ^チ!カラ|0^イ!ッテン|0^イ!ッコ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83435e836021834a83897c305e8343218362836583937c305e834321836283523c463e"
+      ],
+      "wav_bytes": 241064,
+      "wav_sha256": "c3101e246c4d97581f719e91781124d83b5157c4fc2fdfc90c36a63ed94798ed"
+    },
+    {
+      "index": 1,
+      "text": "1−2.03本。",
+      "status": 0,
+      "readings": [
+        "<S>イ^チ!カラ|0^ニ!ーテン|0レ^ーサ!ンボン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83435e836021834a83897c305e836a21815b836583937c30838c5e815b8354218393837b83933c463e"
+      ],
+      "wav_bytes": 270492,
+      "wav_sha256": "a439ff354618b28c8e829dfd3c11b71900e10c3f36e81ad64bc7319533ff90b5"
+    }
+  ],
+  "complete": true,
+  "errors": [],
+  "executable_sha256": "de3be1e7979db53006add27f30131eb4c308c28ba78d6b7bb6365aecb01b3f2d",
+  "detach_reason": "process-terminated",
+  "crash": null,
+  "timed_out": false,
+  "native_report_sha256": "f781303f7bab590ce3b2bad9b9f32b37d63647186289c323143b10570e93240d"
+}

@@ -1,0 +1,84 @@
+{
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "original_threads": 6,
+  "avx512_convolutions": false,
+  "report_sha256": [
+    "68ae66f69988f57e48f272194681717e505b9f5fb9f53b62fa0abb60b8cc215d",
+    "6495fb3beab3652476f5d0ef6d2ad3751db740d91814c2e5b1db70fe236d0e0c"
+  ],
+  "cases": [
+    {
+      "Text": "〇．一個。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 188078,
+      "SHA256": "5b1d10b11f96f634ea0fa72d3a161bb74870ecd15db7d8f6605f35fd28a5ea34"
+    },
+    {
+      "Text": "0.4人。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 191006,
+      "SHA256": "ef3cbdbc4a714bbd8d5f26ea4feb46cd213fd8a508e3f4440d8f0ba8fc54b90b"
+    },
+    {
+      "Text": "1．一個。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 192010,
+      "SHA256": "8b875a65517b996eb5c2023c3e9faca9a1c9b65ba78fd1ca04750759851e79c1"
+    },
+    {
+      "Text": "人〇・三分千一Ａ.零京９％、〇Ｃ〇．－A0。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 732468,
+      "SHA256": "707e45f7a006198237a65a312ef798ad6674da61142fd8f86e744cefa95dd2c5"
+    },
+    {
+      "Text": "0.1−1.1個。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 289670,
+      "SHA256": "fcf92af10de363445cb0275761cec250fe1aaf41d0f3ba726df6ee2761540d04"
+    },
+    {
+      "Text": "0.3−1.3分。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 299872,
+      "SHA256": "c71f8dce09fb91f0fa5ff797cf9471f492f83cbbc58f1e72e905c618f2587f89"
+    },
+    {
+      "Text": "〇．一個。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 188078,
+      "SHA256": "5b1d10b11f96f634ea0fa72d3a161bb74870ecd15db7d8f6605f35fd28a5ea34"
+    },
+    {
+      "Text": "0.4人。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 191006,
+      "SHA256": "ef3cbdbc4a714bbd8d5f26ea4feb46cd213fd8a508e3f4440d8f0ba8fc54b90b"
+    },
+    {
+      "Text": "1．一個。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 192010,
+      "SHA256": "8b875a65517b996eb5c2023c3e9faca9a1c9b65ba78fd1ca04750759851e79c1"
+    },
+    {
+      "Text": "人〇・三分千一Ａ.零京９％、〇Ｃ〇．－A0。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 707988,
+      "SHA256": "e9c9e42289ee762234338a89aa6ad16a5b7266d3a066b5e2c4208ae4716500db"
+    },
+    {
+      "Text": "0.1−1.1個。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 289670,
+      "SHA256": "fcf92af10de363445cb0275761cec250fe1aaf41d0f3ba726df6ee2761540d04"
+    },
+    {
+      "Text": "0.3−1.3分。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 299872,
+      "SHA256": "c71f8dce09fb91f0fa5ff797cf9471f492f83cbbc58f1e72e905c618f2587f89"
+    }
+  ]
+}

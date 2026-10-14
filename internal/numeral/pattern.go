@@ -21,7 +21,9 @@ func (r *Rules) plainChunks(number string) ([]chunk, error) {
 func (r *Rules) ReadRange(a, con string, b Request) ([]Reading, error) {
 	if b.Counter != "" {
 		b.NoSpecial = true // 1-3日 reads サンニチ, not ミッカ
-		b.rangeTail = true
+		// A decimal on the left retains the ordinary fractional counter
+		// mode (10f0a0 param11=0); an integer prefix rebuilds numeric keys.
+		b.rangeTail = !(con == "カラ" && strings.Contains(a, "．"))
 		b.genericDecimal = con == "タイ"
 	}
 	if con == "カラ" && strings.Contains(a, "．") {
