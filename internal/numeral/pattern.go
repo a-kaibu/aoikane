@@ -178,6 +178,9 @@ func (r *Rules) readHyphen(parts []string, last Request, point bool) ([]Reading,
 // 100a90 path reads both fragments normally with an s0 boundary.
 func (r *Rules) secondsPrefix(first Request, fractional bool) ([]Group, error) {
 	first.NoSpecial = true
+	if !fractional {
+		first.genericDecimal, first.connectorStream = true, true
+	}
 	writtenUnit := false
 	for _, unit := range bigUnits {
 		writtenUnit = writtenUnit || strings.HasSuffix(first.Number, string(unit))
@@ -323,7 +326,15 @@ func (r *Rules) ReadSeconds(first, last Request, fractional bool) ([]Reading, er
 		}
 		return []Reading{{Groups: append(prefix, tail...)}}, nil
 	}
-	tail, err := r.Read(last)
+	last.genericDecimal = true
+	var tail []Reading
+	if strings.ContainsRune(last.Number, '，') {
+		parts := strings.Split(last.Number, "，")
+		last.Number = parts[len(parts)-1]
+		tail, err = r.readSeries(parts[:len(parts)-1], last, true)
+	} else {
+		tail, err = r.Read(last)
+	}
 	if err != nil {
 		return nil, err
 	}

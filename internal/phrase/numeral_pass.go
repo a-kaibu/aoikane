@@ -227,20 +227,20 @@ func (f *Frontend) findNumeralRuns(words []frontend.Word, starts map[int]bool) [
 					e = ce
 				}
 			}
-			if len(seconds) > 1 {
-				// The generic repeated-seconds stream retains comma boundaries.
-				// Keep later digits in the same numeral rather than treating
-				// them as independent dictionary words across chunk starts.
-				for last.Counter == "" && e+1 < len(words) && words[e].Text == "，" && f.isNumeralWord(words[e+1]) {
-					var next string
-					e, next = f.scanNumber(words, e+1, starts, true)
-					last.Number += "，" + next
-					c, cf, cm, ce = f.counterAfter(words, e, starts)
-					if c != "" {
-						last.Counter, last.CounterFall, last.CounterMoras, last.CounterHasInfo = c, cf, cm, true
-						e = ce
-					}
+			// Written commas and hyphens after literal seconds stay inside
+			// the same generic stream and carry written pauses, not ranges.
+			for last.Counter == "" && e+1 < len(words) && !starts[e] &&
+				(words[e].Text == "，" || hyphenConnector(words[e].Text)) && f.isNumeralWord(words[e+1]) {
+				var next string
+				e, next = f.scanNumber(words, e+1, starts, true)
+				last.Number += "，" + next
+				c, cf, cm, ce = f.counterAfter(words, e, starts)
+				if c != "" {
+					last.Counter, last.CounterFall, last.CounterMoras, last.CounterHasInfo = c, cf, cm, true
+					e = ce
 				}
+			}
+			if len(seconds) > 1 {
 				if readings, err := rules.ReadSecondsSeries(seconds, last); err == nil {
 					run.readings, run.end, run.surface, run.counter = readings, e, text(i, e), c
 					runs = append(runs, run)
@@ -251,14 +251,14 @@ func (f *Frontend) findNumeralRuns(words []frontend.Word, starts map[int]bool) [
 				// fallback consume later words while skipping their numbers.
 				tail, last, e, c = firstTail, firstLast, firstEnd, firstCounter
 			}
-			fractional := rules.SecondsFractionPattern && !mixedNumberScripts([]string{number, tail}, rules) &&
+			fractional := rules.SecondsFractionPattern && !strings.ContainsRune(number, '．') && !mixedNumberScripts([]string{number, tail}, rules) &&
 				(c == "" || rules.SecondsFractionCounter)
 			// A following numeric connector continues the whole generic
 			// stream; it cannot select the time pattern for just this pair.
 			if c == "" && e+1 < len(words) && rules.IsConnector(words[e].Text) && f.isNumeralWord(words[e+1]) {
 				fractional = false
 			}
-			for _, ch := range tail {
+			for _, ch := range last.Number {
 				if _, ok := rules.Digits[string(ch)]; !ok {
 					fractional = false
 				}
