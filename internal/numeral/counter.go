@@ -123,6 +123,15 @@ func (r *Rules) withCounter(req Request, chunks []chunk, decimalTail bool) ([]Re
 	}
 
 	read, sound := r.chunkWord(last)
+	if req.compoundDigits {
+		c2 = 0
+		if w := r.BySound[sound]; len(w.Flag) < 5 || w.Flag[4] != '1' {
+			c1 = 0
+		}
+		if ctr.Tl == "C3" {
+			ctr.Tl = "C4"
+		}
+	}
 	// Large-unit groups longer than four morae bypass the short-number
 	// Tk adjustment. C3 then falls before the group's final mora.
 	longUnit := last.Unit != "" && !last.tableStem && !req.pairedUnit && MoraCount(sound) > 4

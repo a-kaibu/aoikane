@@ -147,6 +147,21 @@ func (f *Frontend) findNumeralRuns(words []frontend.Word, starts map[int]bool) [
 			i++
 			continue
 		}
+		if j+1 < len(words) && !starts[j] && words[j].Text == "，" &&
+			!(i > 1 && rules.IsConnector(words[i-1].Text) && f.isNumeralWord(words[i-2])) {
+			e, next := f.scanNumber(words, j+1, starts, false)
+			if rules.ConsecutiveDigits[number+"，"+next] {
+				c, cf, cm, ce := f.counterAfter(words, e, starts)
+				if c != "" {
+					rd, err := rules.ReadConsecutiveDigits(number, next, numeral.Request{Number: number + "，" + next, Counter: c, CounterFall: cf, CounterMoras: cm, CounterHasInfo: true})
+					if err == nil {
+						runs = append(runs, numeralRun{start: i, end: ce, number: number, counter: c, surface: text(i, ce), readings: rd})
+						i = ce
+						continue
+					}
+				}
+			}
+		}
 		j, number = f.thousands(words, j, number)
 		// a decimal fraction after thousands separators (1,234.5)
 		if digitsOnly(number) && j+1 < len(words) && words[j].Text == "．" && j > i+1 && words[i+1].Text == "，" {
@@ -169,7 +184,7 @@ func (f *Frontend) findNumeralRuns(words []frontend.Word, starts map[int]bool) [
 		if j+1 < len(words) && !blockedBefore && !starts[j] {
 			conn := words[j].Text
 			switch conn {
-			case "～", "対", "／", "：", "−", "ー", "―", "（", "）", "・", "点":
+			case "～", "対", "／", "：", "−", "ー", "―", "（", "）", "・", "点", "，":
 				parts, end := []string{number}, j
 				var separators []string
 				for end+1 < len(words) && (words[end].Text == conn ||
@@ -747,7 +762,7 @@ func digitPartsNormalized(parts []string, rules *numeral.Rules) bool {
 }
 
 func streamConnector(s string) bool {
-	return s == "・" || s == "／" || s == "−" || s == "ー" || s == "―" || s == "（" || s == "）" || s == "："
+	return s == "・" || s == "／" || s == "−" || s == "ー" || s == "―" || s == "（" || s == "）" || s == "：" || s == "，"
 }
 func hyphenConnector(s string) bool { return s == "−" || s == "ー" || s == "―" }
 func startsWithUnit(s string, rules *numeral.Rules) bool {
@@ -761,6 +776,21 @@ func startsWithUnit(s string, rules *numeral.Rules) bool {
 
 func (f *Frontend) patternStream(separators, parts []string, words []frontend.Word, begin, end int, starts map[int]bool) ([]numeral.Reading, int, bool) {
 	conn := separators[0]
+	for _, separator := range separators {
+		if separator == "，" {
+			counter, fall, moras, e := f.counterAfter(words, end, starts)
+			last := numeral.Request{Number: parts[len(parts)-1], Counter: counter, CounterFall: fall, CounterMoras: moras, CounterHasInfo: counter != "", NoSpecial: true}
+			if counter != "" {
+				end = e
+			}
+			read := f.Numerals.ReadGenericSeries
+			if japaneseNumberParts(parts, f.Numerals) {
+				read = f.Numerals.ReadSeries
+			}
+			rd, err := read(parts[:len(parts)-1], last)
+			return rd, end, err == nil
+		}
+	}
 	// The explicit telephone prefix interprets embedded decimal points
 	// as further number blocks before the ordinary decimal-range pattern.
 	dottedPhone := phonePrefix(words, begin)

@@ -53,18 +53,19 @@ type SpecialReading struct {
 
 // Rules is the parsed numeral rule file.
 type Rules struct {
-	Digits   map[string]Digit
-	Units    map[string]Digit
-	Cons     map[string]Digit
-	Tj       map[string]string
-	Tk       map[string][]TkCode
-	Accents  []AccentWord          // file order (longest first)
-	BySound  map[string]AccentWord // first entry per Sound
-	Counters map[string]Counter
-	Specials map[string]Special
-	Suffixes map[string]bool
-	Signs    map[string]Word
-	Pre      map[string]bool
+	ConsecutiveDigits map[string]bool
+	Digits            map[string]Digit
+	Units             map[string]Digit
+	Cons              map[string]Digit
+	Tj                map[string]string
+	Tk                map[string][]TkCode
+	Accents           []AccentWord          // file order (longest first)
+	BySound           map[string]AccentWord // first entry per Sound
+	Counters          map[string]Counter
+	Specials          map[string]Special
+	Suffixes          map[string]bool
+	Signs             map[string]Word
+	Pre               map[string]bool
 	// ZeroSkippingCounters are the literal counters of the 整数ゼロ飛ばし
 	// pattern, which takes precedence over the leading-zero digit reading.
 	ZeroSkippingCounters map[string]bool
@@ -128,6 +129,16 @@ func ParseRules(r io.Reader) (*Rules, error) {
 		switch section {
 		case "パターン":
 			pattern := strings.Split(line, ";")
+			if len(pattern) > 3 && pattern[0] == "数字連続=*" && pattern[1] == "0" && pattern[3] == "@" {
+				if rules.ConsecutiveDigits == nil {
+					rules.ConsecutiveDigits = map[string]bool{}
+				}
+				for _, literal := range strings.Split(pattern[2], "/") {
+					if strings.HasPrefix(literal, "'") {
+						rules.ConsecutiveDigits[strings.TrimPrefix(literal, "'")] = true
+					}
+				}
+			}
 			if len(pattern) > 2 {
 				var prefixes map[string]bool
 				if strings.HasPrefix(pattern[0], "小数='") && strings.Contains(pattern[2], "n'・n") {

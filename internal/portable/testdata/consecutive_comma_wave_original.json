@@ -1,0 +1,62 @@
+{
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "original_threads": 6,
+  "avx512_convolutions": false,
+  "report_sha256": [
+    "3688d6f999a6eca73479f20e53ea43f36026bc6b3998c4784ad01db70fc0b086",
+    "68677061e43f886047a8a704ff06048efbd9f3a8f065a8a5355576d31e84b0b7",
+    "3effaa32a7b5c3ede7db7e298105783eb53bef390cdead03aca918df454ec002",
+    "174f09975ba8b35531c73a01bbceabd95f675e398c4d0b402d945e16db00f167"
+  ],
+  "cases": [
+    {
+      "Text": "２，３本。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 158478,
+      "SHA256": "b7cc05fb4be39ff2852547a8803ce3d7d5bf9e9929f88d7b2128b7c7c5234f83"
+    },
+    {
+      "Text": "４，５本。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 148844,
+      "SHA256": "7c0f525ce352687240bf92e54f50f4746cf84554ef73eff7cffc554889562e51"
+    },
+    {
+      "Text": "５，６本。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 150532,
+      "SHA256": "2652f7ee3c56d26d1c0a20fbf801b5675fab225973e5be63caaf1a882b3881cb"
+    },
+    {
+      "Text": "７，８人。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 169124,
+      "SHA256": "0dbcafbaa053bd34cfebc02bf17e4147e04f10ee8e6b082a9b00ff2073526212"
+    },
+    {
+      "Text": "２，３本。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 158478,
+      "SHA256": "b7cc05fb4be39ff2852547a8803ce3d7d5bf9e9929f88d7b2128b7c7c5234f83"
+    },
+    {
+      "Text": "４，５本。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 148844,
+      "SHA256": "7c0f525ce352687240bf92e54f50f4746cf84554ef73eff7cffc554889562e51"
+    },
+    {
+      "Text": "５，６本。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 150532,
+      "SHA256": "2652f7ee3c56d26d1c0a20fbf801b5675fab225973e5be63caaf1a882b3881cb"
+    },
+    {
+      "Text": "７，８人。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 169124,
+      "SHA256": "0dbcafbaa053bd34cfebc02bf17e4147e04f10ee8e6b082a9b00ff2073526212"
+    }
+  ]
+}
