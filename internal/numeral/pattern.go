@@ -498,8 +498,8 @@ func (r *Rules) ReadSeries(parts []string, last Request) ([]Reading, error) {
 
 func (r *Rules) readSeries(parts []string, last Request, genericPoints bool) ([]Reading, error) {
 	var groups []Group
-	for _, a := range parts {
-		rs, err := r.Read(Request{Number: a, NoSpecial: true, genericDecimal: genericPoints, connectorStream: true})
+	for i, a := range parts {
+		rs, err := r.Read(Request{Number: a, NoSpecial: true, genericDecimal: genericPoints, connectorStream: true, writtenPause: i > 0})
 		if err != nil {
 			return nil, err
 		}
@@ -746,9 +746,9 @@ func (r *Rules) ReadGenericSeries(parts []string, last Request) ([]Reading, erro
 	last.genericDecimal = true
 	var groups []Group
 	unitPrefix := false
-	for _, a := range parts {
+	for i, a := range parts {
 		unitPrefix = unitPrefix || strings.ContainsAny(a, "十百千"+string(bigUnits))
-		rd, err := r.connectorFragment(Request{Number: a, NoSpecial: true, genericDecimal: true})
+		rd, err := r.connectorFragment(Request{Number: a, NoSpecial: true, genericDecimal: true, writtenPause: i > 0})
 		if err != nil {
 			return nil, err
 		}

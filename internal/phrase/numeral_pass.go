@@ -357,7 +357,7 @@ func (f *Frontend) pattern(conn string, parts []string, words []frontend.Word, b
 			r, err := rules.ReadSeries(parts[:len(parts)-1], last)
 			return r, end, err == nil
 		}
-		if conn == "・" && len(parts) == 2 {
+		if conn == "・" && len(parts) == 2 && !strings.Contains(a, "．") {
 			chars := []rune(b)
 			if len(chars) > 0 {
 				if _, unit := rules.Units[string(chars[0])]; unit {
@@ -387,6 +387,12 @@ func (f *Frontend) pattern(conn string, parts []string, words []frontend.Word, b
 				return r, end, err == nil
 			}
 			last.NoSpecial = true
+			for _, part := range parts {
+				if strings.Contains(part, "．") {
+					r, err := rules.ReadGenericSeries(parts[:len(parts)-1], last)
+					return r, end, err == nil
+				}
+			}
 			r, err := rules.ReadSeries(parts[:len(parts)-1], last)
 			return r, end, err == nil
 		}
@@ -506,6 +512,20 @@ func (f *Frontend) pattern(conn string, parts []string, words []frontend.Word, b
 		r, err := rules.ReadRatio(parts[:len(parts)-1], numeral.Request{Number: b})
 		return r, end, err == nil
 	case "−", "ー", "―":
+		// A literal unit alone after a point is outside the fractional
+		// range grammar. The fallback retains written pauses, without カラ.
+		for _, part := range parts {
+			decimal := strings.Split(part, "．")
+			for _, fraction := range decimal[1:] {
+				if !pointFraction(fraction, rules) {
+					if counter != "" {
+						end = e
+					}
+					r, err := rules.ReadGenericSeries(parts[:len(parts)-1], last)
+					return r, end, err == nil
+				}
+			}
+		}
 		if digitParts(parts) && counter == "" {
 			switch {
 			case isPhone(parts):

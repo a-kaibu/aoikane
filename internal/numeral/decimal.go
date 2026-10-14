@@ -364,7 +364,10 @@ func (r *Rules) connectorDecimal(req Request) ([]Reading, error) {
 					attachedUnit := false
 					for _, unit := range bigUnits {
 						u := r.Units[string(unit)]
-						attachedUnit = attachedUnit || (req.connectorStream || utf8.RuneCountInString(run) > 1) && u.Sound != "" && strings.HasSuffix(g.Sound, u.Sound)
+						// The first bare unit takes テン in the same word, even
+						// inside a connector stream. A unit after an earlier point
+						// or written pause keeps テン as a separate word.
+						attachedUnit = attachedUnit || (pi > 0 || req.writtenPause || utf8.RuneCountInString(run) > 1) && u.Sound != "" && strings.HasSuffix(g.Sound, u.Sound)
 					}
 					if attachedUnit {
 						groups = append(groups, g)
@@ -459,6 +462,7 @@ func (r *Rules) connectorUnitWords(req Request) ([]Reading, error) {
 // large unit, even when digits follow. This does not apply to the first
 // fragment of the expression or to the ordinary ノ/カラ patterns.
 func (r *Rules) writtenPauseFragment(req Request) ([]Reading, error) {
+	req.writtenPause = true
 	chars := []rune(req.Number)
 	if len(chars) > 1 && strings.ContainsRune(string(bigUnits), chars[0]) && strings.ContainsRune(string(bigUnits), chars[1]) {
 		return r.connectorUnitWords(req)

@@ -43,6 +43,8 @@ type Request struct {
 	rangeTail bool
 	// The numeral is inside a generic connector stream, not a plain decimal.
 	connectorStream bool
+	// This fragment starts after a written numeric pause in the same stream.
+	writtenPause bool
 	// Preserve numeric fragment boundaries before a following literal 零.
 	reiTail bool
 	// Paired digits before a written large unit retain 1043f0's counter
