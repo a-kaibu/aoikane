@@ -1,0 +1,66 @@
+{
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "original_threads": 6,
+  "avx512_convolutions": false,
+  "report_sha256": [
+    "0d190f7eef7aeb49a0d35f6ba33d5341711ab504216bcf4f8653416036c26d1c",
+    "1779bfbe6498318ac5def6ab212e21595bccb81f49f8921bdfdabbdc49213639",
+    "8a0961d0a999afb367a416362403845c697b1b48b73a7981adec7ca51bdc0355",
+    "e552593d7a68cd3502abe303e7db55daaafe0c74d3c79269637719f378609a1f",
+    "b4cd67b24a77a6911d139feb51f93921c9a1c15d78c7647ad11c29aeed1f377c",
+    "759052b02032b0fdd93f56b6ac287a9c7199bd6862e5547676c6737134b8175b",
+    "7a4ea2f2dd8bc8c8ffb35a0b3cb19c9fe2cc8af123abd4f6a4d1368e9bfafd2a",
+    "29e26df6abd5be77cee21765592455ec5868dffe525aedab812e8e96846555d3"
+  ],
+  "cases": [
+    {
+      "Text": "２／３本。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 198216,
+      "SHA256": "10d275ebf5ab66a1df641c70a7d6dda7ef1745216c8071c43f1fc9cfc4fe4450"
+    },
+    {
+      "Text": "１／３本。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 211358,
+      "SHA256": "f1a7dae13880550d64791a6f9badbab0df4e105495a128432a27ee5c866fba27"
+    },
+    {
+      "Text": "０／２本。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 193980,
+      "SHA256": "e944ca341631452e7a1589e8132f9a98f1e17791985868f660b05672eb10d49c"
+    },
+    {
+      "Text": "２／万年本。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 202496,
+      "SHA256": "a7b09057731a8a9920cf65572ccae22f5275be2fbc40a43c9bc143204a2684e2"
+    },
+    {
+      "Text": "２／３本。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 198216,
+      "SHA256": "10d275ebf5ab66a1df641c70a7d6dda7ef1745216c8071c43f1fc9cfc4fe4450"
+    },
+    {
+      "Text": "１／３本。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 211358,
+      "SHA256": "f1a7dae13880550d64791a6f9badbab0df4e105495a128432a27ee5c866fba27"
+    },
+    {
+      "Text": "０／２本。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 193980,
+      "SHA256": "e944ca341631452e7a1589e8132f9a98f1e17791985868f660b05672eb10d49c"
+    },
+    {
+      "Text": "２／万年本。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 202130,
+      "SHA256": "33589ed40f830831f46d423fbb3b0e98acce46a6f89e973d5211e7685b9f6123"
+    }
+  ]
+}

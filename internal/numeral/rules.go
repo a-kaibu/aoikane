@@ -54,6 +54,7 @@ type SpecialReading struct {
 // Rules is the parsed numeral rule file.
 type Rules struct {
 	ConsecutiveDigits map[string]bool
+	FractionCounters  map[string]bool
 	Digits            map[string]Digit
 	Units             map[string]Digit
 	Cons              map[string]Digit
@@ -129,6 +130,16 @@ func ParseRules(r io.Reader) (*Rules, error) {
 		switch section {
 		case "パターン":
 			pattern := strings.Split(line, ";")
+			if len(pattern) > 3 && pattern[0] == "真分数=*" && pattern[2] == "n'／n/j'／j/" {
+				if rules.FractionCounters == nil {
+					rules.FractionCounters = map[string]bool{}
+				}
+				for _, literal := range strings.Split(pattern[3], "/") {
+					if strings.HasPrefix(literal, "'") {
+						rules.FractionCounters[strings.TrimPrefix(literal, "'")] = true
+					}
+				}
+			}
 			if len(pattern) > 3 && pattern[0] == "数字連続=*" && pattern[1] == "0" && pattern[3] == "@" {
 				if rules.ConsecutiveDigits == nil {
 					rules.ConsecutiveDigits = map[string]bool{}

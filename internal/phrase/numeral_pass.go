@@ -461,13 +461,38 @@ func (f *Frontend) pattern(conn string, parts []string, words []frontend.Word, b
 			return r, end, err == nil
 		}
 		if len(parts) == 3 {
-			r, err := rules.ReadSeries(parts[:2], last)
+			if counter != "" {
+				end = e
+			}
+			r, err := rules.ReadGenericSeries(parts[:2], last)
+			if japaneseNumberParts(parts, rules) {
+				r, err = rules.ReadSeries(parts[:2], last)
+			}
 			return r, end, err == nil
 		}
 		if len(parts) != 2 {
 			return nil, end, false
 		}
-		r, err := rules.ReadFraction(a, b)
+		plainDigits := digitPartsNormalized(parts, rules)
+		fraction := plainDigits && rules.FractionCounters[counter]
+		if plainDigits && !fraction && digitsOnly(a) && digitsOnly(b) && !strings.HasPrefix(a, "０") && !strings.HasPrefix(b, "０") {
+			na, nb := utf8.RuneCountInString(a), utf8.RuneCountInString(b)
+			fraction = na <= 2 && nb <= 3 && na <= nb
+		}
+		if !fraction {
+			if counter != "" {
+				end = e
+			}
+			r, err := rules.ReadGenericSeries(parts[:1], last)
+			if japaneseNumberParts(parts, rules) {
+				r, err = rules.ReadSeries(parts[:1], last)
+			}
+			return r, end, err == nil
+		}
+		if counter != "" {
+			end = e
+		}
+		r, err := rules.ReadFractionCounter(a, b, last)
 		return r, end, err == nil
 	case "：":
 		if f.isTime(parts) {
@@ -827,7 +852,7 @@ func (f *Frontend) patternStream(separators, parts []string, words []frontend.Wo
 	// written-pause stream, rather than ending at the seconds counter.
 	genericSeconds := true
 	for _, separator := range separators {
-		genericSeconds = genericSeconds && (hyphenConnector(separator) || separator == "・" || separator == "（" || separator == "）")
+		genericSeconds = genericSeconds && (hyphenConnector(separator) || separator == "・" || separator == "（" || separator == "）" || separator == "／")
 	}
 	if genericSeconds {
 		counter, fall, moras, e := f.counterAfter(words, end, starts)

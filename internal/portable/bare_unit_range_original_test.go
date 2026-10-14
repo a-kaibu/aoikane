@@ -10,9 +10,6 @@ func TestBareUnitRangeReadingOriginal(t *testing.T) {
 }
 
 func TestBareUnitRangeBoundaryReadingOriginal(t *testing.T) {
-	if os.Getenv("AOIKANE_BARE_UNIT_RANGE_BOUNDARY_READING_AUDIT") != "1" {
-		t.Skip("set AOIKANE_BARE_UNIT_RANGE_BOUNDARY_READING_AUDIT=1 for the complete boundary corpus audit")
-	}
 	testMixedReiReadingOriginal(t, "bare-unit-range-boundary-32", 32, "d811dbe147d3307996138648190e9f6cd9c5f5f80e6807a83e0233356c933c68")
 }
 

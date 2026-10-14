@@ -76,6 +76,17 @@ func (r *Rules) ReadRange(a, con string, b Request) ([]Reading, error) {
 // ReadFraction reads "numerator／denominator" as "denominator ブンノ
 // numerator" (１／２ ニブンノイチ).
 func (r *Rules) ReadFraction(numerator, denominator string) ([]Reading, error) {
+	return r.ReadFractionCounter(numerator, denominator, Request{})
+}
+
+func (r *Rules) ReadFractionCounter(numerator, denominator string, numeratorRequest Request) ([]Reading, error) {
+	if leadingZeroDigitRun(numerator) {
+		zero := string([]rune(numerator)[0])
+		numerator = strings.TrimLeft(numerator, zero)
+		if numerator == "" {
+			numerator = zero
+		}
+	}
 	chunks, err := r.plainChunks(denominator)
 	if err != nil {
 		return nil, err
@@ -88,7 +99,8 @@ func (r *Rules) ReadFraction(numerator, denominator string) ([]Reading, error) {
 	}
 	last := r.accentOf(chunks[len(chunks)-1])
 	groups = append(groups, Group{Read: last.Read + "ブンノ", Sound: last.Sound + "ブンノ", Up: 2, Down: 0, Moras: last.Moras + 3})
-	rn, err := r.Read(Request{Number: numerator, NoSpecial: true})
+	numeratorRequest.Number, numeratorRequest.NoSpecial = numerator, true
+	rn, err := r.Read(numeratorRequest)
 	if err != nil {
 		return nil, err
 	}
@@ -731,11 +743,12 @@ func (r *Rules) ReadEnglish(number string) ([]Reading, error) {
 // ReadGenericSeries is 100a90's written-pause fallback. Numeric fragment
 // spellings survive; a final digit has no whole-counter sound-change key.
 func (r *Rules) ReadGenericSeries(parts []string, last Request) ([]Reading, error) {
+	last.genericDecimal = true
 	var groups []Group
 	unitPrefix := false
 	for _, a := range parts {
 		unitPrefix = unitPrefix || strings.ContainsAny(a, "十百千"+string(bigUnits))
-		rd, err := r.connectorFragment(Request{Number: a, NoSpecial: true})
+		rd, err := r.connectorFragment(Request{Number: a, NoSpecial: true, genericDecimal: true})
 		if err != nil {
 			return nil, err
 		}
