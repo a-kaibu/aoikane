@@ -1,6 +1,6 @@
 # Aoikane
 
-琴葉葵・琴葉茜（関西弁）の文章読み上げをGoだけで実行するCLI / HTTP API。
+文章読み上げをGoだけで実行するCLI / HTTP API。
 辞書とモデルを埋め込み、`CGO_ENABLED=0`でビルドできる。元エンジンのDLL、ONNX Runtime、認証用ランタイムは不要。
 
 ## ビルドと使い方
@@ -19,7 +19,7 @@ Linuxでは`CGO_ENABLED=0 go build -trimpath -o aoikane ./cmd/aoikane`。
 通常ビルドがPure Go版で、ビルドタグの指定は不要。
 
 `synth`は省略可能。入力ファイルと標準入力はUTF-8。入力を省略すると標準入力を読む。
-`--voice aoi` / `--voice akane`（`葵` / `茜`も可）で切り替える。
+`--voice aoi` / `--voice akane`で音声を切り替える。
 `-o` / `--output`を省略すると入力名から音声の名前を決める。
 `--srt` / `--vtt`も音声と同じ名前が既定で、明示的なパスも指定できる。
 `--format mp3`、`--rate`、`--pitch`、`--volume`、`--emphasis`にも対応する。

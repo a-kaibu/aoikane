@@ -90,7 +90,7 @@ func synth(args []string) error {
 	token := f.String("token", os.Getenv("AOIKANE_TOKEN"), "API bearer token")
 	r := engine.Request{}
 	f.StringVar(&r.Format, "format", "", "wav or mp3 (default: inferred from output extension)")
-	f.Func("voice", "aoi (葵), akane (茜・関西弁), or a voice ID (default: first installed voice)", func(value string) error {
+	f.Func("voice", "aoi, akane, or a voice ID (default: first installed voice)", func(value string) error {
 		switch strings.ToLower(value) {
 		case "aoi", "葵":
 			r.Voice = "KotonohaAoi_ns_48"

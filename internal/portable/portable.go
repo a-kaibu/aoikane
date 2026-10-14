@@ -208,7 +208,7 @@ func openRules[T any](path string, parse func(io.Reader) (T, error)) (T, error) 
 
 // Voices lists both supported voices, preserving Aoi as the default.
 func (e *Engine) Voices() []engine.Voice {
-	return []engine.Voice{{ID: VoiceAoi, Name: "琴葉 葵", SampleRate: 48000}, {ID: VoiceAkane, Name: "琴葉 茜", SampleRate: 48000}}
+	return []engine.Voice{{ID: VoiceAoi, Name: "aoi", SampleRate: 48000}, {ID: VoiceAkane, Name: "akane", SampleRate: 48000}}
 }
 
 // ReadingVoice returns the selected voice's formatted reading.
