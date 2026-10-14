@@ -411,6 +411,24 @@ func writtenLargeUnits(number string) bool {
 
 func (r *Rules) connectorUnitWords(req Request) ([]Reading, error) {
 	chars := []rune(req.Number)
+	end := 0
+	for end < len(chars) && strings.ContainsRune(string(bigUnits), chars[end]) {
+		end++
+	}
+	if end > 1 && end < len(chars) && strings.ContainsRune("０〇零", chars[end]) {
+		// The next 10b010 fragment starts at the zero digit. Evaluating
+		// it together with the preceding unit would skip that zero.
+		head, err := r.connectorUnitWords(Request{Number: string(chars[:end]), NoSpecial: true})
+		if err != nil {
+			return nil, err
+		}
+		req.Number = string(chars[end:])
+		tail, err := r.connectorFragment(req)
+		if err != nil {
+			return nil, err
+		}
+		return []Reading{{Groups: append(head[0].Groups, tail[0].Groups...)}}, nil
+	}
 	key := string(chars[0])
 	u := r.Units[key]
 	chunks := []chunk{{Read: u.Read, Sound: u.Sound, Key: key, TkKey: key, numericFragment: true}}
@@ -431,6 +449,17 @@ func (r *Rules) connectorUnitWords(req Request) ([]Reading, error) {
 		groups = append(groups, r.accentOf(c))
 	}
 	return []Reading{{Groups: groups}}, nil
+}
+
+// A fragment after a written pause starts a new table word at its first
+// large unit, even when digits follow. This does not apply to the first
+// fragment of the expression or to the ordinary ノ/カラ patterns.
+func (r *Rules) writtenPauseFragment(req Request) ([]Reading, error) {
+	chars := []rune(req.Number)
+	if len(chars) > 1 && strings.ContainsRune(string(bigUnits), chars[0]) && strings.ContainsRune(string(bigUnits), chars[1]) {
+		return r.connectorUnitWords(req)
+	}
+	return r.connectorFragment(req)
 }
 
 // A literal unit at the start is dispatched before the following paired 零

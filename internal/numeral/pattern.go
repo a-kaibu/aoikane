@@ -352,7 +352,7 @@ func (r *Rules) readSeries(parts []string, last Request, genericPoints bool) ([]
 		groups = append(groups, rs[0].Groups...)
 		groups = append(groups, Group{Read: "ｐ", Pause: true, Strong: true})
 	}
-	rb, err := r.connectorFragment(last)
+	rb, err := r.writtenPauseFragment(last)
 	if err != nil {
 		return nil, err
 	}
@@ -595,7 +595,7 @@ func (r *Rules) ReadGenericSeries(parts []string, last Request) ([]Reading, erro
 	counter := last.Counter
 	if unitPrefix && counter != "" && !writtenLargeUnits(last.Number) {
 		last.NoSpecial = true
-		tail, err := r.connectorFragment(last)
+		tail, err := r.writtenPauseFragment(last)
 		if err != nil {
 			return nil, err
 		}
@@ -604,6 +604,9 @@ func (r *Rules) ReadGenericSeries(parts []string, last Request) ([]Reading, erro
 	last.Counter = ""
 	last.NoSpecial = true
 	read := r.connectorFragment
+	if len(parts) > 0 {
+		read = r.writtenPauseFragment
+	}
 	// Written large-unit tails keep the first unit's separate accent group.
 	if writtenLargeUnits(last.Number) {
 		read = r.connectorUnitWords

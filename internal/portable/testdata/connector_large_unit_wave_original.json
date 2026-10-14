@@ -1,0 +1,48 @@
+{
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "original_threads": 6,
+  "avx512_convolutions": false,
+  "report_sha256": [
+    "f4bbf46111758458c0d53a0bf13a289c3789fd8f80e564f6af5137e892619b2b",
+    "7bd3ce3259e6b3ba7c7fff1e76052ed0331d6bf8a1b0f6c6c15a230131ced5b1"
+  ],
+  "cases": [
+    {
+      "Text": "・−9二月千（億京５年％万八学校十学校二1学校2。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 737656,
+      "SHA256": "3f4e1705db74a564e78e25a4a68d543776e842c4bbd8242a21c987b4a54875d9"
+    },
+    {
+      "Text": "千（億京〇５年。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 261142,
+      "SHA256": "f4f363056a24091737f581af3eab18c0ec095b875a76b75614bfa8c326e740e1"
+    },
+    {
+      "Text": "千（億京零５年。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 257422,
+      "SHA256": "8ede1619a1739aa33d9e9f33b71125971a794779f462e38b03e3f5c93b495ce3"
+    },
+    {
+      "Text": "・−9二月千（億京５年％万八学校十学校二1学校2。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 754358,
+      "SHA256": "3437624f0d356eb94fa4b00af8e7f5d0dfab68620044582eb61f7cbef7cefdc4"
+    },
+    {
+      "Text": "千（億京〇５年。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 260802,
+      "SHA256": "0dd514ab61402e8ad0191afb313a724d62aaf1ccc60ab93cd05fc401b740a5fb"
+    },
+    {
+      "Text": "千（億京零５年。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 256998,
+      "SHA256": "1e90417fa22139083866ca0944171b8caa49a9d1910f47ad3cb2f96bfeb6d10b"
+    }
+  ]
+}
