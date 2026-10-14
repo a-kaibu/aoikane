@@ -96,7 +96,7 @@ func testMixedReiReadingOriginal(t *testing.T, corpusName string, count int, cor
 	}
 	defer e.Close()
 	for _, voice := range []string{"akane", "aoi"} {
-		raw, err := os.ReadFile(fmt.Sprintf("../../tools/compare_reading/testdata/%s-%s-original.json", corpusName, voice))
+		raw, err := os.ReadFile(fmt.Sprintf("testdata/reading-original/%s-%s-original.json", corpusName, voice))
 		if err != nil {
 			t.Fatal(err)
 		}

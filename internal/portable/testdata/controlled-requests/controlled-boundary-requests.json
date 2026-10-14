@@ -1,0 +1,90 @@
+[
+  {
+    "name": "akane-quiet",
+    "request": {
+      "text": "あ。",
+      "voice": "KotonohaAkane_ns_48",
+      "rate": 1,
+      "pitch": 1,
+      "volume": 0.001,
+      "emphasis": 1
+    }
+  },
+  {
+    "name": "akane-flat",
+    "request": {
+      "text": "あ。",
+      "voice": "KotonohaAkane_ns_48",
+      "rate": 1,
+      "pitch": 1,
+      "volume": 1,
+      "emphasis": 1e-06
+    }
+  },
+  {
+    "name": "akane-upper",
+    "request": {
+      "text": "あ。",
+      "voice": "KotonohaAkane_ns_48",
+      "rate": 4,
+      "pitch": 2,
+      "volume": 2,
+      "emphasis": 2
+    }
+  },
+  {
+    "name": "akane-slow-quiet",
+    "request": {
+      "text": "あ。",
+      "voice": "KotonohaAkane_ns_48",
+      "rate": 0.5,
+      "pitch": 0.5,
+      "volume": 0.001,
+      "emphasis": 2
+    }
+  },
+  {
+    "name": "aoi-quiet",
+    "request": {
+      "text": "あ。",
+      "voice": "KotonohaAoi_ns_48",
+      "rate": 1,
+      "pitch": 1,
+      "volume": 0.001,
+      "emphasis": 1
+    }
+  },
+  {
+    "name": "aoi-flat",
+    "request": {
+      "text": "あ。",
+      "voice": "KotonohaAoi_ns_48",
+      "rate": 1,
+      "pitch": 1,
+      "volume": 1,
+      "emphasis": 1e-06
+    }
+  },
+  {
+    "name": "aoi-upper",
+    "request": {
+      "text": "あ。",
+      "voice": "KotonohaAoi_ns_48",
+      "rate": 4,
+      "pitch": 2,
+      "volume": 2,
+      "emphasis": 2
+    }
+  },
+  {
+    "name": "aoi-slow-quiet",
+    "request": {
+      "text": "あ。",
+      "voice": "KotonohaAoi_ns_48",
+      "rate": 0.5,
+      "pitch": 0.5,
+      "volume": 0.001,
+      "emphasis": 2
+    }
+  }
+]

@@ -1,7 +1,0 @@
-{
-  "scope": "Linux CGO=0 replay of all8 rei-days reference WAVs, terminal PASS and exit0. Source includes final paired-counter flags; binary predates later C2-only accent fix. Selected inputs do not use the altered C2 counter branch.",
-  "count": 8,
-  "log_sha256": "41159a88e2fd8a663e3b0aecb1fa66e6fb71f6a96bd7c2d3af9fd5b3ddc5c3c9",
-  "binary_sha256": "2c54170d5cc182411adc1d8c70c2064900421bad54fa147bb3b51fc1c75702d8",
-  "reference_sha256": "b1315b28e5f105f9fbcfab531327ddb189056a24da5dc5671074c262b6efbdd6"
-}

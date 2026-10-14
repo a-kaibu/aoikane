@@ -1,2 +1,4 @@
 # Captured engine rules are verified by their exact bytes.
 assets/rules/** -text
+# Retain captured request bytes, including their original CRLF line endings.
+internal/portable/testdata/controlled-requests/** -text whitespace=cr-at-eol

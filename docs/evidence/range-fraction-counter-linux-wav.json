@@ -1,7 +1,0 @@
-{
-  "scope": "Linux CGO=0 reference replay of all16 range-fraction-counter WAVs on AMD64 Family25 Model33, threads6, AVX512 convolutions false; terminal PASS and exit0. Compiled before the later zero-large-unit-chain change.",
-  "count": 16,
-  "log_sha256": "2a2fb0273cc9d41698b46dfa72e088a3d24dbe23f14fe0ffb2603af47b30766a",
-  "binary_sha256": "f3d45a9cddc3f937647e64714f7899a3365520971ae7afcd8f507773f31504f0",
-  "reference_sha256": "685cb60deb0a046ea982072f90b80fb6261f0ff7a7070d77c1eaa84f8cc7ae6d"
-}

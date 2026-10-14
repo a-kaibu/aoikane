@@ -18,7 +18,7 @@ func TestInteriorCoefficientReadingOriginal(t *testing.T) {
 	}
 	defer e.Close()
 	for _, short := range []string{"akane", "aoi"} {
-		raw, err := os.ReadFile(fmt.Sprintf("../../tools/compare_reading/testdata/residual-numeral-32-%s-original.json", short))
+		raw, err := os.ReadFile(fmt.Sprintf("testdata/reading-original/residual-numeral-32-%s-original.json", short))
 		if err != nil {
 			t.Fatal(err)
 		}

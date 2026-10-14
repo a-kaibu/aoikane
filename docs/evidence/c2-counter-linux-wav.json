@@ -1,7 +1,0 @@
-{
-  "scope": "Linux CGO=0 replay of all6 C2/C1 reference WAVs, terminal PASS and exit0. Compiled with final C2 counter branch, prior to subsequent G-class sound-change addition. Selected inputs do not use G-class counters.",
-  "count": 6,
-  "log_sha256": "f27fd9cf9b9f8b3e7e1bd626875e370f00a3573a059f5ce0967ac4fb827f689e",
-  "binary_sha256": "0dd6d40d189e2213b6ae02c264d6f72992bb5d1bb27d97679ed15466a8d5b397",
-  "reference_sha256": "4f9e5706166f156c17260c0f4d07c968ab5d75a0fd7f48eb6dcf8f2caa4b1b44"
-}

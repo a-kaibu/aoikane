@@ -1,7 +1,0 @@
-{
-  "scope": "Linux CGO=0 replay of all12 G-counter reference WAVs, terminal PASS and exit0. Source includes final G-class sound changes. AMD64 Family25 Model33, threads6, AVX512 convolutions false.",
-  "count": 12,
-  "log_sha256": "23ec8c1146d1e1cc1691474fc49197769e1a58b59ada9b84cd2c74f732d90f16",
-  "binary_sha256": "6e3c9a0242a5d25eb8116566f0c397db11bb4f096a8f3f23f0889d815f903fff",
-  "reference_sha256": "2b00861b41890a562c024bd26bb7b15b5fbe162a861283f3857a0d02f282ea95"
-}

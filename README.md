@@ -34,22 +34,17 @@ Linuxでは`CGO_ENABLED=0 go build -trimpath -o aoikane ./cmd/aoikane`。
 `GET /healthz`、`GET /v1/voices`、`POST /v1/synthesize`、`GET /openapi.json`。
 任意で`--token` / `AOIKANE_TOKEN`を設定できる。
 
-## 検証と開発状況
+## テスト
 
 ```sh
 CGO_ENABLED=0 go test ./...
 ```
 
-原版から採取した全入力の読みと波形参照、検証記録を保持している。
-任意入力・全設定・全CPUの完全一致はまだ未達。直近の記録は
-[零と単位の再構築](docs/rei-zero-unit-tail-original.md)、
-[seed7の全入力比較](docs/numeral-seed7-original.md)、
-[seed3の全256音声比較](docs/numeral-seed3-full-wav.md)を参照。
-過去の[再構築記録](docs/engine-reconstruction.md)には移植途中のDLL・ONNX Runtime経路も含まれる。
+原版から採取した読みと波形参照を回帰テストで比較する。
+任意入力・全設定・全CPUの完全一致はまだ未達。
 
-原版DLLの呼び出し・認証・通常SDKとの直接比較は、非公開の別リポジトリ
+開発ログ・解析ツール・原版DLLの呼び出し・通常SDKとの直接比較は、非公開の別リポジトリ
 [aoikane-dll](https://github.com/a-kaibu/aoikane-dll)に分離した。
-このリポジトリはその25ad28f時点のPure Go実装を新しい履歴として取り込んでいる。
 
 MP3エンコードは同梱した[shine-mp3](third_party/shine-mp3)を使用する。
 変更点とライセンスは同ディレクトリを参照。

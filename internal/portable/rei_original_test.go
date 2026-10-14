@@ -130,7 +130,7 @@ func testRandomReadingOriginal(t *testing.T, seed int, corpus string) {
 	}
 	defer e.Close()
 	for _, voice := range []string{"akane", "aoi"} {
-		raw, err := os.ReadFile(fmt.Sprintf("../../tools/compare_reading/testdata/seed%d-%s-original.json", seed, voice))
+		raw, err := os.ReadFile(fmt.Sprintf("testdata/reading-original/seed%d-%s-original.json", seed, voice))
 		if err != nil {
 			t.Fatal(err)
 		}

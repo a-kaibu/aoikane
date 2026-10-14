@@ -40,10 +40,10 @@ func controlledCorpusHash(raw []byte) string {
 // The original requests and WAV digests are retained for strict replay without
 // the licensed DLL. This is opt-in because complete controlled synthesis is slow.
 func TestAkaneControlledReferenceWAV(t *testing.T) {
-	testControlledReferenceWAV(t, "testdata/akane_controlled_original.json", "../../tools/corpus/akane-controlled-requests.json")
+	testControlledReferenceWAV(t, "testdata/akane_controlled_original.json", "testdata/controlled-requests/akane-controlled-requests.json")
 }
 func TestControlledBoundaryReferenceWAV(t *testing.T) {
-	testControlledReferenceWAV(t, "testdata/controlled_boundary_original.json", "../../tools/corpus/controlled-boundary-requests.json")
+	testControlledReferenceWAV(t, "testdata/controlled_boundary_original.json", "testdata/controlled-requests/controlled-boundary-requests.json")
 }
 func testControlledReferenceWAV(t *testing.T, referenceFile, corpusFile string) {
 	if os.Getenv("AOIKANE_CONTROLLED_REFERENCE_AUDIT") != "1" {
