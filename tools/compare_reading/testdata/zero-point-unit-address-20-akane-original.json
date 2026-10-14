@@ -1,0 +1,275 @@
+{
+  "source": "ordinary original SDK talk; formatter observed without tensor injection; frontend-only capture",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "voice": "KotonohaAkane_ns_48",
+  "corpus_sha256": "3a59a7f844d8e25d7a6bf0d55a62d52d3d6b8b8a4272994361ffaf7671f27c07",
+  "cases": [
+    {
+      "index": 0,
+      "text": ".〇・億の億分２日〇９の。",
+      "status": 0,
+      "readings": [
+        "<S>^ゼ!ロ$1_1オ^クノ$2_2オ^クフン|0フ^ツカ|0^ゼ!ロ|0^キュ!ーノ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e835b21838d24315f3183495e834e836d24325f3283495e834e837483937c3083745e8363834a7c305e835b21838d7c305e834c838521815b836d3c463e"
+      ],
+      "wav_bytes": 391784,
+      "wav_sha256": "a9b00cab0209510f4f78a9324f784dd9f533c34790db7fcc022a80bd603f04a1"
+    },
+    {
+      "index": 1,
+      "text": ".〇・億の。",
+      "status": 0,
+      "readings": [
+        "<S>^ゼ!ロ$1_1オ^クノ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e835b21838d24315f3183495e834e836d3c463e"
+      ],
+      "wav_bytes": 180872,
+      "wav_sha256": "f87def9431b10ec4804a90a4a5525ccfbb1887aa9b7b952d86f24dfbe3057e01"
+    },
+    {
+      "index": 2,
+      "text": "〇・億の。",
+      "status": 0,
+      "readings": [
+        "<S>^ゼ!ロ$1_1オ^クノ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e835b21838d24315f3183495e834e836d3c463e"
+      ],
+      "wav_bytes": 180872,
+      "wav_sha256": "f87def9431b10ec4804a90a4a5525ccfbb1887aa9b7b952d86f24dfbe3057e01"
+    },
+    {
+      "index": 3,
+      "text": "０・億の。",
+      "status": 0,
+      "readings": [
+        "<S>^ゼ!ロ$1_1オ^クノ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e835b21838d24315f3183495e834e836d3c463e"
+      ],
+      "wav_bytes": 180872,
+      "wav_sha256": "f87def9431b10ec4804a90a4a5525ccfbb1887aa9b7b952d86f24dfbe3057e01"
+    },
+    {
+      "index": 4,
+      "text": "〇・兆の。",
+      "status": 0,
+      "readings": [
+        "<S>^ゼ!ロ$1_1チョ^ーノ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e835b21838d24315f31836083875e815b836d3c463e"
+      ],
+      "wav_bytes": 184232,
+      "wav_sha256": "9e3b6f41468e8b898e1c850be3624acf2ab3c441397b2c13d8ee1e1dda57b37b"
+    },
+    {
+      "index": 5,
+      "text": "〇・万の。",
+      "status": 0,
+      "readings": [
+        "<S>^ゼ!ロ$1_1^マ!ンノ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e835b21838d24315f315e837d218393836d3c463e"
+      ],
+      "wav_bytes": 182618,
+      "wav_sha256": "3b8c6b16e3c681a533b6822837d9d005d7f227a2f84af7a22c444793c38024b9"
+    },
+    {
+      "index": 6,
+      "text": "〇・十の。",
+      "status": 0,
+      "readings": [
+        "<S>^ゼ!ロ$1_1^ジュ!ーノ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e835b21838d24315f315e8357838521815b836d3c463e"
+      ],
+      "wav_bytes": 183596,
+      "wav_sha256": "fc64048e7d17df1e7ee3e7a5d6caa6cf19287bd2589b1b49ec7220d61df9bae0"
+    },
+    {
+      "index": 7,
+      "text": "零・億の。",
+      "status": 0,
+      "readings": [
+        "<S>^レ!ーノ|0オ^クノ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e838c21815b836d7c3083495e834e836d3c463e"
+      ],
+      "wav_bytes": 170874,
+      "wav_sha256": "fe188e9066aa9862492ca58eae2c6113dd76ca8e985ac38dc4d894eede02a937"
+    },
+    {
+      "index": 8,
+      "text": "一・億の。",
+      "status": 0,
+      "readings": [
+        "<S>イ^チ!ノ|0オ^クノ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83435e836021836d7c3083495e834e836d3c463e"
+      ],
+      "wav_bytes": 174212,
+      "wav_sha256": "6a00c905f97391d9928e4cd4e2efe43778db21ccd2d53526c21f8ebdb5e0cc06"
+    },
+    {
+      "index": 9,
+      "text": "1・億の。",
+      "status": 0,
+      "readings": [
+        "<S>イ^チ!ノ|0オ^クノ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83435e836021836d7c3083495e834e836d3c463e"
+      ],
+      "wav_bytes": 174212,
+      "wav_sha256": "6a00c905f97391d9928e4cd4e2efe43778db21ccd2d53526c21f8ebdb5e0cc06"
+    },
+    {
+      "index": 10,
+      "text": "〇一・億の。",
+      "status": 0,
+      "readings": [
+        "<S>ゼ^ロイ!チ$1_1オ^クノ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e835b5e838d834321836024315f3183495e834e836d3c463e"
+      ],
+      "wav_bytes": 208734,
+      "wav_sha256": "5508666a66f408499bee158807ca0f8170049e1f856bd50bbd92428b782c4c20"
+    },
+    {
+      "index": 11,
+      "text": "０１・億の。",
+      "status": 0,
+      "readings": [
+        "<S>ゼ^ロイ!チ$1_1オ^クノ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e835b5e838d834321836024315f3183495e834e836d3c463e"
+      ],
+      "wav_bytes": 208734,
+      "wav_sha256": "5508666a66f408499bee158807ca0f8170049e1f856bd50bbd92428b782c4c20"
+    },
+    {
+      "index": 12,
+      "text": "〇・一億の。",
+      "status": 0,
+      "readings": [
+        "<S>^レ!ーテン|0イ^チ!オクノ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e838c21815b836583937c3083435e8360218349834e836d3c463e"
+      ],
+      "wav_bytes": 213448,
+      "wav_sha256": "ea7d4cc831acb1b2184a6baa1d689ea0085796aa53d11da68ac4fb31bc28a913"
+    },
+    {
+      "index": 13,
+      "text": "〇・億本。",
+      "status": 0,
+      "readings": [
+        "<S>^ゼ!ロ$1_1オ^クホン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e835b21838d24315f3183495e834e837a83933c463e"
+      ],
+      "wav_bytes": 184364,
+      "wav_sha256": "acc92b45720b424709c289713187bd86de15d2349f45829308a3890e5d4e9d81"
+    },
+    {
+      "index": 14,
+      "text": "〇・億・万の。",
+      "status": 0,
+      "readings": [
+        "<S>^ゼ!ロ$1_1オ^ク$1_1^マ!ンノ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e835b21838d24315f3183495e834e24315f315e837d218393836d3c463e"
+      ],
+      "wav_bytes": 234404,
+      "wav_sha256": "12761520b3f0666c947b9c7cdcfa1cffb75fea45fc4caddd1751b8188cb438b5"
+    },
+    {
+      "index": 15,
+      "text": "〇・億・1の。",
+      "status": 0,
+      "readings": [
+        "<S>^ゼ!ロ$1_1オ^ク$1_1イ^チ!ノ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e835b21838d24315f3183495e834e24315f3183435e836021836d3c463e"
+      ],
+      "wav_bytes": 232294,
+      "wav_sha256": "90682d876339daa308b5e753194c50927a3c6155702c1e96071e71a8ea16fb9f"
+    },
+    {
+      "index": 16,
+      "text": "〇・２億の。",
+      "status": 0,
+      "readings": [
+        "<S>^ゼ!ロ$1_1^ニ!オクノ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e835b21838d24315f315e836a218349834e836d3c463e"
+      ],
+      "wav_bytes": 193490,
+      "wav_sha256": "0b97015ccb07a3bae2437821ea4f3e6593cbfb72f8901482ac0fcf7e4e4a53b2"
+    },
+    {
+      "index": 17,
+      "text": "〇・億。",
+      "status": 0,
+      "readings": [
+        "<S>^ゼ!ロ$1_1オ^ク<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e835b21838d24315f3183495e834e3c463e"
+      ],
+      "wav_bytes": 169004,
+      "wav_sha256": "3cce5a4037c17582e2a16723838cc24680d0c1b0e06047e31b36e9829c209c47"
+    },
+    {
+      "index": 18,
+      "text": ".０・億の。",
+      "status": 0,
+      "readings": [
+        "<S>^ゼ!ロ$1_1オ^クノ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e835b21838d24315f3183495e834e836d3c463e"
+      ],
+      "wav_bytes": 180872,
+      "wav_sha256": "f87def9431b10ec4804a90a4a5525ccfbb1887aa9b7b952d86f24dfbe3057e01"
+    },
+    {
+      "index": 19,
+      "text": "電話〇・億の。",
+      "status": 0,
+      "readings": [
+        "<S>^デンワ|0^ゼ!ロノ$1_1オ^クノ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e83668393838f7c305e835b21838d836d24315f3183495e834e836d3c463e"
+      ],
+      "wav_bytes": 236486,
+      "wav_sha256": "d0cdc2626e8f24e85a487d15acef00aa43127b3f50cae750db9ce4211fbf96ef"
+    }
+  ],
+  "complete": true,
+  "errors": [],
+  "executable_sha256": "de3be1e7979db53006add27f30131eb4c308c28ba78d6b7bb6365aecb01b3f2d",
+  "detach_reason": "process-terminated",
+  "crash": null,
+  "timed_out": false,
+  "native_report_sha256": "327e7bc077d0bbb3eeff5eec6bed372a0c908112583d673d57cafd1de4b1be0b"
+}

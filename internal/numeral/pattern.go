@@ -591,7 +591,12 @@ func (r *Rules) ReadGenericSeries(parts []string, last Request) ([]Reading, erro
 	counter := last.Counter
 	last.Counter = ""
 	last.NoSpecial = true
-	rd, err := r.connectorFragment(last)
+	read := r.connectorFragment
+	// Written large-unit tails keep the first unit's separate accent group.
+	if writtenLargeUnits(last.Number) {
+		read = r.connectorUnitWords
+	}
+	rd, err := read(last)
 	if err != nil {
 		return nil, err
 	}

@@ -307,7 +307,9 @@ func (f *Frontend) pattern(conn string, parts []string, words []frontend.Word, b
 					last.NoSpecial = true
 					var rd []numeral.Reading
 					var err error
-					if counter != "" || numeralPrefix(words, begin, rules.PointDecimalPrefixes) {
+					// The address pattern excludes a literal leading 〇/０.
+					// Its fallback keeps the written pause instead of inserting ノ.
+					if counter != "" || numeralPrefix(words, begin, rules.PointDecimalPrefixes) || strings.HasPrefix(a, "〇") || strings.HasPrefix(a, "０") {
 						rd, err = rules.ReadGenericSeries(parts[:1], last)
 					} else {
 						rd, err = rules.ReadPointHyphen(parts[:1], last)

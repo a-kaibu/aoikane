@@ -17,5 +17,5 @@ jobs:
       - uses: actions/setup-go@v5
         with:
           go-version: '1.26.8'
-      - run: go test ./...
+      - run: go test ./... -timeout=20m
       - run: go build -trimpath ./cmd/aoikane

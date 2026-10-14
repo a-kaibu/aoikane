@@ -1,0 +1,297 @@
+{
+  "scope": "Frontend-only native observations. Balanced stages and numeric call stack, raw return values retained (including valid zero), formatter matched to independent ordinary SDK captures. Not waveform proof.",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "voice": "KotonohaAkane_ns_48",
+  "captures": [
+    {
+      "sha256": "96f7b82f2f2204b5d4dbba15c6ac0638ff4294e697808d541016ee5b4fb3c2fc",
+      "cases": [
+        {
+          "text": ".〇・億の億分２日〇９の。",
+          "formatter": "<S>^ゼ!ロ$1_1オ^クノ$2_2オ^クフン|0フ^ツカ|0^ゼ!ロ|0^キュ!ーノ<F>",
+          "counts": {
+            "hooked": 1,
+            "stage_enter_1b9f10": 1,
+            "stage_enter_11f9c0": 4,
+            "numeral_segment_enter": 10,
+            "numeral_segment_leave": 10,
+            "stage_leave_11f9c0": 4,
+            "stage_enter_11ec50": 4,
+            "stage_leave_11ec50": 4,
+            "numeral_counter_enter": 2,
+            "stage_leave_1b9f10": 1,
+            "stage_enter_1b9f60": 1,
+            "stage_leave_1b9f60": 1,
+            "graph_in": 1,
+            "graph_built": 1,
+            "graph_after": 1,
+            "format": 1,
+            "done": 1
+          },
+          "events": [
+            {
+              "event": "numeral_segment_leave",
+              "rva": "10b010",
+              "input_hex": "815a",
+              "result": "0x1",
+              "output_a": "835b838d",
+              "output_b": "815a",
+              "input_hex_cp932": "〇",
+              "output_a_cp932": "ゼロ",
+              "output_b_cp932": "〇"
+            },
+            {
+              "event": "numeral_segment_leave",
+              "rva": "10b010",
+              "input_hex": "89ad",
+              "result": "0x1",
+              "output_a": "835b838d82908349834e",
+              "output_b": "815a814589ad",
+              "input_hex_cp932": "億",
+              "output_a_cp932": "ゼロｐオク",
+              "output_b_cp932": "〇・億"
+            },
+            {
+              "event": "numeral_segment_leave",
+              "rva": "100a90",
+              "input_hex": "815a814589ad",
+              "result": "0x1",
+              "output_a": "835b838d82908349834e",
+              "output_b": "815a814589ad",
+              "input_hex_cp932": "〇・億",
+              "output_a_cp932": "ゼロｐオク",
+              "output_b_cp932": "〇・億"
+            },
+            {
+              "event": "numeral_segment_leave",
+              "rva": "10b010",
+              "input_hex": "89ad",
+              "result": "0x1",
+              "output_a": "8349834e",
+              "output_b": "89ad",
+              "input_hex_cp932": "億",
+              "output_a_cp932": "オク",
+              "output_b_cp932": "億"
+            },
+            {
+              "event": "numeral_segment_leave",
+              "rva": "100a90",
+              "input_hex": "89ad",
+              "result": "0x1",
+              "output_a": "8349834e",
+              "output_b": "89ad",
+              "input_hex_cp932": "億",
+              "output_a_cp932": "オク",
+              "output_b_cp932": "億"
+            },
+            {
+              "event": "numeral_counter_enter",
+              "caller": "0x106ce5",
+              "number_hex": "89ad",
+              "number_accent_hex": "322d302d32",
+              "number_spelling_hex": "89ad",
+              "counter_key_hex": "95aa",
+              "counter_read_hex": "83748393",
+              "counter_sound_hex": "83748393",
+              "param11": 1,
+              "param12": 0,
+              "number_hex_cp932": "億",
+              "number_accent_hex_cp932": "2-0-2",
+              "number_spelling_hex_cp932": "億",
+              "counter_key_hex_cp932": "分",
+              "counter_read_hex_cp932": "フン",
+              "counter_sound_hex_cp932": "フン"
+            },
+            {
+              "event": "numeral_segment_leave",
+              "rva": "10b010",
+              "input_hex": "8251",
+              "result": "0x1",
+              "output_a": "836a",
+              "output_b": "93f1",
+              "input_hex_cp932": "２",
+              "output_a_cp932": "ニ",
+              "output_b_cp932": "二"
+            },
+            {
+              "event": "numeral_segment_leave",
+              "rva": "100a90",
+              "input_hex": "8251",
+              "result": "0x1",
+              "output_a": "836a",
+              "output_b": "93f1",
+              "input_hex_cp932": "２",
+              "output_a_cp932": "ニ",
+              "output_b_cp932": "二"
+            },
+            {
+              "event": "numeral_counter_enter",
+              "caller": "0x106ce5",
+              "number_hex": "8251",
+              "number_accent_hex": "322d302d32",
+              "number_spelling_hex": "93f1",
+              "counter_key_hex": "93fa",
+              "counter_read_hex": "834a",
+              "counter_sound_hex": "834a",
+              "param11": 1,
+              "param12": 1,
+              "number_hex_cp932": "２",
+              "number_accent_hex_cp932": "2-0-2",
+              "number_spelling_hex_cp932": "二",
+              "counter_key_hex_cp932": "日",
+              "counter_read_hex_cp932": "カ",
+              "counter_sound_hex_cp932": "カ"
+            },
+            {
+              "event": "numeral_segment_leave",
+              "rva": "10b010",
+              "input_hex": "815a",
+              "result": "0x1",
+              "output_a": "835b838d",
+              "output_b": "815a",
+              "input_hex_cp932": "〇",
+              "output_a_cp932": "ゼロ",
+              "output_b_cp932": "〇"
+            },
+            {
+              "event": "numeral_segment_leave",
+              "rva": "10b010",
+              "input_hex": "8258",
+              "result": "0x1",
+              "output_a": "835b838d8282834c8385815b",
+              "output_b": "815a8be3",
+              "input_hex_cp932": "９",
+              "output_a_cp932": "ゼロｂキュー",
+              "output_b_cp932": "〇九"
+            },
+            {
+              "event": "numeral_segment_leave",
+              "rva": "100a90",
+              "input_hex": "815a8258",
+              "result": "0x1",
+              "output_a": "835b838d8282834c8385815b",
+              "output_b": "815a8be3",
+              "input_hex_cp932": "〇９",
+              "output_a_cp932": "ゼロｂキュー",
+              "output_b_cp932": "〇九"
+            }
+          ]
+        },
+        {
+          "text": ".〇・億の。",
+          "formatter": "<S>^ゼ!ロ$1_1オ^クノ<F>",
+          "counts": {
+            "hooked": 1,
+            "stage_enter_1b9f10": 1,
+            "stage_enter_11f9c0": 1,
+            "numeral_segment_enter": 3,
+            "numeral_segment_leave": 3,
+            "stage_leave_11f9c0": 1,
+            "stage_enter_11ec50": 1,
+            "stage_leave_11ec50": 1,
+            "stage_leave_1b9f10": 1,
+            "stage_enter_1b9f60": 1,
+            "stage_leave_1b9f60": 1,
+            "graph_in": 1,
+            "graph_built": 1,
+            "graph_after": 1,
+            "format": 1,
+            "done": 1
+          },
+          "events": [
+            {
+              "event": "numeral_segment_leave",
+              "rva": "10b010",
+              "input_hex": "815a",
+              "result": "0x1",
+              "output_a": "835b838d",
+              "output_b": "815a",
+              "input_hex_cp932": "〇",
+              "output_a_cp932": "ゼロ",
+              "output_b_cp932": "〇"
+            },
+            {
+              "event": "numeral_segment_leave",
+              "rva": "10b010",
+              "input_hex": "89ad",
+              "result": "0x1",
+              "output_a": "835b838d82908349834e",
+              "output_b": "815a814589ad",
+              "input_hex_cp932": "億",
+              "output_a_cp932": "ゼロｐオク",
+              "output_b_cp932": "〇・億"
+            },
+            {
+              "event": "numeral_segment_leave",
+              "rva": "100a90",
+              "input_hex": "815a814589ad",
+              "result": "0x1",
+              "output_a": "835b838d82908349834e",
+              "output_b": "815a814589ad",
+              "input_hex_cp932": "〇・億",
+              "output_a_cp932": "ゼロｐオク",
+              "output_b_cp932": "〇・億"
+            }
+          ]
+        },
+        {
+          "text": "〇・億の。",
+          "formatter": "<S>^ゼ!ロ$1_1オ^クノ<F>",
+          "counts": {
+            "hooked": 1,
+            "stage_enter_1b9f10": 1,
+            "stage_enter_11f9c0": 1,
+            "numeral_segment_enter": 3,
+            "numeral_segment_leave": 3,
+            "stage_leave_11f9c0": 1,
+            "stage_enter_11ec50": 1,
+            "stage_leave_11ec50": 1,
+            "stage_leave_1b9f10": 1,
+            "stage_enter_1b9f60": 1,
+            "stage_leave_1b9f60": 1,
+            "graph_in": 1,
+            "graph_built": 1,
+            "graph_after": 1,
+            "format": 1,
+            "done": 1
+          },
+          "events": [
+            {
+              "event": "numeral_segment_leave",
+              "rva": "10b010",
+              "input_hex": "815a",
+              "result": "0x1",
+              "output_a": "835b838d",
+              "output_b": "815a",
+              "input_hex_cp932": "〇",
+              "output_a_cp932": "ゼロ",
+              "output_b_cp932": "〇"
+            },
+            {
+              "event": "numeral_segment_leave",
+              "rva": "10b010",
+              "input_hex": "89ad",
+              "result": "0x1",
+              "output_a": "835b838d82908349834e",
+              "output_b": "815a814589ad",
+              "input_hex_cp932": "億",
+              "output_a_cp932": "ゼロｐオク",
+              "output_b_cp932": "〇・億"
+            },
+            {
+              "event": "numeral_segment_leave",
+              "rva": "100a90",
+              "input_hex": "815a814589ad",
+              "result": "0x1",
+              "output_a": "835b838d82908349834e",
+              "output_b": "815a814589ad",
+              "input_hex_cp932": "〇・億",
+              "output_a_cp932": "ゼロｐオク",
+              "output_b_cp932": "〇・億"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
