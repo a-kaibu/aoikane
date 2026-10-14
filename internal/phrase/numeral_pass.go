@@ -788,10 +788,10 @@ func (f *Frontend) patternStream(separators, parts []string, words []frontend.Wo
 	}
 
 	// A literal 秒 followed by another number belongs to the generic
-	// hyphen stream, rather than ending a range at the seconds counter.
+	// written-pause stream, rather than ending at the seconds counter.
 	genericSeconds := true
 	for _, separator := range separators {
-		genericSeconds = genericSeconds && hyphenConnector(separator)
+		genericSeconds = genericSeconds && (hyphenConnector(separator) || separator == "・" || separator == "（" || separator == "）")
 	}
 	if genericSeconds {
 		counter, fall, moras, e := f.counterAfter(words, end, starts)

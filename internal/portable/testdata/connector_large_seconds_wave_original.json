@@ -1,0 +1,62 @@
+{
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "original_threads": 6,
+  "avx512_convolutions": false,
+  "report_sha256": [
+    "1efdf1c18898deb6643a1692f281fb097d1a03d3ac6591e831640e0952c1d8c6",
+    "b3ebdcba1beff1b071382481c03992380f0c2b7932802ba6c93cb0193688fe82",
+    "5d43ff6d9f24c62c37fda4d27d3e9c591f45ee5df0958d0d4abd476e1fd47bda",
+    "3b92151a6f314389c50c62104d6a076323cc96e7999c9f6a5ed488148a0e4ab8"
+  ],
+  "cases": [
+    {
+      "Text": "万学校百－億兆秒千三８円１月5。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 503966,
+      "SHA256": "a7747907f6f653f8648daf00617fcb9478ba6aa27a79339b233637b042157e28"
+    },
+    {
+      "Text": "百−億兆秒１本。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 281002,
+      "SHA256": "f5e863be92f5b7ceb2aed348a8384ed8b1f8e05ff7d8cd9a1350d1d70418f56b"
+    },
+    {
+      "Text": "百−億京秒１。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 262028,
+      "SHA256": "2aeef8e8ffc63167ff5f3b52a43672ed92abbeff7310b3ee913c726c87469471"
+    },
+    {
+      "Text": "百（億兆秒１。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 262704,
+      "SHA256": "b9b802df4598fdfd98e5c8fc331fe6ec1e3af8a9fd49b0e9f3bbad822ef9394f"
+    },
+    {
+      "Text": "万学校百－億兆秒千三８円１月5。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 482004,
+      "SHA256": "0e2c1cec455c314c23d4228fec88cd0e9631c62971b69051928f793a20e256dc"
+    },
+    {
+      "Text": "百−億兆秒１本。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 280560,
+      "SHA256": "15997fa11c0f292b27b2725c1199c9e5313a448b7ddba9c7355bfb011feae696"
+    },
+    {
+      "Text": "百−億京秒１。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 262028,
+      "SHA256": "2aeef8e8ffc63167ff5f3b52a43672ed92abbeff7310b3ee913c726c87469471"
+    },
+    {
+      "Text": "百（億兆秒１。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 262530,
+      "SHA256": "c66ced817c4808e2126abac7359bba7612ea32067efdf9d0d8acd288399db34e"
+    }
+  ]
+}

@@ -270,53 +270,58 @@ func (r *Rules) ReadSeconds(first, last Request, fractional bool) ([]Reading, er
 	return []Reading{{Groups: append(prefix, tail[0].Groups...)}}, nil
 }
 
+func (r *Rules) secondsStreamPrefix(part Request, initial bool) ([]Group, error) {
+	part.genericDecimal = true
+	var prefix []Group
+	var err error
+	if !initial && utf8.RuneCountInString(part.Number) == 1 && strings.ContainsRune(string(bigUnits), []rune(part.Number)[0]) {
+		plain := part
+		plain.Counter = ""
+		var rd []Reading
+		rd, err = r.connectorFragment(plain)
+		if err == nil {
+			prefix = rd[0].Groups
+			second := r.Cons["秒"]
+			w := r.BySound[second.Sound]
+			prefix = append(prefix, group(second.Read, second.Sound, w.Fall, w.Moras))
+		}
+	} else if !initial && writtenLargeUnits(part.Number) {
+		plain := part
+		plain.Counter = ""
+		var rd []Reading
+		rd, err = r.connectorUnitWords(plain)
+		if err == nil {
+			prefix = rd[0].Groups
+			g := &prefix[len(prefix)-1]
+			second := r.Cons["秒"]
+			bareWord := false
+			for _, u := range r.Units {
+				bareWord = bareWord || u.Type == "Unit" && g.Sound == u.Sound
+			}
+			if bareWord {
+				fall := g.Down
+				if fall == 0 {
+					fall = g.Moras
+				}
+				*g = group(g.Read+second.Read, g.Sound+second.Sound, fall, g.Moras+MoraCount(second.Sound))
+			} else {
+				w := r.BySound[second.Sound]
+				prefix = append(prefix, group(second.Read, second.Sound, w.Fall, w.Moras))
+			}
+		}
+	} else {
+		prefix, err = r.secondsPrefix(part, false)
+	}
+	return prefix, err
+}
+
 // Repeated literal 秒 selects the generic whole stream, rather than applying
 // the seconds-fraction pattern to each pair. A bare large unit in a later
 // fragment keeps 秒 as a separate table word.
 func (r *Rules) ReadSecondsSeries(parts []Request, last Request) ([]Reading, error) {
 	var groups []Group
 	for i, part := range parts {
-		part.genericDecimal = true
-		var prefix []Group
-		var err error
-		if i > 0 && utf8.RuneCountInString(part.Number) == 1 && strings.ContainsRune(string(bigUnits), []rune(part.Number)[0]) {
-			plain := part
-			plain.Counter = ""
-			var rd []Reading
-			rd, err = r.connectorFragment(plain)
-			if err == nil {
-				prefix = rd[0].Groups
-				second := r.Cons["秒"]
-				w := r.BySound[second.Sound]
-				prefix = append(prefix, group(second.Read, second.Sound, w.Fall, w.Moras))
-			}
-		} else if i > 0 && writtenLargeUnits(part.Number) {
-			plain := part
-			plain.Counter = ""
-			var rd []Reading
-			rd, err = r.connectorUnitWords(plain)
-			if err == nil {
-				prefix = rd[0].Groups
-				g := &prefix[len(prefix)-1]
-				second := r.Cons["秒"]
-				bareWord := false
-				for _, u := range r.Units {
-					bareWord = bareWord || u.Type == "Unit" && g.Sound == u.Sound
-				}
-				if bareWord {
-					fall := g.Down
-					if fall == 0 {
-						fall = g.Moras
-					}
-					*g = group(g.Read+second.Read, g.Sound+second.Sound, fall, g.Moras+MoraCount(second.Sound))
-				} else {
-					w := r.BySound[second.Sound]
-					prefix = append(prefix, group(second.Read, second.Sound, w.Fall, w.Moras))
-				}
-			}
-		} else {
-			prefix, err = r.secondsPrefix(part, false)
-		}
+		prefix, err := r.secondsStreamPrefix(part, i == 0)
 		if err != nil {
 			return nil, err
 		}
@@ -355,7 +360,7 @@ func (r *Rules) ReadConnectorSeconds(parts []string, first, last Request) ([]Rea
 		groups = append(groups, rd[0].Groups...)
 		groups = append(groups, Group{Read: "ｐ", Pause: true, Strong: true})
 	}
-	prefix, err := r.secondsPrefix(first, false)
+	prefix, err := r.secondsStreamPrefix(first, false)
 	if err != nil {
 		return nil, err
 	}
@@ -367,7 +372,7 @@ func (r *Rules) ReadConnectorSeconds(parts []string, first, last Request) ([]Rea
 		_, digit := r.Digits[string(ch)]
 		digitTail = digitTail && digit
 	}
-	if digitTail {
+	if digitTail || writtenLargeUnits(first.Number) {
 		tail, err = r.connectorFragment(last)
 	}
 	if err != nil {
