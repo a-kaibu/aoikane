@@ -1,7 +1,8 @@
 /dist/
+/aoikane
+/aoikane.exe
 /private/
 *.wav
 *.log
 __pycache__/
-/internal/bundle/assets/*.zip
 *.mp3
