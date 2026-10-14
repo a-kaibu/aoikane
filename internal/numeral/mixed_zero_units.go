@@ -258,6 +258,12 @@ func (r *Rules) numericSoundChunks(sound string) ([]chunk, error) {
 			return nil, fmt.Errorf("unknown numeric sound %q", sound)
 		}
 	}
+	for i := 0; i+1 < len(chunks); i++ {
+		next := chunks[i+1]
+		if next.Unit == "" && next.Key == next.TkKey && r.Units[next.Key].Type == "Unit" {
+			chunks[i].literalUnitBoundary = true
+		}
+	}
 	return chunks, nil
 }
 

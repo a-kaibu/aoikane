@@ -1,0 +1,50 @@
+{
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "original_threads": 6,
+  "avx512_convolutions": false,
+  "report_sha256": [
+    "2cf0327f2ce91d92c86ef2f2580eb1b8a5932fd1f0167d4cb044df41c7480dc3",
+    "fd55568acded0a349b4f84416d7d536aa5e8ff952f5c04401b7b061fbf66094f",
+    "67caec541146941c268c114ee5e8977cbf433157cd8afb1228d6394cad6bc0f3",
+    "d05189cdb67fd17e306e90c90bcbdf5a5dfcbbd6e5f3661aefdafd83513ee824"
+  ],
+  "cases": [
+    {
+      "Text": "十１声五十千本−−本Ｃ一2分一読む二０円の分−0。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 630236,
+      "SHA256": "83b579ff35fd2a5d7a4f1de4dad3eb57d4f13b058661b2e86b97243dca2b88ee"
+    },
+    {
+      "Text": "五十千一本。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 213856,
+      "SHA256": "57b93107b17f39a3de2b48c50574c992f31c92273e41c8177ce92ec5f3b30217"
+    },
+    {
+      "Text": "五十千．一本。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 237946,
+      "SHA256": "db071717d00ea5325a025104db3d92949bdd0f9e59f16841289000dc63837203"
+    },
+    {
+      "Text": "十１声五十千本−−本Ｃ一2分一読む二０円の分−0。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 772708,
+      "SHA256": "b530f3086a01260352524315ded4c87f9f00994c6689ad0013bf18c1d8027ab9"
+    },
+    {
+      "Text": "五十千一本。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 213856,
+      "SHA256": "57b93107b17f39a3de2b48c50574c992f31c92273e41c8177ce92ec5f3b30217"
+    },
+    {
+      "Text": "五十千．一本。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 237946,
+      "SHA256": "db071717d00ea5325a025104db3d92949bdd0f9e59f16841289000dc63837203"
+    }
+  ]
+}

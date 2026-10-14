@@ -120,7 +120,11 @@ func (r *Rules) unitPrefixDecimal(req Request, integer, fraction string) ([]Read
 	}
 	groups := rd[0].Groups
 	for i := 0; i < len(groups)-1; i++ {
-		r.flatBeforeMore(chunk{Read: groups[i].Read, Sound: groups[i].Sound}, &groups[i])
+		c := chunk{Read: groups[i].Read, Sound: groups[i].Sound}
+		for _, unit := range r.Units {
+			c.literalUnitBoundary = c.literalUnitBoundary || groups[i+1].Sound == unit.Sound
+		}
+		r.flatBeforeMore(c, &groups[i])
 	}
 	last := groups[len(groups)-1]
 	read, sound, fall := last.Read, last.Sound, last.Down

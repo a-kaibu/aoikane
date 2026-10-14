@@ -184,6 +184,8 @@ type chunk struct {
 	// survives that fragment and its counter; a following single digit still
 	// uses the usual continuation flag (八十一, 五十九).
 	fragmentBoundary bool
+	// A following bare written unit is not a positional-value continuation.
+	literalUnitBoundary bool
 }
 
 var digitKanji = []string{"〇", "一", "二", "三", "四", "五", "六", "七", "八", "九"}
@@ -327,7 +329,7 @@ func (r *Rules) accentOf(c chunk) Group {
 func (r *Rules) flatBeforeMore(c chunk, g *Group) {
 	// 100a90 retains the final word's accent before a multi-digit fragment.
 	// Internal positional value chunks still apply the continuation flag.
-	if c.Unit != "" || c.fragmentBoundary {
+	if c.Unit != "" || c.fragmentBoundary || c.literalUnitBoundary {
 		return
 	}
 	if w, ok := r.BySound[c.Sound]; ok && len(w.Flag) > 1 && w.Flag[1] == '1' {
