@@ -1,0 +1,62 @@
+{
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "original_threads": 6,
+  "avx512_convolutions": false,
+  "report_sha256": [
+    "e7efc164e57093a045579d946a797b3273536a1731f00bcbdf30138610d795cb",
+    "31b748a0b6feecfae46e30c74056843cc0f9c75fc5b30c08a1e7ed0f3956840f",
+    "075932a5488c7e25342551daf80199d4c2d86d54e1b43cb3d7f52b9b9ea62616",
+    "28b0153de2d54fbd48368ac3d54ebb7515161987000168168f3cee46fe877fd6"
+  ],
+  "cases": [
+    {
+      "Text": "（％０1十99本。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 349408,
+      "SHA256": "c5a864b93140bb70f8a272252e100d66f04cc931bd374859c8b38432662af6fa"
+    },
+    {
+      "Text": "０１十万本。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 198738,
+      "SHA256": "ea335a232e588588e3784aaa3fed10abef7d77e9b71606356072182cf59c0eae"
+    },
+    {
+      "Text": "０１十・９９本。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 300486,
+      "SHA256": "a8b0b394bfc2ec095989b79366490fd5cadbfd83e8a8c3acbc688d70c8691f5a"
+    },
+    {
+      "Text": "00十万本。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 295706,
+      "SHA256": "b0b4dd57e59acb0278628fcf05aa7d00558a6cbdec32b920ee525ac52c9a3cf6"
+    },
+    {
+      "Text": "（％０1十99本。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 349870,
+      "SHA256": "d1402447e6bf13fa47b1c133e3e84ee1b6349d6b029b64220e2674db97f69d74"
+    },
+    {
+      "Text": "０１十万本。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 198738,
+      "SHA256": "ea335a232e588588e3784aaa3fed10abef7d77e9b71606356072182cf59c0eae"
+    },
+    {
+      "Text": "０１十・９９本。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 300486,
+      "SHA256": "a8b0b394bfc2ec095989b79366490fd5cadbfd83e8a8c3acbc688d70c8691f5a"
+    },
+    {
+      "Text": "00十万本。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 295706,
+      "SHA256": "b0b4dd57e59acb0278628fcf05aa7d00558a6cbdec32b920ee525ac52c9a3cf6"
+    }
+  ]
+}

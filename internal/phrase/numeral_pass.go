@@ -318,7 +318,7 @@ func (f *Frontend) pattern(conn string, parts []string, words []frontend.Word, b
 				}
 			}
 		}
-		if conn == "・" && (len(parts) > 2 || strings.Contains(a, "．") || !pointFraction(b, rules)) {
+		if conn == "・" && (len(parts) > 2 || strings.Contains(a, "．") || numeral.LeadingZeroSmallUnitCoefficient(a) || !pointFraction(b, rules)) {
 			// 番地 permits no following counter and excludes each literal
 			// ０/〇 prefix. Otherwise the generic stream retains written p.
 			address := counter == "" && !numeralPrefix(words, begin, rules.PointDecimalPrefixes)

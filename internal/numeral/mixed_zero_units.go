@@ -27,7 +27,7 @@ func (r *Rules) readMixedZeroUnits(req Request) ([]Reading, error) {
 		}
 		buffer, pause = "", nextPause
 	}
-	for _, c := range req.Number {
+	for i, c := range req.Number {
 		next := r.Digits[string(c)].Type
 		if _, ok := smallUnits[c]; ok || strings.ContainsRune(string(bigUnits), c) {
 			next = "Unit"
@@ -39,7 +39,7 @@ func (r *Rules) readMixedZeroUnits(req Request) ([]Reading, error) {
 		case (kind == "Jap" || kind == "Eng") && next == "Unit":
 			_, small := smallUnits[c]
 			if strings.ContainsRune(buffer, '零') || small && utf8.RuneCountInString(buffer) > 1 &&
-				(kind == "Jap" || pairedDigits || strings.Trim(buffer, "０〇") == "" || !leadingZeroDigitRun(buffer)) {
+				(kind == "Jap" || pairedDigits || strings.Trim(buffer, "０〇") == "" || !leadingZeroDigitRun(buffer) || req.connectorStream || i+utf8.RuneLen(c) < len(req.Number)) {
 				flush(true)
 			}
 		case (kind == "Jap" || kind == "Eng") && (next == "Jap" || next == "Eng") && next != kind:

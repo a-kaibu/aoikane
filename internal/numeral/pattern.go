@@ -337,7 +337,7 @@ func (r *Rules) ReadSeries(parts []string, last Request) ([]Reading, error) {
 func (r *Rules) readSeries(parts []string, last Request, genericPoints bool) ([]Reading, error) {
 	var groups []Group
 	for _, a := range parts {
-		rs, err := r.Read(Request{Number: a, NoSpecial: true, genericDecimal: genericPoints, connectorStream: genericPoints})
+		rs, err := r.Read(Request{Number: a, NoSpecial: true, genericDecimal: genericPoints, connectorStream: true})
 		if err != nil {
 			return nil, err
 		}
@@ -582,7 +582,9 @@ func (r *Rules) ReadEnglish(number string) ([]Reading, error) {
 // spellings survive; a final digit has no whole-counter sound-change key.
 func (r *Rules) ReadGenericSeries(parts []string, last Request) ([]Reading, error) {
 	var groups []Group
+	unitPrefix := false
 	for _, a := range parts {
+		unitPrefix = unitPrefix || strings.ContainsAny(a, "十百千"+string(bigUnits))
 		rd, err := r.connectorFragment(Request{Number: a, NoSpecial: true})
 		if err != nil {
 			return nil, err
@@ -591,6 +593,14 @@ func (r *Rules) ReadGenericSeries(parts []string, last Request) ([]Reading, erro
 		groups = append(groups, Group{Read: "ｐ", Pause: true, Strong: true})
 	}
 	counter := last.Counter
+	if unitPrefix && counter != "" && !writtenLargeUnits(last.Number) {
+		last.NoSpecial = true
+		tail, err := r.connectorFragment(last)
+		if err != nil {
+			return nil, err
+		}
+		return []Reading{{Groups: append(groups, tail[0].Groups...)}}, nil
+	}
 	last.Counter = ""
 	last.NoSpecial = true
 	read := r.connectorFragment

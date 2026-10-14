@@ -1,11 +1,11 @@
 package portable
 
 import (
-	"github.com/a-kaibu/aoikane/internal/engine"
 	"context"
 	"crypto/sha256"
 	"encoding/json"
 	"fmt"
+	"github.com/a-kaibu/aoikane/internal/engine"
 	"os"
 	"slices"
 	"testing"
@@ -32,8 +32,15 @@ func TestMixedReiUnitBranchesReferenceWAV(t *testing.T) {
 	testMixedReiReferenceWAV(t, "testdata/mixed_rei_unit_branches_wave_original.json", 8)
 }
 
-func testMixedReiReferenceWAV(t *testing.T, path string, count int) {
+func testMixedReiReferenceWAV(t *testing.T, path string, count int, reportCount ...int) {
 	t.Helper()
+	expectedReports := 2
+	if len(reportCount) > 1 {
+		t.Fatal("expected at most one original report count")
+	}
+	if len(reportCount) == 1 {
+		expectedReports = reportCount[0]
+	}
 	raw, err := os.ReadFile(path)
 	if err != nil {
 		t.Fatal(err)
@@ -53,7 +60,7 @@ func testMixedReiReferenceWAV(t *testing.T, path string, count int) {
 	if err = json.Unmarshal(raw, &ref); err != nil {
 		t.Fatal(err)
 	}
-	if ref.DLL != "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17" || len(ref.Reports) != 2 || ref.CPU != "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD" || ref.Threads != 6 || ref.AVX512 || len(ref.Cases) != count {
+	if ref.DLL != "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17" || len(ref.Reports) != expectedReports || ref.CPU != "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD" || ref.Threads != 6 || ref.AVX512 || len(ref.Cases) != count {
 		t.Fatal("ordinary original WAV profile differs")
 	}
 	e, err := Open(Options{AssetsDir: "../../assets", OriginalThreads: ref.Threads})

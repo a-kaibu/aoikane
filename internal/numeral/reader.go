@@ -402,6 +402,9 @@ func (r *Rules) read(req Request, fragment bool) ([]Reading, error) {
 	// 100a90 dispatches an initial unit separately from the following digits.
 	// Preserve and concatenate those readings before numeric table lookup;
 	// Value would invent an implicit one for 万５百 or add 百十 and ９１.
+	if req.connectorStream && LeadingZeroSmallUnitCoefficient(req.Number) {
+		return r.readMixedZeroUnits(req)
+	}
 	expanded, expansion := expandedUnitInteger(req.Number)
 	if req.reiTail {
 		expansion = false
@@ -437,14 +440,32 @@ func (r *Rules) read(req Request, fragment bool) ([]Reading, error) {
 		if err != nil {
 			return nil, err
 		}
+		var zeroGroups []Group
+		if !fragment && expansion && strings.HasPrefix(req.Number, "００") {
+			tail := strings.TrimLeft(req.Number, "０")
+			if tail == "" {
+				return r.readLeadingZero(req, true)
+			}
+			zeros := req.Number[:len(req.Number)-len(tail)]
+			paired, err := r.ReadDigits([]string{zeros}, false)
+			if err != nil {
+				return nil, err
+			}
+			zeroGroups = paired[0].Groups
+			sound = strings.TrimPrefix(sound, strings.Repeat(r.digitWord(0).Sound, utf8.RuneCountInString(zeros)))
+		}
 		chunks, err := r.numericSoundChunks(sound)
 		if err != nil {
 			return nil, err
 		}
 		if req.Counter != "" {
-			return r.withCounter(req, chunks, false)
+			rd, err := r.withCounter(req, chunks, false)
+			if err == nil {
+				rd[0].Groups = append(zeroGroups, rd[0].Groups...)
+			}
+			return rd, err
 		}
-		var groups []Group
+		groups := zeroGroups
 		for i, c := range chunks {
 			g := r.accentOf(c)
 			if i < len(chunks)-1 {
