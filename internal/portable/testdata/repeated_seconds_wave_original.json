@@ -1,0 +1,88 @@
+{
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "original_threads": 6,
+  "avx512_convolutions": false,
+  "report_sha256": [
+    "a5d4ba2ccd0d48ff737944ed22ddbc8135998f4897b3d0fcd9f12cd871029633",
+    "63c5b014f8dfacee2f4d0d68003b87bfa1950549a5873bccfbca6f2d8c8eb6c1",
+    "4ac8a09e7be9cb0bcf225abd4a24ee80139ae861a614b18bb2c0d2df9484d9ab",
+    "31faaeee49c6f1f9baec739494ec90a4c9ac9ff7e5d88127628e3b0ece888ef4",
+    "969be36ef57feaa9e30c84250b9a50115a6cfaf639b09d2edf138db2ae69bacc",
+    "77ff1334f6176d1d7bc6880fa46b1d8b9c3b247942bdf1afce23c813b3f9e20c"
+  ],
+  "cases": [
+    {
+      "Text": "〇秒億秒一。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 233780,
+      "SHA256": "6c8d9c9d2549165f455825b3a6d69f8d86019f8fdae89feffd520aa7e387a6aa"
+    },
+    {
+      "Text": "〇秒二秒三秒四。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 266940,
+      "SHA256": "a1173ee8e0135d196e9ca850599378b26802027c1707f208b78a3dead298aeca"
+    },
+    {
+      "Text": "〇秒億京秒一。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 254736,
+      "SHA256": "0da5fccfc969397f7935f7b9760c5240199f09acf74d4e6f9bcf217d5430f100"
+    },
+    {
+      "Text": "〇秒億秒１本。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 250930,
+      "SHA256": "f9a13579f405b580df494560c6223e96b8481675a8c4d5470f82f0652320f3b9"
+    },
+    {
+      "Text": "〇秒２．３秒一。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 273298,
+      "SHA256": "7730c1d93fb3554b27c92fe8523034d9e2a68c141031a062d5e3a122a5bb7425"
+    },
+    {
+      "Text": "〇秒億秒１，２３４本。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 401296,
+      "SHA256": "e45763c9dc0725d6744fefac0a3e7c1576c153ba1fb913eefbd5b16fc25fdd2f"
+    },
+    {
+      "Text": "〇秒億秒一。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 231902,
+      "SHA256": "bb950edb5e97077cf3c67765a3505eee5cf93d221c9c6a5e9892adb907c80d8c"
+    },
+    {
+      "Text": "〇秒二秒三秒四。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 266940,
+      "SHA256": "a1173ee8e0135d196e9ca850599378b26802027c1707f208b78a3dead298aeca"
+    },
+    {
+      "Text": "〇秒億京秒一。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 254736,
+      "SHA256": "0da5fccfc969397f7935f7b9760c5240199f09acf74d4e6f9bcf217d5430f100"
+    },
+    {
+      "Text": "〇秒億秒１本。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 249238,
+      "SHA256": "1238febbac56e8afc3d27aa000b0f50dd6efe051653ae73b6cc091f1db32e4d5"
+    },
+    {
+      "Text": "〇秒２．３秒一。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 273298,
+      "SHA256": "7730c1d93fb3554b27c92fe8523034d9e2a68c141031a062d5e3a122a5bb7425"
+    },
+    {
+      "Text": "〇秒億秒１，２３４本。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 399438,
+      "SHA256": "3bd347cf270a503ad97bdb937f26e1e49e42fb6aae31a8749f93b509366253cc"
+    }
+  ]
+}

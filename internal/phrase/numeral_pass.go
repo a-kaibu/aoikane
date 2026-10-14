@@ -214,6 +214,42 @@ func (f *Frontend) findNumeralRuns(words []frontend.Word, starts map[int]bool) [
 				last.Counter, last.CounterFall, last.CounterMoras, last.CounterHasInfo = c, cf, cm, true
 				e = ce
 			}
+			firstTail, firstLast, firstEnd, firstCounter := tail, last, e, c
+			seconds := []numeral.Request{req}
+			for last.Counter == "秒" && e < len(words) && f.isNumeralWord(words[e]) {
+				seconds = append(seconds, last)
+				e, tail = f.scanNumber(words, e, starts, true)
+				last = numeral.Request{Number: tail}
+				c, cf, cm, ce = f.counterAfter(words, e, starts)
+				if c != "" {
+					last.Counter, last.CounterFall, last.CounterMoras, last.CounterHasInfo = c, cf, cm, true
+					e = ce
+				}
+			}
+			if len(seconds) > 1 {
+				// The generic repeated-seconds stream retains comma boundaries.
+				// Keep later digits in the same numeral rather than treating
+				// them as independent dictionary words across chunk starts.
+				for last.Counter == "" && e+1 < len(words) && words[e].Text == "，" && f.isNumeralWord(words[e+1]) {
+					var next string
+					e, next = f.scanNumber(words, e+1, starts, true)
+					last.Number += "，" + next
+					c, cf, cm, ce = f.counterAfter(words, e, starts)
+					if c != "" {
+						last.Counter, last.CounterFall, last.CounterMoras, last.CounterHasInfo = c, cf, cm, true
+						e = ce
+					}
+				}
+				if readings, err := rules.ReadSecondsSeries(seconds, last); err == nil {
+					run.readings, run.end, run.surface, run.counter = readings, e, text(i, e), c
+					runs = append(runs, run)
+					i = e
+					continue
+				}
+				// An unsupported complete stream must not let the old pair
+				// fallback consume later words while skipping their numbers.
+				tail, last, e, c = firstTail, firstLast, firstEnd, firstCounter
+			}
 			fractional := rules.SecondsFractionPattern && !mixedNumberScripts([]string{number, tail}, rules) &&
 				(c == "" || rules.SecondsFractionCounter)
 			for _, ch := range tail {

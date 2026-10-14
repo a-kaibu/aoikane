@@ -270,6 +270,79 @@ func (r *Rules) ReadSeconds(first, last Request, fractional bool) ([]Reading, er
 	return []Reading{{Groups: append(prefix, tail[0].Groups...)}}, nil
 }
 
+// Repeated literal 秒 selects the generic whole stream, rather than applying
+// the seconds-fraction pattern to each pair. A bare large unit in a later
+// fragment keeps 秒 as a separate table word.
+func (r *Rules) ReadSecondsSeries(parts []Request, last Request) ([]Reading, error) {
+	var groups []Group
+	for i, part := range parts {
+		part.genericDecimal = true
+		var prefix []Group
+		var err error
+		if i > 0 && utf8.RuneCountInString(part.Number) == 1 && strings.ContainsRune(string(bigUnits), []rune(part.Number)[0]) {
+			plain := part
+			plain.Counter = ""
+			var rd []Reading
+			rd, err = r.connectorFragment(plain)
+			if err == nil {
+				prefix = rd[0].Groups
+				second := r.Cons["秒"]
+				w := r.BySound[second.Sound]
+				prefix = append(prefix, group(second.Read, second.Sound, w.Fall, w.Moras))
+			}
+		} else if i > 0 && writtenLargeUnits(part.Number) {
+			plain := part
+			plain.Counter = ""
+			var rd []Reading
+			rd, err = r.connectorUnitWords(plain)
+			if err == nil {
+				prefix = rd[0].Groups
+				g := &prefix[len(prefix)-1]
+				second := r.Cons["秒"]
+				bareWord := false
+				for _, u := range r.Units {
+					bareWord = bareWord || u.Type == "Unit" && g.Sound == u.Sound
+				}
+				if bareWord {
+					fall := g.Down
+					if fall == 0 {
+						fall = g.Moras
+					}
+					*g = group(g.Read+second.Read, g.Sound+second.Sound, fall, g.Moras+MoraCount(second.Sound))
+				} else {
+					w := r.BySound[second.Sound]
+					prefix = append(prefix, group(second.Read, second.Sound, w.Fall, w.Moras))
+				}
+			}
+		} else {
+			prefix, err = r.secondsPrefix(part, false)
+		}
+		if err != nil {
+			return nil, err
+		}
+		groups = append(groups, prefix...)
+		groups = append(groups, Group{Pause: true, Silent: true})
+	}
+	last.NoSpecial, last.genericDecimal = true, true
+	// The complete repeated-seconds stream retains its final numeric key,
+	// including a single digit (〇秒億秒１本 -> イッポン).
+	var tail []Reading
+	var err error
+	if strings.ContainsRune(last.Number, '，') {
+		// Commas within this stream are written pauses, not a thousands
+		// pattern: １，２３４ remains 一 / 二百三十四, without 千.
+		commaParts := strings.Split(last.Number, "，")
+		last.Number = commaParts[len(commaParts)-1]
+		tail, err = r.readSeries(commaParts[:len(commaParts)-1], last, true)
+	} else {
+		tail, err = r.connectorFragment(last)
+	}
+	if err != nil {
+		return nil, err
+	}
+	return []Reading{{Groups: append(groups, tail[0].Groups...)}}, nil
+}
+
 // ReadConnectorSeconds keeps literal 秒 inside the connector's generic
 // numeric stream. Only the final counter applies to the complete stream.
 func (r *Rules) ReadConnectorSeconds(parts []string, first, last Request) ([]Reading, error) {
