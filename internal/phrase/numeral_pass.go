@@ -509,6 +509,23 @@ func (f *Frontend) pattern(conn string, parts []string, words []frontend.Word, b
 			r, err := rules.ReadLiteralCounterSeries(parts[:len(parts)-1], last)
 			return r, e, err == nil
 		}
+		generic := false
+		for _, part := range parts {
+			_, unit := rules.Units[part]
+			generic = generic || unit
+			decimal := strings.Split(part, "．")
+			for _, fraction := range decimal[1:] {
+				generic = generic || strings.ContainsAny(fraction, "十百千万億兆京垓")
+			}
+		}
+		if generic {
+			r, err := rules.ReadGenericSeries(parts[:len(parts)-1], last)
+			return r, end, err == nil
+		}
+		if len(parts) == 2 && strings.Contains(a, "．") {
+			r, err := rules.ReadRange(a, "タイ", last)
+			return r, end, err == nil
+		}
 		r, err := rules.ReadRatio(parts[:len(parts)-1], numeral.Request{Number: b})
 		return r, end, err == nil
 	case "−", "ー", "―":

@@ -10,9 +10,6 @@ func TestBareUnitDecimalStreamReadingOriginal(t *testing.T) {
 }
 
 func TestBareUnitDecimalBoundaryReadingOriginal(t *testing.T) {
-	if os.Getenv("AOIKANE_BARE_UNIT_DECIMAL_BOUNDARY_READING_AUDIT") != "1" {
-		t.Skip("set AOIKANE_BARE_UNIT_DECIMAL_BOUNDARY_READING_AUDIT=1 for the complete unresolved corpus")
-	}
 	testMixedReiReadingOriginal(t, "bare-unit-decimal-boundary-16", 16, "aea3d79606b21a75281f6aa60969da67840684cf9210e5508de0b0bcae9ae4a2")
 }
 

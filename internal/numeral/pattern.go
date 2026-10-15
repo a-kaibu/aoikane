@@ -34,12 +34,46 @@ func (r *Rules) ReadRange(a, con string, b Request) ([]Reading, error) {
 		}
 		groups := rs[0].Groups
 		g := &groups[len(groups)-1]
-		g.Read, g.Sound, g.Moras = g.Read+"カラ", g.Sound+"カラ", g.Moras+2
+		if decimalUnitTail(a) && r.separateDecimalConnector(*g) {
+			generic := false
+			for _, group := range groups {
+				generic = generic || group.Pause
+			}
+			groups = append(groups, r.accentOf(chunk{Read: con, Sound: con}))
+			if generic {
+				groups = append(groups, Group{Read: "ｂ", Pause: true})
+			}
+		} else {
+			g.Read, g.Sound, g.Moras = g.Read+"カラ", g.Sound+"カラ", g.Moras+2
+		}
 		rb, err := r.Read(b)
 		if err != nil {
 			return nil, err
 		}
 		return []Reading{{Groups: append(groups, rb[0].Groups...)}}, nil
+	}
+	if con == "タイ" && decimalUnitTail(a) {
+		prefix, err := r.connectorDecimal(Request{Number: a, NoSpecial: true})
+		if err != nil {
+			return nil, err
+		}
+		groups := append(prefix[0].Groups, r.accentOf(chunk{Read: con, Sound: con}), Group{Read: "ｂ", Pause: true})
+		last := prefix[0].Groups[len(prefix[0].Groups)-1]
+		if !r.separateDecimalConnector(last) {
+			// The generic connector takes the table word's spelling;
+			// it has no numeral key for counter sound changes or Tk.
+			chunks := []chunk{{Read: last.Read, Sound: last.Sound}}
+			joined, err := r.withCounter(Request{Number: a, Counter: "対比", CounterFall: 1, CounterMoras: 2}, chunks, false)
+			if err != nil {
+				return nil, err
+			}
+			groups = append(prefix[0].Groups[:len(prefix[0].Groups)-1], joined[0].Groups...)
+		}
+		tail, err := r.Read(b)
+		if err != nil {
+			return nil, err
+		}
+		return []Reading{{Groups: append(groups, tail[0].Groups...)}}, nil
 	}
 	prefix, err := r.connectorFragment(Request{Number: a, NoSpecial: true})
 	if err != nil {
@@ -58,6 +92,9 @@ func (r *Rules) ReadRange(a, con string, b Request) ([]Reading, error) {
 		if err != nil {
 			cs = []chunk{{Read: tail.Read, Sound: tail.Sound}}
 		}
+		if _, unit := r.Units[a]; unit {
+			cs = []chunk{{Read: tail.Read, Sound: tail.Sound}}
+		}
 		rd, err := r.withCounter(Request{Number: a, Counter: "対比", CounterFall: 1, CounterMoras: 2}, cs, false)
 		if err != nil {
 			return nil, err
@@ -71,6 +108,18 @@ func (r *Rules) ReadRange(a, con string, b Request) ([]Reading, error) {
 		return nil, err
 	}
 	return []Reading{{Groups: append(groups, rb[0].Groups...)}}, nil
+}
+
+func decimalUnitTail(number string) bool {
+	chars := []rune(number)
+	return strings.Contains(number, "．") && len(chars) > 0 && strings.ContainsRune("十百千"+string(bigUnits), chars[len(chars)-1])
+}
+
+// A full numeric table word (ニジュー, ニチョー) can take the connector.
+// Attached units without a full entry and bare large units start a new word.
+func (r *Rules) separateDecimalConnector(g Group) bool {
+	w, ok := r.BySound[g.Sound]
+	return !ok || len(w.Flag) < 4 || w.Flag[3] == '1'
 }
 
 // ReadFraction reads "numerator／denominator" as "denominator ブンノ
