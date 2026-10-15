@@ -512,7 +512,7 @@ func (f *Frontend) pattern(conn string, parts []string, words []frontend.Word, b
 		generic := false
 		for _, part := range parts {
 			_, unit := rules.Units[part]
-			generic = generic || unit
+			generic = generic || unit && !japaneseNumberParts(parts, rules)
 			decimal := strings.Split(part, "．")
 			for _, fraction := range decimal[1:] {
 				generic = generic || strings.ContainsAny(fraction, "十百千万億兆京垓")
@@ -555,7 +555,7 @@ func (f *Frontend) pattern(conn string, parts []string, words []frontend.Word, b
 		}
 		zeroPrefix := func(s string) bool { return strings.HasPrefix(s, "０") || strings.HasPrefix(s, "〇") }
 		if len(parts) == 2 && !strings.Contains(a, "．") && !strings.Contains(b, "．") && !rules.ZeroRangeCounters[counter] && (zeroPrefix(a) || zeroPrefix(b)) {
-			if counter == "" && (a == "０" || a == "〇" || b == "０" || b == "〇") && utf8.RuneCountInString(a) <= 3 && utf8.RuneCountInString(b) <= 3 && digitPartsNormalized(parts, rules) {
+			if counter == "" && (a == "０" || a == "〇" || b == "０" || b == "〇") && utf8.RuneCountInString(a) <= 3 && utf8.RuneCountInString(b) <= 3 && (digitPartsNormalized(parts, rules) || japaneseNumberParts(parts, rules)) {
 				rd, err := rules.ReadRange(a, "タイ", last)
 				return rd, end, err == nil
 			}

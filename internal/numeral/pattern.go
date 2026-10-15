@@ -26,6 +26,18 @@ func (r *Rules) ReadRange(a, con string, b Request) ([]Reading, error) {
 		b.rangeTail = !(con == "カラ" && strings.Contains(a, "．"))
 		b.genericDecimal = con == "タイ"
 	}
+	groups, err := r.rangePrefix(a, con)
+	if err != nil {
+		return nil, err
+	}
+	tail, err := r.Read(b)
+	if err != nil {
+		return nil, err
+	}
+	return []Reading{{Groups: append(groups, tail[0].Groups...)}}, nil
+}
+
+func (r *Rules) rangePrefix(a, con string) ([]Group, error) {
 	if con == "カラ" && strings.Contains(a, "．") {
 		// a decimal keeps its groups; the last one takes カラ without changing its accent
 		rs, err := r.decimal(Request{Number: a})
@@ -46,11 +58,7 @@ func (r *Rules) ReadRange(a, con string, b Request) ([]Reading, error) {
 		} else {
 			g.Read, g.Sound, g.Moras = g.Read+"カラ", g.Sound+"カラ", g.Moras+2
 		}
-		rb, err := r.Read(b)
-		if err != nil {
-			return nil, err
-		}
-		return []Reading{{Groups: append(groups, rb[0].Groups...)}}, nil
+		return groups, nil
 	}
 	if con == "タイ" && decimalUnitTail(a) {
 		prefix, err := r.connectorDecimal(Request{Number: a, NoSpecial: true})
@@ -69,11 +77,7 @@ func (r *Rules) ReadRange(a, con string, b Request) ([]Reading, error) {
 			}
 			groups = append(prefix[0].Groups[:len(prefix[0].Groups)-1], joined[0].Groups...)
 		}
-		tail, err := r.Read(b)
-		if err != nil {
-			return nil, err
-		}
-		return []Reading{{Groups: append(groups, tail[0].Groups...)}}, nil
+		return groups, nil
 	}
 	prefix, err := r.connectorFragment(Request{Number: a, NoSpecial: true})
 	if err != nil {
@@ -92,10 +96,15 @@ func (r *Rules) ReadRange(a, con string, b Request) ([]Reading, error) {
 		if err != nil {
 			cs = []chunk{{Read: tail.Read, Sound: tail.Sound}}
 		}
-		if _, unit := r.Units[a]; unit {
-			cs = []chunk{{Read: tail.Read, Sound: tail.Sound}}
+		if len(cs) == 1 && cs[0].Unit != "" && !cs[0].tableStem {
+			// A unit attached outside the numeric table finishes its word;
+			// 対 starts the next accent group rather than a counter suffix.
+			groups = append(groups, r.accentOf(chunk{Read: con, Sound: con}))
+			break
 		}
-		rd, err := r.withCounter(Request{Number: a, Counter: "対比", CounterFall: 1, CounterMoras: 2}, cs, false)
+		// The literal connector keeps the numeric sound-change key (十 ->
+		// ジュッタイ), but does not use the counter's Tk accent adjustment.
+		rd, err := r.withCounter(Request{Number: a, Counter: "対比", CounterFall: 1, CounterMoras: 2}, cs, true)
 		if err != nil {
 			return nil, err
 		}
@@ -103,11 +112,7 @@ func (r *Rules) ReadRange(a, con string, b Request) ([]Reading, error) {
 	default:
 		return nil, fmt.Errorf("unsupported connector %q", con)
 	}
-	rb, err := r.Read(b)
-	if err != nil {
-		return nil, err
-	}
-	return []Reading{{Groups: append(groups, rb[0].Groups...)}}, nil
+	return groups, nil
 }
 
 func decimalUnitTail(number string) bool {
@@ -217,9 +222,16 @@ func (r *Rules) readHyphen(parts []string, last Request, point bool) ([]Reading,
 		}
 		prefix := readings[0].Groups
 		g := &prefix[len(prefix)-1]
-		g.Read += "ノ"
-		g.Sound += "ノ"
-		g.Moras++
+		cs, err := r.numericSoundChunks(g.Sound)
+		if err == nil && len(cs) == 1 && cs[0].Unit != "" && !cs[0].tableStem {
+			no := r.accentOf(chunk{Read: "ノ", Sound: "ノ"})
+			no.Up = 0
+			prefix = append(prefix, no)
+		} else {
+			g.Read += "ノ"
+			g.Sound += "ノ"
+			g.Moras++
+		}
 		groups = append(groups, prefix...)
 		groups = append(groups, Group{Pause: true, Silent: true})
 	}
@@ -663,15 +675,11 @@ func (r *Rules) ReadRatio(parts []string, last Request) ([]Reading, error) {
 	}
 	var groups []Group
 	for _, p := range parts {
-		chunks, err := r.plainChunks(p)
+		prefix, err := r.rangePrefix(p, "タイ")
 		if err != nil {
 			return nil, err
 		}
-		rs, err := r.withCounter(Request{Number: p, Counter: "対比", CounterFall: 1, CounterMoras: 2}, chunks, false)
-		if err != nil {
-			return nil, err
-		}
-		groups = append(groups, rs[0].Groups...)
+		groups = append(groups, prefix...)
 	}
 	rb, err := r.Read(last)
 	if err != nil {
