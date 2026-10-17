@@ -1,0 +1,431 @@
+{
+  "source": "ordinary original SDK talk; formatter observed without tensor injection; frontend-only capture",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "voice": "KotonohaAoi_ns_48",
+  "corpus_sha256": "a29170d0d2de7ab3248604bb3631d97aa8c1f4fdff64f63737e26dce8608246e",
+  "cases": [
+    {
+      "index": 0,
+      "text": "２１百。",
+      "status": 0,
+      "readings": [
+        "<S>ニ^セ!ン|0ヒャ^ク<F>"
+      ],
+      "cp932_hex": [
+        "3c533e836a5e835a2183937c30837183835e834e3c463e"
+      ],
+      "wav_bytes": 170894,
+      "wav_sha256": "2c2f6659140c5993457081b32fde8f17d2a0e0552220a583df96b36e10b5cac4"
+    },
+    {
+      "index": 1,
+      "text": "２１百八。",
+      "status": 0,
+      "readings": [
+        "<S>^ニ!ジュー|0イ^チ|0ヒャ^ク|0ハ^チ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e836a2183578385815b7c3083435e83607c30837183835e834e7c30836e5e83603c463e"
+      ],
+      "wav_bytes": 218100,
+      "wav_sha256": "b4b33c3201342b0abc7b9c764540451c5d849ee772ad908f49be925dad75480e"
+    },
+    {
+      "index": 2,
+      "text": "２１千。",
+      "status": 0,
+      "readings": [
+        "<S>ニ^マ!ン|0^セ!ン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e836a5e837d2183937c305e835a2183933c463e"
+      ],
+      "wav_bytes": 158400,
+      "wav_sha256": "70a8a43f8e6f69aa23af563edb69459727b4a9477941639a348232652da0cf28"
+    },
+    {
+      "index": 3,
+      "text": "２１千八。",
+      "status": 0,
+      "readings": [
+        "<S>^ニ!ジュー|0イ^チ|0^セ!ン|0ハ^チ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e836a2183578385815b7c3083435e83607c305e835a2183937c30836e5e83603c463e"
+      ],
+      "wav_bytes": 217214,
+      "wav_sha256": "bdc0901f1aa0d684f196672485f7410159a7d20a6cc4acbec6a6097a2770efad"
+    },
+    {
+      "index": 4,
+      "text": "３１百。",
+      "status": 0,
+      "readings": [
+        "<S>サ^ンゼ!ン|0ヒャ^ク<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83545e8393835b2183937c30837183835e834e3c463e"
+      ],
+      "wav_bytes": 185804,
+      "wav_sha256": "d241946e15682953a46fcac6c941a1c130e3eadef3d395d11ca3360ee6eeb019"
+    },
+    {
+      "index": 5,
+      "text": "３１百八。",
+      "status": 0,
+      "readings": [
+        "<S>^サ!ンジュー|0イ^チ|0ヒャ^ク|0ハ^チ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e835421839383578385815b7c3083435e83607c30837183835e834e7c30836e5e83603c463e"
+      ],
+      "wav_bytes": 233324,
+      "wav_sha256": "9aebd4b603e9e44073ef9f3385d7915821f18ceae13cd52a2ce71ada4bc9657b"
+    },
+    {
+      "index": 6,
+      "text": "３１千。",
+      "status": 0,
+      "readings": [
+        "<S>サ^ンマ!ン|0^セ!ン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83545e8393837d2183937c305e835a2183933c463e"
+      ],
+      "wav_bytes": 176224,
+      "wav_sha256": "cd8241c620112602aaa990dc3b6d0e048414f1f2dd453fe5748453406f098e4a"
+    },
+    {
+      "index": 7,
+      "text": "３１千八。",
+      "status": 0,
+      "readings": [
+        "<S>^サ!ンジュー|0イ^チ|0^セ!ン|0ハ^チ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e835421839383578385815b7c3083435e83607c305e835a2183937c30836e5e83603c463e"
+      ],
+      "wav_bytes": 232364,
+      "wav_sha256": "b394c071f7f3861a7db6f38d8300f051509e42bd89b849681550e2ca30ce36a3"
+    },
+    {
+      "index": 8,
+      "text": "４１百。",
+      "status": 0,
+      "readings": [
+        "<S>ヨ^ンセ!ン|0ヒャ^ク<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83885e8393835a2183937c30837183835e834e3c463e"
+      ],
+      "wav_bytes": 183980,
+      "wav_sha256": "c22c23720373eeb88e273d793a4b6cc103e87eb9a54a1293562d9da400887055"
+    },
+    {
+      "index": 9,
+      "text": "４１百八。",
+      "status": 0,
+      "readings": [
+        "<S>^ヨ!ンジュー|0イ^チ|0ヒャ^ク|0ハ^チ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e838821839383578385815b7c3083435e83607c30837183835e834e7c30836e5e83603c463e"
+      ],
+      "wav_bytes": 230684,
+      "wav_sha256": "9e58d68b2f3458e21a17e60648abf61ab3a633d33c451e640ce1cf7eada01e0b"
+    },
+    {
+      "index": 10,
+      "text": "４１千。",
+      "status": 0,
+      "readings": [
+        "<S>ヨ^ンマ!ン|0^セ!ン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83885e8393837d2183937c305e835a2183933c463e"
+      ],
+      "wav_bytes": 172420,
+      "wav_sha256": "cd9181b1a51af267eab172381199bdb2d1ac2cea5ff282628dc3c804e0ed925c"
+    },
+    {
+      "index": 11,
+      "text": "４１千八。",
+      "status": 0,
+      "readings": [
+        "<S>^ヨ!ンジュー|0イ^チ|0^セ!ン|0ハ^チ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e838821839383578385815b7c3083435e83607c305e835a2183937c30836e5e83603c463e"
+      ],
+      "wav_bytes": 230306,
+      "wav_sha256": "342b33dcf76ab8e7a822b89e384bef6e3cbff52141e3149892d02a98a4992766"
+    },
+    {
+      "index": 12,
+      "text": "５１百。",
+      "status": 0,
+      "readings": [
+        "<S>ゴ^セ!ン|0ヒャ^ク<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83535e835a2183937c30837183835e834e3c463e"
+      ],
+      "wav_bytes": 170572,
+      "wav_sha256": "7763aeca138a5ac54bc431b394c8cc3add4558dda4e023388a2929fc284574ae"
+    },
+    {
+      "index": 13,
+      "text": "５１百八。",
+      "status": 0,
+      "readings": [
+        "<S>ゴ^ジュー|0イ^チ|0ヒャ^ク|0ハ^チ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83535e83578385815b7c3083435e83607c30837183835e834e7c30836e5e83603c463e"
+      ],
+      "wav_bytes": 221280,
+      "wav_sha256": "69c07855fa379ee9060a8d9ab9ee0f85d17b371c6f7e80b64626a923bc20624f"
+    },
+    {
+      "index": 14,
+      "text": "５１千。",
+      "status": 0,
+      "readings": [
+        "<S>ゴ^マ!ン|0^セ!ン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83535e837d2183937c305e835a2183933c463e"
+      ],
+      "wav_bytes": 157618,
+      "wav_sha256": "d649eb5aa942ab30b95f990db010cc652051372b70a9ded214e32fe28750c15f"
+    },
+    {
+      "index": 15,
+      "text": "５１千八。",
+      "status": 0,
+      "readings": [
+        "<S>ゴ^ジュー|0イ^チ|0^セ!ン|0ハ^チ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83535e83578385815b7c3083435e83607c305e835a2183937c30836e5e83603c463e"
+      ],
+      "wav_bytes": 220274,
+      "wav_sha256": "9f369a5cc5c2ba108a181763f6599f02a0ddd5420e7ab41f2201c0d9ac542710"
+    },
+    {
+      "index": 16,
+      "text": "６１百。",
+      "status": 0,
+      "readings": [
+        "<S>ロ^クセ!ン|0ヒャ^ク<F>"
+      ],
+      "cp932_hex": [
+        "3c533e838d5e834e835a2183937c30837183835e834e3c463e"
+      ],
+      "wav_bytes": 180202,
+      "wav_sha256": "9e2b2afc06785f32ee7732301da804b5909720674a218965f894877b28cc1d12"
+    },
+    {
+      "index": 17,
+      "text": "６１百八。",
+      "status": 0,
+      "readings": [
+        "<S>ロ^クジュー|0イ^チ|0ヒャ^ク|0ハ^チ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e838d5e834e83578385815b7c3083435e83607c30837183835e834e7c30836e5e83603c463e"
+      ],
+      "wav_bytes": 233324,
+      "wav_sha256": "a479cbbbc1c69b46668f1ff883be86e19c3a2336bd37c8dc5fa6cdf7fb31db9a"
+    },
+    {
+      "index": 18,
+      "text": "６１千。",
+      "status": 0,
+      "readings": [
+        "<S>ロ^クマ!ン|0^セ!ン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e838d5e834e837d2183937c305e835a2183933c463e"
+      ],
+      "wav_bytes": 173568,
+      "wav_sha256": "13c8c6c0e25095ba7f2f475691f5f882415db45f5457dce6bffd75166e201bfb"
+    },
+    {
+      "index": 19,
+      "text": "６１千八。",
+      "status": 0,
+      "readings": [
+        "<S>ロ^クジュー|0イ^チ|0^セ!ン|0ハ^チ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e838d5e834e83578385815b7c3083435e83607c305e835a2183937c30836e5e83603c463e"
+      ],
+      "wav_bytes": 232844,
+      "wav_sha256": "ee5e28b12176926193b8a409a617336093d10d4fb65a07218a78876ef0b5ebc2"
+    },
+    {
+      "index": 20,
+      "text": "７１百。",
+      "status": 0,
+      "readings": [
+        "<S>ナ^ナセ!ン|0ヒャ^ク<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83695e8369835a2183937c30837183835e834e3c463e"
+      ],
+      "wav_bytes": 179724,
+      "wav_sha256": "d978606098abc3baac57e56de5d68bd29bcc6a80c24408e28b745f0ea0c010c9"
+    },
+    {
+      "index": 21,
+      "text": "７１百八。",
+      "status": 0,
+      "readings": [
+        "<S>ナ^ナ!ジュー|0イ^チ|0ヒャ^ク|0ハ^チ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83695e83692183578385815b7c3083435e83607c30837183835e834e7c30836e5e83603c463e"
+      ],
+      "wav_bytes": 232196,
+      "wav_sha256": "9bcad8ee32d97dd10c6bf88cd54fb89b6f91626e6cbabba435d94f22805013ad"
+    },
+    {
+      "index": 22,
+      "text": "７１千。",
+      "status": 0,
+      "readings": [
+        "<S>ナ^ナマ!ン|0^セ!ン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83695e8369837d2183937c305e835a2183933c463e"
+      ],
+      "wav_bytes": 169938,
+      "wav_sha256": "ebc5b538b18c73637d451e7fe13cb99a5691fc9ad8b7289554cc8bbec1f8251e"
+    },
+    {
+      "index": 23,
+      "text": "７１千八。",
+      "status": 0,
+      "readings": [
+        "<S>ナ^ナ!ジュー|0イ^チ|0^セ!ン|0ハ^チ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e83695e83692183578385815b7c3083435e83607c305e835a2183937c30836e5e83603c463e"
+      ],
+      "wav_bytes": 231452,
+      "wav_sha256": "fb03ca267b1edc6fd517e6a9bcdb60f9034bb8dbcc04eeca13455d4979709c46"
+    },
+    {
+      "index": 24,
+      "text": "８１百。",
+      "status": 0,
+      "readings": [
+        "<S>ハ^ッセ!ン|0ヒャ^ク<F>"
+      ],
+      "cp932_hex": [
+        "3c533e836e5e8362835a2183937c30837183835e834e3c463e"
+      ],
+      "wav_bytes": 181686,
+      "wav_sha256": "a87ef867770ef790325696623f3a86f18222fe088c474d5b00afc7d5313b7176"
+    },
+    {
+      "index": 25,
+      "text": "８１百八。",
+      "status": 0,
+      "readings": [
+        "<S>ハ^チジュー|0イ^チ|0ヒャ^ク|0ハ^チ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e836e5e836083578385815b7c3083435e83607c30837183835e834e7c30836e5e83603c463e"
+      ],
+      "wav_bytes": 234284,
+      "wav_sha256": "c70e6242726731a33acb78e950d2678fbc3df156d243d608617fd34845d65082"
+    },
+    {
+      "index": 26,
+      "text": "８１千。",
+      "status": 0,
+      "readings": [
+        "<S>ハ^チマ!ン|0^セ!ン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e836e5e8360837d2183937c305e835a2183933c463e"
+      ],
+      "wav_bytes": 173280,
+      "wav_sha256": "7fe63bb2c85328e92774e8325ee111de79c263b945e8c916435a6fe5778dcc6f"
+    },
+    {
+      "index": 27,
+      "text": "８１千八。",
+      "status": 0,
+      "readings": [
+        "<S>ハ^チジュー|0イ^チ|0^セ!ン|0ハ^チ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e836e5e836083578385815b7c3083435e83607c305e835a2183937c30836e5e83603c463e"
+      ],
+      "wav_bytes": 233804,
+      "wav_sha256": "d66d3746dcb1ef9518d933467b76ca00fe9482fb46738ecd9ce400eb6d9ba991"
+    },
+    {
+      "index": 28,
+      "text": "９１百。",
+      "status": 0,
+      "readings": [
+        "<S>キュ^ーセ!ン|0ヒャ^ク<F>"
+      ],
+      "cp932_hex": [
+        "3c533e834c83855e815b835a2183937c30837183835e834e3c463e"
+      ],
+      "wav_bytes": 180620,
+      "wav_sha256": "5d89cc453aeaef7972e3c491627091c95955fa95e5404ff8f78a298e2c3b5738"
+    },
+    {
+      "index": 29,
+      "text": "９１百八。",
+      "status": 0,
+      "readings": [
+        "<S>^キュ!ージュー|0イ^チ|0ヒャ^ク|0ハ^チ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e834c838521815b83578385815b7c3083435e83607c30837183835e834e7c30836e5e83603c463e"
+      ],
+      "wav_bytes": 228296,
+      "wav_sha256": "cd076adae8d6b8c31268d4c2cf52d3d0baddf898448be03d1609009a61acda23"
+    },
+    {
+      "index": 30,
+      "text": "９１千。",
+      "status": 0,
+      "readings": [
+        "<S>キュ^ーマ!ン|0^セ!ン<F>"
+      ],
+      "cp932_hex": [
+        "3c533e834c83855e815b837d2183937c305e835a2183933c463e"
+      ],
+      "wav_bytes": 169484,
+      "wav_sha256": "d421d67a61148f6d20cadb19bafbcf7a9923bcb2e3d4de54323e6fe956f3ae65"
+    },
+    {
+      "index": 31,
+      "text": "９１千八。",
+      "status": 0,
+      "readings": [
+        "<S>^キュ!ージュー|0イ^チ|0^セ!ン|0ハ^チ<F>"
+      ],
+      "cp932_hex": [
+        "3c533e5e834c838521815b83578385815b7c3083435e83607c305e835a2183937c30836e5e83603c463e"
+      ],
+      "wav_bytes": 227866,
+      "wav_sha256": "f33fd979a171944d699a3394ae3d286541b80ae647225c35128d28d3c4fe07da"
+    }
+  ],
+  "complete": true,
+  "errors": [],
+  "executable_sha256": "de3be1e7979db53006add27f30131eb4c308c28ba78d6b7bb6365aecb01b3f2d",
+  "detach_reason": "process-terminated",
+  "crash": null,
+  "timed_out": false,
+  "native_report_sha256": "71c776f3485c60da959636589b1c3da82154c18790a2c8fdb4f8b4434a199f83"
+}

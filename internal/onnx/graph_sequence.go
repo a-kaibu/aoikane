@@ -5,7 +5,7 @@ import (
 	"math"
 )
 
-func executeSequenceNode(n graphNode, in []Value) ([]Value, bool, error) {
+func executeSequenceNode(n graphNode, in []Value, original bool) ([]Value, bool, error) {
 	allowed := map[string][]string{"CumSum": {"exclusive", "reverse"}, "Round": {}, "ConstantOfShape": {"value"}, "Pad": {"mode"}}
 	attrs, ok := allowed[n.op]
 	if !ok {
@@ -71,6 +71,19 @@ func executeSequenceNode(n graphNode, in []Value) ([]Value, bool, error) {
 					index := (o*width+d)*inner + k
 					if v.Kind == 1 {
 						x := v.F[index]
+						// ATen's CPU FLOAT cumsum accumulates in double, then
+						// rounds each output to float. Rounding the accumulator
+						// itself can move a phoneme across a frame boundary.
+						if original {
+							if exclusive != 0 {
+								out.F[index] = float32(wide)
+							}
+							wide += float64(x)
+							if exclusive == 0 {
+								out.F[index] = float32(wide)
+							}
+							continue
+						}
 						if exclusive != 0 {
 							out.F[index] = sum
 						}

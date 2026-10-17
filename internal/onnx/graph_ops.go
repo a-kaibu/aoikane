@@ -110,7 +110,7 @@ func executeNode(n graphNode, in []Value, original bool, threads ...int) ([]Valu
 	if n.op == "Range" {
 		return graphIntegerRange(n, in)
 	}
-	if out, handled, err := executeSequenceNode(n, in); handled {
+	if out, handled, err := executeSequenceNode(n, in, original); handled {
 		return out, err
 	}
 	if n.op == "Conv" {

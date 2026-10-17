@@ -79,16 +79,21 @@ func (r *Rules) readMixedZeroUnits(req Request) ([]Reading, error) {
 				c := chunk{Read: u.Read, Sound: u.Sound, Key: block[0], TkKey: block[0], numericFragment: true}
 				readings, err = r.withCounter(partReq, []chunk{c}, false)
 			} else if bi+1 < len(blocks) && blocks[bi+1].pause && !pairedDigits && fullWidthDigits(block[0]) && !leadingZeroDigitRun(block[0]) {
-				// Before the written boundary, table words retain their fall:
-				// ２１ｂ百 is ニ!ジュー / イチ, not the flat value 21.
+				// The final table word keeps its fall before the boundary.
+				// Earlier words still apply their continuation flag: ニジュー
+				// stays accented in ２１ｂ百, but ハチジュー flattens in ８２ｂ百.
 				var sound string
 				sound, err = r.integerFragmentSound(block[0])
 				if err == nil {
 					var cs []chunk
 					cs, err = r.numericSoundChunks(sound)
 					var gs []Group
-					for _, c := range cs {
-						gs = append(gs, r.accentOf(c))
+					for i, c := range cs {
+						g := r.accentOf(c)
+						if i+1 < len(cs) {
+							r.flatBeforeMore(c, &g)
+						}
+						gs = append(gs, g)
 					}
 					readings = []Reading{{Groups: gs}}
 				}

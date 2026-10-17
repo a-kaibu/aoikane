@@ -1,0 +1,62 @@
+{
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "original_threads": 6,
+  "avx512_convolutions": false,
+  "report_sha256": [
+    "7552d6e8003adddd7d564ea3883c2f48d6f6ef18f965f45d371f2340e3a2772d",
+    "ad417fb13b6fb3894cae2586336514bb7fbfc16a541a5084eb8e0c8e525def75",
+    "600a0f3a6e2cf3187e2705a21503bf05ee96c0e34ef1f7722fff2a3a9349d13b",
+    "71c776f3485c60da959636589b1c3da82154c18790a2c8fdb4f8b4434a199f83"
+  ],
+  "cases": [
+    {
+      "Text": "分〇人分25百個は９A五京．時本八55一五5千兆8－〇０2。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 816572,
+      "SHA256": "99a80967d8fc61c0b7cbe59ed3f56d3139f9465b1565231981e4abee8a17c939"
+    },
+    {
+      "Text": "8十三Ｃ十19読む8２百八Ｃ．兆五兆、％二分８八京8２の。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 889088,
+      "SHA256": "1f8cb18e2ef466fe80f57f9550ff2bf31724043bb87b2d417a2e013013668888"
+    },
+    {
+      "Text": "２１百八。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 218100,
+      "SHA256": "b4b33c3201342b0abc7b9c764540451c5d849ee772ad908f49be925dad75480e"
+    },
+    {
+      "Text": "８２百八。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 222002,
+      "SHA256": "f7b3f1a5cacc004596647da75018358b28686b0b465390bcd04a752203320199"
+    },
+    {
+      "Text": "分〇人分25百個は９A五京．時本八55一五5千兆8－〇０2。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 781686,
+      "SHA256": "364d1b218d9cf85f5b6273d77f0903c065e5b1971751d2c7f0a3552c45ce98fa"
+    },
+    {
+      "Text": "8十三Ｃ十19読む8２百八Ｃ．兆五兆、％二分８八京8２の。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 912414,
+      "SHA256": "e26bb83a1613b34a9a2f5cbe74d4df7f2efb6d89b8d44974123e529857bffee8"
+    },
+    {
+      "Text": "２１百八。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 218100,
+      "SHA256": "b4b33c3201342b0abc7b9c764540451c5d849ee772ad908f49be925dad75480e"
+    },
+    {
+      "Text": "８２百八。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 223364,
+      "SHA256": "e01d5661f4d97ddd2ce85353052dc32c5badc4160a0b087f27644dcf1e8a6fa0"
+    }
+  ]
+}
