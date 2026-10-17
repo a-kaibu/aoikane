@@ -7,9 +7,9 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-latest, windows-latest]
+        os: [ubuntu-latest, windows-latest, ubuntu-24.04-arm]
     runs-on: ${{ matrix.os }}
-    timeout-minutes: 45
+    timeout-minutes: 90
     env:
       CGO_ENABLED: '0'
     steps:
@@ -19,3 +19,11 @@ jobs:
           go-version: '1.26.8'
       - run: go test ./... -timeout=20m
       - run: go build -trimpath ./cmd/aoikane
+      - name: Verify original WAVs on ARM64
+        if: runner.arch == 'ARM64'
+        env:
+          AOIKANE_UNIT_COEFFICIENT_REFERENCE_AUDIT: '1'
+        run: |
+          uname -m
+          go env GOOS GOARCH CGO_ENABLED
+          go test ./internal/portable -run '^TestUnitCoefficientReferenceWAV$' -count=1 -v -timeout=60m
