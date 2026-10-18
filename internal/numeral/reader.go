@@ -413,6 +413,9 @@ func (r *Rules) read(req Request, fragment bool) ([]Reading, error) {
 		return r.readMixedZeroUnits(req)
 	}
 	expanded, expansion := expandedUnitInteger(req.Number)
+	if req.connectorStream {
+		expansion = false
+	}
 	if req.reiTail {
 		expansion = false
 	}

@@ -19,6 +19,7 @@ func (r *Rules) plainChunks(number string) ([]chunk, error) {
 // takes the connector as a counter-like word, the second is read as usual,
 // with its own counter when it has one.
 func (r *Rules) ReadRange(a, con string, b Request) ([]Reading, error) {
+	b.connectorStream = true
 	if b.Counter != "" {
 		b.NoSpecial = true // 1-3日 reads サンニチ, not ミッカ
 		// A decimal on the left retains the ordinary fractional counter
@@ -218,6 +219,7 @@ func (r *Rules) ReadPointHyphen(parts []string, last Request) ([]Reading, error)
 	return r.readHyphen(parts, last, true)
 }
 func (r *Rules) readHyphen(parts []string, last Request, point bool) ([]Reading, error) {
+	last.connectorStream = true
 	var groups []Group
 	for _, a := range parts {
 		readings, err := r.connectorFragment(Request{Number: a, NoSpecial: true})
@@ -404,6 +406,7 @@ func (r *Rules) ReadSeconds(first, last Request, fractional bool) ([]Reading, er
 		return []Reading{{Groups: append(prefix, tail...)}}, nil
 	}
 	last.genericDecimal = true
+	last.connectorStream = true
 	var tail []Reading
 	if strings.ContainsRune(last.Number, '，') {
 		parts := strings.Split(last.Number, "，")

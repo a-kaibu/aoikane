@@ -527,7 +527,7 @@ func (f *Frontend) pattern(conn string, parts []string, words []frontend.Word, b
 		generic := false
 		for _, part := range parts {
 			_, unit := rules.Units[part]
-			generic = generic || unit && !japaneseNumberParts(parts, rules)
+			generic = generic || (unit || strings.ContainsAny(part, "十百千万億兆京垓")) && !japaneseNumberParts(parts, rules)
 			decimal := strings.Split(part, "．")
 			for _, fraction := range decimal[1:] {
 				generic = generic || strings.ContainsAny(fraction, "十百千万億兆京垓")
