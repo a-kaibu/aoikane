@@ -135,6 +135,19 @@ func (r *Rules) withCounter(req Request, chunks []chunk, decimalTail bool) ([]Re
 	// Large-unit groups longer than four morae bypass the short-number
 	// Tk adjustment. C3 then falls before the group's final mora.
 	longUnit := last.Unit != "" && !last.tableStem && !req.pairedUnit && MoraCount(sound) > 4
+
+	spelling := []rune(req.counterSpelling)
+	if !req.pairedUnit && len(spelling) >= 3 && MoraCount(ctr.Sound) > 0 {
+		n := len(spelling)
+		_, small := smallUnits[spelling[n-2]]
+		if small && strings.ContainsRune(string(bigUnits), spelling[n-1]) && strings.ContainsRune("一二三四五六七八九数何幾Б", spelling[n-3]) {
+			c2 = 0
+			longUnit = MoraCount(ctr.Sound) <= 2
+			if longUnit {
+				ctr.Tl = "C3"
+			}
+		}
+	}
 	if longUnit {
 		c2 = 0
 	}

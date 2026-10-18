@@ -34,7 +34,8 @@ type Reading struct {
 // appear in the text) and an optional counter with the counter word's own
 // accent taken from its dictionary entry.
 type Request struct {
-	compoundDigits bool
+	counterSpelling string
+	compoundDigits  bool
 	// Paired 1043f0 digits with counter mode disabled skip full-word accents.
 	unkeyedDigits bool
 	// Literal ratio connectors with a counter use the generic point reader.

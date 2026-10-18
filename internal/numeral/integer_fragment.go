@@ -100,9 +100,15 @@ func pairedZeroLargeUnit(number string) bool {
 // are not added together as values. Thus 十十 remains 十十 and １百 becomes
 // 一百, while １００ expands to 百.
 func (r *Rules) integerFragmentSound(number string) (string, error) {
+	sound, _, err := r.integerFragment(number)
+	return sound, err
+}
+func (r *Rules) integerFragment(number string) (string, string, error) {
 	chars := []rune(number)
 	var zeros string
+	zeroCount := 0
 	for len(chars) > 0 && (chars[0] == '０' || chars[0] == '〇') {
+		zeroCount++
 		zeros += r.digitWord(0).Sound
 		chars = chars[1:]
 	}
@@ -133,7 +139,7 @@ func (r *Rules) integerFragmentSound(number string) (string, error) {
 		}
 		d, ok := kanjiDigits[c]
 		if !ok {
-			return "", fmt.Errorf("unsupported numeric fragment %q", number)
+			return "", "", fmt.Errorf("unsupported numeric fragment %q", number)
 		}
 		if !digit {
 			if d != 0 || c == '零' {
@@ -155,7 +161,7 @@ func (r *Rules) integerFragmentSound(number string) (string, error) {
 			position = 0
 			large++
 			if large > len(bigUnits) {
-				return "", fmt.Errorf("numeric fragment exceeds large-unit table: %q", number)
+				return "", "", fmt.Errorf("numeric fragment exceeds large-unit table: %q", number)
 			}
 			pendingLarge = string(bigUnits[large-1])
 		} else if position > 0 {
@@ -199,5 +205,5 @@ func (r *Rules) integerFragmentSound(number string) (string, error) {
 		}
 		sound += r.Units[unit].Sound
 	}
-	return zeros + sound, nil
+	return zeros + sound, strings.Repeat("〇", zeroCount) + canonical, nil
 }

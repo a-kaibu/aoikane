@@ -1,0 +1,98 @@
+{
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "original_threads": 6,
+  "avx512_convolutions": false,
+  "report_sha256": [
+    "4012a6b0f7768b613d82cdbf36ebab6b4cc2f06c2d84380f578f46058379636b",
+    "8c3b27f00df89ecf154681de68a5648d54756e1062938192dda0c22aa6e0fb1e",
+    "c90ffcf36bf5ac314fbe0e63885d158c3e8dcfde30dade5b66243bb650d9c20b",
+    "77242859dd80741ebd65d2c3547aece2c09789580d6f2c8cb49344860b586d4f"
+  ],
+  "cases": [
+    {
+      "Text": "）0億一二百億分.人２〇Ｃ０月。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 452982,
+      "SHA256": "ea25e0e5c758026cf5538baea465b83c4c66552ea3b37f215e5ccdf97921ae16"
+    },
+    {
+      "Text": "一二百億分",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 210284,
+      "SHA256": "2240c1ab5fbda1e8a9b108b7b625b548f048b61340a67d249c94bafdfc16e716"
+    },
+    {
+      "Text": "百億分",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 174948,
+      "SHA256": "f0af9f85e86958be0aadd9d23fc4011ea67adc3fe1519d92d47c09edba9dcead"
+    },
+    {
+      "Text": "千百億分",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 203706,
+      "SHA256": "595e2e0ed31e202ddff63834cce550879620b294a40303c7bd45c84e041e7dae"
+    },
+    {
+      "Text": "一二百億日",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 216524,
+      "SHA256": "dbb5534dbd7c1f9cc6b43e6311884b6b27469d7e7dd41f69a2da9461de40cadd"
+    },
+    {
+      "Text": "一二百億メートル",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 236858,
+      "SHA256": "1802410c4cbae544ae7a5e3694ca1d86e181169f03c4911fe8a032572ae862b7"
+    },
+    {
+      "Text": "一〇百億分",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 197300,
+      "SHA256": "96718931440d8a37a38db04c5bffb0ee1b0090a9959d08c3b7c2358682b5550d"
+    },
+    {
+      "Text": "）0億一二百億分.人２〇Ｃ０月。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 454326,
+      "SHA256": "1e5aeb9bfeb49d3735aaad252fee80d3670ec72dc9a125b7614a4fdea0b6b806"
+    },
+    {
+      "Text": "一二百億分",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 210284,
+      "SHA256": "2240c1ab5fbda1e8a9b108b7b625b548f048b61340a67d249c94bafdfc16e716"
+    },
+    {
+      "Text": "百億分",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 174948,
+      "SHA256": "f0af9f85e86958be0aadd9d23fc4011ea67adc3fe1519d92d47c09edba9dcead"
+    },
+    {
+      "Text": "千百億分",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 203706,
+      "SHA256": "595e2e0ed31e202ddff63834cce550879620b294a40303c7bd45c84e041e7dae"
+    },
+    {
+      "Text": "一二百億日",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 216524,
+      "SHA256": "dbb5534dbd7c1f9cc6b43e6311884b6b27469d7e7dd41f69a2da9461de40cadd"
+    },
+    {
+      "Text": "一二百億メートル",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 236858,
+      "SHA256": "1802410c4cbae544ae7a5e3694ca1d86e181169f03c4911fe8a032572ae862b7"
+    },
+    {
+      "Text": "一〇百億分",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 197300,
+      "SHA256": "96718931440d8a37a38db04c5bffb0ee1b0090a9959d08c3b7c2358682b5550d"
+    }
+  ]
+}

@@ -11,6 +11,7 @@ import (
 // transitions concatenate the sounds before table lookup. A large unit stays
 // attached to the preceding numeric table word within its fragment.
 func (r *Rules) readMixedZeroUnits(req Request) ([]Reading, error) {
+
 	type segment struct {
 		text  string
 		pause bool
@@ -51,6 +52,21 @@ func (r *Rules) readMixedZeroUnits(req Request) ([]Reading, error) {
 		kind = next
 	}
 	flush(false)
+	if req.counterSpelling == "" {
+		var canonical strings.Builder
+		valid := true
+		for _, part := range segments {
+			_, spelling, err := r.integerFragment(part.text)
+			if err != nil {
+				valid = false
+				break
+			}
+			canonical.WriteString(spelling)
+		}
+		if valid {
+			req.counterSpelling = canonical.String()
+		}
+	}
 	type block struct {
 		parts []string
 		pause bool
