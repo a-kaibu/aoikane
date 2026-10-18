@@ -23,7 +23,15 @@ jobs:
         if: runner.arch == 'ARM64'
         env:
           AOIKANE_UNIT_COEFFICIENT_REFERENCE_AUDIT: '1'
+          AOIKANE_WAV_FAILURE_DIR: ${{ runner.temp }}/wav-failures
         run: |
           uname -m
           go env GOOS GOARCH CGO_ENABLED
           go test ./internal/portable -run '^TestUnitCoefficientReferenceWAV$' -count=1 -v -timeout=60m
+      - name: Save differing WAVs
+        if: failure() && runner.arch == 'ARM64'
+        uses: actions/upload-artifact@v4
+        with:
+          name: arm64-wav-failures
+          path: ${{ runner.temp }}/wav-failures
+          if-no-files-found: ignore

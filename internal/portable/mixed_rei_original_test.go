@@ -7,6 +7,7 @@ import (
 	"fmt"
 	"github.com/a-kaibu/aoikane/internal/engine"
 	"os"
+	"path/filepath"
 	"slices"
 	"testing"
 )
@@ -78,6 +79,16 @@ func testMixedReiReferenceWAV(t *testing.T, path string, count int, reportCount 
 				t.Fatal(err)
 			}
 			if len(got) != c.Bytes || fmt.Sprintf("%x", sha256.Sum256(got)) != c.SHA256 {
+				if dir := os.Getenv("AOIKANE_WAV_FAILURE_DIR"); dir != "" {
+					if err := os.MkdirAll(dir, 0o755); err != nil {
+						t.Fatal(err)
+					}
+					file := filepath.Join(dir, fmt.Sprintf("case-%03d.wav", i))
+					if err := os.WriteFile(file, got, 0o644); err != nil {
+						t.Fatal(err)
+					}
+					t.Logf("saved differing WAV: %s", file)
+				}
 				t.Fatalf("whole original WAV differs: bytes=%d SHA256=%x; want %d %s", len(got), sha256.Sum256(got), c.Bytes, c.SHA256)
 			}
 			t.Logf("whole original WAV identical: %q, %d bytes", c.Text, len(got))
