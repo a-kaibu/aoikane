@@ -867,3 +867,10 @@ func (r *Rules) ReadGenericSeries(parts []string, last Request) ([]Reading, erro
 	}
 	return []Reading{{Groups: append(groups, tail...)}}, nil
 }
+
+// ReadBracketSeries keeps bracket-separated numbers on the generic point path.
+// The integer before a point retains its ordinary digit sounds.
+func (r *Rules) ReadBracketSeries(parts []string, last Request) ([]Reading, error) {
+	last.genericDecimal = true
+	return r.readSeries(parts, last, true)
+}
