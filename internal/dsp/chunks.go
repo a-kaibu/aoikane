@@ -170,13 +170,15 @@ func JoinChunk(wave, previous []float32, o ChunkOptions) (JoinedChunk, error) {
 			appendPCM(previous[:pad])
 			ramp := linearRamp(length)
 			for ; cursor < length; cursor++ {
-				v := wave[cursor]*ramp[cursor] + previous[pad+cursor]*ramp[length-1-cursor]
+				v := float32(wave[cursor]*ramp[cursor]) + float32(previous[pad+cursor]*ramp[length-1-cursor])
 				out.PCM = append(out.PCM, pcmSample(v))
 			}
 		} else {
 			ramp := linearRamp(overlap)
 			for ; cursor < overlap; cursor++ {
-				v := wave[cursor]*ramp[cursor] + previous[cursor]*ramp[overlap-1-cursor]
+				// The original rounds each product before addition. Explicit
+				// conversions prevent an ARM64 fused multiply-add here.
+				v := float32(wave[cursor]*ramp[cursor]) + float32(previous[cursor]*ramp[overlap-1-cursor])
 				out.PCM = append(out.PCM, pcmSample(v))
 			}
 		}
