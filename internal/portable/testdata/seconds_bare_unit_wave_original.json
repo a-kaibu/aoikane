@@ -1,0 +1,72 @@
+{
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "original_threads": 6,
+  "avx512_convolutions": false,
+  "report_sha256": [
+    "fd7c36f8b0eac35926db8d0af3a3e9eb127a6d95424a4c7bfbc598a4399240c3",
+    "b82b928fbc7af99c99cbc54816d1c6c88db869191b876886b4f7c8e26cac3053"
+  ],
+  "cases": [
+    {
+      "Text": "九8秒千月－秒2零時９千９）零Ｃ百読む個二９５。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 638460,
+      "SHA256": "c715206b0a709c59aef86d3320d89b8aa253684aec2f3dbc8239fca2b454ae80"
+    },
+    {
+      "Text": "２秒千月",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 190514,
+      "SHA256": "fcd900a851775059f41d4dd24d043c5be06f833a17a090ed2a98d647f15c4e1a"
+    },
+    {
+      "Text": "２秒千分",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 182746,
+      "SHA256": "fbc890f66a653044afc7906f997d7847a93c07fc2e2e60d0b5958a693bb3914d"
+    },
+    {
+      "Text": "１対千月",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 201654,
+      "SHA256": "ff624ea5af8b0dc59ca4e8413a27602f34fddcad62fdf905aba994f0af0a6ecf"
+    },
+    {
+      "Text": "１～千月",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 201032,
+      "SHA256": "e8fb81e07665a08df24451596df9bcac194ce0d08c2c849f1bc2bafb3f5858aa"
+    },
+    {
+      "Text": "九8秒千月－秒2零時９千９）零Ｃ百読む個二９５。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 689530,
+      "SHA256": "9dd161d76a5f4224be320e3b1599a9ec74a7ccefd50f901868544a86104451e4"
+    },
+    {
+      "Text": "２秒千月",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 190514,
+      "SHA256": "fcd900a851775059f41d4dd24d043c5be06f833a17a090ed2a98d647f15c4e1a"
+    },
+    {
+      "Text": "２秒千分",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 182746,
+      "SHA256": "fbc890f66a653044afc7906f997d7847a93c07fc2e2e60d0b5958a693bb3914d"
+    },
+    {
+      "Text": "１対千月",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 201654,
+      "SHA256": "ff624ea5af8b0dc59ca4e8413a27602f34fddcad62fdf905aba994f0af0a6ecf"
+    },
+    {
+      "Text": "１～千月",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 201032,
+      "SHA256": "e8fb81e07665a08df24451596df9bcac194ce0d08c2c849f1bc2bafb3f5858aa"
+    }
+  ]
+}

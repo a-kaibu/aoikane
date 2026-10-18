@@ -398,7 +398,7 @@ func (r *Rules) read(req Request, fragment bool) ([]Reading, error) {
 	// A bare unit keeps its literal table reading (万 is マン, not イチマン).
 	// The implicit-one rule belongs to positional values such as 一万.
 	if u, ok := r.Units[req.Number]; ok && utf8.RuneCountInString(req.Number) == 1 {
-		c := chunk{Read: u.Read, Sound: u.Sound, Key: req.Number, TkKey: req.Number}
+		c := chunk{Read: u.Read, Sound: u.Sound, Key: req.Number, TkKey: req.Number, numericFragment: req.NoSpecial}
 		if req.Counter != "" {
 			return r.withCounter(req, []chunk{c}, false)
 		}
