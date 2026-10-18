@@ -1,0 +1,88 @@
+{
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "original_threads": 6,
+  "avx512_convolutions": false,
+  "report_sha256": [
+    "08515b0704f58149c420ee11e890d997beb25af9d8ab68daa7b46272c27cbc4c",
+    "d09ee608bcd89435ba76286166d99da54dc665079556d11aeb2184e63de74225",
+    "7e66d479c9ba958977746066d80c2ca3fb65dc21a0547ad4c3f1d9761b1af11f",
+    "0d7bed1eda56f19e4693deedec69cccbdcd29fc2c6d367d63c1812b76163c193",
+    "6df6898593d63a2bbfc6947407235979ba5bb6ae9db94d33ebd7436759c75dc3",
+    "4a865926e6347db637cc071f2d185eff9879810acc8d1e4cbed6ff6ee2c268f7"
+  ],
+  "cases": [
+    {
+      "Text": "二1二十個月０読む1％0（5秒兆億1九の2九月.。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 622010,
+      "SHA256": "b988abf2aaf015c39bb2eab83349565142a197b3d345bc960d8d56576e4a0314"
+    },
+    {
+      "Text": "万年学校9秒0８時2.兆九一月時九日9個・５（1月日本01。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 800690,
+      "SHA256": "2faeee8b7152a56c8d8eee7a6d502833f911d095ad674c67d3e3e40bb1e53e54"
+    },
+    {
+      "Text": "９秒万万一時。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 241740,
+      "SHA256": "9467582972835afbb6d31bd176af2aff3dc3e253378a13b60571d55300207b25"
+    },
+    {
+      "Text": "９秒０１本。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 217102,
+      "SHA256": "3798ac1cf83afc79e67556d53add8cd2db059373cafd2d9bb0b148d2d7965a16"
+    },
+    {
+      "Text": "２秒万万一",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 214620,
+      "SHA256": "11b3d80d8f31bf5269f9b66ee39d6a8f7070f347cb7675a94c0fcf0422d954f3"
+    },
+    {
+      "Text": "０（５秒兆億１九。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 297232,
+      "SHA256": "ad6e23aadddccc2fbc8d946646e8792e08c9c9c142ff85b57c98e058452d800c"
+    },
+    {
+      "Text": "二1二十個月０読む1％0（5秒兆億1九の2九月.。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 649718,
+      "SHA256": "c27c27b3c45ebfc63d54e08f8211840184150b05af2ee16aeca4f8400583ce58"
+    },
+    {
+      "Text": "万年学校9秒0８時2.兆九一月時九日9個・５（1月日本01。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 867106,
+      "SHA256": "d9d0841440f578e239a43289e6cd178e44d19851c6f7690386fead16dc216b59"
+    },
+    {
+      "Text": "９秒万万一時。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 241740,
+      "SHA256": "9467582972835afbb6d31bd176af2aff3dc3e253378a13b60571d55300207b25"
+    },
+    {
+      "Text": "９秒０１本。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 221786,
+      "SHA256": "0bdcdbd945cba7378b40887ff1a7f2841a55cd2c3bebd4007efd324eb0fb4800"
+    },
+    {
+      "Text": "２秒万万一",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 214670,
+      "SHA256": "eaa62a18edac3f6b0ffd8a7fb0632ef39058c0accfe63f35501c8f9d263e0358"
+    },
+    {
+      "Text": "０（５秒兆億１九。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 297232,
+      "SHA256": "ad6e23aadddccc2fbc8d946646e8792e08c9c9c142ff85b57c98e058452d800c"
+    }
+  ]
+}

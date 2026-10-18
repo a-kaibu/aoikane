@@ -413,12 +413,11 @@ func (r *Rules) ReadSeconds(first, last Request, fractional bool) ([]Reading, er
 		last.Number = parts[len(parts)-1]
 		tail, err = r.readSeries(parts[:len(parts)-1], last, true)
 	} else {
-		read := r.Read
+		read := r.connectorFragment
 		chars := []rune(last.Number)
-		if len(chars) > 1 && strings.ContainsRune(string(bigUnits), chars[0]) && strings.ContainsRune(string(bigUnits), chars[1]) && strings.Trim(last.Number, "十百千"+string(bigUnits)) == "" {
-			// After literal 秒, a unit-only tail starts a separate word
-			// at its first large unit. A following digit (万万一) keeps
-			// the ordinary numeric fragment lookup instead.
+		if len(chars) > 1 && strings.ContainsRune(string(bigUnits), chars[0]) && strings.ContainsRune(string(bigUnits), chars[1]) {
+			// After literal 秒, consecutive large units start separate
+			// words. Preserve the following digit types in the remainder.
 			read = r.connectorUnitWords
 		}
 		tail, err = read(last)
@@ -525,6 +524,10 @@ func (r *Rules) ReadConnectorSeconds(parts []string, first, last Request) ([]Rea
 		return nil, err
 	}
 	tail, err := r.ReadGenericSeries(nil, last)
+	chars := []rune(last.Number)
+	if len(chars) > 1 && strings.ContainsRune(string(bigUnits), chars[0]) && strings.ContainsRune(string(bigUnits), chars[1]) {
+		tail, err = r.connectorUnitWords(last)
+	}
 	// A multi-digit tail retains 10b010's final numeric counter key;
 	// a single digit after literal 秒 instead uses the generic word key.
 	digitTail := utf8.RuneCountInString(last.Number) > 1

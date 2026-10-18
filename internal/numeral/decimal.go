@@ -434,6 +434,19 @@ func writtenLargeUnits(number string) bool {
 
 func (r *Rules) connectorUnitWords(req Request) ([]Reading, error) {
 	chars := []rune(req.Number)
+	if len(r.digitTypeRuns(req.Number)) > 1 {
+		head := r.Units[string(chars[0])]
+		rest := req
+		rest.Number = string(chars[1:])
+		tail, err := r.connectorFragment(rest)
+		if err != nil {
+			return nil, err
+		}
+		g := r.accentOf(chunk{Read: head.Read, Sound: head.Sound, Key: string(chars[0]), TkKey: string(chars[0]), numericFragment: true})
+		tail[0].Groups = append([]Group{g}, tail[0].Groups...)
+		return tail, nil
+	}
+
 	end := 0
 	for end < len(chars) && strings.ContainsRune(string(bigUnits), chars[end]) {
 		end++
