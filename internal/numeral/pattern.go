@@ -406,7 +406,15 @@ func (r *Rules) ReadSeconds(first, last Request, fractional bool) ([]Reading, er
 		last.Number = parts[len(parts)-1]
 		tail, err = r.readSeries(parts[:len(parts)-1], last, true)
 	} else {
-		tail, err = r.Read(last)
+		read := r.Read
+		chars := []rune(last.Number)
+		if len(chars) > 1 && strings.ContainsRune(string(bigUnits), chars[0]) && strings.ContainsRune(string(bigUnits), chars[1]) && strings.Trim(last.Number, "十百千"+string(bigUnits)) == "" {
+			// After literal 秒, a unit-only tail starts a separate word
+			// at its first large unit. A following digit (万万一) keeps
+			// the ordinary numeric fragment lookup instead.
+			read = r.connectorUnitWords
+		}
+		tail, err = read(last)
 	}
 	if err != nil {
 		return nil, err

@@ -414,6 +414,11 @@ func (r *Rules) read(req Request, fragment bool) ([]Reading, error) {
 	if req.reiTail {
 		expansion = false
 	}
+	if pairedZeroLargeUnit(req.Number) && (req.NoSpecial || req.genericDecimal || req.connectorStream) {
+		// The complete coefficient/unit pattern cannot match an internal
+		// fragment, such as the head of ００兆万 or the integer in 秒.
+		expansion = false
+	}
 	charsForUnits := []rune(req.Number)
 	for i, ch := range charsForUnits {
 		if !strings.ContainsRune(string(bigUnits), ch) {
@@ -528,7 +533,14 @@ func (r *Rules) read(req Request, fragment bool) ([]Reading, error) {
 			groups := readings[0].Groups
 			last := groups[len(groups)-1]
 			c := attachLargeUnit(chunk{Read: last.Read, Sound: last.Sound, numericFragment: true}, string(chars[len(chars)-1]))
-			if c.Sound == last.Sound {
+			tail := strings.TrimLeft(req.Number, "０〇")
+			tailSound, err := r.integerFragmentSound(tail)
+			if err != nil {
+				return nil, err
+			}
+			_, tableTail := r.BySound[tailSound]
+			tableTail = tableTail && strings.TrimLeft(prefix, "０〇") != ""
+			if c.Sound == last.Sound && !tableTail {
 				if req.Counter != "" {
 					merged, err := r.withCounter(req, []chunk{c}, false)
 					if err != nil {
@@ -545,7 +557,6 @@ func (r *Rules) read(req Request, fragment bool) ([]Reading, error) {
 			// When the following unit assimilates, retain the leading zero
 			// digit groups and evaluate the remaining numeric section. The
 			// boundary has no written pause (００８京: ゼロゼロ / ハッケイ).
-			tail := strings.TrimLeft(req.Number, "０〇")
 			zeros := req.Number[:len(req.Number)-len(tail)]
 			zeroReadings, err := r.ReadDigits([]string{zeros}, false)
 			if err != nil {

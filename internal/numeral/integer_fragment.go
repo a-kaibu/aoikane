@@ -9,7 +9,7 @@ import (
 // 桁区切り繰上 (+2n#1u) expands a multi-digit Arabic coefficient and one
 // written unit, or small/large-unit suffix, before 100a90. For 10000十 the
 // observed input is １０００００; ０１十万 becomes ０１０００００. Leading
-// zeros retain their width; a large unit alone uses the paired-digit path.
+// zeros retain their width, including before a large unit.
 func expandedUnitInteger(number string) (string, bool) {
 	chars := []rune(number)
 	i := 0
@@ -27,9 +27,9 @@ func expandedUnitInteger(number string) (string, bool) {
 	if len(units) == 2 && (!small || !strings.ContainsRune(string(bigUnits), units[1])) {
 		return "", false
 	}
-	// A zero-prefixed coefficient before a large unit alone keeps its paired
-	// digits. Small units (optionally followed by a large unit) expand first.
-	if chars[0] == '０' && !small {
+	// Nonzero leading-zero coefficients retain their paired digit accents.
+	// An all-zero coefficient still expands its width (００兆 -> 14 zeros).
+	if chars[0] == '０' && !small && strings.TrimLeft(string(chars[:i]), "０") != "" {
 		return "", false
 	}
 	var coefficient strings.Builder
