@@ -326,6 +326,17 @@ func (f *Frontend) pattern(conn string, parts []string, words []frontend.Word, b
 		last.Counter, last.CounterFall, last.CounterMoras, last.CounterHasInfo = counter, fall, moras, true
 	}
 	a, b := parts[0], parts[len(parts)-1]
+	pointUnitFallback := false
+	if conn == "・" && strings.ContainsAny(a, "十百千万億兆京垓") {
+		chars := []rune(b)
+		if len(chars) > 1 && strings.ContainsRune("十百千万億兆京垓", chars[len(chars)-1]) {
+			eng := false
+			for _, ch := range chars[:len(chars)-1] {
+				eng = eng || rules.Digits[string(ch)].Type == "Eng"
+			}
+			pointUnitFallback = eng || strings.HasPrefix(a, "〇")
+		}
+	}
 	if conn == "・" || conn == "点" {
 		if counter != "" {
 			end = e
@@ -343,7 +354,7 @@ func (f *Frontend) pattern(conn string, parts []string, words []frontend.Word, b
 				r, err := rules.ReadSeries(parts[:len(parts)-1], last)
 				return r, end, err == nil
 			}
-			if !mixed && counter == "" && len(parts) <= 3 && numeralPrefix(words, begin, rules.PointDecimalPrefixes) && (pointFraction(b, rules) || japaneseNumberParts(parts, rules)) {
+			if !mixed && counter == "" && len(parts) <= 3 && numeralPrefix(words, begin, rules.PointDecimalPrefixes) && !pointUnitFallback && (pointFraction(b, rules) || japaneseNumberParts(parts, rules)) {
 				if r, err := rules.ReadLabelDecimal(parts, last); err == nil {
 					return r, end, true
 				}
@@ -375,7 +386,7 @@ func (f *Frontend) pattern(conn string, parts []string, words []frontend.Word, b
 				}
 			}
 		}
-		if conn == "・" && (len(parts) > 2 || strings.Contains(a, "．") || numeral.LeadingZeroSmallUnitCoefficient(a) || !pointFraction(b, rules)) {
+		if conn == "・" && (pointUnitFallback || len(parts) > 2 || strings.Contains(a, "．") || numeral.LeadingZeroSmallUnitCoefficient(a) || !pointFraction(b, rules)) {
 			// 番地 permits no following counter and excludes each literal
 			// ０/〇 prefix. Otherwise the generic stream retains written p.
 			address := counter == "" && !numeralPrefix(words, begin, rules.PointDecimalPrefixes)

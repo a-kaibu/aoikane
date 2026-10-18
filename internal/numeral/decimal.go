@@ -47,7 +47,7 @@ func (r *Rules) decimal(req Request) ([]Reading, error) {
 			if len(partsForUnits) != 2 || len(rs) < 2 || !strings.ContainsRune("十百千"+string(bigUnits), rs[len(rs)-1]) {
 				return r.connectorDecimal(req)
 			}
-			if _, small := smallUnits[rs[len(rs)-1]]; small && (unitPrefix || strings.ContainsRune(partsForUnits[0], '零')) {
+			if _, small := smallUnits[rs[len(rs)-1]]; small && (unitPrefix && strings.ContainsAny(req.Number, "０１２３４５６７８９") || strings.ContainsRune(partsForUnits[0], '零')) {
 				return r.connectorDecimal(req)
 			}
 			for _, ch := range rs[:len(rs)-1] {
@@ -147,6 +147,10 @@ func (r *Rules) unitPrefixDecimal(req Request, integer, fraction string) ([]Read
 	for _, unit := range bigUnits {
 		u := r.Units[string(unit)]
 		attachedUnit = attachedUnit || utf8.RuneCountInString(integer) > 1 && u.Sound != "" && strings.HasSuffix(last.Sound, u.Sound)
+	}
+	if attachedUnit && !r.separateDecimalConnector(last) {
+		attachedUnit = false
+		fall = last.Down
 	}
 	if attachedUnit {
 		groups = append(groups, group("テン", "テン", 0, 2), Group{Read: "ｂ", Pause: true})
@@ -367,7 +371,7 @@ func (r *Rules) connectorDecimal(req Request) ([]Reading, error) {
 						// The first bare unit takes テン in the same word, even
 						// inside a connector stream. A unit after an earlier point
 						// or written pause keeps テン as a separate word.
-						attachedUnit = attachedUnit || (pi > 0 || req.writtenPause || utf8.RuneCountInString(run) > 1) && u.Sound != "" && strings.HasSuffix(g.Sound, u.Sound)
+						attachedUnit = attachedUnit || (pi > 0 || req.writtenPause || utf8.RuneCountInString(run) > 1) && u.Sound != "" && strings.HasSuffix(g.Sound, u.Sound) && (pi > 0 || req.writtenPause || r.separateDecimalConnector(g))
 					}
 					if attachedUnit {
 						groups = append(groups, g)
