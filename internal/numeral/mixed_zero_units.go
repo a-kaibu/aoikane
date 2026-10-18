@@ -119,6 +119,11 @@ func (r *Rules) readMixedZeroUnits(req Request) ([]Reading, error) {
 			// retokenizing チョーレーゼロ would lose レーゼロ's accent.
 			partReq.Number = strings.Join(block, "")
 			readings, err = r.unitZeroTail(partReq)
+		} else if bi > 0 && writtenLargeUnits(block[0]) && strings.ContainsRune(strings.Join(blocks[bi-1].parts, ""), '零') {
+			// Literal 零 starts a fresh word at the first following large
+			// unit even when that unit run has a subsequent digit fragment.
+			partReq.Number = strings.Join(block, "")
+			readings, err = r.connectorUnitWords(partReq)
 		} else {
 			var sound string
 			fragmentEnds := map[int]bool{}
