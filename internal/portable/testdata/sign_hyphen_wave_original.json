@@ -1,0 +1,90 @@
+{
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "original_threads": 6,
+  "avx512_convolutions": false,
+  "report_sha256": [
+    "a2e2ac2466946bbf325545509ee94e0ee512c7306ea9e996b22bf9d1c5d9d9a7",
+    "6f6a7ea46925e1fe0d1f95ec79d3857ac22f610d5232ad48e9e44432bb341d19",
+    "00550bca9f114147798680f61d462479ecf3a154e5f6e26a636c2b8ca3298bc4",
+    "f75e334e1bb62cd583c5f9e60d76dbfb615f7922f92294acf6e8252961ace905",
+    "1a76ba55c7b6d4faa0f143a2afec10636b8c58974aa88eab9fc427ddbe1fc86f",
+    "d73d7ff7a14686344fb65d7c67c71bca970cc74638d64fde8920b824989816bd",
+    "bb6dde46705c610d7dfb55e72c3c53e8473c5156d3de939565a9c967252b2875",
+    "acf9f2ddff2252896081cb3b6bf59dc23a477df957af123178738810a7fde189"
+  ],
+  "cases": [
+    {
+      "Text": "％０、二千秒２万Ａ9京一年零零年月本・零。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 659912,
+      "SHA256": "6eaef48fa3f7830e165b75e2ba47ef0d78e365849dfc3bb38c2ac35cbc615150"
+    },
+    {
+      "Text": "学校−９−百読む81）２1十日十.9三の十本二１時５零。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 808100,
+      "SHA256": "29c00730724e64a60467ec543c5891214274bb74e1c5ae9362d8fbbbded70cb6"
+    },
+    {
+      "Text": "−０−３。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 217964,
+      "SHA256": "d7047116e96a37a090250ee52df5879710451b1769d8d714f664a544573037f1"
+    },
+    {
+      "Text": "１−１２３４の。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 300874,
+      "SHA256": "14151d97adf74d7d3f4c61aec5df18627b600d6df6d638aaecb06a52700ac907"
+    },
+    {
+      "Text": "−１０００−２の。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 212684,
+      "SHA256": "321ee1f09ae21dd739d2adc2186c789a7b91b734f13d701a7586d1d56ed66667"
+    },
+    {
+      "Text": "−９−３本。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 243856,
+      "SHA256": "c0f8f4f92ee184ae796b4c36c8d4de05c191ed80481f1aef00f424b9fbc4a54a"
+    },
+    {
+      "Text": "％０、二千秒２万Ａ9京一年零零年月本・零。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 672168,
+      "SHA256": "9b709ee269f8f1e59f5cd59183d28e0aeb6922fc53a7fd192541d525ddea5cd7"
+    },
+    {
+      "Text": "学校−９−百読む81）２1十日十.9三の十本二１時５零。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 889998,
+      "SHA256": "8a2caba2def1f2e40c6b1a0ccb71bbdcff80b3dd2cb6cb4fb14faef0eca730c1"
+    },
+    {
+      "Text": "−０−３。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 217964,
+      "SHA256": "57855e5df3f7384caaf104269d6d3332da4d5c04a166ed4b93a16429efdc703f"
+    },
+    {
+      "Text": "１−１２３４の。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 300874,
+      "SHA256": "14151d97adf74d7d3f4c61aec5df18627b600d6df6d638aaecb06a52700ac907"
+    },
+    {
+      "Text": "−１０００−２の。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 212684,
+      "SHA256": "434b058f17a0823a3372260738745c63399786398de03f79a53e855155dde098"
+    },
+    {
+      "Text": "−９−３本。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 271394,
+      "SHA256": "1bd30bcac3e741e799206606efb07c253c8b83d2a23a3d666a12786cf9b703b6"
+    }
+  ]
+}

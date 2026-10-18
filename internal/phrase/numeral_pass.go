@@ -326,6 +326,13 @@ func (f *Frontend) pattern(conn string, parts []string, words []frontend.Word, b
 		last.Counter, last.CounterFall, last.CounterMoras, last.CounterHasInfo = counter, fall, moras, true
 	}
 	a, b := parts[0], parts[len(parts)-1]
+	// An adjacent sign excludes telephone/address pattern matching.
+	// Whitespace between the sign and number ends that context.
+	signedPrefix := false
+	if begin > 0 && words[begin-1].End == words[begin].Begin {
+		_, signedPrefix = f.signOf(words[begin-1].Text)
+	}
+
 	pointUnitFallback := false
 	if conn == "・" && strings.ContainsAny(a, "十百千万億兆京垓") {
 		chars := []rune(b)
@@ -377,7 +384,7 @@ func (f *Frontend) pattern(conn string, parts []string, words []frontend.Word, b
 					var err error
 					// The address pattern excludes a literal leading 〇/０.
 					// Its fallback keeps the written pause instead of inserting ノ.
-					if counter != "" || numeralPrefix(words, begin, rules.PointDecimalPrefixes) || strings.HasPrefix(a, "〇") || strings.HasPrefix(a, "０") {
+					if counter != "" || numeralPrefix(words, begin, rules.PointDecimalPrefixes) || strings.HasPrefix(a, "〇") || strings.HasPrefix(a, "０") || signedPrefix {
 						rd, err = rules.ReadGenericSeries(parts[:1], last)
 					} else {
 						rd, err = rules.ReadPointHyphen(parts[:1], last)
@@ -558,7 +565,7 @@ func (f *Frontend) pattern(conn string, parts []string, words []frontend.Word, b
 				}
 			}
 		}
-		if digitParts(parts) && counter == "" {
+		if digitParts(parts) && counter == "" && !signedPrefix {
 			switch {
 			case isPhone(parts):
 				r, err := rules.ReadDigits(parts, true)
@@ -570,7 +577,7 @@ func (f *Frontend) pattern(conn string, parts []string, words []frontend.Word, b
 		}
 		zeroPrefix := func(s string) bool { return strings.HasPrefix(s, "０") || strings.HasPrefix(s, "〇") }
 		if len(parts) == 2 && !strings.Contains(a, "．") && !strings.Contains(b, "．") && !rules.ZeroRangeCounters[counter] && (zeroPrefix(a) || zeroPrefix(b)) {
-			if counter == "" && (a == "０" || a == "〇" || b == "０" || b == "〇") && utf8.RuneCountInString(a) <= 3 && utf8.RuneCountInString(b) <= 3 && (digitPartsNormalized(parts, rules) || japaneseNumberParts(parts, rules)) {
+			if !signedPrefix && counter == "" && (a == "０" || a == "〇" || b == "０" || b == "〇") && utf8.RuneCountInString(a) <= 3 && utf8.RuneCountInString(b) <= 3 && (digitPartsNormalized(parts, rules) || japaneseNumberParts(parts, rules)) {
 				rd, err := rules.ReadRange(a, "タイ", last)
 				return rd, end, err == nil
 			}
@@ -581,7 +588,7 @@ func (f *Frontend) pattern(conn string, parts []string, words []frontend.Word, b
 			rd, err := rules.ReadGenericSeries(parts[:len(parts)-1], last)
 			return rd, end, err == nil
 		}
-		if counter == "" && len(parts) == 2 && f.particleFollows(words, end) {
+		if counter == "" && len(parts) == 2 && utf8.RuneCountInString(a) <= 3 && utf8.RuneCountInString(b) <= 3 && f.particleFollows(words, end) && (digitPartsNormalized(parts, rules) || japaneseNumberParts(parts, rules)) {
 			r, err := rules.ReadRange(a, "タイ", numeral.Request{Number: b})
 			return r, end, err == nil
 		}
@@ -589,7 +596,11 @@ func (f *Frontend) pattern(conn string, parts []string, words []frontend.Word, b
 			if counter != "" {
 				return nil, end, false
 			}
-			r, err := rules.ReadHyphen(parts[:len(parts)-1], last)
+			read := rules.ReadHyphen
+			if signedPrefix && !strings.Contains(strings.Join(parts, ""), "．") {
+				read = rules.ReadGenericSeries
+			}
+			r, err := read(parts[:len(parts)-1], last)
 			return r, end, err == nil
 		}
 		if counter != "" || strings.Contains(a, "．") || strings.Contains(b, "．") {
@@ -599,7 +610,11 @@ func (f *Frontend) pattern(conn string, parts []string, words []frontend.Word, b
 			r, err := rules.ReadRange(a, "カラ", last)
 			return r, end, err == nil
 		}
-		r, err := rules.ReadHyphen(parts[:1], numeral.Request{Number: b})
+		read := rules.ReadHyphen
+		if signedPrefix {
+			read = rules.ReadGenericSeries
+		}
+		r, err := read(parts[:1], numeral.Request{Number: b})
 		return r, end, err == nil
 	}
 	return nil, end, false

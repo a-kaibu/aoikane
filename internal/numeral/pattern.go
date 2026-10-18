@@ -322,6 +322,9 @@ func (r *Rules) secondsPrefix(first Request, fractional bool) ([]Group, error) {
 				*g = group(g.Read+second.Read, g.Sound+second.Sound, fall, g.Moras+w.Moras)
 			} else if writtenUnit {
 				prefix = append(prefix, group(second.Read, second.Sound, w.Fall, w.Moras))
+			} else if !fractional && (strings.HasSuffix(first.Number, "十") || strings.HasSuffix(first.Number, "百") || strings.HasSuffix(first.Number, "千")) {
+				// Literal 秒 retains the accent of a written small-unit prefix.
+				*g = group(g.Read+second.Read, g.Sound+second.Sound, g.Down, g.Moras+w.Moras)
 			} else {
 				rd, err = r.Read(first)
 				if err != nil {
