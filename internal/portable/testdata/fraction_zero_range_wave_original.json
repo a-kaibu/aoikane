@@ -1,0 +1,88 @@
+{
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "original_threads": 6,
+  "avx512_convolutions": false,
+  "report_sha256": [
+    "3043d6025f2698f0e03224c20a0bd26ac98d25c2377908516f315b9302222369",
+    "077d51234ce7d950db57e00281511b9ad71b6abd08f35a5f5ad08bb4e6ac60c2",
+    "52d08a2855d51c4e2e22fd6920f08a325c98b0343200b537bdd9bbd0b55c480f",
+    "b716ad3cb3cdf5e8cc3f4d3345e47f8760601086502339148f803cfc7b684723",
+    "775258373b910141c352950d31fa2fd8f4c881d9764af399b238ec505849f6ab",
+    "0e76dbde93c73334a7b3208151c010f904d14d7bf8c657a4c565c85704357408"
+  ],
+  "cases": [
+    {
+      "Text": "A秒A三.5二2八9学校Ａ人時五．〇兆年分Ｃ零本９の1五二円２２万。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 940206,
+      "SHA256": "2278d36388dfdd2023eec0aa761ac58f806823a52c3255bfe0d3a82ecd3751e8"
+    },
+    {
+      "Text": "五．〇兆年",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 218908,
+      "SHA256": "aea925f057f3ceee77f5ae4996beff4396e86a173602fcf38236f1fa5e277b62"
+    },
+    {
+      "Text": "１～五．〇兆",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 240124,
+      "SHA256": "931ab730613b560f1f851581304690481297254351f6c0b6ea8806628103e9b1"
+    },
+    {
+      "Text": "１対５．０兆",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 239904,
+      "SHA256": "94fa737772b449103c79a15cca7637b3a9cdbc3c467b134868a8193741c2a1a5"
+    },
+    {
+      "Text": "1対2.03。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 244338,
+      "SHA256": "2376bb56148c833046ac2e81ef7619b086bf2cfc164d29a09b81ed10faa19e83"
+    },
+    {
+      "Text": "1対2.03．4。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 292526,
+      "SHA256": "02bd78cd500ac5a5df59dc54cafd33d5279d7f8af48b9186ac36b7909a0655be"
+    },
+    {
+      "Text": "A秒A三.5二2八9学校Ａ人時五．〇兆年分Ｃ零本９の1五二円２２万。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 997166,
+      "SHA256": "7c00b6b218837ff4ab46edf2484aea6c23fb1ac326c2fa7015e7fc9199bbb214"
+    },
+    {
+      "Text": "五．〇兆年",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 218908,
+      "SHA256": "aea925f057f3ceee77f5ae4996beff4396e86a173602fcf38236f1fa5e277b62"
+    },
+    {
+      "Text": "１～五．〇兆",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 240124,
+      "SHA256": "931ab730613b560f1f851581304690481297254351f6c0b6ea8806628103e9b1"
+    },
+    {
+      "Text": "１対５．０兆",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 239904,
+      "SHA256": "94fa737772b449103c79a15cca7637b3a9cdbc3c467b134868a8193741c2a1a5"
+    },
+    {
+      "Text": "1対2.03。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 244338,
+      "SHA256": "2376bb56148c833046ac2e81ef7619b086bf2cfc164d29a09b81ed10faa19e83"
+    },
+    {
+      "Text": "1対2.03．4。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 292526,
+      "SHA256": "02bd78cd500ac5a5df59dc54cafd33d5279d7f8af48b9186ac36b7909a0655be"
+    }
+  ]
+}

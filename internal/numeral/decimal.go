@@ -582,6 +582,9 @@ func (r *Rules) unitFraction(req Request, digits []rune, unit string) ([]Group, 
 	}
 	last := r.digitWordByKey(digitKanji[kanjiDigits[digits[len(digits)-1]]])
 	digit := digits[len(digits)-1]
+	if kanjiDigits[digit] == 0 {
+		last.Read, last.Sound = fractionPair['〇'].Read, fractionPair['〇'].Sound
+	}
 	if scale, small := smallUnits[[]rune(unit)[0]]; small && r.Digits[string(digit)].Type == "Jap" && kanjiDigits[digit] > 1 {
 		for _, c := range r.groupChunks(kanjiDigits[digit] * int(scale)) {
 			sound += c.Sound

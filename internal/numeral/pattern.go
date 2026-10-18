@@ -26,6 +26,9 @@ func (r *Rules) ReadRange(a, con string, b Request) ([]Reading, error) {
 		b.rangeTail = !(con == "カラ" && strings.Contains(a, "．"))
 		b.genericDecimal = con == "タイ"
 	}
+	if strings.Contains(b.Number, "．") && (strings.Count(b.Number, "．") > 1 || con == "タイ" && decimalUnitTail(b.Number) || len(r.digitTypeRuns(a+b.Number)) > 1) {
+		b.genericDecimal = true
+	}
 	groups, err := r.rangePrefix(a, con)
 	if err != nil {
 		return nil, err

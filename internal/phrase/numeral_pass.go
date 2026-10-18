@@ -445,6 +445,10 @@ func (f *Frontend) pattern(conn string, parts []string, words []frontend.Word, b
 		if counter != "" {
 			end = e
 		}
+		if strings.Contains(strings.Join(parts, ""), "．") {
+			r, err := rules.ReadGenericSeries(parts[:len(parts)-1], last)
+			return r, end, err == nil
+		}
 		r, err := rules.ReadSeries(parts[:len(parts)-1], last)
 		return r, end, err == nil
 	}
