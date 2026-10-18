@@ -242,10 +242,10 @@ func (f *Frontend) findNumeralRuns(words []frontend.Word, starts map[int]bool) [
 					e = ce
 				}
 			}
-			// Written commas and hyphens after literal seconds stay inside
+			// Written commas, hyphens and brackets after literal seconds stay inside
 			// the same generic stream and carry written pauses, not ranges.
 			for last.Counter == "" && e+1 < len(words) && !starts[e] &&
-				(words[e].Text == "，" || hyphenConnector(words[e].Text)) && f.isNumeralWord(words[e+1]) {
+				(words[e].Text == "，" || hyphenConnector(words[e].Text) || words[e].Text == "（" || words[e].Text == "）") && f.isNumeralWord(words[e+1]) {
 				var next string
 				e, next = f.scanNumber(words, e+1, starts, true)
 				last.Number += "，" + next
