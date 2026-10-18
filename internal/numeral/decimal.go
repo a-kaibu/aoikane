@@ -37,6 +37,15 @@ func (r *Rules) decimal(req Request) ([]Reading, error) {
 	if partsForUnits[0] == "" {
 		return r.leadingPoint(req, partsForUnits[1:])
 	}
+	if utf8.RuneCountInString(partsForUnits[0]) > 1 && leadingZeroDigitRun(partsForUnits[0]) {
+		if req.rangeZeroDecimal && len(partsForUnits) == 2 {
+			return r.rangeLeadingZeroDecimal(req, partsForUnits[0], partsForUnits[1])
+		}
+		return r.connectorDecimal(req)
+	}
+	if len(partsForUnits) == 2 && partsForUnits[1] != "" && strings.ContainsRune("〇零一二三四五六七八九０１２３４５６７８９", []rune(partsForUnits[1])[0]) && len(r.digitTypeRuns(strings.ReplaceAll(req.Number, "．", ""))) == 1 && strings.ContainsRune(partsForUnits[0], '零') && !strings.ContainsAny(partsForUnits[0], "十百千万億兆京垓") {
+		return r.literalZeroDecimal(req, partsForUnits[0], partsForUnits[1])
+	}
 	unitPrefix := strings.ContainsAny(partsForUnits[0], "十百千万億兆京垓")
 	if unitPrefix && leadingZeroDigitRunPrefix(partsForUnits[0]) {
 		return r.connectorDecimal(req)
@@ -142,6 +151,9 @@ func (r *Rules) unitPrefixDecimal(req Request, integer, fraction string) ([]Read
 		}
 		read, sound = r.tenWord(cs[0])
 		fall = MoraCount(sound) - 1
+	}
+	if strings.ContainsRune(integer, '零') && strings.HasSuffix(integer, "十") && strings.HasSuffix(sound, "ジュー") {
+		read, sound = geminate(read), geminate(sound)
 	}
 	attachedUnit := false
 	for _, unit := range bigUnits {
@@ -698,4 +710,99 @@ func (r *Rules) leadingPoint(req Request, parts []string) ([]Reading, error) {
 		}
 	}
 	return []Reading{{Groups: groups}}, nil
+}
+
+func (r *Rules) rangeLeadingZeroDecimal(req Request, integer, fraction string) ([]Reading, error) {
+	chars := []rune(integer)
+	n := 0
+	for n < len(chars) && (chars[n] == '〇' || chars[n] == '０') {
+		n++
+	}
+	zero, err := r.ReadDigits([]string{string(chars[:n])}, false)
+	if err != nil {
+		return nil, err
+	}
+	prefix := zero[0].Groups
+	for i := range prefix {
+		prefix[i].Read = strings.ReplaceAll(prefix[i].Read, "ゼロ", "レイ")
+		prefix[i].Sound = strings.ReplaceAll(prefix[i].Sound, "ゼロ", "レー")
+	}
+	if n == len(chars) {
+		g := &prefix[len(prefix)-1]
+		g.Read += "テン"
+		g.Sound += "テン"
+		g.Moras += 2
+		g.Down = 1
+		g.Up = 1
+		tail, err := r.decimalFraction(req, fraction)
+		if err != nil {
+			return nil, err
+		}
+		return []Reading{{Groups: append(prefix, tail...)}}, nil
+	}
+	tailReq := req
+	tailReq.Number = string(chars[n:]) + "．" + fraction
+	tail, err := r.decimal(tailReq)
+	if err != nil {
+		return nil, err
+	}
+	v, err := Value(string(chars[n:]))
+	if err != nil {
+		return nil, err
+	}
+	if n%2 == 1 && v.IsInt64() && v.Int64() < 10 && v.Int64() != 1 && v.Int64() != 8 {
+		z := prefix[len(prefix)-1]
+		g := &tail[0].Groups[0]
+		g.Read = z.Read + g.Read
+		g.Sound = z.Sound + g.Sound
+		g.Moras += z.Moras
+		g.Down = 1
+		g.Up = 1
+		prefix = prefix[:len(prefix)-1]
+	}
+	tail[0].Groups = append(prefix, tail[0].Groups...)
+	return tail, nil
+}
+
+func (r *Rules) literalZeroDecimal(req Request, integer, fraction string) ([]Reading, error) {
+	prefix, err := r.ReadDigits([]string{integer}, false)
+	if err != nil {
+		return nil, err
+	}
+	gs := prefix[0].Groups
+	chars := []rune(integer)
+	digit := chars[len(chars)-1]
+	g := &gs[len(gs)-1]
+	if (digit == '五' || digit == '二') && len(chars)%2 == 0 {
+		gs = append(gs, Group{Read: "ー", Sound: "ー", Up: 2, Moras: 1}, Group{Read: "テン", Sound: "テン", Up: 2, Moras: 2})
+	} else if digit == '一' || digit == '八' {
+		base := r.digitWordByKey(string(digit))
+		before := beforeTen[string(digit)]
+		if len(chars)%2 == 0 {
+			g.Read = strings.TrimSuffix(g.Read, base.Read)
+			g.Sound = strings.TrimSuffix(g.Sound, base.Sound)
+			g.Moras = MoraCount(g.Sound)
+			g.Down = 1
+			g.Up = 1
+			gs = append(gs, group(before.Read+"テン", before.Sound+"テン", 1, MoraCount(before.Sound)+2))
+		} else {
+			*g = group(before.Read+"テン", before.Sound+"テン", 1, MoraCount(before.Sound)+2)
+		}
+	} else {
+		if digit == '五' || digit == '二' {
+			g.Read += "ー"
+			g.Sound += "ー"
+			g.Moras++
+		}
+		g.Read += "テン"
+		g.Sound += "テン"
+		g.Moras += 2
+		g.Down = 1
+		g.Up = 1
+	}
+	tail, err := r.decimalFraction(req, fraction)
+	if err != nil {
+		return nil, err
+	}
+	return []Reading{{Groups: append(gs, tail...)}}, nil
 }

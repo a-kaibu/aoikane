@@ -38,7 +38,7 @@ func pwordText(p *PWord, kansai bool) string {
 		}
 	}
 	var b strings.Builder
-	for i := 0; i <= len(units); i++ {
+	for i := 0; i < len(units); i++ {
 		if rise > 0 && rise-1 == i {
 			b.WriteByte('^')
 		}
