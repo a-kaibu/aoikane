@@ -1,0 +1,62 @@
+{
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "original_threads": 6,
+  "avx512_convolutions": false,
+  "report_sha256": [
+    "9b73ccad7e620693cd8c7c0534f73f5f5a0cc3665f4daddefdb28161e54c8af0",
+    "d7cd79c4e9ad72f01765bce1cd983776d9b0ce747725e905e15d836a0e7e3d4d",
+    "d33996890c8af50f96005133d63cb917c436c0c2158ce54284cc831e12225221",
+    "eb680ee05a06b998301acbb52b415bbe441a5b6f9deda04ae330ce0d4c554216"
+  ],
+  "cases": [
+    {
+      "Text": "0はＡ兆月本９声三九９８十円10％9年千五秒の個京5１の読む。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 938566,
+      "SHA256": "8ca4705b8c75598bf0127c4bcd9ed469b670b9d5d8390cae38898ac0358c1708"
+    },
+    {
+      "Text": "三九９８十円。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 317878,
+      "SHA256": "b98b29e93b316cb387f21bd7a174b6b96856a1691c848375eb6d5871e97f35a9"
+    },
+    {
+      "Text": "一十円。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 171884,
+      "SHA256": "a9acf745170a31b9a79781659871265ab760161344ca954579bdaf46b4fd4d47"
+    },
+    {
+      "Text": "九８十円。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 199346,
+      "SHA256": "0dcfe6508e43a90751343688dfa870fda0bd870db89c5137fa68114da80a363e"
+    },
+    {
+      "Text": "0はＡ兆月本９声三九９８十円10％9年千五秒の個京5１の読む。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 935810,
+      "SHA256": "3a4ea1b66c98371063bfa286d19c5222cf34f10414bd2732240535932ab0bbed"
+    },
+    {
+      "Text": "三九９８十円。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 317878,
+      "SHA256": "b98b29e93b316cb387f21bd7a174b6b96856a1691c848375eb6d5871e97f35a9"
+    },
+    {
+      "Text": "一十円。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 171884,
+      "SHA256": "a9acf745170a31b9a79781659871265ab760161344ca954579bdaf46b4fd4d47"
+    },
+    {
+      "Text": "九８十円。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 199346,
+      "SHA256": "0dcfe6508e43a90751343688dfa870fda0bd870db89c5137fa68114da80a363e"
+    }
+  ]
+}

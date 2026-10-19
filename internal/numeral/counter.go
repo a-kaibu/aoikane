@@ -103,6 +103,14 @@ func (r *Rules) withCounter(req Request, chunks []chunk, decimalTail bool) ([]Re
 		return nil, fmt.Errorf("unknown counter %q", req.Counter)
 	}
 	last := chunks[len(chunks)-1]
+	// Counter adjustment consumes the complete canonical spelling, even
+	// when a digit-script boundary split the final unit into another block.
+	if spelling := []rune(req.counterSpelling); len(spelling) >= 2 && last.Key == last.TkKey {
+		n := len(spelling)
+		if _, unit := smallUnits[spelling[n-1]]; unit && string(spelling[n-1]) == last.Key && strings.ContainsRune("二三四五六七八九Б", spelling[n-2]) {
+			last.TkKey = string(spelling[n-2])
+		}
+	}
 	tn := ctr.Tn
 	rowTj := r.Tj[last.Key]
 	c1 := tjCode(rowTj, tn[1])
