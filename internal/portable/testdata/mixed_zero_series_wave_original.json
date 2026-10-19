@@ -1,0 +1,78 @@
+{
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "original_threads": 6,
+  "avx512_convolutions": false,
+  "report_sha256": [
+    "cc1e365e9c0ca28bebb781cde9fb51931a61a260ea634a950caf87bb9f42a54e",
+    "f6660ba4d77674df0c0b300c60ebd40139f925206605f54a6a6e4b68b26532ef",
+    "6682332a2bc822249e56375b97bc2626235b6cb036e513c803776e69fdfbf27f",
+    "34541b9196f579c7217985558c0ffbccd49b2560fc22c33f23e9563c0768b834",
+    "daf413f6f3019283b7c97ed00cdf768dc146ca58eca49bc73e7fe65dadf6d845",
+    "3d6774760d4667f2ba91f37ff69ebd4991887bf3befb6478c6d8dacd00881392",
+    "6376d2ce661dd06296230ebc1abfe4ed26535291348fcad3daba31ba2b26588d",
+    "0199f22c032fb5e247086a3a099bd88b19e3c89906fcc08aa21a7c2547a5c4cb"
+  ],
+  "cases": [
+    {
+      "Text": "、．5−０９−八十声、．百万−０５円－A1千5時秒。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 615232,
+      "SHA256": "ce7cebf828d61dc3c4a7c61211b0f999c7e3d439838817a651054c1195f72d7a"
+    },
+    {
+      "Text": "05−０９−八十本。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 310580,
+      "SHA256": "df027131692ef43633aae738c1276d8ae17dc9b39af3a1b381c12a7196205bc8"
+    },
+    {
+      "Text": "〇一二−三四。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 249668,
+      "SHA256": "fb872c2cd187350fd8a53f9bc8b5276159118a6560ae7f1b085595f14ca6f14c"
+    },
+    {
+      "Text": "15−０９−５九。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 310590,
+      "SHA256": "12168e090dca11881a6d11b3b228f3c14a2f32e3b5c074e2edb5089d3f236735"
+    },
+    {
+      "Text": "05-一。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 196808,
+      "SHA256": "a09f1dc0e53c528c01b375021d4bb602999a1451933f5e487c0979c18551c646"
+    },
+    {
+      "Text": "、．5−０９−八十声、．百万−０５円－A1千5時秒。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 616856,
+      "SHA256": "9a1e12f2541a46f8c4252753003dd99fbd86f11251a06559d70a8e36d8a42162"
+    },
+    {
+      "Text": "05−０９−八十本。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 310580,
+      "SHA256": "df027131692ef43633aae738c1276d8ae17dc9b39af3a1b381c12a7196205bc8"
+    },
+    {
+      "Text": "〇一二−三四。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 249668,
+      "SHA256": "fb872c2cd187350fd8a53f9bc8b5276159118a6560ae7f1b085595f14ca6f14c"
+    },
+    {
+      "Text": "15−０９−５九。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 310590,
+      "SHA256": "12168e090dca11881a6d11b3b228f3c14a2f32e3b5c074e2edb5089d3f236735"
+    },
+    {
+      "Text": "05-一。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 196808,
+      "SHA256": "a09f1dc0e53c528c01b375021d4bb602999a1451933f5e487c0979c18551c646"
+    }
+  ]
+}

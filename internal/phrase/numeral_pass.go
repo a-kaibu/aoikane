@@ -370,6 +370,10 @@ func (f *Frontend) pattern(conn string, parts []string, words []frontend.Word, b
 		// Mixed digit scripts use the generic stream even when the next
 		// fragment starts with a written unit; the point-unit pattern
 		// requires a uniform digit script across the whole expression.
+		if conn == "・" && counter == "" && pairedDigitPrefix(parts, rules) {
+			r, err := rules.ReadDigits(parts, false)
+			return r, end, err == nil
+		}
 		if conn == "・" && mixed {
 			last.NoSpecial = true
 			r, err := rules.ReadSeries(parts[:len(parts)-1], last)
@@ -451,6 +455,10 @@ func (f *Frontend) pattern(conn string, parts []string, words []frontend.Word, b
 		last.NoSpecial = true
 		if counter != "" {
 			end = e
+		}
+		if counter == "" && hyphenConnector(conn) && pairedDigitPrefix(parts, rules) {
+			r, err := rules.ReadDigits(parts, false)
+			return r, end, err == nil
 		}
 		if strings.Contains(strings.Join(parts, ""), "．") {
 			r, err := rules.ReadGenericSeries(parts[:len(parts)-1], last)
@@ -574,6 +582,10 @@ func (f *Frontend) pattern(conn string, parts []string, words []frontend.Word, b
 				r, err := rules.ReadDigits(parts, false)
 				return r, end, err == nil
 			}
+		}
+		if counter == "" && !signedPrefix && pairedDigitPrefix(parts, rules) {
+			r, err := rules.ReadDigits(parts, false)
+			return r, end, err == nil
 		}
 		zeroPrefix := func(s string) bool { return strings.HasPrefix(s, "０") || strings.HasPrefix(s, "〇") }
 		if len(parts) == 2 && !strings.Contains(a, "．") && !strings.Contains(b, "．") && !rules.ZeroRangeCounters[counter] && (zeroPrefix(a) || zeroPrefix(b)) {
@@ -1020,4 +1032,41 @@ func japaneseNumberParts(parts []string, rules *numeral.Rules) bool {
 		}
 	}
 	return true
+}
+
+// pairedDigitPrefix recognizes the written-zero prefix of the paired-digit
+// grammar. Its final wildcard may contain a written unit or another script.
+func pairedDigitPrefix(parts []string, rules *numeral.Rules) bool {
+	if len(parts) < 2 {
+		return false
+	}
+	kindOf := func(s string) string {
+		kind := ""
+		for _, ch := range s {
+			next := rules.Digits[string(ch)].Type
+			if next != "Eng" && next != "Jap" {
+				return ""
+			}
+			if kind != "" && kind != next {
+				return ""
+			}
+			kind = next
+		}
+		return kind
+	}
+	kind := kindOf(parts[0])
+	if kind == "" {
+		return false
+	}
+	zero := "０"
+	if kind == "Jap" {
+		zero = "〇"
+	}
+	if utf8.RuneCountInString(parts[0]) > 1 && strings.HasPrefix(parts[0], zero) {
+		return true
+	}
+	if len(parts) < 3 || kindOf(parts[1]) != kind {
+		return false
+	}
+	return (utf8.RuneCountInString(parts[1]) > 1 && strings.HasPrefix(parts[1], zero)) || strings.HasPrefix(parts[2], zero)
 }

@@ -585,11 +585,15 @@ func (r *Rules) ReadSeries(parts []string, last Request) ([]Reading, error) {
 func (r *Rules) readSeries(parts []string, last Request, genericPoints bool) ([]Reading, error) {
 	var groups []Group
 	for i, a := range parts {
-		rs, err := r.Read(Request{Number: a, NoSpecial: true, genericDecimal: genericPoints, connectorStream: true, writtenPause: i > 0})
+		read := r.Read
+		if last.Counter != "" {
+			read = r.connectorFragment
+		}
+		rs, err := read(Request{Number: a, NoSpecial: true, genericDecimal: genericPoints, connectorStream: true, writtenPause: i > 0})
 		if err != nil {
 			return nil, err
 		}
-		if leadingZeroDigitRun(a) {
+		if last.Counter == "" && leadingZeroDigitRun(a) {
 			chars := []rune(a)
 			if len(chars)%2 == 1 && (kanjiDigits[chars[len(chars)-1]] == 2 || kanjiDigits[chars[len(chars)-1]] == 5) {
 				// The paired 1043f0 prefix keeps its lone 2/5 long before p.
@@ -740,6 +744,9 @@ func (r *Rules) ReadDate(parts ...string) ([]Reading, error) {
 // before a separator takes ノ and the pause after it is not written; otherwise
 // the pause between blocks is written as ｐ.
 func (r *Rules) ReadDigits(blocks []string, phone bool) ([]Reading, error) {
+	if !phone {
+		return r.readPairedDigitBlocks(blocks)
+	}
 	var groups []Group
 	for bi, block := range blocks {
 		var digits []rune
@@ -886,4 +893,53 @@ func (r *Rules) ReadGenericSeries(parts []string, last Request) ([]Reading, erro
 func (r *Rules) ReadBracketSeries(parts []string, last Request) ([]Reading, error) {
 	last.genericDecimal = true
 	return r.readSeries(parts, last, true)
+}
+
+// readPairedDigitBlocks assembles sounds before ordered accent lookup,
+// retaining two-digit and script boundaries. Only a final unpaired 2/5 is short.
+func (r *Rules) readPairedDigitBlocks(blocks []string) ([]Reading, error) {
+	var groups []Group
+	for bi, block := range blocks {
+		if block == "" {
+			return nil, fmt.Errorf("empty paired digit block")
+		}
+		if strings.ContainsAny(block, "十百千"+string(bigUnits)+"．") {
+			rd, err := r.connectorFragment(Request{Number: block, NoSpecial: true, genericDecimal: true, writtenPause: bi > 0})
+			if err != nil {
+				return nil, err
+			}
+			groups = append(groups, rd[0].Groups...)
+		} else {
+			runs := r.digitTypeRuns(block)
+			for ri, run := range runs {
+				chars := []rune(run)
+				for i := 0; i < len(chars); i += 2 {
+					var sound strings.Builder
+					for j := i; j < len(chars) && j < i+2; j++ {
+						value, ok := kanjiDigits[chars[j]]
+						if !ok {
+							return nil, fmt.Errorf("unsupported paired digit %q", chars[j])
+						}
+						key := string(digitRune(chars[j]))
+						if chars[j] == '零' {
+							key = "零"
+						}
+						w := r.digitWordByKey(key).Word
+						if (value == 2 || value == 5) && (j+1 < len(chars) || ri+1 < len(runs) || bi+1 < len(blocks) || j%2 == 1) {
+							w = fractionPair[digitRune(chars[j])]
+						}
+						sound.WriteString(w.Sound)
+					}
+					groups = append(groups, r.fractionAccentGroups(sound.String())...)
+					if i+2 < len(chars) || ri+1 < len(runs) {
+						groups = append(groups, Group{Read: "ｂ", Pause: true})
+					}
+				}
+			}
+		}
+		if bi+1 < len(blocks) {
+			groups = append(groups, Group{Read: "ｐ", Pause: true, Strong: true})
+		}
+	}
+	return []Reading{{Groups: groups}}, nil
 }
