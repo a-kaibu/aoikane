@@ -2,6 +2,12 @@ name: Install and synthesize
 
 on:
   workflow_dispatch:
+    inputs:
+      version:
+        description: Published version or commit to install
+        type: string
+        required: true
+        default: v0.1.0
 
 permissions:
   contents: read
@@ -27,12 +33,14 @@ jobs:
           go-version: '1.26.8'
           cache: false
       - name: Install published version
+        env:
+          AOIKANE_INSTALL_VERSION: ${{ inputs.version }}
         shell: pwsh
         run: |
           $env:GOBIN = Join-Path $env:RUNNER_TEMP 'go-bin'
           New-Item -ItemType Directory -Force $env:GOBIN | Out-Null
           go env GOPROXY GOSUMDB GOPRIVATE GONOSUMDB
-          go install github.com/a-kaibu/aoikane/cmd/aoikane@v0.1.0
+          go install "github.com/a-kaibu/aoikane/cmd/aoikane@$env:AOIKANE_INSTALL_VERSION"
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
       - name: Verify installed voices against original WAVs
         shell: pwsh
