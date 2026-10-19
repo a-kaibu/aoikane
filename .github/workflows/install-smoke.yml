@@ -1,0 +1,69 @@
+name: Install and synthesize
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  install:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 35
+    env:
+      CGO_ENABLED: '0'
+      GOPROXY: https://proxy.golang.org,direct
+      GOSUMDB: sum.golang.org
+      GOPRIVATE: ''
+      GONOPROXY: ''
+      GONOSUMDB: ''
+    steps:
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.26.8'
+          cache: false
+      - name: Install published version
+        shell: pwsh
+        run: |
+          $env:GOBIN = Join-Path $env:RUNNER_TEMP 'go-bin'
+          New-Item -ItemType Directory -Force $env:GOBIN | Out-Null
+          go env GOPROXY GOSUMDB GOPRIVATE GONOSUMDB
+          go install github.com/a-kaibu/aoikane/cmd/aoikane@v0.1.0
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - name: Verify installed voices against original WAVs
+        shell: pwsh
+        run: |
+          $exeName = if ($IsWindows) { 'aoikane.exe' } else { 'aoikane' }
+          $exe = Join-Path (Join-Path $env:RUNNER_TEMP 'go-bin') $exeName
+          go version -m $exe
+          & $exe --version
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          & $exe --help
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          $cases = @(
+            @{ Voice = 'aoi'; Bytes = 349870; SHA256 = 'd1402447e6bf13fa47b1c133e3e84ee1b6349d6b029b64220e2674db97f69d74' },
+            @{ Voice = 'akane'; Bytes = 349408; SHA256 = 'c5a864b93140bb70f8a272252e100d66f04cc931bd374859c8b38432662af6fa' }
+          )
+          foreach ($case in $cases) {
+            $output = "$($case.Voice).wav"
+            & $exe --text '（％０1十99本。' --voice $case.Voice --output $output
+            if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+            if ((Get-Item $output).Length -ne $case.Bytes) { throw "WAV length differs: $output" }
+            if ((Get-FileHash $output -Algorithm SHA256).Hash.ToLowerInvariant() -ne $case.SHA256) {
+              throw "Original WAV differs: $output"
+            }
+            Write-Output "Complete original WAV identical: $output"
+          }
+      - name: Save generated WAVs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: installed-wavs-${{ matrix.os }}
+          path: |
+            aoi.wav
+            akane.wav
+          if-no-files-found: ignore
