@@ -14,6 +14,7 @@ on:
           - unit-zero-table-boundary
           - fraction-script-boundary
           - rei-unit-point
+          - counter-word
 
 permissions:
   contents: read
@@ -37,10 +38,11 @@ jobs:
           AOIKANE_UNIT_ZERO_TABLE_BOUNDARY_REFERENCE_AUDIT: ${{ inputs.suite == 'unit-zero-table-boundary' && '1' || '0' }}
           AOIKANE_FRACTION_SCRIPT_BOUNDARY_REFERENCE_AUDIT: ${{ inputs.suite == 'fraction-script-boundary' && '1' || '0' }}
           AOIKANE_REI_UNIT_POINT_REFERENCE_AUDIT: ${{ inputs.suite == 'rei-unit-point' && '1' || '0' }}
+          AOIKANE_COUNTER_WORD_REFERENCE_AUDIT: ${{ inputs.suite == 'counter-word' && '1' || '0' }}
         run: |
           uname -m
           go env GOOS GOARCH CGO_ENABLED
-          go test ./internal/portable -run '^(TestSignHyphenReferenceWAV|TestMixedUnitZeroTailReferenceWAV|TestUnitZeroTableBoundaryReferenceWAV|TestFractionScriptBoundaryReferenceWAV|TestReiUnitPointReferenceWAV)$' -count=1 -v -timeout=65m
+          go test ./internal/portable -run '^(TestSignHyphenReferenceWAV|TestMixedUnitZeroTailReferenceWAV|TestUnitZeroTableBoundaryReferenceWAV|TestFractionScriptBoundaryReferenceWAV|TestReiUnitPointReferenceWAV|TestCounterWordReferenceWAV)$' -count=1 -v -timeout=65m
       - name: Save differing WAVs
         if: failure()
         uses: actions/upload-artifact@v4

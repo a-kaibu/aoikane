@@ -239,7 +239,9 @@ func (r *Rules) withCounter(req Request, chunks []chunk, decimalTail bool) ([]Re
 		groups = append(groups, g)
 	}
 	merged := group(read+cread, sound+csound, fall, moras)
-	if w, ok := r.BySound[sound+csound]; ok && !req.unkeyedDigits && len(w.Flag) > 2 && w.Flag[2] == '1' {
+	// Numeric keys apply Tj/Tk as the final accent adjustment. Unkeyed
+	// generic words can retain their complete table-word accents.
+	if w, ok := r.BySound[sound+csound]; ok && last.Key == "" && !req.unkeyedDigits && len(w.Flag) > 2 && w.Flag[2] == '1' {
 		merged = group(w.Read, sound+csound, w.Fall, w.Moras)
 	}
 	groups = append(groups, merged)

@@ -1,0 +1,64 @@
+{
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "original_threads": 6,
+  "avx512_convolutions": false,
+  "report_sha256": [
+    "cc1e365e9c0ca28bebb781cde9fb51931a61a260ea634a950caf87bb9f42a54e",
+    "140031275bfb930b3c465ced1e768420b6f1eab3a5f37c58a743931779e61ca0",
+    "111a55fa3a2e3f79ef5f00602f54455c7e0f29430c5f0a33d1547d7bd6cb1863",
+    "daf413f6f3019283b7c97ed00cdf768dc146ca58eca49bc73e7fe65dadf6d845",
+    "c300fc29ce95729f89c7b108e8216f1f176776d4c416d8ccf63e7dad87452482",
+    "8d7bf105e66f649987cf79b99109c95004094ba8f3c18740b68277266db7dc70"
+  ],
+  "cases": [
+    {
+      "Text": "京万１22八9日８分秒一一0は−9８．2月１三は％日十９年Ｃ。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 937330,
+      "SHA256": "817e637fbd45e6f30e44523b2add188417a2c297312be285a52ae38ee9be6b20"
+    },
+    {
+      "Text": "十九年。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 151652,
+      "SHA256": "c37b49d5a844f254e479d7dbfd3f072b767f1ad9a4398004a9c582bfb335ff7b"
+    },
+    {
+      "Text": "十９日Ｃ。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 182136,
+      "SHA256": "4d6e3282eb1bc5850413b5655403125a459edbbf8b5187d24b17ffb9837da826"
+    },
+    {
+      "Text": "29・兆51日。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 319562,
+      "SHA256": "a105d34348066b6f62d0372c1ce315c696d51758518293a37ef36fec24b529a8"
+    },
+    {
+      "Text": "京万１22八9日８分秒一一0は−9８．2月１三は％日十９年Ｃ。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 975880,
+      "SHA256": "22502ccbf3e8c1f0d556cd5af04580759bbb929369b8664d847b6b25b00a06a0"
+    },
+    {
+      "Text": "十九年。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 151652,
+      "SHA256": "c37b49d5a844f254e479d7dbfd3f072b767f1ad9a4398004a9c582bfb335ff7b"
+    },
+    {
+      "Text": "十９日Ｃ。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 182136,
+      "SHA256": "4d6e3282eb1bc5850413b5655403125a459edbbf8b5187d24b17ffb9837da826"
+    },
+    {
+      "Text": "29・兆51日。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 319562,
+      "SHA256": "a105d34348066b6f62d0372c1ce315c696d51758518293a37ef36fec24b529a8"
+    }
+  ]
+}
