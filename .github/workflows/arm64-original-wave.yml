@@ -1,0 +1,33 @@
+name: Original WAV on ARM64
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  original-wave:
+    runs-on: ubuntu-24.04-arm
+    timeout-minutes: 75
+    env:
+      CGO_ENABLED: '0'
+      AOIKANE_SIGN_HYPHEN_REFERENCE_AUDIT: '1'
+      AOIKANE_WAV_FAILURE_DIR: ${{ runner.temp }}/wav-failures
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.26.8'
+      - name: Compare complete original WAVs
+        run: |
+          uname -m
+          go env GOOS GOARCH CGO_ENABLED
+          go test ./internal/portable -run '^TestSignHyphenReferenceWAV$' -count=1 -v -timeout=65m
+      - name: Save differing WAVs
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: arm64-original-wav-failures
+          path: ${{ runner.temp }}/wav-failures
+          if-no-files-found: ignore
