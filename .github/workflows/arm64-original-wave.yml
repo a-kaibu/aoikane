@@ -13,13 +13,14 @@ jobs:
     env:
       CGO_ENABLED: '0'
       AOIKANE_SIGN_HYPHEN_REFERENCE_AUDIT: '1'
-      AOIKANE_WAV_FAILURE_DIR: ${{ runner.temp }}/wav-failures
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-go@v5
         with:
           go-version: '1.26.8'
       - name: Compare complete original WAVs
+        env:
+          AOIKANE_WAV_FAILURE_DIR: ${{ runner.temp }}/wav-failures
         run: |
           uname -m
           go env GOOS GOARCH CGO_ENABLED
