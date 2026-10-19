@@ -1,0 +1,50 @@
+{
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "original_threads": 6,
+  "avx512_convolutions": false,
+  "report_sha256": [
+    "cc1e365e9c0ca28bebb781cde9fb51931a61a260ea634a950caf87bb9f42a54e",
+    "70b1c190c377282d9dd691ef5df93881879ae3f06b64157d8f71fb6fedf1f232",
+    "daf413f6f3019283b7c97ed00cdf768dc146ca58eca49bc73e7fe65dadf6d845",
+    "cc2d523edbee65dc0b2c547a842ca8348be40bc10ea4798a35d2ec8fc5c964b2"
+  ],
+  "cases": [
+    {
+      "Text": "二月は月本％千分AＡ零二兆2．〇１円、円１兆5。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 753686,
+      "SHA256": "5eb84b20225f16fe68ce0f59ae92ea0d6b31f9543956cc5826de05e40a4bf17a"
+    },
+    {
+      "Text": "零二兆2．〇１円。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 288406,
+      "SHA256": "505528a9ad564eda3804d7d78aa6ebdfe1d07a1229fd26dfb28b19891fd60ef4"
+    },
+    {
+      "Text": "零二十2．〇１円。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 286712,
+      "SHA256": "e42ef45fce5a046f6d4715fa4a9d57eda5723817fed14935a3ec444101ac3d59"
+    },
+    {
+      "Text": "二月は月本％千分AＡ零二兆2．〇１円、円１兆5。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 752140,
+      "SHA256": "0035a80b2b014b71035acefb41c9db142350ec0050fd7786a96afe6ceaa8cad2"
+    },
+    {
+      "Text": "零二兆2．〇１円。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 287740,
+      "SHA256": "b835d7e7816018ac0c26e73ee666d9b57eb274d9c7ed99527847978832c65def"
+    },
+    {
+      "Text": "零二十2．〇１円。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 286712,
+      "SHA256": "e42ef45fce5a046f6d4715fa4a9d57eda5723817fed14935a3ec444101ac3d59"
+    }
+  ]
+}

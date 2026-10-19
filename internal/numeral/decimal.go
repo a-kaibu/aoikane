@@ -338,11 +338,12 @@ func (r *Rules) connectorDecimal(req Request) ([]Reading, error) {
 		}
 		separatePoint := false
 		runs := r.digitTypeRuns(part)
-		if strings.ContainsAny(part, "十百千"+string(bigUnits)) && !strings.ContainsRune(part, '零') {
+		if strings.ContainsAny(part, "十百千"+string(bigUnits)) {
 			// A written unit resets 100a90's digit-script boundary. Let
 			// the generic unit reader concatenate its fragments before
 			// accent lookup (十８十八 -> ジューハチ / ジューハチ).
-			// 零 streams retain the separate 1043f0 digit-pair dispatch.
+			// The unit reader retains literal-zero pairs while joining
+			// following unit and digit fragments for table lookup.
 			runs = []string{part}
 		}
 		for ri, run := range runs {
