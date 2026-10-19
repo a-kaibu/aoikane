@@ -12,6 +12,7 @@ on:
           - signed-streams
           - mixed-unit-zero-tail
           - unit-zero-table-boundary
+          - fraction-script-boundary
 
 permissions:
   contents: read
@@ -33,10 +34,11 @@ jobs:
           AOIKANE_SIGN_HYPHEN_REFERENCE_AUDIT: ${{ inputs.suite == 'signed-streams' && '1' || '0' }}
           AOIKANE_MIXED_UNIT_ZERO_TAIL_REFERENCE_AUDIT: ${{ inputs.suite == 'mixed-unit-zero-tail' && '1' || '0' }}
           AOIKANE_UNIT_ZERO_TABLE_BOUNDARY_REFERENCE_AUDIT: ${{ inputs.suite == 'unit-zero-table-boundary' && '1' || '0' }}
+          AOIKANE_FRACTION_SCRIPT_BOUNDARY_REFERENCE_AUDIT: ${{ inputs.suite == 'fraction-script-boundary' && '1' || '0' }}
         run: |
           uname -m
           go env GOOS GOARCH CGO_ENABLED
-          go test ./internal/portable -run '^(TestSignHyphenReferenceWAV|TestMixedUnitZeroTailReferenceWAV|TestUnitZeroTableBoundaryReferenceWAV)$' -count=1 -v -timeout=65m
+          go test ./internal/portable -run '^(TestSignHyphenReferenceWAV|TestMixedUnitZeroTailReferenceWAV|TestUnitZeroTableBoundaryReferenceWAV|TestFractionScriptBoundaryReferenceWAV)$' -count=1 -v -timeout=65m
       - name: Save differing WAVs
         if: failure()
         uses: actions/upload-artifact@v4

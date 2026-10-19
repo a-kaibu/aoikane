@@ -376,7 +376,9 @@ func (r *Rules) connectorDecimal(req Request) ([]Reading, error) {
 				return nil, err
 			}
 			for gi, g := range readings[0].Groups {
-				if !g.Pause && gi == len(readings[0].Groups)-1 && !lastRun {
+				// A digit-script boundary keeps the final table accent in a
+				// unit-free fraction. Written units retain continuation rules.
+				if !g.Pause && gi == len(readings[0].Groups)-1 && !lastRun && (pi == 0 || ri == len(runs)-1 || strings.ContainsAny(part, "十百千"+string(bigUnits))) {
 					r.flatBeforeMore(chunk{Read: g.Read, Sound: g.Sound}, &g)
 				}
 				if gi == len(readings[0].Groups)-1 && ri == len(runs)-1 && pi < len(parts)-1 {

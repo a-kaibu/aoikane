@@ -1,0 +1,50 @@
+{
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "original_threads": 6,
+  "avx512_convolutions": false,
+  "report_sha256": [
+    "cc1e365e9c0ca28bebb781cde9fb51931a61a260ea634a950caf87bb9f42a54e",
+    "3db19b141346f752e23d5f929d97cfa3ad0ac256fb0d40327626d4aa8a8004c8",
+    "daf413f6f3019283b7c97ed00cdf768dc146ca58eca49bc73e7fe65dadf6d845",
+    "f8a6ffed70d22c4bc5505b42c4618b2af032d2bf75292ce2f64084e93e6fd60c"
+  ],
+  "cases": [
+    {
+      "Text": "0－8日学校0５は千５兆三０兆京本．５百個５1．50九学校一一。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 925538,
+      "SHA256": "b19bdce177e69844481ae8ca19ed8c177550f8adac69bd6a5f1ed0a2aeafa228"
+    },
+    {
+      "Text": "51．50九学校。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 310076,
+      "SHA256": "903db5395f27d2f989afeabbc01d216ed2ab66f6aad86a6484ca99278fbb6329"
+    },
+    {
+      "Text": "一．50九学校。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 269422,
+      "SHA256": "8b0bc6429739ac4f62ccccc9f889eb1fb6ab11b65c883ccff2116339c4534c6c"
+    },
+    {
+      "Text": "0－8日学校0５は千５兆三０兆京本．５百個５1．50九学校一一。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 897194,
+      "SHA256": "9a1f5a8bb91e55e97026b947c7d4a5611c92fa016cf0d4a59c61711fba67abb9"
+    },
+    {
+      "Text": "51．50九学校。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 311172,
+      "SHA256": "990ccae061b170251c2fda745f415bfc31305926f123932686c3671d8cdc5eaa"
+    },
+    {
+      "Text": "一．50九学校。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 271014,
+      "SHA256": "153671defba59e3436f38afef5c5380510b6b61a026bf45b62913138d87a0dec"
+    }
+  ]
+}
