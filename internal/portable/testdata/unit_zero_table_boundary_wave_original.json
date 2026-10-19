@@ -1,0 +1,88 @@
+{
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "original_threads": 6,
+  "avx512_convolutions": false,
+  "report_sha256": [
+    "fda41a2c24aad2cc468021d114ac061bb16b6e9ab9dfd513d8402ef9cd4e2f2a",
+    "1de50ff1d3674686c4ca2937f01bc715249dd01889025aafca4451ba2fd0f10f",
+    "7c72dae218fb37087fb74cb46c021d4d105a328e3c2ff88716a624b0514a343e",
+    "32b125cee14f7a9a60e3ff12f7284453bcc54d81b72aa7c6cb73756d2404cc54",
+    "d554c28ba2652495db313ac94c4fafdc3a24e8b9c84ca8f49386d57618aecdaa",
+    "3e5f67ef094b2ccbd87712609df7a15df34d04e5f89e297600c4553d9e4a48f6"
+  ],
+  "cases": [
+    {
+      "Text": "三分8千千三人８9０千万億五、Ｃ零）零十一零−5秒、。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 795816,
+      "SHA256": "556fd6f7f33a3528fb5b2b7db560ab7e096353e919e924a55a8474d46ed2a82d"
+    },
+    {
+      "Text": "・個万、百９学校9．８日秒。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 428070,
+      "SHA256": "28ac42b7ead1ecdba218c3a5172bed0c0ad7cc56be59ee5ac171b38c62008332"
+    },
+    {
+      "Text": "一十二零。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 202724,
+      "SHA256": "db003d971c048064082e1a00aeeb96e7659e41a6532d93a1e53c4aae4e5be44b"
+    },
+    {
+      "Text": "十一零。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 172824,
+      "SHA256": "9af4363a6d481cbe75c29d26931811fe5ff45f2538b953fc8a3022fb7e6406d4"
+    },
+    {
+      "Text": "９．８日。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 202574,
+      "SHA256": "24523fb35d945465d1329fe5cef9a7f4f46d8522301e7788a239a36d5a1aaac6"
+    },
+    {
+      "Text": "９．１２日。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 224040,
+      "SHA256": "0ddd0f88223e166a23aa315a0236fe3da4c6b469ee3d1d749bf4c111d3685e89"
+    },
+    {
+      "Text": "三分8千千三人８9０千万億五、Ｃ零）零十一零−5秒、。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 795250,
+      "SHA256": "b93391f01cff35697f070dab66e7d71f145a776fcaba2abdff8b549a18f2aa57"
+    },
+    {
+      "Text": "・個万、百９学校9．８日秒。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 450694,
+      "SHA256": "53bb243f9e6dfbd1fe52f74b23764b1a0d38a1d2857399fd6c215c6265466447"
+    },
+    {
+      "Text": "一十二零。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 202724,
+      "SHA256": "db003d971c048064082e1a00aeeb96e7659e41a6532d93a1e53c4aae4e5be44b"
+    },
+    {
+      "Text": "十一零。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 172824,
+      "SHA256": "9af4363a6d481cbe75c29d26931811fe5ff45f2538b953fc8a3022fb7e6406d4"
+    },
+    {
+      "Text": "９．８日。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 202574,
+      "SHA256": "24523fb35d945465d1329fe5cef9a7f4f46d8522301e7788a239a36d5a1aaac6"
+    },
+    {
+      "Text": "９．１２日。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 224040,
+      "SHA256": "0ddd0f88223e166a23aa315a0236fe3da4c6b469ee3d1d749bf4c111d3685e89"
+    }
+  ]
+}

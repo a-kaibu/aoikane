@@ -150,7 +150,15 @@ func (r *Rules) readMixedZeroUnits(req Request) ([]Reading, error) {
 					r.flatBeforeMore(chunk{Read: gs[i].Read, Sound: gs[i].Sound}, &gs[i])
 				}
 				for i := range readings {
-					readings[i].Groups = append(append([]Group(nil), gs...), readings[i].Groups...)
+					tail := readings[i].Groups
+					if len(gs) > 0 && len(tail) > 0 {
+						if joined, ok := r.joinNumericPairPrefix(gs[len(gs)-1], tail[0]); ok {
+							out := append(append([]Group(nil), gs[:len(gs)-1]...), joined...)
+							readings[i].Groups = append(out, tail[1:]...)
+							continue
+						}
+					}
+					readings[i].Groups = append(append([]Group(nil), gs...), tail...)
 				}
 			}
 		} else if bi > 0 && writtenLargeUnits(block[0]) && strings.ContainsRune(strings.Join(blocks[bi-1].parts, ""), '零') {

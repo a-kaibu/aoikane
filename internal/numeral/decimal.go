@@ -181,6 +181,9 @@ func (r *Rules) decimalFraction(req Request, fraction string) ([]Group, error) {
 	if len(chars) >= 2 && strings.ContainsRune("十百千"+string(bigUnits), chars[len(chars)-1]) {
 		return r.unitFraction(req, chars[:len(chars)-1], string(chars[len(chars)-1]))
 	}
+	// Fractional digits bypass full integer-word accents. Ranges retain
+	// the numeric key rebuilt for their final counter.
+	req.unkeyedDigits = !req.rangeTail
 	var frac []rune
 	for _, c := range fraction {
 		if _, ok := kanjiDigits[c]; !ok {
@@ -242,7 +245,7 @@ func (r *Rules) decimalFraction(req Request, fraction string) ([]Group, error) {
 			if req.rangeTail {
 				c.Key, c.TkKey = key, key
 			}
-			rs, err := r.withCounter(Request{Number: key, Counter: req.Counter, CounterFall: req.CounterFall, CounterMoras: req.CounterMoras, CounterHasInfo: req.CounterHasInfo}, []chunk{c}, !req.rangeTail)
+			rs, err := r.withCounter(Request{Number: key, Counter: req.Counter, CounterFall: req.CounterFall, CounterMoras: req.CounterMoras, CounterHasInfo: req.CounterHasInfo, unkeyedDigits: req.unkeyedDigits}, []chunk{c}, !req.rangeTail)
 			if err != nil {
 				return nil, err
 			}
@@ -554,7 +557,61 @@ func (r *Rules) unitZeroTail(req Request) ([]Reading, error) {
 	for j := range gs {
 		r.flatBeforeMore(chunk{Read: gs[j].Read, Sound: gs[j].Sound}, &gs[j])
 	}
+	if len(gs) > 0 && len(tail[0].Groups) > 0 {
+		if joined, ok := r.joinNumericPairPrefix(gs[len(gs)-1], tail[0].Groups[0]); ok {
+			out := append(append([]Group(nil), gs[:len(gs)-1]...), joined...)
+			out = append(out, tail[0].Groups[1:]...)
+			return []Reading{{Groups: out}}, nil
+		}
+	}
 	return []Reading{{Groups: append(gs, tail[0].Groups...)}}, nil
+}
+
+// joinNumericPairPrefix preserves a table word crossing into a paired
+// literal-zero group, including its long vowel and remaining pair boundary.
+func (r *Rules) joinNumericPairPrefix(head, tail Group) ([]Group, bool) {
+	if head.Pause || tail.Pause {
+		return nil, false
+	}
+	sound := head.Sound + tail.Sound
+	for _, w := range r.Accents {
+		if w.Sound == "" || len(w.Sound) <= len(head.Sound) || !strings.HasPrefix(sound, w.Sound) {
+			continue
+		}
+		g := group(w.Read, w.Sound, w.Fall, w.Moras)
+		rest := strings.TrimPrefix(sound, w.Sound)
+		extended := false
+		for strings.HasPrefix(rest, "ー") {
+			g.Read += "ー"
+			g.Sound += "ー"
+			g.Moras++
+			rest = strings.TrimPrefix(rest, "ー")
+			extended = true
+		}
+		if extended && len(w.Flag) > 0 {
+			g.Down = int(w.Flag[0] - '0')
+			g.Up = rise(g.Down, g.Moras)
+		}
+		var suffix []Group
+		cs, err := r.numericSoundChunks(rest)
+		if err != nil {
+			if word, ok := r.BySound[rest]; ok {
+				suffix = []Group{group(word.Read, word.Sound, word.Fall, word.Moras)}
+			} else {
+				return nil, false
+			}
+		} else {
+			for i, c := range cs {
+				part := r.accentOf(c)
+				if i+1 < len(cs) {
+					r.flatBeforeMore(c, &part)
+				}
+				suffix = append(suffix, part)
+			}
+		}
+		return append([]Group{g}, suffix...), true
+	}
+	return nil, false
 }
 
 // Exactly two points retain the first decimal's fractional digit groups.
