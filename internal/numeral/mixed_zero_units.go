@@ -135,6 +135,24 @@ func (r *Rules) readMixedZeroUnits(req Request) ([]Reading, error) {
 			// retokenizing チョーレーゼロ would lose レーゼロ's accent.
 			partReq.Number = strings.Join(block, "")
 			readings, err = r.unitZeroTail(partReq)
+		} else if last := block[len(block)-1]; strings.ContainsRune(last, '零') && utf8.RuneCountInString(last) > 1 {
+			headReq := partReq
+			headReq.Number, headReq.Counter = strings.Join(block[:len(block)-1], ""), ""
+			head, e := r.read(headReq, true)
+			if e != nil {
+				return nil, e
+			}
+			partReq.Number = last
+			readings, err = r.read(partReq, true)
+			if err == nil {
+				gs := head[0].Groups
+				for i := range gs {
+					r.flatBeforeMore(chunk{Read: gs[i].Read, Sound: gs[i].Sound}, &gs[i])
+				}
+				for i := range readings {
+					readings[i].Groups = append(append([]Group(nil), gs...), readings[i].Groups...)
+				}
+			}
 		} else if bi > 0 && writtenLargeUnits(block[0]) && strings.ContainsRune(strings.Join(blocks[bi-1].parts, ""), '零') {
 			// Literal 零 starts a fresh word at the first following large
 			// unit even when that unit run has a subsequent digit fragment.
