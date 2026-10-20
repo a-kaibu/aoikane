@@ -10,6 +10,8 @@ Goをインストールして、以下を実行する。
 go install github.com/a-kaibu/aoikane/cmd/aoikane@latest
 ```
 
+取得エラーになる場合は、[配布ファイル](https://github.com/a-kaibu/aoikane/releases/latest)をダウンロードして利用できる。
+
 `aoikane`が見つからない場合は、実行ファイルの保存先を`PATH`に追加する。
 通常は`go env GOPATH`で表示される場所の`bin`。
 
