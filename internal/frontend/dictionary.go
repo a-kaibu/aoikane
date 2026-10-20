@@ -4,8 +4,10 @@ package frontend
 
 import (
 	"bytes"
+	"compress/gzip"
 	"encoding/binary"
 	"fmt"
+	"io"
 	"os"
 	"path/filepath"
 	"strings"
@@ -74,7 +76,7 @@ func OpenDictionary(dir string) (*Dictionary, error) {
 		{"sys.tok", "\xffTok", tokenHeader, &d.tokens},
 		{"sys.fea", "\xffFea", featureHeader, &d.features},
 	} {
-		b, err := os.ReadFile(filepath.Join(dir, f.name))
+		b, err := readDictionaryFile(filepath.Join(dir, f.name))
 		if err != nil {
 			return nil, err
 		}
@@ -255,4 +257,29 @@ func (d *Dictionary) entry(index uint32) (Entry, error) {
 		e.Accents = nil
 	}
 	return e, nil
+}
+
+func readDictionaryFile(path string) ([]byte, error) {
+	data, err := os.ReadFile(path)
+	if err == nil || !os.IsNotExist(err) {
+		return data, err
+	}
+	file, openErr := os.Open(path + ".gz")
+	if openErr != nil {
+		if os.IsNotExist(openErr) {
+			return nil, err
+		}
+		return nil, openErr
+	}
+	defer file.Close()
+	reader, readErr := gzip.NewReader(file)
+	if readErr != nil {
+		return nil, fmt.Errorf("read %s.gz: %w", path, readErr)
+	}
+	defer reader.Close()
+	data, readErr = io.ReadAll(reader)
+	if readErr != nil {
+		return nil, fmt.Errorf("read %s.gz: %w", path, readErr)
+	}
+	return data, nil
 }
