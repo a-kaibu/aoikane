@@ -1,0 +1,60 @@
+{
+  "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "dll_sha256": "711aa449c58754bd89402093e077695e8e6175159623c8cf063b979aa3515c17",
+  "original_threads": 6,
+  "avx512_convolutions": false,
+  "report_sha256": [
+    "e95fafb3f3283b34f6304a0a411a990754d01c2404cb52e599fd2850f6146fe7",
+    "9c3ce7bff25836e7f3bd1f5bbef929f6c0b6f689abae9d9960a6dc0848ce14e8"
+  ],
+  "cases": [
+    {
+      "Text": "ろ。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 103244,
+      "SHA256": "767d9a4f78c5320c7acb91e46a011c12db63aac02dd821262c2cbf13cf17ed50"
+    },
+    {
+      "Text": "ｃb木三7日97琴！火。生七Bc一七Ａ5。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 759350,
+      "SHA256": "2a3a8bc2f8970c8b1c7473adfcc73797284e218e29f17702523f32da87958ed8"
+    },
+    {
+      "Text": "「Ж 」ΩA0０））、−？A、。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 389066,
+      "SHA256": "5906533392ce486dfef2109d2bf9b7b75ab14326b8601a3c6d12ae13bf9f19e6"
+    },
+    {
+      "Text": "ABCABC私窓ます一人魚の行く。",
+      "Voice": "KotonohaAkane_ns_48",
+      "Bytes": 445420,
+      "SHA256": "f2d77f64718560e374024bc800488f37e17137e2fdbab02f59262f203f0f41a0"
+    },
+    {
+      "Text": "ろ。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 101804,
+      "SHA256": "8d9d4050ece9a7b8701cb1a94d6f3e70330fff1ec1b96a023fe6fb910bd458b6"
+    },
+    {
+      "Text": "ｃb木三7日97琴！火。生七Bc一七Ａ5。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 760694,
+      "SHA256": "4ea0e7edf14279ea5566f74c1d76ffa33ca04b256a797e67c9cc89147529eaa3"
+    },
+    {
+      "Text": "「Ж 」ΩA0０））、−？A、。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 389310,
+      "SHA256": "51a6b0e2e76d4bf2067b4c925a4dfee9a5835f6c339eb11ff148cb456c56532d"
+    },
+    {
+      "Text": "ABCABC私窓ます一人魚の行く。",
+      "Voice": "KotonohaAoi_ns_48",
+      "Bytes": 466406,
+      "SHA256": "9996595eecef3d33f07bc5a1d002bf7f4971d90a7c0f00baca99c80442266a79"
+    }
+  ]
+}
