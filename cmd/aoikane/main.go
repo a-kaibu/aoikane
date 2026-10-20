@@ -13,6 +13,7 @@ import (
 	"os/signal"
 	"path/filepath"
 	"runtime"
+	"runtime/debug"
 	"strings"
 	"time"
 
@@ -21,7 +22,7 @@ import (
 	"github.com/a-kaibu/aoikane/internal/httpapi"
 )
 
-var version = "0.1.0"
+var version = "devel"
 
 const usage = `aoikane - text-to-speech CLI / HTTP API
 
@@ -60,7 +61,7 @@ func run(args []string) error {
 	}
 	switch args[0] {
 	case "version", "--version", "-version", "-v":
-		fmt.Printf("aoikane %s %s/%s\n", version, runtime.GOOS, runtime.GOARCH)
+		fmt.Printf("aoikane %s %s/%s\n", displayVersion(), runtime.GOOS, runtime.GOARCH)
 		return nil
 	case "pack", "bundle":
 		return nativeCommand(args)
@@ -428,4 +429,16 @@ func normalizeSynthArgs(f *flag.FlagSet, args []string) []string {
 		}
 	}
 	return append(append(options, "--"), positional...)
+}
+
+func displayVersion() string {
+	if version != "devel" {
+		return version
+	}
+	if info, ok := debug.ReadBuildInfo(); ok {
+		if v := info.Main.Version; v != "" && v != "(devel)" {
+			return strings.TrimPrefix(v, "v")
+		}
+	}
+	return version
 }
