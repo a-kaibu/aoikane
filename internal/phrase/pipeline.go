@@ -255,6 +255,46 @@ func (f *Frontend) Graph(text string) (*Document, error) {
 		}
 		chunkWords = append(append([]frontend.LanguageWord(nil), context...), frontend.LanguageWord{})
 	}
+	// BANCHA merges numerals and selects readings chunk by chunk, so the
+	// words after the current chunk still hold unmerged numerals: もう before
+	// the next chunk's 一本 sees 一 (２モウ).
+	chunkEnd := make([]int, len(units))
+	for i := len(units) - 1; i >= 0; i-- {
+		chunkEnd[i] = i
+		if i+1 < len(units) && !units[i+1].chunkStart {
+			chunkEnd[i] = chunkEnd[i+1]
+		}
+	}
+	laterNumeral := make([]bool, len(units)+1)
+	for i := len(units) - 1; i >= 0; i-- {
+		laterNumeral[i] = laterNumeral[i+1] || units[i].numeral != nil
+	}
+	selectionContext := func(i int) ([]frontend.LanguageWord, string, error) {
+		end := chunkEnd[i] + 1
+		if !laterNumeral[end] {
+			return context, contextText, nil
+		}
+		ctx := append([]frontend.LanguageWord(nil), context[:end]...)
+		surf := append([]string(nil), surfaces[:end]...)
+		for _, u := range units[end:] {
+			if u.numeral == nil {
+				lw := u.lw
+				lw.Surface, lw.Base = fromCP932Form(lw.Surface), fromCP932Form(lw.Base)
+				ctx, surf = append(ctx, lw), append(surf, u.surface)
+				continue
+			}
+			for k := u.numeral.start; k < u.numeral.end; k++ {
+				lw, err := f.Morphology.LanguageWord(words[k])
+				if err != nil || words[k].Entry.Unknown {
+					lw = frontend.LanguageWord{Surface: words[k].Text, POS: 0xd030000}
+				}
+				lw.Surface, lw.Base = fromCP932Form(lw.Surface), fromCP932Form(lw.Base)
+				ctx, surf = append(ctx, lw), append(surf, words[k].Text)
+			}
+		}
+		ct, err := f.Codec.ReadingContextText(text, surf)
+		return ctx, ct, err
+	}
 	selectReading := func(i int, names []string) (frontend.ReadingSelection, error) {
 		var evaluate frontend.ReadingScopeEvaluator
 		if chunks != nil {
@@ -262,7 +302,11 @@ func (f *Frontend) Graph(text string) (*Document, error) {
 				return f.Reading.EvaluateChunkContext(scope, chunkWords, chunks, chunkIndices[i])
 			}
 		}
-		return f.Reading.SelectReadingWithScopeEvaluator(context, i, names, contextText, evaluate)
+		ctx, ct, err := selectionContext(i)
+		if err != nil {
+			return frontend.ReadingSelection{}, err
+		}
+		return f.Reading.SelectReadingWithScopeEvaluator(ctx, i, names, ct, evaluate)
 	}
 	doc := &Document{chunkLinks: links, chunkOrdinals: ordinals}
 	var prev *Morph
