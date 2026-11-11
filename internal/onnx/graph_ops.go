@@ -3,6 +3,7 @@ package onnx
 import (
 	"fmt"
 	"math"
+	"sync/atomic"
 )
 
 func emptyValue(kind int, shape []int64) (Value, error) {
@@ -25,6 +26,26 @@ func emptyValue(kind int, shape []int64) (Value, error) {
 	}
 	return v, nil
 }
+
+// emptyValueUncleared is emptyValue for outputs whose every element the
+// caller writes, so pooled FLOAT and INT64 buffers need no clearing.
+func emptyValueUncleared(kind int, shape []int64) (Value, error) {
+	if kind != 1 && kind != 6 && kind != 7 {
+		return emptyValue(kind, shape)
+	}
+	n, err := valueCount(shape)
+	if err != nil {
+		return Value{}, err
+	}
+	v := Value{Kind: kind, Shape: append([]int64(nil), shape...)}
+	if kind == 1 {
+		v.F = getFloatsUncleared(n)
+	} else {
+		v.I = ints.get(n, false)
+	}
+	return v, nil
+}
+
 func copyElement(dst *Value, di int, src Value, si int) {
 	switch dst.Kind {
 	case 1:
@@ -37,6 +58,8 @@ func copyElement(dst *Value, di int, src Value, si int) {
 		dst.B[di] = src.B[si]
 	}
 }
+
+var allowedNodeAttrs = map[string][]string{"Constant": {"value"}, "Gather": {"axis"}, "Transpose": {"perm"}, "Unsqueeze": {}, "MatMul": {}, "Add": {}, "Sub": {}, "Mul": {}, "Div": {}, "Equal": {}, "Greater": {}, "Less": {}, "GreaterOrEqual": {}, "Clip": {}, "Abs": {}, "Relu": {}, "LeakyRelu": {"alpha"}, "Exp": {}}
 
 func executeNode(n graphNode, in []Value, original bool, threads ...int) ([]Value, error) {
 	if out, handled, err := graphIndexNode(n, in); handled {
@@ -125,8 +148,7 @@ func executeNode(n graphNode, in []Value, original bool, threads ...int) ([]Valu
 	if out, handled, err := executeShapeNode(n, in); handled {
 		return out, err
 	}
-	allowed := map[string][]string{"Constant": {"value"}, "Gather": {"axis"}, "Transpose": {"perm"}, "Unsqueeze": {}, "MatMul": {}, "Add": {}, "Sub": {}, "Mul": {}, "Div": {}, "Equal": {}, "Greater": {}, "Less": {}, "GreaterOrEqual": {}, "Clip": {}, "Abs": {}, "Relu": {}, "LeakyRelu": {"alpha"}, "Exp": {}}
-	attrs, ok := allowed[n.op]
+	attrs, ok := allowedNodeAttrs[n.op]
 	if !ok {
 		return nil, fmt.Errorf("operation is not yet implemented")
 	}
@@ -239,13 +261,35 @@ func executeNode(n graphNode, in []Value, original bool, threads ...int) ([]Valu
 		shape := append([]int64(nil), v.Shape[:a]...)
 		shape = append(shape, indices.Shape...)
 		shape = append(shape, v.Shape[a+1:]...)
-		out, err = emptyValue(v.Kind, shape)
+		out, err = emptyValueUncleared(v.Kind, shape) // every element is gathered
 		if err != nil {
 			return nil, err
 		}
 		outer, _ := valueCount(v.Shape[:a])
 		inner, _ := valueCount(v.Shape[a+1:])
 		width := int(v.Shape[a])
+		if v.Kind == 1 && outer == 1 && inner == 1 {
+			// Flat float lookup (the vocoder's index-driven resampling).
+			idx, src, dst := indices.I, v.F, out.F
+			var bad atomic.Bool
+			parallelElements(len(idx), func(lo, hi int) {
+				for i := lo; i < hi; i++ {
+					index := idx[i]
+					if index < 0 {
+						index += int64(width)
+					}
+					if index < 0 || index >= int64(width) {
+						bad.Store(true)
+						return
+					}
+					dst[i] = src[index]
+				}
+			})
+			if bad.Load() {
+				return nil, fmt.Errorf("Gather index outside axis")
+			}
+			break
+		}
 		at := 0
 		for o := 0; o < outer; o++ {
 			for _, index := range indices.I {
@@ -411,7 +455,11 @@ func binaryValue(op string, a, b Value) (Value, error) {
 	if op == "Equal" || op == "Greater" || op == "Less" || op == "GreaterOrEqual" {
 		kind = 9
 	}
-	out, err := emptyValue(kind, shape)
+	alloc := emptyValue
+	if rank > 0 && ((a.Kind == 6 || a.Kind == 7) && (op == "Add" || op == "Sub" || op == "Mul") || a.Kind == 1 && (op == "Add" || op == "Sub" || op == "Mul" || op == "Div")) {
+		alloc = emptyValueUncleared // fully written below
+	}
+	out, err := alloc(kind, shape)
 	if err != nil {
 		return out, err
 	}
@@ -619,16 +667,31 @@ func binaryInteger(op string, out, a, b []int64, shape, as, bs []int64, astride,
 				}
 			}
 			o := out[base : base+inner]
-			switch op {
-			case "Add":
+			switch {
+			case op == "Add" && ainc == 1 && binc == 1:
+				x, y := a[ai:ai+inner], b[bi:bi+inner]
+				for t := range o {
+					o[t] = x[t] + y[t]
+				}
+			case op == "Add" && ainc == 1 && binc == 0:
+				x, y := a[ai:ai+inner], b[bi]
+				for t := range o {
+					o[t] = x[t] + y
+				}
+			case op == "Add" && ainc == 0 && binc == 1:
+				x, y := a[ai], b[bi:bi+inner]
+				for t := range o {
+					o[t] = x + y[t]
+				}
+			case op == "Add":
 				for t := range o {
 					o[t] = a[ai+t*ainc] + b[bi+t*binc]
 				}
-			case "Sub":
+			case op == "Sub":
 				for t := range o {
 					o[t] = a[ai+t*ainc] - b[bi+t*binc]
 				}
-			case "Mul":
+			case op == "Mul":
 				for t := range o {
 					o[t] = a[ai+t*ainc] * b[bi+t*binc]
 				}

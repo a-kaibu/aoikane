@@ -102,6 +102,11 @@ func graphConvTranspose(n graphNode, in []Value, original bool, profile ...int) 
 		return nil, fmt.Errorf("invalid ConvTranspose output length")
 	}
 	columns := co * kw
+	if reorderedKernels(profile) {
+		if y, ok := fastConvTranspose(x.F, w.F, b.F, ci, co, kw, frames, length, c.Stride, c.Left); ok {
+			return []Value{{Kind: 1, Shape: []int64{1, int64(co), int64(length)}, F: y}}, nil
+		}
+	}
 	avx512 := originalAVX512Convolutions(profile)
 	if avx512 && len(x.F) > 20480 && ci == 128 {
 		return []Value{{Kind: 1, Shape: []int64{1, int64(co), int64(length)}, F: originalAVX512TransposeDirect(x.F, w.F, b.F, ci, co, kw, frames, length, c.Stride, c.Left)}}, nil

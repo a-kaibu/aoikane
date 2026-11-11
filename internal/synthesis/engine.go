@@ -327,7 +327,12 @@ func (e *Engine) vocode(acoustic []modelOutput, start, end int) ([]float32, erro
 		}
 		inputs = append(inputs, t)
 	}
-	wave, err := runOriginalModelWithProfile(e.vocoder, inputs, []string{"wave"}, e.profile)
+	// Only the vocoder may reorder accumulation: FeatNet's durations and
+	// pitch amplify small differences, while the vocoder keeps them within
+	// one least significant bit of the PCM output.
+	profile := e.profile
+	profile.Reordered = onnx.FastMath()
+	wave, err := runOriginalModelWithProfile(e.vocoder, inputs, []string{"wave"}, profile)
 	if err != nil {
 		return nil, err
 	}

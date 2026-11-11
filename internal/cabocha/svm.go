@@ -6,9 +6,16 @@ import (
 	"encoding/binary"
 	"fmt"
 	"math"
-	"os"
 	"strings"
+	"unsafe"
+
+	"github.com/a-kaibu/aoikane/internal/mmapfile"
 )
+
+var littleEndian = func() bool {
+	x := uint16(1)
+	return *(*byte)(unsafe.Pointer(&x)) == 1
+}()
 
 // SVM is the immutable degree-two FastSVMModel used by the dependency parser.
 // Its dictionaries contain bytes in the model's charset (SHIFT_JIS in A.I.VOICE2).
@@ -21,16 +28,21 @@ type SVM struct {
 	dictionary, pairs, nodes, singles, dense []uint32
 }
 
+// LoadSVM maps the model file and uses its arrays in place.
 func LoadSVM(path string) (*SVM, error) {
-	b, err := os.ReadFile(path)
+	b, err := mmapfile.Read(path)
 	if err != nil {
 		return nil, err
 	}
-	return ParseSVM(b)
+	return parseSVM(b, true)
 }
 
 // ParseSVM copies the model arrays; subsequent changes to b cannot change scores.
-func ParseSVM(b []byte) (*SVM, error) {
+func ParseSVM(b []byte) (*SVM, error) { return parseSVM(b, false) }
+
+// parseSVM reads the arrays of b; with alias, little-endian hosts use the
+// (immutable) bytes of b in place when they are aligned.
+func parseSVM(b []byte, alias bool) (*SVM, error) {
 	fail := func() (*SVM, error) { return nil, fmt.Errorf("invalid CaboCha SVM model") }
 	if len(b) < 36 {
 		return fail()
@@ -73,6 +85,11 @@ func ParseSVM(b []byte) (*SVM, error) {
 	}
 	offset := end + 24
 	read := func(count uint64) []uint32 {
+		if count > 0 && alias && littleEndian && uintptr(unsafe.Pointer(&b[offset]))%4 == 0 {
+			values := unsafe.Slice((*uint32)(unsafe.Pointer(&b[offset])), int(count))
+			offset += 4 * int(count)
+			return values
+		}
 		values := make([]uint32, int(count))
 		for i := range values {
 			values[i] = u32(offset)

@@ -57,7 +57,7 @@ func (o *Options) defaults() {
 // Engine is the portable synthesizer.
 type Engine struct {
 	frontend      *phrase.Frontend
-	akane         *phrase.Frontend
+	akaneOnce     func() (*phrase.Frontend, error)
 	akaneControls synthesis.Controls
 	predict       *phrase.BoundModel
 	encoder       *frontend.MoraEncoder
@@ -65,7 +65,8 @@ type Engine struct {
 	controls      synthesis.Controls
 }
 
-// Open loads every asset; it fails if any is missing.
+// Open loads every asset of the default voice and fails if one is missing.
+// The Kansai frontend of the Akane voice loads on first use.
 func Open(o Options) (*Engine, error) {
 	o.defaults()
 	if o.OriginalThreads != 1 && o.OriginalThreads != 6 {
@@ -84,45 +85,59 @@ func Open(o Options) (*Engine, error) {
 			f()
 		}()
 	}
-	var kansaiAnalyzer *frontend.Analyzer
 	var synth *synthesis.Engine
 	var chunker *cabocha.CRF
 	var dependency *cabocha.SVM
-	var kansaiErr, synthErr, chunkerErr, dependencyErr error
-	load(func() { kansaiAnalyzer, kansaiErr = frontend.OpenAnalyzer(a("dict-kansai")) })
+	var synthErr, chunkerErr, dependencyErr error
 	load(func() {
 		synth, synthErr = synthesis.OpenWithProfile(a("synth"), onnx.OriginalKernelProfile{Threads: o.OriginalThreads, AVX512Convolutions: o.OriginalAVX512Convolutions})
 	})
 	load(func() { chunker, chunkerErr = cabocha.LoadCRF(a("cabocha", "standard-chunk.ipa.model")) })
 	load(func() { dependency, dependencyErr = cabocha.LoadSVM(a("cabocha", "standard-dep.ipa.model")) })
 	readingStandard := future(&loads, func() (*frontend.ReadingRules, error) {
-		return openRules(a("rules", "reading-rules-standard.txt"), frontend.ParseReadingRules)
-	})
-	readingKansai := future(&loads, func() (*frontend.ReadingRules, error) {
-		return openRules(a("rules", "reading-rules-kansai.txt"), frontend.ParseReadingRules)
+		return cachedRules(a("rules", "reading-rules-standard.txt"), "reading", frontend.ParseReadingRules)
 	})
 	defer loads.Wait()
+	codecF := future(&loads, func() (*frontend.CP932Codec, error) { return frontend.OpenCP932Codec(a("data", "cp932.json")) })
+	modelF := future(&loads, func() (*phrase.BoundModel, error) {
+		codec, err := codecF()
+		if err != nil {
+			return nil, err
+		}
+		return phrase.OpenBoundModel(o.Runtime, a("boundmodel"), codec)
+	})
+	numeralsF := future(&loads, func() (*numeral.Rules, error) {
+		return openRules(a("rules", "bancharcx-standard.txt"), numeral.ParseRules)
+	})
+	boundF := future(&loads, func() (*phrase.BoundRules, error) {
+		return openRules(a("rules", "bound-rules-standard.txt"), phrase.ParseBoundRules)
+	})
+	unknownAccentF := future(&loads, func() (*frontend.UnknownAccentRules, error) {
+		return frontend.OpenUnknownAccentRules(a("rules", "unknown-accent.json"))
+	})
+	englishF := future(&loads, func() (*frontend.EnglishReader, error) {
+		codec, err := codecF()
+		if err != nil {
+			return nil, err
+		}
+		unknownAccent, err := unknownAccentF()
+		if err != nil {
+			return nil, err
+		}
+		return frontend.OpenEnglishReader(a("rules"), codec, unknownAccent)
+	})
+	// An Open that fails before the model is taken still closes it.
+	closeModel := true
+	defer func() {
+		if model, err := modelF(); closeModel && err == nil {
+			model.Close()
+		}
+	}()
 	analyzer, err := frontend.OpenAnalyzer(a("dict"))
 	if err != nil {
 		return nil, fmt.Errorf("dictionary: %w", err)
 	}
 	morphology, err := frontend.OpenMorphology(a("data", "morphology.json"))
-	if err != nil {
-		return nil, err
-	}
-	codec, err := frontend.OpenCP932Codec(a("data", "cp932.json"))
-	if err != nil {
-		return nil, err
-	}
-	reading, err := readingStandard()
-	if err != nil {
-		return nil, err
-	}
-	bound, err := openRules(a("rules", "bound-rules-standard.txt"), phrase.ParseBoundRules)
-	if err != nil {
-		return nil, err
-	}
-	numerals, err := openRules(a("rules", "bancharcx-standard.txt"), numeral.ParseRules)
 	if err != nil {
 		return nil, err
 	}
@@ -142,18 +157,35 @@ func Open(o Options) (*Engine, error) {
 	if err != nil {
 		return nil, err
 	}
-	unknownAccent, err := frontend.OpenUnknownAccentRules(a("rules", "unknown-accent.json"))
+	codec, err := codecF()
 	if err != nil {
 		return nil, err
 	}
-	english, err := frontend.OpenEnglishReader(a("rules"), codec, unknownAccent)
+	reading, err := readingStandard()
 	if err != nil {
 		return nil, err
 	}
-	model, err := phrase.OpenBoundModel(o.Runtime, a("boundmodel"), codec)
+	bound, err := boundF()
 	if err != nil {
 		return nil, err
 	}
+	numerals, err := numeralsF()
+	if err != nil {
+		return nil, err
+	}
+	unknownAccent, err := unknownAccentF()
+	if err != nil {
+		return nil, err
+	}
+	english, err := englishF()
+	if err != nil {
+		return nil, err
+	}
+	model, err := modelF()
+	if err != nil {
+		return nil, err
+	}
+	closeModel = false // the paths below close it themselves
 	loads.Wait()
 	if chunkerErr != nil {
 		model.Close()
@@ -166,37 +198,8 @@ func Open(o Options) (*Engine, error) {
 	e := &Engine{predict: model}
 	e.frontend = &phrase.Frontend{Analyzer: analyzer, Morphology: morphology, Reading: reading, Codec: codec,
 		Bound: bound, Predictor: model, Numerals: numerals, UnknownKana: unknownKana, UnknownAccent: unknownAccent, Chunker: chunker, Dependency: dependency, English: english, Rendaku: rendaku, Cut: cut}
-	akane := *e.frontend
-	akane.Predictor = nil
-	if akane.Rendaku, err = rendakuAssets.Rules("kansai"); err != nil {
-		model.Close()
-		return nil, err
-	}
-	if akane.Analyzer, err = kansaiAnalyzer, kansaiErr; err != nil {
-		model.Close()
-		return nil, fmt.Errorf("Kansai dictionary: %w", err)
-	}
-	if akane.Reading, err = readingKansai(); err != nil {
-		model.Close()
-		return nil, err
-	}
-	if akane.Bound, err = openRules(a("rules", "bound-rules-kansai.txt"), phrase.ParseBoundRules); err != nil {
-		model.Close()
-		return nil, err
-	}
-	if akane.Numerals, err = openRules(a("rules", "bancharcx-kansai.txt"), numeral.ParseRules); err != nil {
-		model.Close()
-		return nil, err
-	}
-	if akane.Cut, err = openRules(a("rules", "bancut-kansai.json"), phrase.ParseCutRules); err != nil {
-		model.Close()
-		return nil, err
-	}
-	if akane.Kansai, err = openRules(a("rules", "kansai-chunk-bound.json"), phrase.ParseKansaiChunkRules); err != nil {
-		model.Close()
-		return nil, err
-	}
-	e.akane = &akane
+	base := *e.frontend
+	e.akaneOnce = sync.OnceValues(func() (*phrase.Frontend, error) { return openAkane(base, rendakuAssets, a) })
 	akaneData, err := os.ReadFile(a("data", "controls-akane.json"))
 	if err != nil {
 		model.Close()
@@ -225,6 +228,44 @@ func Open(o Options) (*Engine, error) {
 	return e, nil
 }
 
+// openAkane loads the Kansai frontend on first use of the Akane voice, so
+// that synthesis with the default voice does not wait for it.
+func openAkane(akane phrase.Frontend, rendakuAssets *phrase.RendakuAssets, a func(...string) string) (*phrase.Frontend, error) {
+	akane.Predictor = nil
+	var err error
+	var loads sync.WaitGroup
+	var analyzerErr error
+	loads.Add(1)
+	go func() {
+		defer loads.Done()
+		akane.Analyzer, analyzerErr = frontend.OpenAnalyzer(a("dict-kansai"))
+	}()
+	defer loads.Wait()
+	if akane.Rendaku, err = rendakuAssets.Rules("kansai"); err != nil {
+		return nil, err
+	}
+	if akane.Reading, err = cachedRules(a("rules", "reading-rules-kansai.txt"), "reading", frontend.ParseReadingRules); err != nil {
+		return nil, err
+	}
+	if akane.Bound, err = openRules(a("rules", "bound-rules-kansai.txt"), phrase.ParseBoundRules); err != nil {
+		return nil, err
+	}
+	if akane.Numerals, err = openRules(a("rules", "bancharcx-kansai.txt"), numeral.ParseRules); err != nil {
+		return nil, err
+	}
+	if akane.Cut, err = openRules(a("rules", "bancut-kansai.json"), phrase.ParseCutRules); err != nil {
+		return nil, err
+	}
+	if akane.Kansai, err = openRules(a("rules", "kansai-chunk-bound.json"), phrase.ParseKansaiChunkRules); err != nil {
+		return nil, err
+	}
+	loads.Wait()
+	if analyzerErr != nil {
+		return nil, fmt.Errorf("Kansai dictionary: %w", analyzerErr)
+	}
+	return &akane, nil
+}
+
 func openRules[T any](path string, parse func(io.Reader) (T, error)) (T, error) {
 	var zero T
 	f, err := os.Open(path)
@@ -243,7 +284,11 @@ func (e *Engine) Voices() []engine.Voice {
 // ReadingVoice returns the selected voice's formatted reading.
 func (e *Engine) ReadingVoice(text, voice string) ([]string, error) {
 	if voice == VoiceAkane {
-		return e.akane.KanaText(text)
+		akane, err := e.akaneOnce()
+		if err != nil {
+			return nil, err
+		}
+		return akane.KanaText(text)
 	}
 	if voice == "" || voice == VoiceAoi {
 		return e.frontend.KanaText(text)
@@ -273,7 +318,10 @@ func (e *Engine) SynthesizeTimed(ctx context.Context, r engine.Request) ([]byte,
 	textFrontend := e.frontend
 	if r.Voice == VoiceAkane {
 		controls = e.akaneControls
-		textFrontend = e.akane
+		var err error
+		if textFrontend, err = e.akaneOnce(); err != nil {
+			return nil, nil, err
+		}
 	}
 	// The engine feeds the acoustic model log-scale values (observed on the
 	// model inputs for rate 1.5/0.5, pitch 1.2, volume 0.5 and emphasis 1.5).

@@ -80,7 +80,9 @@ func graphConv(n graphNode, in []Value, original bool, threads ...int) ([]Value,
 	}
 	var values []float32
 	var err error
-	if original {
+	if fast, ok := c.runFastIf(x.F, int(x.Shape[2]), threads); ok {
+		values = fast
+	} else if original {
 		if originalFMASmallConv(threads) && c.Kernel >= 1 && c.In <= 320/c.Kernel && c.Out >= 6 && c.Stride <= 1 && c.Dilation <= 1 && (len(x.F) <= 20480 || c.Kernel == 1) {
 			values, err = c.RunOriginalSmallConvFMA(x.F, int(x.Shape[2]))
 		} else if originalFMASmallConv(threads) && originalBlockedConvShape(c.In, c.Out, c.Kernel) && c.Stride <= 1 && c.Dilation <= 1 && (len(x.F) <= 20480 || c.Kernel == 1) {

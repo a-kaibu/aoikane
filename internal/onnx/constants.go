@@ -12,13 +12,28 @@ import (
 // collected.
 var (
 	constantMu     sync.Mutex
-	constantFloats = map[weak.Pointer[float32]]int{}
+	constantFloats = map[constantID]int{}
 	packedWeights  = map[packedKey]any{}
 )
 
 type packedKey struct {
 	weight                weak.Pointer[float32]
+	mapped                uintptr // weights in a model mapping, which is never released
 	in, out, kernel, kind int
+}
+
+// constantKey identifies weights; weak pointers exist only for heap memory.
+func constantKey(f []float32) (weak.Pointer[float32], uintptr) {
+	p := unsafe.SliceData(f)
+	if inMappedRegion(unsafe.Pointer(p)) {
+		return weak.Pointer[float32]{}, uintptr(unsafe.Pointer(p))
+	}
+	return weak.Make(p), 0
+}
+
+type constantID struct {
+	weak   weak.Pointer[float32]
+	mapped uintptr
 }
 
 func registerConstant(f []float32) {
@@ -30,18 +45,19 @@ func registerConstant(f []float32) {
 	if len(constantFloats) >= 1024 && len(constantFloats)&1023 == 0 {
 		sweepConstantsLocked()
 	}
-	constantFloats[weak.Make(unsafe.SliceData(f))] = len(f)
+	w, m := constantKey(f)
+	constantFloats[constantID{w, m}] = len(f)
 }
 
 // sweepConstantsLocked drops entries whose weights were collected.
 func sweepConstantsLocked() {
 	for k := range constantFloats {
-		if k.Value() == nil {
+		if k.mapped == 0 && k.weak.Value() == nil {
 			delete(constantFloats, k)
 		}
 	}
 	for k := range packedWeights {
-		if k.weight.Value() == nil {
+		if k.mapped == 0 && k.weight.Value() == nil {
 			delete(packedWeights, k)
 		}
 	}
@@ -51,8 +67,9 @@ func isConstant(f []float32) bool {
 	if len(f) == 0 {
 		return false
 	}
+	w, m := constantKey(f)
 	constantMu.Lock()
-	n, ok := constantFloats[weak.Make(unsafe.SliceData(f))]
+	n, ok := constantFloats[constantID{w, m}]
 	constantMu.Unlock()
 	return ok && n == len(f)
 }
@@ -62,7 +79,8 @@ func cachedPacking[T any](weight []float32, in, out, kernel, kind int, build fun
 	if !isConstant(weight) {
 		return build()
 	}
-	key := packedKey{weak.Make(unsafe.SliceData(weight)), in, out, kernel, kind}
+	w, m := constantKey(weight)
+	key := packedKey{w, m, in, out, kernel, kind}
 	constantMu.Lock()
 	v, ok := packedWeights[key]
 	constantMu.Unlock()

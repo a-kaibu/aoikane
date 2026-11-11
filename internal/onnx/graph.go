@@ -4,7 +4,6 @@ import (
 	"encoding/binary"
 	"fmt"
 	"math"
-	"os"
 	"sync"
 	"unsafe"
 )
@@ -47,10 +46,11 @@ type Graph struct {
 }
 
 func OpenGraph(path string) (*Graph, error) {
-	data, err := os.ReadFile(path)
+	data, release, err := readModel(path)
 	if err != nil {
 		return nil, err
 	}
+	defer release()
 	model, err := fields(data)
 	if err != nil {
 		return nil, err
@@ -59,10 +59,17 @@ func OpenGraph(path string) (*Graph, error) {
 	if err != nil {
 		return nil, err
 	}
-	return parseGraph(gd)
+	ws := openWeightCache(path)
+	g, err := parseGraphWeights(gd, ws)
+	if err == nil {
+		ws.finish()
+	}
+	return g, err
 }
 
-func parseGraph(data []byte) (*Graph, error) {
+func parseGraph(data []byte) (*Graph, error) { return parseGraphWeights(data, nil) }
+
+func parseGraphWeights(data []byte, ws *weightCache) (*Graph, error) {
 	fs, err := fields(data)
 	if err != nil {
 		return nil, err
@@ -96,7 +103,7 @@ func parseGraph(data []byte) (*Graph, error) {
 		if err != nil {
 			return nil, err
 		}
-		v, err := tensorValue(tf)
+		v, err := tensorValueWeights(tf, ws)
 		if err != nil {
 			return nil, fmt.Errorf("initializer %s: %w", name, err)
 		}
@@ -172,13 +179,13 @@ func parseGraph(data []byte) (*Graph, error) {
 					if err != nil {
 						return nil, err
 					}
-					v, err := tensorValue(tf)
+					v, err := tensorValueWeights(tf, ws)
 					if err != nil {
 						return nil, err
 					}
 					a.tensor = &v
 				case 6:
-					a.graph, err = parseGraph(f.data)
+					a.graph, err = parseGraphWeights(f.data, ws)
 					if err != nil {
 						return nil, err
 					}
@@ -207,7 +214,9 @@ func parseGraph(data []byte) (*Graph, error) {
 	return g, nil
 }
 
-func tensorValue(fs []field) (Value, error) {
+func tensorValue(fs []field) (Value, error) { return tensorValueWeights(fs, nil) }
+
+func tensorValueWeights(fs []field, ws *weightCache) (Value, error) {
 	v := Value{}
 	for _, f := range fs {
 		if f.number == 2 {
@@ -249,10 +258,26 @@ func tensorValue(fs []field) (Value, error) {
 	}
 	switch v.Kind {
 	case 1:
+		if littleEndianHost && n >= 1024 && uintptr(unsafe.Pointer(&raw[0]))%4 == 0 && inMappedRegion(unsafe.Pointer(&raw[0])) {
+			// Alias the read-only model mapping; initializers are immutable.
+			v.F = unsafe.Slice((*float32)(unsafe.Pointer(&raw[0])), n)
+			break
+		}
+		if f := ws.take(raw, n); f != nil {
+			v.F = f
+			break
+		}
 		v.F = make([]float32, n)
 		if littleEndianHost && n > 0 {
 			// The stored little-endian bits are the host representation.
-			copy(unsafe.Slice((*byte)(unsafe.Pointer(&v.F[0])), 4*n), raw)
+			dst := unsafe.Slice((*byte)(unsafe.Pointer(&v.F[0])), 4*n)
+			if n < 1<<18 {
+				copy(dst, raw)
+			} else {
+				// Large weights are copied in parallel; the copy is
+				// dominated by page faults on both sides.
+				parallelElements(len(dst), func(lo, hi int) { copy(dst[lo:hi], raw[lo:hi]) })
+			}
 		} else {
 			for i := range v.F {
 				v.F[i] = math.Float32frombits(binary.LittleEndian.Uint32(raw[i*4:]))
@@ -364,6 +389,10 @@ type OriginalKernelProfile struct {
 	// FMAProjections selects the reconstructed Intel serial and AVX512
 	// single-output projection paths.
 	FMAProjections bool
+	// Reordered allows convolution kernels that reorder floating-point
+	// accumulation. Results are no longer bit-exact. For the vocoder this
+	// moves about one sample in a thousand by one least significant bit.
+	Reordered bool
 }
 
 func (g *Graph) RunOriginalKernelsWithProfile(inputs map[string]Value, outputs []string, profile OriginalKernelProfile) (map[string]Value, error) {
@@ -389,7 +418,11 @@ func (g *Graph) RunOriginalKernelsWithProfile(inputs map[string]Value, outputs [
 	if profile.FMAProjections {
 		projection = 1
 	}
-	return g.runGraph(inputs, outputs, true, profile.Threads, isa, unary, embedding, pointwise, projection)
+	reordered := 0
+	if profile.Reordered {
+		reordered = 1
+	}
+	return g.runGraph(inputs, outputs, true, profile.Threads, isa, unary, embedding, pointwise, projection, reordered)
 }
 
 func originalAVX512Unary(profile []int) bool {
@@ -405,6 +438,10 @@ func originalFMASmallConv(profile []int) bool {
 
 func originalFMAProjections(profile []int) bool {
 	return len(profile) > 5 && profile[5] == 1
+}
+
+func reorderedKernels(profile []int) bool {
+	return len(profile) > 6 && profile[6] == 1
 }
 
 func originalAVX512Convolutions(profile []int) bool {
