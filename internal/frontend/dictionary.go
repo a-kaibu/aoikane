@@ -260,7 +260,7 @@ func (d *Dictionary) entry(index uint32) (Entry, error) {
 }
 
 func readDictionaryFile(path string) ([]byte, error) {
-	data, err := os.ReadFile(path)
+	data, err := mapFile(path)
 	if err == nil || !os.IsNotExist(err) {
 		return data, err
 	}

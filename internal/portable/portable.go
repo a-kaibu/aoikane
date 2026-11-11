@@ -14,6 +14,7 @@ import (
 	"os"
 	"path/filepath"
 	"strings"
+	"sync"
 	"time"
 
 	"github.com/a-kaibu/aoikane/internal/cabocha"
@@ -74,6 +75,33 @@ func Open(o Options) (*Engine, error) {
 		return nil, fmt.Errorf("AVX512 convolution profile requires one original thread")
 	}
 	a := func(parts ...string) string { return filepath.Join(append([]string{o.AssetsDir}, parts...)...) }
+	// The large independent assets load concurrently with the rest.
+	var loads sync.WaitGroup
+	load := func(f func()) {
+		loads.Add(1)
+		go func() {
+			defer loads.Done()
+			f()
+		}()
+	}
+	var kansaiAnalyzer *frontend.Analyzer
+	var synth *synthesis.Engine
+	var chunker *cabocha.CRF
+	var dependency *cabocha.SVM
+	var kansaiErr, synthErr, chunkerErr, dependencyErr error
+	load(func() { kansaiAnalyzer, kansaiErr = frontend.OpenAnalyzer(a("dict-kansai")) })
+	load(func() {
+		synth, synthErr = synthesis.OpenWithProfile(a("synth"), onnx.OriginalKernelProfile{Threads: o.OriginalThreads, AVX512Convolutions: o.OriginalAVX512Convolutions})
+	})
+	load(func() { chunker, chunkerErr = cabocha.LoadCRF(a("cabocha", "standard-chunk.ipa.model")) })
+	load(func() { dependency, dependencyErr = cabocha.LoadSVM(a("cabocha", "standard-dep.ipa.model")) })
+	readingStandard := future(&loads, func() (*frontend.ReadingRules, error) {
+		return openRules(a("rules", "reading-rules-standard.txt"), frontend.ParseReadingRules)
+	})
+	readingKansai := future(&loads, func() (*frontend.ReadingRules, error) {
+		return openRules(a("rules", "reading-rules-kansai.txt"), frontend.ParseReadingRules)
+	})
+	defer loads.Wait()
 	analyzer, err := frontend.OpenAnalyzer(a("dict"))
 	if err != nil {
 		return nil, fmt.Errorf("dictionary: %w", err)
@@ -86,7 +114,7 @@ func Open(o Options) (*Engine, error) {
 	if err != nil {
 		return nil, err
 	}
-	reading, err := openRules(a("rules", "reading-rules-standard.txt"), frontend.ParseReadingRules)
+	reading, err := readingStandard()
 	if err != nil {
 		return nil, err
 	}
@@ -122,17 +150,18 @@ func Open(o Options) (*Engine, error) {
 	if err != nil {
 		return nil, err
 	}
-	chunker, err := cabocha.LoadCRF(a("cabocha", "standard-chunk.ipa.model"))
-	if err != nil {
-		return nil, fmt.Errorf("chunker: %w", err)
-	}
-	dependency, err := cabocha.LoadSVM(a("cabocha", "standard-dep.ipa.model"))
-	if err != nil {
-		return nil, fmt.Errorf("dependency parser: %w", err)
-	}
 	model, err := phrase.OpenBoundModel(o.Runtime, a("boundmodel"), codec)
 	if err != nil {
 		return nil, err
+	}
+	loads.Wait()
+	if chunkerErr != nil {
+		model.Close()
+		return nil, fmt.Errorf("chunker: %w", chunkerErr)
+	}
+	if dependencyErr != nil {
+		model.Close()
+		return nil, fmt.Errorf("dependency parser: %w", dependencyErr)
 	}
 	e := &Engine{predict: model}
 	e.frontend = &phrase.Frontend{Analyzer: analyzer, Morphology: morphology, Reading: reading, Codec: codec,
@@ -143,11 +172,11 @@ func Open(o Options) (*Engine, error) {
 		model.Close()
 		return nil, err
 	}
-	if akane.Analyzer, err = frontend.OpenAnalyzer(a("dict-kansai")); err != nil {
+	if akane.Analyzer, err = kansaiAnalyzer, kansaiErr; err != nil {
 		model.Close()
 		return nil, fmt.Errorf("Kansai dictionary: %w", err)
 	}
-	if akane.Reading, err = openRules(a("rules", "reading-rules-kansai.txt"), frontend.ParseReadingRules); err != nil {
+	if akane.Reading, err = readingKansai(); err != nil {
 		model.Close()
 		return nil, err
 	}
@@ -189,7 +218,7 @@ func Open(o Options) (*Engine, error) {
 		model.Close()
 		return nil, err
 	}
-	if e.synth, err = synthesis.OpenWithProfile(a("synth"), onnx.OriginalKernelProfile{Threads: o.OriginalThreads, AVX512Convolutions: o.OriginalAVX512Convolutions}); err != nil {
+	if e.synth, err = synth, synthErr; err != nil {
 		model.Close()
 		return nil, err
 	}
@@ -312,4 +341,21 @@ func emptyReading(k string) bool {
 func (e *Engine) Close() error {
 	e.predict.Close()
 	return e.synth.Close()
+}
+
+// future starts f and returns a function waiting for its result.
+func future[T any](wg *sync.WaitGroup, f func() (T, error)) func() (T, error) {
+	var v T
+	var err error
+	done := make(chan struct{})
+	wg.Add(1)
+	go func() {
+		defer wg.Done()
+		defer close(done)
+		v, err = f()
+	}()
+	return func() (T, error) {
+		<-done
+		return v, err
+	}
 }

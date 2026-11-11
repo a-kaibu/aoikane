@@ -1,13 +1,16 @@
 package portable
 
 import (
+	"compress/gzip"
 	"crypto/sha256"
 	"encoding/hex"
 	"errors"
 	"fmt"
+	"io"
 	"io/fs"
 	"os"
 	"path/filepath"
+	"strings"
 
 	"github.com/a-kaibu/aoikane/assets"
 )
@@ -53,6 +56,7 @@ func extractEmbedded() (string, error) {
 	dir := filepath.Join(base, "aoikane", key)
 	done := filepath.Join(dir, ".complete")
 	if _, err := os.Stat(done); err == nil {
+		expandDictionaries(dir)
 		return dir, nil
 	}
 	tmp := dir + ".tmp"
@@ -77,6 +81,7 @@ func extractEmbedded() (string, error) {
 		return "", err
 	}
 
+	expandDictionaries(tmp)
 	if err := os.WriteFile(filepath.Join(tmp, ".complete"), nil, 0o644); err != nil {
 		return "", err
 	}
@@ -90,4 +95,50 @@ func extractEmbedded() (string, error) {
 		return "", errors.Join(err)
 	}
 	return dir, nil
+}
+
+// expandDictionaries stores decompressed copies of the gzip dictionary files
+// in the extraction cache, so later starts read them without inflating. The
+// dictionary reader prefers the uncompressed file and otherwise falls back to
+// the .gz file, so a failed expansion only costs start-up time.
+func expandDictionaries(dir string) {
+	for _, sub := range []string{"dict", "dict-kansai"} {
+		matches, _ := filepath.Glob(filepath.Join(dir, sub, "*.gz"))
+		for _, compressed := range matches {
+			target := strings.TrimSuffix(compressed, ".gz")
+			if _, err := os.Stat(target); err == nil {
+				continue
+			}
+			expandFile(compressed, target)
+		}
+	}
+}
+
+func expandFile(compressed, target string) error {
+	in, err := os.Open(compressed)
+	if err != nil {
+		return err
+	}
+	defer in.Close()
+	r, err := gzip.NewReader(in)
+	if err != nil {
+		return err
+	}
+	defer r.Close()
+	// A unique temporary name lets concurrent first runs expand safely.
+	out, err := os.CreateTemp(filepath.Dir(target), filepath.Base(target)+".*.tmp")
+	if err != nil {
+		return err
+	}
+	_, err = io.Copy(out, r)
+	if cerr := out.Close(); err == nil {
+		err = cerr
+	}
+	if err == nil {
+		err = os.Rename(out.Name(), target)
+	}
+	if err != nil {
+		os.Remove(out.Name())
+	}
+	return err
 }

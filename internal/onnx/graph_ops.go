@@ -13,11 +13,11 @@ func emptyValue(kind int, shape []int64) (Value, error) {
 	v := Value{Kind: kind, Shape: append([]int64(nil), shape...)}
 	switch kind {
 	case 1:
-		v.F = make([]float32, n)
+		v.F = getFloats(n)
 	case 11:
 		v.D = make([]float64, n)
 	case 6, 7:
-		v.I = make([]int64, n)
+		v.I = getInts(n)
 	case 9:
 		v.B = make([]bool, n)
 	default:
@@ -293,7 +293,12 @@ func executeNode(n graphNode, in []Value, original bool, threads ...int) ([]Valu
 			return nil, err
 		}
 	case "Clip", "Abs", "Relu", "LeakyRelu", "Exp":
-		out = cloneValue(in[0])
+		if in[0].Kind == 1 && len(in[0].I) == 0 && len(in[0].D) == 0 && len(in[0].B) == 0 {
+			out = Value{Kind: 1, Shape: append([]int64(nil), in[0].Shape...), F: getFloatsUncleared(len(in[0].F))}
+			parallelElements(len(out.F), func(lo, hi int) { copy(out.F[lo:hi], in[0].F[lo:hi]) })
+		} else {
+			out = cloneValue(in[0])
+		}
 		if n.op == "Abs" && (out.Kind == 6 || out.Kind == 7) {
 			for i, x := range out.I {
 				if x < 0 {
@@ -324,9 +329,10 @@ func executeNode(n graphNode, in []Value, original bool, threads ...int) ([]Valu
 				}
 			}
 		}
-		for i, x := range out.F {
-			switch n.op {
-			case "Exp":
+		// The operation is chosen once; every element keeps its own result.
+		switch n.op {
+		case "Exp":
+			for i, x := range out.F {
 				if original {
 					if originalAVX512Unary(threads) {
 						out.F[i] = MKLExpAVX512(x)
@@ -336,23 +342,33 @@ func executeNode(n graphNode, in []Value, original bool, threads ...int) ([]Valu
 				} else {
 					out.F[i] = Exp(x)
 				}
-			case "Clip":
+			}
+		case "Clip":
+			for i, x := range out.F {
 				out.F[i] = clamp(x, low, high)
-			case "Abs":
+			}
+		case "Abs":
+			for i, x := range out.F {
 				out.F[i] = math.Float32frombits(math.Float32bits(x) & 0x7fffffff)
-			case "Relu":
+			}
+		case "Relu":
+			for i, x := range out.F {
 				if x < 0 {
 					out.F[i] = 0
 				}
-			case "LeakyRelu":
-				alpha := float32(0.01)
-				if a, ok := n.attrs["alpha"]; ok {
-					alpha = a.f
-				}
-				if x < 0 {
-					out.F[i] = float32(x * alpha)
-				}
 			}
+		case "LeakyRelu":
+			alpha := float32(0.01)
+			if a, ok := n.attrs["alpha"]; ok {
+				alpha = a.f
+			}
+			parallelElements(len(out.F), func(lo, hi int) {
+				for i, x := range out.F[lo:hi] {
+					if x < 0 {
+						out.F[lo+i] = float32(x * alpha)
+					}
+				}
+			})
 		}
 	}
 	return []Value{out}, nil
@@ -401,6 +417,14 @@ func binaryValue(op string, a, b Value) (Value, error) {
 	}
 	count, _ := valueCount(shape)
 	astride, bstride := shapeStrides(as), shapeStrides(bs)
+	if (a.Kind == 6 || a.Kind == 7) && rank > 0 && (op == "Add" || op == "Sub" || op == "Mul") {
+		binaryInteger(op, out.I, a.I, b.I, shape, as, bs, astride, bstride, a.Kind == 6)
+		return out, nil
+	}
+	if a.Kind == 1 && rank > 0 && (op == "Add" || op == "Sub" || op == "Mul" || op == "Div") {
+		binaryFloat(op, out.F, a.F, b.F, shape, as, bs, astride, bstride)
+		return out, nil
+	}
 	for index := 0; index < count; index++ {
 		ai, bi, remaining := 0, 0, index
 		for d := rank - 1; d >= 0; d-- {
@@ -484,4 +508,137 @@ func binaryValue(op string, a, b Value) (Value, error) {
 		}
 	}
 	return out, nil
+}
+
+// binaryFloat is the FLOAT arithmetic of binaryValue, walking the innermost
+// dimension with fixed strides. Every element uses the same single operation.
+func binaryFloat(op string, out, a, b []float32, shape, as, bs []int64, astride, bstride []int) {
+	rank := len(shape)
+	inner := int(shape[rank-1])
+	if inner == 0 {
+		return
+	}
+	ainc, binc := 0, 0
+	if as[rank-1] != 1 {
+		ainc = astride[rank-1]
+	}
+	if bs[rank-1] != 1 {
+		binc = bstride[rank-1]
+	}
+	parallelRows(len(out)/inner, inner, func(lo, hi int) {
+		for base := lo * inner; base < hi*inner; base += inner {
+			ai, bi, remaining := 0, 0, base/inner
+			for d := rank - 2; d >= 0; d-- {
+				coord := remaining % int(shape[d])
+				remaining /= int(shape[d])
+				if as[d] != 1 {
+					ai += coord * astride[d]
+				}
+				if bs[d] != 1 {
+					bi += coord * bstride[d]
+				}
+			}
+			o := out[base : base+inner]
+			if op == "Add" && ainc == 1 && binc == 1 {
+				x, y := a[ai:ai+inner], b[bi:bi+inner]
+				for t := range o {
+					o[t] = float32(x[t] + y[t])
+				}
+				continue
+			}
+			if op == "Add" && ainc == 1 && binc == 0 {
+				x, y := a[ai:ai+inner], b[bi]
+				for t := range o {
+					o[t] = float32(x[t] + y)
+				}
+				continue
+			}
+			if op == "Add" && ainc == 0 && binc == 1 {
+				x, y := a[ai], b[bi:bi+inner]
+				for t := range o {
+					o[t] = float32(x + y[t])
+				}
+				continue
+			}
+			if op == "Mul" && ainc == 1 && binc == 1 {
+				x, y := a[ai:ai+inner], b[bi:bi+inner]
+				for t := range o {
+					o[t] = float32(x[t] * y[t])
+				}
+				continue
+			}
+			switch op {
+			case "Add":
+				for t := range o {
+					o[t] = float32(a[ai+t*ainc] + b[bi+t*binc])
+				}
+			case "Sub":
+				for t := range o {
+					o[t] = float32(a[ai+t*ainc] - b[bi+t*binc])
+				}
+			case "Mul":
+				for t := range o {
+					o[t] = float32(a[ai+t*ainc] * b[bi+t*binc])
+				}
+			case "Div":
+				for t := range o {
+					o[t] = float32(a[ai+t*ainc] / b[bi+t*binc])
+				}
+			}
+		}
+	})
+
+}
+
+// binaryInteger is the INT32/INT64 Add, Sub and Mul of binaryValue, walking
+// the innermost dimension with fixed strides.
+func binaryInteger(op string, out, a, b []int64, shape, as, bs []int64, astride, bstride []int, int32Result bool) {
+	rank := len(shape)
+	inner := int(shape[rank-1])
+	if inner == 0 {
+		return
+	}
+	ainc, binc := 0, 0
+	if as[rank-1] != 1 {
+		ainc = astride[rank-1]
+	}
+	if bs[rank-1] != 1 {
+		binc = bstride[rank-1]
+	}
+	parallelRows(len(out)/inner, inner, func(lo, hi int) {
+		for base := lo * inner; base < hi*inner; base += inner {
+			ai, bi, remaining := 0, 0, base/inner
+			for d := rank - 2; d >= 0; d-- {
+				coord := remaining % int(shape[d])
+				remaining /= int(shape[d])
+				if as[d] != 1 {
+					ai += coord * astride[d]
+				}
+				if bs[d] != 1 {
+					bi += coord * bstride[d]
+				}
+			}
+			o := out[base : base+inner]
+			switch op {
+			case "Add":
+				for t := range o {
+					o[t] = a[ai+t*ainc] + b[bi+t*binc]
+				}
+			case "Sub":
+				for t := range o {
+					o[t] = a[ai+t*ainc] - b[bi+t*binc]
+				}
+			case "Mul":
+				for t := range o {
+					o[t] = a[ai+t*ainc] * b[bi+t*binc]
+				}
+			}
+			if int32Result {
+				for t := range o {
+					o[t] = int64(int32(o[t]))
+				}
+			}
+		}
+	})
+
 }

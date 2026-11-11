@@ -5,6 +5,8 @@ import (
 	"fmt"
 	"math"
 	"os"
+	"sync"
+	"unsafe"
 )
 
 // Value owns a contiguous tensor. Supported storage kinds are FLOAT (1),
@@ -38,6 +40,10 @@ type Graph struct {
 	initial  map[string]Value
 	producer map[string]int
 	outputs  []string
+
+	usesOnce sync.Once
+	uses     map[string]int
+	pinned   map[string]bool
 }
 
 func OpenGraph(path string) (*Graph, error) {
@@ -97,6 +103,7 @@ func parseGraph(data []byte) (*Graph, error) {
 		if _, ok := g.initial[string(name)]; ok {
 			return nil, fmt.Errorf("duplicate initializer")
 		}
+		registerConstant(v.F)
 		g.initial[string(name)] = v
 	}
 	nodes, err := bytesFields(fs, 1)
@@ -243,8 +250,13 @@ func tensorValue(fs []field) (Value, error) {
 	switch v.Kind {
 	case 1:
 		v.F = make([]float32, n)
-		for i := range v.F {
-			v.F[i] = math.Float32frombits(binary.LittleEndian.Uint32(raw[i*4:]))
+		if littleEndianHost && n > 0 {
+			// The stored little-endian bits are the host representation.
+			copy(unsafe.Slice((*byte)(unsafe.Pointer(&v.F[0])), 4*n), raw)
+		} else {
+			for i := range v.F {
+				v.F[i] = math.Float32frombits(binary.LittleEndian.Uint32(raw[i*4:]))
+			}
 		}
 	case 11:
 		v.D = make([]float64, n)
@@ -407,26 +419,33 @@ func originalThreadCount(threads []int) int {
 }
 
 func (g *Graph) runGraph(inputs map[string]Value, outputs []string, original bool, threads ...int) (map[string]Value, error) {
-	values, err := g.runValues(inputs, outputs, nil, original, threads...)
+	life := newBufferLife(g.graphUses(outputs))
+	values, err := g.runValuesLife(inputs, outputs, nil, life, original, threads...)
 	if err != nil {
+		life.release()
 		return nil, err
 	}
 	for k, v := range values {
 		values[k] = cloneValue(v)
 	}
+	life.release()
 	return values, nil
 }
 
 func (g *Graph) runValues(inputs map[string]Value, outputs []string, parent func(string) (Value, error), original bool, threads ...int) (map[string]Value, error) {
+	return g.runValuesLife(inputs, outputs, parent, nil, original, threads...)
+}
+
+// runValuesLife executes the graph; a non-nil life recycles pooled buffers
+// of intermediate values after their last consumer.
+func (g *Graph) runValuesLife(inputs map[string]Value, outputs []string, parent func(string) (Value, error), life *bufferLife, original bool, threads ...int) (map[string]Value, error) {
 	if len(outputs) == 0 {
 		return nil, fmt.Errorf("requested outputs are empty")
 	}
-	values := make(map[string]Value, len(g.initial)+len(inputs))
-	for k, v := range g.initial {
-		values[k] = v
-	}
+	// Initializers are read from g.initial directly rather than copied.
+	values := make(map[string]Value, len(inputs)+len(g.nodes))
 	for k, v := range inputs {
-		if _, ok := values[k]; ok {
+		if _, ok := g.initial[k]; ok {
 			return nil, fmt.Errorf("input overrides initializer %s", k)
 		}
 		if _, ok := g.producer[k]; ok {
@@ -441,6 +460,9 @@ func (g *Graph) runValues(inputs map[string]Value, outputs []string, parent func
 	var resolve func(string) (Value, error)
 	resolve = func(name string) (Value, error) {
 		if v, ok := values[name]; ok {
+			return v, nil
+		}
+		if v, ok := g.initial[name]; ok {
 			return v, nil
 		}
 		index, ok := g.producer[name]
@@ -485,6 +507,16 @@ func (g *Graph) runValues(inputs map[string]Value, outputs []string, parent func
 				return Value{}, err
 			}
 			values[n.outputs[i]] = v
+			if life != nil {
+				life.produced(n.outputs[i], v)
+			}
+		}
+		if life != nil {
+			for _, key := range n.inputs {
+				if key != "" {
+					life.consumed(key)
+				}
+			}
 		}
 		state[index] = 2
 		return values[name], nil
@@ -535,3 +567,8 @@ func cloneValue(v Value) Value {
 	v.B = append([]bool(nil), v.B...)
 	return v
 }
+
+var littleEndianHost = func() bool {
+	x := uint16(1)
+	return *(*byte)(unsafe.Pointer(&x)) == 1
+}()

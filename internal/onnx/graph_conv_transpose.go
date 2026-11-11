@@ -106,7 +106,7 @@ func graphConvTranspose(n graphNode, in []Value, original bool, profile ...int) 
 	if avx512 && len(x.F) > 20480 && ci == 128 {
 		return []Value{{Kind: 1, Shape: []int64{1, int64(co), int64(length)}, F: originalAVX512TransposeDirect(x.F, w.F, b.F, ci, co, kw, frames, length, c.Stride, c.Left)}}, nil
 	}
-	col := make([]float32, frames*columns)
+	col := getFloatsUncleared(frames * columns) // every column is written below
 	// For the observed N,T geometries (K=16..256), the AVX2 dispatch
 	// threshold decides between no-copy and packed GEMM. Packed K=128 uses
 	// one sequential FMA accumulator per output, without the 96-element
@@ -130,15 +130,7 @@ func graphConvTranspose(n graphNode, in []Value, original bool, profile ...int) 
 		if !avx512 && ci != 128 {
 			return nil, fmt.Errorf("original packed ConvTranspose K is not yet implemented")
 		}
-		for j := 0; j < columns; j++ {
-			for t := 0; t < frames; t++ {
-				acc := float32(0)
-				for i := 0; i < ci; i++ {
-					acc = fma32(x.F[i*frames+t], w.F[i*columns+j], acc)
-				}
-				col[j*frames+t] = acc
-			}
-		}
+		packedConvTransposeColumns(col, x.F, w.F, ci, frames, columns)
 	} else {
 		mb, nb := originalGEMMNTPartition(frames, columns, threads)
 		for fromN := 0; fromN < columns; fromN += nb {
@@ -151,10 +143,11 @@ func graphConvTranspose(n graphNode, in []Value, original bool, profile ...int) 
 				for j := 0; j < countN; j++ {
 					copy(col[(fromN+j)*frames+fromM:], v[j*m:(j+1)*m])
 				}
+				putFloats(v)
 			}
 		}
 	}
-	y := make([]float32, co*length)
+	y := getFloats(co * length)
 	// oneDNN col2im accumulates kernel offsets before spatial positions.
 	for ch := 0; ch < co; ch++ {
 		for k := 0; k < kw; k++ {
@@ -169,5 +162,50 @@ func graphConvTranspose(n graphNode, in []Value, original bool, profile ...int) 
 			y[ch*length+t] += b.F[ch]
 		}
 	}
+	putFloats(col)
 	return []Value{{Kind: 1, Shape: []int64{1, int64(co), int64(length)}, F: y}}, nil
+}
+
+// packedConvTransposeColumns computes col[j*frames+t] as one sequential FMA
+// accumulator over the input channels, for independent (j, t) pairs.
+func packedConvTransposeColumns(col, x, w []float32, ci, frames, columns int) {
+	vector := 0
+	var xoff []int32
+	if useAVX2FMA {
+		vector = frames &^ 7
+		for i := 0; i < ci; i++ {
+			xoff = append(xoff, int32(i*frames))
+		}
+	}
+	const tile = 256
+	groups := (columns + chainCols - 1) / chainCols
+	parallelFor(groups, func(group int) {
+		start := group * chainCols
+		count := min(chainCols, columns-start)
+		for j := start; j < start+count; j++ {
+			for t := vector; t < frames; t++ {
+				acc := float32(0)
+				for i := 0; i < ci; i++ {
+					acc = fma32(x[i*frames+t], w[i*columns+j], acc)
+				}
+				col[j*frames+t] = acc
+			}
+		}
+		if vector == 0 {
+			return
+		}
+		var ws [chainCols][]float32
+		for cc := range ws {
+			ws[cc] = w[start+min(cc, count-1):]
+		}
+		acc := make([]float32, chainCols*tile)
+		for from := 0; from < vector; from += tile {
+			rows := min(tile, vector-from)
+			clear(acc)
+			fmaChains(acc[:chainCols*rows], rows, x, from, xoff, ws, columns, true)
+			for cc := 0; cc < count; cc++ {
+				copy(col[(start+cc)*frames+from:], acc[cc*rows:(cc+1)*rows])
+			}
+		}
+	})
 }

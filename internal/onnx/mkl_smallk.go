@@ -32,13 +32,36 @@ func MKLSmallKNormalN(a, b, initial []float32, m, n, k, lda, ldb, ldc, cAlignmen
 	}
 	for _, block := range blocks {
 		start, width := block[0], block[1]
-		for col := 0; col < packedN; col++ {
-			for row := 0; row < packedM; row++ {
-				sum := float32(0)
-				for inner := start; inner < start+width; inner++ {
-					sum += float32(a[inner*lda+row] * b[col*ldb+inner])
+		if useAVX2FMA {
+			// Rows are independent lanes of the same unfused sum order.
+			xoff := make([]int32, width)
+			for j := range xoff {
+				xoff[j] = int32((start + j) * lda)
+			}
+			sums := make([]float32, chainCols*packedM)
+			for col := 0; col < packedN; col += chainCols {
+				var w [chainCols][]float32
+				for cc := range w {
+					w[cc] = b[(col+min(cc, packedN-col-1))*ldb+start:]
 				}
-				y[col*m+row] = sum + y[col*m+row]
+				clear(sums)
+				fmaChains(sums, packedM, a, 0, xoff, w, 1, false)
+				for cc := 0; cc < min(chainCols, packedN-col); cc++ {
+					dst := y[(col+cc)*m : (col+cc)*m+packedM]
+					for row, sum := range sums[cc*packedM : (cc+1)*packedM] {
+						dst[row] = sum + dst[row]
+					}
+				}
+			}
+		} else {
+			for col := 0; col < packedN; col++ {
+				for row := 0; row < packedM; row++ {
+					sum := float32(0)
+					for inner := start; inner < start+width; inner++ {
+						sum += float32(a[inner*lda+row] * b[col*ldb+inner])
+					}
+					y[col*m+row] = sum + y[col*m+row]
+				}
 			}
 		}
 		if packedM < m {
