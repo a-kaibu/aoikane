@@ -1,3 +1,5 @@
+github.com/braheezy/shine-mp3 v0.2.1-0.20261107170801-0bbf9babf479 h1:TtnUGKzweEjb+VqzLmX58qmUklkOlS8KaNsqAZXjphs=
+github.com/braheezy/shine-mp3 v0.2.1-0.20261107170801-0bbf9babf479/go.mod h1:0H/pmcpFAd+Fnrj6Pc7du7wL36U/HqtfcgPJuCgc1L4=
 github.com/go-audio/audio v1.0.0 h1:zS9vebldgbQqktK4H0lUqWrG8P0NxCJVqcj7ZpNnwd4=
 github.com/go-audio/audio v1.0.0/go.mod h1:6uAu0+H2lHkwdGsAY+j2wHPNPpPoeg5AaEFh9FlA+Zs=
 github.com/go-audio/riff v1.0.0 h1:d8iCGbDvox9BfLagY94fBynxSPHO80LmZCaOsmKxokA=
