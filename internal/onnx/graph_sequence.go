@@ -181,6 +181,10 @@ func executeSequenceNode(n graphNode, in []Value, original bool) ([]Value, bool,
 		}
 		count, _ := valueCount(shape)
 		strides := shapeStrides(v.Shape)
+		if v.Kind == 1 && rank > 0 && shape[rank-1] > 0 {
+			padFloatRows(out.F, v.F, fill.F[0], shape, v.Shape, in[1].I[:rank], strides)
+			return []Value{out}, true, nil
+		}
 		for i := 0; i < count; i++ {
 			remaining, offset, inside := i, 0, true
 			for d := rank - 1; d >= 0; d-- {
@@ -200,4 +204,39 @@ func executeSequenceNode(n graphNode, in []Value, original bool) ([]Value, bool,
 		}
 	}
 	return []Value{out}, true, nil
+}
+
+// padFloatRows is the FLOAT form of the Pad loop: output element coordinates
+// minus the leading pads select the input element, or fill outside it.
+func padFloatRows(out, in []float32, fill float32, shape, inShape, pads []int64, strides []int) {
+	rank := len(shape)
+	inner := int(shape[rank-1])
+	lead, width := int(pads[rank-1]), int(inShape[rank-1])
+	lo, hi := max(0, lead), min(inner, lead+width) // output columns inside the input
+	for base := 0; base < len(out); base += inner {
+		row := out[base : base+inner]
+		remaining, offset, inside := base/inner, 0, true
+		for d := rank - 2; d >= 0; d-- {
+			coord := int64(remaining%int(shape[d])) - pads[d]
+			remaining /= int(shape[d])
+			if coord < 0 || coord >= inShape[d] {
+				inside = false
+			} else {
+				offset += int(coord) * strides[d]
+			}
+		}
+		if !inside || lo >= hi {
+			for t := range row {
+				row[t] = fill
+			}
+			continue
+		}
+		for t := 0; t < lo; t++ {
+			row[t] = fill
+		}
+		copy(row[lo:hi], in[offset+lo-lead:offset+hi-lead])
+		for t := hi; t < inner; t++ {
+			row[t] = fill
+		}
+	}
 }

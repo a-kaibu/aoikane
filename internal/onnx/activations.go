@@ -10,6 +10,18 @@ import "math"
 // instruction. A float32 product is exact in float64. Only a float64 result
 // on a float32 rounding midpoint can need its exact addition residual.
 func fma32(a, b, c float32) float32 {
+	// Fast path: a float32-normal float64 sum that is not on a float32
+	// rounding midpoint rounds like the exact sum. The product is exact, so
+	// a fused host multiply-add yields the same float64 sum.
+	sum := float64(a)*float64(b) + float64(c)
+	bits := math.Float64bits(sum)
+	if (bits>>52)&0x7ff-(1023-126) < 254 && bits&((1<<29)-1) != 1<<28 {
+		return float32(sum)
+	}
+	return fma32Slow(a, b, c)
+}
+
+func fma32Slow(a, b, c float32) float32 {
 	product := float64(a) * float64(b)
 	sum := product + float64(c)
 	result := float32(sum)

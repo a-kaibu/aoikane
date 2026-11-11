@@ -4,7 +4,8 @@ import (
 	"encoding/binary"
 	"fmt"
 	"math"
-	"os"
+	"sync"
+	"unsafe"
 )
 
 // Value owns a contiguous tensor. Supported storage kinds are FLOAT (1),
@@ -38,13 +39,18 @@ type Graph struct {
 	initial  map[string]Value
 	producer map[string]int
 	outputs  []string
+
+	usesOnce sync.Once
+	uses     map[string]int
+	pinned   map[string]bool
 }
 
 func OpenGraph(path string) (*Graph, error) {
-	data, err := os.ReadFile(path)
+	data, release, err := readModel(path)
 	if err != nil {
 		return nil, err
 	}
+	defer release()
 	model, err := fields(data)
 	if err != nil {
 		return nil, err
@@ -53,10 +59,17 @@ func OpenGraph(path string) (*Graph, error) {
 	if err != nil {
 		return nil, err
 	}
-	return parseGraph(gd)
+	ws := openWeightCache(path)
+	g, err := parseGraphWeights(gd, ws)
+	if err == nil {
+		ws.finish()
+	}
+	return g, err
 }
 
-func parseGraph(data []byte) (*Graph, error) {
+func parseGraph(data []byte) (*Graph, error) { return parseGraphWeights(data, nil) }
+
+func parseGraphWeights(data []byte, ws *weightCache) (*Graph, error) {
 	fs, err := fields(data)
 	if err != nil {
 		return nil, err
@@ -90,13 +103,14 @@ func parseGraph(data []byte) (*Graph, error) {
 		if err != nil {
 			return nil, err
 		}
-		v, err := tensorValue(tf)
+		v, err := tensorValueWeights(tf, ws)
 		if err != nil {
 			return nil, fmt.Errorf("initializer %s: %w", name, err)
 		}
 		if _, ok := g.initial[string(name)]; ok {
 			return nil, fmt.Errorf("duplicate initializer")
 		}
+		registerConstant(v.F)
 		g.initial[string(name)] = v
 	}
 	nodes, err := bytesFields(fs, 1)
@@ -165,13 +179,13 @@ func parseGraph(data []byte) (*Graph, error) {
 					if err != nil {
 						return nil, err
 					}
-					v, err := tensorValue(tf)
+					v, err := tensorValueWeights(tf, ws)
 					if err != nil {
 						return nil, err
 					}
 					a.tensor = &v
 				case 6:
-					a.graph, err = parseGraph(f.data)
+					a.graph, err = parseGraphWeights(f.data, ws)
 					if err != nil {
 						return nil, err
 					}
@@ -200,7 +214,9 @@ func parseGraph(data []byte) (*Graph, error) {
 	return g, nil
 }
 
-func tensorValue(fs []field) (Value, error) {
+func tensorValue(fs []field) (Value, error) { return tensorValueWeights(fs, nil) }
+
+func tensorValueWeights(fs []field, ws *weightCache) (Value, error) {
 	v := Value{}
 	for _, f := range fs {
 		if f.number == 2 {
@@ -242,9 +258,30 @@ func tensorValue(fs []field) (Value, error) {
 	}
 	switch v.Kind {
 	case 1:
+		if littleEndianHost && n >= 1024 && uintptr(unsafe.Pointer(&raw[0]))%4 == 0 && inMappedRegion(unsafe.Pointer(&raw[0])) {
+			// Alias the read-only model mapping; initializers are immutable.
+			v.F = unsafe.Slice((*float32)(unsafe.Pointer(&raw[0])), n)
+			break
+		}
+		if f := ws.take(raw, n); f != nil {
+			v.F = f
+			break
+		}
 		v.F = make([]float32, n)
-		for i := range v.F {
-			v.F[i] = math.Float32frombits(binary.LittleEndian.Uint32(raw[i*4:]))
+		if littleEndianHost && n > 0 {
+			// The stored little-endian bits are the host representation.
+			dst := unsafe.Slice((*byte)(unsafe.Pointer(&v.F[0])), 4*n)
+			if n < 1<<18 {
+				copy(dst, raw)
+			} else {
+				// Large weights are copied in parallel; the copy is
+				// dominated by page faults on both sides.
+				parallelElements(len(dst), func(lo, hi int) { copy(dst[lo:hi], raw[lo:hi]) })
+			}
+		} else {
+			for i := range v.F {
+				v.F[i] = math.Float32frombits(binary.LittleEndian.Uint32(raw[i*4:]))
+			}
 		}
 	case 11:
 		v.D = make([]float64, n)
@@ -352,6 +389,10 @@ type OriginalKernelProfile struct {
 	// FMAProjections selects the reconstructed Intel serial and AVX512
 	// single-output projection paths.
 	FMAProjections bool
+	// Reordered allows convolution kernels that reorder floating-point
+	// accumulation. Results are no longer bit-exact. For the vocoder this
+	// moves about one sample in a thousand by one least significant bit.
+	Reordered bool
 }
 
 func (g *Graph) RunOriginalKernelsWithProfile(inputs map[string]Value, outputs []string, profile OriginalKernelProfile) (map[string]Value, error) {
@@ -377,7 +418,11 @@ func (g *Graph) RunOriginalKernelsWithProfile(inputs map[string]Value, outputs [
 	if profile.FMAProjections {
 		projection = 1
 	}
-	return g.runGraph(inputs, outputs, true, profile.Threads, isa, unary, embedding, pointwise, projection)
+	reordered := 0
+	if profile.Reordered {
+		reordered = 1
+	}
+	return g.runGraph(inputs, outputs, true, profile.Threads, isa, unary, embedding, pointwise, projection, reordered)
 }
 
 func originalAVX512Unary(profile []int) bool {
@@ -395,6 +440,10 @@ func originalFMAProjections(profile []int) bool {
 	return len(profile) > 5 && profile[5] == 1
 }
 
+func reorderedKernels(profile []int) bool {
+	return len(profile) > 6 && profile[6] == 1
+}
+
 func originalAVX512Convolutions(profile []int) bool {
 	return len(profile) > 1 && profile[1] == 1
 }
@@ -407,26 +456,33 @@ func originalThreadCount(threads []int) int {
 }
 
 func (g *Graph) runGraph(inputs map[string]Value, outputs []string, original bool, threads ...int) (map[string]Value, error) {
-	values, err := g.runValues(inputs, outputs, nil, original, threads...)
+	life := newBufferLife(g.graphUses(outputs))
+	values, err := g.runValuesLife(inputs, outputs, nil, life, original, threads...)
 	if err != nil {
+		life.release()
 		return nil, err
 	}
 	for k, v := range values {
 		values[k] = cloneValue(v)
 	}
+	life.release()
 	return values, nil
 }
 
 func (g *Graph) runValues(inputs map[string]Value, outputs []string, parent func(string) (Value, error), original bool, threads ...int) (map[string]Value, error) {
+	return g.runValuesLife(inputs, outputs, parent, nil, original, threads...)
+}
+
+// runValuesLife executes the graph; a non-nil life recycles pooled buffers
+// of intermediate values after their last consumer.
+func (g *Graph) runValuesLife(inputs map[string]Value, outputs []string, parent func(string) (Value, error), life *bufferLife, original bool, threads ...int) (map[string]Value, error) {
 	if len(outputs) == 0 {
 		return nil, fmt.Errorf("requested outputs are empty")
 	}
-	values := make(map[string]Value, len(g.initial)+len(inputs))
-	for k, v := range g.initial {
-		values[k] = v
-	}
+	// Initializers are read from g.initial directly rather than copied.
+	values := make(map[string]Value, len(inputs)+len(g.nodes))
 	for k, v := range inputs {
-		if _, ok := values[k]; ok {
+		if _, ok := g.initial[k]; ok {
 			return nil, fmt.Errorf("input overrides initializer %s", k)
 		}
 		if _, ok := g.producer[k]; ok {
@@ -441,6 +497,9 @@ func (g *Graph) runValues(inputs map[string]Value, outputs []string, parent func
 	var resolve func(string) (Value, error)
 	resolve = func(name string) (Value, error) {
 		if v, ok := values[name]; ok {
+			return v, nil
+		}
+		if v, ok := g.initial[name]; ok {
 			return v, nil
 		}
 		index, ok := g.producer[name]
@@ -485,6 +544,16 @@ func (g *Graph) runValues(inputs map[string]Value, outputs []string, parent func
 				return Value{}, err
 			}
 			values[n.outputs[i]] = v
+			if life != nil {
+				life.produced(n.outputs[i], v)
+			}
+		}
+		if life != nil {
+			for _, key := range n.inputs {
+				if key != "" {
+					life.consumed(key)
+				}
+			}
 		}
 		state[index] = 2
 		return values[name], nil
@@ -535,3 +604,8 @@ func cloneValue(v Value) Value {
 	v.B = append([]bool(nil), v.B...)
 	return v
 }
+
+var littleEndianHost = func() bool {
+	x := uint16(1)
+	return *(*byte)(unsafe.Pointer(&x)) == 1
+}()

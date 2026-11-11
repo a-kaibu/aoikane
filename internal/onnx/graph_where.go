@@ -36,12 +36,37 @@ func graphWhere(n graphNode, in []Value) ([]Value, error) {
 	if err != nil {
 		return nil, err
 	}
-	out, err := emptyValue(in[1].Kind, shape)
+	out, err := emptyValueUncleared(in[1].Kind, shape) // every element is selected
 	if err != nil {
 		return nil, err
 	}
-	strides := [3][]int{shapeStrides(in[0].Shape), shapeStrides(in[1].Shape), shapeStrides(in[2].Shape)}
 	count, _ := valueCount(shape)
+	if same := len(in[0].B) == count && sameShape(in[0].Shape, shape) && sameShape(in[1].Shape, shape) && sameShape(in[2].Shape, shape); same && (in[1].Kind == 7 || in[1].Kind == 1) {
+		cond := in[0].B
+		parallelElements(count, func(lo, hi int) {
+			if in[1].Kind == 7 {
+				x, y, o := in[1].I, in[2].I, out.I
+				for i := lo; i < hi; i++ {
+					if cond[i] {
+						o[i] = x[i]
+					} else {
+						o[i] = y[i]
+					}
+				}
+				return
+			}
+			x, y, o := in[1].F, in[2].F, out.F
+			for i := lo; i < hi; i++ {
+				if cond[i] {
+					o[i] = x[i]
+				} else {
+					o[i] = y[i]
+				}
+			}
+		})
+		return []Value{out}, nil
+	}
+	strides := [3][]int{shapeStrides(in[0].Shape), shapeStrides(in[1].Shape), shapeStrides(in[2].Shape)}
 	for i := 0; i < count; i++ {
 		indices := [3]int{}
 		remaining := i
@@ -61,4 +86,16 @@ func graphWhere(n graphNode, in []Value) ([]Value, error) {
 		copyElement(&out, i, in[which], indices[which])
 	}
 	return []Value{out}, nil
+}
+
+func sameShape(a, b []int64) bool {
+	if len(a) != len(b) {
+		return false
+	}
+	for i := range a {
+		if a[i] != b[i] {
+			return false
+		}
+	}
+	return true
 }

@@ -423,6 +423,11 @@ func normalizeSynthArgs(f *flag.FlagSet, args []string) []string {
 			continue
 		}
 		options = append(options, arg)
+		if fl := f.Lookup(name); fl != nil {
+			if b, ok := fl.Value.(interface{ IsBoolFlag() bool }); ok && b.IsBoolFlag() {
+				continue // boolean flags take no separate value
+			}
+		}
 		if !hasValue && f.Lookup(name) != nil && i+1 < len(args) {
 			i++
 			options = append(options, args[i])

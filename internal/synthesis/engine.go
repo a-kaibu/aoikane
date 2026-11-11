@@ -10,7 +10,9 @@ import (
 	"math"
 	"os"
 	"path/filepath"
+	"runtime"
 	"sync"
+	"sync/atomic"
 
 	"github.com/a-kaibu/aoikane/internal/dsp"
 	"github.com/a-kaibu/aoikane/internal/onnx"
@@ -74,13 +76,20 @@ func OpenWithProfile(modelDir string, profile onnx.OriginalKernelProfile) (*Engi
 	if err := json.Unmarshal(b, &e.compressor); err != nil {
 		return nil, err
 	}
+	var vocoderErr error
+	var loaded sync.WaitGroup
+	loaded.Add(1)
+	go func() {
+		defer loaded.Done()
+		e.vocoder, vocoderErr = onnx.OpenGraph(filepath.Join(modelDir, "vocoder.onnx"))
+	}()
 	e.featnet, err = onnx.OpenGraph(filepath.Join(modelDir, "featnet.onnx"))
+	loaded.Wait()
 	if err != nil {
 		return nil, err
 	}
-	e.vocoder, err = onnx.OpenGraph(filepath.Join(modelDir, "vocoder.onnx"))
-	if err != nil {
-		return nil, err
+	if vocoderErr != nil {
+		return nil, vocoderErr
 	}
 	return e, nil
 }
@@ -220,7 +229,40 @@ func (e *Engine) Render(ctx context.Context, input Input) ([]byte, error) {
 	if err != nil {
 		return nil, err
 	}
+	// Vocoder chunks have independent inputs, so they run concurrently. The
+	// compressor and chunk joins then consume them in their original order.
+	type job struct{ start, end int }
+	var jobs []job
+	for _, segment := range segments {
+		for _, chunk := range segment.Chunks {
+			jobs = append(jobs, job{chunk.Start, chunk.End})
+		}
+	}
+	waves := make([][]float32, len(jobs))
+	errs := make([]error, len(jobs))
+	var next atomic.Int64
+	var wg sync.WaitGroup
+	workers := min(runtime.GOMAXPROCS(0), len(jobs))
+	wg.Add(workers)
+	for w := 0; w < workers; w++ {
+		go func() {
+			defer wg.Done()
+			for {
+				i := int(next.Add(1) - 1)
+				if i >= len(jobs) {
+					return
+				}
+				if err := ctx.Err(); err != nil {
+					errs[i] = err
+					continue
+				}
+				waves[i], errs[i] = e.vocode(acoustic, jobs[i].start, jobs[i].end)
+			}
+		}()
+	}
+	wg.Wait()
 	var pcm []byte
+	index := 0
 	for _, segment := range segments {
 		pcm = append(pcm, make([]byte, segment.PrefixSilence*2)...)
 		var tail []float32
@@ -229,27 +271,11 @@ func (e *Engine) Render(ctx context.Context, input Input) ([]byte, error) {
 			if err := ctx.Err(); err != nil {
 				return nil, err
 			}
-			var inputs []modelTensor
-			for _, p := range []struct {
-				index, channels int
-				name            string
-			}{{3, 1, "f0"}, {5, 5, "bap"}, {6, 60, "spc"}} {
-				v, err := frameSlice(acoustic[p.index], chunk.Start, chunk.End, p.channels)
-				if err != nil {
-					return nil, err
-				}
-				t, err := floatTensor(p.name, []int64{1, int64(p.channels), int64(chunk.End - chunk.Start)}, v)
-				if err != nil {
-					return nil, err
-				}
-				inputs = append(inputs, t)
-			}
-			wave, err := runOriginalModelWithProfile(e.vocoder, inputs, []string{"wave"}, e.profile)
+			wave, err := waves[index], errs[index]
+			waves[index] = nil
+			index++
 			if err != nil {
 				return nil, err
-			}
-			if len(wave) != 1 || len(wave[0].Data) != (chunk.End-chunk.Start)*240 {
-				return nil, fmt.Errorf("invalid vocoder waveform length")
 			}
 			power, err := frameSlice(acoustic[4], chunk.Start, chunk.End, 1)
 			if err != nil {
@@ -259,7 +285,7 @@ func (e *Engine) Render(ctx context.Context, input Input) ([]byte, error) {
 			if e.profile.AVX512Unary {
 				process = e.compressor.ProcessWithAVX512Unary
 			}
-			processed, err := process(wave[0].Data, power)
+			processed, err := process(wave, power)
 			if err != nil {
 				return nil, err
 			}
@@ -282,4 +308,36 @@ func (e *Engine) Render(ctx context.Context, input Input) ([]byte, error) {
 		return nil, err
 	}
 	return pcm, nil
+}
+
+// vocode runs the vocoder for acoustic frames [start, end).
+func (e *Engine) vocode(acoustic []modelOutput, start, end int) ([]float32, error) {
+	var inputs []modelTensor
+	for _, p := range []struct {
+		index, channels int
+		name            string
+	}{{3, 1, "f0"}, {5, 5, "bap"}, {6, 60, "spc"}} {
+		v, err := frameSlice(acoustic[p.index], start, end, p.channels)
+		if err != nil {
+			return nil, err
+		}
+		t, err := floatTensor(p.name, []int64{1, int64(p.channels), int64(end - start)}, v)
+		if err != nil {
+			return nil, err
+		}
+		inputs = append(inputs, t)
+	}
+	// Only the vocoder may reorder accumulation: FeatNet's durations and
+	// pitch amplify small differences, while the vocoder keeps them within
+	// one least significant bit of the PCM output.
+	profile := e.profile
+	profile.Reordered = onnx.FastMath()
+	wave, err := runOriginalModelWithProfile(e.vocoder, inputs, []string{"wave"}, profile)
+	if err != nil {
+		return nil, err
+	}
+	if len(wave) != 1 || len(wave[0].Data) != (end-start)*240 {
+		return nil, fmt.Errorf("invalid vocoder waveform length")
+	}
+	return wave[0].Data, nil
 }
