@@ -4,12 +4,21 @@ const assert = require("node:assert/strict");
 const fs = require("node:fs");
 const http = require("node:http");
 const path = require("node:path");
+const { createHash } = require("node:crypto");
 const { chromium } = require(process.env.PLAYWRIGHT_MODULE || "playwright");
 
 (async () => {
   const root = path.resolve(process.argv[2] || "dist");
+  const overrides = new Map();
+  const modelRequests = [];
   const server = http.createServer((req, res) => {
     const pathname = new URL(req.url, "http://localhost").pathname;
+    if (pathname.startsWith("/assets/")) modelRequests.push(pathname);
+    if (overrides.has(pathname)) {
+      const data = overrides.get(pathname);
+      res.writeHead(200, { "Content-Type": "application/json", "Content-Length": data.length }).end(data);
+      return;
+    }
     const file = path.resolve(root, `.${decodeURIComponent(pathname === "/" ? "/index.html" : pathname)}`);
     if (!file.startsWith(root + path.sep)) { res.writeHead(403).end(); return; }
     fs.stat(file, (error, stat) => {
@@ -48,6 +57,7 @@ const { chromium } = require(process.env.PLAYWRIGHT_MODULE || "playwright");
       { voice: "akane", text: "こんにちは。今日はええ天気やね。" },
       { voice: "akane", text: "急いで帰ろか。大阪では雨やね。", rate: 0.9, pitch: 0.95 },
       { voice: "aoi", text: "。。" },
+      { voice: "aoi", text: "丈夫ナカラダヲモチ。イツモシヅカニワラッテヰル。" },
     ];
     for (const request of requests) {
       await loadVoice(page, request.voice);
@@ -56,6 +66,55 @@ const { chromium } = require(process.env.PLAYWRIGHT_MODULE || "playwright");
       assert.deepEqual(parallel, inline, `worker/inline mismatch: ${request.voice} ${request.text}`);
       console.log("PASS worker/inline", request.voice, request.text, parallel.bytes);
     }
+    const aoiReference = await synth(page, requests[0]);
+    const akaneReference = await synth(page, requests[2]);
+    // A code-only deployment must not invalidate unchanged large model files.
+    const manifest = JSON.parse(fs.readFileSync(path.join(root, "manifest.json"), "utf8"));
+    manifest.version += "-code-only";
+    overrides.set("/manifest.json", Buffer.from(JSON.stringify(manifest)));
+    let attemptedDownloads = 0;
+    await page.route("**/assets/**", (route) => { attemptedDownloads++; return route.abort(); });
+    await page.reload();
+    await page.waitForFunction(() => document.querySelector("#status").textContent.includes("準備ができました"));
+    assert.ok((await page.locator("#model-info").textContent()).includes("端末に保存済み"));
+    await loadVoice(page, "aoi");
+    assert.deepEqual(await synth(page, requests[0]), aoiReference);
+    await loadVoice(page, "akane");
+    assert.deepEqual(await synth(page, requests[2]), akaneReference);
+    assert.equal(attemptedDownloads, 0, "reload re-downloaded persisted models");
+    await page.unroute("**/assets/**");
+    console.log("PASS reload and code-only update: no model network requests");
+
+    // Only a changed model is fetched; the rest remain usable from storage.
+    const modelPath = "assets/data/controls-aoi.json";
+    const controls = JSON.parse(fs.readFileSync(path.join(root, modelPath), "utf8"));
+    controls.cache_test_version = 2;
+    const updated = Buffer.from(JSON.stringify(controls));
+    const entry = manifest.files.find((f) => f.path === modelPath);
+    entry.size = updated.length;
+    entry.sha256 = createHash("sha256").update(updated).digest("hex");
+    overrides.set("/" + modelPath, updated);
+    overrides.set("/manifest.json", Buffer.from(JSON.stringify(manifest)));
+    modelRequests.length = 0;
+    await page.reload();
+    await page.waitForFunction(() => document.querySelector("#status").textContent.includes("準備ができました"));
+    await loadVoice(page, "aoi");
+    assert.deepEqual(await synth(page, requests[0]), aoiReference);
+    assert.deepEqual(modelRequests, ["/" + modelPath], "model update downloaded unchanged files");
+
+    // Same-size corruption must be detected by the digest and repaired.
+    await page.evaluate(async ({ path, size, hash }) => {
+      const cache = await caches.open("aoikane-models-v1");
+      const key = (await cache.keys()).find((request) => new URL(request.url).pathname === "/" + path && new URL(request.url).searchParams.get("aoikane_sha256") === hash);
+      await cache.put(key, new Response(new Uint8Array(size)));
+    }, { path: modelPath, size: entry.size, hash: entry.sha256 });
+    modelRequests.length = 0;
+    await page.reload();
+    await page.waitForFunction(() => document.querySelector("#status").textContent.includes("準備ができました"));
+    await loadVoice(page, "aoi");
+    assert.deepEqual(await synth(page, requests[0]), aoiReference);
+    assert.deepEqual(modelRequests, ["/" + modelPath], "corrupt cache was not repaired selectively");
+    console.log("PASS per-file invalidation and corrupt-cache recovery");
     // Fail a live worker send, not merely startup. Both queued and active jobs
     // must settle so renderers can use their local vocoder and finish normally.
     const request = requests[0];
@@ -78,11 +137,17 @@ const { chromium } = require(process.env.PLAYWRIGHT_MODULE || "playwright");
       Object.defineProperty(navigator, "hardwareConcurrency", { get: () => 12 });
       Object.defineProperty(navigator, "deviceMemory", { get: () => 8 });
       globalThis.Worker = class { constructor() { throw new Error("injected unsupported worker"); } };
+      const storage = globalThis.caches;
+      Object.defineProperty(globalThis, "caches", { value: { open: async (name) => {
+        const cache = await storage.open(name);
+        return { keys: () => cache.keys(), match: (...args) => cache.match(...args), delete: (...args) => cache.delete(...args), put: async () => { throw new DOMException("injected quota failure", "QuotaExceededError"); } };
+      } } });
     });
     await boot(fallback, url);
     await loadVoice(fallback, "aoi");
     assert.notEqual(await fallback.evaluate(() => typeof globalThis.__aoikaneRender), "function");
     assert.deepEqual(await synth(fallback, request), expected, "worker initialization fallback mismatch");
+    assert.ok((await fallback.locator("#model-info").textContent()).includes("保存は利用できない"));
     await fallback.close();
     console.log("Browser workers, controls, sentence order, voice switching, and fallbacks: PASS");
   } finally {

@@ -1,0 +1,55 @@
+name: Aozora regression
+on:
+  schedule:
+    - cron: '23 19 * * 0'
+  workflow_dispatch:
+    inputs:
+      seed:
+        description: 'Reproduction seed (empty uses the UTC date)'
+        required: false
+        type: string
+permissions:
+  contents: read
+jobs:
+  corpus:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.26.8'
+      - name: Sample public-domain books
+        env:
+          SAMPLE_SEED: ${{ inputs.seed }}
+        run: |
+          python3 scripts/test_sample_aozora.py
+          seed="${SAMPLE_SEED:-$(date -u +%F)}"
+          python3 scripts/sample-aozora.py --seed "$seed" --books 3 --samples 3 --output "$RUNNER_TEMP/aozora/corpus.json"
+      - name: Check conversion, synthesis and ruby candidates
+        env:
+          AOIKANE_AOZORA_CORPUS: ${{ runner.temp }}/aozora/corpus.json
+          AOIKANE_AOZORA_REPORT: ${{ runner.temp }}/aozora/report.json
+          AOIKANE_AOZORA_SYNTH: '1'
+        run: go test ./internal/portable -run '^TestAozoraCorpus$' -count=1 -v -timeout=15m
+      - name: Publish reproducible samples and reading differences
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: aozora-corpus-report
+          path: ${{ runner.temp }}/aozora
+      - name: Reading report summary
+        if: always()
+        run: |
+          python3 - <<'PY'
+          import json, os
+          from pathlib import Path
+          p = Path(os.environ['RUNNER_TEMP']) / 'aozora/report.json'
+          if p.exists():
+              r = json.loads(p.read_text())
+              with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as out:
+                  out.write('## Aozora regression\n')
+                  for key in ['Conversions', 'ConversionFailures', 'RubyMatches', 'RubyMismatches', 'RubySkipped']:
+                      out.write(f'- {key}: {int(r[key])}\n')
+                  out.write('\nRuby differences are review candidates (isolated-word comparison), not automatic proof of a reading bug. Exact samples and source URLs are attached.\n')
+          PY

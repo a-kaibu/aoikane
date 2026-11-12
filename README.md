@@ -46,6 +46,11 @@ aoikane serve --listen 127.0.0.1:8080
 同じエンジンをWebAssemblyにして、GitHub Pagesなどの静的ホスティングで合成できる。
 入力したテキストは外部へ送信されず、合成はブラウザ内で完結する。
 
+ダウンロードは[GitHub Releases](https://github.com/a-kaibu/aoikane/releases/latest)の
+`aoikane_web_<version>.zip`（実行用一式）を利用する。
+WASM本体だけなら `aoikane_<version>.wasm` も添付しているが、実行にはGoランタイムとモデル等が別途必要になる。
+ZIPを展開したフォルダーでHTTPサーバーを起動して使う。`index.html`のダブルクリックでは動かない。
+
 ```sh
 ./scripts/build-web.sh
 python3 -m http.server 8000 -d dist
@@ -54,7 +59,9 @@ python3 -m http.server 8000 -d dist
 
 `dist/`にWASM、HTML、モデル一式が出力される。
 初回の合成時に声ごとのモデル（葵は約268 MB、茜はさらに約97 MB）を読み込む。
-2回目以降はブラウザのキャッシュを利用する。
+モデルはSHA-256で検証してCache Storageに明示保存し、リロード後も再ダウンロードせずに利用する。
+アプリの更新だけでは再取得せず、内容が変わったモデルだけを更新する。
+ブラウザーのデータ削除・容量制限・プライベートモードなどで保存を利用できない場合は再取得することがある。
 
 WebAssembly SIMDを使うため、ビルドにはGo 1.27以降を推奨する。
 Go 1.26でもビルドできるが、合成は大幅に遅くなる。
@@ -71,3 +78,7 @@ CPUとメモリに余裕がある環境では、Web Workerで文と波形チャ�
 GitHub Pagesへ公開する場合は、リポジトリのSettings → PagesでSourceを
 「GitHub Actions」に設定してから`main`へpushする。`.github/workflows/pages.yml`が
 `dist/`をビルドしてデプロイする。
+
+ベンチマークは[benchmarks/README.md](benchmarks/README.md)を参照。
+従来の2文に加え、日本国憲法前文と「雨ニモマケズ」の全文をブラウザー・CLIの両方で測定できる。
+旧仮名のカタカナ「ヲ・ヰ・ヱ」が読みに残る場合は、発音時だけ「オ・イ・エ」として扱う。

@@ -92,6 +92,22 @@ func (e *MoraEncoder) ParseFormattedKana(text string) (KanaSentence, error) {
 			return out, nil
 		default:
 			indices, n := e.LookupPrefix(text[at:], false)
+			mora := ""
+			if n == 0 {
+				// Literal katakana can retain historical vowel spellings in
+				// text2kana output. The voice's table uses their modern sounds.
+				// Keep the raw reading API intact and normalize only this
+				// pronunciation boundary, after the native table had priority.
+				for _, alias := range [][2]string{{"ヲ", "オ"}, {"ヰ", "イ"}, {"ヱ", "エ"}} {
+					if strings.HasPrefix(text[at:], alias[0]) {
+						p, size := e.LookupPrefix(alias[1], false)
+						if size == len(alias[1]) {
+							indices, n, mora = p, len(alias[0]), alias[1]
+						}
+						break
+					}
+				}
+			}
 			long := strings.HasPrefix(text[at:], "ー")
 			if long {
 				indices, n = e.longPhoneIndices(previous), len("ー")
@@ -99,7 +115,10 @@ func (e *MoraEncoder) ParseFormattedKana(text string) (KanaSentence, error) {
 			if n == 0 {
 				return KanaSentence{}, fmt.Errorf("unsupported formatted kana at byte %d", at)
 			}
-			out.Timeline = append(out.Timeline, KanaItem{Type: "mora", Mora: text[at : at+n], PhoneIndices: indices, Long: long})
+			if mora == "" {
+				mora = text[at : at+n]
+			}
+			out.Timeline = append(out.Timeline, KanaItem{Type: "mora", Mora: mora, PhoneIndices: indices, Long: long})
 			if len(indices) > 0 {
 				previous = indices
 			}

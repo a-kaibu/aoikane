@@ -1,0 +1,20 @@
+[
+  {
+    "id": "short",
+    "title": "従来の2文",
+    "texts": {"aoi": "こんにちは。今日はいい天気ですね。", "akane": "こんにちは。今日はええ天気やね。"}
+  },
+  {
+    "id": "constitution-preamble",
+    "title": "日本国憲法 前文（全文）",
+    "file": "texts/constitution-preamble.txt",
+    "source": "https://laws.e-gov.go.jp/law/321CONSTITUTION"
+  },
+  {
+    "id": "ame-ni-mo-makezu",
+    "title": "雨ニモマケズ（青空文庫全文）",
+    "file": "texts/ame-ni-mo-makezu.txt",
+    "author": "宮沢賢治",
+    "source": "https://www.aozora.gr.jp/cards/000081/files/45630_23908.html"
+  }
+]

@@ -1,6 +1,7 @@
 import { installKernels } from "./kernels.js";
 import { initializeVocoderPool } from "./vocoder-pool.js";
 import { initializeRendererPool } from "./renderer-pool.js";
+import { createModelCache } from "./model-cache.js";
 
 const WASM_URL = "./aoikane.wasm";
 const MANIFEST_URL = "./manifest.json";
@@ -36,6 +37,7 @@ const state = {
   module: null,
   vocoderAsset: null,
   synthesisAssets: {},
+  modelCache: createModelCache(document.baseURI),
 };
 
 let startedResolve;
@@ -106,6 +108,7 @@ async function boot() {
       throw new Error("モデル一覧の形式が不正です");
     }
 
+    await state.modelCache.inventory(state.manifest.files);
     updateModelInfo();
     els.version.textContent = `aoikane-wasm ${state.aoikane.version}`;
     els.synthesize.disabled = false;
@@ -126,10 +129,17 @@ function updateModelInfo() {
   if (files.length === 0) return;
   const remaining = files.reduce((sum, file) => sum + (state.registered.has(file.path) ? 0 : file.size), 0);
   if (remaining === 0) {
-    els.modelInfo.textContent = "この声のモデルは読み込み済みです。";
+    els.modelInfo.textContent = `この声のモデルは読み込み済みです。${state.modelCache.unavailable || state.modelCache.writeFailed ? "端末への保存は利用できないため、次回は再取得する場合があります。" : ""}`;
     return;
   }
-  els.modelInfo.textContent = `初回はこの声のモデル（約 ${formatBytes(remaining)}）を読み込みます。2 回目以降はブラウザのキャッシュを利用します。`;
+  const network = files.reduce((sum, file) => sum + (state.registered.has(file.path) || state.modelCache.stored.has(file.path) ? 0 : file.size), 0);
+  if (network === 0) {
+    els.modelInfo.textContent = "この声のモデルは端末に保存済みです。モデルを再ダウンロードせずに読み込みます。";
+  } else if (state.modelCache.unavailable || state.modelCache.writeFailed) {
+    els.modelInfo.textContent = `約 ${formatBytes(network)} を取得します。このブラウザーではモデルを保存できないため、次回も再取得する場合があります。`;
+  } else {
+    els.modelInfo.textContent = `未保存のモデル（約 ${formatBytes(network)}）を取得して端末に保存します。次回以降は保存済みデータを利用します。`;
+  }
 }
 
 async function loadModels(voice) {
@@ -145,8 +155,8 @@ async function loadModels(voice) {
   for (const file of files) {
     if (state.registered.has(file.path)) continue;
     setStatus(`モデルを読み込み中… ${formatBytes(done)} / ${formatBytes(total)}`);
-    const bytes = await fetchAsset(file, (inFile) => {
-      updateProgress(Math.min(total, done + inFile), total, true);
+    const bytes = await state.modelCache.read(file, (inFile, cached) => {
+      updateProgress(Math.min(total, done + inFile), total, true, cached);
     });
     if (!state.aoikane.registerAsset(file.path, bytes)) {
       throw new Error(`モデルを登録できませんでした: ${file.path}`);
@@ -167,38 +177,6 @@ async function loadModels(voice) {
   await state.aoikane.warmup(voice);
   els.progress.hidden = true;
   updateModelInfo();
-}
-
-async function fetchAsset(file, onProgress) {
-  const response = await fetch(new URL(file.path, document.baseURI), { cache: "default" });
-  if (!response.ok) {
-    throw new Error(`モデルの取得に失敗しました (${response.status}): ${file.path}`);
-  }
-
-  if (!response.body || !file.size) {
-    const bytes = new Uint8Array(await response.arrayBuffer());
-    onProgress(bytes.byteLength);
-    return bytes;
-  }
-
-  const bytes = new Uint8Array(file.size);
-  let offset = 0;
-  const reader = response.body.getReader();
-  for (;;) {
-    const { done, value } = await reader.read();
-    if (done) break;
-    if (offset + value.byteLength > bytes.byteLength) {
-      await reader.cancel();
-      throw new Error(`モデルのサイズが一覧と一致しません: ${file.path}`);
-    }
-    bytes.set(value, offset);
-    offset += value.byteLength;
-    onProgress(offset);
-  }
-  if (offset !== bytes.byteLength) {
-    throw new Error(`モデルの取得が途中で終了しました: ${file.path}`);
-  }
-  return bytes;
 }
 
 async function synthesize() {
@@ -286,14 +264,14 @@ function showError(error) {
   els.progress.hidden = true;
 }
 
-function updateProgress(done, total, visible) {
+function updateProgress(done, total, visible, cached = false) {
   const now = performance.now();
   if (done < total && now - state.lastProgressPaint < 80) return;
   state.lastProgressPaint = now;
   els.progress.hidden = !visible;
   els.progress.value = total > 0 ? Math.min(1, done / total) : 0;
   if (visible) {
-    setStatus(`モデルを読み込み中… ${formatBytes(done)} / ${formatBytes(total)}`);
+    setStatus(`${cached ? "保存済みモデルを読み込み中" : "モデルを取得中"}… ${formatBytes(done)} / ${formatBytes(total)}`);
   }
 }
 

@@ -35,7 +35,7 @@ if [ ! -f "$WASM_EXEC" ]; then
 fi
 cp "$WASM_EXEC" "$OUT/wasm_exec.js"
 
-cp web/index.html web/app.js web/kernels.js web/vocoder-pool.js web/vocoder-worker.js web/renderer-pool.js web/renderer-worker.js web/style.css web/favicon.svg "$OUT/"
+cp web/index.html web/app.js web/model-cache.js web/kernels.js web/vocoder-pool.js web/vocoder-worker.js web/renderer-pool.js web/renderer-worker.js web/style.css web/favicon.svg "$OUT/"
 CLANG="${CLANG:-clang}"
 if command -v "$CLANG" >/dev/null && \
   "$CLANG" --target=wasm32 -O3 -msimd128 -mrelaxed-simd -ffp-contract=off -fno-builtin -nostdlib \
@@ -55,6 +55,7 @@ done
 
 python3 - "$OUT" "$VERSION" <<'PY'
 import json
+import hashlib
 import os
 import sys
 
@@ -65,7 +66,11 @@ for root, _, names in os.walk(os.path.join(out, "assets")):
         full = os.path.join(root, name)
         rel = os.path.relpath(full, out).replace(os.sep, "/")
         group = "akane" if rel.startswith("assets/dict-kansai/") else "shared"
-        files.append({"path": rel, "size": os.path.getsize(full), "group": group})
+        with open(full, "rb") as model:
+            digest = hashlib.sha256()
+            for chunk in iter(lambda: model.read(1 << 20), b""):
+                digest.update(chunk)
+        files.append({"path": rel, "size": os.path.getsize(full), "group": group, "sha256": digest.hexdigest()})
 files.sort(key=lambda item: item["path"])
 manifest = {"version": version, "files": files}
 with open(os.path.join(out, "manifest.json"), "w", encoding="utf-8") as handle:

@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-13",
+  "source": "working tree for v0.2.5 (historical kana pronunciation fix included)",
+  "environment": {
+    "cpu": "AMD Ryzen 5 7545U",
+    "logicalCPUs": 12,
+    "browserReportedDeviceMemoryGB": 16,
+    "go": "1.27.4",
+    "playwright": "1.65.0"
+  },
+  "method": {
+    "runs": 3,
+    "statistic": "median",
+    "browserIncludesModelLoading": false,
+    "cliIncludesProcessStartupAndModelLoading": true,
+    "osFileCacheWarmed": true,
+    "note": "Complete source texts, no shortening. Poem includes the seven closing Buddhist invocations. Each backend produced the same WAV hash in all three runs; native and browser hashes are not expected to match each other."
+  },
+  "results": [
+    {"case": "constitution-preamble", "voice": "aoi", "characters": 649, "audioSeconds": 141.18433333333334, "webMedianMs": 23093.100000023842, "cliMedianMs": 13357.237691001501, "textSHA256": "ccf2d24c945dfd045051edbc9b1a9a00fa94615c87b8dcb1dd0a77cc3c18159b"},
+    {"case": "constitution-preamble", "voice": "akane", "characters": 649, "audioSeconds": 143.16897916666667, "webMedianMs": 24807.399999976158, "cliMedianMs": 12958.502296009101, "textSHA256": "ccf2d24c945dfd045051edbc9b1a9a00fa94615c87b8dcb1dd0a77cc3c18159b"},
+    {"case": "ame-ni-mo-makezu", "voice": "aoi", "characters": 380, "audioSeconds": 93.6185625, "webMedianMs": 12396.300000011921, "cliMedianMs": 7574.356351047754, "textSHA256": "33840ef7ad494425c24d604a31e70c05203edca9fa19dbb4df0c225d1b4cf0bc"},
+    {"case": "ame-ni-mo-makezu", "voice": "akane", "characters": 380, "audioSeconds": 90.8739375, "webMedianMs": 12753.399999976158, "cliMedianMs": 7574.9869249993935, "textSHA256": "33840ef7ad494425c24d604a31e70c05203edca9fa19dbb4df0c225d1b4cf0bc"}
+  ]
+}
