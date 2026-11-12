@@ -7,9 +7,10 @@ import (
 	"encoding/binary"
 	"fmt"
 	"math"
-	"os"
 	"strconv"
 	"strings"
+
+	"github.com/a-kaibu/aoikane/internal/assetfs"
 )
 
 // CRF is a CRF++ model (version 100) loaded for decoding.
@@ -38,7 +39,7 @@ type tpart struct {
 
 // LoadCRF reads a model file.
 func LoadCRF(path string) (*CRF, error) {
-	b, err := os.ReadFile(path)
+	b, err := assetfs.ReadFile(path)
 	if err != nil {
 		return nil, err
 	}

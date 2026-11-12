@@ -3,9 +3,10 @@ package frontend
 import (
 	"encoding/json"
 	"fmt"
-	"os"
 	"slices"
 	"strings"
+
+	"github.com/a-kaibu/aoikane/internal/assetfs"
 )
 
 type EnglishTransliterationRules struct {
@@ -21,7 +22,7 @@ type EnglishTransliterationRules struct {
 }
 
 func OpenEnglishTransliterationRules(path string) (*EnglishTransliterationRules, error) {
-	b, err := os.ReadFile(path)
+	b, err := assetfs.ReadFile(path)
 	if err != nil {
 		return nil, err
 	}

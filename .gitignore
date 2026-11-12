@@ -6,3 +6,5 @@
 *.log
 __pycache__/
 *.mp3
+/dist/
+/aoikane-wasm

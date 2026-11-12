@@ -176,7 +176,7 @@ func graphConvTranspose(n graphNode, in []Value, original bool, profile ...int) 
 func packedConvTransposeColumns(col, x, w []float32, ci, frames, columns int) {
 	vector := 0
 	var xoff []int32
-	if useAVX2FMA {
+	if useChainedKernels {
 		vector = frames &^ 7
 		for i := 0; i < ci; i++ {
 			xoff = append(xoff, int32(i*frames))

@@ -3,8 +3,9 @@ package frontend
 import (
 	"encoding/json"
 	"fmt"
-	"os"
 	"strings"
+
+	"github.com/a-kaibu/aoikane/internal/assetfs"
 )
 
 type EnglishSegmentRule struct {
@@ -96,7 +97,7 @@ func (r *EnglishSegmentRules) Prepare(units []EnglishSegment) ([]PreparedEnglish
 }
 
 func OpenEnglishSegmentRules(path string) (*EnglishSegmentRules, error) {
-	b, err := os.ReadFile(path)
+	b, err := assetfs.ReadFile(path)
 	if err != nil {
 		return nil, err
 	}

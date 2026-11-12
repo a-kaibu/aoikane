@@ -2,7 +2,8 @@ package onnx
 
 import (
 	"fmt"
-	"os"
+
+	"github.com/a-kaibu/aoikane/internal/assetfs"
 )
 
 // Linear executes a MatMul with an immutable rank-two FLOAT right operand.
@@ -13,7 +14,7 @@ type Linear struct {
 }
 
 func OpenLinear(path, name string) (*Linear, error) {
-	data, err := os.ReadFile(path)
+	data, err := assetfs.ReadFile(path)
 	if err != nil {
 		return nil, err
 	}

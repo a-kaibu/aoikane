@@ -3,9 +3,10 @@ package frontend
 import (
 	"encoding/json"
 	"fmt"
-	"os"
 	"strings"
 	"unicode/utf8"
+
+	"github.com/a-kaibu/aoikane/internal/assetfs"
 )
 
 // PhoneDefinition describes a phoneme before contextual allophone and prosody
@@ -38,7 +39,7 @@ type MoraEncoder struct {
 }
 
 func OpenMoraEncoder(path string) (*MoraEncoder, error) {
-	b, err := os.ReadFile(path)
+	b, err := assetfs.ReadFile(path)
 	if err != nil {
 		return nil, err
 	}

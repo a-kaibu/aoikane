@@ -3,9 +3,10 @@ package frontend
 import (
 	"encoding/json"
 	"fmt"
-	"os"
 	"strings"
 	"unicode/utf8"
+
+	"github.com/a-kaibu/aoikane/internal/assetfs"
 )
 
 // CP932Codec uses the exported Windows code page rather than an approximate
@@ -16,7 +17,7 @@ type CP932Codec struct {
 }
 
 func OpenCP932Codec(path string) (*CP932Codec, error) {
-	b, err := os.ReadFile(path)
+	b, err := assetfs.ReadFile(path)
 	if err != nil {
 		return nil, err
 	}

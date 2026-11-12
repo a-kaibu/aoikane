@@ -12,6 +12,8 @@ import (
 	"path/filepath"
 	"strings"
 	"unicode/utf8"
+
+	"github.com/a-kaibu/aoikane/internal/assetfs"
 )
 
 // These offsets are the serialization headers in the inspected SMecab 1.6.1
@@ -264,7 +266,7 @@ func readDictionaryFile(path string) ([]byte, error) {
 	if err == nil || !os.IsNotExist(err) {
 		return data, err
 	}
-	file, openErr := os.Open(path + ".gz")
+	file, openErr := assetfs.Open(path + ".gz")
 	if openErr != nil {
 		if os.IsNotExist(openErr) {
 			return nil, err

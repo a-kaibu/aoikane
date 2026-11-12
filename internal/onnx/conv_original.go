@@ -253,7 +253,7 @@ func (c *Conv1D) runOriginalDNNL(input []float32, length, n int) ([]float32, err
 	}
 	// Interior frames read every kernel position, so each output is the
 	// same fixed FMA sequence; consecutive frames run as independent lanes.
-	if c.Kernel > 1 && n >= 8 && useAVX2FMA && zeroPaddingExact(c.weight) {
+	if c.Kernel > 1 && n >= 8 && useChainedKernels && zeroPaddingExact(c.weight) {
 		c.runOriginalDNNLPadded(input, length, n, y)
 		// Zero outputs may differ in sign; recompute them in the original order.
 		parallelRows(c.Out, n, func(lo, hi int) {
@@ -346,7 +346,7 @@ func (c *Conv1D) runOriginalDNNL(input []float32, length, n int) ([]float32, err
 	// own step sequence with output channels as the vector lanes.
 	var steps []int32 // per step: channel*Kernel+offset in step order
 	var transposed []float32
-	if vector > 0 && c.Kernel > 1 && c.Out%8 == 0 && useAVX2FMA && first+(n-end) > 0 {
+	if vector > 0 && c.Kernel > 1 && c.Out%8 == 0 && useChainedKernels && first+(n-end) > 0 {
 		for block := 0; block < c.In; block += 8 {
 			for offset := 0; offset < c.Kernel; offset++ {
 				for channel := block; channel < min(block+8, c.In); channel++ {

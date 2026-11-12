@@ -36,3 +36,15 @@ jobs:
           name: arm64-wav-failures
           path: ${{ runner.temp }}/wav-failures
           if-no-files-found: ignore
+  wasm:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      CGO_ENABLED: '0'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.27.3'
+      - run: GOEXPERIMENT=simd GOOS=js GOARCH=wasm go build -trimpath -o "${{ runner.temp }}/aoikane.wasm" ./cmd/aoikane-wasm
+      - run: go test ./internal/assetfs

@@ -5,7 +5,8 @@ import (
 	"encoding/binary"
 	"fmt"
 	"math"
-	"os"
+
+	"github.com/a-kaibu/aoikane/internal/assetfs"
 )
 
 // BoundLayers executes the bundled bou classifier and exposes its two
@@ -34,7 +35,7 @@ type lstmSpec struct {
 }
 
 func loadLayers(path, digest string, specs []lstmSpec, dense string) (*BoundLayers, error) {
-	data, err := os.ReadFile(path)
+	data, err := assetfs.ReadFile(path)
 	if err != nil {
 		return nil, err
 	}

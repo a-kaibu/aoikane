@@ -3,9 +3,10 @@ package frontend
 import (
 	"encoding/json"
 	"fmt"
-	"os"
 	"strings"
 	"unicode/utf8"
+
+	"github.com/a-kaibu/aoikane/internal/assetfs"
 )
 
 type EnglishKanaRule struct {
@@ -19,7 +20,7 @@ type EnglishKanaRules struct {
 }
 
 func OpenEnglishKanaRules(path string) (*EnglishKanaRules, error) {
-	b, err := os.ReadFile(path)
+	b, err := assetfs.ReadFile(path)
 	if err != nil {
 		return nil, err
 	}

@@ -3,8 +3,9 @@ package frontend
 import (
 	"encoding/json"
 	"fmt"
-	"os"
 	"unicode/utf8"
+
+	"github.com/a-kaibu/aoikane/internal/assetfs"
 )
 
 type MorphologyValue struct {
@@ -27,7 +28,7 @@ type WordMorphology struct {
 }
 
 func OpenMorphology(path string) (*Morphology, error) {
-	b, err := os.ReadFile(path)
+	b, err := assetfs.ReadFile(path)
 	if err != nil {
 		return nil, err
 	}

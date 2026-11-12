@@ -6,11 +6,17 @@ package mmapfile
 import (
 	"os"
 	"syscall"
+
+	"github.com/a-kaibu/aoikane/internal/assetfs"
 )
 
 // Read maps path read-only. The mapping is never released, so the result
 // stays valid; writing to it faults. Systems without mmap read the file.
+// Browser builds supply the bytes through assetfs instead.
 func Read(path string) ([]byte, error) {
+	if b, ok := assetfs.Lookup(path); ok {
+		return b, nil
+	}
 	f, err := os.Open(path)
 	if err != nil {
 		return nil, err

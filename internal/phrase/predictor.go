@@ -6,9 +6,9 @@ import (
 	"encoding/json"
 	"fmt"
 	"math"
-	"os"
 	"path/filepath"
 
+	"github.com/a-kaibu/aoikane/internal/assetfs"
 	"github.com/a-kaibu/aoikane/internal/onnx"
 )
 
@@ -56,7 +56,7 @@ type boundMeta struct {
 // of hex-encoded CP932 words) from dir. The former runtime-library argument
 // is retained for call compatibility and is no longer used.
 func OpenBoundModel(_ string, dir string, enc Encoder) (*BoundModel, error) {
-	raw, err := os.ReadFile(filepath.Join(dir, "vocab.json"))
+	raw, err := assetfs.ReadFile(filepath.Join(dir, "vocab.json"))
 	if err != nil {
 		return nil, err
 	}

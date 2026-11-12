@@ -1,4 +1,4 @@
-//go:build (windows || darwin || linux) && (amd64 || arm64)
+//go:build ((windows || darwin || linux) && (amd64 || arm64)) || (js && wasm)
 
 // Package portable assembles the reconstructed text frontend, the neural
 // acoustic model and the vocoder into an engine.Synthesizer that never calls
@@ -11,12 +11,12 @@ import (
 	"fmt"
 	"io"
 	"math"
-	"os"
 	"path/filepath"
 	"strings"
 	"sync"
 	"time"
 
+	"github.com/a-kaibu/aoikane/internal/assetfs"
 	"github.com/a-kaibu/aoikane/internal/cabocha"
 	"github.com/a-kaibu/aoikane/internal/engine"
 	"github.com/a-kaibu/aoikane/internal/frontend"
@@ -200,7 +200,7 @@ func Open(o Options) (*Engine, error) {
 		Bound: bound, Predictor: model, Numerals: numerals, UnknownKana: unknownKana, UnknownAccent: unknownAccent, Chunker: chunker, Dependency: dependency, English: english, Rendaku: rendaku, Cut: cut}
 	base := *e.frontend
 	e.akaneOnce = sync.OnceValues(func() (*phrase.Frontend, error) { return openAkane(base, rendakuAssets, a) })
-	akaneData, err := os.ReadFile(a("data", "controls-akane.json"))
+	akaneData, err := assetfs.ReadFile(a("data", "controls-akane.json"))
 	if err != nil {
 		model.Close()
 		return nil, err
@@ -213,7 +213,7 @@ func Open(o Options) (*Engine, error) {
 		model.Close()
 		return nil, err
 	}
-	b, err := os.ReadFile(a("data", "controls-aoi.json"))
+	b, err := assetfs.ReadFile(a("data", "controls-aoi.json"))
 	if err == nil {
 		err = json.Unmarshal(b, &e.controls)
 	}
@@ -268,7 +268,7 @@ func openAkane(akane phrase.Frontend, rendakuAssets *phrase.RendakuAssets, a fun
 
 func openRules[T any](path string, parse func(io.Reader) (T, error)) (T, error) {
 	var zero T
-	f, err := os.Open(path)
+	f, err := assetfs.Open(path)
 	if err != nil {
 		return zero, err
 	}

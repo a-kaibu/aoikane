@@ -3,8 +3,9 @@ package frontend
 import (
 	"encoding/json"
 	"fmt"
-	"os"
 	"strings"
+
+	"github.com/a-kaibu/aoikane/internal/assetfs"
 )
 
 type EnglishSpellingLetter struct {
@@ -19,7 +20,7 @@ type EnglishSpellingRules struct {
 }
 
 func OpenEnglishSpellingRules(path string) (*EnglishSpellingRules, error) {
-	b, err := os.ReadFile(path)
+	b, err := assetfs.ReadFile(path)
 	if err != nil {
 		return nil, err
 	}

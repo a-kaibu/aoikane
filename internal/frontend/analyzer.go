@@ -4,10 +4,11 @@ import (
 	"encoding/binary"
 	"fmt"
 	"math"
-	"os"
 	"path/filepath"
 	"strings"
 	"unicode/utf8"
+
+	"github.com/a-kaibu/aoikane/internal/assetfs"
 )
 
 // Analyzer builds a dictionary and unknown-word lattice. Unknown-word readings,
@@ -35,7 +36,7 @@ func OpenAnalyzer(dir string) (*Analyzer, error) {
 	if err != nil {
 		return nil, err
 	}
-	b, err := os.ReadFile(filepath.Join(dir, "matrix.bin"))
+	b, err := assetfs.ReadFile(filepath.Join(dir, "matrix.bin"))
 	if err != nil {
 		return nil, err
 	}

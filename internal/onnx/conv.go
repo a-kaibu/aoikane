@@ -4,9 +4,10 @@ import (
 	"encoding/binary"
 	"fmt"
 	"math"
-	"os"
 	"runtime"
 	"sync"
+
+	"github.com/a-kaibu/aoikane/internal/assetfs"
 )
 
 // Conv1D is a channel-first, group-one convolution. The MLAS path supports
@@ -25,7 +26,7 @@ type Conv1D struct {
 // OpenConv1D reads one named Conv and its weights from an ONNX graph. This
 // executes only that operation; surrounding graph nodes are not interpreted.
 func OpenConv1D(path, name string) (*Conv1D, error) {
-	data, err := os.ReadFile(path)
+	data, err := assetfs.ReadFile(path)
 	if err != nil {
 		return nil, err
 	}

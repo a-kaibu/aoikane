@@ -4,7 +4,8 @@ import (
 	"encoding/binary"
 	"fmt"
 	"math"
-	"os"
+
+	"github.com/a-kaibu/aoikane/internal/assetfs"
 )
 
 // Gather is an ONNX graph containing one axis-zero Gather from an immutable
@@ -15,7 +16,7 @@ type Gather struct {
 }
 
 func OpenGather(path string) (*Gather, error) {
-	b, err := os.ReadFile(path)
+	b, err := assetfs.ReadFile(path)
 	if err != nil {
 		return nil, err
 	}

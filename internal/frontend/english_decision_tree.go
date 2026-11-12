@@ -3,7 +3,8 @@ package frontend
 import (
 	"encoding/json"
 	"fmt"
-	"os"
+
+	"github.com/a-kaibu/aoikane/internal/assetfs"
 )
 
 type EnglishDecisionNode struct {
@@ -26,7 +27,7 @@ type EnglishDecisionTrees struct {
 }
 
 func OpenEnglishDecisionTrees(path string) (*EnglishDecisionTrees, error) {
-	b, err := os.ReadFile(path)
+	b, err := assetfs.ReadFile(path)
 	if err != nil {
 		return nil, err
 	}

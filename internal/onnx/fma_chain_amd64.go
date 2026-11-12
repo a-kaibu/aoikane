@@ -6,6 +6,11 @@ import "unsafe"
 
 var useAVX2FMA = detectAVX2FMA()
 
+// useChainedKernels has the same meaning as on other architectures. Native
+// amd64 keeps its existing choices: the pure Go lane path is only selected
+// together with the AVX2 kernels it was benchmarked with.
+var useChainedKernels = useAVX2FMA
+
 func cpuidex(leaf, sub uint32) (a, b, c, d uint32)
 func xgetbv0() (eax, edx uint32)
 

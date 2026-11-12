@@ -22,6 +22,9 @@ func fmaChains(acc []float32, rows int, x []float32, xbase int, xoff []int32, w 
 		fmaChainsAsm(acc, rows, x, xbase, xoff, w, wstep, fused)
 		return
 	}
+	if fastMath.Load() && fmaChainsSIMD(acc, rows, x, xbase, xoff, w, wstep, fused) {
+		return
+	}
 	for c := 0; c < chainCols; c++ {
 		wc := w[c]
 		for r := 0; r < rows; r++ {
@@ -49,6 +52,9 @@ func fmaChainCol(acc []float32, x []float32, xbase int, xoff []int32, w []float3
 		fmaChainColAsm(acc, x, xbase, xoff, w, wstep)
 		return
 	}
+	if fastMath.Load() && fmaChainColSIMD(acc, x, xbase, xoff, w, wstep) {
+		return
+	}
 	for r := range acc {
 		a := acc[r]
 		for j, o := range xoff {
@@ -65,6 +71,9 @@ func fmaChainsIndexed(acc []float32, rows int, x []float32, xbase int, xoff []in
 	}
 	if useAVX2FMA {
 		fmaChainsIndexedAsm(acc, rows, x, xbase, xoff, w, woff)
+		return
+	}
+	if fastMath.Load() && fmaChainsIndexedSIMD(acc, rows, x, xbase, xoff, w, woff) {
 		return
 	}
 	for c := 0; c < chainCols; c++ {

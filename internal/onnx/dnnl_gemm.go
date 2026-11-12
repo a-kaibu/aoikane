@@ -43,7 +43,7 @@ func dnnlGEMM(a, b, initial []float32, m, n, k, lda, ldb, ldc int, beta float32,
 			ks = (ks + 1) / 2
 		}
 		var all, even, odd []int32
-		if useAVX2FMA {
+		if useChainedKernels {
 			for inner := 0; inner < ks; inner++ {
 				all = append(all, int32((bk+inner)*lda))
 				if inner < ks&^1 {
@@ -72,7 +72,7 @@ func dnnlGEMM(a, b, initial []float32, m, n, k, lda, ldb, ldc int, beta float32,
 				// Full 16-row tiles share their accumulation flags per
 				// column tile, so their lanes run in one vector pass.
 				firstRow := 0
-				if useAVX2FMA && ms >= 16 {
+				if useChainedKernels && ms >= 16 {
 					firstRow = ms &^ 15
 					if cap(wide) < 6*firstRow {
 						wide = make([]float32, 6*firstRow)
@@ -104,7 +104,7 @@ func dnnlGEMM(a, b, initial []float32, m, n, k, lda, ldb, ldc int, beta float32,
 						// Vector lanes are rows; each lane keeps the scalar
 						// accumulator order below.
 						vec := 0
-						if useAVX2FMA {
+						if useChainedKernels {
 							vec = mr &^ 7
 						}
 						if vec > 0 {
@@ -113,7 +113,7 @@ func dnnlGEMM(a, b, initial []float32, m, n, k, lda, ldb, ldc int, beta float32,
 						// Remaining rows reuse an eight-lane pass ending at the
 						// tile's last row; lanes are independent, so the earlier
 						// rows it also computes are simply not used.
-						overlap := useAVX2FMA && mr%8 != 0 && row+mr >= 8
+						overlap := useChainedKernels && mr%8 != 0 && row+mr >= 8
 						if overlap {
 							dnnlGEMMTileChains(tail[:], a, b, bm+row+mr-8, 8, bn+col, nr, bk, ks, bColStride, bRowStride, dual, fused, all, even, odd)
 						}

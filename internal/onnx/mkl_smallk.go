@@ -32,7 +32,7 @@ func MKLSmallKNormalN(a, b, initial []float32, m, n, k, lda, ldb, ldc, cAlignmen
 	}
 	for _, block := range blocks {
 		start, width := block[0], block[1]
-		if useAVX2FMA {
+		if useChainedKernels {
 			// Rows are independent lanes of the same unfused sum order.
 			xoff := make([]int32, width)
 			for j := range xoff {

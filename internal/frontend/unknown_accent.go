@@ -3,10 +3,11 @@ package frontend
 import (
 	"encoding/json"
 	"fmt"
-	"os"
 	"slices"
 	"strings"
 	"unicode/utf8"
+
+	"github.com/a-kaibu/aoikane/internal/assetfs"
 )
 
 type UnknownAccentRules struct {
@@ -45,7 +46,7 @@ func CompileUnknownKana(text string, pronunciation *UnknownKanaRules, accent *Un
 }
 
 func OpenUnknownAccentRules(path string) (*UnknownAccentRules, error) {
-	b, err := os.ReadFile(path)
+	b, err := assetfs.ReadFile(path)
 	if err != nil {
 		return nil, err
 	}

@@ -3,8 +3,9 @@ package frontend
 import (
 	"encoding/binary"
 	"fmt"
-	"os"
 	"unicode/utf8"
+
+	"github.com/a-kaibu/aoikane/internal/assetfs"
 )
 
 // CharacterInfo is the serialized SMecab character class. Category membership
@@ -23,7 +24,7 @@ type Characters struct {
 }
 
 func OpenCharacters(path string) (*Characters, error) {
-	b, err := os.ReadFile(path)
+	b, err := assetfs.ReadFile(path)
 	if err != nil {
 		return nil, err
 	}

@@ -40,3 +40,25 @@ aoikane serve --listen 127.0.0.1:8080
 
 `GET /healthz`、`GET /v1/voices`、`POST /v1/synthesize`、`GET /openapi.json`。
 任意で`--token` / `AOIKANE_TOKEN`を設定できる。
+
+## ブラウザで使う
+
+同じエンジンをWebAssemblyにして、GitHub Pagesなどの静的ホスティングで合成できる。
+入力したテキストは外部へ送信されず、合成はブラウザ内で完結する。
+
+```sh
+./scripts/build-web.sh
+python3 -m http.server 8000 -d dist
+# http://localhost:8000/ を開く
+```
+
+`dist/`にWASM、HTML、モデル一式が出力される。
+初回の合成時に声ごとのモデル（葵は約268 MB、茜はさらに約97 MB）を読み込む。
+2回目以降はブラウザのキャッシュを利用する。
+
+WebAssembly SIMDを使うため、ビルドにはGo 1.27以降を推奨する。
+Go 1.26でもビルドできるが、合成は大幅に遅くなる。
+
+GitHub Pagesへ公開する場合は、リポジトリのSettings → PagesでSourceを
+「GitHub Actions」に設定してから`main`へpushする。`.github/workflows/pages.yml`が
+`dist/`をビルドしてデプロイする。

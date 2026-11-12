@@ -3,8 +3,9 @@ package frontend
 import (
 	"encoding/json"
 	"fmt"
-	"os"
 	"unicode/utf8"
+
+	"github.com/a-kaibu/aoikane/internal/assetfs"
 )
 
 // UnknownKanaRules reconstructs 1a58c0's pronunciation conversion, not the
@@ -16,7 +17,7 @@ type UnknownKanaRules struct {
 }
 
 func OpenUnknownKanaRules(path string) (*UnknownKanaRules, error) {
-	b, err := os.ReadFile(path)
+	b, err := assetfs.ReadFile(path)
 	if err != nil {
 		return nil, err
 	}

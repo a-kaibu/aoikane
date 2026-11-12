@@ -8,12 +8,12 @@ import (
 	"encoding/json"
 	"fmt"
 	"math"
-	"os"
 	"path/filepath"
 	"runtime"
 	"sync"
 	"sync/atomic"
 
+	"github.com/a-kaibu/aoikane/internal/assetfs"
 	"github.com/a-kaibu/aoikane/internal/dsp"
 	"github.com/a-kaibu/aoikane/internal/onnx"
 )
@@ -68,7 +68,7 @@ func OpenWithProfile(modelDir string, profile onnx.OriginalKernelProfile) (*Engi
 	if (profile.AVX512Convolutions || profile.FMAEmbeddings || profile.FMASmallConvolutions || profile.FMAProjections) && threads != 1 {
 		return nil, fmt.Errorf("AVX512 convolution/FMA profile requires one original thread")
 	}
-	b, err := os.ReadFile(filepath.Join(modelDir, "compressor.json"))
+	b, err := assetfs.ReadFile(filepath.Join(modelDir, "compressor.json"))
 	if err != nil {
 		return nil, err
 	}

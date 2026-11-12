@@ -5,11 +5,17 @@ package frontend
 import (
 	"os"
 	"syscall"
+
+	"github.com/a-kaibu/aoikane/internal/assetfs"
 )
 
 // mapFile maps a dictionary file read-only for the life of the process, so
 // start-up neither copies it nor touches pages that analysis never reads.
+// Browser builds supply the bytes through assetfs instead.
 func mapFile(path string) ([]byte, error) {
+	if b, ok := assetfs.Lookup(path); ok {
+		return b, nil
+	}
 	f, err := os.Open(path)
 	if err != nil {
 		return nil, err
