@@ -64,3 +64,5 @@ jobs:
           go-version: '1.27.3'
       - run: GOEXPERIMENT=simd GOOS=js GOARCH=wasm go build -trimpath -o "${{ runner.temp }}/aoikane.wasm" ./cmd/aoikane-wasm
       - run: go test ./internal/assetfs
+      - name: Test WebAssembly SIMD kernels in Node
+        run: GOEXPERIMENT=simd GOOS=js GOARCH=wasm go test -exec="$(go env GOROOT)/lib/wasm/go_js_wasm_exec" ./internal/onnx -run '^TestWasmSIMD' -count=1
