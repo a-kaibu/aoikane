@@ -2,6 +2,8 @@
 
 package onnx
 
+const wasmSIMDAvailable = false
+
 func fmaChainsSIMD([]float32, int, []float32, int, []int32, [chainCols][]float32, int, bool) bool {
 	return false
 }

@@ -7,6 +7,8 @@ import (
 	"unsafe"
 )
 
+const wasmSIMDAvailable = true
+
 // Bounds are checked once per kernel, rather than once per multiply-add.
 // Callers must validate every offset before using these unchecked loads.
 func loadWasmFloat(p *float32, index int) float32 {
@@ -54,10 +56,11 @@ func fmaChainsSIMD(acc []float32, rows int, x []float32, xbase int, xoff []int32
 		return false
 	}
 	lanes := rows &^ 3
+	bulk := fastChainsBulk(acc, rows, x, xbase, xoff, w, wstep, nil, fused)
 	xp := unsafe.SliceData(x)
 	w0, w1, w2, w3 := unsafe.SliceData(w[0]), unsafe.SliceData(w[1]), unsafe.SliceData(w[2]), unsafe.SliceData(w[3])
 	wide := lanes &^ 7
-	for r := 0; r < wide; r += 8 {
+	for r := 0; r < wide && !bulk; r += 8 {
 		a0 := archsimd.LoadFloat32x4(acc[r:])
 		b0 := archsimd.LoadFloat32x4(acc[r+4:])
 		a1 := archsimd.LoadFloat32x4(acc[rows+r:])
@@ -93,7 +96,7 @@ func fmaChainsSIMD(acc []float32, rows int, x []float32, xbase int, xoff []int32
 		a3.Store(acc[3*rows+r:])
 		b3.Store(acc[3*rows+r+4:])
 	}
-	for r := wide; r < lanes; r += 4 {
+	for r := wide; r < lanes && !bulk; r += 4 {
 		a0 := archsimd.LoadFloat32x4(acc[r:])
 		a1 := archsimd.LoadFloat32x4(acc[rows+r:])
 		a2 := archsimd.LoadFloat32x4(acc[2*rows+r:])
@@ -176,10 +179,11 @@ func fmaChainsIndexedSIMD(acc []float32, rows int, x []float32, xbase int, xoff 
 		return false
 	}
 	lanes := rows &^ 3
+	bulk := fastChainsBulk(acc, rows, x, xbase, xoff, w, 0, woff, true)
 	xp := unsafe.SliceData(x)
 	w0, w1, w2, w3 := unsafe.SliceData(w[0]), unsafe.SliceData(w[1]), unsafe.SliceData(w[2]), unsafe.SliceData(w[3])
 	wide := lanes &^ 7
-	for r := 0; r < wide; r += 8 {
+	for r := 0; r < wide && !bulk; r += 8 {
 		a0 := archsimd.LoadFloat32x4(acc[r:])
 		b0 := archsimd.LoadFloat32x4(acc[r+4:])
 		a1 := archsimd.LoadFloat32x4(acc[rows+r:])
@@ -215,7 +219,7 @@ func fmaChainsIndexedSIMD(acc []float32, rows int, x []float32, xbase int, xoff 
 		a3.Store(acc[3*rows+r:])
 		b3.Store(acc[3*rows+r+4:])
 	}
-	for r := wide; r < lanes; r += 4 {
+	for r := wide; r < lanes && !bulk; r += 4 {
 		a0 := archsimd.LoadFloat32x4(acc[r:])
 		a1 := archsimd.LoadFloat32x4(acc[rows+r:])
 		a2 := archsimd.LoadFloat32x4(acc[2*rows+r:])

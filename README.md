@@ -58,6 +58,9 @@ python3 -m http.server 8000 -d dist
 
 WebAssembly SIMDを使うため、ビルドにはGo 1.27以降を推奨する。
 Go 1.26でもビルドできるが、合成は大幅に遅くなる。
+WASMターゲットとRelaxed SIMDに対応したClangがあれば、小さな専用カーネルもビルドする。
+専用カーネルはGoのメモリを共有し、テンソルをコピーせずに演算する。
+Clangがない場合やRelaxed SIMD非対応のブラウザでは、Goの実装を利用する。
 
 GitHub Pagesへ公開する場合は、リポジトリのSettings → PagesでSourceを
 「GitHub Actions」に設定してから`main`へpushする。`.github/workflows/pages.yml`が

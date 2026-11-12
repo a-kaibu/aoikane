@@ -35,7 +35,19 @@ if [ ! -f "$WASM_EXEC" ]; then
 fi
 cp "$WASM_EXEC" "$OUT/wasm_exec.js"
 
-cp web/index.html web/app.js web/style.css web/favicon.svg "$OUT/"
+cp web/index.html web/app.js web/kernels.js web/style.css web/favicon.svg "$OUT/"
+CLANG="${CLANG:-clang}"
+if command -v "$CLANG" >/dev/null && \
+  "$CLANG" --target=wasm32 -O3 -msimd128 -mrelaxed-simd -ffp-contract=off -fno-builtin -nostdlib \
+    -Wl,--no-entry -Wl,--import-memory -Wl,--export=conv -Wl,--export=chains \
+    -Wl,--export=leaky -Wl,--export=binary \
+    -Wl,-z,stack-size=0 -Wl,--initial-memory=0 \
+    -o "$OUT/kernels.wasm" web/kernels.c; then
+  echo "Built shared-memory SIMD kernels"
+else
+  rm -f "$OUT/kernels.wasm"
+  echo "warning: a WebAssembly-capable clang is unavailable; using Go SIMD kernels only" >&2
+fi
 
 for dir in boundmodel cabocha data dict dict-kansai rules synth; do
   cp -R "assets/${dir}" "$OUT/assets/${dir}"

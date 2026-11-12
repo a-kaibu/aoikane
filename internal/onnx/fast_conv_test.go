@@ -7,8 +7,8 @@ import (
 )
 
 func TestFastConvMatchesReference(t *testing.T) {
-	if !useAVX2FMA {
-		t.Skip("no AVX2/FMA")
+	if !useAVX2FMA && !wasmSIMDAvailable {
+		t.Skip("no SIMD convolution")
 	}
 	rng := rand.New(rand.NewSource(1))
 	for _, s := range []struct{ in, out, k, d, l, left, right int }{

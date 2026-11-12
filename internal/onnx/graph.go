@@ -211,6 +211,22 @@ func parseGraphWeights(data []byte, ws *weightCache) (*Graph, error) {
 		}
 		g.nodes = append(g.nodes, n)
 	}
+	// Exported models often encode weights as Constant nodes instead of
+	// initializers. Treat them identically: resolving thousands of immutable
+	// nodes on every inference wastes time and prevents weight-layout caches
+	// from recognizing the constants. Retain nodes for graph inspection.
+	for _, n := range g.nodes {
+		if n.op != "Constant" || len(n.inputs) != 0 || len(n.outputs) != 1 || len(n.attrs) != 1 {
+			continue
+		}
+		a, ok := n.attrs["value"]
+		if !ok || a.tensor == nil || a.tensor.validate() != nil {
+			continue
+		}
+		g.initial[n.outputs[0]] = *a.tensor
+		delete(g.producer, n.outputs[0])
+		registerConstant(a.tensor.F)
+	}
 	return g, nil
 }
 

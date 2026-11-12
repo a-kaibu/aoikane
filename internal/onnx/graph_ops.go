@@ -406,6 +406,9 @@ func executeNode(n graphNode, in []Value, original bool, threads ...int) ([]Valu
 			if a, ok := n.attrs["alpha"]; ok {
 				alpha = a.f
 			}
+			if fastLeakyBulk(out.F, alpha) {
+				break
+			}
 			parallelElements(len(out.F), func(lo, hi int) {
 				for i, x := range out.F[lo:hi] {
 					if x < 0 {
@@ -561,6 +564,9 @@ func binaryValue(op string, a, b Value) (Value, error) {
 // binaryFloat is the FLOAT arithmetic of binaryValue, walking the innermost
 // dimension with fixed strides. Every element uses the same single operation.
 func binaryFloat(op string, out, a, b []float32, shape, as, bs []int64, astride, bstride []int) {
+	if fastBinaryBulk(op, out, a, b) {
+		return
+	}
 	rank := len(shape)
 	inner := int(shape[rank-1])
 	if inner == 0 {

@@ -1,3 +1,5 @@
+import { installKernels } from "./kernels.js";
+
 const WASM_URL = "./aoikane.wasm";
 const MANIFEST_URL = "./manifest.json";
 
@@ -79,6 +81,7 @@ async function boot() {
       ({ instance } = await WebAssembly.instantiate(await response.arrayBuffer(), go.importObject));
     }
 
+    await installKernels(instance.exports.mem);
     go.run(instance).catch((error) => {
       showError(error);
     });

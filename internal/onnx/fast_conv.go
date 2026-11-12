@@ -18,8 +18,6 @@ func SetFastMath(on bool) { fastMath.Store(on) }
 // FastMath reports the process default for reordered kernels.
 func FastMath() bool { return fastMath.Load() }
 
-const fastConvTile = 24
-
 // runFast is a direct convolution with free accumulation order. It returns
 // false when the shape is not handled.
 func (c *Conv1D) runFast(input []float32, length int) ([]float32, bool) {
@@ -30,11 +28,11 @@ func (c *Conv1D) runFast(input []float32, length int) ([]float32, bool) {
 // from c.weight[o*wcol+j*wstep].
 func (c *Conv1D) runFastStrided(input []float32, length, wcol, wstep int) ([]float32, bool) {
 	stride, dilation := max(1, c.Stride), max(1, c.Dilation)
-	if !useAVX2FMA || stride != 1 || c.Out%4 != 0 || c.Left < 0 || c.Right < 0 || len(input) != c.In*length {
+	if (!useAVX2FMA && !wasmSIMDAvailable) || stride != 1 || (c.Out%4 != 0 && !(wasmSIMDAvailable && c.Out == 1)) || c.Left < 0 || c.Right < 0 || len(input) != c.In*length {
 		return nil, false
 	}
 	n := c.Left + length + c.Right - (c.Kernel-1)*dilation
-	if n < fastConvTile {
+	if n < 24 {
 		// Short convolutions (FeatNet's 11-frame encoder) stay on the exact
 		// kernels: reordering them moves some output samples by two LSBs.
 		return nil, false
@@ -68,6 +66,19 @@ func (c *Conv1D) runFastStrided(input []float32, length, wcol, wstep int) ([]flo
 	bias := make([]float32, c.Out)
 	copy(bias, c.bias)
 	y := getFloatsUncleared(c.Out * nt)
+	if fastConvBulk(y, nt, src, xoff, c.weight, bias, steps, wcol, wstep) {
+		if len(src) != len(input) || unsafe.SliceData(src) != unsafe.SliceData(input) {
+			putFloats(src)
+		}
+		return y, true
+	}
+	if c.Out%4 != 0 {
+		if len(src) != len(input) || unsafe.SliceData(src) != unsafe.SliceData(input) {
+			putFloats(src)
+		}
+		putFloats(y)
+		return nil, false
+	}
 	tiles := (nt + fastConvTile - 1) / fastConvTile
 	groups := c.Out / 4
 	// Tasks cover a group of output channels over a run of tiles.
@@ -84,7 +95,7 @@ func (c *Conv1D) runFastStrided(input []float32, length, wcol, wstep int) ([]flo
 		yb := y[g*4*nt:]
 		for t := r * per; t < min(tiles, (r+1)*per); t++ {
 			from := min(t*fastConvTile, nt-fastConvTile)
-			fastConv4x24(&yb[from], uintptr(nt), &src[from], &xoff[0], w, &bias[g*4], uintptr(steps), uintptr(wcol), uintptr(wstep))
+			fastConvKernel(&yb[from], uintptr(nt), &src[from], &xoff[0], w, &bias[g*4], uintptr(steps), uintptr(wcol), uintptr(wstep))
 		}
 	})
 	if len(src) != len(input) || unsafe.SliceData(src) != unsafe.SliceData(input) {
@@ -112,7 +123,7 @@ func (c *Conv1D) runFastIf(input []float32, length int, profile []int) ([]float3
 // convolution as a 1x1 convolution and scatters it into the output.
 func fastConvTranspose(x, w, b []float32, ci, co, kw, frames, length, stride, left int) ([]float32, bool) {
 	columns := co * kw
-	if !useAVX2FMA || columns%4 != 0 {
+	if (!useAVX2FMA && !wasmSIMDAvailable) || columns%4 != 0 {
 		return nil, false
 	}
 	c := &Conv1D{In: ci, Out: columns, Kernel: 1, weight: w}
