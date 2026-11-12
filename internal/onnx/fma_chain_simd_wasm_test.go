@@ -6,10 +6,12 @@ import (
 	"fmt"
 	"math"
 	"math/rand/v2"
+	"syscall/js"
 	"testing"
 )
 
 func TestWasmSIMDChains(t *testing.T) {
+	helperFused := js.Global().Get("__aoikaneLSTMGatesKernel").Type() == js.TypeFunction
 	for _, rows := range []int{4, 5, 7, 8, 9, 12, 16, 24, 255, 256, 257} {
 		for _, step := range []int{0, 1, 3} {
 			for _, fused := range []bool{false, true} {
@@ -50,7 +52,7 @@ func TestWasmSIMDChains(t *testing.T) {
 										wi = int(woff[j])
 									}
 									v, weight := x[3+int(o)+r], w[c][wi]
-									if r >= rows&^3 && (indexed || fused) {
+									if (r >= rows&^3 || helperFused) && (indexed || fused) {
 										want = fma32(v, weight, want)
 									} else {
 										want = float32(want + float32(v*weight))

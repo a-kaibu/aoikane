@@ -29,6 +29,9 @@ func MKLGEMVNormal(a, x, initial []float32, m, n, lda, yAlignment int, alpha, be
 	if m < prefix+4 {
 		prefix = 0 // No SIMD body: all output rows use the sequential tail.
 	}
+	if fastGEMVNormalBulk(y, a, x, m, n, lda, prefix, alpha) {
+		return y, nil
+	}
 	col := 0
 	for ; col+8 <= n; col += 8 {
 		var scaled [8]float32

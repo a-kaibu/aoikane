@@ -11,7 +11,6 @@ import (
 // before it is handed out again, so values are unaffected.
 const (
 	pooledMinFloats = 4096
-	pooledMaxBytes  = 384 << 20
 )
 
 type bufferPool[T any] struct {

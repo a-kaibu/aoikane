@@ -1,6 +1,7 @@
 package onnx
 
 import (
+	"crypto/sha256"
 	"encoding/binary"
 	"fmt"
 	"math"
@@ -43,6 +44,7 @@ type Graph struct {
 	usesOnce sync.Once
 	uses     map[string]int
 	pinned   map[string]bool
+	adaptive map[int]adaptiveGatherPlan
 }
 
 func OpenGraph(path string) (*Graph, error) {
@@ -63,6 +65,11 @@ func OpenGraph(path string) (*Graph, error) {
 	g, err := parseGraphWeights(gd, ws)
 	if err == nil {
 		ws.finish()
+		// This fusion relies on the audited export's channel/batch index grids.
+		// Never apply it to an arbitrary ONNX graph with similar node names.
+		if len(g.outputs) == 1 && g.outputs[0] == "wave" && fmt.Sprintf("%x", sha256.Sum256(data)) == "ff245a6149817c01c2d559e49087892623116766d1f3c95e7996bac23e6887e0" {
+			g.prepareAdaptiveGathers()
+		}
 	}
 	return g, err
 }
@@ -530,6 +537,27 @@ func (g *Graph) runValuesLife(inputs map[string]Value, outputs []string, parent 
 		}
 		state[index] = 1
 		n := g.nodes[index]
+		if plan, ok := g.adaptive[index]; ok {
+			var args []Value
+			for _, key := range plan.inputs {
+				v, err := resolve(key)
+				if err != nil {
+					return Value{}, err
+				}
+				args = append(args, v)
+			}
+			if v, ok := runAdaptiveGather(args); ok {
+				values[name] = v
+				state[index] = 2
+				if life != nil {
+					life.produced(name, v)
+					// The original Pad/Gather nodes may still be requested as
+					// diagnostic outputs. Their edges have not executed, so do
+					// not consume dependencies early using the fused edge list.
+				}
+				return v, nil
+			}
+		}
 		var in []Value
 		for _, key := range n.inputs {
 			if key == "" {

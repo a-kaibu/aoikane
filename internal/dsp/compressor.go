@@ -52,12 +52,18 @@ func (c Compressor) process(wave, power []float32, avx512Unary bool) ([]float32,
 		sqrt, tanh = onnx.MKLSqrtAVX512, onnx.MKLTanhAVX512
 	}
 	out := make([]float32, len(wave))
+	powers, fastPower := windowPowerSums(wave, c.WindowPower)
 	const threshold float32 = 1e-5
 	for frame, p := range power {
 		// TensorIterator's outer reduction processes complete 32-frame
 		// vector groups directly. The remaining frames reduce four
 		// interleaved rows, changing their float32 addition order.
-		sum := c.originalPowerSum(wave, frame, frame >= len(power)/32*32)
+		var sum float32
+		if fastPower {
+			sum = powers[frame]
+		} else {
+			sum = c.originalPowerSum(wave, frame, frame >= len(power)/32*32)
+		}
 		rms := sqrt(sum)
 		ratio := float32(1)
 		if rms > threshold {

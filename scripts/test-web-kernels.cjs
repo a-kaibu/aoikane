@@ -5,7 +5,9 @@ const assert = require("node:assert/strict");
 
 (async () => {
   const memory = new WebAssembly.Memory({ initial: 32 });
-  const { instance } = await WebAssembly.instantiate(fs.readFileSync(process.argv[2] || "dist/kernels.wasm"), { env: { memory } });
+  const module = await WebAssembly.compile(fs.readFileSync(process.argv[2] || "dist/kernels.wasm"));
+  assert.deepEqual(WebAssembly.Module.imports(module), [{ module: "env", name: "memory", kind: "memory" }], "kernels must only import shared engine memory");
+  const instance = await WebAssembly.instantiate(module, { env: { memory } });
   const k = instance.exports;
   let top;
   const alloc = (n, integers = false) => {

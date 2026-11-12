@@ -5,6 +5,7 @@ import (
 	"encoding/binary"
 	"fmt"
 	"math"
+	"sync"
 
 	"github.com/a-kaibu/aoikane/internal/assetfs"
 )
@@ -20,6 +21,12 @@ type BoundLayers struct {
 type lstmLayer struct {
 	width, hidden int
 	w, r, bias    []float32
+	packing       *lstmPacking
+}
+
+type lstmPacking struct {
+	once sync.Once
+	w, r []float32
 }
 
 func OpenBoundLayers(path string) (*BoundLayers, error) {
@@ -87,7 +94,7 @@ func loadLayers(path, digest string, specs []lstmSpec, dense string) (*BoundLaye
 		return nil, fmt.Errorf("invalid BOUND classifier weights")
 	}
 	for i, spec := range specs {
-		l := lstmLayer{width: spec.width, hidden: 64, w: weights[spec.w], r: weights[spec.r]}
+		l := lstmLayer{width: spec.width, hidden: 64, w: weights[spec.w], r: weights[spec.r], packing: &lstmPacking{}}
 		rawBias := weights[spec.b]
 		if len(l.w) != 2*256*l.width || len(l.r) != 2*256*64 || len(rawBias) != 2*512 {
 			return nil, fmt.Errorf("invalid LSTM %d weights", i)
@@ -153,17 +160,19 @@ func (l *lstmLayer) run(input []float32, steps int) []float32 {
 			if d == 1 {
 				t = steps - 1 - s
 			}
-			for g := 0; g < 4*h; g++ {
-				var x, recurrent float32
-				w := l.w[(d*4*h+g)*l.width:]
-				r := l.r[(d*4*h+g)*h:]
-				for k := 0; k < l.width; k++ {
-					x = fma32(input[t*l.width+k], w[k], x)
+			if !fastLSTMGatesBulk(gates, input[t*l.width:(t+1)*l.width], state, l, d) {
+				for g := 0; g < 4*h; g++ {
+					var x, recurrent float32
+					w := l.w[(d*4*h+g)*l.width:]
+					r := l.r[(d*4*h+g)*h:]
+					for k := 0; k < l.width; k++ {
+						x = fma32(input[t*l.width+k], w[k], x)
+					}
+					for k := 0; k < h; k++ {
+						recurrent = fma32(state[k], r[k], recurrent)
+					}
+					gates[g] = float32(float32(x+recurrent) + l.bias[d*4*h+g])
 				}
-				for k := 0; k < h; k++ {
-					recurrent = fma32(state[k], r[k], recurrent)
-				}
-				gates[g] = float32(float32(x+recurrent) + l.bias[d*4*h+g])
 			}
 			// ONNX stores gates in input, output, forget, cell order.
 			for j := 0; j < h; j++ {

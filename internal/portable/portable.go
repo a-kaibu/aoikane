@@ -341,14 +341,15 @@ func (e *Engine) SynthesizeTimed(ctx context.Context, r engine.Request) ([]byte,
 			cues = append(cues, engine.Cue{Text: text, Start: time.Duration(start/2) * time.Second / 48000, End: time.Duration(len(pcm)/2) * time.Second / 48000})
 		}
 	}
+	parts := make([][]byte, len(kana))
+	var inputs []synthesis.Input
+	var sentenceIndices []int
 	for index, k := range kana {
-		start := len(pcm)
 		if emptyReading(k) {
 			// The original emits begin/end silence for an empty sentence,
 			// even when another sentence in the same request has speech.
 			samples := (controls.BeginPauseMS + controls.EndPauseMS) * 48
-			pcm = append(pcm, make([]byte, 2*samples)...)
-			addCue(index, start)
+			parts[index] = make([]byte, 2*samples)
 			continue
 		}
 		sentence, err := e.encoder.ParseFormattedKana(k)
@@ -363,10 +364,18 @@ func (e *Engine) SynthesizeTimed(ctx context.Context, r engine.Request) ([]byte,
 		if err != nil {
 			return nil, nil, err
 		}
-		part, err := e.synth.Render(ctx, input)
-		if err != nil {
-			return nil, nil, err
-		}
+		inputs = append(inputs, input)
+		sentenceIndices = append(sentenceIndices, index)
+	}
+	rendered, err := e.synth.RenderMany(ctx, inputs)
+	if err != nil {
+		return nil, nil, err
+	}
+	for i, part := range rendered {
+		parts[sentenceIndices[i]] = part
+	}
+	for index, part := range parts {
+		start := len(pcm)
 		pcm = append(pcm, part...)
 		addCue(index, start)
 	}

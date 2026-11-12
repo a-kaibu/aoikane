@@ -16,6 +16,9 @@ func (l *Linear) runOriginalLinear(input []float32, rows, threads int) ([]float3
 	if rows < 2 || !((l.In == 64 && (l.Out == 1 || l.Out == 2)) || (l.In == 256 && (l.Out == 5 || l.Out == 60))) || len(input)/l.In != rows || len(input)%l.In != 0 || len(l.weight) != l.In*l.Out || rows > int(^uint(0)>>1)/l.Out {
 		return nil, fmt.Errorf("unsupported original projection shape")
 	}
+	if y, ok := fastProjectionBulk(input, l.weight, rows, l.In, l.Out, threads); ok {
+		return y, nil
+	}
 	a := make([]float32, len(input))
 	w := make([]float32, len(l.weight))
 	for row := 0; row < rows; row++ {

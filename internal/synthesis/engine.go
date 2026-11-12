@@ -218,6 +218,14 @@ func (e *Engine) Render(ctx context.Context, input Input) ([]byte, error) {
 	if err := ctx.Err(); err != nil {
 		return nil, err
 	}
+	if onnx.FastMath() {
+		if pcm, ok := browserRender(input, e.profile); ok {
+			if err := ctx.Err(); err != nil {
+				return nil, err
+			}
+			return pcm, nil
+		}
+	}
 	acoustic, err := e.acousticFeatures(tensors)
 	if err != nil {
 		return nil, err
@@ -242,7 +250,7 @@ func (e *Engine) Render(ctx context.Context, input Input) ([]byte, error) {
 	errs := make([]error, len(jobs))
 	var next atomic.Int64
 	var wg sync.WaitGroup
-	workers := min(runtime.GOMAXPROCS(0), len(jobs))
+	workers := min(max(runtime.GOMAXPROCS(0), browserVocoderParallelism()), len(jobs))
 	wg.Add(workers)
 	for w := 0; w < workers; w++ {
 		go func() {
@@ -332,6 +340,11 @@ func (e *Engine) vocode(acoustic []modelOutput, start, end int) ([]float32, erro
 	// one least significant bit of the PCM output.
 	profile := e.profile
 	profile.Reordered = onnx.FastMath()
+	if profile.Reordered {
+		if wave, ok := browserVocode(inputs, profile); ok {
+			return wave, nil
+		}
+	}
 	wave, err := runOriginalModelWithProfile(e.vocoder, inputs, []string{"wave"}, profile)
 	if err != nil {
 		return nil, err

@@ -498,6 +498,9 @@ func (c *Conv1D) runOriginalDNNLPadded(input []float32, length, n int, y []float
 			}
 		}
 	}
+	if fastMath.Load() && fastIndexedConvBulk(y, n, src, xoff, woff, c.weight, c.bias, c.Out, c.In*c.Kernel, c.Kernel) {
+		return
+	}
 	type span8 struct{ from, rows, keep int }
 	var spans []span8
 	const tile = 256

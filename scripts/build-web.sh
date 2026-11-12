@@ -35,12 +35,12 @@ if [ ! -f "$WASM_EXEC" ]; then
 fi
 cp "$WASM_EXEC" "$OUT/wasm_exec.js"
 
-cp web/index.html web/app.js web/kernels.js web/style.css web/favicon.svg "$OUT/"
+cp web/index.html web/app.js web/kernels.js web/vocoder-pool.js web/vocoder-worker.js web/renderer-pool.js web/renderer-worker.js web/style.css web/favicon.svg "$OUT/"
 CLANG="${CLANG:-clang}"
 if command -v "$CLANG" >/dev/null && \
   "$CLANG" --target=wasm32 -O3 -msimd128 -mrelaxed-simd -ffp-contract=off -fno-builtin -nostdlib \
     -Wl,--no-entry -Wl,--import-memory -Wl,--export=conv -Wl,--export=chains \
-    -Wl,--export=leaky -Wl,--export=binary \
+    -Wl,--export=leaky -Wl,--export=binary -Wl,--export=gather -Wl,--export=indexed_conv -Wl,--export=ordered_conv -Wl,--export=gemv_normal -Wl,--export=gemm_normal -Wl,--export=madd_probe -Wl,--export=lstm_gates -Wl,--export=projection -Wl,--export=window_power \
     -Wl,-z,stack-size=0 -Wl,--initial-memory=0 \
     -o "$OUT/kernels.wasm" web/kernels.c; then
   echo "Built shared-memory SIMD kernels"

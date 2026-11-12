@@ -14,6 +14,9 @@ func MKLGEMMNormalN(a, b, initial []float32, m, n, k, lda, ldb, ldc, cAlignment 
 		return nil, fmt.Errorf("original normal GEMM operands too short")
 	}
 	y := make([]float32, m*n)
+	if fastGEMMNormalBulk(y, a, b, initial, m, n, k, lda, ldb, ldc, cAlignment, alpha, beta) {
+		return y, nil
+	}
 	for col := 0; col < n; col++ {
 		var seed []float32
 		if beta != 0 {

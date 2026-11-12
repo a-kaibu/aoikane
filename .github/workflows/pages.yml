@@ -32,6 +32,14 @@ jobs:
           ./scripts/build-web.sh
           test -s dist/kernels.wasm
           node scripts/test-web-kernels.cjs dist/kernels.wasm
+          GOROOT="$(go env GOROOT)" GOEXPERIMENT=simd GOOS=js GOARCH=wasm go test -exec="node $PWD/scripts/go-web-kernels-exec.cjs" ./internal/onnx ./internal/dsp -run '^(TestWebKernel|TestWasmSIMD|TestFastConv|TestAdaptiveGather)' -count=1
+      - name: Verify browser workers and fallbacks
+        env:
+          PLAYWRIGHT_MODULE: ${{ runner.temp }}/web-test/node_modules/playwright
+        run: |
+          npm install --prefix "$RUNNER_TEMP/web-test" --ignore-scripts --no-audit --no-fund playwright@1.65.0
+          "$RUNNER_TEMP/web-test/node_modules/.bin/playwright" install --with-deps chromium
+          node scripts/test-web-browser.cjs dist
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

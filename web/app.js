@@ -1,4 +1,6 @@
 import { installKernels } from "./kernels.js";
+import { initializeVocoderPool } from "./vocoder-pool.js";
+import { initializeRendererPool } from "./renderer-pool.js";
 
 const WASM_URL = "./aoikane.wasm";
 const MANIFEST_URL = "./manifest.json";
@@ -31,6 +33,9 @@ const state = {
   audioURL: null,
   busy: false,
   lastProgressPaint: 0,
+  module: null,
+  vocoderAsset: null,
+  synthesisAssets: {},
 };
 
 let startedResolve;
@@ -70,15 +75,15 @@ async function boot() {
 
   try {
     const go = new Go();
-    let instance;
+    let instance, module;
     try {
-      ({ instance } = await WebAssembly.instantiateStreaming(fetch(WASM_URL), go.importObject));
+      ({ instance, module } = await WebAssembly.instantiateStreaming(fetch(WASM_URL), go.importObject));
     } catch (streamingError) {
       const response = await fetch(WASM_URL);
       if (!response.ok) {
         throw new Error(`WASM の取得に失敗しました (${response.status})`);
       }
-      ({ instance } = await WebAssembly.instantiate(await response.arrayBuffer(), go.importObject));
+      ({ instance, module } = await WebAssembly.instantiate(await response.arrayBuffer(), go.importObject));
     }
 
     await installKernels(instance.exports.mem);
@@ -87,6 +92,7 @@ async function boot() {
     });
     await started;
     state.aoikane = globalThis.aoikane;
+    state.module = module;
     if (!state.aoikane) {
       throw new Error("WASM の初期化に失敗しました");
     }
@@ -146,13 +152,19 @@ async function loadModels(voice) {
       throw new Error(`モデルを登録できませんでした: ${file.path}`);
     }
     state.registered.add(file.path);
+    if (file.path === "assets/synth/vocoder.onnx") state.vocoderAsset = bytes;
+    if (["assets/synth/vocoder.onnx", "assets/synth/featnet.onnx", "assets/synth/compressor.json"].includes(file.path)) state.synthesisAssets[file.path] = bytes;
     done += file.size;
     updateProgress(done, total, true);
   }
 
   updateProgress(total, total, true);
   setStatus("モデルを準備中…");
-  await state.aoikane.warmup();
+  await initializeVocoderPool(state.module, state.vocoderAsset);
+  await initializeRendererPool(state.module, state.synthesisAssets);
+  state.vocoderAsset = null;
+  state.synthesisAssets = {};
+  await state.aoikane.warmup(voice);
   els.progress.hidden = true;
   updateModelInfo();
 }
@@ -231,7 +243,7 @@ async function synthesize() {
 
     showResult(result);
     const elapsed = (performance.now() - startedAt) / 1000;
-    setStatus(`合成しました（${elapsed.toFixed(1)} 秒）。`);
+    setStatus(`合成しました（${elapsed.toFixed(elapsed < 1 ? 3 : 1)} 秒）。`);
   } finally {
     state.busy = false;
     els.synthesize.disabled = false;
