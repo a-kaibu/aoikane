@@ -25,7 +25,7 @@ func readModel(path string) ([]byte, func(), error) {
 	}
 	size := info.Size()
 	if size > 0 && size == int64(int(size)) {
-		if b, err := syscall.Mmap(int(f.Fd()), 0, int(size), syscall.PROT_READ, syscall.MAP_SHARED|syscall.MAP_POPULATE); err == nil {
+		if b, err := syscall.Mmap(int(f.Fd()), 0, int(size), syscall.PROT_READ, modelMapFlags); err == nil {
 			addMappedRegion(b)
 			return b, func() {}, nil
 		}
