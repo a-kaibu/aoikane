@@ -58,6 +58,8 @@ const { chromium } = require(process.env.PLAYWRIGHT_MODULE || "playwright");
       { voice: "akane", text: "急いで帰ろか。大阪では雨やね。", rate: 0.9, pitch: 0.95 },
       { voice: "aoi", text: "。。" },
       { voice: "aoi", text: "丈夫ナカラダヲモチ。イツモシヅカニワラッテヰル。" },
+      { voice: "aoi", text: "Aliceはりんごを3つくださいと言った。" },
+      { voice: "akane", text: "Aliceはりんごを3つくださいと言った。" },
     ];
     for (const request of requests) {
       await loadVoice(page, request.voice);

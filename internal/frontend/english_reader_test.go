@@ -1,6 +1,46 @@
 package frontend
 
-import "testing"
+import (
+	"reflect"
+	"testing"
+)
+
+func TestEnglishReaderAlice(t *testing.T) {
+	codec, err := OpenCP932Codec("../../assets/data/cp932.json")
+	if err != nil {
+		t.Fatal(err)
+	}
+	accent, err := OpenUnknownAccentRules("../../assets/rules/unknown-accent.json")
+	if err != nil {
+		t.Fatal(err)
+	}
+	r, err := OpenEnglishReader("../../assets/rules", codec, accent)
+	if err != nil {
+		t.Fatal(err)
+	}
+	for _, surface := range []string{"ａｌｉｃｅ", "Ａｌｉｃｅ", "ＡＬＩＣＥ", "ａＬｉＣｅ"} {
+		got, err := r.Compile(surface)
+		if err != nil {
+			t.Fatal(err)
+		}
+		if got.Pronunciation != "アリス" || got.Accent.Moras != 3 {
+			t.Errorf("%s: got %+v; want アリス, 3 moras", surface, got)
+		}
+	}
+	for _, surface := range []string{"ｍａｌｉｃｅ", "ａｌｉｃｅｓ", "ａｌｉｃｅｗｏｎｄｅｒｌａｎｄ", "ｓｌｉｃｅ"} {
+		got, err := r.Compile(surface)
+		if err != nil {
+			t.Fatal(err)
+		}
+		want, err := CompileUnknownEnglish(surface, r.Spelling, r.Transliteration, r.Accent, r.Fallback)
+		if err != nil {
+			t.Fatal(err)
+		}
+		if !reflect.DeepEqual(got, want) {
+			t.Errorf("override changed unrelated word %s: got %+v; want %+v", surface, got, want)
+		}
+	}
+}
 
 func TestEnglishReaderNativeReadings(t *testing.T) {
 	codec, err := OpenCP932Codec("../../assets/data/cp932.json")

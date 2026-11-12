@@ -41,6 +41,16 @@ func (f *Frontend) groupWords(words []frontend.Word) ([]frontend.Word, map[int]*
 	generated := make(map[int]*Morph)
 	position := 0
 	for _, mw := range merged {
+		// A known dictionary word may also have a non-conventional English
+		// reading. Apply exact-word corrections after grouping, so a prefix
+		// inside a larger English word is never rewritten.
+		if frontend.ConventionalEnglishPronunciation(mw.Surface) != "" {
+			r, err := f.English.Compile(mw.Surface)
+			if err != nil {
+				return nil, nil, err
+			}
+			mw.Generated = &r
+		}
 		begin := position
 		var surface strings.Builder
 		for position < len(words) && surface.Len() < len(mw.Surface) {

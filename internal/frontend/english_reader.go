@@ -1,6 +1,10 @@
 package frontend
 
-import "path/filepath"
+import (
+	"fmt"
+	"path/filepath"
+	"strings"
+)
 
 // EnglishReader assembles the exported spelling, transliteration and
 // decision-tree rules used by the native unknown-English conversion.
@@ -35,6 +39,26 @@ func OpenEnglishReader(dir string, codec *CP932Codec, accent *UnknownAccentRules
 	return r, nil
 }
 
+// ConventionalEnglishPronunciation supplies exact-word corrections for both
+// dictionary words and guessed readings. Input is normalized full-width text.
+// Never replace substrings: Alice must not change malice or related spellings.
+func ConventionalEnglishPronunciation(surface string) string {
+	if strings.EqualFold(surface, "ａｌｉｃｅ") {
+		return "アリス"
+	}
+	return ""
+}
+
 func (r *EnglishReader) Compile(surface string) (UnknownKanaReading, error) {
+	if pron := ConventionalEnglishPronunciation(surface); pron != "" {
+		if r.Accent == nil {
+			return UnknownKanaReading{}, fmt.Errorf("missing accent rules")
+		}
+		a, err := r.Accent.Accent(pron)
+		if err != nil {
+			return UnknownKanaReading{}, err
+		}
+		return UnknownKanaReading{Pronunciation: pron, Accent: a}, nil
+	}
 	return CompileUnknownEnglish(surface, r.Spelling, r.Transliteration, r.Accent, r.Fallback)
 }
