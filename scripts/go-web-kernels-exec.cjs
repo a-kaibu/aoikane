@@ -9,7 +9,9 @@ require(path.join(process.env.GOROOT, "lib/wasm/wasm_exec.js"));
 (async () => {
   const go = new Go();
   go.argv = process.argv.slice(2);
-  go.env = process.env;
+  // wasm_exec reserves a small fixed startup block for argv/environment.
+  // GitHub Actions' full environment exceeds it and is unnecessary for tests.
+  go.env = Object.fromEntries(["TMPDIR", "HOME", "TZ", "GODEBUG", "GOGC", "GOMEMLIMIT"].filter((key) => process.env[key] !== undefined).map((key) => [key, process.env[key]]));
   let code = 0;
   go.exit = (value) => { code = value; };
   const result = await WebAssembly.instantiate(fs.readFileSync(go.argv[0]), go.importObject);
