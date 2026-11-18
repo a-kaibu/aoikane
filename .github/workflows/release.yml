@@ -14,6 +14,26 @@ jobs:
       - uses: actions/setup-go@v5
         with:
           go-version: '1.26.8'
+      - uses: ./.github/actions/compact-tools
+      - name: Prepare embedded models
+        run: |
+          toolchain="$RUNNER_TEMP/aoikane-openzl"
+          python3 scripts/build-compact-assets.py --decoder "$toolchain/openzl.wasm" \
+            --openzl-license "$toolchain/OpenZL-LICENSE.txt" --cli assets/compact
+          go mod download
+          for module in github.com/klauspost/compress github.com/tetratelabs/wazero golang.org/x/sys; do
+            cat "$(go list -m -f '{{.Dir}}' "$module")/LICENSE" >> assets/compact/OpenZL-LICENSE.txt
+          done
+      - name: Verify compact CLI
+        env:
+          CGO_ENABLED: '0'
+          XDG_CACHE_HOME: ${{ runner.temp }}/compact-cli-cache
+        run: |
+          go build -tags aoikane_compact -trimpath -ldflags '-s -w' -o "$RUNNER_TEMP/aoikane-smoke" ./cmd/aoikane
+          for voice in aoi akane; do
+            "$RUNNER_TEMP/aoikane-smoke" --text 'こんにちは。' --voice "$voice" -o "$RUNNER_TEMP/$voice.wav"
+            test -s "$RUNNER_TEMP/$voice.wav"
+          done
       - uses: goreleaser/goreleaser-action@v6
         with:
           version: '~> v2'
@@ -31,17 +51,21 @@ jobs:
       - uses: actions/setup-go@v5
         with:
           go-version: '1.27.3'
-      - name: Install WebAssembly compiler
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install WebAssembly compiler and packaging tools
         run: |
           sudo apt-get update
-          sudo apt-get install -y clang lld
+          sudo apt-get install -y clang lld zstd
+          python3 -m pip install openzl==0.3.0 onnx==1.23.2
       - name: Build and test browser distribution
         run: |
           ./scripts/build-web.sh
           test -s dist/kernels.wasm
           node scripts/test-web-kernels.cjs dist/kernels.wasm
           python3 scripts/test_package_web.py
-          python3 scripts/package-web.py --site dist --output "$RUNNER_TEMP/web-release" --version "$GITHUB_REF_NAME"
+          python3 scripts/package-web.py --site dist --output "$RUNNER_TEMP/web-release" --version "$GITHUB_REF_NAME" --compact
       - name: Attach WASM and complete browser bundle
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

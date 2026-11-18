@@ -273,6 +273,8 @@ func tensorValueWeights(fs []field, ws *weightCache) (Value, error) {
 		width = 8
 	case 9:
 		width = 1
+	case 10:
+		width = 2
 	default:
 		return v, fmt.Errorf("tensor kind %d unsupported", v.Kind)
 	}
@@ -305,6 +307,13 @@ func tensorValueWeights(fs []field, ws *weightCache) (Value, error) {
 			for i := range v.F {
 				v.F[i] = math.Float32frombits(binary.LittleEndian.Uint32(raw[i*4:]))
 			}
+		}
+	case 10:
+		// Half precision is a storage format; inference remains FP32.
+		v.Kind = 1
+		v.F = make([]float32, n)
+		for i := range v.F {
+			v.F[i] = float16(binary.LittleEndian.Uint16(raw[i*2:]))
 		}
 	case 11:
 		v.D = make([]float64, n)

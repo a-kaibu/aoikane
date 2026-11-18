@@ -1,0 +1,26 @@
+name: Compact asset toolchain
+description: Build the shared OpenZL WebAssembly decoder and install the asset packer
+runs:
+  using: composite
+  steps:
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+    - shell: bash
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y zstd ninja-build
+        python3 -m pip install openzl==0.3.0 onnx==1.23.2
+        work="$RUNNER_TEMP/aoikane-openzl"
+        mkdir -p "$work"
+        git clone --depth=1 --branch v0.3.0 https://github.com/facebook/openzl.git "$work/openzl"
+        test "$(git -C "$work/openzl" rev-parse HEAD)" = 32246b48faee46807f84183dac4db479089f5445
+        git -C "$work/openzl" submodule update --init --depth=1 deps/zstd deps/lz4
+        git clone --depth=1 --branch 4.0.19 https://github.com/emscripten-core/emsdk.git "$work/emsdk"
+        test "$(git -C "$work/emsdk" rev-parse HEAD)" = 7b4e60e4bfcba326025e373024369eaa9904af55
+        "$work/emsdk/emsdk" install 4.0.19
+        "$work/emsdk/emsdk" activate 4.0.19
+        source "$work/emsdk/emsdk_env.sh"
+        bash scripts/build-openzl-decoder.sh "$work/openzl" "$work/build" "$work/openzl.wasm"
+        cat "$work/openzl/LICENSE" "$work/openzl/deps/zstd/LICENSE" "$work/openzl/deps/lz4/LICENSE" \
+          "$work/emsdk/upstream/emscripten/LICENSE" > "$work/OpenZL-LICENSE.txt"

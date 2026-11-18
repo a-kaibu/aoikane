@@ -17,7 +17,7 @@ def digest(path):
         return value.hexdigest()
 
 
-def package(site, output, version):
+def package(site, output, version, *, compact=False):
     site, output = Path(site).resolve(), Path(output).resolve()
     version = version.removeprefix("v")
     if not re.fullmatch(r"\d+\.\d+\.\d+(?:[-+][A-Za-z0-9.-]+)*", version):
@@ -40,9 +40,13 @@ def package(site, output, version):
     files = sorted(site.rglob("*"))
     if any(path.is_symlink() for path in files):
         raise ValueError("site must not contain symlinks")
+    for name in ("README.txt", "prepare_web.py", "openzl-assets.json", "licenses"):
+        if (site / name).exists():
+            raise ValueError(f"reserved package path: {name}")
     output.mkdir(parents=True, exist_ok=True)
     prefix = f"aoikane_web_{version}"
-    archive, wasm = output / f"{prefix}.zip", output / f"aoikane_{version}.wasm"
+    extension = "tar.zst" if compact else "zip"
+    archive, wasm = output / f"{prefix}.{extension}", output / f"aoikane_{version}.wasm"
     checksums = output / f"{prefix}_checksums.txt"
     if any(path.exists() for path in (archive, wasm, checksums)):
         raise FileExistsError("release output already exists; use an empty output directory")
@@ -62,6 +66,21 @@ WASM、Goランタイム、画面、ワーカー、葵・茜のモデルを含�
 展開後、このフォルダーで上記のコマンドを実行してブラウザーで開いてください。
 index.html のダブルクリックでは動きません。入力テキストは外部送信しません。
 """
+    root = Path(__file__).resolve().parent.parent
+    licenses = [(path, f"licenses/{path.relative_to(root).as_posix()}")
+                for path in sorted((root / "internal").rglob("*LICENSE*")) if path.is_file()]
+    if compact:
+        from compact_web import write_archive
+
+        write_archive(site, files, manifest, archive, prefix, readme, licenses)
+    else:
+        write_zip(site, files, archive, prefix, readme, licenses)
+    shutil.copyfile(site / "aoikane.wasm", wasm)
+    checksums.write_text("".join(f"{digest(path)}  {path.name}\n" for path in (archive, wasm)))
+    return archive, wasm, checksums
+
+
+def write_zip(site, files, archive, prefix, readme, licenses):
     temporary = archive.with_suffix(".zip.tmp")
     with zipfile.ZipFile(temporary, "w", compression=zipfile.ZIP_DEFLATED) as bundle:
         def add(path, name):
@@ -72,20 +91,13 @@ index.html のダブルクリックでは動きません。入力テキストは
                 shutil.copyfileobj(src, dst, 1 << 20)
         for path in files:
             if path.is_file():
-                if path.relative_to(site).as_posix() == "README.txt":
-                    raise ValueError("README.txt is reserved for package instructions")
                 add(path, path.relative_to(site).as_posix())
-        root = Path(__file__).resolve().parent.parent
-        for path in sorted((root / "internal").rglob("*LICENSE*")):
-            if path.is_file():
-                add(path, f"licenses/{path.relative_to(root).as_posix()}")
+        for path, name in licenses:
+            add(path, name)
         info = zipfile.ZipInfo(f"{prefix}/README.txt", (1980, 1, 1, 0, 0, 0))
         info.external_attr = 0o100644 << 16
         bundle.writestr(info, readme.encode("utf-8"), compress_type=zipfile.ZIP_DEFLATED)
     temporary.replace(archive)
-    shutil.copyfile(site / "aoikane.wasm", wasm)
-    checksums.write_text("".join(f"{digest(path)}  {path.name}\n" for path in (archive, wasm)))
-    return archive, wasm, checksums
 
 
 if __name__ == "__main__":
@@ -93,6 +105,7 @@ if __name__ == "__main__":
     parser.add_argument("--site", default="dist")
     parser.add_argument("--output", required=True)
     parser.add_argument("--version", required=True)
+    parser.add_argument("--compact", action="store_true", help="use FP16 + OpenZL in a .tar.zst archive")
     args = parser.parse_args()
-    for path in package(args.site, args.output, args.version):
+    for path in package(args.site, args.output, args.version, compact=args.compact):
         print(path)

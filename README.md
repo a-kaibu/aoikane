@@ -11,6 +11,9 @@ go install github.com/a-kaibu/aoikane/cmd/aoikane@latest
 ```
 
 取得エラーになる場合は、[配布ファイル](https://github.com/a-kaibu/aoikane/releases/latest)をダウンロードして利用できる。
+CLIの配布ファイルはFP16の重みを含む圧縮モデルを内蔵し、初回の合成時に自動でキャッシュへ展開する。
+配布版の利用にPythonやOpenZLの別途インストールは不要。
+`go install` でソースからビルドした場合は、従来のFP32モデルを内蔵する。
 
 `aoikane`が見つからない場合は、実行ファイルの保存先を`PATH`に追加する。
 通常は`go env GOPATH`で表示される場所の`bin`。
@@ -47,9 +50,25 @@ aoikane serve --listen 127.0.0.1:8080
 入力したテキストは外部へ送信されず、合成はブラウザ内で完結する。
 
 ダウンロードは[GitHub Releases](https://github.com/a-kaibu/aoikane/releases/latest)の
-`aoikane_web_<version>.zip`（実行用一式）を利用する。
+`aoikane_web_<version>.tar.zst`（実行用一式）を利用する。
+配布ファイルの音響モデルと埋め込みはFP16で保存し、辞書の索引とともにOpenZLで圧縮している。
+展開したフォルダーで、初回だけモデルを準備してからHTTPサーバーを起動する。
+
+```sh
+version=0.0.0  # ダウンロードしたファイルのバージョンに置換
+tar --zstd -xf "aoikane_web_${version}.tar.zst"
+cd "aoikane_web_${version}"
+python3 -m pip install openzl==0.3.0 onnx==1.23.2
+python3 prepare_web.py
+python3 -m http.server 8000
+# http://localhost:8000/ を開く
+```
+
+`index.html` のダブルクリックでは動かない。
 WASM本体だけなら `aoikane_<version>.wasm` も添付しているが、実行にはGoランタイムとモデル等が別途必要になる。
-ZIPを展開したフォルダーでHTTPサーバーを起動して使う。`index.html`のダブルクリックでは動かない。
+旧版のZIPは、展開後にモデルを準備せずHTTPサーバーを起動できる。
+
+ソースからビルドする場合は、モデルの準備は不要。
 
 ```sh
 ./scripts/build-web.sh
@@ -58,7 +77,7 @@ python3 -m http.server 8000 -d dist
 ```
 
 `dist/`にWASM、HTML、モデル一式が出力される。
-初回の合成時に声ごとのモデル（葵は約268 MB、茜はさらに約97 MB）を読み込む。
+GitHub Pages版では、初回の合成時に声ごとの圧縮済みモデル（葵は約130 MB、茜はさらに約50 MB）を読み込み、ブラウザー内で自動展開する。
 モデルはSHA-256で検証してCache Storageに明示保存し、リロード後も再ダウンロードせずに利用する。
 アプリの更新だけでは再取得せず、内容が変わったモデルだけを更新する。
 ブラウザーのデータ削除・容量制限・プライベートモードなどで保存を利用できない場合は再取得することがある。
@@ -76,8 +95,8 @@ CPUとメモリに余裕がある環境では、Web Workerで文と波形チャ�
 メインスレッドのエンジンで合成を続ける。テキストやモデルを外部サーバーへ送ることはない。
 
 GitHub Pagesへ公開する場合は、リポジトリのSettings → PagesでSourceを
-「GitHub Actions」に設定してから`main`へpushする。`.github/workflows/pages.yml`が
-`dist/`をビルドしてデプロイする。
+「GitHub Actions」に設定してから`main`へpushする。
+`.github/workflows/pages.yml`がFP16とOpenZLを使用する静的サイトをビルドしてデプロイする。
 
 ベンチマークは[benchmarks/README.md](benchmarks/README.md)を参照。
 従来の2文に加え、日本国憲法前文と「雨ニモマケズ」の全文をブラウザー・CLIの両方で測定できる。

@@ -155,9 +155,13 @@ async function loadModels(voice) {
   for (const file of files) {
     if (state.registered.has(file.path)) continue;
     setStatus(`モデルを読み込み中… ${formatBytes(done)} / ${formatBytes(total)}`);
-    const bytes = await state.modelCache.read(file, (inFile, cached) => {
+    let bytes = await state.modelCache.read(file, (inFile, cached) => {
       updateProgress(Math.min(total, done + inFile), total, true, cached);
     });
+    if (file.openzl) {
+      const { decodeOpenZL } = await import("./openzl.js");
+      bytes = await decodeOpenZL(bytes, file.openzl.size);
+    }
     if (!state.aoikane.registerAsset(file.path, bytes)) {
       throw new Error(`モデルを登録できませんでした: ${file.path}`);
     }

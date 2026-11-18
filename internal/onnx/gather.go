@@ -9,10 +9,11 @@ import (
 )
 
 // Gather is an ONNX graph containing one axis-zero Gather from an immutable
-// rank-two FLOAT initializer. Rows are copied without floating-point arithmetic.
+// rank-two FLOAT or FLOAT16 initializer. Lookups return FLOAT rows.
 type Gather struct {
 	Rows, Width int
 	weights     []byte
+	half        bool
 }
 
 func OpenGather(path string) (*Gather, error) {
@@ -124,10 +125,14 @@ func loadGather(data []byte) (*Gather, error) {
 	if err != nil {
 		return nil, err
 	}
-	if dtype != 1 || len(dims) != 2 || dims[0] == 0 || dims[1] == 0 || dims[0] > uint64(len(weights))/4 || dims[1] > uint64(len(weights))/4/dims[0] || dims[0]*dims[1]*4 != uint64(len(weights)) {
-		return nil, fmt.Errorf("Gather requires a rank-two raw FLOAT weight matrix")
+	width := uint64(4)
+	if dtype == 10 {
+		width = 2
 	}
-	return &Gather{Rows: int(dims[0]), Width: int(dims[1]), weights: weights}, nil
+	if (dtype != 1 && dtype != 10) || len(dims) != 2 || dims[0] == 0 || dims[1] == 0 || dims[0] > uint64(len(weights))/width || dims[1] > uint64(len(weights))/width/dims[0] || dims[0]*dims[1]*width != uint64(len(weights)) {
+		return nil, fmt.Errorf("Gather requires a rank-two raw FLOAT or FLOAT16 weight matrix")
+	}
+	return &Gather{Rows: int(dims[0]), Width: int(dims[1]), weights: weights, half: dtype == 10}, nil
 }
 
 func (g *Gather) Lookup(ids []int64) ([]float32, error) {
@@ -142,9 +147,16 @@ func (g *Gather) Lookup(ids []int64) ([]float32, error) {
 		if id < 0 {
 			id += int64(g.Rows)
 		}
-		row := g.weights[int(id)*g.Width*4:]
-		for j := 0; j < g.Width; j++ {
-			out[i*g.Width+j] = math.Float32frombits(binary.LittleEndian.Uint32(row[4*j:]))
+		if g.half {
+			row := g.weights[int(id)*g.Width*2:]
+			for j := 0; j < g.Width; j++ {
+				out[i*g.Width+j] = float16(binary.LittleEndian.Uint16(row[2*j:]))
+			}
+		} else {
+			row := g.weights[int(id)*g.Width*4:]
+			for j := 0; j < g.Width; j++ {
+				out[i*g.Width+j] = math.Float32frombits(binary.LittleEndian.Uint32(row[4*j:]))
+			}
 		}
 	}
 	return out, nil

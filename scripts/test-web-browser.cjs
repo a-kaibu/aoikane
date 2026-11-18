@@ -49,6 +49,11 @@ const { chromium } = require(process.env.PLAYWRIGHT_MODULE || "playwright");
     });
     await boot(page, url);
     await loadVoice(page, "aoi");
+    const manifest = JSON.parse(fs.readFileSync(path.join(root, "manifest.json"), "utf8"));
+    for (const file of manifest.files.filter((file) => file.group === "shared" && file.openzl)) {
+      assert.ok(modelRequests.includes("/" + file.openzl.path), `missing OpenZL request: ${file.path}`);
+      assert.ok(!modelRequests.includes("/" + file.path), `requested unpacked model: ${file.path}`);
+    }
     assert.equal(await page.evaluate(() => globalThis.__aoikaneVocoderWorkers), 6);
     assert.equal(await page.evaluate(() => typeof globalThis.__aoikaneRender), "function");
     const requests = [
@@ -71,7 +76,6 @@ const { chromium } = require(process.env.PLAYWRIGHT_MODULE || "playwright");
     const aoiReference = await synth(page, requests[0]);
     const akaneReference = await synth(page, requests[2]);
     // A code-only deployment must not invalidate unchanged large model files.
-    const manifest = JSON.parse(fs.readFileSync(path.join(root, "manifest.json"), "utf8"));
     manifest.version += "-code-only";
     overrides.set("/manifest.json", Buffer.from(JSON.stringify(manifest)));
     let attemptedDownloads = 0;

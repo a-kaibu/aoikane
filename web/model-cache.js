@@ -10,7 +10,7 @@ export function createModelCache(baseURL) {
   let writeFailed = false;
   const hashed = (file) => /^[a-f0-9]{64}$/.test(file.sha256 || "");
   const key = (file) => {
-    const url = new URL(file.path, baseURL);
+    const url = new URL(file.openzl?.path ?? file.path, baseURL);
     if (hashed(file)) url.searchParams.set("aoikane_sha256", file.sha256);
     return url.href;
   };

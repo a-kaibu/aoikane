@@ -35,7 +35,7 @@ if [ ! -f "$WASM_EXEC" ]; then
 fi
 cp "$WASM_EXEC" "$OUT/wasm_exec.js"
 
-cp web/index.html web/app.js web/model-cache.js web/kernels.js web/vocoder-pool.js web/vocoder-worker.js web/renderer-pool.js web/renderer-worker.js web/style.css web/favicon.svg "$OUT/"
+cp web/index.html web/app.js web/model-cache.js web/openzl.js web/kernels.js web/vocoder-pool.js web/vocoder-worker.js web/renderer-pool.js web/renderer-worker.js web/style.css web/favicon.svg "$OUT/"
 CLANG="${CLANG:-clang}"
 if command -v "$CLANG" >/dev/null && \
   "$CLANG" --target=wasm32 -O3 -msimd128 -mrelaxed-simd -ffp-contract=off -fno-builtin -nostdlib \

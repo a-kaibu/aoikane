@@ -4,17 +4,11 @@ package portable
 
 import (
 	"compress/gzip"
-	"crypto/sha256"
-	"encoding/hex"
 	"errors"
-	"fmt"
 	"io"
-	"io/fs"
 	"os"
 	"path/filepath"
 	"strings"
-
-	"github.com/a-kaibu/aoikane/assets"
 )
 
 // OpenEmbedded opens the engine from the data compiled into the binary. The
@@ -26,24 +20,6 @@ func OpenEmbedded() (*Engine, error) {
 		return nil, err
 	}
 	return Open(Options{AssetsDir: dir})
-}
-
-// embeddedKey identifies the embedded content (names and sizes), so a new
-// build extracts into a new directory.
-func embeddedKey() (string, error) {
-	h := sha256.New()
-	err := fs.WalkDir(assets.FS, ".", func(p string, d fs.DirEntry, err error) error {
-		if err != nil || d.IsDir() {
-			return err
-		}
-		info, err := d.Info()
-		if err != nil {
-			return err
-		}
-		fmt.Fprintf(h, "%s %d\n", p, info.Size())
-		return nil
-	})
-	return hex.EncodeToString(h.Sum(nil))[:16], err
 }
 
 func extractEmbedded() (string, error) {
@@ -61,33 +37,20 @@ func extractEmbedded() (string, error) {
 		expandDictionaries(dir)
 		return dir, nil
 	}
-	tmp := dir + ".tmp"
-	if err := os.RemoveAll(tmp); err != nil {
+	if err := os.MkdirAll(filepath.Dir(dir), 0o755); err != nil {
 		return "", err
 	}
-	err = fs.WalkDir(assets.FS, ".", func(p string, d fs.DirEntry, err error) error {
-		if err != nil {
-			return err
-		}
-		target := filepath.Join(tmp, filepath.FromSlash(p))
-		if d.IsDir() {
-			return os.MkdirAll(target, 0o755)
-		}
-		b, err := assets.FS.ReadFile(p)
-		if err != nil {
-			return err
-		}
-		return os.WriteFile(target, b, 0o644)
-	})
+	tmp, err := os.MkdirTemp(filepath.Dir(dir), key+".tmp-")
 	if err != nil {
+		return "", err
+	}
+	defer os.RemoveAll(tmp)
+	if err := materializeEmbedded(tmp); err != nil {
 		return "", err
 	}
 
 	expandDictionaries(tmp)
 	if err := os.WriteFile(filepath.Join(tmp, ".complete"), nil, 0o644); err != nil {
-		return "", err
-	}
-	if err := os.RemoveAll(dir); err != nil {
 		return "", err
 	}
 	if err := os.Rename(tmp, dir); err != nil {
