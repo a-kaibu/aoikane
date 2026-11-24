@@ -1,0 +1,615 @@
+diff --git a/cmd/aoikane-probe/main.go b/cmd/aoikane-probe/main.go
+new file mode 100644
+index 0000000..908fa78
+--- /dev/null
++++ b/cmd/aoikane-probe/main.go
+@@ -0,0 +1,112 @@
++//go:build !js
++
++package main
++
++import (
++	"context"
++	"encoding/binary"
++	"flag"
++	"fmt"
++	"log/slog"
++	"math"
++	"os"
++	"path/filepath"
++	"time"
++
++	pt "github.com/cwbudde/go-pocket-tts"
++)
++
++func main() {
++	if err := run(); err != nil {
++		fmt.Fprintln(os.Stderr, err)
++		os.Exit(1)
++	}
++}
++
++func run() error {
++	assets := flag.String("assets", "", "directory containing config.yaml, model.safetensors and tokenizer.model")
++	voicePath := flag.String("voice", "", "precomputed voice file (default: embeddings/alba.safetensors under assets)")
++	text := flag.String("text", "", "text to synthesize")
++	out := flag.String("out", "output.wav", "output WAV path")
++	workers := flag.Int("workers", 1, "number of workers")
++	verbose := flag.Bool("verbose", false, "log synthesis stage timings")
++	flag.Parse()
++	if flag.NArg() != 0 || *assets == "" || *text == "" || *workers < 1 {
++		return fmt.Errorf("provide --assets and --text with a positive --workers value")
++	}
++	level := slog.LevelWarn
++	if *verbose {
++		level = slog.LevelDebug
++	}
++	slog.SetLogLoggerLevel(level)
++	pt.SetWorkers(*workers)
++
++	started := time.Now()
++	config, err := os.ReadFile(filepath.Join(*assets, "config.yaml"))
++	if err != nil {
++		return err
++	}
++	weights, err := os.ReadFile(filepath.Join(*assets, "model.safetensors"))
++	if err != nil {
++		return err
++	}
++	tokenizer, err := os.ReadFile(filepath.Join(*assets, "tokenizer.model"))
++	if err != nil {
++		return err
++	}
++	model, err := pt.LoadWithConfig(filepath.Base(*assets), config, weights, tokenizer)
++	if err != nil {
++		return err
++	}
++	defer model.Close()
++	if *voicePath == "" {
++		*voicePath = filepath.Join(*assets, "embeddings", "alba.safetensors")
++	}
++	voiceData, err := os.ReadFile(*voicePath)
++	if err != nil {
++		return err
++	}
++	voice, err := pt.ParseVoice(voiceData)
++	if err != nil {
++		return err
++	}
++	loaded := time.Since(started)
++	started = time.Now()
++	pcm, err := model.Synthesize(context.Background(), *text, voice, model.DefaultOptions())
++	if err != nil {
++		return err
++	}
++	elapsed := time.Since(started)
++	if err := writeWAV(*out, pcm); err != nil {
++		return err
++	}
++	fmt.Printf("load=%.3fs synth=%.3fs audio=%.3fs\n", loaded.Seconds(), elapsed.Seconds(), float64(len(pcm))/pt.SampleRate)
++	return nil
++}
++
++func writeWAV(path string, pcm []float32) error {
++	if len(pcm) == 0 || uint64(len(pcm)) > (math.MaxUint32-36)/2 {
++		return fmt.Errorf("invalid WAV sample count %d", len(pcm))
++	}
++	bytes := make([]byte, 0, 44+2*len(pcm))
++	bytes = append(bytes, "RIFF"...)
++	bytes = binary.LittleEndian.AppendUint32(bytes, uint32(36+2*len(pcm)))
++	bytes = append(bytes, "WAVEfmt "...)
++	bytes = binary.LittleEndian.AppendUint32(bytes, 16)
++	bytes = binary.LittleEndian.AppendUint16(bytes, 1) // PCM
++	bytes = binary.LittleEndian.AppendUint16(bytes, 1) // mono
++	bytes = binary.LittleEndian.AppendUint32(bytes, pt.SampleRate)
++	bytes = binary.LittleEndian.AppendUint32(bytes, 2*pt.SampleRate)
++	bytes = binary.LittleEndian.AppendUint16(bytes, 2)  // bytes per sample
++	bytes = binary.LittleEndian.AppendUint16(bytes, 16) // bits per sample
++	bytes = append(bytes, "data"...)
++	bytes = binary.LittleEndian.AppendUint32(bytes, uint32(2*len(pcm)))
++	for _, x := range pcm {
++		if math.IsNaN(float64(x)) || math.IsInf(float64(x), 0) {
++			return fmt.Errorf("synthesis produced a non-finite sample")
++		}
++		sample := int16(math.Round(math.Max(-1, math.Min(1, float64(x))) * 32767))
++		bytes = binary.LittleEndian.AppendUint16(bytes, uint16(sample))
++	}
++	return os.WriteFile(path, bytes, 0600)
++}
+diff --git a/cmd/aoikane-probe/main_js.go b/cmd/aoikane-probe/main_js.go
+new file mode 100644
+index 0000000..0a75d72
+--- /dev/null
++++ b/cmd/aoikane-probe/main_js.go
+@@ -0,0 +1,57 @@
++package main
++
++import (
++	"context"
++	"encoding/json"
++	"syscall/js"
++	"time"
++
++	pt "github.com/cwbudde/go-pocket-tts"
++)
++
++func main() {
++	result, err := measure()
++	if err != nil {
++		js.Global().Set("pocketProbeError", err.Error())
++		return
++	}
++	js.Global().Set("pocketProbeResult", string(result))
++}
++
++func measure() ([]byte, error) {
++	input := js.Global().Get("pocketProbeInput")
++	bytes := func(key string) []byte {
++		data := input.Get(key)
++		out := make([]byte, data.Length())
++		js.CopyBytesToGo(out, data)
++		return out
++	}
++	weights, tokenizer, state := bytes("weights"), bytes("tokenizer"), bytes("voice")
++	started := time.Now()
++	model, err := pt.LoadWithConfig(input.Get("model").String(), bytes("config"), weights, tokenizer)
++	if err != nil {
++		return nil, err
++	}
++	defer model.Close()
++	voice, err := pt.ParseVoice(state)
++	if err != nil {
++		return nil, err
++	}
++	load := time.Since(started).Seconds()
++	type run struct{ Seconds, AudioSeconds, RTF float64 }
++	runs := make([]run, 0, 3)
++	for range 3 {
++		started = time.Now()
++		pcm, err := model.Synthesize(context.Background(), input.Get("text").String(), voice, model.DefaultOptions())
++		if err != nil {
++			return nil, err
++		}
++		seconds := time.Since(started).Seconds()
++		audio := float64(len(pcm)) / pt.SampleRate
++		runs = append(runs, run{seconds, audio, seconds / audio})
++	}
++	return json.Marshal(struct {
++		LoadSeconds float64
++		Runs        []run
++	}{load, runs})
++}
+diff --git a/engine.go b/engine.go
+index 6bcf85d..cdd04fc 100644
+--- a/engine.go
++++ b/engine.go
+@@ -63,6 +63,27 @@ func Load(name string, weights, tokenizerData []byte) (*Engine, error) {
+ 		return nil, err
+ 	}
+ 
++	return load(name, cfg, tok, weights)
++}
++
++// LoadWithConfig builds an engine from an upstream YAML config and local assets.
++func LoadWithConfig(name string, config, weights, tokenizerData []byte) (*Engine, error) {
++	defaultWorkers()
++
++	cfg, err := modelcfg.Parse(config)
++	if err != nil {
++		return nil, fmt.Errorf("pockettts: model config: %w", err)
++	}
++
++	tok, err := tokenizer.LoadBytes(tokenizerData, cfg.FlowLM.LookupTable.NBins)
++	if err != nil {
++		return nil, fmt.Errorf("pockettts: load tokenizer: %w", err)
++	}
++
++	return load(name, cfg, tok, weights)
++}
++
++func load(name string, cfg *modelcfg.ModelConfig, tok tokenizer.Tokenizer, weights []byte) (*Engine, error) {
+ 	store, err := safetensors.OpenStoreFromBytes(weights, safetensors.StoreOptions{})
+ 	if err != nil {
+ 		return nil, fmt.Errorf("pockettts: open weights: %w", err)
+@@ -216,7 +237,7 @@ type Progress struct {
+ 
+ // DefaultOptions returns the defaults of the loaded model.
+ func (e *Engine) DefaultOptions() Options {
+-	return Options{Temperature: e.model.DefaultTemperature, EOSThreshold: -4, SamplerSteps: 1}
++	return Options{Temperature: e.model.DefaultTemperature, EOSThreshold: e.model.DefaultEOSThreshold, SamplerSteps: 1}
+ }
+ 
+ func (o Options) validate() error {
+diff --git a/internal/modelcfg/modelcfg.go b/internal/modelcfg/modelcfg.go
+index 6cf9734..c86f97a 100644
+--- a/internal/modelcfg/modelcfg.go
++++ b/internal/modelcfg/modelcfg.go
+@@ -25,6 +25,7 @@ const (
+ 	FlowTypeLSD          = "lsd"
+ 	FlowTypeFlowMatching = "flow_matching"
+ 	FlowTypeDrifting     = "drifting"
++	FlowTypePointwise    = "pointwise"
+ )
+ 
+ // Tokenizer kinds (flow_lm.lookup_table.tokenizer).
+@@ -45,6 +46,7 @@ type ModelConfig struct {
+ 	CapitalizeFirstLetter          bool              `yaml:"capitalize_first_letter"`
+ 	ReplaceCharacters              map[string]string `yaml:"replace_characters"`
+ 	ModelRecommendedFramesAfterEOS *int              `yaml:"model_recommended_frames_after_eos"`
++	DefaultEOSThreshold            float64           `yaml:"default_eos_threshold"`
+ 	DefaultTemperature             float64           `yaml:"default_temperature"`
+ 
+ 	// DefaultVoice, DefaultText and VoicesRevision are not part of the
+@@ -58,6 +60,7 @@ type ModelConfig struct {
+ 
+ // FlowLMConfig is the flow_lm section (upstream: FlowLMConfig).
+ type FlowLMConfig struct {
++	ZDim                 int                     `yaml:"z_dim"`
+ 	DType                string                  `yaml:"dtype"`
+ 	Flow                 FlowConfig              `yaml:"flow"`
+ 	Transformer          FlowLMTransformerConfig `yaml:"transformer"`
+@@ -75,15 +78,19 @@ type FlowConfig struct {
+ 
+ // FlowLMTransformerConfig is the FlowLM backbone (upstream: FlowLMTransformerConfig).
+ type FlowLMTransformerConfig struct {
+-	HiddenScale int `yaml:"hidden_scale"`
+-	MaxPeriod   int `yaml:"max_period"`
+-	DModel      int `yaml:"d_model"`
+-	NumHeads    int `yaml:"num_heads"`
+-	NumLayers   int `yaml:"num_layers"`
++	AttnDim        int `yaml:"attn_dim"`
++	NumKVHeads     int `yaml:"num_kv_heads"`
++	HiddenScale    int `yaml:"hidden_scale"`
++	DimFeedforward int `yaml:"dim_feedforward"`
++	MaxPeriod      int `yaml:"max_period"`
++	DModel         int `yaml:"d_model"`
++	NumHeads       int `yaml:"num_heads"`
++	NumLayers      int `yaml:"num_layers"`
+ }
+ 
+ // LookupTableConfig is the text conditioner (upstream: LookupTable).
+ type LookupTableConfig struct {
++	Rank          int    `yaml:"rank"`
+ 	Dim           int    `yaml:"dim"`
+ 	NBins         int    `yaml:"n_bins"`
+ 	Tokenizer     string `yaml:"tokenizer"`
+@@ -92,16 +99,18 @@ type LookupTableConfig struct {
+ 
+ // MimiConfig is the mimi section (upstream: MimiConfig).
+ type MimiConfig struct {
+-	DType       string                `yaml:"dtype"`
+-	SampleRate  int                   `yaml:"sample_rate"`
+-	Channels    int                   `yaml:"channels"`
+-	FrameRate   float64               `yaml:"frame_rate"`
+-	SEANet      SEANetConfig          `yaml:"seanet"`
+-	Transformer MimiTransformerConfig `yaml:"transformer"`
+-	Quantizer   QuantizerConfig       `yaml:"quantizer"`
+-	WeightsPath string                `yaml:"weights_path"`
+-	InnerDim    *int                  `yaml:"inner_dim"`
+-	OuterDim    *int                  `yaml:"outer_dim"`
++	DecoderSEANet      *SEANetConfig          `yaml:"decoder_seanet"`
++	DType              string                 `yaml:"dtype"`
++	SampleRate         int                    `yaml:"sample_rate"`
++	Channels           int                    `yaml:"channels"`
++	FrameRate          float64                `yaml:"frame_rate"`
++	SEANet             SEANetConfig           `yaml:"seanet"`
++	DecoderTransformer *MimiTransformerConfig `yaml:"decoder_transformer"`
++	Transformer        MimiTransformerConfig  `yaml:"transformer"`
++	Quantizer          QuantizerConfig        `yaml:"quantizer"`
++	WeightsPath        string                 `yaml:"weights_path"`
++	InnerDim           *int                   `yaml:"inner_dim"`
++	OuterDim           *int                   `yaml:"outer_dim"`
+ }
+ 
+ // SEANetConfig is the Mimi convolutional encoder/decoder (upstream: SEANetConfig).
+@@ -192,6 +201,7 @@ func defaults() ModelConfig {
+ 		},
+ 		AppendTerminalPunctuation: true,
+ 		CapitalizeFirstLetter:     true,
++		DefaultEOSThreshold:       -4,
+ 		DefaultTemperature:        0.3,
+ 	}
+ }
+@@ -274,9 +284,9 @@ func (c *ModelConfig) Validate() error {
+ 			c.FlowLM.LookupTable.NBins))
+ 	}
+ 
+-	if !slices.Contains([]string{FlowTypeLSD, FlowTypeFlowMatching, FlowTypeDrifting}, c.FlowLM.Flow.Type) {
+-		errs = append(errs, fmt.Errorf("flow_lm.flow.type %q: want %q, %q or %q",
+-			c.FlowLM.Flow.Type, FlowTypeLSD, FlowTypeFlowMatching, FlowTypeDrifting))
++	if !slices.Contains([]string{FlowTypeLSD, FlowTypeFlowMatching, FlowTypeDrifting, FlowTypePointwise}, c.FlowLM.Flow.Type) {
++		errs = append(errs, fmt.Errorf("flow_lm.flow.type %q: want %q, %q, %q or %q",
++			c.FlowLM.Flow.Type, FlowTypeLSD, FlowTypeFlowMatching, FlowTypeDrifting, FlowTypePointwise))
+ 	}
+ 
+ 	if !slices.Contains([]string{TokenizerSentencePiece, TokenizerTokenizers}, c.FlowLM.LookupTable.Tokenizer) {
+diff --git a/internal/native/conditioner.go b/internal/native/conditioner.go
+index aa8d5fe..1df8cd9 100644
+--- a/internal/native/conditioner.go
++++ b/internal/native/conditioner.go
+@@ -11,6 +11,7 @@ import (
+ type LUTConditioner struct {
+ 	embed *tensor.Tensor // [n_bins+1, d_model]
+ 	dim   int64
++	proj  *Linear
+ }
+ 
+ func loadLUTConditioner(vb *VarBuilder) (*LUTConditioner, error) {
+@@ -24,7 +25,15 @@ func loadLUTConditioner(vb *VarBuilder) (*LUTConditioner, error) {
+ 		return nil, fmt.Errorf("native: conditioner embed must be rank-2, got %v", shape)
+ 	}
+ 
+-	return &LUTConditioner{embed: embed, dim: shape[1]}, nil
++	c := &LUTConditioner{embed: embed, dim: shape[1]}
++	if vb.Has("conditioner.proj.weight") {
++		proj, err := loadLinear(vb, "conditioner.proj", false)
++		if err != nil {
++			return nil, err
++		}
++		c.proj, c.dim = proj, proj.Weight.Shape()[0]
++	}
++	return c, nil
+ }
+ 
+ // EmbedTokens returns [1, T, D] text embeddings.
+@@ -49,5 +58,11 @@ func (c *LUTConditioner) EmbedTokens(tokenIDs []int64) (*tensor.Tensor, error) {
+ 		return nil, err
+ 	}
+ 
++	if c.proj != nil {
++		g, err = c.proj.Forward(g)
++		if err != nil {
++			return nil, err
++		}
++	}
+ 	return g.Reshape([]int64{1, int64(len(tokenIDs)), c.dim})
+ }
+diff --git a/internal/native/flow_lm.go b/internal/native/flow_lm.go
+index a4a6369..8478e58 100644
+--- a/internal/native/flow_lm.go
++++ b/internal/native/flow_lm.go
+@@ -46,7 +46,7 @@ func checkFlowTimeConds(flowType string, got int) error {
+ 		want = 2
+ 	case modelcfg.FlowTypeFlowMatching:
+ 		want = 1
+-	case modelcfg.FlowTypeDrifting:
++	case modelcfg.FlowTypeDrifting, modelcfg.FlowTypePointwise:
+ 		want = 0
+ 	default:
+ 		return fmt.Errorf("native: unknown flow type %q", flowType)
+@@ -70,7 +70,8 @@ type FlowLM struct {
+ 	bosEmb    *tensor.Tensor // [32]
+ 	inputProj *Linear        // flow_lm.input_linear
+ 	outNorm   *LayerNorm     // flow_lm.out_norm
+-	outEOS    *Linear        // flow_lm.out_eos
++	zProj     *Linear
++	outEOS    *Linear // flow_lm.out_eos
+ 
+ 	bosBeforeVoice *tensor.Tensor // [1, 1, DModel]; nil unless cfg.InsertBOSBeforeVoice
+ 
+@@ -149,7 +150,16 @@ func LoadFlowLM(vb *VarBuilder, cfg FlowLMConfig) (*FlowLM, error) {
+ 		return nil, err
+ 	}
+ 
++	var zProj *Linear
++	if flow.Has("z_proj.weight") {
++		zProj, err = loadLinear(flow, "z_proj", false)
++		if err != nil {
++			return nil, err
++		}
++	}
++
+ 	return &FlowLM{
++		zProj:       zProj,
+ 		conditioner: conditioner,
+ 		transformer: transformer,
+ 		flowNet:     flowNet,
+@@ -296,6 +306,12 @@ func (f *FlowLM) FlowMain(sequence, textEmbeddings *tensor.Tensor) (*tensor.Tens
+ 		return nil, nil, err
+ 	}
+ 
++	if f.zProj != nil {
++		last, err = f.zProj.Forward(last)
++		if err != nil {
++			return nil, nil, err
++		}
++	}
+ 	eos, err := f.outEOS.Forward(last)
+ 	if err != nil {
+ 		return nil, nil, err
+@@ -341,6 +357,12 @@ func (f *FlowLM) SampleNextLatentStateful(state *FlowLMState, sequenceFrame *ten
+ 		return nil, false, err
+ 	}
+ 
++	if f.zProj != nil {
++		last, err = f.zProj.Forward(last)
++		if err != nil {
++			return nil, false, err
++		}
++	}
+ 	eos, err := f.outEOS.Forward(last)
+ 	if err != nil {
+ 		return nil, false, err
+@@ -518,6 +540,12 @@ func (f *FlowLM) decode(condition, x0 *tensor.Tensor, steps int) (*tensor.Tensor
+ 		return f.OTDecode(condition, x0, steps)
+ 	case modelcfg.FlowTypeDrifting:
+ 		return f.DriftingDecode(condition, x0)
++	case modelcfg.FlowTypePointwise:
++		delta, err := f.DriftingDecode(condition, x0)
++		if err != nil {
++			return nil, err
++		}
++		return addSameShape(x0, delta)
+ 	default:
+ 		return nil, fmt.Errorf("native: unknown flow type %q", f.cfg.FlowType)
+ 	}
+diff --git a/internal/native/flow_transformer.go b/internal/native/flow_transformer.go
+index d9fb6a0..ad64945 100644
+--- a/internal/native/flow_transformer.go
++++ b/internal/native/flow_transformer.go
+@@ -12,14 +12,15 @@ import (
+ )
+ 
+ type flowTransformerLayer struct {
+-	norm1   *LayerNorm
+-	norm2   *LayerNorm
+-	inProj  *Linear // self_attn.in_proj
+-	outProj *Linear // self_attn.out_proj
+-	linear1 *Linear
+-	linear2 *Linear
+-	nHeads  int64
+-	headDim int64
++	norm1    *LayerNorm
++	norm2    *LayerNorm
++	inProj   *Linear // self_attn.in_proj
++	outProj  *Linear // self_attn.out_proj
++	linear1  *Linear
++	linear2  *Linear
++	nHeads   int64
++	nKVHeads int64
++	headDim  int64
+ }
+ 
+ type flowTransformerLayerState struct {
+@@ -139,20 +140,42 @@ func loadFlowTransformerLayer(vb *VarBuilder, nHeads int64) (*flowTransformerLay
+ 		return nil, err
+ 	}
+ 
+-	dModel := outProj.Weight.Shape()[0]
+-	if dModel%nHeads != 0 {
+-		return nil, fmt.Errorf("native: d_model %d not divisible by num_heads %d", dModel, nHeads)
++	attnDim := outProj.inDim
++	if nHeads <= 0 || attnDim%nHeads != 0 {
++		return nil, fmt.Errorf("native: invalid attention width %d or head count %d", attnDim, nHeads)
++	}
++	headDim := attnDim / nHeads
++	kvDim := (inProj.outDim - attnDim) / 2
++	nKVHeads := kvDim / headDim
++	if nKVHeads <= 0 || nHeads%nKVHeads != 0 || kvDim%headDim != 0 || inProj.outDim != attnDim+2*kvDim {
++		return nil, fmt.Errorf("native: invalid grouped QKV projection width %d", inProj.outDim)
++	}
++	if nKVHeads != nHeads {
++		// Expand shared weights once so existing attention kernels can be reused.
++		rows := make([]int64, 3*attnDim)
++		for i := range attnDim {
++			rows[i] = i
++			shared := (i/headDim)/(nHeads/nKVHeads)*headDim + i%headDim
++			rows[attnDim+i] = attnDim + shared
++			rows[2*attnDim+i] = attnDim + kvDim + shared
++		}
++		inProj.Weight, err = inProj.Weight.Gather(0, rows)
++		if err != nil {
++			return nil, err
++		}
++		inProj.outDim = 3 * attnDim
+ 	}
+ 
+ 	return &flowTransformerLayer{
+-		norm1:   norm1,
+-		norm2:   norm2,
+-		inProj:  inProj,
+-		outProj: outProj,
+-		linear1: linear1,
+-		linear2: linear2,
+-		nHeads:  nHeads,
+-		headDim: dModel / nHeads,
++		norm1:    norm1,
++		norm2:    norm2,
++		inProj:   inProj,
++		outProj:  outProj,
++		linear1:  linear1,
++		linear2:  linear2,
++		nHeads:   nHeads,
++		headDim:  headDim,
++		nKVHeads: nKVHeads,
+ 	}, nil
+ }
+ 
+@@ -585,8 +608,12 @@ func splitVoiceKVCache(moduleName string, cache *safetensors.Tensor, layer *flow
+ 	}
+ 
+ 	if layer != nil {
+-		if layer.nHeads != 0 && heads != layer.nHeads {
+-			return nil, nil, fmt.Errorf("native: voice model state module %q heads %d, want %d", moduleName, heads, layer.nHeads)
++		expectedHeads := layer.nKVHeads
++		if expectedHeads == 0 {
++			expectedHeads = layer.nHeads
++		}
++		if expectedHeads != 0 && heads != expectedHeads {
++			return nil, nil, fmt.Errorf("native: voice model state module %q heads %d, want %d", moduleName, heads, expectedHeads)
+ 		}
+ 
+ 		if layer.headDim != 0 && headDim != layer.headDim {
+@@ -599,17 +626,22 @@ func splitVoiceKVCache(moduleName string, cache *safetensors.Tensor, layer *flow
+ 		return nil, nil, fmt.Errorf("native: voice model state module %q cache data length %d, want %d", moduleName, len(cache.Data), want)
+ 	}
+ 
+-	outLen := int(b * heads * steps * headDim)
++	queryHeads := heads
++	if layer != nil && layer.nHeads > 0 {
++		queryHeads = layer.nHeads
++	}
++	outLen := int(b * queryHeads * steps * headDim)
+ 	kData := make([]float32, outLen)
+ 	vData := make([]float32, outLen)
+ 
+ 	for batch := range b {
+ 		for step := range steps {
+-			for head := range heads {
++			for head := range queryHeads {
++				shared := head / (queryHeads / heads)
+ 				for dim := range headDim {
+-					dst := (((batch*heads+head)*steps+step)*headDim + dim)
+-					kSrc := voiceKVIndex(0, batch, step, head, dim, b, steps, heads, headDim)
+-					vSrc := voiceKVIndex(1, batch, step, head, dim, b, steps, heads, headDim)
++					dst := (((batch*queryHeads+head)*steps+step)*headDim + dim)
++					kSrc := voiceKVIndex(0, batch, step, shared, dim, b, steps, heads, headDim)
++					vSrc := voiceKVIndex(1, batch, step, shared, dim, b, steps, heads, headDim)
+ 					kData[dst] = cache.Data[kSrc]
+ 					vData[dst] = cache.Data[vSrc]
+ 				}
+@@ -617,12 +649,12 @@ func splitVoiceKVCache(moduleName string, cache *safetensors.Tensor, layer *flow
+ 		}
+ 	}
+ 
+-	k, err := tensor.New(kData, []int64{b, heads, steps, headDim})
++	k, err := tensor.New(kData, []int64{b, queryHeads, steps, headDim})
+ 	if err != nil {
+ 		return nil, nil, err
+ 	}
+ 
+-	v, err := tensor.New(vData, []int64{b, heads, steps, headDim})
++	v, err := tensor.New(vData, []int64{b, queryHeads, steps, headDim})
+ 	if err != nil {
+ 		return nil, nil, err
+ 	}
+diff --git a/internal/native/mimi.go b/internal/native/mimi.go
+index 25b5cea..ea6a926 100644
+--- a/internal/native/mimi.go
++++ b/internal/native/mimi.go
+@@ -562,7 +562,7 @@ func LoadMimiModel(vb *VarBuilder, cfg MimiConfig) (*MimiModel, error) {
+ 		return nil, err
+ 	}
+ 
+-	upsample, err := loadConvTr1D(mimi.Path("upsample", "convtr", "convtr"), int64(cfg.MimiStepsPerLatent()), 512, false)
++	upsample, err := loadConvTr1D(mimi.Path("upsample", "convtr", "convtr"), int64(cfg.MimiStepsPerLatent()), quant.weight.Shape()[0], false)
+ 	if err != nil {
+ 		return nil, err
+ 	}
+diff --git a/internal/native/model.go b/internal/native/model.go
+index c065229..a058224 100644
+--- a/internal/native/model.go
++++ b/internal/native/model.go
+@@ -30,6 +30,12 @@ func ConfigFor(mc *modelcfg.ModelConfig) Config {
+ 	if mc != nil {
+ 		cfg.FlowLM.InsertBOSBeforeVoice = mc.FlowLM.InsertBOSBeforeVoice
+ 		cfg.FlowLM.FlowType = mc.FlowLM.Flow.Type
++		cfg.FlowLM.NumHeads = int64(mc.FlowLM.Transformer.NumHeads)
++		cfg.FlowLM.DModel = int64(mc.FlowLM.Transformer.DModel)
++		if dec := mc.Mimi.DecoderTransformer; dec != nil {
++			cfg.Mimi.NumHeads = int64(dec.NumHeads)
++			cfg.Mimi.Context = int64(dec.Context)
++		}
+ 	}
+ 
+ 	return cfg

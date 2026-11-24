@@ -1,0 +1,23 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Pocket TTS Go WASM benchmark</title>
+<script src="wasm_exec.js"></script>
+<script type="module">
+window.runPocketProbe = async (model, text) => {
+  const root = "model/languages/" + encodeURIComponent(model) + "/";
+  const read = async (name) => {
+    const response = await fetch(root + name);
+    if (!response.ok) throw new Error(name + ": HTTP " + response.status);
+    return new Uint8Array(await response.arrayBuffer());
+  };
+  const [weights, tokenizer, voice, config] = await Promise.all([
+    read("model.safetensors"), read("tokenizer.model"), read("embeddings/alba.safetensors"), read("config.yaml"),
+  ]);
+  window.pocketProbeInput = {weights, tokenizer, voice, config, model, text};
+  const go = new Go();
+  const {instance} = await WebAssembly.instantiateStreaming(fetch("go-probe.wasm"), go.importObject);
+  await go.run(instance);
+  if (window.pocketProbeError) throw new Error(window.pocketProbeError);
+  return JSON.parse(window.pocketProbeResult);
+};
+</script>

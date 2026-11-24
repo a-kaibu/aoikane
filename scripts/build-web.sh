@@ -35,7 +35,7 @@ if [ ! -f "$WASM_EXEC" ]; then
 fi
 cp "$WASM_EXEC" "$OUT/wasm_exec.js"
 
-cp web/index.html web/app.js web/model-cache.js web/openzl.js web/kernels.js web/vocoder-pool.js web/vocoder-worker.js web/renderer-pool.js web/renderer-worker.js web/style.css web/favicon.svg "$OUT/"
+cp web/index.html web/app.js web/english-worker.js web/model-cache.js web/openzl.js web/kernels.js web/vocoder-pool.js web/vocoder-worker.js web/renderer-pool.js web/renderer-worker.js web/style.css web/favicon.svg "$OUT/"
 CLANG="${CLANG:-clang}"
 if command -v "$CLANG" >/dev/null && \
   "$CLANG" --target=wasm32 -O3 -msimd128 -mrelaxed-simd -ffp-contract=off -fno-builtin -nostdlib \
@@ -53,6 +53,23 @@ for dir in boundmodel cabocha data dict dict-kansai rules synth; do
   cp -R "assets/${dir}" "$OUT/assets/${dir}"
 done
 
+ENGLISH_ASSETS="${AOIKANE_ENGLISH_ASSETS:-assets/english}"
+if [[ -n "${AOIKANE_ENGLISH_ASSETS:-}" || -f "$ENGLISH_ASSETS/model.safetensors" ]]; then
+  mkdir -p "$OUT/assets/english/voices"
+  cp "$ENGLISH_ASSETS/model.safetensors" "$ENGLISH_ASSETS/tokenizer.model" "$OUT/assets/english/"
+  found_voice=0
+  for voice in alba aoi akane; do
+    if [[ -f "$ENGLISH_ASSETS/voices/$voice.safetensors" ]]; then
+      cp "$ENGLISH_ASSETS/voices/$voice.safetensors" "$OUT/assets/english/voices/"
+      found_voice=1
+    fi
+  done
+  if [[ "$found_voice" = 0 ]]; then
+    echo "No Pocket TTS voice files in $ENGLISH_ASSETS/voices" >&2
+    exit 1
+  fi
+fi
+
 python3 - "$OUT" "$VERSION" <<'PY'
 import json
 import hashlib
@@ -65,7 +82,12 @@ for root, _, names in os.walk(os.path.join(out, "assets")):
     for name in sorted(names):
         full = os.path.join(root, name)
         rel = os.path.relpath(full, out).replace(os.sep, "/")
-        group = "akane" if rel.startswith("assets/dict-kansai/") else "shared"
+        if rel.startswith("assets/english/voices/"):
+            group = "en-" + os.path.splitext(name)[0]
+        elif rel.startswith("assets/english/"):
+            group = "english"
+        else:
+            group = "akane" if rel.startswith("assets/dict-kansai/") else "shared"
         with open(full, "rb") as model:
             digest = hashlib.sha256()
             for chunk in iter(lambda: model.read(1 << 20), b""):

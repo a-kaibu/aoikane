@@ -1,0 +1,54 @@
+diff --git a/capture_engine.go b/capture_engine.go
+index 015865f..7d74774 100644
+--- a/capture_engine.go
++++ b/capture_engine.go
+@@ -8,6 +8,8 @@ import (
+ 	"encoding/json"
+ 	"fmt"
+ 	"math"
++	"os"
++	"time"
+ 	"path/filepath"
+ 	"runtime"
+ 	"sync"
+@@ -321,6 +323,7 @@ func (e *Engine) Render(ctx context.Context, input Input) ([]byte, error) {
+ // vocode runs the vocoder for acoustic frames [start, end).
+ func (e *Engine) vocode(acoustic []modelOutput, start, end int) ([]float32, error) {
+ 	var inputs []modelTensor
++	inputValues := map[string][]float32{}
+ 	for _, p := range []struct {
+ 		index, channels int
+ 		name            string
+@@ -334,6 +337,7 @@ func (e *Engine) vocode(acoustic []modelOutput, start, end int) ([]float32, erro
+ 			return nil, err
+ 		}
+ 		inputs = append(inputs, t)
++		inputValues[p.name] = v
+ 	}
+ 	// Only the vocoder may reorder accumulation: FeatNet's durations and
+ 	// pitch amplify small differences, while the vocoder keeps them within
+@@ -345,6 +349,7 @@ func (e *Engine) vocode(acoustic []modelOutput, start, end int) ([]float32, erro
+ 			return wave, nil
+ 		}
+ 	}
++	started := time.Now()
+ 	wave, err := runOriginalModelWithProfile(e.vocoder, inputs, []string{"wave"}, profile)
+ 	if err != nil {
+ 		return nil, err
+@@ -352,5 +357,16 @@ func (e *Engine) vocode(acoustic []modelOutput, start, end int) ([]float32, erro
+ 	if len(wave) != 1 || len(wave[0].Data) != (end-start)*240 {
+ 		return nil, fmt.Errorf("invalid vocoder waveform length")
+ 	}
++	if dir := os.Getenv("AOIKANE_VOCODER_FIXTURES"); dir != "" {
++		data, err := json.Marshal(struct {
++			Frames int
++			Inputs map[string][]float32
++			Wave []float32
++			Seconds float64
++		}{end-start, inputValues, wave[0].Data, time.Since(started).Seconds()})
++		if err != nil { return nil, err }
++		err = os.WriteFile(filepath.Join(dir, fmt.Sprintf("%05d-%05d.json",start,end)), data, 0600)
++		if err != nil { return nil, err }
++	}
+ 	return wave[0].Data, nil
+ }

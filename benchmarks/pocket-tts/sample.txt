@@ -1,0 +1,1 @@
+The quick brown fox jumps over the lazy dog. This is the first English speech synthesis test for Aoikane. A lightweight model should be able to pronounce numbers like twenty-four and ninety-seven without losing its natural rhythm.

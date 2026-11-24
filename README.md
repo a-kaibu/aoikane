@@ -35,6 +35,29 @@ aoikane --help
 `--srt` / `--vtt`も音声と同じ名前が既定で、明示的なパスも指定できる。
 `--rate`、`--pitch`、`--volume`、`--emphasis`で速度・高さ・音量・抑揚を調整できる。
 
+## 英語音声
+
+Pocket TTS 6.9M REFLを使用する。Aoikaneのリポジトリルートで、Hugging Face CLI（`hf`）とPythonを使ってモデルとAlbaの事前計算済み声質を取得する。
+
+```sh
+python scripts/prepare-english.py
+aoikane synth --language en --text "Hello from Aoikane." -o english.wav --srt --vtt
+aoikane synth --voice en-alba --text "Hello from Aoikane." -o english.mp3
+```
+
+英語合成はPure Goで動作し、Pythonと`hf`は資産の準備時だけ使う。モデルの既定の配置先は`assets/english`。別の場所を使う場合は、`--english-assets DIR`か`AOIKANE_ENGLISH_ASSETS`を指定する。英語は24 kHzのWAVを出力でき、MP3変換も使える。英語で調整できるのは音量で、速度・高さ・抑揚は既定値を使う。
+
+HTTPでは`GET /v1/voices`にインストール済みの声が現れ、`POST /v1/synthesize`のJSONで`"voice": "en-alba"`を指定する。ブラウザ版は、上記の資産を準備してから`./scripts/build-web.sh`を実行すると声一覧にAlbaが現れる。英語の資産は英語の声を選んで合成したときに読み込む。ブラウザではWeb Workerが英語を合成する。複数のチャンクがある場合は、端末のCPUとメモリに応じて最大4ワーカーで並列処理する。
+
+利用許諾のある参照音声がある場合は、KyutaiのPocket TTSで同じモデルから声質を事前計算できる。`assets/english/voices/`に`aoi.safetensors`や`akane.safetensors`として保存すると、それぞれ`en-aoi`と`en-akane`を使える。
+
+```sh
+pocket-tts export-voice --language english_7m_refl_2026-10 reference.wav assets/english/voices/aoi.safetensors
+aoikane synth --language en --voice aoi --text "Good morning." -o english-aoi.wav
+```
+
+[公式モデル](https://huggingface.co/kyutai/pocket-tts-without-voice-cloning) · [公式エクスポートツール](https://github.com/kyutai-labs/pocket-tts/releases/tag/v4.0.1)
+
 ## HTTP API
 
 ```sh
@@ -68,7 +91,7 @@ python3 -m http.server 8000
 WASM本体だけなら `aoikane_<version>.wasm` も添付しているが、実行にはGoランタイムとモデル等が別途必要になる。
 旧版のZIPは、展開後にモデルを準備せずHTTPサーバーを起動できる。
 
-ソースからビルドする場合は、モデルの準備は不要。
+日本語音声は、ソースからビルドすればそのまま利用できる。
 
 ```sh
 ./scripts/build-web.sh

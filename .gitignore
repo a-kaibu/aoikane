@@ -9,3 +9,5 @@ __pycache__/
 /dist/
 /aoikane-wasm
 /assets/compact/
+
+/assets/english/

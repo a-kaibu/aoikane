@@ -15,7 +15,7 @@ import (
 // checking the sync bytes. This catches Shine's MPEG-1 mono size regression.
 func TestMP3Frames(t *testing.T) {
 	for _, channels := range []int{1, 2} {
-		for _, rate := range []int{32000, 44100, 48000} {
+		for _, rate := range []int{24000, 32000, 44100, 48000} {
 			t.Run(strconv.Itoa(channels)+"ch-"+strconv.Itoa(rate), func(t *testing.T) {
 				var input bytes.Buffer
 				enc := wav.NewEncoder(&memoryFile{Buffer: &input}, rate, 16, channels, 1)
@@ -32,6 +32,10 @@ func TestMP3Frames(t *testing.T) {
 				out, e := Convert(input.Bytes(), "mp3")
 				if e != nil {
 					t.Fatal(e)
+				}
+				wantRate := rate
+				if rate == 24000 {
+					wantRate = 48000
 				}
 				frames := 0
 				for off := 0; off < len(out); {
@@ -59,7 +63,7 @@ func TestMP3Frames(t *testing.T) {
 							sampleRate /= 2
 						}
 					}
-					if sampleRate != rate {
+					if sampleRate != wantRate {
 						t.Fatalf("wrong sample rate %d", sampleRate)
 					}
 					mono := h>>6&3 == 3

@@ -1,0 +1,33 @@
+diff --git a/internal/onnxgomlx/graph.go b/internal/onnxgomlx/graph.go
+index db15d2e..1a8e38f 100644
+--- a/internal/onnxgomlx/graph.go
++++ b/internal/onnxgomlx/graph.go
+@@ -2,6 +2,7 @@ package onnxgomlx
+ 
+ import (
+ 	"fmt"
++	"github.com/gomlx/compute/dtypes"
+ 	"maps"
+ 	"runtime"
+ 
+@@ -527,6 +528,20 @@ func (m *Model) convertNode(scope *model.Scope, g *Graph, node *protos.NodeProto
+ 		} else {
+ 			result = Floor(inputs[0])
+ 		}
++	case "Round":
++		result = Round(inputs[0])
++	case "EyeLike":
++		x := inputs[0]
++		if x.Rank() != 2 {
++			exceptions.Panicf("EyeLike requires a rank-2 input, got %s", x.Shape())
++		}
++		indices := ConvertDType(x, dtypes.Int64)
++		rows, cols := IotaLike(indices, 0), IotaLike(indices, 1)
++		offset := GetIntAttrOr(node, "k", 0)
++		if offset != 0 {
++			rows = AddScalar(rows, offset)
++		}
++		result = ConvertDType(Equal(rows, cols), GetDTypeAttrOr(node, "dtype", x.DType()))
+ 	case "Identity":
+ 		result = Identity(inputs[0])
+ 	case "Not":

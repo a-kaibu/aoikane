@@ -5,6 +5,7 @@ import { createModelCache } from "./model-cache.js";
 
 const WASM_URL = "./aoikane.wasm";
 const MANIFEST_URL = "./manifest.json";
+const englishVoices = new Map([["en-alba", "Alba（英語）"], ["en-aoi", "葵（英語）"], ["en-akane", "茜（英語）"]]);
 
 const els = {
   text: document.querySelector("#text"),
@@ -29,6 +30,7 @@ const sliders = {
 
 const state = {
   aoikane: null,
+  englishRuntime: null,
   manifest: null,
   registered: new Set(),
   audioURL: null,
@@ -60,6 +62,7 @@ for (const [name, [inputSelector, outputSelector]] of Object.entries(sliders)) {
 }
 
 els.voice.addEventListener("change", () => {
+  updateVoiceControls();
   updateModelInfo();
 });
 
@@ -109,6 +112,14 @@ async function boot() {
     }
 
     await state.modelCache.inventory(state.manifest.files);
+    if (state.manifest.files.filter((file) => file.group === "english").length === 2) {
+      for (const [id, label] of englishVoices) {
+        if (state.manifest.files.some((file) => file.group === id)) {
+          els.voice.add(new Option(label, id));
+        }
+      }
+    }
+    updateVoiceControls();
     updateModelInfo();
     els.version.textContent = `aoikane-wasm ${state.aoikane.version}`;
     els.synthesize.disabled = false;
@@ -120,7 +131,17 @@ async function boot() {
 
 function requiredFiles(voice) {
   if (!state.manifest) return [];
+  if (englishVoices.has(voice)) {
+    return state.manifest.files.filter((file) => file.group === "english" || file.group === voice);
+  }
   return state.manifest.files.filter((file) => file.group === "shared" || (voice === "akane" && file.group === "akane"));
+}
+
+function updateVoiceControls() {
+  const isEnglish = englishVoices.has(els.voice.value);
+  for (const name of ["rate", "pitch", "emphasis"]) {
+    sliders[name].disabled = isEnglish;
+  }
 }
 
 function updateModelInfo() {
@@ -142,7 +163,155 @@ function updateModelInfo() {
   }
 }
 
-async function loadModels(voice) {
+function startEnglishWorker(onFatal) {
+  const worker = new Worker(new URL("./english-worker.js", import.meta.url), { type: "module" });
+  let nextID = 0;
+  const pending = new Map();
+  const close = (error) => {
+    worker.terminate();
+    for (const { reject } of pending.values()) reject(error);
+    pending.clear();
+  };
+  const fail = (message) => onFatal(new Error(message));
+  worker.onerror = (event) => fail(event.message || "英語合成ワーカーが停止しました");
+  worker.onmessageerror = () => fail("英語合成ワーカーの応答を読み取れませんでした");
+  worker.onmessage = ({ data }) => {
+    if (data.fatal) {
+      fail(data.fatal);
+      return;
+    }
+    const job = pending.get(data.id);
+    if (!job) return;
+    pending.delete(data.id);
+    if (data.error) job.reject(new Error(data.error));
+    else job.resolve(data.result);
+  };
+  const call = (method, args, transfer = []) => new Promise((resolve, reject) => {
+    const id = nextID++;
+    pending.set(id, { resolve, reject });
+    try { worker.postMessage({ id, method, args }, transfer); }
+    catch (error) { fail(error.message); }
+  });
+  return { call, close };
+}
+
+async function startEnglishRuntime() {
+  const cores = navigator.hardwareConcurrency || 1;
+  const memory = navigator.deviceMemory || 4;
+  const limit = memory < 4 ? 1 : Math.max(1, Math.min(memory >= 8 ? 4 : 2, Math.floor(cores / 2)));
+  const workers = [];
+  const assets = new Map();
+  let failed;
+  const fail = (error) => {
+    if (failed) return;
+    failed = error;
+    for (const worker of workers) worker.close(error);
+    assets.clear();
+    state.englishRuntime = null;
+    for (const path of state.registered) {
+      if (path.startsWith("assets/english/")) state.registered.delete(path);
+    }
+  };
+  const register = (worker, name, original) => {
+    const bytes = original.slice();
+    return worker.call("registerAsset", [name, bytes], [bytes.buffer]);
+  };
+  const addWorker = async (primary) => {
+    if (failed) throw failed;
+    const remove = (error) => {
+      worker.close(error);
+      const index = workers.indexOf(worker);
+      if (index >= 0) workers.splice(index, 1);
+    };
+    const worker = startEnglishWorker(primary ? fail : remove);
+    workers.push(worker);
+    try {
+      await worker.call("init", [state.module]);
+      for (const [name, bytes] of assets) {
+        if (!(await register(worker, name, bytes))) throw new Error("英語のモデルを登録できませんでした");
+      }
+      return worker;
+    } catch (error) {
+      remove(error);
+      throw error;
+    }
+  };
+
+  let first;
+  try { first = await addWorker(true); }
+  catch (error) { fail(error); throw error; }
+  return {
+    registerAsset: async (name, bytes) => {
+      const accepted = await Promise.all(workers.map((worker) => register(worker, name, bytes)));
+      if (!accepted.every(Boolean)) return false;
+      if (limit > 1) assets.set(name, bytes);
+      return true;
+    },
+    warmup: (voice) => Promise.all(workers.map((worker) => worker.call("warmup", [voice]))),
+    synthesize: async (requestJSON) => {
+      if (limit === 1) return first.call("synthesize", [requestJSON]);
+      const chunks = JSON.parse(await first.call("prepareEnglish", [requestJSON]));
+      if (chunks.length === 1) return first.call("synthesize", [requestJSON]);
+
+      const request = JSON.parse(requestJSON);
+      const count = Math.min(chunks.length, limit);
+      await Promise.allSettled(Array.from({ length: Math.max(0, count - workers.length) }, async () => {
+        const worker = await addWorker(false);
+        try {
+          await worker.call("warmup", [request.voice]);
+        } catch (error) {
+          worker.close(error);
+          const index = workers.indexOf(worker);
+          if (index >= 0) workers.splice(index, 1);
+        }
+      }));
+      if (failed) throw failed;
+      if (workers.length === 1) return first.call("synthesize", [requestJSON]);
+
+      const results = new Array(chunks.length);
+      let next = 0, total = 0, jobError;
+      await Promise.all(workers.slice(0, count).map(async (worker) => {
+        try {
+          while (!jobError && next < chunks.length) {
+            const index = next++;
+            const chunk = chunks[index];
+            const result = await worker.call("synthesizeEnglishChunk", [JSON.stringify({ request, chunk, index })]);
+            total += result.audio.length - 44;
+            if (total > 256 * 1024 * 1024) throw new Error("合成音声が256 MiBを超えました");
+            results[index] = result;
+          }
+        } catch (error) {
+          jobError ??= error;
+        }
+      }));
+      if (jobError) {
+        if (failed) throw failed;
+        return first.call("synthesize", [requestJSON]);
+      }
+      return joinEnglishChunks(results, total);
+    },
+  };
+}
+
+function joinEnglishChunks(chunks, pcmBytes) {
+  const header = 44;
+  const audio = new Uint8Array(header + pcmBytes);
+  audio.set(chunks[0].audio.subarray(0, header));
+  const wav = new DataView(audio.buffer);
+  wav.setUint32(4, audio.length - 8, true);
+  wav.setUint32(40, pcmBytes, true);
+  const bytesPerSecond = wav.getUint32(28, true);
+  let offset = header;
+  const cues = chunks.map((chunk) => {
+    const start = (offset - header) / bytesPerSecond;
+    audio.set(chunk.audio.subarray(header), offset);
+    offset += chunk.audio.length - header;
+    return { text: chunk.cues[0].text, start, end: (offset - header) / bytesPerSecond };
+  });
+  return { audio, cues };
+}
+
+async function loadModels(voice, runtime) {
   const files = requiredFiles(voice);
   if (files.length === 0) {
     throw new Error("モデル一覧が読み込まれていません");
@@ -162,7 +331,7 @@ async function loadModels(voice) {
       const { decodeOpenZL } = await import("./openzl.js");
       bytes = await decodeOpenZL(bytes, file.openzl.size);
     }
-    if (!state.aoikane.registerAsset(file.path, bytes)) {
+    if (!(await runtime.registerAsset(file.path, bytes))) {
       throw new Error(`モデルを登録できませんでした: ${file.path}`);
     }
     state.registered.add(file.path);
@@ -174,11 +343,13 @@ async function loadModels(voice) {
 
   updateProgress(total, total, true);
   setStatus("モデルを準備中…");
-  await initializeVocoderPool(state.module, state.vocoderAsset);
-  await initializeRendererPool(state.module, state.synthesisAssets);
-  state.vocoderAsset = null;
-  state.synthesisAssets = {};
-  await state.aoikane.warmup(voice);
+  if (!englishVoices.has(voice)) {
+    await initializeVocoderPool(state.module, state.vocoderAsset);
+    await initializeRendererPool(state.module, state.synthesisAssets);
+    state.vocoderAsset = null;
+    state.synthesisAssets = {};
+  }
+  await runtime.warmup(voice);
   els.progress.hidden = true;
   updateModelInfo();
 }
@@ -201,7 +372,12 @@ async function synthesize() {
 
   try {
     const voice = els.voice.value;
-    await loadModels(voice);
+    const isEnglish = englishVoices.has(voice);
+    if (isEnglish && !state.englishRuntime) {
+      state.englishRuntime = await startEnglishRuntime().catch(() => state.aoikane);
+    }
+    const runtime = isEnglish ? state.englishRuntime : state.aoikane;
+    await loadModels(voice, runtime);
 
     const startedAt = performance.now();
     const timer = window.setInterval(() => {
@@ -213,12 +389,12 @@ async function synthesize() {
       const request = {
         text,
         voice,
-        rate: Number(sliders.rate.value),
-        pitch: Number(sliders.pitch.value),
+        rate: isEnglish ? 1 : Number(sliders.rate.value),
+        pitch: isEnglish ? 1 : Number(sliders.pitch.value),
         volume: Number(sliders.volume.value),
-        emphasis: Number(sliders.emphasis.value),
+        emphasis: isEnglish ? 1 : Number(sliders.emphasis.value),
       };
-      result = await state.aoikane.synthesize(JSON.stringify(request));
+      result = await runtime.synthesize(JSON.stringify(request));
     } finally {
       window.clearInterval(timer);
     }

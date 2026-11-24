@@ -10,6 +10,7 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
+	"path"
 	"strings"
 	"sync"
 	"syscall/js"
@@ -20,6 +21,8 @@ import (
 
 	"github.com/a-kaibu/aoikane/internal/assetfs"
 	"github.com/a-kaibu/aoikane/internal/engine"
+	"github.com/a-kaibu/aoikane/internal/english"
+	"github.com/a-kaibu/aoikane/internal/english/pockettts"
 	"github.com/a-kaibu/aoikane/internal/onnx"
 	"github.com/a-kaibu/aoikane/internal/portable"
 	"github.com/a-kaibu/aoikane/internal/synthesis"
@@ -31,6 +34,8 @@ var renderer *synthesis.Engine
 var rendererMu sync.Mutex
 var warmupMu sync.Mutex
 var preparedVoices = map[string]bool{}
+var englishMu sync.Mutex
+var englishEngine *english.Engine
 
 var (
 	engineMu  sync.Mutex
@@ -48,6 +53,8 @@ func main() {
 	api.Set("warmup", keep(js.FuncOf(warmup)))
 	api.Set("voices", keep(js.FuncOf(voices)))
 	api.Set("synthesize", keep(js.FuncOf(synthesize)))
+	api.Set("prepareEnglish", keep(js.FuncOf(prepareEnglish)))
+	api.Set("synthesizeEnglishChunk", keep(js.FuncOf(synthesizeEnglishChunk)))
 	api.Set("warmupVocoder", keep(js.FuncOf(warmupVocoder)))
 	api.Set("vocode", keep(js.FuncOf(vocode)))
 	api.Set("warmupRenderer", keep(js.FuncOf(warmupRenderer)))
@@ -202,6 +209,12 @@ func warmup(_ js.Value, args []js.Value) any {
 	if len(args) > 0 && args[0].Type() == js.TypeString && args[0].String() != "" {
 		voice = args[0].String()
 	}
+	if english.VoicePath(voice) != "" {
+		return newPromise(func() (any, error) {
+			_, err := ensureEnglish(voice)
+			return js.Null(), err
+		})
+	}
 	switch strings.ToLower(voice) {
 	case "aoi", "葵":
 		voice = portable.VoiceAoi
@@ -232,12 +245,38 @@ func warmup(_ js.Value, args []js.Value) any {
 	})
 }
 
+func ensureEnglish(voice string) (*english.Engine, error) {
+	englishMu.Lock()
+	defer englishMu.Unlock()
+	if englishEngine == nil {
+		e, err := english.OpenModel(english.DefaultDir)
+		if err != nil {
+			return nil, err
+		}
+		englishEngine = e
+		for _, name := range []string{"model.safetensors", "tokenizer.model"} {
+			assetfs.Remove(path.Join(english.DefaultDir, name))
+		}
+	}
+	if err := englishEngine.LoadVoice(english.DefaultDir, voice); err != nil {
+		return nil, err
+	}
+	assetfs.Remove(path.Join(english.DefaultDir, english.VoicePath(voice)))
+	return englishEngine, nil
+}
+
 func voices(_ js.Value, _ []js.Value) any {
-	list := js.Global().Get("Array").New(2)
-	for i, v := range []engine.Voice{
+	available := []engine.Voice{
 		{ID: portable.VoiceAoi, Name: "aoi", SampleRate: 48000},
 		{ID: portable.VoiceAkane, Name: "akane", SampleRate: 48000},
-	} {
+	}
+	englishMu.Lock()
+	if englishEngine != nil {
+		available = append(available, englishEngine.Voices()...)
+	}
+	englishMu.Unlock()
+	list := js.Global().Get("Array").New(len(available))
+	for i, v := range available {
 		item := js.Global().Get("Object").New()
 		item.Set("id", v.ID)
 		item.Set("name", v.Name)
@@ -258,6 +297,17 @@ func synthesize(_ js.Value, args []js.Value) any {
 			return nil, fmt.Errorf("invalid request: %w", err)
 		}
 		r.Format = "wav"
+		if english.VoicePath(r.Voice) != "" {
+			e, err := ensureEnglish(r.Voice)
+			if err != nil {
+				return nil, err
+			}
+			wav, cues, err := e.SynthesizeTimed(context.Background(), r)
+			if err != nil {
+				return nil, err
+			}
+			return synthesisResult(wav, cues), nil
+		}
 		switch strings.ToLower(r.Voice) {
 		case "", "aoi", "葵":
 			r.Voice = portable.VoiceAoi
@@ -277,21 +327,74 @@ func synthesize(_ js.Value, args []js.Value) any {
 		if err != nil {
 			return nil, err
 		}
-		result := js.Global().Get("Object").New()
-		audio := js.Global().Get("Uint8Array").New(len(wav))
-		js.CopyBytesToJS(audio, wav)
-		result.Set("audio", audio)
-		list := js.Global().Get("Array").New(len(cues))
-		for i, cue := range cues {
-			item := js.Global().Get("Object").New()
-			item.Set("text", cue.Text)
-			item.Set("start", cue.Start.Seconds())
-			item.Set("end", cue.End.Seconds())
-			list.SetIndex(i, item)
-		}
-		result.Set("cues", list)
-		return result, nil
+		return synthesisResult(wav, cues), nil
 	})
+}
+
+func prepareEnglish(_ js.Value, args []js.Value) any {
+	if len(args) != 1 || args[0].Type() != js.TypeString {
+		return rejected(errors.New("prepareEnglish expects a JSON request"))
+	}
+	input := args[0].String()
+	return newPromise(func() (any, error) {
+		var r engine.Request
+		if err := json.Unmarshal([]byte(input), &r); err != nil {
+			return nil, err
+		}
+		e, err := ensureEnglish(r.Voice)
+		if err != nil {
+			return nil, err
+		}
+		chunks, err := e.Prepare(r)
+		if err != nil {
+			return nil, err
+		}
+		out, err := json.Marshal(chunks)
+		return string(out), err
+	})
+}
+
+func synthesizeEnglishChunk(_ js.Value, args []js.Value) any {
+	if len(args) != 1 || args[0].Type() != js.TypeString {
+		return rejected(errors.New("synthesizeEnglishChunk expects a JSON request"))
+	}
+	input := args[0].String()
+	return newPromise(func() (any, error) {
+		var job struct {
+			Request engine.Request
+			Chunk   pockettts.Chunk
+			Index   int
+		}
+		if err := json.Unmarshal([]byte(input), &job); err != nil {
+			return nil, err
+		}
+		e, err := ensureEnglish(job.Request.Voice)
+		if err != nil {
+			return nil, err
+		}
+		wav, cues, err := e.SynthesizeChunk(context.Background(), job.Request, job.Chunk, job.Index)
+		if err != nil {
+			return nil, err
+		}
+		return synthesisResult(wav, cues), nil
+	})
+}
+
+func synthesisResult(wav []byte, cues []engine.Cue) js.Value {
+	result := js.Global().Get("Object").New()
+	audio := js.Global().Get("Uint8Array").New(len(wav))
+	js.CopyBytesToJS(audio, wav)
+	result.Set("audio", audio)
+	list := js.Global().Get("Array").New(len(cues))
+	for i, cue := range cues {
+		item := js.Global().Get("Object").New()
+		item.Set("text", cue.Text)
+		item.Set("start", cue.Start.Seconds())
+		item.Set("end", cue.End.Seconds())
+		list.SetIndex(i, item)
+	}
+	result.Set("cues", list)
+	return result
 }
 
 func ensureEngine() (*portable.Engine, error) {

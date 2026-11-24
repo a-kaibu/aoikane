@@ -28,6 +28,7 @@ const usage = `aoikane - text-to-speech CLI / HTTP API
 
   aoikane --text "こんにちは" --output speech.wav
   aoikane synth --text "こんにちは" --output speech.mp3
+  aoikane synth --language en --text "Hello." --output speech.wav
   aoikane convert --input speech.wav --output speech.mp3
   aoikane script.txt --voice aoi --srt --vtt
   aoikane script.txt --voice akane --srt --vtt
@@ -87,11 +88,13 @@ func synth(args []string) error {
 	srt := f.String("srt", "", "write SRT subtitles; optional path (default: audio/input name + .srt)")
 	vtt := f.String("vtt", "", "write WebVTT subtitles; optional path (default: audio/input name + .vtt)")
 	dir := engineFlags(f)
+	englishDir := englishAssetsFlag(f)
 	address := f.String("url", os.Getenv("AOIKANE_URL"), "remote HTTP API")
 	token := f.String("token", os.Getenv("AOIKANE_TOKEN"), "API bearer token")
 	r := engine.Request{}
+	language := f.String("language", "", "synthesis language (ja or en; default follows the voice)")
 	f.StringVar(&r.Format, "format", "", "wav or mp3 (default: inferred from output extension)")
-	f.Func("voice", "aoi, akane, or a voice ID (default: first installed voice)", func(value string) error {
+	f.Func("voice", "aoi, akane, en-alba, en-aoi, en-akane, or a voice ID", func(value string) error {
 		switch strings.ToLower(value) {
 		case "aoi", "葵":
 			r.Voice = "KotonohaAoi_ns_48"
@@ -174,6 +177,9 @@ func synth(args []string) error {
 		}
 		r.Text = string(b)
 	}
+	if err := chooseLanguage(*language, &r); err != nil {
+		return err
+	}
 	if err := r.Validate(); err != nil {
 		return err
 	}
@@ -207,7 +213,7 @@ func synth(args []string) error {
 			}
 		}
 	} else {
-		s, cleanup, e := openEngine(*dir)
+		s, cleanup, e := openForSynthesis(*dir, *englishDir, r.Voice)
 		if e != nil {
 			return e
 		}
@@ -296,6 +302,7 @@ func convert(args []string) error {
 func voices(args []string) error {
 	f := flags("voices")
 	dir := engineFlags(f)
+	englishDir := englishAssetsFlag(f)
 	address := f.String("url", os.Getenv("AOIKANE_URL"), "remote HTTP API")
 	token := f.String("token", os.Getenv("AOIKANE_TOKEN"), "API bearer token")
 	if err := f.Parse(args); err != nil {
@@ -315,7 +322,7 @@ func voices(args []string) error {
 			return err
 		}
 	} else {
-		s, cleanup, err := openEngine(*dir)
+		s, cleanup, err := openInstalledEngines(*dir, *englishDir)
 		if err != nil {
 			return err
 		}
@@ -328,6 +335,7 @@ func serve(args []string) error {
 	f := flags("serve")
 	listen := f.String("listen", "127.0.0.1:8080", "HTTP listen address")
 	dir := engineFlags(f)
+	englishDir := englishAssetsFlag(f)
 	token := f.String("token", os.Getenv("AOIKANE_TOKEN"), "optional API bearer token")
 	if err := f.Parse(args); err != nil {
 		return err
@@ -340,7 +348,7 @@ func serve(args []string) error {
 		return err
 	}
 	defer listener.Close()
-	s, cleanup, err := openEngine(*dir)
+	s, cleanup, err := openInstalledEngines(*dir, *englishDir)
 	if err != nil {
 		return err
 	}

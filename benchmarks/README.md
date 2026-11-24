@@ -96,3 +96,8 @@ seed・作品ID・ソースのSHA-256・抽出済み本文・レポートをGHA 
 python3 scripts/sample-aozora.py --seed 2026-11-13 --output /tmp/opencode/aozora/corpus.json
 AOIKANE_AOZORA_CORPUS=/tmp/opencode/aozora/corpus.json AOIKANE_AOZORA_REPORT=/tmp/opencode/aozora/report.json AOIKANE_AOZORA_SYNTH=1 go test ./internal/portable -run '^TestAozoraCorpus$' -count=1 -v
 ```
+
+## 代替モデルとランタイムの検証
+
+- [Pocket TTSの英語合成](pocket-tts/README.md)
+- [GoMLXでの日本語ONNX実行](gomlx/README.md)

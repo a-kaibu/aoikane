@@ -1,0 +1,143 @@
+{
+  "date": "2026-11-24",
+  "cpu": "AMD Ryzen 5 5600X",
+  "os": "Windows amd64",
+  "goUpstream": "4b72d3af8be4676168712fec6077db22d8909fd5",
+  "rustRelease": "v4.0.1",
+  "voice": "alba",
+  "text": "../pocket-tts/sample.txt",
+  "targets": {
+    "cliRTF": 0.083,
+    "browserRTF": 0.125
+  },
+  "models": [
+    {
+      "id": "english_7m_refl_2026-10",
+      "checkpointBytes": 66482920,
+      "goCLI": {
+        "model": "english_7m_refl_2026-10",
+        "workers": 6,
+        "includesStartup": true,
+        "medianRTF": 0.11939618923659308,
+        "runs": [
+          {
+            "seconds": 1.5405855999997584,
+            "audioSeconds": 11.52,
+            "rtf": 0.13373138888886793
+          },
+          {
+            "seconds": 1.3754441000055522,
+            "audioSeconds": 11.52,
+            "rtf": 0.11939618923659308
+          },
+          {
+            "seconds": 1.3304113999911351,
+            "audioSeconds": 11.52,
+            "rtf": 0.11548710069367493
+          }
+        ]
+      },
+      "goBrowser": {
+        "browser": "158.0.8127.37",
+        "modelLoadSeconds": 0.204300032,
+        "medianRTF": 0.9257118222222221,
+        "runs": [
+          {
+            "seconds": 10.725200128,
+            "audioSeconds": 11.52,
+            "rtf": 0.9310069555555557
+          },
+          {
+            "seconds": 10.526599936,
+            "audioSeconds": 11.52,
+            "rtf": 0.9137673555555557
+          },
+          {
+            "seconds": 10.664200192,
+            "audioSeconds": 11.52,
+            "rtf": 0.9257118222222221
+          }
+        ]
+      },
+      "rust": {
+        "chunks": [
+          {
+            "audioSeconds": 6,
+            "seconds": 0.387
+          },
+          {
+            "audioSeconds": 5.6,
+            "seconds": 0.329
+          }
+        ],
+        "wavSeconds": 11.8
+      },
+      "accepted": false,
+      "finding": "CLI and browser RTF exceed the targets."
+    },
+    {
+      "id": "english_2m_refl_2026-10",
+      "checkpointBytes": 46713080,
+      "goCLI": {
+        "model": "english_2m_refl_2026-10",
+        "workers": 6,
+        "includesStartup": true,
+        "medianRTF": 0.04956964084529728,
+        "runs": [
+          {
+            "seconds": 1.452643700002227,
+            "audioSeconds": 28.4,
+            "rtf": 0.051149426056416446
+          },
+          {
+            "seconds": 1.4077778000064427,
+            "audioSeconds": 28.4,
+            "rtf": 0.04956964084529728
+          },
+          {
+            "seconds": 1.3932427999970969,
+            "audioSeconds": 28.4,
+            "rtf": 0.049057845070320315
+          }
+        ]
+      },
+      "goBrowser": {
+        "browser": "158.0.8127.37",
+        "modelLoadSeconds": 0.09910016,
+        "medianRTF": 0.427095076056338,
+        "runs": [
+          {
+            "seconds": 12.160499968,
+            "audioSeconds": 28.4,
+            "rtf": 0.42818661859154933
+          },
+          {
+            "seconds": 12.12950016,
+            "audioSeconds": 28.4,
+            "rtf": 0.427095076056338
+          },
+          {
+            "seconds": 12.106899712,
+            "audioSeconds": 28.4,
+            "rtf": 0.42629928563380287
+          }
+        ]
+      },
+      "rust": {
+        "chunks": [
+          {
+            "audioSeconds": 6,
+            "seconds": 0.284
+          },
+          {
+            "audioSeconds": 5.36,
+            "seconds": 0.151
+          }
+        ],
+        "wavSeconds": 11.56
+      },
+      "accepted": false,
+      "finding": "Go waveform duration differs substantially from the Rust reference. Its RTF is not a valid measure of comparable synthesis."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "date": "2026-11-24",
+  "cpu": "AMD Ryzen 5 5600X",
+  "os": "Windows amd64",
+  "go": "go1.27.4",
+  "cgo": false,
+  "goExperiment": "simd",
+  "onnxGomlx": "v0.5.36",
+  "gomlx": "v0.28.39",
+  "compute": "v0.1.33",
+  "backend": "gobackend",
+  "syntheticFrames": 8,
+  "onnx": [
+    {
+      "model": "emb.onnx",
+      "upstream": "ok",
+      "compat": "ok"
+    },
+    {
+      "model": "bou.onnx",
+      "upstream": "ok",
+      "compat": "ok"
+    },
+    {
+      "model": "pau.onnx",
+      "upstream": "unimplemented EyeLike",
+      "compat": "ok"
+    },
+    {
+      "model": "vocoder.onnx",
+      "upstream": "unimplemented Round",
+      "compat": "ok"
+    },
+    {
+      "model": "featnet.onnx",
+      "upstream": "Tile repeats constant evaluation cannot resolve captured phn in subgraph",
+      "compat": "same failure"
+    }
+  ],
+  "vocoder": {
+    "voice": "aoi",
+    "text": "おはよう。",
+    "includesGraphCompileInFirstCall": true,
+    "chunks": [
+      {
+        "frames": 110,
+        "sampleRate": 48000,
+        "samples": 26400,
+        "aoikaneMS": 92.5509,
+        "gomlxFirstMS": 3704.7406,
+        "gomlxWarmMS": [
+          3640.2206,
+          3708.8184,
+          3479.5013
+        ],
+        "gomlxMedianWarmMS": 3640.2206,
+        "gomlxSlowdown": 39.33209293480669
+      },
+      {
+        "frames": 69,
+        "sampleRate": 48000,
+        "samples": 16560,
+        "aoikaneMS": 75.5022,
+        "gomlxFirstMS": 2532.1108,
+        "gomlxWarmMS": [
+          2393.7202,
+          1818.2558,
+          1783.7868
+        ],
+        "gomlxMedianWarmMS": 1818.2558,
+        "gomlxSlowdown": 24.082156546431758
+      }
+    ]
+  }
+}

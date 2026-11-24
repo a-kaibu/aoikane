@@ -17,6 +17,8 @@ archives:
     name_template: "{{ .ProjectName }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}"
     files:
       - README.md
+      - src: internal/english/pockettts/*-LICENSE.txt
+        strip_parent: true
       - src: assets/compact/OpenZL-LICENSE.txt
         strip_parent: true
 checksum:
